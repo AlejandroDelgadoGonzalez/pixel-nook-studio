@@ -1,0 +1,302 @@
+{
+  "ithaca": {
+    "floorPrefix": "ith",
+    "portraitFill": false,
+    "rooms": {
+      "chamber": {
+        "group": "c2",
+        "index": 0,
+        "key": "panorama-c2-chamber",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/c2-chamber-panorama.png",
+        "fullDepth": true,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "hall": {
+        "group": "c2",
+        "index": 1,
+        "key": "panorama-c2-hall",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/c2-hall-panorama.png",
+        "fullDepth": true,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "harbor": {
+        "group": "c2",
+        "index": 2,
+        "key": "panorama-c2-harbor",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/c2-harbor-panorama.png",
+        "fullDepth": true,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "sparta": {
+        "group": "c2",
+        "index": 3,
+        "key": "panorama-c2-sparta",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/c2-sparta-panorama.png",
+        "fullDepth": true,
+        "nativeBounds": false,
+        "centerX": 768
+      }
+    },
+    "fills": {},
+    "disguiseActor": "odysseus"
+  },
+  "cyclops": {
+    "floorPrefix": "cy",
+    "portraitFill": true,
+    "rooms": {
+      "coast": {
+        "group": "c4",
+        "index": 0,
+        "key": "panorama-c4-0-ground-v4",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/cicones-coast.png",
+        "fullDepth": true,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "lotus": {
+        "group": "c4",
+        "index": 1,
+        "key": "panorama-c4-1",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-1.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "cave": {
+        "group": "c4",
+        "index": 2,
+        "key": "panorama-c4-2",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-2.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "sea": {
+        "group": "c4",
+        "index": 3,
+        "key": "panorama-c4-3",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-3.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "caveBeach": {
+        "group": "cave-approach",
+        "index": null,
+        "key": "panorama-cave-approach",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/cave-approach.png",
+        "fullDepth": true,
+        "nativeBounds": true,
+        "centerX": 552.96
+      }
+    },
+    "fills": {
+      "c4": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-c4.png"
+    },
+    "disguiseActor": "odysseus"
+  },
+  "aeaea": {
+    "floorPrefix": "ae",
+    "portraitFill": true,
+    "rooms": {
+      "court": {
+        "group": "c5",
+        "index": 0,
+        "key": "panorama-c5-0",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c5-0.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "home": {
+        "group": "c5",
+        "index": 1,
+        "key": "panorama-c5-1",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c5-1.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "harbor": {
+        "group": "harbor-wide",
+        "index": null,
+        "key": "panorama-harbor-wide-ground-v4",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-harbor-wide-ground.png",
+        "fullDepth": true,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "forest": {
+        "group": "c5",
+        "index": 3,
+        "key": "panorama-c5-3",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c5-3.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "sea": {
+        "group": "c4",
+        "index": 3,
+        "key": "panorama-c4-3",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-3.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      }
+    },
+    "fills": {
+      "c5": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-c5.png",
+      "harbor-wide": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-harbor-wide.png",
+      "c4": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-c4.png"
+    },
+    "disguiseActor": "odysseus"
+  },
+  "homecoming": {
+    "floorPrefix": null,
+    "portraitFill": true,
+    "rooms": {
+      "dark": {
+        "group": "voyage",
+        "index": 0,
+        "key": "panorama-voyage-0",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-0.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "strait": {
+        "group": "voyage",
+        "index": 1,
+        "key": "panorama-voyage-1",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-1.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "sun": {
+        "group": "voyage",
+        "index": 2,
+        "key": "panorama-voyage-2",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-2.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "shore": {
+        "group": "voyage",
+        "index": 3,
+        "key": "panorama-voyage-3",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-3.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "sea": {
+        "group": "sea-wide",
+        "index": null,
+        "key": "panorama-sea-wide-full",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "storm": {
+        "group": "passage",
+        "index": 1,
+        "key": "panorama-passage-1",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-passage-1.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "calypso": {
+        "group": "passage",
+        "index": 2,
+        "key": "panorama-passage-2",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-passage-2.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "scheria": {
+        "group": "passage",
+        "index": 3,
+        "key": "panorama-passage-3",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-passage-3.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "hut": {
+        "group": "home",
+        "index": 0,
+        "key": "panorama-home-0",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-0.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "hall": {
+        "group": "home",
+        "index": 1,
+        "key": "panorama-home-1",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-1.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "bedroom": {
+        "group": "home",
+        "index": 2,
+        "key": "panorama-home-2",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-2.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "orchard": {
+        "group": "home",
+        "index": 3,
+        "key": "panorama-home-3",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-3.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "forest": {
+        "group": "c5",
+        "index": 3,
+        "key": "panorama-c5-3",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-c5-3.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      },
+      "burial": {
+        "group": "voyage",
+        "index": 2,
+        "key": "panorama-voyage-2",
+        "url": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-2.png",
+        "fullDepth": false,
+        "nativeBounds": false,
+        "centerX": 768
+      }
+    },
+    "fills": {
+      "voyage": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-voyage.png",
+      "sea-wide": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-sea-wide.png",
+      "passage": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-passage.png",
+      "home": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-home.png",
+      "c5": "/stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-c5.png"
+    },
+    "disguiseActor": "odysseus"
+  },
+  "scheria": {
+    "rooms": {},
+    "disguiseActor": "odysseus"
+  }
+}

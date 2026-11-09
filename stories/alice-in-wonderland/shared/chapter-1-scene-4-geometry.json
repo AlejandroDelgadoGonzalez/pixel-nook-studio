@@ -1,0 +1,1149 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "scene": "chapter-1-scene-4-drink-me",
+  "status": "25Oct user-authorized room camera/static-key/slow-walk correction; production renderer registered",
+  "approvedHallReference": "chapter-1-scene-3-hall-geometry.json",
+  "hall": {
+    "panorama": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+    "dimensions": [
+      1664,
+      936
+    ],
+    "sourceToWorldScale": 2,
+    "worldOrigin": [
+      0,
+      0
+    ],
+    "worldBounds": [
+      0,
+      0,
+      3328,
+      1872
+    ],
+    "overscan": {
+      "base16by9": [
+        192,
+        108,
+        1280,
+        720
+      ],
+      "fullBounds": [
+        0,
+        0,
+        1664,
+        936
+      ],
+      "ratios": [
+        1.3,
+        1.3
+      ],
+      "margins": [
+        192,
+        108,
+        192,
+        108
+      ],
+      "noStretch": true
+    },
+    "reuse": [
+      "Chapter1 Scene4 bottle and shrink",
+      "Scene5 cake/growth/tears",
+      "Scene6 fan and pool; future overlays require their own approval"
+    ]
+  },
+  "continuity": {
+    "previousStep": "alice-c1-hall-hook-bottle",
+    "spatialChange": false,
+    "shotDissolve": false,
+    "alice": {
+      "sourcePoint": [
+        782.1265,
+        690
+      ],
+      "renderedWorldPoint": [
+        1564,
+        1380
+      ],
+      "pose": "standing-steady",
+      "depthScale": 1.14,
+      "magicScale": 1,
+      "facing": "right"
+    },
+    "key": {
+      "atlas": "golden-key",
+      "ownerStates": [
+        "table",
+        "alice",
+        "table"
+      ],
+      "ringGripNormalized": [
+        11.1,
+        12
+      ],
+      "bladeTipNormalized": [
+        52.5,
+        12
+      ],
+      "restGripSource": [
+        804.0000294117647,
+        637.9858468677494
+      ],
+      "restScale": 1.14,
+      "pickupAndPlaceActorAnchor": "H3-table",
+      "selectedContactPose": "carry-key",
+      "handPinPolicy": "At pickup and release, keep identical actor x/y, ground origin, prop scale, pose and ring-grip position. Change ownership only after the supported contact; no position snap, duplicate or floating key.",
+      "whileCarried": "Use measured hand pins per authored pose; retain one key in the hand while testing the curtain/door. Full movement between hand poses belongs to Gate3/4, not this static art approval."
+    },
+    "bottle": {
+      "atlas": "bottle-upright",
+      "baseSource": [
+        875,
+        639
+      ],
+      "scale": 1.14,
+      "state": "upright sealed, label blank/unread in S3; remains fixed on table throughout",
+      "handOwner": null
+    },
+    "curtain": 1,
+    "door": 0,
+    "lastFrameEvidence": ".artifacts/alice-in-wonderland/chapter-1-scene-4/s3-final-runtime.json"
+  },
+  "spawns": {
+    "alice": {
+      "anchor": "H3-table",
+      "inherited": true,
+      "visible": 1
+    },
+    "box": {
+      "sourceBase": [
+        856.4484011940299,
+        690
+      ],
+      "existsBeforeDiscovery": true,
+      "visibility": "Visible and fixed at the centre under the table from S3 hall establishment; never pushed, transported or hidden behind the left leg."
+    }
+  },
+  "anchors": {
+    "H3-table": {
+      "sourcePoint": [
+        782.1265,
+        690
+      ],
+      "point": [
+        1564.253,
+        1380
+      ],
+      "scale": 1.14
+    },
+    "S4-bottle-take": {
+      "sourcePoint": [
+        907.5203890489913,
+        690
+      ],
+      "point": [
+        1815.0407780979826,
+        1380
+      ],
+      "depthScale": 1.14,
+      "magicScale": 1
+    },
+    "S4-open-floor": {
+      "sourcePoint": [
+        970,
+        700
+      ],
+      "point": [
+        1940,
+        1400
+      ],
+      "depthScale": 1.1533333333333333,
+      "magicScale": 1
+    },
+    "S4-small-door": {
+      "sourcePoint": [
+        948,
+        488
+      ],
+      "point": [
+        1896,
+        976
+      ],
+      "depthScale": 0.856,
+      "magicScale": 0.32
+    },
+    "S4-glass-attempt": {
+      "sourcePoint": [
+        901.379136,
+        690
+      ],
+      "point": [
+        1802.758272,
+        1380
+      ],
+      "depthScale": 1.14,
+      "magicScale": 0.32
+    },
+    "S4-box": {
+      "sourcePoint": [
+        875,
+        698
+      ],
+      "point": [
+        1750,
+        1396
+      ],
+      "depthScale": 1.1506666666666665,
+      "magicScale": 0.32
+    }
+  },
+  "walkPaths": {
+    "table-to-bottle": {
+      "fromAnchor": "H3-table",
+      "toAnchor": "S4-bottle-take",
+      "sourceWaypoints": [
+        [
+          782.1265,
+          690
+        ],
+        [
+          830,
+          740
+        ],
+        [
+          907.5203890489913,
+          740
+        ],
+        [
+          907.5203890489913,
+          690
+        ]
+      ],
+      "waypoints": [
+        [
+          1564.253,
+          1380
+        ],
+        [
+          1660,
+          1480
+        ],
+        [
+          1815.0407780979826,
+          1480
+        ],
+        [
+          1815.0407780979826,
+          1380
+        ]
+      ],
+      "mode": "walk",
+      "speed": 235,
+      "durationMs": 1427.9429816066718,
+      "facingByLeg": [
+        "front",
+        "right",
+        "back"
+      ],
+      "magicScale": 1,
+      "depthKnotsWorld": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "bodyScale": 1
+    },
+    "bottle-to-open-floor": {
+      "fromAnchor": "S4-bottle-take",
+      "toAnchor": "S4-open-floor",
+      "sourceWaypoints": [
+        [
+          907.5203890489913,
+          690
+        ],
+        [
+          942,
+          722
+        ],
+        [
+          970,
+          700
+        ]
+      ],
+      "waypoints": [
+        [
+          1815.0407780979826,
+          1380
+        ],
+        [
+          1884,
+          1444
+        ],
+        [
+          1940,
+          1400
+        ]
+      ],
+      "mode": "walk",
+      "speed": 235,
+      "durationMs": 604.2989754952715,
+      "facingByLeg": [
+        "right",
+        "right"
+      ],
+      "magicScale": 1,
+      "depthKnotsWorld": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "bodyScale": 1
+    },
+    "small-alice-to-door": {
+      "fromAnchor": "S4-open-floor",
+      "toAnchor": "S4-small-door",
+      "sourceWaypoints": [
+        [
+          970,
+          700
+        ],
+        [
+          994,
+          614
+        ],
+        [
+          982,
+          510
+        ],
+        [
+          948,
+          488
+        ]
+      ],
+      "waypoints": [
+        [
+          1940,
+          1400
+        ],
+        [
+          1988,
+          1228
+        ],
+        [
+          1964,
+          1020
+        ],
+        [
+          1896,
+          976
+        ]
+      ],
+      "mode": "walk",
+      "speed": 235,
+      "durationMs": 6272.88162101018,
+      "facingByLeg": [
+        "back",
+        "back",
+        "left"
+      ],
+      "magicScale": 0.32,
+      "depthKnotsWorld": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "bodyScale": 0.32
+    },
+    "door-to-glass": {
+      "fromAnchor": "S4-small-door",
+      "toAnchor": "S4-glass-attempt",
+      "sourceWaypoints": [
+        [
+          948,
+          488
+        ],
+        [
+          994,
+          614
+        ],
+        [
+          994,
+          738
+        ],
+        [
+          920,
+          738
+        ],
+        [
+          901.379136,
+          690
+        ]
+      ],
+      "waypoints": [
+        [
+          1896,
+          976
+        ],
+        [
+          1988,
+          1228
+        ],
+        [
+          1988,
+          1476
+        ],
+        [
+          1840,
+          1476
+        ],
+        [
+          1802.758272,
+          1380
+        ]
+      ],
+      "mode": "walk",
+      "speed": 235,
+      "durationMs": 9543.75663434144,
+      "facingByLeg": [
+        "front",
+        "front",
+        "left",
+        "back"
+      ],
+      "magicScale": 0.32,
+      "depthKnotsWorld": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "bodyScale": 0.32
+    },
+    "glass-to-box": {
+      "fromAnchor": "S4-glass-attempt",
+      "toAnchor": "S4-box",
+      "sourceWaypoints": [
+        [
+          901.379136,
+          690
+        ],
+        [
+          910,
+          716
+        ],
+        [
+          875,
+          716
+        ],
+        [
+          875,
+          698
+        ]
+      ],
+      "waypoints": [
+        [
+          1802.758272,
+          1380
+        ],
+        [
+          1820,
+          1432
+        ],
+        [
+          1750,
+          1432
+        ],
+        [
+          1750,
+          1396
+        ]
+      ],
+      "mode": "walk",
+      "speed": 235,
+      "durationMs": 1833.718701567894,
+      "facingByLeg": [
+        "front",
+        "left",
+        "back"
+      ],
+      "magicScale": 0.32,
+      "depthKnotsWorld": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "bodyScale": 0.32
+    }
+  },
+  "depthScaling": {
+    "referenceStandingWorldHeight": 180,
+    "sourceYToScale": [
+      [
+        426,
+        0.5267
+      ],
+      [
+        450,
+        0.68
+      ],
+      [
+        480,
+        0.84
+      ],
+      [
+        510,
+        0.9
+      ],
+      [
+        600,
+        1.02
+      ],
+      [
+        720,
+        1.18
+      ]
+    ],
+    "hallSourceToWorldY": 2,
+    "rule": "Interpolate scale from foot ground y once; props/shadows share owner scale. H0 .5267 exactly matches old corridor endpoint, so transition never resets apparent actor height."
+  },
+  "locomotion": {
+    "profiles": {
+      "alice": {
+        "walkSpeed": 235,
+        "runSpeed": 650
+      }
+    },
+    "policy": "Constant environment walk/run reference multiplied once by ground depth and once by durable magical body scale. Corridor remains unchanged.",
+    "reference": "hall-locomotion.json"
+  },
+  "shrinking": {
+    "groundAnchor": "S4-open-floor",
+    "referenceBodyWorld": 180,
+    "magicScaleKnots": [
+      [
+        0,
+        1
+      ],
+      [
+        0.25,
+        0.83
+      ],
+      [
+        0.5,
+        0.64
+      ],
+      [
+        0.75,
+        0.46
+      ],
+      [
+        1,
+        0.32
+      ]
+    ],
+    "durationProposalMs": 4400,
+    "uniformXY": true,
+    "bodyHeightsWorld": [
+      207.6,
+      172.308,
+      132.864,
+      95.496,
+      66.432
+    ],
+    "cameraZoomChange": 0,
+    "bottleScaleUnchanged": 1.1533333333333333,
+    "keyScaleUnchanged": 1.14,
+    "rule": "Use durable model value separate from ground-depth factor. Whole body, clothes and shadow share one foot-based magicScale; no camera zoom, pose squash or extra tiny atlas."
+  },
+  "props": {
+    "key": {
+      "reuse": {
+        "atlas": "golden-key",
+        "ownerStates": [
+          "table",
+          "alice",
+          "table"
+        ],
+        "ringGripNormalized": [
+          11.1,
+          12
+        ],
+        "bladeTipNormalized": [
+          52.5,
+          12
+        ],
+        "restGripSource": [
+          804.0000294117647,
+          637.9858468677494
+        ],
+        "restScale": 1.14,
+        "pickupAndPlaceActorAnchor": "H3-table",
+        "selectedContactPose": "carry-key",
+        "handPinPolicy": "At pickup and release, keep identical actor x/y, ground origin, prop scale, pose and ring-grip position. Change ownership only after the supported contact; no position snap, duplicate or floating key.",
+        "whileCarried": "Use measured hand pins per authored pose; retain one key in the hand while testing the curtain/door. Full movement between hand poses belongs to Gate3/4, not this static art approval."
+      },
+      "fixed": true
+    },
+    "bottle": {
+      "tableBaseSource": [
+        875,
+        639
+      ],
+      "tableScale": 1.14,
+      "pickupGripNormalized": [
+        16,
+        6.973684210526379
+      ],
+      "examineGripNormalized": [
+        16,
+        8
+      ],
+      "drinkGripNormalized": [
+        16,
+        8
+      ],
+      "drinkRotationDegrees": 135,
+      "emptyBodyGripNormalized": [
+        16,
+        24.50000000000008
+      ],
+      "floorBaseSource": [
+        933.5098148148148,
+        700
+      ],
+      "floorScale": 1.1533333333333333,
+      "finalOwner": null,
+      "policy": "One bottle only. S3 sealed sprite retained through pickup. Uncork while held; switch to selected full/empty variants at matched bottle bottom/shoulder envelope. Move cork to glass. Bottle emptied before placing; release only after ground contact. Bottle never shrinks with Alice."
+    },
+    "cork": {
+      "tableBaseSource": [
+        887,
+        639
+      ],
+      "scale": 1.14
+    },
+    "box": {
+      "initialBaseSource": [
+        856.4484011940299,
+        690
+      ],
+      "baseSource": [
+        856.4484011940299,
+        690
+      ],
+      "scale": 1.14,
+      "closedPose": "box-closed",
+      "openBasePose": "box-base",
+      "closedHandContactSource": [
+        864.0484011940299,
+        689.99136
+      ],
+      "openHandContactSource": [
+        857.3861781032864,
+        673.7899733333334
+      ],
+      "openLidTopLeftSource": [
+        848.4684011940299,
+        670
+      ],
+      "openLidFlipY": false,
+      "hingePolicy": "Original rigid open-lid orientation retained. Rear right corner stays on rear rim; high-arm authored kneeling pose grips raised edge. Static contact measured; full hinge interpolation belongs to Gate3/4.",
+      "persistent": true
+    },
+    "cake": {
+      "baseSource": [
+        856.4484011940299,
+        686
+      ],
+      "scale": 1.14,
+      "pose": "cake",
+      "owner": null,
+      "consumed": false
+    }
+  },
+  "surfaces": {
+    "reuse": {
+      "walkableSourceBand": [
+        [
+          130,
+          410
+        ],
+        [
+          225,
+          440
+        ],
+        [
+          270,
+          504
+        ],
+        [
+          350,
+          500
+        ],
+        [
+          420,
+          460
+        ],
+        [
+          720,
+          462
+        ],
+        [
+          860,
+          476
+        ],
+        [
+          980,
+          480
+        ],
+        [
+          1020,
+          760
+        ],
+        [
+          280,
+          760
+        ],
+        [
+          120,
+          480
+        ]
+      ],
+      "closedDoorContact1": [
+        473,
+        440
+      ],
+      "closedDoorContact2": [
+        729,
+        440
+      ],
+      "glassTopSourceBounds": [
+        792,
+        626,
+        112,
+        28
+      ],
+      "glassSurfaceSupportLineSource": [
+        [
+          796,
+          640
+        ],
+        [
+          812,
+          638
+        ],
+        [
+          846,
+          642
+        ],
+        [
+          876,
+          639
+        ],
+        [
+          902,
+          638
+        ]
+      ],
+      "glassLegObstaclesSource": [
+        [
+          798,
+          650,
+          20,
+          40
+        ],
+        [
+          882,
+          650,
+          16,
+          40
+        ],
+        [
+          822,
+          650,
+          12,
+          28
+        ]
+      ],
+      "tinyOpeningSourcePolygon": [
+        [
+          930,
+          474
+        ],
+        [
+          930,
+          454
+        ],
+        [
+          934,
+          444
+        ],
+        [
+          942,
+          440
+        ],
+        [
+          954,
+          440
+        ],
+        [
+          962,
+          444
+        ],
+        [
+          968,
+          452
+        ],
+        [
+          968,
+          474
+        ]
+      ],
+      "thresholdBaseSource": [
+        930,
+        474,
+        38,
+        2
+      ]
+    },
+    "tableGroundYSource": 690,
+    "normalPickupGroundYSource": 690,
+    "frontRouteGroundYSource": 740,
+    "boxGroundYSource": 690,
+    "glassAttemptContactSource": [
+      895,
+      658.7184
+    ],
+    "glassLipSourceY": 638,
+    "smallStandingHeightAtTableWorld": 65.664
+  },
+  "occluders": [
+    {
+      "id": "glass-front-lip",
+      "sourcePolygon": [
+        [
+          792,
+          638
+        ],
+        [
+          812,
+          650
+        ],
+        [
+          852,
+          654
+        ],
+        [
+          888,
+          648
+        ],
+        [
+          904,
+          638
+        ],
+        [
+          902,
+          646
+        ],
+        [
+          852,
+          660
+        ],
+        [
+          812,
+          656
+        ]
+      ],
+      "coverage": "exact same-source glass/metal foreground pixels, no recoloring; key and reaching fingertips remain above the physical support"
+    },
+    {
+      "id": "glass-legs-existing",
+      "sourceBounds": [
+        [
+          798,
+          650,
+          20,
+          40
+        ],
+        [
+          882,
+          650,
+          16,
+          40
+        ],
+        [
+          822,
+          650,
+          12,
+          28
+        ]
+      ],
+      "policy": "Use measured original panorama pixels, no repainted table. Feet clear solid supports. Fingers may touch right leg at measured reach; no successful climb."
+    },
+    {
+      "id": "closed-box-lid",
+      "policy": "Cake stays inside the stationary central box. The attached lid opens during the hook; box, cake and lid use one ground support plane with local component ordering. No duplicate closed/open bases."
+    }
+  ],
+  "camera": {
+    "policy": "Fixed room x,y,z inherited from final S3 frame; no intra-room shotDissolve.",
+    "staticOnly": false,
+    "approvalStatus": "Correction expressly authorized25Oct; freshQA",
+    "roomLock": {
+      "sourceRect": [
+        733.5,
+        414,
+        1007.5,
+        740
+      ],
+      "worldRect": [
+        1467,
+        828,
+        2015,
+        1480
+      ],
+      "policy": "One fixed x,y,z per actual layout, established by final S3 room frame and inherited by all S4 and S5 beats; no pose/caption-driven reframing.",
+      "captionPolicy": "UI Layout Lock: original bottom-centred card in every scene and beat, no compact/top/side exceptions. Fixed room frame uses its unchanged lower reservation.",
+      "repairMeasurement": "28Oct UI Layout Lock: include actual curtain rod sourcey414 and lowest walking feet sourcey740; screen top8 and12px gap above the original lower dialogue. Existing scene geometry, sprites and durations unchanged.",
+      "walkingOverscanWorldBottom": 1480,
+      "screenInsets": {
+        "top": 8,
+        "bottomReservationCredit": 8
+      }
+    },
+    "inheritance": "One hallRoomFrame per actual layout; final S3 frame and every S4 frame are identical. No historical hard-coded screen camera."
+  },
+  "closingHook": {
+    "durationMs": 3000,
+    "text": false,
+    "sound": false,
+    "actorAnchor": "S4-box",
+    "phases": [
+      {
+        "fromMs": 0,
+        "toMs": 900,
+        "action": "Crouch from small standing into authored box-touch at same floor root"
+      },
+      {
+        "fromMs": 900,
+        "toMs": 2400,
+        "action": "Lift hinged lid with authored box-open pose; reveal single cake inside"
+      },
+      {
+        "fromMs": 2400,
+        "toMs": 3000,
+        "action": "Hold quiet discovery; hand retains lid, no text or eating"
+      }
+    ],
+    "nextSceneState": "Small Alice crouching beside open box, cake intact, bottle empty on floor, cork and key on glass, gathered curtain, door closed. Independent S5 opening replays these exact3000ms; continuous reading never repeats."
+  },
+  "evidence": {
+    "board": ".artifacts/alice-in-wonderland/chapter-1-scene-4/measured-art-board-s4.png",
+    "density": ".artifacts/alice-in-wonderland/chapter-1-scene-4/pixel-density-check.json",
+    "sourceAlphaOnly": true
+  },
+  "approvalRequired": true,
+  "timingProposal": {
+    "status": "AUTHORING PROPOSAL ONLY; not implemented or measured in Automatic Reading",
+    "policy": "automatic-only55-85s; ideal60-80s; never adjust based on MP4",
+    "chapterTiming": {
+      "characterMs": 27,
+      "wordMs": 440,
+      "minimumHoldMs": 2000,
+      "linePauseMs": 1800
+    },
+    "dialogue": [
+      {
+        "text": "A bottle? ‘Drink me.’ That is a very confident bottle.",
+        "wordCount": 10,
+        "nominalMs": 6200
+      },
+      {
+        "text": "No poison marked. That is something.",
+        "wordCount": 6,
+        "nominalMs": 4440
+      },
+      {
+        "text": "Just a little.",
+        "wordCount": 3,
+        "nominalMs": 3120
+      },
+      {
+        "text": "Oh! I am smaller. How strange everything looks from here.",
+        "wordCount": 10,
+        "nominalMs": 6200
+      },
+      {
+        "text": "Now I could fit through that little door.",
+        "wordCount": 8,
+        "nominalMs": 5320
+      },
+      {
+        "text": "But the key! I left it on the table.",
+        "wordCount": 9,
+        "nominalMs": 5760
+      },
+      {
+        "text": "Perhaps I can climb up.",
+        "wordCount": 5,
+        "nominalMs": 4000
+      },
+      {
+        "text": "Too smooth. I cannot get a foothold.",
+        "wordCount": 7,
+        "nominalMs": 4880
+      },
+      {
+        "text": "A little box under the table. What is inside?",
+        "wordCount": 9,
+        "nominalMs": 5760
+      }
+    ],
+    "actionsMs": {
+      "pickup": 900,
+      "examine": 1000,
+      "uncorkAndPlaceCork": 800,
+      "drink": 2200,
+      "kneelPlaceBottle": 1400,
+      "standAgain": 900,
+      "uniformShrink": 4400,
+      "tryGlass": 2200,
+      "slipBack": 900,
+      "boxGrip": 500,
+      "closingHook": 3000
+    },
+    "routeMs": {
+      "table-to-bottle": 1038.4233447697875,
+      "bottle-to-open-floor": 489.8687284109191,
+      "small-alice-to-door": 1331.110223697735,
+      "door-to-glass": 1868.3191917519264,
+      "glass-to-box": 799.4557994730553,
+      "draw-box-clear": 289.58745430568075,
+      "settle-at-box": 229.82173399185405
+    },
+    "nominalAutomaticMs": 69926.58647640096,
+    "closingHookMs": 3000,
+    "mp4AcceptanceGate": false,
+    "limits": "Text boundary tick behavior and real pacing need implemented Automatic Reading. No pause overrides; no export requested."
+  },
+  "durationRevision": {
+    "date": "2026-10-25",
+    "preserveAllTextAndPauses": true,
+    "rangeGated": false
+  },
+  "supportPlanes": {
+    "table": {
+      "groundYSource": 690,
+      "groundYWorld": 1380
+    },
+    "bottleFloor": {
+      "groundYSource": 700,
+      "groundYWorld": 1400
+    },
+    "tablePropDepthWorld": 1381
+  }
+}

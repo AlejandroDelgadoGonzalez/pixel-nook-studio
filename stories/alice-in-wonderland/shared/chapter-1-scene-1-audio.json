@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "provider": "ElevenLabs",
+  "available": true,
+  "status": "four-local-mp3-files-ready",
+  "chapter": "chapter-1",
+  "sceneIndexes": [
+    0
+  ],
+  "sceneIds": [
+    "alice-c1-riverbank"
+  ],
+  "music": {
+    "asset": "melody",
+    "gain": 0.14
+  },
+  "assets": {
+    "melody": {
+      "src": "/stories/alice-in-wonderland/assets/audio/scene-1/s1-riverbank-melody.mp3"
+    },
+    "steps": {
+      "src": "/stories/alice-in-wonderland/assets/audio/scene-1/s1-rabbit-hurried-steps.mp3"
+    },
+    "watch": {
+      "src": "/stories/alice-in-wonderland/assets/audio/scene-1/s1-pocket-watch.mp3"
+    },
+    "rustle": {
+      "src": "/stories/alice-in-wonderland/assets/audio/scene-1/s1-burrow-rustle.mp3"
+    }
+  },
+  "cues": {
+    "alice-c1-s1-rabbit-emerge": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 2000,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s1-rabbit-arrive": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 3100,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s2-rabbit-first": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 900,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s2-alice-join": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 3400,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s2-alice-third": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 2000,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s2-alice-catchup": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 1700,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s2-rabbit-threshold": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 1200,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s2-rabbit-aperture": [
+      {
+        "asset": "rustle",
+        "atMs": 0,
+        "untilMs": 600,
+        "gain": 1.4
+      }
+    ],
+    "alice-c1-s2-rabbit-covered": [
+      {
+        "asset": "rustle",
+        "atMs": 0,
+        "untilMs": 650,
+        "gain": 1.4
+      }
+    ],
+    "alice-c1-s2-alice-approach": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 1400,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s2-hook-arrival": [
+      {
+        "asset": "steps",
+        "atMs": 0,
+        "untilMs": 600,
+        "loop": true,
+        "gain": 3
+      }
+    ],
+    "alice-c1-s1-watch-extract": [
+      {
+        "asset": "watch",
+        "atMs": 540,
+        "untilMs": 1800,
+        "gain": 0.5
+      }
+    ],
+    "alice-c1-s2-hook-hand": [
+      {
+        "asset": "rustle",
+        "atMs": 0,
+        "untilMs": 600,
+        "gain": 1.4
+      }
+    ],
+    "alice-c1-s2-hook-torso": [
+      {
+        "asset": "rustle",
+        "atMs": 0,
+        "untilMs": 950,
+        "gain": 1.4
+      }
+    ]
+  }
+}

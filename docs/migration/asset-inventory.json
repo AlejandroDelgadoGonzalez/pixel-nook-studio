@@ -1,0 +1,523 @@
+{
+  "policy": "Selected current references, including dynamic panorama loads; original pixels preserved.",
+  "assets": [
+    {
+      "source": "dist/assets/reference-village.png",
+      "target": "stories/the-first-path/assets/backgrounds/village.png",
+      "story": "the-first-path",
+      "sha256": "f418757fc41345629c002a71a20095541b18b8d42a96012b587bac00bf34f80e"
+    },
+    {
+      "source": "dist/assets/first-path-people-v2.png",
+      "target": "stories/the-first-path/assets/atlases/people.png",
+      "story": "the-first-path",
+      "sha256": "f173f992bee539cd6f1da99968783fc37133a209cf7435346dd758ea4faeead4"
+    },
+    {
+      "source": "dist/assets/reference-letter.png",
+      "target": "stories/the-first-path/assets/props/letter.png",
+      "story": "the-first-path",
+      "sha256": "53b5f1b5701420fcfc51071ac0c8c0ec0d5f1b4c5e618627554a880ab7e045da"
+    },
+    {
+      "source": "dist/assets/odyssey-logo-v1.png",
+      "target": "stories/the-odyssey/assets/branding/logo.png",
+      "story": "the-odyssey",
+      "sha256": "cb4f96d3f5f7f3620179a2ba16bddec0d7293bcb6c2f158995381339f0b74350"
+    },
+    {
+      "source": "dist/assets/odyssey-atlas-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/odyssey-core.png",
+      "story": "the-odyssey",
+      "sha256": "3d16b6dd8e6fc11ac6a4431b2cf4ee50a602097da74c4dfaafe8b06407b445b3"
+    },
+    {
+      "source": "dist/assets/odyssey-ithaca-atlas-v2.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/ithaca-atlas.png",
+      "story": "the-odyssey",
+      "sha256": "26bc9c6a35731321882577e9162767abd38b805b6240fc379b48248410f1c2f7"
+    },
+    {
+      "source": "dist/assets/odyssey-homecoming-people-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/homecoming-people.png",
+      "story": "the-odyssey",
+      "sha256": "661f696d65b1d742039a9538c3bd35e5bd2fa790c44ea68650afe96e0197008e"
+    },
+    {
+      "source": "dist/assets/odyssey-return-props-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/props/return-props.png",
+      "story": "the-odyssey",
+      "sha256": "5e00270e1176018aab015debb8e7c94ef777aa0468da1a59422a4d788dcee751"
+    },
+    {
+      "source": "dist/assets/odyssey-homecoming-environments-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/homecoming-environments.png",
+      "story": "the-odyssey",
+      "sha256": "c611cef86a7e7af4f08d84994a7d3025e143cef7f9361b3d2121d5a3dcd9b33f"
+    },
+    {
+      "source": "dist/assets/odyssey-ithaca-hosts-v2.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/ithaca-hosts.png",
+      "story": "the-odyssey",
+      "sha256": "5ea13b8af69b7e13d1e944dec41d448cacb240be96b5b016c1fc014a25a6bacc"
+    },
+    {
+      "source": "dist/assets/odyssey-unstrung-bow-v1.png",
+      "target": "stories/the-odyssey/assets/props/unstrung-bow.png",
+      "story": "the-odyssey",
+      "sha256": "83823ed14bf5def7df72d1bbf1c87b674bc78ef6dcae81ec7ad2948c4f691451"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-home-1-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-1.png",
+      "story": "the-odyssey",
+      "sha256": "67e7f4d0248e561e87b3a07edbe19849c15f8f5f1923ed2fd6b0b2583ffb26aa"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-home-2-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-2.png",
+      "story": "the-odyssey",
+      "sha256": "27b99552c7a8f4e28e07839f25bd8e053cff666eee6d18c738c84794b0e66bd0"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-home-3-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-3.png",
+      "story": "the-odyssey",
+      "sha256": "5b4b8e84d08dd0a8cb2ea94c2a5321ce856043a424bbec8a2ab92680758fd95f"
+    },
+    {
+      "source": "dist/assets/odyssey-landscape-home-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-home.png",
+      "story": "the-odyssey",
+      "sha256": "3ae8930a5b8af27fec39cd80ea1c024800d9fbb36d9a9e6520b293856c983bb8"
+    },
+    {
+      "source": "dist/assets/odyssey-chamber-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/chamber.png",
+      "story": "the-odyssey",
+      "sha256": "58dfbf59acf0fdcae1f523479ba6857fa6aabb450448a553779d5d7ac0520057"
+    },
+    {
+      "source": "dist/assets/odyssey-hall-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/hall.png",
+      "story": "the-odyssey",
+      "sha256": "c504530a8af5e539e807a77dc3087ec96ddc74f05fb7f973fbdea7ca90f91c0d"
+    },
+    {
+      "source": "dist/assets/odyssey-harbor-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/harbor.png",
+      "story": "the-odyssey",
+      "sha256": "2fff64041ebc238c789263b89fd16b5c71a5255e4c8c9eb1161a64f22a76113f"
+    },
+    {
+      "source": "dist/assets/odyssey-sparta-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/sparta.png",
+      "story": "the-odyssey",
+      "sha256": "7ba93898a0300de9484ab4b09f6cefb8ceea71991b6636f0370bbcc49062f1f7"
+    },
+    {
+      "source": "dist/assets/odyssey-ithaca-props-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/props/ithaca-props.png",
+      "story": "the-odyssey",
+      "sha256": "5826bd6935f7cd3b175b994ea91127e2acd629b0e0f133654c8b43f646c3efd8"
+    },
+    {
+      "source": "dist/assets/odyssey-sparta-landing-panorama-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/sparta-landing-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "3ca3331efb08a25d297a55400796083dea1d01721f69e7cc5856acc03237b8bb"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-sea-wide-full-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png",
+      "story": "the-odyssey",
+      "sha256": "804cc7c899fea7de3ad430f80e1de16f5c679d96d2d395dd9c3303f0e4c5812d"
+    },
+    {
+      "source": "dist/assets/odyssey-c2-chamber-panorama-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/c2-chamber-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "6ddcfe924ab36695b31b56aca0b0bfa65b8a1e5337128634279032e781bcf15c"
+    },
+    {
+      "source": "dist/assets/odyssey-c2-hall-panorama-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/c2-hall-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "0b9991061838510f061b654b3e7f238e02e17f6de3d1e5b5f026157cec36ede4"
+    },
+    {
+      "source": "dist/assets/odyssey-c2-harbor-panorama-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/c2-harbor-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "12d905fb2e6641ffa508678b13d71bf1fa01103195126316c764e96474d289d7"
+    },
+    {
+      "source": "dist/assets/odyssey-c2-sparta-panorama-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/c2-sparta-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "53b92cff6b5061fce4ddd0e76b53010a0f606abbdbf870dc600926f9218e0dbd"
+    },
+    {
+      "source": "dist/assets/odyssey-scheria-people-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/scheria-people.png",
+      "story": "the-odyssey",
+      "sha256": "6b0398966b4ef10d53fee6550a9745c721144ec0857253e242b233e61d6e2575"
+    },
+    {
+      "source": "dist/assets/odyssey-scheria-props-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/props/scheria-props.png",
+      "story": "the-odyssey",
+      "sha256": "e937fe6672a479821ceca27338eb833c6e59339c707926e51b89a4282665ccf9"
+    },
+    {
+      "source": "dist/assets/odyssey-crossing-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/crossing.png",
+      "story": "the-odyssey",
+      "sha256": "3cc5e12455ed3b8dc71fc0950bd7a023b86d9016d837d29c75af1e2967ff536d"
+    },
+    {
+      "source": "dist/assets/odyssey-river-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/river.png",
+      "story": "the-odyssey",
+      "sha256": "2b8c696278a3a9db3aed736bd3aebb3ab30f0086c433cb24fff827a3071c0ba9"
+    },
+    {
+      "source": "dist/assets/odyssey-phaeacia-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/phaeacia.png",
+      "story": "the-odyssey",
+      "sha256": "28b1427c0b29d3e2df0b1f1131234117393c96f4b8679536136dac2488acd777"
+    },
+    {
+      "source": "dist/assets/odyssey-cave-people-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/cave-people.png",
+      "story": "the-odyssey",
+      "sha256": "f28ccbe8e5f1024d34970f33157962db772d2d2d92796e05a0102c15e97637dc"
+    },
+    {
+      "source": "dist/assets/odyssey-under-ram-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/actions/under-ram.png",
+      "story": "the-odyssey",
+      "sha256": "a4464586c1423bf47be7592d2a7eac5413842eb8328480cc552bd91c2dcce05b"
+    },
+    {
+      "source": "dist/assets/odyssey-cyclops-actions-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/actions/cyclops-actions.png",
+      "story": "the-odyssey",
+      "sha256": "0cd83545868fafc3ca3b26d6f76c17466ce65ad30eee8fb70ca3c32caac7fcdd"
+    },
+    {
+      "source": "dist/assets/odyssey-cave-props-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/props/cave-props.png",
+      "story": "the-odyssey",
+      "sha256": "ef95fafdd468ee193701eec43f8eaf480030d5454eda4b757e57a0a4403e157d"
+    },
+    {
+      "source": "dist/assets/odyssey-return-coast-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/return-coast.png",
+      "story": "the-odyssey",
+      "sha256": "be51d8fd807b293d6f259569f191d8e4cb550962e83107e155f359ff6700d7ec"
+    },
+    {
+      "source": "dist/assets/odyssey-lotus-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/lotus.png",
+      "story": "the-odyssey",
+      "sha256": "ba698b22966ca1881914ff51f49698d117cbf490f8539b2fd58e9d7a6862818c"
+    },
+    {
+      "source": "dist/assets/odyssey-cyclops-cave-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/cyclops-cave.png",
+      "story": "the-odyssey",
+      "sha256": "2d991409fec00ad28340a9b643a30a95f63b5866f52038512ee6f30a854e121f"
+    },
+    {
+      "source": "dist/assets/odyssey-cave-approach-panorama-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/cave-approach.png",
+      "story": "the-odyssey",
+      "sha256": "fc90ac3139c526da0de6585f92b51d3c4f03386292323c5f181716299b31c10e"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-c4-0-ground-v4.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/cicones-coast.png",
+      "story": "the-odyssey",
+      "sha256": "3b9cf660cc8ea388c63fbf685921e13314381631ada8ba7c9b68cce62fde24eb"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-c4-1-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-1.png",
+      "story": "the-odyssey",
+      "sha256": "eecb9c7b794d14212f2839e103172780fde9f74b2fa6008a3dc940d2bc9daa85"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-c4-2-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-2.png",
+      "story": "the-odyssey",
+      "sha256": "575ab8291979603103c9961276f3d7efce44130583c9325bd08fb03ac93387f2"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-c4-3-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-3.png",
+      "story": "the-odyssey",
+      "sha256": "4acd66e576f148754234a93ab17d170412be8714ae1d6472cc59f1798853b25d"
+    },
+    {
+      "source": "dist/assets/odyssey-landscape-c4-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-c4.png",
+      "story": "the-odyssey",
+      "sha256": "88441e17aa86318a303181f87f2c0e83172e3eedb482e6dfe629d3b4d84b49a9"
+    },
+    {
+      "source": "dist/assets/odyssey-aeaea-people-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/aeaea-people.png",
+      "story": "the-odyssey",
+      "sha256": "274e5b6680ef75b8afcd56572a3fa66bfd5734d016eb85b9ad331284179a6dd8"
+    },
+    {
+      "source": "dist/assets/odyssey-aeaea-props-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/props/aeaea-props.png",
+      "story": "the-odyssey",
+      "sha256": "f65f026c62069b83bfbc8287313cd5588ef7d824f70f3e2808a0640d7be33770"
+    },
+    {
+      "source": "dist/assets/odyssey-winds-actions-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/actions/winds-actions.png",
+      "story": "the-odyssey",
+      "sha256": "9ed0464f3140c064427a844e64cc6c4ed33d0c51d7bb2e41fdae3d677ca71e12"
+    },
+    {
+      "source": "dist/assets/odyssey-aeolus-court-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/aeolus-court.png",
+      "story": "the-odyssey",
+      "sha256": "1006ca3014469d39e12a9583c2982d459bf2dd713e82a0f0d22ed314ba14c5eb"
+    },
+    {
+      "source": "dist/assets/odyssey-home-waters-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/home-waters.png",
+      "story": "the-odyssey",
+      "sha256": "988b760d3f153c34aee1892195bc7781114271c57a45361d93d051639fadfcd5"
+    },
+    {
+      "source": "dist/assets/odyssey-giant-harbor-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/giant-harbor.png",
+      "story": "the-odyssey",
+      "sha256": "d9ee4bff0f1f55add36e7adc0a4d7a5d40fcc7ae786f7656d13984e07157fedd"
+    },
+    {
+      "source": "dist/assets/odyssey-circe-court-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/circe-court.png",
+      "story": "the-odyssey",
+      "sha256": "0f25c71567c4e5fa44355d9fcb2cf9c052b718a8850ace1e4f29e66b5adfb33a"
+    },
+    {
+      "source": "dist/assets/odyssey-aeolus-landing-panorama-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/aeolus-landing-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "ece7ac2569b8b03211c868464894029a718cb3ee559f150a6443d4c096aa1346"
+    },
+    {
+      "source": "dist/assets/odyssey-circe-landing-panorama-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/circe-landing-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "ba1aeb1b93f93b70fb5b188044ab3b5a66831aa9dfdc58e780787bd64185abac"
+    },
+    {
+      "source": "dist/assets/odyssey-fleet-sailors-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/fleet-sailors.png",
+      "story": "the-odyssey",
+      "sha256": "cb0e66880997d251411c766f6a30913e9c5a510896eb5bd03647fa4957bbb02a"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-c5-0-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-c5-0.png",
+      "story": "the-odyssey",
+      "sha256": "e6be705e1c42d9a963d5803c6c54764e179c5e36a942fefd0d912970ad29b08c"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-c5-1-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-c5-1.png",
+      "story": "the-odyssey",
+      "sha256": "8ea7444105c05d4410400c40d5230b97972d89f3fd64466b9af52fc85fd5131d"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-harbor-wide-ground-v4.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-harbor-wide-ground.png",
+      "story": "the-odyssey",
+      "sha256": "c69a71b706ff41ab263d4855b301e7c906ef9fec63560808ac39485f139dc8e8"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-c5-3-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-c5-3.png",
+      "story": "the-odyssey",
+      "sha256": "576208c6253444fb3c466a4397b309140797b3946c5dc6b68174c627c583289f"
+    },
+    {
+      "source": "dist/assets/odyssey-landscape-c5-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-c5.png",
+      "story": "the-odyssey",
+      "sha256": "7089acbbfb3eb30ee705f69612386a1594cab5d88537b3b739070ff309120e45"
+    },
+    {
+      "source": "dist/assets/odyssey-landscape-harbor-wide-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-harbor-wide.png",
+      "story": "the-odyssey",
+      "sha256": "b849cf4f65f9d8c3d3a64e632a260215aca2caab855c783765b497a37390c4a6"
+    },
+    {
+      "source": "dist/assets/odyssey-underworld-people-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/characters/underworld-people.png",
+      "story": "the-odyssey",
+      "sha256": "93f134e6cc876e05b07cb8d942210295dbd777b54f5df7eeaca33d72349b0a4d"
+    },
+    {
+      "source": "dist/assets/odyssey-voyage-environments-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/voyage-environments.png",
+      "story": "the-odyssey",
+      "sha256": "0a7bf5ec6b55c8045755339cd2dfef7b34f6b08455d7e9b8a23a2c391ddf2b56"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-voyage-0-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-0.png",
+      "story": "the-odyssey",
+      "sha256": "a82b80b87aa31345ed8c2b11bc5069e99579cd595a8fcc510d9b5a1bb8374764"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-voyage-1-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-1.png",
+      "story": "the-odyssey",
+      "sha256": "f29ba96df82058cf534de9db1c7821424a6ac06cbaa06cffc6d4be84c123dd1c"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-voyage-2-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-2.png",
+      "story": "the-odyssey",
+      "sha256": "5b671a218860a2a3efbcb7d12ee90fa18cffe6a2d4b46489e7c3af88a944f494"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-voyage-3-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-voyage-3.png",
+      "story": "the-odyssey",
+      "sha256": "92a6027c0257d08fff3fc028ac9cb70a0b85ef3d754907b07102b7adb2864ad9"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-passage-1-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-passage-1.png",
+      "story": "the-odyssey",
+      "sha256": "fd8e73e6e1ebb22e5c474cbef2e14725066768df67b46dc2f54a18196ad19953"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-passage-2-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-passage-2.png",
+      "story": "the-odyssey",
+      "sha256": "f672cf271a440814aac1cedcb0b504296f81e56b553529eb00d47dd377daa405"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-passage-3-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-passage-3.png",
+      "story": "the-odyssey",
+      "sha256": "b2cd1d4eb639ddb59922ab8ccdc29bfb20d0e526632ca208f58ace77dde24061"
+    },
+    {
+      "source": "dist/assets/odyssey-panorama-home-0-v3.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-home-0.png",
+      "story": "the-odyssey",
+      "sha256": "50b88421490d099140836943dc1b0a22ad2f85e55938608423f66c8af2dc3cf0"
+    },
+    {
+      "source": "dist/assets/odyssey-landscape-voyage-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-voyage.png",
+      "story": "the-odyssey",
+      "sha256": "b220969bd84cef71fe2f8c3dcdca6fc70a74c99e5ce2f7644e9cb4790ee53b38"
+    },
+    {
+      "source": "dist/assets/odyssey-landscape-sea-wide-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-sea-wide.png",
+      "story": "the-odyssey",
+      "sha256": "2975653e05313ae5623c81a401213e39f4ab531067a58158afc598b1523e9aed"
+    },
+    {
+      "source": "dist/assets/odyssey-landscape-passage-v2.png",
+      "target": "stories/the-odyssey/assets/backgrounds/portrait-fill/landscape-passage.png",
+      "story": "the-odyssey",
+      "sha256": "7878396a6fdff6413878adc19be5250031c3a9a977eae323b641800495945d49"
+    },
+    {
+      "source": "dist/assets/odyssey-return-actions-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/actions/return-actions.png",
+      "story": "the-odyssey",
+      "sha256": "fca9f7f8849241401c13a4cb26f1ea3e34a3840f211b390c35df9cb519ac7369"
+    },
+    {
+      "source": "dist/assets/odyssey-disguise-sea-actions-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/actions/disguise-sea-actions.png",
+      "story": "the-odyssey",
+      "sha256": "2e9a248fee06cbe325632c898e1bc540e0988cfb793606f1842b71e664593890"
+    },
+    {
+      "source": "dist/assets/odyssey-passage-environments-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/passage-environments.png",
+      "story": "the-odyssey",
+      "sha256": "c44749f683f32f396640ffee3c4819fa24c326902e4392b2e24f0a0ac5cf59b4"
+    },
+    {
+      "source": "dist/assets/odyssey-sun-landing-panorama-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/panoramas/sun-landing-panorama.png",
+      "story": "the-odyssey",
+      "sha256": "6807034ab589c0d880d98a3030742c78208fea65346bc901ca51ca61449c5ac3"
+    },
+    {
+      "source": "dist/assets/odyssey-bow-actions-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/actions/bow-actions.png",
+      "story": "the-odyssey",
+      "sha256": "c808d03bbe329f4cd4929d4bda5ce95c130f1db44aab91c7ca44d753b32b4a3b"
+    },
+    {
+      "source": "dist/assets/odyssey-nurse-kneeling-v1.png",
+      "target": "stories/the-odyssey/assets/atlases/actions/nurse-kneeling.png",
+      "story": "the-odyssey",
+      "sha256": "485983de6a555df5a0d784ed882c48452f5e2f188f95827de78d502c3bc75a83"
+    },
+    {
+      "source": "dist/assets/odyssey-island-v1.png",
+      "target": "stories/the-odyssey/assets/backgrounds/native/island.png",
+      "story": "the-odyssey",
+      "sha256": "17524bac0a7b38bded023e6eecbd127908c5a64f39201470dc2b27a1a4f0ac47"
+    },
+    {
+      "source": "dist/assets/second-cup-terrace-v2.png",
+      "target": "stories/the-second-cup/assets/backgrounds/terrace.png",
+      "story": "the-second-cup",
+      "sha256": "a7b0535b6fc3fe30a4836b422ac38b5b6d36a7db848f8aa52a171d2f8926518d"
+    },
+    {
+      "source": "dist/assets/second-cup-atlas-v2.png",
+      "target": "stories/the-second-cup/assets/atlases/terrace-props.png",
+      "story": "the-second-cup",
+      "sha256": "ec9e9c72d118df392a7f6cf850c25eb4e00584e0f0089f8d79dfbb87883a862f"
+    },
+    {
+      "source": "dist/assets/second-cup-people-v3.png",
+      "target": "stories/the-second-cup/assets/atlases/people.png",
+      "story": "the-second-cup",
+      "sha256": "a27b8326421264d6ccd34b8664c77f528836d097c10f226a672fca5f3c898483"
+    }
+  ],
+  "excluded": [
+    "characters-atlas.png",
+    "odyssey-aeolus-court-v1.png",
+    "odyssey-cave-approach-panorama-v1.png",
+    "odyssey-circe-court-v1.png",
+    "odyssey-ithaca-atlas-v1.png",
+    "odyssey-landscape-c2-v2.png",
+    "odyssey-panorama-c4-0-v3.png",
+    "odyssey-panorama-harbor-wide-full-v3.png",
+    "props-atlas.png",
+    "reference-people.png",
+    "second-cup-atlas.png",
+    "second-cup-terrace.png",
+    "taller.png"
+  ],
+  "vendor": {
+    "source": "dist/assets/phaser.min.js",
+    "target": "vendor/phaser/phaser.min.js",
+    "sha256": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7"
+  }
+}

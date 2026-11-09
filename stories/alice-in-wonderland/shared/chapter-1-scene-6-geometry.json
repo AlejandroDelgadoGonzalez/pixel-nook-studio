@@ -1,0 +1,1011 @@
+{
+  "schemaVersion": 1,
+  "status": "Gates1/2A approved29Oct2026; S6 implemented in main thread. Gate4 evidence: .artifacts/qa/alice-in-wonderland/pool-of-tears/.",
+  "measurement": {
+    "date": "2026-10-28",
+    "owner": "NOOK applying02/03 sequentially in main thread",
+    "source": "Approved1664x936 Hall panorama, current actual S5 final layers and normalized S6 sprites"
+  },
+  "environment": {
+    "asset": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+    "sourceSize": [
+      1664,
+      936
+    ],
+    "worldSize": [
+      3328,
+      1872
+    ],
+    "sourceToWorldScale": 2,
+    "repaintedPixels": 0,
+    "panoramaUnchanged": true
+  },
+  "camera": {
+    "inherit": "chapter-1-scene-4-geometry.json#camera.roomLock",
+    "worldRect": [
+      1467,
+      828,
+      2015,
+      1480
+    ],
+    "fixedXYZ": true,
+    "intraSceneDissolves": 0,
+    "perLayout": [
+      {
+        "width": 360,
+        "height": 800,
+        "frame": {
+          "x": 1741,
+          "y": 1258.1787709497207,
+          "z": 0.6532846715328468,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 560,
+          "right": 346,
+          "bottom": 736
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "frame": {
+          "x": 1741,
+          "y": 1270.5781990521327,
+          "z": 0.7033333333333334,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 600.484375,
+          "right": 376,
+          "bottom": 776.484375
+        }
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "frame": {
+          "x": 1741,
+          "y": 1270.7124463519312,
+          "z": 0.7766666666666666,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 681.453125,
+          "right": 416,
+          "bottom": 857.453125
+        }
+      },
+      {
+        "width": 1366,
+        "height": 600,
+        "frame": {
+          "x": 1741,
+          "y": 1340.5045045045044,
+          "z": 0.5663265306122449,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 303,
+          "top": 392,
+          "right": 1063,
+          "bottom": 546
+        }
+      },
+      {
+        "width": 1366,
+        "height": 641,
+        "frame": {
+          "x": 1741,
+          "y": 1314.353982300885,
+          "z": 0.576530612244898,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 303,
+          "top": 429.3125,
+          "right": 1063,
+          "bottom": 583.3125
+        }
+      },
+      {
+        "width": 1536,
+        "height": 730,
+        "frame": {
+          "x": 1741,
+          "y": 1270.3561643835615,
+          "z": 0.6083333333333333,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 388,
+          "top": 510.3125,
+          "right": 1148,
+          "bottom": 664.3125
+        }
+      },
+      {
+        "width": 1440,
+        "height": 760,
+        "frame": {
+          "x": 1741,
+          "y": 1270.421052631579,
+          "z": 0.6333333333333333,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 340,
+          "top": 537.609375,
+          "right": 1100,
+          "bottom": 691.609375
+        }
+      },
+      {
+        "width": 1920,
+        "height": 947,
+        "frame": {
+          "x": 1741,
+          "y": 1270.7328405491025,
+          "z": 0.7891666666666667,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 580,
+          "top": 707.78125,
+          "right": 1340,
+          "bottom": 861.78125
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "frame": {
+          "x": 1741,
+          "y": 1270.888888888889,
+          "z": 0.9,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 580,
+          "top": 828.8125,
+          "right": 1340,
+          "bottom": 982.8125
+        }
+      },
+      {
+        "width": 800,
+        "height": 800,
+        "frame": {
+          "x": 1741,
+          "y": 1270.5,
+          "z": 0.6666666666666666,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 20,
+          "top": 580,
+          "right": 780,
+          "bottom": 728
+        }
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "frame": {
+          "x": 1741,
+          "y": 1271.0625,
+          "z": 1.0666666666666667,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 20,
+          "top": 1016.8125,
+          "right": 700,
+          "bottom": 1164.8125
+        }
+      }
+    ],
+    "uiLayoutLock": "Original lower centred card, identical to S1. Usual viewports only as approved.",
+    "viewportScope": {
+      "authorization": "Alejandro selected usual sizes and retaining the approved panorama on28Oct2026",
+      "layouts": [
+        [
+          360,
+          800
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          1366,
+          600
+        ],
+        [
+          1366,
+          641
+        ],
+        [
+          1536,
+          730
+        ],
+        [
+          1440,
+          760
+        ],
+        [
+          1920,
+          947
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          800,
+          800
+        ],
+        [
+          720,
+          1280
+        ]
+      ],
+      "extremeAspectRatiosExcluded": true
+    },
+    "changesXYZ": 0
+  },
+  "inheritance": {
+    "implemented": false,
+    "alice": {
+      "feetWorld": [
+        1830,
+        1440
+      ],
+      "bodyScale": 1.5,
+      "facing": "left"
+    },
+    "rabbit": {
+      "feetWorld": [
+        1520,
+        1070
+      ],
+      "visible": 1,
+      "facing": "right",
+      "fanOwner": "white-rabbit",
+      "glovesOwner": "white-rabbit"
+    },
+    "box": {
+      "baseSource": [
+        856.4484011940299,
+        690
+      ],
+      "open": true,
+      "empty": true,
+      "visible": true
+    },
+    "keyOwner": null,
+    "tearStage": 3,
+    "camera": "inherit exact S5 final x/y/z; no same-room dissolve"
+  },
+  "anchors": {
+    "alice": {
+      "sourcePoint": [
+        915,
+        720
+      ],
+      "point": [
+        1830,
+        1440
+      ]
+    },
+    "rabbitStart": {
+      "sourcePoint": [
+        760,
+        535
+      ],
+      "point": [
+        1520,
+        1070
+      ]
+    },
+    "rabbitThreshold": {
+      "sourcePoint": [
+        750,
+        478
+      ],
+      "point": [
+        1500,
+        956
+      ]
+    },
+    "rabbitInside": {
+      "sourcePoint": [
+        750,
+        450
+      ],
+      "point": [
+        1500,
+        900
+      ]
+    },
+    "glovesFloor": {
+      "sourcePoint": [
+        740,
+        544
+      ],
+      "point": [
+        1480,
+        1088
+      ]
+    },
+    "fanLanding": {
+      "sourcePoint": [
+        758.2491666666666,
+        578.5491666666667
+      ],
+      "point": [
+        1516.4983333333332,
+        1157.0983333333334
+      ]
+    },
+    "fanRest": {
+      "sourcePoint": [
+        809,
+        590
+      ],
+      "point": [
+        1618,
+        1180
+      ]
+    },
+    "waterEntry": {
+      "sourcePoint": [
+        800,
+        722
+      ],
+      "point": [
+        1600,
+        1444
+      ]
+    },
+    "aliceFloat": {
+      "sourcePoint": [
+        825,
+        724
+      ],
+      "point": [
+        1650,
+        1448
+      ]
+    },
+    "aliceClose": {
+      "sourcePoint": [
+        838,
+        724
+      ],
+      "point": [
+        1676,
+        1448
+      ]
+    },
+    "mouse": {
+      "sourcePoint": [
+        794,
+        724
+      ],
+      "point": [
+        1588,
+        1448
+      ]
+    },
+    "alicePickup": {
+      "sourcePoint": [
+        815,
+        590
+      ],
+      "point": [
+        1630,
+        1180
+      ]
+    },
+    "aliceShrink": {
+      "sourcePoint": [
+        815,
+        590
+      ],
+      "point": [
+        1630,
+        1180
+      ]
+    },
+    "aliceSwim": {
+      "sourcePoint": [
+        850,
+        724
+      ],
+      "point": [
+        1700,
+        1448
+      ]
+    },
+    "mouseEntry": {
+      "sourcePoint": [
+        662,
+        618
+      ],
+      "point": [
+        1324,
+        1236
+      ]
+    }
+  },
+  "walkPaths": {
+    "rabbitToDoor": {
+      "sourceWaypoints": [
+        [
+          760,
+          535
+        ],
+        [
+          754,
+          494
+        ],
+        [
+          750,
+          478
+        ]
+      ],
+      "waypoints": [
+        [
+          1520,
+          1070
+        ],
+        [
+          1508,
+          988
+        ],
+        [
+          1500,
+          956
+        ]
+      ],
+      "mode": "walk",
+      "runSpeed": 650,
+      "walkSpeed": 235,
+      "durationMs": 555.149039688542,
+      "facingByLeg": [
+        "back",
+        "back"
+      ],
+      "actualPose": "Reuse original S1 back sprite, EMPTY hands;45degree slope rule. Do not use left-running art on the steep segments."
+    },
+    "rabbitThroughDoor": {
+      "sourceWaypoints": [
+        [
+          750,
+          478
+        ],
+        [
+          750,
+          450
+        ]
+      ],
+      "waypoints": [
+        [
+          1500,
+          956
+        ],
+        [
+          1500,
+          900
+        ]
+      ],
+      "mode": "walk",
+      "runSpeed": 650,
+      "walkSpeed": 235,
+      "durationMs": 316.802181416183,
+      "facingByLeg": [
+        "back"
+      ],
+      "actualPose": "Reuse original S1 back sprite, EMPTY hands;45degree slope rule. Do not use left-running art on the steep segments."
+    },
+    "aliceSlip": {
+      "sourceWaypoints": [
+        [
+          800,
+          722
+        ],
+        [
+          810,
+          724
+        ],
+        [
+          825,
+          724
+        ]
+      ],
+      "mode": "authored short slip then immediate float"
+    },
+    "closingSwim": {
+      "sourceWaypoints": [
+        [
+          850,
+          724
+        ],
+        [
+          838,
+          724
+        ]
+      ],
+      "durationMs": 3000,
+      "constantSurfaceSpeedWorldPerSecond": 8,
+      "facing": "left",
+      "notAThirdWalkingSpeed": true
+    },
+    "mouseToWater": {
+      "sourceWaypoints": [
+        [
+          662,
+          618
+        ],
+        [
+          794,
+          724
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1324,
+          "y": 1236
+        },
+        {
+          "x": 1588,
+          "y": 1448
+        }
+      ],
+      "mode": "walk",
+      "walkSpeed": 140,
+      "runSpeed": 270,
+      "durationMs": 2172.7648423654664,
+      "rockOriginSourceBounds": [
+        645,
+        602,
+        680,
+        632
+      ],
+      "facingByLeg": [
+        "right"
+      ]
+    },
+    "aliceToFan": {
+      "sourceWaypoints": [
+        [
+          915,
+          720
+        ],
+        [
+          951,
+          720
+        ],
+        [
+          951,
+          590
+        ],
+        [
+          815,
+          590
+        ]
+      ],
+      "waypoints": [
+        [
+          1830,
+          1440
+        ],
+        [
+          1902,
+          1440
+        ],
+        [
+          1902,
+          1180
+        ],
+        [
+          1630,
+          1180
+        ]
+      ],
+      "mode": "walk",
+      "walkSpeed": 235,
+      "runSpeed": 650,
+      "bodyScale": 1.5,
+      "durationMs": 1615.6609029435128,
+      "facingByLeg": [
+        "right",
+        "back",
+        "back",
+        "left"
+      ]
+    },
+    "aliceToPool": {
+      "sourceWaypoints": [
+        [
+          815,
+          590
+        ],
+        [
+          744,
+          590
+        ],
+        [
+          744,
+          720
+        ],
+        [
+          800,
+          722
+        ]
+      ],
+      "waypoints": [
+        [
+          1630,
+          1180
+        ],
+        [
+          1488,
+          1180
+        ],
+        [
+          1488,
+          1440
+        ],
+        [
+          1600,
+          1444
+        ]
+      ],
+      "mode": "walk",
+      "walkSpeed": 235,
+      "runSpeed": 650,
+      "bodyScale": 0.32,
+      "durationMs": 6307.7156106660705,
+      "facingByLeg": [
+        "left",
+        "front",
+        "front",
+        "right"
+      ]
+    }
+  },
+  "growth": {
+    "from": 1.5,
+    "through": 0.85,
+    "to": 0.32,
+    "fixedFeetSource": [
+      815,
+      590
+    ],
+    "perspectiveAppliedOnce": true,
+    "stopAtRelease": true,
+    "cameraZoomChanges": 0,
+    "firstDurationMs": 5600,
+    "lastDurationMs": 2500,
+    "simultaneousMouseWalk": false
+  },
+  "props": {
+    "static": [
+      "key",
+      "cork",
+      "table",
+      "open-box-base",
+      "open-box-lid",
+      "floor-bottle"
+    ],
+    "afterLandingStatic": [
+      "gloves",
+      "fan-until-picked-up",
+      "fan-after-final-release"
+    ],
+    "inheritExactS5Layers": "inherited-s5.json",
+    "fan": {
+      "reuse": "S5 normalized rabbit-carry-look fan crop; no new prop design",
+      "normalizedCrop": [
+        62,
+        58,
+        88,
+        82
+      ],
+      "airborneSourceWaypoints": [
+        [
+          774.9333333333,
+          516.3333333333
+        ],
+        [
+          770,
+          548
+        ],
+        [
+          758.2491666666666,
+          578.5491666666667
+        ]
+      ],
+      "flightSeconds": 0.75,
+      "pickupPose": "collect-fan",
+      "pickupFacing": "left",
+      "heldPose": "fan-cheek",
+      "heldFacing": "left",
+      "bodyScaleDoesNotScaleProp": true,
+      "exactReusableGripCrop": [
+        62,
+        58,
+        88,
+        82
+      ],
+      "pickupPalmSource": [
+        754.2225,
+        577.5425
+      ],
+      "gripNormalized": [
+        5,
+        22
+      ],
+      "floorScale": 1.0066666666666666,
+      "heldScale": 1.0066666666666666,
+      "flightScaleRange": [
+        0.9333333333,
+        1.0066666666666666
+      ],
+      "liftHandSourceWaypoints": [
+        [
+          754.2225,
+          577.5425
+        ],
+        [
+          790,
+          540
+        ],
+        [
+          796.125,
+          538.4083333333
+        ]
+      ],
+      "transitionPolicy": "Short gravity fall beside Rabbit, no crossing table. Alice walks the right/back clear aisle, stops then bends LEFT. Measured palm and fan handle meet. Continuous pose transition still requires Gate4.",
+      "staticFloorLock": [
+        "texture",
+        "crop",
+        "origin",
+        "scale",
+        "rotation",
+        "flip",
+        "alpha",
+        "x",
+        "y",
+        "supportDepth"
+      ],
+      "flightDurationMs": 750,
+      "releaseSourceWaypoints": [
+        [
+          808.96,
+          573.49
+        ],
+        [
+          809,
+          590
+        ]
+      ]
+    },
+    "gloves": {
+      "reuse": "Exact S5 rabbit-carry-look crop [16,92,26,106], same pixels and physical size in hand and on floor",
+      "ownerStates": [
+        "white-rabbit",
+        "floor"
+      ],
+      "floorSource": [
+        740,
+        544
+      ],
+      "normalizedCrop": [
+        16,
+        92,
+        26,
+        106
+      ],
+      "floorScale": 0.9333333333333333,
+      "airReleaseBaseSource": [
+        749.7333333333,
+        527.5333333333
+      ],
+      "floorFootClearanceSourcePx": 2.46
+    },
+    "water": {
+      "asset": "stories/alice-in-wonderland/assets/atlases/pool-water-c1-s6-v2.png",
+      "sourceBounds": [
+        735,
+        684,
+        1005,
+        740
+      ],
+      "normalizedWorldSize": [
+        540,
+        112
+      ],
+      "worldMapping": 2,
+      "scaleSourcePerNormalizedPixel": 0.5,
+      "oldTearsRetained": false,
+      "reveal": "Expansion occurs only during S5 cry; one unchanged EatMe.pool sprite continues into S6, without a second overlay.",
+      "inheritedFullyFormedFromScene5": true
+    },
+    "mouse": {
+      "physicalScale": 1.4,
+      "normalizedSwimmingHeightWorld": 18,
+      "effectiveHeightWorld": 25.2,
+      "bodyScaleNeverMagicallyReduced": true,
+      "visibleBeforeMoment11": false,
+      "entrySeconds": 2.472764842365466
+    }
+  },
+  "occluders": [
+    {
+      "id": "left-door-arch",
+      "sourceAperturePolygon": [
+        [
+          674,
+          474
+        ],
+        [
+          674,
+          280
+        ],
+        [
+          682,
+          250
+        ],
+        [
+          702,
+          224
+        ],
+        [
+          724,
+          224
+        ],
+        [
+          748,
+          248
+        ],
+        [
+          766,
+          285
+        ],
+        [
+          766,
+          474
+        ]
+      ],
+      "openInsertSourceBounds": [
+        672,
+        224,
+        768,
+        474
+      ],
+      "originalStonePixelsNeverRepainted": true,
+      "closingLeafSource": "Exact original panorama pixels within the aperture",
+      "rabbitMustFitSourceBox": [
+        737,
+        408,
+        763,
+        451
+      ],
+      "earCoverage": "Fully inside original closed leaf before visible=0; no horizontal roof crop and no floating ear",
+      "depthPolicy": "Door threshold depth948; actor inside at870 sorts behind the closing leaf."
+    }
+  ],
+  "supportPlanes": {
+    "inherit": {
+      "tableWorld": 1380,
+      "restingTablePropsWorld": 1381,
+      "bottleFloorWorld": 1400,
+      "boxFloorWorld": 1380,
+      "aliceWorld": 1440,
+      "tearsFloorWorld": 1468,
+      "policy": "Furniture/support Y-sorting. Carried props follow actor ground plane with local ordering; static props never change with a pose. Airborne tears inherit Alice until impact."
+    },
+    "glovesWorld": 1088,
+    "fanLandingWorld": 1157.0983333333334,
+    "fanRestWorld": 1180,
+    "waterWorld": 1480,
+    "swimmers": "sort by local waterline Y; lower body occluded by water alpha only",
+    "tablePropDepthWorld": 1381,
+    "tablePropDepthRule": "Table ground depth +1 from frame zero; resting key, table bottle and cork. Keep foreground actor foot sorting."
+  },
+  "closing": {
+    "durationMs": 3000,
+    "text": false,
+    "sound": false,
+    "chapterComplete": true,
+    "nextChapterTeaser": false,
+    "minimumCentreDistanceWorld": 88
+  },
+  "timing": {
+    "automaticNominalSeconds": 64.54862041660958,
+    "phase": "initial-creation",
+    "validRangeSeconds": [
+      55,
+      85
+    ],
+    "MP4NotADurationGate": true,
+    "individualBeatMaximumSeconds": 10,
+    "moment6Seconds": 5.6,
+    "mouseEntranceSeconds": 3.5,
+    "beats": [
+      4.3,
+      5.19,
+      1.715243903,
+      3.115660902943513,
+      5.74,
+      5.6,
+      6.94,
+      7.10771561066607,
+      2.2,
+      5.92,
+      6,
+      7.72,
+      3
+    ]
+  },
+  "reviewNotes": [
+    "Revision requested29Oct2026: no20s beat; Alice1.50->0.85->0.32; late near-shore Mouse; fan falls beside Rabbit.",
+    "Preserve finalS5 frame; giant Alice moves only on measured right/back aisle then bends left.",
+    "No S6 runtime implementation. Standard fixed camera and lower caption preserved.",
+    "29Oct correction: complete original Rabbit feet, walk235 short doorway, stable leaf/actor ordering; Alice and Mouse mandatory travel moved to unskippable visual actions. No dialogue or pauses removed."
+  ],
+  "opening": {
+    "continuousReading": "Exact approved S5 final state, no replay, cut or dissolve",
+    "independentExportReplay": {
+      "from": "alice-c1-eat-hook-enter",
+      "through": "alice-c1-eat-hook-hold",
+      "durationMs": 3000
+    },
+    "logoDurationMs": 3000
+  },
+  "slip": {
+    "reusePose": "S5 growth-surprise, complete shoes",
+    "bodyScale": 0.32,
+    "wholeBodyRotationDegrees": [
+      0,
+      12
+    ],
+    "noSpriteSquash": true,
+    "noDetachedShoe": true,
+    "contactSurfaceSource": [
+      800,
+      722
+    ],
+    "surfacePose": "float-safe",
+    "headNeverDisappears": true
+  },
+  "approval": {
+    "gates": [
+      1,
+      "2A"
+    ],
+    "date": "2026-10-29",
+    "source": "Explicit Alejandro approval of revised13moments64.55s and revised measured board. Main thread only."
+  }
+}

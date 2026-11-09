@@ -1,0 +1,1948 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "scope": {
+    "chapter": "chapter-1",
+    "scenes": [
+      "A Small Surprise",
+      "Where the Ground Gives Way",
+      "Solid Ground",
+      "Drink Me",
+      "Eat Me"
+    ],
+    "gate": "New S3 Gates1/2A approved by Alejandro; implementation and QA in main thread",
+    "productionCodeAuthorized": true,
+    "audio": "Silent chapter-1 phase"
+  },
+  "measurement": {
+    "date": "2026-10-20",
+    "owner": "NOOK applying 03 profile directly in main thread",
+    "method": "v5 source inspection and real-alpha pose/rim contact measurement; exact local preservation comparison against v4.",
+    "evidence": "/.artifacts/alice-in-wonderland/small-burrow/",
+    "assetHashes": "These exact selected final files; any art change invalidates affected geometry.",
+    "hedgeSeamCorrection": {
+      "date": "2026-10-20",
+      "mouthAndCoordinates": "unchanged from approved v5",
+      "evidence": "/.artifacts/alice-in-wonderland/hedge-seam/integration.json"
+    }
+  },
+  "assets": {
+    "alice": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "alpha": {
+        "zeroPixels": 939632,
+        "partialAboveThresholdPixels": 0,
+        "policy": "Source has hard0/255 alpha, anatomically calibrated68logical samples; renderer retains complete2world-pixel blocks."
+      },
+      "originalSourceSha256": "6b12217bc5c3431f3184e8a277de43bf8a451640d723d2893cafd65427f15b9b",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "sister": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "dimensions": [
+        2048,
+        95
+      ],
+      "sha256": "6410964696df619363731fc4414a9ab2db814cf4f8350d691b9eb266a9a592d2",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "alpha": {
+        "zeroPixels": 888082,
+        "partialAboveThresholdPixels": 0,
+        "policy": "Source has hard0/255 alpha, anatomically calibrated68logical samples; renderer retains complete2world-pixel blocks."
+      },
+      "originalSourceSha256": "35fc111a6fa92a042b8c7b1c58adb649a90140621a48e76304582983169c7ee6",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "white-rabbit": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "dimensions": [
+        2048,
+        105
+      ],
+      "sha256": "77d116d308807086420e41abce7f9cc7ab79639df6c8b22a62b0e7a5665bdfe6",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "alpha": {
+        "zeroPixels": 953806,
+        "partialAboveThresholdPixels": 0,
+        "policy": "Source has hard0/255 alpha, anatomically calibrated68logical samples; renderer retains complete2world-pixel blocks."
+      },
+      "originalSourceSha256": "7d6cea306f1671beb4fab69c57dfce1a69aa7a25532cf7487443a23bf7ea1e40",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "props": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/props-s1-v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7fa0b851590a74454fdc270d26b984bccdd17ebded7fda8bd5f5ad9a5520ab71",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "alpha": {
+        "zeroPixels": 1089643,
+        "partialAboveThresholdPixels": 0,
+        "policy": "Source has hard0/255 alpha, anatomically calibrated68logical samples; renderer retains complete2world-pixel blocks."
+      },
+      "originalSourceSha256": "bade6ba9dff6b42c95933bf993396982033acd8a6a75002217120ee0d9cf1d6c",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "riverbank": {
+      "url": "/stories/alice-in-wonderland/assets/environments/riverbank-panorama-v6.png",
+      "dimensions": [
+        1881,
+        836
+      ],
+      "sha256": "d4014828d8d681f74eeeea425c77cd9c8ed6950f75e42da6993596e1a79071dc",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "7fb0bd46cc4b118a4951351c93d31601673130b29d4f1afafeda1edf93d8f7b7",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "alice-s3": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "230d7a646284137567a54bc171d388614e4240187f1ec594fa184a1811f768a6",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "tunnel-well": {
+      "url": "/stories/alice-in-wonderland/assets/environments/tunnel-well-panorama-s3-v1.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b38ea544929c7cb0bca592a8627c8198d0c0c41df02cf613740a3227a20d359b",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "0a531009fad6fe2d90c7ee0c83e9a171741ace26bbf2cfdbcbce483576211dee",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    }
+  },
+  "atlasCells": "/stories/alice-in-wonderland/shared/atlas-cells.json",
+  "pixelPolicy": {
+    "worldGrid": 2,
+    "worldPointSnapping": "Actor feet, prop placement, generated walking splits/strides and normalized sizes use even world coordinates. Source image and camera ratios need not be even.",
+    "normalization": "Use platform/rendering/character-art.js drawCharacter for every authored pose and prop: half-size intermediate grid, alpha>80 ->255 else0, nearest-neighbor. No asset painting or automatic silhouette removal.",
+    "standingHeights": {
+      "alice": 180,
+      "sister": 202,
+      "white-rabbit": 122
+    },
+    "rabbitScaleRevision": {
+      "previousHeight": 168,
+      "currentHeight": 122,
+      "linearReductionPercent": 27.380952380952383,
+      "identityAtlasUnchanged": true,
+      "comparison": "Rabbit height122 is below seated Alice144 and seated sister156/160, and below standing humans180/202. Widths and watch anchors scale proportionally on even grid."
+    },
+    "seatedPoses": "Use their measured authored aspect ratios and world sizes; do not squash standing sprites.",
+    "sourceAlpha": "Integrated originals have partial alpha including low-alpha halo. Real normalization eliminates it; do not bypass shared drawCharacter."
+  },
+  "environments": {
+    "riverbank": {
+      "asset": "riverbank",
+      "worldBounds": [
+        -1535,
+        -148,
+        4702.5,
+        2090
+      ],
+      "mapping": {
+        "sourceToWorld": {
+          "scaleX": 2.5,
+          "scaleY": 2.5,
+          "translateX": -1535,
+          "translateY": -148
+        },
+        "portraitAndLandscape": "One complete generated panorama and one uniform mapping for all aspects; camera dynamically crops within these bounds. No aspect-specific art boxes or floor fill.",
+        "registration": "v5 preserves1881x836 and every v4 RGB pixel outside local hedge edit polygon; same scale2.5 and translate(-1535,-148)."
+      },
+      "surfaces": {
+        "near-grass": {
+          "kind": "walkable-ground",
+          "safePolygon": [
+            [
+              600,
+              500
+            ],
+            [
+              1100,
+              500
+            ],
+            [
+              1100,
+              740
+            ],
+            [
+              600,
+              740
+            ]
+          ],
+          "evidence": "Magnified v4 source staging inspection. Both fixed sisters and all approved S1 poses stand on short grass below actual ochre path; low tufts are terrain detail.",
+          "sourceSafePolygon": [
+            [
+              854,
+              259.2
+            ],
+            [
+              1054,
+              259.2
+            ],
+            [
+              1054,
+              355.2
+            ],
+            [
+              854,
+              355.2
+            ]
+          ]
+        },
+        "bank-path": {
+          "kind": "walkable-ground",
+          "safePolygon": [
+            [
+              570,
+              399.5
+            ],
+            [
+              715,
+              404.5
+            ],
+            [
+              810,
+              424.5
+            ],
+            [
+              900,
+              432
+            ],
+            [
+              1007.5,
+              444.5
+            ],
+            [
+              1190,
+              462
+            ],
+            [
+              1390,
+              469.5
+            ],
+            [
+              1590,
+              459.5
+            ],
+            [
+              1665,
+              457
+            ],
+            [
+              1665,
+              477
+            ],
+            [
+              1590,
+              497
+            ],
+            [
+              1390,
+              527
+            ],
+            [
+              1190,
+              497
+            ],
+            [
+              1007.5,
+              472
+            ],
+            [
+              900,
+              459.5
+            ],
+            [
+              810,
+              449.5
+            ],
+            [
+              715,
+              434.5
+            ],
+            [
+              570,
+              427
+            ]
+          ],
+          "evidence": "Hand-inspected conservative ochre corridor in v4. Ordered unchanged S1 feet are on ochre at every inspected sample; S2 branch is only a future reservation.",
+          "sourceSafePolygon": [
+            [
+              842,
+              219
+            ],
+            [
+              900,
+              221
+            ],
+            [
+              938,
+              229
+            ],
+            [
+              974,
+              232
+            ],
+            [
+              1017,
+              237
+            ],
+            [
+              1090,
+              244
+            ],
+            [
+              1170,
+              247
+            ],
+            [
+              1250,
+              243
+            ],
+            [
+              1280,
+              242
+            ],
+            [
+              1280,
+              250
+            ],
+            [
+              1250,
+              258
+            ],
+            [
+              1170,
+              270
+            ],
+            [
+              1090,
+              258
+            ],
+            [
+              1017,
+              248
+            ],
+            [
+              974,
+              243
+            ],
+            [
+              938,
+              239
+            ],
+            [
+              900,
+              233
+            ],
+            [
+              842,
+              230
+            ]
+          ]
+        }
+      },
+      "nonwalkableLandmarks": {
+        "s1-bank-tree": {
+          "kind": "scene-specific-rear-bank-tree",
+          "scope": "S1 riverbank composition; not a general story requirement",
+          "canopyConservativeBounds": [
+            400,
+            -148,
+            1050,
+            395
+          ],
+          "trunkAndBranchConservativePolygon": [
+            [
+              965,
+              164.5
+            ],
+            [
+              1110,
+              132
+            ],
+            [
+              1215,
+              182
+            ],
+            [
+              1240,
+              287
+            ],
+            [
+              1275,
+              352
+            ],
+            [
+              1345,
+              382
+            ],
+            [
+              1357.5,
+              402
+            ],
+            [
+              1177.5,
+              412
+            ],
+            [
+              1105,
+              387
+            ],
+            [
+              1145,
+              342
+            ],
+            [
+              1127.5,
+              284.5
+            ],
+            [
+              1060,
+              237
+            ],
+            [
+              965,
+              209.5
+            ]
+          ],
+          "rootNonwalkablePolygon": [
+            [
+              1105,
+              377
+            ],
+            [
+              1165,
+              357
+            ],
+            [
+              1265,
+              357
+            ],
+            [
+              1357.5,
+              402
+            ],
+            [
+              1275,
+              414.5
+            ],
+            [
+              1177.5,
+              412
+            ]
+          ],
+          "rootAnchor": [
+            1202.5,
+            397
+          ],
+          "evidence": "v4 generated source inspected at native and4x detail; measured-art-board-v4.png. Conservative crown bottom247 world is above earliest rabbit head290; no foreground actor mask invented.",
+          "inspection": "Generative extension reexports canopy/trunk geometry. Remeasured high crown still extends over both fixed sisters; trunk lies behind and to right of S1 rabbit stop. Entire S1 route remains clear."
+        },
+        "river": {
+          "kind": "water",
+          "note": "Left river and reeds are never used for a spawn or path."
+        },
+        "hedge": {
+          "kind": "solid-foliage-and-earth",
+          "approxRegion": [
+            1290,
+            242,
+            1000,
+            300
+          ],
+          "note": "No S1 travel enters this region. Only existing path and actual dark aperture can support later S2 entry."
+        },
+        "burrow-opening": {
+          "sourceBounds": [
+            1241,
+            208,
+            50,
+            35
+          ],
+          "worldBounds": [
+            1567.5,
+            372,
+            125,
+            87.5
+          ],
+          "sourceAperturePolygon": [
+            [
+              1248,
+              241
+            ],
+            [
+              1248,
+              226
+            ],
+            [
+              1252,
+              219
+            ],
+            [
+              1258,
+              214
+            ],
+            [
+              1267,
+              211
+            ],
+            [
+              1274,
+              214
+            ],
+            [
+              1281,
+              220
+            ],
+            [
+              1286,
+              228
+            ],
+            [
+              1288,
+              238
+            ],
+            [
+              1288,
+              241
+            ]
+          ],
+          "worldAperturePolygon": [
+            [
+              1585,
+              454.5
+            ],
+            [
+              1585,
+              417
+            ],
+            [
+              1595,
+              399.5
+            ],
+            [
+              1610,
+              387
+            ],
+            [
+              1632.5,
+              379.5
+            ],
+            [
+              1650,
+              387
+            ],
+            [
+              1667.5,
+              402
+            ],
+            [
+              1680,
+              422
+            ],
+            [
+              1685,
+              447
+            ],
+            [
+              1685,
+              454.5
+            ]
+          ],
+          "thresholdB": [
+            1632,
+            464
+          ],
+          "note": "Actual connected dark opening1204 source pixels; height87.5world below standingAlice130.5world; crawl entry85.56world. Mouth/rim is local v5 edit."
+        }
+      },
+      "spawns": {
+        "alice": {
+          "anchor": "alice-seated-and-standing",
+          "pose": "seated-book",
+          "visible": true,
+          "hands": "empty"
+        },
+        "sister": {
+          "anchor": "sister-fixed",
+          "pose": "seated-reading",
+          "visible": true,
+          "owns": "book"
+        },
+        "white-rabbit": {
+          "anchor": "rabbit-entry-outside-portrait",
+          "pose": "right",
+          "visible": false,
+          "watch": "in-pocket"
+        }
+      },
+      "anchors": {
+        "alice-seated-and-standing": {
+          "point": [
+            680,
+            690
+          ],
+          "surface": "near-grass",
+          "note": "Fixed support/foot origin through S1 seated, rising and standing poses. No movement during the final hook."
+        },
+        "sister-fixed": {
+          "point": [
+            810,
+            650
+          ],
+          "surface": "near-grass",
+          "note": "Immutable world position for S1 and later S2 continuity. Pose changes and hand-attached book do not move the actor."
+        },
+        "rabbit-entry-outside-portrait": {
+          "point": [
+            590,
+            412
+          ],
+          "surface": "bank-path",
+          "note": "On actual dry path at left edge of portrait camera. Initially invisible; not in river or reeds. No foliage occlusion is assumed."
+        },
+        "rabbit-clears-frame": {
+          "point": [
+            650,
+            416
+          ],
+          "surface": "bank-path",
+          "note": "Entire normal-width rabbit is inside portrait camera; emergence opacity must still be changing here."
+        },
+        "rabbit-emergence-complete": {
+          "point": [
+            710,
+            424
+          ],
+          "surface": "bank-path",
+          "note": "Opacity reaches 1 only after visible emergence. Continue opaque thereafter."
+        },
+        "rabbit-watch-stop": {
+          "point": [
+            990,
+            452
+          ],
+          "surface": "bank-path",
+          "note": "Rabbit stops before pocket/consult/return actions; unchanged during turn at end of hook."
+        },
+        "hedge-approach-reserved": {
+          "point": [
+            1500,
+            500
+          ],
+          "surface": "bank-path",
+          "note": "Remeasured v4 ochre continuation only; no S2 implementation or approved route."
+        },
+        "burrow-threshold-reserved": {
+          "point": [
+            1632,
+            464
+          ],
+          "surface": "bank-path",
+          "note": "v5 measured B(1632,464), shared with S2 rabbit threshold. Alice entry contacts and actual rim are recorded in scene-2-geometry.json."
+        }
+      },
+      "walkPaths": {
+        "s1-rabbit-arrival": {
+          "startAnchor": "rabbit-entry-outside-portrait",
+          "endAnchor": "rabbit-watch-stop",
+          "waypoints": [
+            [
+              590,
+              412
+            ],
+            [
+              650,
+              416
+            ],
+            [
+              710,
+              424
+            ],
+            [
+              810,
+              440
+            ],
+            [
+              900,
+              448
+            ],
+            [
+              990,
+              452
+            ]
+          ],
+          "surface": "bank-path",
+          "facing": "right",
+          "camera": "s1-held",
+          "presence": {
+            "kind": "physical-frame-edge",
+            "opacityStarts": 0,
+            "visibleRampThroughAnchor": "rabbit-clears-frame",
+            "opacityCompletesAtAnchor": "rabbit-emergence-complete"
+          },
+          "maxActorHalfWidth": 39,
+          "maxWalkingCanvasSize": [
+            78,
+            122
+          ],
+          "note": "Unchanged ordered S1 route on measured v4 ochre; actual source registration shown in evidence. Camera holds its fit for entire S1, resizing continuously. Existing gradual appearance remains story choreography; initial frame-edge relationship varies with viewport."
+        },
+        "s2-path-continuity-reservation": {
+          "startAnchor": "rabbit-watch-stop",
+          "endAnchor": "burrow-threshold-reserved",
+          "waypoints": [
+            [
+              990,
+              452
+            ],
+            [
+              1110,
+              470
+            ],
+            [
+              1260,
+              500
+            ],
+            [
+              1400,
+              510
+            ],
+            [
+              1500,
+              500
+            ],
+            [
+              1600,
+              480
+            ],
+            [
+              1632,
+              464
+            ]
+          ],
+          "surface": "bank-path",
+          "status": "Remeasured v4 continuation reservation only, not S2 staging approval or implementation; sister stays fixed810,650."
+        }
+      },
+      "occluders": [],
+      "occlusionPolicy": "No S1 foreground occluder. S2 uses the measured v5 burrow rim in scene-2-geometry.json; no other actor masks.",
+      "cameras": {
+        "responsive": {
+          "requiredWorldRect": [
+            551,
+            290,
+            478,
+            402
+          ],
+          "preferredCenter": [
+            852.65625,
+            470.5
+          ],
+          "preferredViewHeight": 941,
+          "screenPaddingPx": 12,
+          "hold": "Same complete S1 route and full poses held through all7moments/hook; resize recomputes continuous full-viewport camera from real DOM dialogue reservation.",
+          "boundsConstraint": "Camera edges remain within worldBounds for all tested formats. No fixed16:9/9:16 letterbox.",
+          "captionConstraint": "Keep complete actor bodies above actual #dialogue, measuring DOM layout at runtime; minimum12CSSpx fitting padding. Runtime QA must verify the resulting clearance.",
+          "requiredBoundsEvidence": "Rabbit route minimumx590 minus39halfwidth=551; max990+39=1029; minhead412-122=290. Alice maximumfeet690 plus2=692. Sisters/props/otherposes are contained."
+        },
+        "authoredTargets": {
+          "portrait9x16": [
+            720,
+            1280
+          ],
+          "landscape16x9": [
+            1280,
+            720
+          ],
+          "note": "Target output dimensions only. Dynamic source crop is computed by renderer; old static sourceRect no longer applies."
+        }
+      },
+      "props": {
+        "book": {
+          "owner": "sister",
+          "defaultPose": "book-open",
+          "size": [
+            66,
+            42
+          ],
+          "attachment": {
+            "property": "two hands and lap",
+            "propAnchorNormalized": [
+              0.5,
+              0.75
+            ]
+          },
+          "byOwnerPose": {
+            "seated-reading": {
+              "sourceHandMidpoint": [
+                979,
+                870
+              ],
+              "worldHand": [
+                820,
+                606
+              ],
+              "worldPropBottomCenter": [
+                820,
+                616
+              ]
+            },
+            "seated-reply-left": {
+              "sourceHandMidpoint": [
+                624,
+                880
+              ],
+              "worldHand": [
+                828,
+                610
+              ],
+              "worldPropBottomCenter": [
+                830,
+                620
+              ]
+            }
+          },
+          "note": "Book pages have only text strokes, no pictures. Tilt prop changes with pose while book remains owned. No book is baked into sister sprites."
+        },
+        "watch": {
+          "owner": "white-rabbit",
+          "pose": "watch-face",
+          "size": [
+            14,
+            18
+          ],
+          "edgePoseSize": [
+            8,
+            18
+          ],
+          "propAnchorNormalized": [
+            0.5,
+            1
+          ],
+          "byOwnerPose": {
+            "consult": {
+              "sourcePaw": [
+                670,
+                820
+              ],
+              "worldHand": [
+                1014,
+                408
+              ],
+              "worldPropBottomCenter": [
+                1014,
+                408
+              ]
+            },
+            "extract": {
+              "sourcePaw": [
+                330,
+                820
+              ],
+              "worldHand": [
+                1018,
+                408
+              ]
+            },
+            "return": {
+              "sourcePaw": [
+                950,
+                826
+              ],
+              "worldHand": [
+                986,
+                408
+              ]
+            },
+            "pocket": {
+              "sourcePocket": [
+                1352,
+                385
+              ],
+              "worldHand": [
+                990,
+                422
+              ]
+            }
+          },
+          "hiddenStates": [
+            "in-pocket",
+            "ready",
+            "walking-after-hook"
+          ],
+          "note": "Watch scales with reduced rabbit and attaches to actual near paw; no duplicate or permanent watch in character atlas. Do not expose a floating watch when owner hidden or back-facing. Full pocket interpolation awaits scene implementation."
+        }
+      },
+      "continuityToScene2": {
+        "sameEnvironment": true,
+        "sameMoment": true,
+        "sameCameraAtBoundary": true,
+        "sisterFixed": [
+          810,
+          650
+        ],
+        "aliceReady": [
+          680,
+          690
+        ],
+        "rabbitReady": [
+          990,
+          452
+        ],
+        "watch": "in-pocket",
+        "resetOrDissolve": false,
+        "note": "The 3-second hook finishes with Alice standing and rabbit ready at unchanged feet. Path and hedge are on same panorama. This record does not implement S2."
+      },
+      "depthScaling": {
+        "method": "linear-in-world-foot-y",
+        "origin": [
+          0.5,
+          1
+        ],
+        "referenceY": 450,
+        "scaleAtReference": 0.68,
+        "slopePerWorldY": 0.0013333333333333333,
+        "minScale": 0.5,
+        "maxScale": 1.1,
+        "actors": {
+          "alice": {
+            "referenceY": 690,
+            "referenceFactor": 1,
+            "normalizedStandingHeight": 180
+          },
+          "white-rabbit": {
+            "referenceY": 452,
+            "referenceFactor": 0.6826666666666668,
+            "normalizedStandingHeight": 122
+          },
+          "sister": {
+            "referenceY": 650,
+            "referenceFactor": 0.9466666666666668,
+            "normalizedStandingHeight": 202
+          }
+        },
+        "evaluation": "clamp(minScale,maxScale,scaleAtReference+(footY-referenceY)*slopePerWorldY) / actors[id].referenceFactor * actorGain[id]",
+        "invariants": [
+          "Foot origin stays at the actual actor support while texture scales uniformly.",
+          "Apply depth factor exactly once after existing anatomical normalization; Rabbit122 is already the approved distant base.",
+          "Props use owner factor for local hand offsets and texture dimensions; shadows scale by same factor.",
+          "No pose change resets depth; entry anatomical sizes124x162,164x144,202x122 remain unmodified.",
+          "Camera does not change actor scale. Sister stays(810,650), seated-reading factor1."
+        ],
+        "samples": [
+          {
+            "y": 412,
+            "alice": 0.629333333,
+            "rabbit": 0.81125
+          },
+          {
+            "y": 424,
+            "alice": 0.645333333,
+            "rabbit": 0.831875
+          },
+          {
+            "y": 432,
+            "alice": 0.656,
+            "rabbit": 0.845625
+          },
+          {
+            "y": 438,
+            "alice": 0.664,
+            "rabbit": 0.8559375
+          },
+          {
+            "y": 448,
+            "alice": 0.677333333,
+            "rabbit": 0.873125
+          },
+          {
+            "y": 450,
+            "alice": 0.68,
+            "rabbit": 0.8765625
+          },
+          {
+            "y": 452,
+            "alice": 0.682666667,
+            "rabbit": 0.88
+          },
+          {
+            "y": 460,
+            "alice": 0.693333333,
+            "rabbit": 0.89375
+          },
+          {
+            "y": 472,
+            "alice": 0.709333333,
+            "rabbit": 0.914375
+          },
+          {
+            "y": 474,
+            "alice": 0.712,
+            "rabbit": 0.9178125
+          },
+          {
+            "y": 476,
+            "alice": 0.714666667,
+            "rabbit": 0.92125
+          },
+          {
+            "y": 478,
+            "alice": 0.717333333,
+            "rabbit": 0.9246875
+          },
+          {
+            "y": 484,
+            "alice": 0.725333333,
+            "rabbit": 0.935
+          },
+          {
+            "y": 492,
+            "alice": 0.736,
+            "rabbit": 0.94875
+          },
+          {
+            "y": 500,
+            "alice": 0.746666667,
+            "rabbit": 0.9625
+          },
+          {
+            "y": 510,
+            "alice": 0.76,
+            "rabbit": 0.9796875
+          },
+          {
+            "y": 650,
+            "alice": 0.946666667,
+            "rabbit": 1.2203125
+          },
+          {
+            "y": 690,
+            "alice": 1,
+            "rabbit": 1.2890625
+          }
+        ],
+        "measurementEvidence": "/.artifacts/alice-in-wonderland/depth-motion/depth-measurements.json",
+        "curve": {
+          "referenceY": 450,
+          "referenceScale": 0.68,
+          "slopePerWorldY": 0.0013333333333333333,
+          "minScale": 0.5,
+          "maxScale": 1.1
+        },
+        "actorReferenceY": {
+          "alice": 690,
+          "sister": 650,
+          "white-rabbit": 452
+        },
+        "actorGain": {
+          "alice": 1,
+          "sister": 1,
+          "white-rabbit": 0.88
+        },
+        "calibration": "NOOK authorizes Rabbit gain .88 with depth correction: normalized122 sprite is unchanged; actual stopped height107.36 at y452. Applied consistently across S1/S2 so there is no boundary jump or double application."
+      }
+    },
+    "tunnel-well": {
+      "worldBounds": [
+        0,
+        0,
+        3344,
+        1882
+      ],
+      "mapping": {
+        "sourceToWorld": {
+          "scaleX": 2,
+          "scaleY": 2,
+          "translateX": 0,
+          "translateY": 0
+        },
+        "worldGrid": 2,
+        "pointPolicy": "Measured source supports snapped to even world coordinates, at most0.5source pixel adjustment."
+      },
+      "spawns": {
+        "alice": {
+          "anchor": "A0-crawl-clear",
+          "pose": "crawl-inside",
+          "scale": 0.62,
+          "state": "Already fully through exterior; interior opening stays behind. Rise here before question."
+        },
+        "white-rabbit": {
+          "anchor": "R0-ahead",
+          "pose": "right",
+          "scale": 0.568128,
+          "watch": "pocketed"
+        },
+        "sister": {
+          "presentInThisEnvironment": false,
+          "location": "riverbank",
+          "unchangedWorldAnchor": [
+            810,
+            650
+          ],
+          "bookOwner": "sister",
+          "pose": "seated-reading"
+        }
+      },
+      "anchors": {
+        "A0-crawl-clear": {
+          "point": [
+            756,
+            488
+          ],
+          "sourcePoint": [
+            378,
+            244
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "A1-lip-support": {
+          "point": [
+            1968,
+            628
+          ],
+          "sourcePoint": [
+            984,
+            314
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "A2-clear-of-earth": {
+          "point": [
+            2076,
+            632
+          ],
+          "sourcePoint": [
+            1038,
+            316
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "A3-first-drop": {
+          "point": [
+            2104,
+            720
+          ],
+          "sourcePoint": [
+            1052,
+            360
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "A4-slow-fall": {
+          "point": [
+            2176,
+            760
+          ],
+          "sourcePoint": [
+            1088,
+            380
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "A5-hook-end": {
+          "point": [
+            2148,
+            1200
+          ],
+          "sourcePoint": [
+            1074,
+            600
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "R0-ahead": {
+          "point": [
+            1000,
+            520
+          ],
+          "sourcePoint": [
+            500,
+            260
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "R1-inner-turn": {
+          "point": [
+            2208,
+            456
+          ],
+          "sourcePoint": [
+            1104,
+            228
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "R2-hidden": {
+          "point": [
+            2152,
+            420
+          ],
+          "sourcePoint": [
+            1076,
+            210
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "shelf-tip": {
+          "point": [
+            2216,
+            1350
+          ],
+          "sourcePoint": [
+            1108,
+            675
+          ],
+          "surface": "fixed shelf object, future S4 interaction not authorized"
+        },
+        "jar-contact-reserved": {
+          "point": [
+            2205.6,
+            1311
+          ],
+          "sourcePoint": [
+            1102.8,
+            655.5
+          ],
+          "surface": "Left-edge grip used by S4; fixed jar center1112, base666"
+        }
+      },
+      "walkPaths": {
+        "alice-corridor": {
+          "startAnchor": "A0-crawl-clear",
+          "endAnchor": "A1-lip-support",
+          "sourceWaypoints": [
+            [
+              378,
+              244
+            ],
+            [
+              520,
+              270
+            ],
+            [
+              700,
+              278
+            ],
+            [
+              820,
+              292
+            ],
+            [
+              920,
+              300
+            ],
+            [
+              964,
+              310
+            ],
+            [
+              978,
+              313
+            ],
+            [
+              984,
+              314
+            ]
+          ],
+          "waypoints": [
+            [
+              756,
+              488
+            ],
+            [
+              1040,
+              540
+            ],
+            [
+              1400,
+              556
+            ],
+            [
+              1640,
+              584
+            ],
+            [
+              1840,
+              600
+            ],
+            [
+              1928,
+              620
+            ],
+            [
+              1956,
+              626
+            ],
+            [
+              1968,
+              628
+            ]
+          ],
+          "lengthWorld": 1222.3887718686155,
+          "surface": "walkable earth; simultaneous with Rabbit",
+          "commonProgressKnots": [
+            0,
+            0.2,
+            0.45,
+            0.62,
+            0.78,
+            0.9,
+            0.96,
+            1
+          ],
+          "motion": "One continuous simultaneous action; terrain-based speed changes at shared knots, no waits or alternate turns."
+        },
+        "rabbit-inner-bend": {
+          "startAnchor": "R0-ahead",
+          "endAnchor": "R2-hidden",
+          "sourceWaypoints": [
+            [
+              500,
+              260
+            ],
+            [
+              642,
+              272
+            ],
+            [
+              822,
+              280
+            ],
+            [
+              942,
+              278
+            ],
+            [
+              1042,
+              256
+            ],
+            [
+              1104,
+              228
+            ],
+            [
+              1100,
+              212
+            ],
+            [
+              1076,
+              210
+            ]
+          ],
+          "waypoints": [
+            [
+              1000,
+              520
+            ],
+            [
+              1284,
+              544
+            ],
+            [
+              1644,
+              560
+            ],
+            [
+              1884,
+              556
+            ],
+            [
+              2084,
+              512
+            ],
+            [
+              2208,
+              456
+            ],
+            [
+              2200,
+              424
+            ],
+            [
+              2152,
+              420
+            ]
+          ],
+          "lengthWorld": 1307.393837514177,
+          "surface": "walkable inner/back corridor; final steps behind rooted buttress",
+          "commonProgressKnots": [
+            0,
+            0.2,
+            0.45,
+            0.62,
+            0.78,
+            0.9,
+            0.96,
+            1
+          ],
+          "motion": "One continuous simultaneous action; terrain-based speed changes at shared knots, no waits or alternate turns."
+        }
+      },
+      "fallPaths": {
+        "alice-support-loss-and-fall": {
+          "startAnchor": "A1-lip-support",
+          "endAnchor": "A5-hook-end",
+          "sourceWaypoints": [
+            [
+              984,
+              314
+            ],
+            [
+              1038,
+              316
+            ],
+            [
+              1052,
+              360
+            ],
+            [
+              1088,
+              380
+            ],
+            [
+              1084,
+              455
+            ],
+            [
+              1074,
+              535
+            ],
+            [
+              1074,
+              600
+            ]
+          ],
+          "waypoints": [
+            [
+              1968,
+              628
+            ],
+            [
+              2076,
+              632
+            ],
+            [
+              2104,
+              720
+            ],
+            [
+              2176,
+              760
+            ],
+            [
+              2168,
+              910
+            ],
+            [
+              2148,
+              1070
+            ],
+            [
+              2148,
+              1200
+            ]
+          ],
+          "lengthWorld": 723.7974526446054,
+          "surface": "support at first point only; clear lip before vertical drop, never a walkPath"
+        }
+      },
+      "surfaces": {
+        "dry-corridor": {
+          "sourceSupportPolyline": [
+            [
+              378,
+              244
+            ],
+            [
+              520,
+              270
+            ],
+            [
+              700,
+              278
+            ],
+            [
+              820,
+              292
+            ],
+            [
+              920,
+              300
+            ],
+            [
+              964,
+              310
+            ],
+            [
+              978,
+              313
+            ]
+          ],
+          "note": "Front supporting floor above the shaft; do not lower feet into hanging roots."
+        },
+        "inner-rabbit-route": {
+          "sourceSupportPolyline": [
+            [
+              500,
+              260
+            ],
+            [
+              642,
+              272
+            ],
+            [
+              822,
+              280
+            ],
+            [
+              942,
+              278
+            ],
+            [
+              1042,
+              256
+            ],
+            [
+              1104,
+              228
+            ],
+            [
+              1100,
+              212
+            ],
+            [
+              1076,
+              210
+            ]
+          ],
+          "note": "Inner/back corridor stays above well; actual bend then buttress masks last steps."
+        },
+        "last-loose-support": {
+          "source": [
+            984,
+            314
+          ],
+          "note": "A surface clod slips from the lip, not the entire drawn rock buttress. Clear x1038 before descending below top."
+        },
+        "open-air-safe": {
+          "sourceBounds": [
+            1036,
+            350,
+            187,
+            290
+          ],
+          "note": "Falling body stays in open dark shaft; no terrain support. Shelf remains fixed at lower right."
+        },
+        "first-shelf": {
+          "sourcePlatformBounds": [
+            1108,
+            666,
+            204,
+            31
+          ],
+          "sourceJarBounds": [
+            1098,
+            636,
+            28,
+            30
+          ],
+          "note": "Original PNG jar footprint cleared by shared clean plate; runtime jar uses the same normalized props-S4 texture in S3/S4. Base1112,666 at left edge; no S3 interaction.",
+          "paintedJarBoundsOriginal": [
+            1163,
+            641,
+            26,
+            30
+          ]
+        }
+      },
+      "occluders": [
+        {
+          "id": "interior-entry-lintel",
+          "sourceAperturePolygon": [
+            [
+              296,
+              225
+            ],
+            [
+              296,
+              204
+            ],
+            [
+              308,
+              187
+            ],
+            [
+              329,
+              175
+            ],
+            [
+              345,
+              183
+            ],
+            [
+              361,
+              201
+            ],
+            [
+              365,
+              225
+            ]
+          ],
+          "sourceRoofColumn": [
+            294,
+            0,
+            74,
+            235
+          ],
+          "worldAperturePolygon": [
+            [
+              592,
+              450
+            ],
+            [
+              592,
+              408
+            ],
+            [
+              616,
+              374
+            ],
+            [
+              658,
+              350
+            ],
+            [
+              690,
+              366
+            ],
+            [
+              722,
+              402
+            ],
+            [
+              730,
+              450
+            ]
+          ],
+          "activation": "Only already-crossed entry body; full overhead coverage, then disabled on clear corridor. S2 exterior uses its frozen approved mask."
+        },
+        {
+          "id": "rabbit-receding-buttress",
+          "sourceForegroundPolygon": [
+            [
+              1010,
+              116
+            ],
+            [
+              1044,
+              116
+            ],
+            [
+              1068,
+              146
+            ],
+            [
+              1086,
+              186
+            ],
+            [
+              1098,
+              208
+            ],
+            [
+              1078,
+              236
+            ],
+            [
+              1044,
+              240
+            ],
+            [
+              1022,
+              214
+            ]
+          ],
+          "worldForegroundPolygon": [
+            [
+              2020,
+              232
+            ],
+            [
+              2088,
+              232
+            ],
+            [
+              2136,
+              292
+            ],
+            [
+              2172,
+              372
+            ],
+            [
+              2196,
+              416
+            ],
+            [
+              2156,
+              472
+            ],
+            [
+              2088,
+              480
+            ],
+            [
+              2044,
+              428
+            ]
+          ],
+          "sourceUpperCoverageBounds": [
+            1010,
+            0,
+            88,
+            240
+          ],
+          "activation": "Only Rabbit final inward steps; actual background pixels cover body/ears behind rooted bend, then final covered fade. No full-body fade on open floor."
+        },
+        {
+          "id": "crumbly-lip-foreground",
+          "sourceForegroundPolygon": [
+            [
+              908,
+              307
+            ],
+            [
+              1008,
+              307
+            ],
+            [
+              1012,
+              348
+            ],
+            [
+              982,
+              370
+            ],
+            [
+              950,
+              359
+            ],
+            [
+              924,
+              334
+            ]
+          ],
+          "worldForegroundPolygon": [
+            [
+              1816,
+              614
+            ],
+            [
+              2016,
+              614
+            ],
+            [
+              2024,
+              696
+            ],
+            [
+              1964,
+              740
+            ],
+            [
+              1900,
+              718
+            ],
+            [
+              1848,
+              668
+            ]
+          ],
+          "activation": "Only trailing overlap as Alice clears the near lip; no whole-body masking. Loose clods are surface crust; existing solid buttress remains and Alice must clear it before dropping."
+        }
+      ],
+      "depthScaling": {
+        "referenceStandingHeights": {
+          "alice": 180,
+          "white-rabbit": 122
+        },
+        "terrainCurve": {
+          "sourceReferenceY": 244,
+          "scaleAtReference": 0.62,
+          "slopePerSourceY": 0.0016,
+          "min": 0.56,
+          "max": 0.8
+        },
+        "actorGain": {
+          "alice": 1,
+          "white-rabbit": 0.88
+        },
+        "applyTo": "body, carried props, shadows and local hand offsets exactly once",
+        "fallScaleLocked": 0.732,
+        "fallDepthReferenceSourceY": 314,
+        "important": "Vertical FALL y is height, not terrain depth: never grow/shrink Alice as she descends. Lock scale from the last actual terrain support."
+      },
+      "cameras": {
+        "coverage": "Full viewport using one painted image. Source viewH=min(max(600,requiredWidth/(aspect-24/height)),941,1672/aspect), viewW=viewH*aspect. Ordinary layouts preserve the planned baseline or zoom out into real overscan. Extreme ultrawide reaches the finite painted-width bound and reduces vertical field; actor world scale stays unchanged. No letterbox.",
+        "safePaddingPx": 12,
+        "topControlsReservationPx": 77,
+        "captionReserveRule": "min(300,max(180,0.30*viewportHeight)) for conservative technical projections; actual DOM must be retested in04/05.",
+        "baseDesignRectSource": [
+          196,
+          110.5,
+          1280,
+          720
+        ],
+        "activePrincipalStoryView16x9": [
+          266.666667,
+          0,
+          1066.666667,
+          600
+        ],
+        "plannedBaseZoomRelativeToArtBox": 1.2,
+        "minimumPlannedSourceHeight": 600,
+        "shelfReveal": "No shelf visible in active shots before hook. Hold prehook camera0..1200ms, then interpolate to measured hook-end framing1200..3000ms. Jar top enters first; shelf lip comes in near end. No shelf motion.",
+        "projectionFile": "/.artifacts/alice-in-wonderland/scene-3/camera-projections.json",
+        "hookEndRevealBoundsSource": [
+          1098,
+          636,
+          1210,
+          686
+        ],
+        "hookEndRevealProvenance": "Exact required source bounds from approved .artifacts/alice-in-wonderland/scene-3/measure.py; formalized as runtime input without changing framing."
+      },
+      "hook": {
+        "durationMs": 3000,
+        "sourceActorPoints": [
+          {
+            "timeMs": 0,
+            "point": [
+              1088,
+              380
+            ]
+          },
+          {
+            "timeMs": 1200,
+            "point": [
+              1100,
+              455
+            ]
+          },
+          {
+            "timeMs": 2400,
+            "point": [
+              1110,
+              535
+            ]
+          },
+          {
+            "timeMs": 3000,
+            "point": [
+              1116,
+              600
+            ]
+          }
+        ],
+        "depthScale": 0.732,
+        "gaze": "mirrored left-facing descent until2400ms, authored right-facing descent for shelf glance",
+        "caption": "clear",
+        "objects": "shelf/jar fixed, untouched, no ownership change",
+        "S4": "same state and camera; independent opening replay only, no duplicate in continuous reading"
+      }
+    }
+  },
+  "gateChecks": {
+    "characterArtReusableCheck": "/.artifacts/alice-in-wonderland/art-review/character-art-check.json",
+    "alphaCropAudit": "/.artifacts/alice-in-wonderland/art-review/alpha-crop-audit.json",
+    "geometryProjectionAudit": "/.artifacts/alice-in-wonderland/art-review/geometry-projection-audit.json",
+    "independentSceneQA": "Pending corrected runtime audit; this art measurement is not independent scene certification.",
+    "requiredBeforeProgramming": "Explicit current user correction authorizes implementation against this measured v4 geometry; NOOK/04 must register v4 asset and independent05 must audit before presentation.",
+    "viewportArtMeasurement": "/.artifacts/alice-in-wonderland/viewport-correction/geometry-v4-audit.json"
+  },
+  "status": "User-authorized smaller-burrow correction, 03 measurement completed in main thread; fresh 05 protocol pending",
+  "pixelDensity": {
+    "spec": "/stories/alice-in-wonderland/shared/pixel-density.json",
+    "profile": "concept_art/density-profile.json",
+    "revision": "2026-10-20-golden-master",
+    "bodyStandingLogicalSamples": 68,
+    "alpha": "hard",
+    "geometry": "Cut rectangles, sizes, positions, mapping, paths and masks unchanged; source colors/alpha quantized by NN."
+  },
+  "relatedGeometry": {
+    "scene3": "/stories/alice-in-wonderland/shared/scene-3-geometry.json",
+    "scene4": "/stories/alice-in-wonderland/shared/scene-4-geometry.json"
+  },
+  "sceneGeometryReferences": {
+    "chapter-1-scene-3": {
+      "source": "/stories/alice-in-wonderland/shared/chapter-1-scene-3-hall-geometry.json",
+      "atlasCells": "/stories/alice-in-wonderland/shared/chapter-1-scene-3-hall-atlas-cells.json",
+      "openingSource": "/stories/alice-in-wonderland/shared/scene-5-geometry.json",
+      "approvedFurnitureGroundYSource": 690,
+      "status": "Approved Gates1/2A; Gate4 verification pending",
+      "historicalOpeningMs": 38151,
+      "openingRevision": "22October: old3s hold removed; all S3 walking/running retimed by constant speed. See canonical hall geometry.",
+      "locomotion": "/stories/alice-in-wonderland/shared/hall-locomotion.json"
+    },
+    "chapter-1-scene-4": {
+      "source": "/stories/alice-in-wonderland/shared/chapter-1-scene-4-geometry.json",
+      "atlasCells": "/stories/alice-in-wonderland/shared/chapter-1-scene-4-atlas-cells.json",
+      "status": "User approved Gates1/2A; implementation and QA",
+      "locomotion": "/stories/alice-in-wonderland/shared/hall-locomotion.json"
+    },
+    "chapter-1-scene-6": {
+      "source": "/stories/alice-in-wonderland/shared/chapter-1-scene-6-geometry.json",
+      "atlasCells": "/stories/alice-in-wonderland/shared/chapter-1-scene-6-atlas-cells.json",
+      "status": "Gates1/2A approved; implemented and verified in main thread. Awaiting localhost visual review."
+    }
+  },
+  "chapter1Scene5": {
+    "geometry": "/stories/alice-in-wonderland/shared/chapter-1-scene-5-geometry.json",
+    "atlasCells": "/stories/alice-in-wonderland/shared/chapter-1-scene-5-atlas-cells.json",
+    "pixelDensity": "/stories/alice-in-wonderland/shared/chapter-1-scene-5-pixel-density.json",
+    "approval": "28Oct: user authorizes Gates3/4 after open-box visibility and left Rabbit stop corrections"
+  },
+  "chapter2Scene1": {
+    "source": "/stories/alice-in-wonderland/shared/chapter-2-scene-1-geometry.json",
+    "scope": "Approved C2-S1 only; silent; runtime enabled31Oct2026"
+  },
+  "chapter2Scene2": {
+    "source": "/stories/alice-in-wonderland/shared/chapter-2-scene-2-geometry.json",
+    "scope": "Approved, silent, dark underground threshold,8second race, balanced close framing"
+  },
+  "chapter2Scene3": {
+    "source": "/stories/alice-in-wonderland/shared/chapter-2-scene-3-geometry.json",
+    "atlasCells": "/stories/alice-in-wonderland/shared/chapter-2-scene-3-atlas-cells.json",
+    "pixelDensity": "/stories/alice-in-wonderland/shared/chapter-2-scene-3-pixel-density.json",
+    "scope": "Approved Prizes and Dinah; silent; simultaneous6500ms withdrawal and held close camera"
+  },
+  "chapter2Scene4": {
+    "source": "/stories/alice-in-wonderland/shared/chapter-2-scene-4-geometry.json",
+    "atlasCells": "/stories/alice-in-wonderland/shared/chapter-2-scene-4-atlas-cells.json",
+    "pixelDensity": "/stories/alice-in-wonderland/shared/chapter-2-scene-4-pixel-density.json",
+    "scope": "Approved2026-11-03 Mary Ann!20moments; silent; exact S3 inheritance; true550ms place dissolve;3s doorway hook"
+  },
+  "chapter2Scene5": {
+    "source": "/stories/alice-in-wonderland/shared/chapter-2-scene-5-geometry.json",
+    "atlasCells": "/stories/alice-in-wonderland/shared/chapter-2-scene-5-atlas-cells.json",
+    "pixelDensity": "/stories/alice-in-wonderland/shared/chapter-2-scene-5-pixel-density.json",
+    "scope": "Explicitly approved full-room-v3; right entrance, left window,21 moments; silent."
+  }
+}

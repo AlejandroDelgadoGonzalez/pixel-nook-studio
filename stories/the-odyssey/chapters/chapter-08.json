@@ -1,0 +1,3091 @@
+{
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "title": "The Odyssey",
+  "subtitle": "The Long Way Home",
+  "attribution": "An original abridged adaptation of Homer’s Odyssey",
+  "serialized": true,
+  "episodes": true,
+  "timing": {
+    "characterMs": 30,
+    "wordMs": 440,
+    "minimumHoldMs": 2100,
+    "linePauseMs": 1400
+  },
+  "videoExport": {
+    "logo": {
+      "src": "/stories/the-odyssey/assets/branding/logo.png",
+      "durationMs": 3000
+    },
+    "captionFadeMs": 450,
+    "previewHoldMs": 900
+  },
+  "renderer": "homecoming",
+  "availableChapter": "chapter-8",
+  "description": "Ithaca receives a stranger before it recognizes its king.",
+  "intro": "He has reached home. Home does not know him yet.",
+  "ending": "Father and son had found one another. The house still waited.",
+  "stageLabel": "A pixel art retelling of the Odyssey",
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.6,
+    "birdMinMs": 45000,
+    "birdRangeMs": 30000
+  },
+  "adaptationSource": {
+    "title": "Homer, Odyssey, Books XIII–XVI",
+    "url": "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm",
+    "note": "Original abridged English narration and dialogue. Events are condensed for quiet episodic reading. Ritual sacrifice and deaths are represented without gore. The final conflict of Book XXIV is condensed to Athena intervening before renewed bloodshed."
+  },
+  "characters": {
+    "odysseus": {
+      "name": "Odysseus",
+      "role": "The traveler",
+      "color": "#cbe4df"
+    },
+    "athena": {
+      "name": "Athena",
+      "role": "The guide",
+      "color": "#d8dfb2"
+    },
+    "eumaeus": {
+      "name": "Eumaeus",
+      "role": "The swineherd",
+      "color": "#c9d8af"
+    },
+    "telemachus": {
+      "name": "Telemachus",
+      "role": "His son",
+      "color": "#c8e4d9"
+    }
+  },
+  "assets": {
+    "hero": "/stories/the-odyssey/assets/atlases/characters/odyssey-core.png",
+    "ithPeople": "/stories/the-odyssey/assets/atlases/characters/ithaca-atlas.png",
+    "returnPeople": "/stories/the-odyssey/assets/atlases/characters/homecoming-people.png",
+    "props": "/stories/the-odyssey/assets/atlases/props/return-props.png",
+    "boatAtlas": "/stories/the-odyssey/assets/atlases/props/cave-props.png",
+    "sleepAtlas": "/stories/the-odyssey/assets/atlases/actions/winds-actions.png",
+    "voyageRooms": "/stories/the-odyssey/assets/backgrounds/native/voyage-environments.png",
+    "homeRooms": "/stories/the-odyssey/assets/backgrounds/native/homecoming-environments.png",
+    "journeySea": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png"
+  },
+  "visuals": {
+    "grids": {
+      "hero": {
+        "x": [
+          0,
+          321,
+          641,
+          962,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          643,
+          970,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "crew": {
+        "x": [
+          0,
+          298,
+          620,
+          912,
+          1227
+        ],
+        "y": [
+          0,
+          337,
+          640,
+          939,
+          1281
+        ],
+        "w": 1227,
+        "h": 1281
+      },
+      "aePeople": {
+        "x": [
+          0,
+          399,
+          770,
+          1130,
+          1536
+        ],
+        "y": [
+          0,
+          346,
+          691,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      },
+      "ithPeople": {
+        "x": [
+          0,
+          321,
+          643,
+          967,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          645,
+          950,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "scheriaPeople": {
+        "x": [
+          0,
+          322,
+          645,
+          968,
+          1254
+        ],
+        "y": [
+          0,
+          339,
+          664,
+          970,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "shades": {
+        "x": [
+          0,
+          302,
+          625,
+          927,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          642,
+          956,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "returnPeople": {
+        "x": [
+          0,
+          306,
+          637,
+          931,
+          1254
+        ],
+        "y": [
+          0,
+          342,
+          651,
+          945,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "props": {
+        "x": [
+          0,
+          325,
+          642,
+          929,
+          1254
+        ],
+        "y": [
+          0,
+          346,
+          690,
+          1009,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "boatAtlas": {
+        "x": [
+          0,
+          525,
+          922,
+          1267,
+          1774
+        ],
+        "y": [
+          0,
+          491,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "sleepAtlas": {
+        "x": [
+          0,
+          850,
+          1774
+        ],
+        "y": [
+          0,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "actions": {
+        "x": [
+          0,
+          774,
+          1536
+        ],
+        "y": [
+          0,
+          542,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      },
+      "seaActions": {
+        "x": [
+          0,
+          1086,
+          2172
+        ],
+        "y": [
+          0,
+          724
+        ],
+        "w": 2172,
+        "h": 724
+      },
+      "aeProps": {
+        "x": [
+          0,
+          442,
+          847,
+          1295,
+          1774
+        ],
+        "y": [
+          0,
+          482,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "ithHosts": {
+        "x": [
+          0,
+          443.5,
+          887,
+          1330.5,
+          1774
+        ],
+        "y": [
+          0,
+          476,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "bowLoose": {
+        "x": [
+          0,
+          1024
+        ],
+        "y": [
+          0,
+          1536
+        ],
+        "w": 1024,
+        "h": 1536
+      },
+      "bowActions": {
+        "x": [
+          0,
+          887,
+          1774
+        ],
+        "y": [
+          0,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "nurseKneel": {
+        "x": [
+          0,
+          1536
+        ],
+        "y": [
+          0,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      }
+    },
+    "rooms": {
+      "shore": {
+        "atlas": "voyageRooms",
+        "cell": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "leaves": true
+      },
+      "hut": {
+        "atlas": "homeRooms",
+        "cell": [
+          0,
+          0,
+          0.5,
+          0.5
+        ],
+        "leaves": true
+      },
+      "journeySea": {
+        "atlas": "journeySea",
+        "src": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png",
+        "fullDepth": true,
+        "nativeBounds": true,
+        "centralThird": true
+      }
+    },
+    "cast": {
+      "odysseus": {
+        "atlas": "hero",
+        "row": 0,
+        "reachHeight": 112
+      },
+      "athena": {
+        "atlas": "ithPeople",
+        "row": 2,
+        "reachHeight": 136
+      },
+      "eumaeus": {
+        "atlas": "returnPeople",
+        "row": 0,
+        "reachHeight": 136
+      },
+      "telemachus": {
+        "atlas": "ithPeople",
+        "row": 1,
+        "reachHeight": 136
+      }
+    },
+    "objects": {
+      "staff": {
+        "atlas": "props",
+        "col": 3,
+        "row": 0,
+        "height": 135
+      },
+      "pig": {
+        "atlas": "props",
+        "col": 3,
+        "row": 2,
+        "height": 56
+      },
+      "table": {
+        "atlas": "props",
+        "col": 0,
+        "row": 3,
+        "height": 100
+      },
+      "bread": {
+        "atlas": "props",
+        "col": 3,
+        "row": 3,
+        "height": 22
+      },
+      "gift": {
+        "atlas": "boatAtlas",
+        "col": 3,
+        "row": 1,
+        "height": 80
+      },
+      "ship": {
+        "atlas": "boatAtlas",
+        "col": 0,
+        "row": 0,
+        "height": 232,
+        "scaleX": 1.65
+      }
+    },
+    "poses": {
+      "sleep": {
+        "atlas": "sleepAtlas",
+        "col": 0,
+        "row": 0,
+        "height": 104
+      }
+    },
+    "disguise": {
+      "atlas": "returnPeople",
+      "row": 1
+    },
+    "variants": {}
+  },
+  "initialState": {
+    "room": "shore",
+    "view": "arrival",
+    "chapter": 0,
+    "lamp": {
+      "owner": null
+    },
+    "storm": 0,
+    "dogSleep": 0,
+    "actors": {
+      "odysseus": {
+        "x": 735,
+        "y": 1400,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle",
+        "mode": "sleep",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "athena": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "eumaeus": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "telemachus": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      }
+    },
+    "oar": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "grave": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "basin": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "staff": {
+      "x": 950,
+      "y": 1400,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "arrow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "axes": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bed": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "dog": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "cow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "cow2": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "siren": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "pig": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "table": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "stool": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "brazier": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bread": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "ship": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "wreck": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "scylla": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "gift": {
+      "x": 895,
+      "y": 1390,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "lostCrew": 0,
+    "bowStrung": 0
+  },
+  "shots": {
+    "arrival": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [
+        "gift",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "guide": {
+      "cx": 800,
+      "cy": 1320,
+      "w": 500,
+      "h": 450,
+      "actors": [
+        "odysseus",
+        "athena"
+      ],
+      "props": [
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "disguise": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "athena"
+      ],
+      "props": [
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "path": {
+      "cx": 800,
+      "cy": 1180,
+      "w": 440,
+      "h": 450,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "welcome": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "eumaeus"
+      ],
+      "props": [
+        "pig",
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "son-arrives": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "eumaeus",
+        "telemachus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "recognition": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s1-athena-reveals-the-place-route-view": {
+      "cx": 938,
+      "cy": 1320,
+      "w": 776,
+      "h": 450,
+      "actors": [
+        "odysseus",
+        "athena"
+      ],
+      "props": [
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s3-a-place-beside-the-hut-route-view": {
+      "cx": 820.5,
+      "cy": 1310,
+      "w": 441,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "eumaeus"
+      ],
+      "props": [
+        "pig",
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s4-telemachus-comes-up-the-path-route-view": {
+      "cx": 820.5,
+      "cy": 1177,
+      "w": 441,
+      "h": 646,
+      "actors": [
+        "odysseus",
+        "eumaeus",
+        "telemachus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s4-eumaeus-welcomes-the-boy-route-view": {
+      "cx": 858,
+      "cy": 1302,
+      "w": 516,
+      "h": 396,
+      "actors": [
+        "odysseus",
+        "eumaeus",
+        "telemachus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s4-send-news-to-penelope-route-view": {
+      "cx": 868,
+      "cy": 1172,
+      "w": 536,
+      "h": 656,
+      "actors": [
+        "odysseus",
+        "eumaeus",
+        "telemachus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s5-athena-restores-his-face-route-view": {
+      "cx": 878,
+      "cy": 1277,
+      "w": 556,
+      "h": 446,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s5-close-the-distance-route-view": {
+      "cx": 853,
+      "cy": 1306.5,
+      "w": 506,
+      "h": 455,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "clarity-return-ship": {
+      "cx": 770,
+      "cy": 930,
+      "w": 650,
+      "h": 480,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-hut-plan": {
+      "cx": 960,
+      "cy": 1430,
+      "w": 750,
+      "h": 640,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "eumaeus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "table",
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c8-s5-clarity-telemachus-leaves-the-hut-route": {
+      "cx": 1021.5,
+      "cy": 1379,
+      "w": 873,
+      "h": 742,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "eumaeus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "table",
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c8-s5-clarity-eumaeus-returns-with-news-route": {
+      "cx": 1021.5,
+      "cy": 1379,
+      "w": 873,
+      "h": 742,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "eumaeus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "table",
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c8-s1-athena-reveals-the-place-framing": {
+      "cx": 938,
+      "cy": 1320,
+      "w": 776,
+      "h": 450,
+      "actors": [
+        "odysseus",
+        "athena"
+      ],
+      "props": [
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s3-a-place-beside-the-hut-framing": {
+      "cx": 862,
+      "cy": 1310,
+      "w": 466,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "eumaeus"
+      ],
+      "props": [
+        "pig",
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s4-telemachus-comes-up-the-path-framing": {
+      "cx": 820.5,
+      "cy": 1177,
+      "w": 441,
+      "h": 646,
+      "actors": [
+        "odysseus",
+        "eumaeus",
+        "telemachus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s4-eumaeus-welcomes-the-boy-framing": {
+      "cx": 858,
+      "cy": 1302,
+      "w": 516,
+      "h": 396,
+      "actors": [
+        "odysseus",
+        "eumaeus",
+        "telemachus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s4-send-news-to-penelope-framing": {
+      "cx": 868,
+      "cy": 1172,
+      "w": 536,
+      "h": 656,
+      "actors": [
+        "odysseus",
+        "eumaeus",
+        "telemachus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s5-athena-restores-his-face-framing": {
+      "cx": 878,
+      "cy": 1277,
+      "w": 556,
+      "h": 446,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s5-close-the-distance-framing": {
+      "cx": 853,
+      "cy": 1306.5,
+      "w": 506,
+      "h": 455,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "staff"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c8-s5-clarity-telemachus-leaves-the-hut-framing": {
+      "cx": 1021.5,
+      "cy": 1379,
+      "w": 873,
+      "h": 742,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "eumaeus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "table",
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c8-s5-clarity-eumaeus-returns-with-news-framing": {
+      "cx": 1021.5,
+      "cy": 1379,
+      "w": 873,
+      "h": 742,
+      "actors": [
+        "odysseus",
+        "telemachus",
+        "eumaeus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "table",
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    }
+  },
+  "landmarks": {},
+  "scenes": [
+    {
+      "id": "odyssey-c8-s1",
+      "chapterId": "chapter-8",
+      "name": "The Familiar Shore",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c8-s1-clarity-the-promised-ship",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "journeySea",
+            "view": "clarity-return-ship",
+            "chapter": 0,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 690,
+                "y": 965,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "athena": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eumaeus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "telemachus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "staff": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "pig": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "table": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "bread": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "gift": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "ship": {
+              "x": 770,
+              "y": 1010,
+              "visible": 1,
+              "owner": null,
+              "lift": 0,
+              "crew": 1
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "The visible journey reaches journeySea"
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-clarity-from-scheria",
+          "type": "text",
+          "kind": "narration",
+          "text": "As Alcinous promised, a Phaeacian crew took Odysseus aboard. They sailed from Scheria toward Ithaca with gifts for their guest."
+        },
+        {
+          "id": "odyssey-c8-s1-clarity-sleep-with-a-trusted-crew",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "mode": "sleep"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-clarity-safe-crossing",
+          "type": "text",
+          "kind": "narration",
+          "text": "This time, other sailors guided the ship. Odysseus could sleep while they carried him home."
+        },
+        {
+          "id": "odyssey-c8-s1-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "shore",
+            "view": "arrival",
+            "chapter": 0,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 735,
+                "y": 1400,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "sleep",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "athena": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eumaeus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "telemachus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 810,
+              "y": 1400,
+              "visible": 1,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 895,
+              "y": 1390,
+              "visible": 1,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              }
+            },
+            "gift": {
+              "visible": 1
+            },
+            "staff": {
+              "visible": 1
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-wake-on-the-sand",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "mode": "",
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Alcinous’s sailors brought the sleeping Odysseus ashore on Ithaca and left gifts beside him. Their ship then returned to Scheria."
+        },
+        {
+          "id": "odyssey-c8-s1-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He stood on his own island without knowing it. Even arrival could feel like another wrong turn."
+        },
+        {
+          "id": "odyssey-c8-s1-athena-reveals-the-place-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c8-s1-athena-reveals-the-place-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-athena-reveals-the-place",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "athena": {
+                "x": 970,
+                "y": 1370,
+                "visible": 1,
+                "facing": "right",
+                "pose": "walk"
+              }
+            }
+          },
+          "presence": {
+            "athena": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Right shore path",
+              "from": {
+                "x": 1250,
+                "y": 1390
+              }
+            }
+          },
+          "travelFacing": [
+            "athena"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-athena-reveals-the-place-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "guide"
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Athena came to meet him. She named the place he had reached."
+        },
+        {
+          "id": "odyssey-c8-s1-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“Ithaca. You are home.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c8-s1-touch-his-own-ground",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "bow": 0.8,
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He bent toward the ground. The journey had ended here once in his imagination; now the earth was real."
+        },
+        {
+          "id": "odyssey-c8-s1-athena-keeps-the-gifts-safe",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "gift": {
+              "visible": 0
+            },
+            "actors": {
+              "athena": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s1-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Athena concealed the gifts for safekeeping. He would have time to return for them when his house was safe."
+        },
+        {
+          "id": "odyssey-c8-s1-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Then let me go to my house.”",
+          "listener": "athena"
+        },
+        {
+          "id": "odyssey-c8-s1-p8",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“First, let us keep you alive long enough to enter it.”",
+          "listener": "odysseus"
+        }
+      ],
+      "estimatedSeconds": 89,
+      "durationMs": 88011
+    },
+    {
+      "id": "odyssey-c8-s2",
+      "chapterId": "chapter-8",
+      "name": "A Face No One Knows",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c8-s2-departing-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c8-s2-settle-the-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "disguise",
+            "chapter": 1
+          }
+        },
+        {
+          "id": "odyssey-c8-s2-arrive",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c8-s2-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Athena explained that the suitors still wanted his wife and his throne. They might attack him if they knew he was home."
+        },
+        {
+          "id": "odyssey-c8-s2-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“A king would draw their eyes. A beggar may hear what they say.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c8-s2-change-the-travelers-face",
+          "type": "action",
+          "duration": 2300,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "disguise": 1,
+                "bow": 0.3
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s2-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "His dark hair greyed. His clothes became patched and worn. The man in the sand looked old enough to be overlooked."
+        },
+        {
+          "id": "odyssey-c8-s2-take-the-staff",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "staff": {
+              "owner": "odysseus"
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s2-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“Follow the path to Eumaeus, the man who cares for your pigs. He is still loyal to you,” Athena said.",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c8-s2-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Will he know me?”",
+          "listener": "athena"
+        },
+        {
+          "id": "odyssey-c8-s2-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“Let him welcome you without knowing.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c8-s2-follow-the-inland-path",
+          "type": "action",
+          "duration": 2300,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 800,
+                "y": 1190,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "athena": {
+                "visible": 1
+              }
+            },
+            "view": "path"
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 845,
+                "y": 1250
+              },
+              {
+                "x": 800,
+                "y": 1190
+              }
+            ]
+          },
+          "travelFacing": [
+            "odysseus"
+          ]
+        },
+        {
+          "id": "odyssey-c8-s2-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus followed the path inland, carrying a stranger’s face into the country he had missed.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 62,
+      "durationMs": 61242
+    },
+    {
+      "id": "odyssey-c8-s3",
+      "chapterId": "chapter-8",
+      "name": "The Keeper of Pigs",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c8-s3-departing-frame",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "odysseus": {},
+              "athena": {},
+              "eumaeus": {},
+              "telemachus": {}
+            },
+            "oar": {},
+            "grave": {},
+            "basin": {},
+            "staff": {},
+            "bow": {},
+            "arrow": {},
+            "axes": {},
+            "bed": {},
+            "dog": {},
+            "cow": {},
+            "cow2": {},
+            "siren": {},
+            "pig": {},
+            "table": {},
+            "stool": {},
+            "brazier": {},
+            "bread": {},
+            "ship": {},
+            "wreck": {},
+            "scylla": {},
+            "gift": {}
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "hut",
+            "view": "welcome",
+            "chapter": 2,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 705,
+                "y": 1470,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 1
+              },
+              "athena": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eumaeus": {
+                "x": 965,
+                "y": 1320,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "telemachus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 800,
+              "y": 1350,
+              "visible": 1,
+              "owner": "odysseus",
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 1035,
+              "y": 1200,
+              "visible": 1,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 865,
+              "y": 1400,
+              "visible": 1,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 1,
+              "owner": "eumaeus",
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              },
+              "eumaeus": {
+                "visible": 1
+              }
+            },
+            "pig": {
+              "visible": 1
+            },
+            "table": {
+              "visible": 1
+            },
+            "bread": {
+              "visible": 1
+            },
+            "staff": {
+              "visible": 1
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-a-place-beside-the-hut-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c8-s3-a-place-beside-the-hut-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-a-place-beside-the-hut",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1380,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "eumaeus": {
+                "x": 965,
+                "y": 1400,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "eumaeus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-a-place-beside-the-hut-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "welcome"
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The path led to Eumaeus’s hut and pig pens. Eumaeus saw an old traveler; he did not know that the man was his king."
+        },
+        {
+          "id": "odyssey-c8-s3-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eumaeus",
+          "text": "“Come in from the road. There is bread.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c8-s3-set-out-the-bread",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "bread": {
+              "owner": null,
+              "x": 865,
+              "y": 1335,
+              "surface": "table"
+            },
+            "actors": {
+              "eumaeus": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-rest-the-staff-beside-his-feet",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "staff": {
+              "owner": null,
+              "x": 755,
+              "y": 1395
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He set bread on the table. He asked no payment and waited for no impressive name."
+        },
+        {
+          "id": "odyssey-c8-s3-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“You have a generous master.”",
+          "listener": "eumaeus"
+        },
+        {
+          "id": "odyssey-c8-s3-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eumaeus",
+          "text": "“I had one. The sea has kept him too long.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c8-s3-lower-his-head",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "bow": 0.5
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s3-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus looked down at the bread. His own servant had offered a stranger what the suitors would not share."
+        },
+        {
+          "id": "odyssey-c8-s3-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He listened to news of his household without saying that it was his.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 61,
+      "durationMs": 60351
+    },
+    {
+      "id": "odyssey-c8-s4",
+      "chapterId": "chapter-8",
+      "name": "The Son at the Threshold",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c8-s4-departing-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c8-s4-settle-the-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "son-arrives",
+            "chapter": 3,
+            "actors": {
+              "telemachus": {
+                "x": 800,
+                "y": 1010,
+                "visible": 0,
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-arrive",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c8-s4-telemachus-comes-up-the-path-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c8-s4-telemachus-comes-up-the-path-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-telemachus-comes-up-the-path",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "x": 860,
+                "y": 1260,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "presence": {
+            "telemachus": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Path uphill to the hut"
+            }
+          },
+          "travelFacing": [
+            "telemachus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-telemachus-comes-up-the-path-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "son-arrives"
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-turn-toward-the-new-arrival",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "actors": {
+              "eumaeus": {
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-clarity-son-returns",
+          "type": "text",
+          "kind": "narration",
+          "text": "Telemachus had left Sparta and sailed back to Ithaca. He came to the trusted swineherd before going to the palace."
+        },
+        {
+          "id": "odyssey-c8-s4-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Telemachus returned from his search and came first to Eumaeus. The swineherd looked up to greet him."
+        },
+        {
+          "id": "odyssey-c8-s4-eumaeus-welcomes-the-boy-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c8-s4-eumaeus-welcomes-the-boy-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-eumaeus-welcomes-the-boy",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "eumaeus": {
+                "x": 960,
+                "y": 1270,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "paths": {
+            "eumaeus": [
+              {
+                "x": 1040,
+                "y": 1370
+              },
+              {
+                "x": 1040,
+                "y": 1270
+              },
+              {
+                "x": 960,
+                "y": 1270
+              }
+            ]
+          },
+          "travelFacing": [
+            "eumaeus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-eumaeus-welcomes-the-boy-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "son-arrives"
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eumaeus",
+          "text": "“You are back. Let your mother hear it before another rumor reaches her.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c8-s4-the-son-turns-toward-the-stranger",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The young man glanced toward the stranger. Odysseus saw the child he remembered in a face almost grown."
+        },
+        {
+          "id": "odyssey-c8-s4-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“He may stay here. See that he has what he needs.”",
+          "listener": "eumaeus"
+        },
+        {
+          "id": "odyssey-c8-s4-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "His father said nothing. It was the first kindness his son had given him, without knowing who received it."
+        },
+        {
+          "id": "odyssey-c8-s4-send-news-to-penelope-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c8-s4-send-news-to-penelope-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-send-news-to-penelope",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "actors": {
+              "eumaeus": {
+                "x": 1060,
+                "y": 1000,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "presence": {
+            "eumaeus": {
+              "kind": "exit",
+              "fadeMs": 350,
+              "zone": "Path from the hut toward the palace"
+            }
+          },
+          "travelFacing": [
+            "eumaeus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-send-news-to-penelope-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "son-arrives"
+          }
+        },
+        {
+          "id": "odyssey-c8-s4-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Eumaeus went to tell Penelope that her son was safe. Odysseus and Telemachus stayed at the hut, alone together."
+        },
+        {
+          "id": "odyssey-c8-s4-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "There was no sea between them now. There was only one name still waiting to be spoken.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 85,
+      "durationMs": 84012
+    },
+    {
+      "id": "odyssey-c8-s5",
+      "chapterId": "chapter-8",
+      "name": "Two Men, One Home",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c8-s5-departing-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c8-s5-settle-the-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "recognition",
+            "chapter": 4,
+            "actors": {
+              "athena": {
+                "x": 1080,
+                "y": 1210,
+                "visible": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-arrive",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c8-s5-the-goddess-shows-herself",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "actors": {
+              "athena": {
+                "visible": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-athena-restores-his-face-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c8-s5-athena-restores-his-face-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-athena-restores-his-face",
+          "type": "action",
+          "duration": 2100,
+          "effects": {
+            "actors": {
+              "athena": {
+                "visible": 1
+              },
+              "odysseus": {
+                "disguise": 0,
+                "bow": 0
+              },
+              "telemachus": {
+                "x": 935,
+                "y": 1235,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "presence": {
+            "athena": {
+              "kind": "magic",
+              "reason": "Athena reveals herself to the father before the disguise changes"
+            }
+          },
+          "travelFacing": [
+            "telemachus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-athena-restores-his-face-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "recognition"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-leave-them-to-the-truth",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "athena": {
+                "visible": 0
+              }
+            }
+          },
+          "presence": {
+            "athena": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Explicit supernatural appearance"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Athena briefly removed the disguise so Telemachus could recognize his father. The young man stepped back in surprise."
+        },
+        {
+          "id": "odyssey-c8-s5-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I am your father.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c8-s5-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“My father has been gone all my life.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c8-s5-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“And I have missed all that time.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c8-s5-close-the-distance-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c8-s5-close-the-distance-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-close-the-distance",
+          "type": "action",
+          "duration": 2700,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 795,
+                "y": 1510,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "telemachus": {
+                "x": 905,
+                "y": 1510,
+                "pose": "walk",
+                "facing": "left",
+                "bow": 0
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 710,
+                "y": 1510
+              },
+              {
+                "x": 795,
+                "y": 1510
+              }
+            ],
+            "telemachus": [
+              {
+                "x": 1030,
+                "y": 1235
+              },
+              {
+                "x": 1030,
+                "y": 1510
+              },
+              {
+                "x": 905,
+                "y": 1510
+              }
+            ]
+          },
+          "travelFacing": [
+            "odysseus",
+            "telemachus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-close-the-distance-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "recognition"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-father-and-son-reach-for-each-other",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              },
+              "telemachus": {
+                "pose": "reach",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "They reached for one another. Neither tried to make the years sound smaller than they were."
+        },
+        {
+          "id": "odyssey-c8-s5-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Father and son planned their return to the palace. They would keep Odysseus’s identity secret until they could face the suitors."
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-secret",
+          "type": "text",
+          "kind": "narration",
+          "text": "Telemachus would go ahead to the house. Eumaeus would return to guide the disguised Odysseus there the next morning."
+        },
+        {
+          "id": "odyssey-c8-s5-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Tomorrow I will enter as the old man again. Let no one see what you know.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c8-s5-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Home was near enough to touch. They would still have to face what had happened inside it.",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-athena-returns-for-the-disguise",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "view": "clarity-hut-plan",
+            "actors": {
+              "athena": {
+                "x": 1080,
+                "y": 1210,
+                "visible": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-protect-the-secret",
+          "type": "text",
+          "kind": "narration",
+          "text": "Athena returned to put the disguise back on Odysseus. Only his son would know who the old traveler really was."
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-restore-the-old-travelers-face",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "disguise": 1
+              },
+              "athena": {
+                "visible": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-the-son-goes-ahead",
+          "type": "text",
+          "kind": "narration",
+          "text": "Telemachus left for the palace as they had planned. His father would follow with Eumaeus in the morning."
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-telemachus-leaves-the-hut-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c8-s5-clarity-telemachus-leaves-the-hut-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-telemachus-leaves-the-hut",
+          "type": "action",
+          "duration": 2500,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "x": 1370,
+                "y": 1180,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "telemachus"
+          ],
+          "paths": {
+            "telemachus": [
+              {
+                "x": 1190,
+                "y": 1510
+              },
+              {
+                "x": 1190,
+                "y": 1240
+              },
+              {
+                "x": 1370,
+                "y": 1180
+              }
+            ]
+          },
+          "presence": {
+            "telemachus": {
+              "kind": "exit",
+              "fadeMs": 450
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-telemachus-leaves-the-hut-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-hut-plan"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-eumaeus-returns-with-news-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c8-s5-clarity-eumaeus-returns-with-news-framing"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-eumaeus-returns-with-news",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "eumaeus": {
+                "x": 1030,
+                "y": 1300,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "eumaeus"
+          ],
+          "paths": {
+            "eumaeus": [
+              {
+                "x": 1190,
+                "y": 1240
+              },
+              {
+                "x": 1030,
+                "y": 1300
+              }
+            ]
+          },
+          "presence": {
+            "eumaeus": {
+              "kind": "enter",
+              "from": {
+                "x": 1370,
+                "y": 1180
+              },
+              "fadeMs": 450
+            }
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-eumaeus-returns-with-news-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-hut-plan"
+          }
+        },
+        {
+          "id": "odyssey-c8-s5-clarity-the-guide-returns",
+          "type": "text",
+          "kind": "narration",
+          "text": "Eumaeus returned after telling Penelope that her son was safe. He would guide the old traveler to the palace in the morning."
+        },
+        {
+          "id": "odyssey-c8-end",
+          "type": "end"
+        }
+      ],
+      "estimatedSeconds": 121,
+      "durationMs": 120842
+    }
+  ],
+  "causalRevision": {
+    "version": 1,
+    "scope": "Child-readable cause, time, place and cast continuity",
+    "routePlans": [
+      "odyssey-c8-s5-clarity-telemachus-leaves-the-hut",
+      "odyssey-c8-s5-clarity-eumaeus-returns-with-news"
+    ]
+  },
+  "durationMs": 414458,
+  "documentRevision": {
+    "version": 1,
+    "source": "Correciones visuales.docx",
+    "date": "2026-10-14",
+    "scope": "Ship passenger spacing only"
+  }
+}

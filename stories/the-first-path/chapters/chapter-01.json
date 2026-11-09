@@ -1,0 +1,617 @@
+{
+  "schemaVersion": 1,
+  "id": "el-primer-camino-v1",
+  "renderer": "village",
+  "title": {
+    "es": "El primer camino",
+    "en": "The First Path"
+  },
+  "intro": {
+    "es": "Una carta vacía. Un viaje por empezar.",
+    "en": "An empty letter. A journey about to begin."
+  },
+  "ending": {
+    "es": "Cada viaje empieza con un paso.",
+    "en": "Every journey begins with one step."
+  },
+  "description": {
+    "es": "Una historia sobre partir, escribir y volver.",
+    "en": "A story about leaving, writing, and coming home."
+  },
+  "stageLabel": {
+    "es": "Lina y Nico, junto al arroyo",
+    "en": "Lina and Nico, by the stream"
+  },
+  "assets": {
+    "village": "/stories/the-first-path/assets/backgrounds/village.png",
+    "people": "/stories/the-first-path/assets/atlases/people.png",
+    "letter": "/stories/the-first-path/assets/props/letter.png"
+  },
+  "ambientAudio": {
+    "type": "synthesized"
+  },
+  "initialState": {
+    "actors": {
+      "ines": {
+        "x": 1040,
+        "y": 510,
+        "visible": 1,
+        "facing": "left",
+        "pose": "idle"
+      },
+      "teo": {
+        "x": 735,
+        "y": 615,
+        "visible": 1,
+        "facing": "back",
+        "pose": "idle"
+      }
+    },
+    "lamp": {
+      "owner": "ines",
+      "tableX": 224,
+      "lit": 0,
+      "tilt": 0
+    },
+    "deskLight": 1,
+    "darkness": 0.08,
+    "chapter": 0,
+    "view": "waterfall",
+    "signTilt": -0.14,
+    "blueSweep": 0
+  },
+  "shots": {
+    "waterfall": {
+      "cx": 155,
+      "cy": 530,
+      "w": 300,
+      "h": 430,
+      "actors": [],
+      "points": [
+        {
+          "name": "waterfall",
+          "x": 85,
+          "y": 465
+        },
+        {
+          "name": "foam",
+          "x": 95,
+          "y": 610
+        }
+      ]
+    },
+    "wide": {
+      "cx": 825,
+      "cy": 522,
+      "w": 365,
+      "h": 340,
+      "actors": [
+        "ines",
+        "teo"
+      ],
+      "points": []
+    },
+    "arrival": {
+      "cx": 825,
+      "cy": 522,
+      "w": 365,
+      "h": 340,
+      "actors": [
+        "ines",
+        "teo"
+      ],
+      "points": []
+    },
+    "close": {
+      "cx": 788,
+      "cy": 535,
+      "w": 320,
+      "h": 320,
+      "actors": [
+        "ines",
+        "teo"
+      ],
+      "points": []
+    },
+    "letter": {
+      "cx": 780,
+      "cy": 556,
+      "w": 260,
+      "h": 235,
+      "actors": [
+        "ines",
+        "teo"
+      ],
+      "points": [],
+      "letter": true
+    },
+    "path": {
+      "cx": 780,
+      "cy": 425,
+      "w": 340,
+      "h": 490,
+      "actors": [
+        "ines",
+        "teo"
+      ],
+      "points": [
+        {
+          "name": "path",
+          "x": 730,
+          "y": 235
+        }
+      ]
+    },
+    "departure": {
+      "cx": 780,
+      "cy": 425,
+      "w": 340,
+      "h": 490,
+      "actors": [
+        "ines",
+        "teo"
+      ],
+      "points": [
+        {
+          "name": "path",
+          "x": 730,
+          "y": 235
+        }
+      ]
+    }
+  },
+  "characters": {
+    "ines": {
+      "name": "Lina",
+      "color": "#ffe1a2",
+      "role": {
+        "es": "Una amiga",
+        "en": "A friend"
+      }
+    },
+    "teo": {
+      "name": "Nico",
+      "color": "#ffe1a2",
+      "role": {
+        "es": "Un viajero",
+        "en": "A traveler"
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": "chapter-1",
+      "name": {
+        "es": "Antes de partir",
+        "en": "Before leaving"
+      },
+      "atmosphere": {
+        "water": 0.12,
+        "wind": 0.045,
+        "birds": 0.022,
+        "village": 0.009,
+        "music": 0.016
+      },
+      "media": {
+        "type": "animation",
+        "videoSrc": null
+      },
+      "steps": [
+        {
+          "type": "text",
+          "id": "line-1",
+          "text": {
+            "es": "La cascada seguía su curso, como cada mañana. El agua caía entre las rocas y se deshacía en espuma.",
+            "en": "The waterfall followed its course, as it did every morning. Water fell between the rocks and dissolved into foam."
+          },
+          "kind": "narration"
+        },
+        {
+          "type": "action",
+          "id": "to-the-crossroads",
+          "duration": 2400,
+          "effects": {
+            "actors": {
+              "ines": {
+                "x": 900,
+                "y": 585,
+                "pose": "walk",
+                "facing": "left"
+              },
+              "teo": {
+                "facing": "right"
+              }
+            },
+            "view": "arrival"
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-2",
+          "text": {
+            "es": "¡Nico! Espera. Se te olvida una cosa.",
+            "en": "Nico! Wait. You forgot something."
+          },
+          "who": "ines"
+        },
+        {
+          "type": "text",
+          "id": "line-3",
+          "text": {
+            "es": "Creía que ya nos habíamos despedido. Si seguimos así, no voy a salir nunca.",
+            "en": "I thought we had already said goodbye. If we keep this up, I’ll never leave."
+          },
+          "who": "teo"
+        },
+        {
+          "type": "action",
+          "id": "meet-at-crossroads",
+          "duration": 1900,
+          "effects": {
+            "actors": {
+              "ines": {
+                "x": 852,
+                "y": 592,
+                "pose": "walk",
+                "facing": "left"
+              }
+            },
+            "view": "close"
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-4",
+          "text": {
+            "es": "Lina se acercó con una carta pequeña. El sobre llevaba un sello rojo.",
+            "en": "Lina approached with a little letter. The envelope had a red seal."
+          },
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "line-5",
+          "text": {
+            "es": "La hice esta mañana. Quería dártela antes de que salieras.",
+            "en": "I made it this morning. I wanted to give it to you before you left."
+          },
+          "who": "ines"
+        },
+        {
+          "type": "text",
+          "id": "line-6",
+          "text": {
+            "es": "¿Una carta de despedida?",
+            "en": "A goodbye letter?"
+          },
+          "who": "teo"
+        },
+        {
+          "type": "text",
+          "id": "line-7",
+          "text": {
+            "es": "Todavía no.",
+            "en": "Not yet."
+          },
+          "who": "ines"
+        }
+      ]
+    },
+    {
+      "id": "chapter-2",
+      "name": {
+        "es": "Una carta pendiente",
+        "en": "A letter to come"
+      },
+      "atmosphere": {
+        "water": 0.065,
+        "wind": 0.035,
+        "birds": 0.012,
+        "village": 0.006,
+        "music": 0.022
+      },
+      "media": {
+        "type": "animation",
+        "videoSrc": null
+      },
+      "steps": [
+        {
+          "type": "action",
+          "id": "step-closer",
+          "duration": 750,
+          "effects": {
+            "chapter": 1,
+            "actors": {
+              "ines": {
+                "x": 822,
+                "y": 615,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "type": "action",
+          "id": "offer-letter",
+          "duration": 1200,
+          "effects": {
+            "view": "letter",
+            "actors": {
+              "ines": {
+                "pose": "reach",
+                "facing": "left"
+              },
+              "teo": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "type": "action",
+          "id": "receive-letter",
+          "duration": 1300,
+          "effects": {
+            "lamp": {
+              "owner": "teo"
+            },
+            "actors": {
+              "ines": {
+                "pose": "reach"
+              },
+              "teo": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-8",
+          "text": {
+            "es": "Lina le tendió el sobre. Nico lo recibió con cuidado, como si dentro hubiera algo que pudiera romperse.",
+            "en": "Lina held out the envelope. Nico took it carefully, as if there were something fragile inside."
+          },
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "line-9",
+          "text": {
+            "es": "Pesa muy poco.",
+            "en": "It feels very light."
+          },
+          "who": "teo"
+        },
+        {
+          "type": "text",
+          "id": "line-10",
+          "text": {
+            "es": "Está vacío.",
+            "en": "It’s empty."
+          },
+          "who": "ines"
+        },
+        {
+          "type": "action",
+          "id": "small-smile",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "teo": {
+                "pose": "smile"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-11",
+          "text": {
+            "es": "Eso explica lo de «todavía».",
+            "en": "That explains the “not yet.”"
+          },
+          "who": "teo"
+        },
+        {
+          "type": "action",
+          "id": "return-to-conversation",
+          "duration": 1100,
+          "effects": {
+            "view": "close"
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-12",
+          "text": {
+            "es": "Quiero que me escribas cuando llegues. Una sola cosa. Algo que aquí no tengamos.",
+            "en": "I want you to write when you arrive. Just one thing. Something we don’t have here."
+          },
+          "who": "ines"
+        },
+        {
+          "type": "text",
+          "id": "line-13",
+          "text": {
+            "es": "¿Y si no encuentro nada que valga la pena contar?",
+            "en": "What if I don’t find anything worth telling you?"
+          },
+          "who": "teo"
+        },
+        {
+          "type": "text",
+          "id": "line-14",
+          "text": {
+            "es": "Puede ser algo pequeño. Lo primero que te haga sonreír al llegar.",
+            "en": "It can be something small. The first thing that makes you smile when you arrive."
+          },
+          "who": "ines"
+        },
+        {
+          "type": "action",
+          "id": "read-the-seal",
+          "duration": 1300,
+          "effects": {
+            "view": "letter",
+            "actors": {
+              "teo": {
+                "pose": "down"
+              }
+            }
+          }
+        },
+        {
+          "mood": "down",
+          "type": "text",
+          "id": "line-15",
+          "text": {
+            "es": "Nico bajó la mirada hacia el sobre. Por primera vez, el viaje parecía tener un tamaño que cabía en sus manos.",
+            "en": "Nico looked down at the envelope. For the first time, the journey seemed small enough to fit in his hands."
+          },
+          "kind": "narration"
+        },
+        {
+          "type": "action",
+          "id": "look-up",
+          "duration": 1100,
+          "effects": {
+            "view": "close"
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-16",
+          "text": {
+            "es": "¿Y tú qué vas a hacer mientras?",
+            "en": "And what will you do in the meantime?"
+          },
+          "who": "teo"
+        },
+        {
+          "type": "text",
+          "id": "line-17",
+          "text": {
+            "es": "Esperar la carta. Y aprender a hacer pan sin quemarlo. Las dos cosas pueden llevar tiempo.",
+            "en": "Wait for your letter. And learn to bake bread without burning it. Both might take a while."
+          },
+          "who": "ines"
+        }
+      ]
+    },
+    {
+      "id": "chapter-3",
+      "name": {
+        "es": "El primer paso",
+        "en": "The first step"
+      },
+      "atmosphere": {
+        "water": 0.085,
+        "wind": 0.055,
+        "birds": 0.025,
+        "village": 0.008,
+        "music": 0.019
+      },
+      "media": {
+        "type": "animation",
+        "videoSrc": null
+      },
+      "steps": [
+        {
+          "type": "action",
+          "id": "look-to-path",
+          "duration": 1100,
+          "effects": {
+            "chapter": 2,
+            "view": "path",
+            "actors": {
+              "teo": {
+                "facing": "back"
+              },
+              "ines": {
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-18",
+          "text": {
+            "es": "Los dos miraron el sendero que se alejaba del cruce. Esta vez, Nico no apartó la vista.",
+            "en": "They both looked at the path leading away from the crossroads. This time, Nico didn’t look away."
+          },
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "line-19",
+          "text": {
+            "es": "Entonces te escribiré sobre la primera panadería. Para que compares.",
+            "en": "Then I’ll write about the first bakery. So you can compare."
+          },
+          "who": "teo"
+        },
+        {
+          "type": "text",
+          "id": "line-20",
+          "text": {
+            "es": "Trato hecho.",
+            "en": "It’s a deal."
+          },
+          "who": "ines"
+        },
+        {
+          "type": "action",
+          "id": "first-step",
+          "duration": 1800,
+          "effects": {
+            "view": "departure",
+            "actors": {
+              "teo": {
+                "x": 740,
+                "y": 484,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "type": "action",
+          "id": "keep-walking",
+          "duration": 1600,
+          "effects": {
+            "actors": {
+              "teo": {
+                "x": 730,
+                "y": 395,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "ines": {
+                "pose": "reach",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "line-21",
+          "text": {
+            "es": "Nico dio el primer paso, y luego otro. Lina se quedó junto al cruce. En las manos de Nico, aquel sobre vacío ya llevaba una promesa.",
+            "en": "Nico took one step, then another. Lina stayed by the crossroads. In his hands, the empty envelope already held a promise."
+          },
+          "kind": "narration"
+        },
+        {
+          "type": "end",
+          "id": "end"
+        }
+      ]
+    }
+  ]
+}

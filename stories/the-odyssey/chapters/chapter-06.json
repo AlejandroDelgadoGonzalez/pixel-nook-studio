@@ -1,0 +1,5076 @@
+{
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "title": "The Odyssey",
+  "subtitle": "The Long Way Home",
+  "attribution": "An original abridged adaptation of Homer’s Odyssey",
+  "serialized": true,
+  "episodes": true,
+  "timing": {
+    "characterMs": 30,
+    "wordMs": 440,
+    "minimumHoldMs": 2100,
+    "linePauseMs": 1400
+  },
+  "videoExport": {
+    "logo": {
+      "src": "/stories/the-odyssey/assets/branding/logo.png",
+      "durationMs": 3000
+    },
+    "captionFadeMs": 450,
+    "previewHoldMs": 900
+  },
+  "renderer": "homecoming",
+  "availableChapter": "chapter-6",
+  "description": "The road home leads through a shore without morning.",
+  "intro": "Some voices can only be heard after a farewell.",
+  "ending": "He returned with a warning, and one promise to keep.",
+  "stageLabel": "A pixel art retelling of the Odyssey",
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.6,
+    "birdMinMs": 45000,
+    "birdRangeMs": 30000
+  },
+  "adaptationSource": {
+    "title": "Homer, Odyssey, Books X–XI",
+    "url": "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm",
+    "note": "Original abridged English narration and dialogue. Events are condensed for quiet episodic reading. Ritual sacrifice and deaths are represented without gore. The final conflict of Book XXIV is condensed to Athena intervening before renewed bloodshed."
+  },
+  "characters": {
+    "odysseus": {
+      "name": "Odysseus",
+      "role": "The traveler",
+      "color": "#cbe4df"
+    },
+    "circe": {
+      "name": "Circe",
+      "role": "The island sorceress",
+      "color": "#dfb8d0"
+    },
+    "eurylochus": {
+      "name": "Eurylochus",
+      "role": "A companion",
+      "color": "#d4dbaf"
+    },
+    "elpenor": {
+      "name": "Elpenor",
+      "role": "A lost companion",
+      "color": "#d3c7b9"
+    },
+    "anticleia": {
+      "name": "Anticleia",
+      "role": "His mother",
+      "color": "#c5d6d5"
+    },
+    "tiresias": {
+      "name": "Tiresias",
+      "role": "The prophet",
+      "color": "#d9cadd"
+    },
+    "achilles": {
+      "name": "Achilles",
+      "role": "A fallen warrior",
+      "color": "#dfc38d"
+    },
+    "polites": {
+      "name": "Polites",
+      "role": "A companion",
+      "color": "#c8d9e4"
+    }
+  },
+  "assets": {
+    "hero": "/stories/the-odyssey/assets/atlases/characters/odyssey-core.png",
+    "crew": "/stories/the-odyssey/assets/atlases/characters/cave-people.png",
+    "aePeople": "/stories/the-odyssey/assets/atlases/characters/aeaea-people.png",
+    "shades": "/stories/the-odyssey/assets/atlases/characters/underworld-people.png",
+    "props": "/stories/the-odyssey/assets/atlases/props/return-props.png",
+    "voyageRooms": "/stories/the-odyssey/assets/backgrounds/native/voyage-environments.png",
+    "forest": "/stories/the-odyssey/assets/backgrounds/native/circe-court.png",
+    "boatAtlas": "/stories/the-odyssey/assets/atlases/props/cave-props.png",
+    "circeLanding": "/stories/the-odyssey/assets/backgrounds/panoramas/circe-landing-panorama.png",
+    "journeySea": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png"
+  },
+  "visuals": {
+    "grids": {
+      "hero": {
+        "x": [
+          0,
+          321,
+          641,
+          962,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          643,
+          970,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "crew": {
+        "x": [
+          0,
+          298,
+          620,
+          912,
+          1227
+        ],
+        "y": [
+          0,
+          337,
+          640,
+          939,
+          1281
+        ],
+        "w": 1227,
+        "h": 1281
+      },
+      "aePeople": {
+        "x": [
+          0,
+          399,
+          770,
+          1130,
+          1536
+        ],
+        "y": [
+          0,
+          346,
+          691,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      },
+      "ithPeople": {
+        "x": [
+          0,
+          321,
+          643,
+          967,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          645,
+          950,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "scheriaPeople": {
+        "x": [
+          0,
+          322,
+          645,
+          968,
+          1254
+        ],
+        "y": [
+          0,
+          339,
+          664,
+          970,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "shades": {
+        "x": [
+          0,
+          302,
+          625,
+          927,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          642,
+          956,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "returnPeople": {
+        "x": [
+          0,
+          306,
+          637,
+          931,
+          1254
+        ],
+        "y": [
+          0,
+          342,
+          651,
+          945,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "props": {
+        "x": [
+          0,
+          325,
+          642,
+          929,
+          1254
+        ],
+        "y": [
+          0,
+          346,
+          690,
+          1009,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "boatAtlas": {
+        "x": [
+          0,
+          525,
+          922,
+          1267,
+          1774
+        ],
+        "y": [
+          0,
+          491,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "sleepAtlas": {
+        "x": [
+          0,
+          850,
+          1774
+        ],
+        "y": [
+          0,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "actions": {
+        "x": [
+          0,
+          774,
+          1536
+        ],
+        "y": [
+          0,
+          542,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      },
+      "seaActions": {
+        "x": [
+          0,
+          1086,
+          2172
+        ],
+        "y": [
+          0,
+          724
+        ],
+        "w": 2172,
+        "h": 724
+      },
+      "aeProps": {
+        "x": [
+          0,
+          442,
+          847,
+          1295,
+          1774
+        ],
+        "y": [
+          0,
+          482,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "ithHosts": {
+        "x": [
+          0,
+          443.5,
+          887,
+          1330.5,
+          1774
+        ],
+        "y": [
+          0,
+          476,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "bowLoose": {
+        "x": [
+          0,
+          1024
+        ],
+        "y": [
+          0,
+          1536
+        ],
+        "w": 1024,
+        "h": 1536
+      },
+      "bowActions": {
+        "x": [
+          0,
+          887,
+          1774
+        ],
+        "y": [
+          0,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "nurseKneel": {
+        "x": [
+          0,
+          1536
+        ],
+        "y": [
+          0,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      }
+    },
+    "rooms": {
+      "dark": {
+        "atlas": "voyageRooms",
+        "cell": [
+          0,
+          0,
+          0.5,
+          0.5
+        ],
+        "water": true
+      },
+      "forest": {
+        "atlas": "forest",
+        "leaves": true
+      },
+      "burial": {
+        "atlas": "voyageRooms",
+        "cell": [
+          0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "leaves": true
+      },
+      "circeLanding": {
+        "atlas": "circeLanding",
+        "src": "/stories/the-odyssey/assets/backgrounds/panoramas/circe-landing-panorama.png",
+        "fullDepth": true,
+        "nativeBounds": true,
+        "centralThird": true
+      },
+      "journeySea": {
+        "atlas": "journeySea",
+        "src": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png",
+        "fullDepth": true,
+        "nativeBounds": true,
+        "centralThird": true
+      }
+    },
+    "cast": {
+      "odysseus": {
+        "atlas": "hero",
+        "row": 0,
+        "reachHeight": 112
+      },
+      "circe": {
+        "atlas": "aePeople",
+        "row": 1,
+        "reachHeight": 136
+      },
+      "eurylochus": {
+        "atlas": "crew",
+        "row": 1,
+        "reachHeight": 136
+      },
+      "elpenor": {
+        "atlas": "shades",
+        "row": 2,
+        "reachHeight": 136
+      },
+      "anticleia": {
+        "atlas": "shades",
+        "row": 0,
+        "reachHeight": 136
+      },
+      "tiresias": {
+        "atlas": "shades",
+        "row": 1,
+        "reachHeight": 136
+      },
+      "achilles": {
+        "atlas": "shades",
+        "row": 3,
+        "reachHeight": 136
+      },
+      "polites": {
+        "atlas": "aePeople",
+        "row": 2,
+        "reachHeight": 136
+      }
+    },
+    "objects": {
+      "oar": {
+        "atlas": "props",
+        "col": 0,
+        "row": 0,
+        "height": 150
+      },
+      "grave": {
+        "atlas": "props",
+        "col": 1,
+        "row": 0,
+        "height": 65
+      },
+      "basin": {
+        "atlas": "props",
+        "col": 2,
+        "row": 0,
+        "height": 42
+      },
+      "ship": {
+        "atlas": "boatAtlas",
+        "col": 0,
+        "row": 0,
+        "height": 232,
+        "scaleX": 1.65
+      }
+    },
+    "poses": {},
+    "variants": {}
+  },
+  "initialState": {
+    "room": "forest",
+    "view": "farewell",
+    "chapter": 0,
+    "lamp": {
+      "owner": null
+    },
+    "storm": 0,
+    "dogSleep": 0,
+    "actors": {
+      "odysseus": {
+        "x": 710,
+        "y": 1330,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "circe": {
+        "x": 930,
+        "y": 1330,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "eurylochus": {
+        "x": 630,
+        "y": 1420,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "elpenor": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "anticleia": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "tiresias": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "achilles": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "polites": {
+        "x": 1055,
+        "y": 1400,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      }
+    },
+    "oar": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "grave": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "basin": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "staff": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "arrow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "axes": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bed": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "dog": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "cow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "cow2": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "siren": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "pig": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "table": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "stool": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "brazier": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bread": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "ship": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "wreck": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "scylla": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "gift": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "lostCrew": 0,
+    "bowStrung": 0
+  },
+  "shots": {
+    "farewell": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [],
+      "landmarks": []
+    },
+    "shades": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "elpenor",
+        "tiresias"
+      ],
+      "props": [
+        "basin"
+      ],
+      "landmarks": []
+    },
+    "mother": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "anticleia"
+      ],
+      "props": [
+        "basin"
+      ],
+      "landmarks": []
+    },
+    "warrior": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "achilles"
+      ],
+      "props": [
+        "basin"
+      ],
+      "landmarks": []
+    },
+    "grave": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [
+        "grave",
+        "oar"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c6-s1-take-a-step-toward-home-route-view": {
+      "cx": 780,
+      "cy": 1310,
+      "w": 452,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [],
+      "landmarks": []
+    },
+    "odyssey-c6-s1-eurylochus-brings-the-loss-route-view": {
+      "cx": 780,
+      "cy": 1310,
+      "w": 452,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [],
+      "landmarks": []
+    },
+    "odyssey-c6-s1-leave-the-courtyard-route-view": {
+      "cx": 780,
+      "cy": 1310,
+      "w": 452,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [],
+      "landmarks": []
+    },
+    "odyssey-c6-s5-bring-elpenors-oar-route-view": {
+      "cx": 820.5,
+      "cy": 1310,
+      "w": 441,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe"
+      ],
+      "props": [
+        "grave",
+        "oar"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c6-s5-turn-from-the-grave-route-view": {
+      "cx": 820.5,
+      "cy": 1310,
+      "w": 441,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe"
+      ],
+      "props": [
+        "grave",
+        "oar"
+      ],
+      "landmarks": []
+    },
+    "clarity-landing": {
+      "cx": 770,
+      "cy": 1430,
+      "w": 650,
+      "h": 640,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-beach": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 650,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-launch": {
+      "cx": 770,
+      "cy": 1550,
+      "w": 650,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-path": {
+      "cx": 800,
+      "cy": 1430,
+      "w": 650,
+      "h": 600,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-at-sea": {
+      "cx": 770,
+      "cy": 930,
+      "w": 650,
+      "h": 480,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-dark-landing": {
+      "cx": 790,
+      "cy": 1070,
+      "w": 700,
+      "h": 700,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-dark-path": {
+      "cx": 790,
+      "cy": 1220,
+      "w": 550,
+      "h": 580,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-leave-the-house-path-route": {
+      "cx": 809,
+      "cy": 1449,
+      "w": 668,
+      "h": 638,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-board-odysseus-route": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-board-polites-route": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-board-eurylochus-route": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-sail-from-aeaea-route": {
+      "cx": 770,
+      "cy": 1550,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s2-clarity-step-onto-the-cold-path-route": {
+      "cx": 850,
+      "cy": 996.5,
+      "w": 820,
+      "h": 847,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s2-clarity-walk-to-the-offering-place-route": {
+      "cx": 763.5,
+      "cy": 1209,
+      "w": 603,
+      "h": 602,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-walk-back-to-the-dark-landing-route": {
+      "cx": 763.5,
+      "cy": 1209,
+      "w": 603,
+      "h": 602,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-board-with-his-waiting-friends-route": {
+      "cx": 850,
+      "cy": 996.5,
+      "w": 820,
+      "h": 847,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-land-odysseus-route": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-land-polites-route": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-land-eurylochus-route": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-follow-the-path-to-the-grave-route": {
+      "cx": 800,
+      "cy": 1044,
+      "w": 650,
+      "h": 1372,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-take-a-step-toward-home-framing": {
+      "cx": 842.5,
+      "cy": 1310,
+      "w": 577,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [],
+      "landmarks": []
+    },
+    "odyssey-c6-s1-eurylochus-brings-the-loss-framing": {
+      "cx": 842.5,
+      "cy": 1310,
+      "w": 577,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [],
+      "landmarks": []
+    },
+    "odyssey-c6-s1-leave-the-courtyard-framing": {
+      "cx": 842.5,
+      "cy": 1310,
+      "w": 577,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe",
+        "eurylochus",
+        "polites"
+      ],
+      "props": [],
+      "landmarks": []
+    },
+    "odyssey-c6-s1-clarity-leave-the-house-path-framing": {
+      "cx": 809,
+      "cy": 1449,
+      "w": 668,
+      "h": 638,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-board-odysseus-framing": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-board-polites-framing": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-board-eurylochus-framing": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s1-clarity-sail-from-aeaea-framing": {
+      "cx": 770,
+      "cy": 1550,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s2-clarity-step-onto-the-cold-path-framing": {
+      "cx": 850,
+      "cy": 996.5,
+      "w": 820,
+      "h": 847,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s2-clarity-walk-to-the-offering-place-framing": {
+      "cx": 763.5,
+      "cy": 1209,
+      "w": 603,
+      "h": 602,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-walk-back-to-the-dark-landing-framing": {
+      "cx": 763.5,
+      "cy": 1209,
+      "w": 603,
+      "h": 602,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-board-with-his-waiting-friends-framing": {
+      "cx": 850,
+      "cy": 996.5,
+      "w": 820,
+      "h": 847,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-land-odysseus-framing": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-land-polites-framing": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-land-eurylochus-framing": {
+      "cx": 770,
+      "cy": 1370,
+      "w": 660,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s4-clarity-follow-the-path-to-the-grave-framing": {
+      "cx": 800,
+      "cy": 1044,
+      "w": 650,
+      "h": 1372,
+      "actors": [
+        "odysseus",
+        "polites",
+        "eurylochus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c6-s5-bring-elpenors-oar-framing": {
+      "cx": 820.5,
+      "cy": 1310,
+      "w": 441,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe"
+      ],
+      "props": [
+        "grave",
+        "oar"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c6-s5-turn-from-the-grave-framing": {
+      "cx": 820.5,
+      "cy": 1310,
+      "w": 441,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "circe"
+      ],
+      "props": [
+        "grave",
+        "oar"
+      ],
+      "landmarks": []
+    }
+  },
+  "landmarks": {},
+  "scenes": [
+    {
+      "id": "odyssey-c6-s1",
+      "chapterId": "chapter-6",
+      "name": "One More Farewell",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c6-s1-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "forest",
+            "view": "farewell",
+            "chapter": 0,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1330,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "circe": {
+                "x": 930,
+                "y": 1330,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 630,
+                "y": 1420,
+                "visible": 1,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elpenor": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "anticleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "tiresias": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "achilles": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 1055,
+                "y": 1400,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              },
+              "circe": {
+                "visible": 1
+              },
+              "eurylochus": {
+                "visible": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-take-a-step-toward-home-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c6-s1-take-a-step-toward-home-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-take-a-step-toward-home",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 745,
+                "y": 1320,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-take-a-step-toward-home-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "farewell"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-remember",
+          "type": "text",
+          "kind": "narration",
+          "text": "Odysseus was still telling Alcinous about the years before Calypso. His account continued on Circe’s island."
+        },
+        {
+          "id": "odyssey-c6-s1-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "A year passed on Aeaea. The men recovered their strength. Then their thoughts turned toward home again."
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-why",
+          "type": "text",
+          "kind": "narration",
+          "text": "Circe wanted to help them leave safely. Tiresias was a prophet: someone who could see dangers before they happened."
+        },
+        {
+          "id": "odyssey-c6-s1-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "circe",
+          "text": "“You must first seek Tiresias, the prophet among the dead.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s1-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Another shore before Ithaca?”",
+          "listener": "circe"
+        },
+        {
+          "id": "odyssey-c6-s1-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "circe",
+          "text": "“One that can tell you what waits on the way.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s1-eurylochus-brings-the-loss-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c6-s1-eurylochus-brings-the-loss-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-eurylochus-brings-the-loss",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "actors": {
+              "eurylochus": {
+                "x": 630,
+                "y": 1390,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "odysseus": {
+                "facing": "left"
+              }
+            }
+          },
+          "travelFacing": [
+            "eurylochus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-eurylochus-brings-the-loss-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "farewell"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-face-the-captain-with-the-news",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "actors": {
+              "eurylochus": {
+                "facing": "right"
+              },
+              "odysseus": {
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-crew",
+          "type": "text",
+          "kind": "narration",
+          "text": "Other sailors from their one surviving ship had rested on Aeaea too. Elpenor was the youngest of them."
+        },
+        {
+          "id": "odyssey-c6-s1-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Eurylochus brought sad news: Elpenor had fallen from the roof where he slept and died. The crew had lost another friend."
+        },
+        {
+          "id": "odyssey-c6-s1-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“We must remember him when we return.”",
+          "listener": "eurylochus"
+        },
+        {
+          "id": "odyssey-c6-s1-leave-the-courtyard-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c6-s1-leave-the-courtyard-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-leave-the-courtyard",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "y": 1450,
+                "pose": "walk",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "y": 1470,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-leave-the-courtyard-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "farewell"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "One place in their crew would stay empty. Ahead lay the edge of the living world.",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-directions",
+          "type": "text",
+          "kind": "narration",
+          "text": "Circe gave them directions to the dark shore. Odysseus, Eurylochus and Polites went back down the path to their ship."
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-leave-the-house-path-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s1-clarity-leave-the-house-path-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-leave-the-house-path",
+          "type": "action",
+          "duration": 2500,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 745,
+                "y": 1660,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "front"
+              },
+              "polites": {
+                "x": 965,
+                "y": 1700,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "x": 630,
+                "y": 1740,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus",
+            "polites",
+            "eurylochus"
+          ],
+          "presence": {
+            "odysseus": {
+              "kind": "exit",
+              "fadeMs": 450
+            },
+            "polites": {
+              "kind": "exit",
+              "fadeMs": 450
+            },
+            "eurylochus": {
+              "kind": "exit",
+              "fadeMs": 450
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-leave-the-house-path-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-path"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-back-to-circes-landing",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "circeLanding",
+            "view": "clarity-beach",
+            "chapter": 0,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 620,
+                "y": 1260,
+                "visible": 1,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "circe": {
+                "x": 930,
+                "y": 1330,
+                "visible": 0,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 965,
+                "y": 1280,
+                "visible": 1,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elpenor": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "anticleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "tiresias": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "achilles": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 770,
+                "y": 1230,
+                "visible": 1,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "grave": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "basin": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "ship": {
+              "x": 770,
+              "y": 1540,
+              "visible": 1,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "The visible journey reaches circeLanding"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-odysseus-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s1-clarity-board-odysseus-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-odysseus",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 650,
+                "y": 1495,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus"
+          ]
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-odysseus-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-beach"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-odysseus-aboard",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-polites-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s1-clarity-board-polites-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-polites",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "polites": {
+                "x": 770,
+                "y": 1495,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "polites"
+          ]
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-polites-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-beach"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-polites-aboard",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "polites": {
+                "onboard": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-eurylochus-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s1-clarity-board-eurylochus-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-eurylochus",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "eurylochus": {
+                "x": 890,
+                "y": 1495,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "eurylochus"
+          ]
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-eurylochus-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-beach"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-board-eurylochus-aboard",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "eurylochus": {
+                "onboard": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-crew-aboard",
+          "type": "text",
+          "kind": "narration",
+          "text": "Their remaining sailors were aboard too. Circe stayed on Aeaea while the same surviving ship carried them away."
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-sail-from-aeaea-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s1-clarity-sail-from-aeaea-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-sail-from-aeaea",
+          "type": "action",
+          "duration": 2100,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 650,
+                "y": 1685,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 770,
+                "y": 1685,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 890,
+                "y": 1685,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "ship": {
+              "x": 770,
+              "y": 1730
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": []
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-sail-from-aeaea-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-launch"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-sail-toward-the-dark-shore",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "journeySea",
+            "view": "clarity-at-sea",
+            "chapter": 0,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 650,
+                "y": 965,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "circe": {
+                "x": 930,
+                "y": 1330,
+                "visible": 0,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 890,
+                "y": 965,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elpenor": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "anticleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "tiresias": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "achilles": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 770,
+                "y": 965,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "grave": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "basin": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "ship": {
+              "x": 770,
+              "y": 1010,
+              "visible": 1,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "The visible journey reaches journeySea"
+          }
+        },
+        {
+          "id": "odyssey-c6-s1-clarity-voyage",
+          "type": "text",
+          "kind": "narration",
+          "text": "They followed Circe’s directions across the sea. At last, they reached a cold shore near the world of the dead."
+        }
+      ],
+      "estimatedSeconds": 140,
+      "durationMs": 139694
+    },
+    {
+      "id": "odyssey-c6-s2",
+      "chapterId": "chapter-6",
+      "name": "A Shore Without Morning",
+      "atmosphere": {
+        "water": 0.02,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0,
+        "music": 0.003
+      },
+      "steps": [
+        {
+          "id": "odyssey-c6-s2-departing-frame",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "odysseus": {},
+              "circe": {},
+              "eurylochus": {},
+              "elpenor": {},
+              "anticleia": {},
+              "tiresias": {},
+              "achilles": {}
+            },
+            "oar": {},
+            "grave": {},
+            "basin": {},
+            "staff": {},
+            "bow": {},
+            "arrow": {},
+            "axes": {},
+            "bed": {},
+            "dog": {},
+            "cow": {},
+            "cow2": {},
+            "siren": {},
+            "pig": {},
+            "table": {},
+            "stool": {},
+            "brazier": {},
+            "bread": {},
+            "ship": {},
+            "wreck": {},
+            "scylla": {},
+            "gift": {}
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "dark",
+            "view": "clarity-dark-landing",
+            "chapter": 1,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 810,
+                "y": 795,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "circe": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 1050,
+                "y": 795,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elpenor": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "anticleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "tiresias": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "achilles": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 930,
+                "y": 795,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1330,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 930,
+              "y": 840,
+              "visible": 1,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              }
+            },
+            "basin": {
+              "visible": 0
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-dark-arrival",
+          "type": "text",
+          "kind": "narration",
+          "text": "They brought the ship to the dark shore. Eurylochus and Polites would wait aboard while Odysseus sought Tiresias."
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-step-off-at-the-dark-shore",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-step-onto-the-cold-path-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s2-clarity-step-onto-the-cold-path-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-step-onto-the-cold-path",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 550,
+                "y": 1080,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 550,
+                "y": 940
+              },
+              {
+                "x": 550,
+                "y": 1080
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-step-onto-the-cold-path-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-dark-landing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-walk-to-the-offering-place-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s2-clarity-walk-to-the-offering-place-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-walk-to-the-offering-place",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 740,
+                "y": 1400,
+                "visible": 1,
+                "facing": "right",
+                "pose": "walk",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 590,
+                "y": 1260
+              },
+              {
+                "x": 740,
+                "y": 1400
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-walk-to-the-offering-place-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-dark-path"
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-set-out-the-offerings",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "shades",
+            "basin": {
+              "visible": 1,
+              "owner": "odysseus"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-pour-the-offering",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 730,
+                "y": 1360,
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-leave-the-offering-on-the-stones",
+          "type": "action",
+          "duration": 750,
+          "effects": {
+            "basin": {
+              "owner": null,
+              "x": 815,
+              "y": 1390
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus set out the offerings Circe had described to call the spirits of the dead. His companions waited with the ship."
+        },
+        {
+          "id": "odyssey-c6-s2-elpenor-appears",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "elpenor": {
+                "x": 920,
+                "y": 1340,
+                "visible": 0.72,
+                "ghost": 1,
+                "facing": "left"
+              }
+            }
+          },
+          "presence": {
+            "elpenor": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Explicit supernatural appearance"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Elpenor’s spirit appeared first. His body was still on Aeaea, and he wanted his friends to bury it when they returned."
+        },
+        {
+          "id": "odyssey-c6-s2-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "elpenor",
+          "text": "“Do not leave me unburied. Raise my oar over the grave.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s2-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I will come back for you.”",
+          "listener": "elpenor"
+        },
+        {
+          "id": "odyssey-c6-s2-one-voice-makes-room",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "elpenor": {
+                "visible": 0
+              },
+              "tiresias": {
+                "x": 920,
+                "y": 1340,
+                "visible": 0.72,
+                "ghost": 1,
+                "facing": "left"
+              }
+            }
+          },
+          "presence": {
+            "elpenor": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Explicit supernatural appearance"
+            },
+            "tiresias": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Explicit supernatural appearance"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s2-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Elpenor’s spirit faded, and Tiresias appeared. This was the prophet Circe had sent Odysseus to find."
+        },
+        {
+          "id": "odyssey-c6-s2-clarity-sun",
+          "type": "text",
+          "kind": "narration",
+          "text": "Tiresias warned him about animals belonging to Helios, the god of the Sun. Killing them would bring danger to the crew."
+        },
+        {
+          "id": "odyssey-c6-s2-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "tiresias",
+          "text": "“Leave the cattle of the Sun unharmed. If your men kill them, their ship will not bring them home.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s2-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus listened. Knowing a danger, he was learning, did not mean he could keep everyone from it.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 96,
+      "durationMs": 95402
+    },
+    {
+      "id": "odyssey-c6-s3",
+      "chapterId": "chapter-6",
+      "name": "The Mother He Missed",
+      "atmosphere": {
+        "water": 0.02,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0,
+        "music": 0.003
+      },
+      "steps": [
+        {
+          "id": "odyssey-c6-s3-departing-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c6-s3-the-prophets-voice-recedes",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "tiresias": {
+                "visible": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-settle-the-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "mother",
+            "chapter": 2,
+            "actors": {
+              "anticleia": {
+                "x": 930,
+                "y": 1370,
+                "visible": 0,
+                "ghost": 1,
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-arrive",
+          "type": "action",
+          "duration": 1,
+          "effects": {},
+          "presence": {
+            "anticleia": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-a-familiar-face",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "actors": {
+              "anticleia": {
+                "visible": 0.72
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After Tiresias, his mother’s spirit appeared. Odysseus now learned that Anticleia had died in Ithaca while he was away."
+        },
+        {
+          "id": "odyssey-c6-s3-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“What brought you here? Was there no one to care for you?”",
+          "listener": "anticleia"
+        },
+        {
+          "id": "odyssey-c6-s3-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "anticleia",
+          "text": "“There was care. There was also the long waiting for you.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s3-the-first-embrace",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 875,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "anticleia": {
+                "visible": 0.15
+              }
+            }
+          },
+          "presence": {
+            "anticleia": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-the-first-embrace-reach",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-his-arms-find-nothing",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 760,
+                "pose": "walk",
+                "bow": 0.6,
+                "facing": "left"
+              },
+              "anticleia": {
+                "visible": 0.72
+              }
+            }
+          },
+          "presence": {
+            "anticleia": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-listen-after-the-first-attempt",
+          "type": "action",
+          "duration": 350,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He reached for her. His arms closed on air. He could not quite accept that she was there and beyond him."
+        },
+        {
+          "id": "odyssey-c6-s3-the-second-embrace",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 875,
+                "pose": "walk",
+                "bow": 0,
+                "facing": "right"
+              },
+              "anticleia": {
+                "visible": 0.15
+              }
+            }
+          },
+          "presence": {
+            "anticleia": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-the-second-embrace-reach",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-the-second-loss",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 760,
+                "pose": "walk",
+                "facing": "left"
+              },
+              "anticleia": {
+                "visible": 0.72
+              }
+            }
+          },
+          "presence": {
+            "anticleia": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-the-third-embrace",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 875,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "anticleia": {
+                "visible": 0.15
+              }
+            }
+          },
+          "presence": {
+            "anticleia": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-the-third-embrace-reach",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-let-her-be-a-voice",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 760,
+                "pose": "walk",
+                "bow": 0.5,
+                "facing": "left"
+              },
+              "anticleia": {
+                "visible": 0.72
+              }
+            }
+          },
+          "presence": {
+            "anticleia": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-listen-after-the-last-attempt",
+          "type": "action",
+          "duration": 350,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s3-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Twice more he had tried to hold her. Twice more she had slipped through his arms. At last, he listened."
+        },
+        {
+          "id": "odyssey-c6-s3-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "anticleia",
+          "text": "“Penelope still waits. Your son has grown. Your father keeps to his fields.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s3-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Tell me what I can carry back.”",
+          "listener": "anticleia"
+        },
+        {
+          "id": "odyssey-c6-s3-p8",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "anticleia",
+          "text": "“The living are still there. Go to them.”",
+          "listener": "odysseus"
+        }
+      ],
+      "estimatedSeconds": 73,
+      "durationMs": 72942
+    },
+    {
+      "id": "odyssey-c6-s4",
+      "chapterId": "chapter-6",
+      "name": "The Cost of Returning",
+      "atmosphere": {
+        "water": 0.02,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0,
+        "music": 0.003
+      },
+      "steps": [
+        {
+          "id": "odyssey-c6-s4-departing-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c6-s4-his-mothers-voice-recedes",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "actors": {
+              "anticleia": {
+                "visible": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-settle-the-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "warrior",
+            "chapter": 3,
+            "actors": {
+              "achilles": {
+                "x": 925,
+                "y": 1380,
+                "visible": 0,
+                "ghost": 1,
+                "facing": "left",
+                "bow": 0.5
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-arrive",
+          "type": "action",
+          "duration": 1,
+          "effects": {},
+          "presence": {
+            "achilles": {
+              "kind": "magic",
+              "fadeMs": 350,
+              "zone": "Shade in the underworld"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-the-warrior-in-the-dark",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "actors": {
+              "achilles": {
+                "visible": 0.72
+              },
+              "odysseus": {
+                "bow": 0.3
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Next came Achilles, a warrior who had fought at Troy and died there. His spirit could tell Odysseus about this place."
+        },
+        {
+          "id": "odyssey-c6-s4-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Even here, men honor you.”",
+          "listener": "achilles"
+        },
+        {
+          "id": "odyssey-c6-s4-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "achilles",
+          "text": "“I would rather work a poor man’s field in the sunlight.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s4-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The answer left no room for the songs Odysseus had expected. Glory had not made this shore warm."
+        },
+        {
+          "id": "odyssey-c6-s4-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "achilles",
+          "text": "“Tell me about my son.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s4-a-father-lifts-his-head",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "actors": {
+              "achilles": {
+                "bow": 0
+              },
+              "odysseus": {
+                "bow": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus told him of the young man’s courage at Troy. For a moment, Achilles stood straighter."
+        },
+        {
+          "id": "odyssey-c6-s4-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "It was news of someone living that gave the dead warrior joy. Odysseus held that thought as he left.",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-achilles-recedes",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "actors": {
+              "achilles": {
+                "visible": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-return-to-the-boat",
+          "type": "text",
+          "kind": "narration",
+          "text": "The voices fell quiet. Odysseus left the offerings on the stones and followed the same path back to his waiting crew."
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-walk-back-to-the-dark-landing-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s4-clarity-walk-back-to-the-dark-landing-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-walk-back-to-the-dark-landing",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 550,
+                "y": 1080,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 590,
+                "y": 1260
+              },
+              {
+                "x": 550,
+                "y": 1080
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-walk-back-to-the-dark-landing-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-dark-path"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-board-with-his-waiting-friends-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s4-clarity-board-with-his-waiting-friends-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-board-with-his-waiting-friends",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 810,
+                "y": 795,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 550,
+                "y": 940
+              },
+              {
+                "x": 780,
+                "y": 795
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-board-with-his-waiting-friends-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-dark-landing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-settle-on-the-dark-ship",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-sail-back-to-aeaea",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "journeySea",
+            "view": "clarity-at-sea",
+            "chapter": 3,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 650,
+                "y": 965,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "circe": {
+                "x": 930,
+                "y": 1330,
+                "visible": 0,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 890,
+                "y": 965,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elpenor": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "anticleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "tiresias": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "achilles": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 770,
+                "y": 965,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "grave": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "basin": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "ship": {
+              "x": 770,
+              "y": 1010,
+              "visible": 1,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "The visible journey reaches journeySea"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-keep-the-promise",
+          "type": "text",
+          "kind": "narration",
+          "text": "They sailed back to Aeaea to keep the promise to Elpenor. His body was still on the island."
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-return-to-the-same-aeaea-beach",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "circeLanding",
+            "view": "clarity-landing",
+            "chapter": 3,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 650,
+                "y": 1685,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "circe": {
+                "x": 930,
+                "y": 1330,
+                "visible": 0,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 890,
+                "y": 1685,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elpenor": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "anticleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "tiresias": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "achilles": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 770,
+                "y": 1685,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "grave": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "basin": {
+              "visible": 0,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            },
+            "ship": {
+              "x": 770,
+              "y": 1730,
+              "visible": 1,
+              "owner": null,
+              "lift": 0,
+              "crew": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "The visible journey reaches circeLanding"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-bring-the-ship-back-in",
+          "type": "action",
+          "duration": 2100,
+          "effects": {
+            "ship": {
+              "y": 1540
+            },
+            "actors": {
+              "odysseus": {
+                "x": 650,
+                "y": 1495,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 770,
+                "y": 1495,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 890,
+                "y": 1495,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 1,
+                "ghost": 0,
+                "disguise": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-step-out-odysseus",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-odysseus-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s4-clarity-land-odysseus-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-odysseus",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 620,
+                "y": 1260,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus"
+          ]
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-odysseus-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-beach"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-step-out-polites",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "polites": {
+                "onboard": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-polites-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s4-clarity-land-polites-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-polites",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "polites": {
+                "x": 770,
+                "y": 1230,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "polites"
+          ]
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-polites-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-beach"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-step-out-eurylochus",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "eurylochus": {
+                "onboard": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-eurylochus-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s4-clarity-land-eurylochus-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-eurylochus",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "eurylochus": {
+                "x": 965,
+                "y": 1280,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "eurylochus"
+          ]
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-land-eurylochus-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-beach"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-carry-the-oar-inland",
+          "type": "text",
+          "kind": "narration",
+          "text": "Back on shore, the men went inland to bury Elpenor. Odysseus took his friend’s oar to mark the grave."
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-follow-the-path-to-the-grave-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c6-s4-clarity-follow-the-path-to-the-grave-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-follow-the-path-to-the-grave",
+          "type": "action",
+          "duration": 2800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 740,
+                "y": 530,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "polites": {
+                "x": 850,
+                "y": 600,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "eurylochus": {
+                "x": 965,
+                "y": 650,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus",
+            "polites",
+            "eurylochus"
+          ],
+          "presence": {
+            "odysseus": {
+              "kind": "exit",
+              "fadeMs": 450
+            },
+            "polites": {
+              "kind": "exit",
+              "fadeMs": 450
+            },
+            "eurylochus": {
+              "kind": "exit",
+              "fadeMs": 450
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s4-clarity-follow-the-path-to-the-grave-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-path"
+          }
+        }
+      ],
+      "estimatedSeconds": 117,
+      "durationMs": 116576
+    },
+    {
+      "id": "odyssey-c6-s5",
+      "chapterId": "chapter-6",
+      "name": "What He Carries Back",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c6-s5-departing-frame",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "odysseus": {},
+              "circe": {},
+              "eurylochus": {},
+              "elpenor": {},
+              "anticleia": {},
+              "tiresias": {},
+              "achilles": {}
+            },
+            "oar": {},
+            "grave": {},
+            "basin": {},
+            "staff": {},
+            "bow": {},
+            "arrow": {},
+            "axes": {},
+            "bed": {},
+            "dog": {},
+            "cow": {},
+            "cow2": {},
+            "siren": {},
+            "pig": {},
+            "table": {},
+            "stool": {},
+            "brazier": {},
+            "bread": {},
+            "ship": {},
+            "wreck": {},
+            "scylla": {},
+            "gift": {}
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "burial",
+            "view": "grave",
+            "chapter": 4,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 700,
+                "y": 1360,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "circe": {
+                "x": 965,
+                "y": 1360,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurylochus": {
+                "x": 555,
+                "y": 1430,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elpenor": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "anticleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "tiresias": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "achilles": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "polites": {
+                "x": 1095,
+                "y": 1490,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 1,
+              "owner": "odysseus",
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 835,
+              "y": 1390,
+              "visible": 1,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              },
+              "circe": {
+                "visible": 1
+              }
+            },
+            "grave": {
+              "visible": 1
+            },
+            "oar": {
+              "visible": 1
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-bring-elpenors-oar-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c6-s5-bring-elpenors-oar-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-bring-elpenors-oar",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 740,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-bring-elpenors-oar-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "grave"
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Back on Aeaea, the men buried Elpenor. Odysseus brought the oar his companion had used at sea."
+        },
+        {
+          "id": "odyssey-c6-s5-plant-the-oar",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "oar": {
+              "owner": null,
+              "x": 835,
+              "y": 1365
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He planted it above the grave. There would be a mark for the man who had asked not to be forgotten."
+        },
+        {
+          "id": "odyssey-c6-s5-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“He was younger than my son.”",
+          "listener": "circe"
+        },
+        {
+          "id": "odyssey-c6-s5-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After the burial, Circe explained the dangers ahead. The Sirens sang to lure sailors away from their course and onto the rocks."
+        },
+        {
+          "id": "odyssey-c6-s5-clarity-safety",
+          "type": "text",
+          "kind": "narration",
+          "text": "Wax would keep the crew from hearing the song. Ropes would keep Odysseus safely aboard, even if he wanted to follow it."
+        },
+        {
+          "id": "odyssey-c6-s5-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "circe",
+          "text": "“You can listen to their song, if your men bind you to the mast. They must stop their ears.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c6-s5-turn-from-the-grave-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c6-s5-turn-from-the-grave-framing"
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-turn-from-the-grave",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 715,
+                "y": 1450,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-turn-from-the-grave-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "grave"
+          }
+        },
+        {
+          "id": "odyssey-c6-s5-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He left the oar standing. The warnings went with him; the grave stayed behind."
+        },
+        {
+          "id": "odyssey-c6-s5-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Ahead lay voices that would promise him everything. This time, he would have to ask not to be trusted.",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c6-end",
+          "type": "end"
+        }
+      ],
+      "estimatedSeconds": 84,
+      "durationMs": 83201
+    }
+  ],
+  "causalRevision": {
+    "version": 1,
+    "scope": "Child-readable cause, time, place and cast continuity",
+    "routePlans": [
+      "odyssey-c6-s1-clarity-leave-the-house-path",
+      "odyssey-c6-s1-clarity-board-odysseus",
+      "odyssey-c6-s1-clarity-board-polites",
+      "odyssey-c6-s1-clarity-board-eurylochus",
+      "odyssey-c6-s1-clarity-sail-from-aeaea",
+      "odyssey-c6-s2-clarity-step-onto-the-cold-path",
+      "odyssey-c6-s2-clarity-walk-to-the-offering-place",
+      "odyssey-c6-s4-clarity-walk-back-to-the-dark-landing",
+      "odyssey-c6-s4-clarity-board-with-his-waiting-friends",
+      "odyssey-c6-s4-clarity-land-odysseus",
+      "odyssey-c6-s4-clarity-land-polites",
+      "odyssey-c6-s4-clarity-land-eurylochus",
+      "odyssey-c6-s4-clarity-follow-the-path-to-the-grave"
+    ]
+  },
+  "durationMs": 507815,
+  "documentRevision": {
+    "version": 1,
+    "source": "Correciones visuales.docx",
+    "date": "2026-10-14",
+    "scope": "Ship passenger spacing only"
+  }
+}

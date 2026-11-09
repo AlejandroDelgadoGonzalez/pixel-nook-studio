@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 1,
+  "masters": [
+    {
+      "id": "odyssey-core",
+      "source": "stories/the-odyssey/assets/atlases/characters/odyssey-core.png",
+      "copy": "concept_art/characters/odyssey-core.png",
+      "sha256": "3d16b6dd8e6fc11ac6a4431b2cf4ee50a602097da74c4dfaafe8b06407b445b3",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "second-cup-people",
+      "source": "stories/the-second-cup/assets/atlases/people.png",
+      "copy": "concept_art/characters/second-cup-people.png",
+      "sha256": "a27b8326421264d6ccd34b8664c77f528836d097c10f226a672fca5f3c898483",
+      "dimensions": [
+        1774,
+        887
+      ]
+    },
+    {
+      "id": "odyssey-panorama-c4-2",
+      "source": "stories/the-odyssey/assets/backgrounds/panoramas/panorama-c4-2.png",
+      "copy": "concept_art/scenes/odyssey-panorama-c4-2.png",
+      "sha256": "575ab8291979603103c9961276f3d7efce44130583c9325bd08fb03ac93387f2",
+      "dimensions": [
+        2171,
+        724
+      ]
+    }
+  ],
+  "characters": {
+    "primary": "odyssey-core",
+    "secondary": "second-cup-people",
+    "masterRuntimeStandingHeight": 136,
+    "masterRuntimeGridWorldPx": 2,
+    "logicalSamplesPerReferencePerson": 68,
+    "storyReferenceWorldHeight": 180,
+    "explanation": "Match anatomical sampling: Odyssey136/2=68 samples per standing person. Alice180/2=90 was32.35% finer. Every pose uses its measured physical height relative to180, not its own bbox as a new standing height. Runtime keeps complete2world-pixel blocks.",
+    "authoringMode": "native-pixel-contracts-only",
+    "destructiveResamplingAllowed": false,
+    "headBodyRange": [
+      0.45,
+      0.5
+    ],
+    "garmentFlatTones": [
+      2,
+      3
+    ],
+    "hairFlatTones": 3,
+    "legacySamplingStatus": "Historical read-only calibration; never a character authoring target"
+  },
+  "panoramas": {
+    "primary": "odyssey-panorama-c4-2",
+    "referenceDesignHeight": 724,
+    "shortPlateauHistogramQuant32": {
+      "2": 286541,
+      "3": 127538,
+      "4": 67629,
+      "5": 40612,
+      "6": 25791,
+      "7": 16855,
+      "8": 11506,
+      "9": 8131,
+      "10": 5716,
+      "11": 4141,
+      "12": 3044
+    },
+    "operativeNNBlockSourcePx": 2,
+    "method": "Mode of short(2..8px) quant32 RGB plateaus, axes pooled. This is a defined estimator, not proof of an original perfect lattice. Use this exact NN cell size for new assets."
+  },
+  "outlineReference": {
+    "medianAt136": 4.0,
+    "observedMin": 4.0,
+    "observedMax": 4.47213595499958,
+    "method": "Median distance from dark visible silhouette boundary to nearest opaque non-dark interior; maxRGB<80. Diagnostic, anatomy/material dependent, not an instruction to dilate outlines."
+  },
+  "characterSamples": [
+    {
+      "name": "Odysseus",
+      "column": 0,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        185,
+        280
+      ],
+      "source": {
+        "dimensions": [
+          185,
+          280
+        ],
+        "visiblePixels": 39952,
+        "partialAlphaPixels": 43079,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.486832980505138,
+        "outlineToInteriorP90Px": 12.206555615733702,
+        "opaqueRGBColors": 15308
+      },
+      "canonical": {
+        "dimensions": [
+          90,
+          136
+        ],
+        "visiblePixels": 9432,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.47213595499958,
+        "outlineToInteriorP90Px": 6.464140176446149,
+        "opaqueRGBColors": 1623
+      }
+    },
+    {
+      "name": "Odysseus",
+      "column": 1,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        195,
+        280
+      ],
+      "source": {
+        "dimensions": [
+          195,
+          280
+        ],
+        "visiblePixels": 37486,
+        "partialAlphaPixels": 42178,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.433981132056603,
+        "outlineToInteriorP90Px": 11.700420298616722,
+        "opaqueRGBColors": 12977
+      },
+      "canonical": {
+        "dimensions": [
+          96,
+          136
+        ],
+        "visiblePixels": 9004,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 4.0,
+        "outlineToInteriorMedianPx": 4.47213595499958,
+        "outlineToInteriorP90Px": 6.324555320336759,
+        "opaqueRGBColors": 1493
+      }
+    },
+    {
+      "name": "Odysseus",
+      "column": 2,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        176,
+        281
+      ],
+      "source": {
+        "dimensions": [
+          176,
+          281
+        ],
+        "visiblePixels": 38953,
+        "partialAlphaPixels": 42419,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 10.0,
+        "outlineToInteriorP90Px": 12.041594578792296,
+        "opaqueRGBColors": 10873
+      },
+      "canonical": {
+        "dimensions": [
+          86,
+          136
+        ],
+        "visiblePixels": 9252,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 4.0,
+        "outlineToInteriorMedianPx": 4.47213595499958,
+        "outlineToInteriorP90Px": 6.4031242374328485,
+        "opaqueRGBColors": 1309
+      }
+    },
+    {
+      "name": "Odysseus",
+      "column": 3,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        216,
+        249
+      ],
+      "source": {
+        "dimensions": [
+          216,
+          249
+        ],
+        "visiblePixels": 36561,
+        "partialAlphaPixels": 40216,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.219544457292887,
+        "outlineToInteriorP90Px": 11.313708498984761,
+        "opaqueRGBColors": 11919
+      },
+      "canonical": {
+        "dimensions": [
+          96,
+          110
+        ],
+        "visiblePixels": 7152,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.0,
+        "outlineToInteriorP90Px": 6.0,
+        "opaqueRGBColors": 1198
+      }
+    },
+    {
+      "name": "Calypso",
+      "column": 0,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        217,
+        278
+      ],
+      "source": {
+        "dimensions": [
+          217,
+          278
+        ],
+        "visiblePixels": 46235,
+        "partialAlphaPixels": 49729,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 8.602325267042627,
+        "outlineToInteriorP90Px": 9.848857801796104,
+        "opaqueRGBColors": 20141
+      },
+      "canonical": {
+        "dimensions": [
+          106,
+          136
+        ],
+        "visiblePixels": 11088,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.123105625617661,
+        "outlineToInteriorP90Px": 5.656854249492381,
+        "opaqueRGBColors": 2039
+      }
+    },
+    {
+      "name": "Calypso",
+      "column": 1,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        194,
+        278
+      ],
+      "source": {
+        "dimensions": [
+          194,
+          278
+        ],
+        "visiblePixels": 41452,
+        "partialAlphaPixels": 46006,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 8.54400374531753,
+        "outlineToInteriorP90Px": 10.0,
+        "opaqueRGBColors": 18959
+      },
+      "canonical": {
+        "dimensions": [
+          96,
+          136
+        ],
+        "visiblePixels": 10080,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.0,
+        "outlineToInteriorP90Px": 5.656854249492381,
+        "opaqueRGBColors": 1893
+      }
+    },
+    {
+      "name": "Calypso",
+      "column": 2,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        198,
+        280
+      ],
+      "source": {
+        "dimensions": [
+          198,
+          280
+        ],
+        "visiblePixels": 42357,
+        "partialAlphaPixels": 45927,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.0,
+        "outlineToInteriorP90Px": 10.0,
+        "opaqueRGBColors": 15415
+      },
+      "canonical": {
+        "dimensions": [
+          96,
+          136
+        ],
+        "visiblePixels": 9968,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 4.0,
+        "outlineToInteriorMedianPx": 4.0,
+        "outlineToInteriorP90Px": 5.0,
+        "opaqueRGBColors": 1603
+      }
+    },
+    {
+      "name": "Calypso",
+      "column": 3,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        225,
+        270
+      ],
+      "source": {
+        "dimensions": [
+          225,
+          270
+        ],
+        "visiblePixels": 40737,
+        "partialAlphaPixels": 44939,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.0,
+        "outlineToInteriorP90Px": 10.0,
+        "opaqueRGBColors": 18589
+      },
+      "canonical": {
+        "dimensions": [
+          114,
+          136
+        ],
+        "visiblePixels": 10364,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.0,
+        "outlineToInteriorP90Px": 6.0,
+        "opaqueRGBColors": 1913
+      }
+    },
+    {
+      "name": "Hermes",
+      "column": 0,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        195,
+        307
+      ],
+      "source": {
+        "dimensions": [
+          195,
+          307
+        ],
+        "visiblePixels": 44760,
+        "partialAlphaPixels": 50752,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.0,
+        "outlineToInteriorP90Px": 10.816653826391969,
+        "opaqueRGBColors": 18797
+      },
+      "canonical": {
+        "dimensions": [
+          86,
+          136
+        ],
+        "visiblePixels": 8752,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 4.0,
+        "outlineToInteriorMedianPx": 4.0,
+        "outlineToInteriorP90Px": 5.656854249492381,
+        "opaqueRGBColors": 1561
+      }
+    },
+    {
+      "name": "Hermes",
+      "column": 1,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        231,
+        299
+      ],
+      "source": {
+        "dimensions": [
+          231,
+          299
+        ],
+        "visiblePixels": 42989,
+        "partialAlphaPixels": 49459,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.0,
+        "outlineToInteriorP90Px": 11.40175425099138,
+        "opaqueRGBColors": 18580
+      },
+      "canonical": {
+        "dimensions": [
+          106,
+          136
+        ],
+        "visiblePixels": 8924,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.123105625617661,
+        "outlineToInteriorP90Px": 6.203658925317489,
+        "opaqueRGBColors": 1608
+      }
+    },
+    {
+      "name": "Hermes",
+      "column": 2,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        210,
+        305
+      ],
+      "source": {
+        "dimensions": [
+          210,
+          305
+        ],
+        "visiblePixels": 43620,
+        "partialAlphaPixels": 49965,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.0,
+        "outlineToInteriorP90Px": 11.40175425099138,
+        "opaqueRGBColors": 16752
+      },
+      "canonical": {
+        "dimensions": [
+          94,
+          136
+        ],
+        "visiblePixels": 8692,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.0,
+        "outlineToInteriorP90Px": 6.0,
+        "opaqueRGBColors": 1512
+      }
+    },
+    {
+      "name": "Hermes",
+      "column": 3,
+      "referenceStandingWorldHeight": 136,
+      "sourceBoundsSize": [
+        246,
+        307
+      ],
+      "source": {
+        "dimensions": [
+          246,
+          307
+        ],
+        "visiblePixels": 47074,
+        "partialAlphaPixels": 53444,
+        "silhouettePlateauMedianPx": 1.0,
+        "outlineToInteriorMedianPx": 9.0,
+        "outlineToInteriorP90Px": 11.313708498984761,
+        "opaqueRGBColors": 20329
+      },
+      "canonical": {
+        "dimensions": [
+          110,
+          136
+        ],
+        "visiblePixels": 9340,
+        "partialAlphaPixels": 0,
+        "silhouettePlateauMedianPx": 2.0,
+        "outlineToInteriorMedianPx": 4.0,
+        "outlineToInteriorP90Px": 6.324555320336759,
+        "opaqueRGBColors": 1671
+      }
+    }
+  ],
+  "secondaryCanonical136": [
+    {
+      "dimensions": [
+        86,
+        136
+      ],
+      "visiblePixels": 8928,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 4.0,
+      "outlineToInteriorMedianPx": 4.0,
+      "outlineToInteriorP90Px": 6.0,
+      "opaqueRGBColors": 1156
+    },
+    {
+      "dimensions": [
+        88,
+        136
+      ],
+      "visiblePixels": 8576,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 2.0,
+      "outlineToInteriorMedianPx": 4.123105625617661,
+      "outlineToInteriorP90Px": 6.0,
+      "opaqueRGBColors": 1129
+    },
+    {
+      "dimensions": [
+        84,
+        136
+      ],
+      "visiblePixels": 8596,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 2.0,
+      "outlineToInteriorMedianPx": 4.47213595499958,
+      "outlineToInteriorP90Px": 6.0,
+      "opaqueRGBColors": 948
+    },
+    {
+      "dimensions": [
+        100,
+        136
+      ],
+      "visiblePixels": 8780,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 4.0,
+      "outlineToInteriorMedianPx": 4.123105625617661,
+      "outlineToInteriorP90Px": 6.4031242374328485,
+      "opaqueRGBColors": 1120
+    },
+    {
+      "dimensions": [
+        94,
+        136
+      ],
+      "visiblePixels": 9364,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 4.0,
+      "outlineToInteriorMedianPx": 4.47213595499958,
+      "outlineToInteriorP90Px": 6.0,
+      "opaqueRGBColors": 1324
+    },
+    {
+      "dimensions": [
+        90,
+        136
+      ],
+      "visiblePixels": 8684,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 4.0,
+      "outlineToInteriorMedianPx": 4.0,
+      "outlineToInteriorP90Px": 6.0,
+      "opaqueRGBColors": 1230
+    },
+    {
+      "dimensions": [
+        92,
+        136
+      ],
+      "visiblePixels": 9128,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 2.0,
+      "outlineToInteriorMedianPx": 4.47213595499958,
+      "outlineToInteriorP90Px": 6.0,
+      "opaqueRGBColors": 1106
+    },
+    {
+      "dimensions": [
+        100,
+        136
+      ],
+      "visiblePixels": 9216,
+      "partialAlphaPixels": 0,
+      "silhouettePlateauMedianPx": 4.0,
+      "outlineToInteriorMedianPx": 4.123105625617661,
+      "outlineToInteriorP90Px": 6.0,
+      "opaqueRGBColors": 1296
+    }
+  ],
+  "limits": "Historical source statistics retained as diagnostic provenance only. Native contracts, exact hash pins and full inventory audits enforce current source pixels. Visual approval of strand shapes, anatomy and designs remains separate.",
+  "visualAuthority": {
+    "characters": [
+      {
+        "path": "concept_art/characters/master-pose-sheet-alice.png",
+        "sha256": "7ec15880ab20d6430d7f6b2aafc18dda034a6ad2607cab4f3cc22653ea4dd065",
+        "visualStatus": "Part 1 explicitly approved by Alejandro"
+      },
+      {
+        "path": "concept_art/characters/odyssey-core.png",
+        "sha256": "3d16b6dd8e6fc11ac6a4431b2cf4ee50a602097da74c4dfaafe8b06407b445b3",
+        "visualStatus": "canonical-source-preserved"
+      },
+      {
+        "path": "concept_art/characters/second-cup-people.png",
+        "sha256": "a27b8326421264d6ccd34b8664c77f528836d097c10f226a672fca5f3c898483",
+        "visualStatus": "canonical-source-preserved"
+      },
+      {
+        "path": "concept_art/characters/casual-modern-core.png",
+        "sha256": "3283ee210f691fdc8226fa35d6013055b085151426e3cab46fe3bcb1a8bd50ce",
+        "visualStatus": "approved 100% by Alejandro"
+      },
+      {
+        "path": "concept_art/characters/storybook-classic-core.png",
+        "sha256": "7a82d62020d0117486fe83574a7e2e1a1fff5ae11efc0ee834a75b1f807db744",
+        "visualStatus": "approved 100% by Alejandro"
+      },
+      {
+        "path": "concept_art/characters/fantasy-medieval-core.png",
+        "sha256": "0e5658dda489d8752b6bed29ed04bce0424ef2eb62294f2944d0fd7c5fd39737",
+        "visualStatus": "pending Alejandro 400% review"
+      },
+      {
+        "path": "concept_art/characters/world-tales-core.png",
+        "sha256": "a0b08af0aabf8269326acde9bb41bb7c0563f88615cf7eb530eea81a4701dd77",
+        "visualStatus": "pending Alejandro 400% review"
+      },
+      {
+        "path": "concept_art/characters/diverse-everyday-core.png",
+        "sha256": "ec247e889f734dc393452c673b8efd610c5582783d7f413019ccab97e52d198b",
+        "visualStatus": "pending Alejandro 400% review"
+      }
+    ],
+    "scenes": [
+      {
+        "path": "concept_art/scenes/01-forest-cottage-river.png",
+        "sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/02-harbor-market-docks.png",
+        "sha256": "92a6a796abec95f9ad8fd4d7bc6a29facf25fe837f2414eda36394108d785bcb",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/03-forest-pond-waterfall.png",
+        "sha256": "0344c9f02e625220f2e31a5ebf6e02398bf5e180ac7d4df8e87197474169bee9",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/04-snowy-winter-village.png",
+        "sha256": "6140533567cd4c0e606994338124489167da25b6976a5fad8f2da3cd27858eac",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/05-crystal-mine-cavern.png",
+        "sha256": "54da976022a3da03e2de174c66c3fd95442ed73ff0edd7306ba9b8428d5bcc95",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/06-grand-wooden-library.png",
+        "sha256": "768a4347535f9ac9d13321cc1ae1206972b4984ccae2df75f29e15b551ba0e38",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/07-medieval-castle-plaza.png",
+        "sha256": "8478f6050e57ce0caf4201dc3afccb0832a117fc44a4aa53e66fb29b4759672d",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/08-rustic-cottage-interior.png",
+        "sha256": "0cc452d416996140f68acf76dab31f65d0aa92d1f718a41e89ead660bd219f8f",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/09-modern-cozy-city-street.png",
+        "sha256": "d2f676dbe399ec93a4f51fbfc326e086ed23a2f45856e4a56fc75ff3ea837791",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/10-modern-loft-apartment.png",
+        "sha256": "8ba8624d0fc750975aae8ae52582ec51a83cf2868c291348cbc8648a40e1bfdb",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/11-moonlit-botanical-garden.png",
+        "sha256": "31e8ad644f1974926738364a60fa853198b1fc359e198c8cfd82fe8e9be41278",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/12-sunset-desert-oasis-bazaar.png",
+        "sha256": "fc918e29e3734c7e1f995257671a384638978aece8d20e061211e042d450862f",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/13-grand-palace-marble-hall.png",
+        "sha256": "cde6c063b10cf54bc3f4d817bb8b99d0960be28b4eaa7179dd897603a0d082fb",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/14-autumn-zen-shrine-bridge.png",
+        "sha256": "b0bf8cb99d67bbdc0a734818bc175ff20780be079f63998703b4708c9e6c8ce2",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/15-vintage-steam-train-platform.png",
+        "sha256": "fe3266739851a201547079579b8e9b80d9042834985e51117dc842271c82d641",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      },
+      {
+        "path": "concept_art/scenes/odyssey-panorama-c4-2.png",
+        "sha256": "575ab8291979603103c9961276f3d7efce44130583c9325bd08fb03ac93387f2",
+        "visualStatus": "All sixteen scene references explicitly approved by Alejandro in scene-reference-lock request"
+      }
+    ],
+    "onlyRoots": [
+      "concept_art/characters/",
+      "concept_art/scenes/"
+    ],
+    "directReferencesOnly": true
+  }
+}

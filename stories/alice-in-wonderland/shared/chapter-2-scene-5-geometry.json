@@ -1,0 +1,774 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "scene": "alice-c2-far-too-much",
+  "version": "full-room-v4-stone-junction",
+  "status": "Both November8 video reviews implemented; official-layout browser QA, independent MP4 and source-art audits pass; visual review ready",
+  "supersedes": "Full-room-v2 proposal: flat rear wall, reversed architecture, incompatible door/window, window over fireplace. Prior runtime cutaway is also rejected for this revision.",
+  "candidateImage": "stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v4.png",
+  "intendedProductionPath": "stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v4.png",
+  "dimensions": [
+    1664,
+    936
+  ],
+  "coordinateConvention": "Runtime x right/y down; measured panorama source pixels map1:1 to runtime world. The earlier design-reference projection is retained separately; actor physicalGain preserves entry bodyScale0.32.",
+  "sourceToWorldScale": 1,
+  "base16by9": [
+    192,
+    108,
+    1472,
+    828
+  ],
+  "overscanFactor": 1.3,
+  "marginsLTRB": [
+    192,
+    108,
+    192,
+    108
+  ],
+  "fullRoomInterior": true,
+  "exteriorCutaway": false,
+  "reference_scene_master": "concept_art/scenes/08-rustic-cottage-interior.png",
+  "reference_scene_master_sha256": "0cc452d416996140f68acf76dab31f65d0aa92d1f718a41e89ead660bd219f8f",
+  "generation": {
+    "tool": "image_gen",
+    "primaryStyleReference": "concept_art/scenes/08-rustic-cottage-interior.png",
+    "continuityReference": "stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
+    "referenced_image_paths": [
+      "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/concept_art/scenes/08-rustic-cottage-interior.png",
+      "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
+      "C:/Users/aleja/.codex/generated_images/01a1b3c3-8612-7481-a035-8c85e845ddb3/exec-040ddc48-a322-439c-a700-c71b74ad819f.png"
+    ],
+    "requestEvidence": ".artifacts/alice-in-wonderland/chapter-2/scene-5-architecture-v3/generation-request-4.json",
+    "inputHashes": [
+      {
+        "path": "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/concept_art/scenes/08-rustic-cottage-interior.png",
+        "sha256": "0cc452d416996140f68acf76dab31f65d0aa92d1f718a41e89ead660bd219f8f"
+      },
+      {
+        "path": "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
+        "sha256": "918d4c7b719e3c8a9df43d4ae6ba09b5032223ad818db0882a154ee7410142b6"
+      },
+      {
+        "path": "C:/Users/aleja/.codex/generated_images/01a1b3c3-8612-7481-a035-8c85e845ddb3/exec-040ddc48-a322-439c-a700-c71b74ad819f.png",
+        "sha256": "9d7d22482531f1f6105188c0e4a605d975ce243cd9e7a877a4a95c9a07a05646"
+      }
+    ]
+  },
+  "anchors": {
+    "entryThreshold": [
+      1100,
+      666
+    ],
+    "doorHandle": [
+      1054,
+      540
+    ],
+    "tableInteractionFeet": [
+      900,
+      666
+    ],
+    "tableBottleGrip": [
+      948,
+      554
+    ],
+    "fan": [
+      907,
+      570
+    ],
+    "gloves": [
+      980,
+      570
+    ],
+    "bottleRest": [
+      948,
+      570
+    ],
+    "cork": [
+      996,
+      569
+    ],
+    "windowHandContact": [
+      649,
+      440
+    ],
+    "hearthShoeContact": [
+      798,
+      551
+    ],
+    "futureLanding": [
+      665,
+      697
+    ]
+  },
+  "spawns": {
+    "alice": {
+      "source": [
+        1100,
+        666
+      ],
+      "bodyScale": 0.32,
+      "facing": "left",
+      "ownership": "empty hands; all props on table",
+      "appearanceSeconds": 2
+    },
+    "whiteRabbit": {
+      "present": false,
+      "location": "outside right entry; identified by text before proposed interior ring hook"
+    }
+  },
+  "walkableFloorPolygon": [
+    [
+      550,
+      662
+    ],
+    [
+      1210,
+      662
+    ],
+    [
+      1210,
+      720
+    ],
+    [
+      550,
+      720
+    ]
+  ],
+  "walkPaths": {
+    "entryToTable": {
+      "from": "entryThreshold",
+      "to": "tableInteractionFeet",
+      "waypoints": [
+        [
+          1100,
+          666
+        ],
+        [
+          1094,
+          674
+        ],
+        [
+          900,
+          674
+        ],
+        [
+          900,
+          666
+        ]
+      ],
+      "worldWaypoints": [
+        [
+          1100,
+          666
+        ],
+        [
+          1094,
+          674
+        ],
+        [
+          900,
+          674
+        ],
+        [
+          900,
+          666
+        ]
+      ],
+      "mode": "walk",
+      "walkSpeed": 235,
+      "runSpeed": 446.3932920054573,
+      "bodyScale": 0.32,
+      "depthScale": 1,
+      "lengthSourcePx": 100,
+      "durationSeconds": 1.0825531914893618,
+      "preservedBeatSeconds": 1.274,
+      "settleAfterArrivalSeconds": 0.6848019639934534,
+      "facingPerSegment": [
+        "front",
+        "left",
+        "back"
+      ],
+      "endFacing": "right",
+      "advanceBlocked": true,
+      "surface": "floor in front of right doorway/table; final support coincides with table ground plane"
+    }
+  },
+  "architecture": {
+    "door": {
+      "bounds": [
+        1002,
+        356,
+        1204,
+        663
+      ],
+      "leafBounds": [
+        1036,
+        398,
+        1164,
+        641
+      ],
+      "archedStoneFrame": true,
+      "hingesInteriorSide": "right",
+      "ringInteriorSide": "left",
+      "openingStatus": "painted closed; actual leaf alpha extraction awaits authorized implementation",
+      "leafPolygon": [
+        [
+          1036,
+          641
+        ],
+        [
+          1036,
+          449
+        ],
+        [
+          1043,
+          429
+        ],
+        [
+          1060,
+          411
+        ],
+        [
+          1085,
+          399
+        ],
+        [
+          1115,
+          399
+        ],
+        [
+          1143,
+          415
+        ],
+        [
+          1164,
+          447
+        ],
+        [
+          1164,
+          641
+        ]
+      ]
+    },
+    "table": {
+      "bounds": [
+        873,
+        555,
+        1005,
+        663
+      ],
+      "topPolygon": [
+        [
+          881,
+          555
+        ],
+        [
+          992,
+          555
+        ],
+        [
+          1004,
+          571
+        ],
+        [
+          875,
+          571
+        ]
+      ],
+      "groundY": 662,
+      "depth": 662,
+      "propDepth": 663
+    },
+    "window": {
+      "bounds": [
+        577,
+        376,
+        718,
+        514
+      ],
+      "apertureBounds": [
+        616,
+        401,
+        667,
+        490
+      ],
+      "curtains": "cream tied both sides",
+      "casements": "open wood leaves with crossbars",
+      "sill": "gray stone",
+      "handContact": [
+        706.0893333333333,
+        413.42133333333334
+      ]
+    },
+    "hearth": {
+      "openingPolygon": [
+        [
+          721,
+          641
+        ],
+        [
+          721,
+          557
+        ],
+        [
+          736,
+          531
+        ],
+        [
+          762,
+          510
+        ],
+        [
+          790,
+          505
+        ],
+        [
+          819,
+          514
+        ],
+        [
+          840,
+          534
+        ],
+        [
+          849,
+          558
+        ],
+        [
+          849,
+          641
+        ]
+      ],
+      "cold": true,
+      "interior": "medium gray stones, no pure-black fill",
+      "footPolicy": "Whole canonical folded pose; own feet near the hearth, no detached shoe."
+    },
+    "flue": {
+      "bounds": [
+        744,
+        214,
+        838,
+        456
+      ],
+      "continuousToCeiling": true,
+      "separateFromWindow": true
+    },
+    "futureLanding": {
+      "bounds": [
+        630,
+        680,
+        708,
+        710
+      ],
+      "reservedFor": [
+        "C2-S6 pebbles",
+        "C2-S7 cakes"
+      ],
+      "spawnNow": false
+    },
+    "sidewalls": {
+      "leftCornerLine": [
+        [
+          452,
+          252
+        ],
+        [
+          440,
+          648
+        ]
+      ],
+      "rightCornerLine": [
+        [
+          1212,
+          252
+        ],
+        [
+          1224,
+          648
+        ]
+      ],
+      "visibleInFullPanorama": true
+    }
+  },
+  "occluders": [
+    {
+      "id": "right-arched-door-wood-stone",
+      "sourceRegion": [
+        1002,
+        356,
+        1204,
+        663
+      ],
+      "policy": "actual arch/leaf alpha only, no broad rectangle through Alice"
+    },
+    {
+      "id": "low-table",
+      "sourceRegion": [
+        873,
+        555,
+        1005,
+        663
+      ],
+      "policy": "actual furniture pixels; resting props table.depth+1"
+    },
+    {
+      "id": "left-window-frame-curtains-stone",
+      "sourceRegion": [
+        577,
+        376,
+        718,
+        514
+      ],
+      "policy": "actual frame/curtain/sill pixels; hand crosses only blue aperture"
+    },
+    {
+      "id": "cold-hearth-rim",
+      "sourceRegion": [
+        687,
+        451,
+        880,
+        665
+      ],
+      "policy": "actual stone lip; preserve black shoe contrast and only physically justified occlusion"
+    }
+  ],
+  "reuse": {
+    "aliceMaster": "stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+    "poses": [
+      "right (mirror for left)",
+      "standing-ready",
+      "take-bottle (pickup and reverse release)",
+      "examine-bottle",
+      "drink-bottle",
+      "growth-surprise",
+      "rising",
+      "folded-trapped-right"
+    ],
+    "foldedOriginalAlias": "c2-s5-folded-v1.png; cleaned source consolidated into master, use folded-trapped-right not pre-cleanup archive",
+    "foldedBoundsExclusive": [
+      2380,
+      12764,
+      2876,
+      13308
+    ],
+    "newCharacterGeneration": false,
+    "normalStandingSourcePx": 130,
+    "finalFoldedDisplayBounds": [
+      630,
+      270,
+      1002,
+      678
+    ],
+    "foldedMirror": true,
+    "rigStudy": ".artifacts/alice-in-wonderland/chapter-2/scene-5-architecture-v3/canonical-rig-study.json",
+    "rigSource": "Existing canonical calf/ankle rigid cutouts, remeasured full native outline polygons; no stretching, new character generation or master modification."
+  },
+  "cameraStudies": {
+    "nineBySixteenSourceCrop": [
+      606,
+      0,
+      1132,
+      936
+    ],
+    "constantWithinScene": true,
+    "uiUnchanged": true,
+    "dialogueFloorReserveSourceY": [
+      720,
+      936
+    ],
+    "portraitLimitation": "Static contact crop clips outer right door and perspective corners. Whole room architecture is audited in full panorama. Final camera/DOM clearance remains an implementation dependency, not a current runtime PASS."
+  },
+  "timing": {
+    "plannedAutomaticSeconds": 70.024,
+    "plannedNotMeasured": true,
+    "maximumBeatSeconds": 5.5,
+    "exact21BeatTextAndTimingPreserved": true
+  },
+  "pendingBeforeGate3": [],
+  "evidence": ".artifacts/alice-in-wonderland/chapter-2/scene-5-architecture-v3/",
+  "blockSourcePx": 2,
+  "space": "source-pixels, uniform world mapping declared separately",
+  "exteriorToInteriorArchitecture": {
+    "lock": "Exterior-to-Interior Architectural Continuity Lock",
+    "view": "Interior camera looking at reverse of S4 entrance facade",
+    "exteriorOrder": [
+      "door-left",
+      "window-right"
+    ],
+    "interiorOrder": [
+      "window-left",
+      "door-right"
+    ],
+    "door": "round-top plank leaf, gray stone-block arch, two black iron strap hinges on interior right, gold ring on interior left",
+    "window": "wooden open casements retaining crossbars, cream tied curtains both sides, gray stone sill, lunar blue opening",
+    "sidewallCorners": [
+      [
+        452,
+        252,
+        440,
+        648
+      ],
+      [
+        1212,
+        252,
+        1224,
+        648
+      ]
+    ],
+    "windowNotAboveFireplace": true,
+    "continuousStoneFlueBounds": [
+      744,
+      214,
+      838,
+      456
+    ],
+    "scope": "Measured artwork and visual comparison; approval still belongs to Alejandro."
+  },
+  "rig": {
+    "foldedSourceBoundsExclusive": [
+      2380,
+      12764,
+      2876,
+      13308
+    ],
+    "mirror": true,
+    "displayScale": 0.833,
+    "bodyPosition": [
+      684.9866666666667,
+      224.608
+    ],
+    "worldBodyPivot": [
+      989.3093333333331,
+      664.432
+    ],
+    "wholeCanonicalSprite": true,
+    "separateLimbSprites": false
+  },
+  "approval": {
+    "gate1": true,
+    "gate2A": true,
+    "gate3And4": true,
+    "date": "2026-11-07",
+    "source": "Explicit user approval in this main chat; implement approved architecture v3 and21 moments."
+  },
+  "panorama": {
+    "asset": "/stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v3.png",
+    "dimensions": [
+      1664,
+      936
+    ],
+    "sourceToWorldScale": 1,
+    "base16by9": [
+      192,
+      108,
+      1472,
+      828
+    ],
+    "overscanFactor": 1.3
+  },
+  "runtimeCoordinateMapping": "Runtime world uses measured source pixels1:1; physicalGain compensates the documented design-to-world scale, so Alice remains bodyScale0.32 at entrance.",
+  "actor": {
+    "physicalStandingHeightWorld": 180,
+    "bodyScale": 0.32,
+    "physicalGain": 2.6041666666666665,
+    "scaleKnots": [
+      [
+        0,
+        1
+      ],
+      [
+        1000,
+        1
+      ]
+    ],
+    "walkSpeed": 235,
+    "runSpeed": 446.3932920054573,
+    "normalStandingSourcePx": 150
+  },
+  "implementation": {
+    "approved": true,
+    "status": "Gate3 implemented; technical repair QA recorded separately; cold-start target still under measurement",
+    "silent": true,
+    "evidence": "/.artifacts/qa/technical-repair-2026-11-08/verification-summary.json",
+    "gate4Scope": {
+      "date": "2026-11-08",
+      "source": "Current user request: official browser viewports only",
+      "layouts": [
+        [
+          1280,
+          720
+        ],
+        [
+          1366,
+          640
+        ],
+        [
+          360,
+          800
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          1080,
+          1920
+        ]
+      ],
+      "physicalDevicesTested": false
+    }
+  },
+  "camera": {
+    "clusterBounds": [
+      628,
+      260,
+      1066,
+      680
+    ],
+    "fixedPerLayout": false,
+    "baseCenterPortrait": 818,
+    "baseCenterLandscape": 832,
+    "minimumSourceLeft": 628,
+    "entranceSourceBounds": [
+      1054,
+      1146
+    ],
+    "actorSafeBottom": 680,
+    "captionGapPx": 4,
+    "artEdgeInset": 2,
+    "finalZoomMultiplier": 1.25,
+    "finalCenterX": 891.5706666666667,
+    "transitionStatePath": [
+      "large",
+      "fold"
+    ],
+    "scope": "User-authorized smooth fold zoom; all text frames held and complete native sprite kept clear of the caption.",
+    "topGuardPx": 12,
+    "finalCaptionGapPx": 12,
+    "floorReuseBottom": 1200,
+    "fixedFoldCaptionFraction": 0.58
+  },
+  "props": {
+    "fan": {
+      "pose": "fan-replacement",
+      "anchor": [
+        907,
+        570
+      ],
+      "worldHeight": 22
+    },
+    "gloves": {
+      "pose": "gloves-replacement",
+      "anchor": [
+        980,
+        570
+      ],
+      "worldHeight": 18
+    },
+    "bottle": {
+      "fullPose": "bottle-unlabelled-full",
+      "sippedPose": "bottle-unlabelled-sipped",
+      "anchor": [
+        948,
+        570
+      ],
+      "worldHeight": 32,
+      "attachmentPolicy": {
+        "holdMoments": [
+          5,
+          6,
+          7
+        ],
+        "drinkMoment": 8,
+        "tableReturnMoment": 10,
+        "mode": "step"
+      }
+    },
+    "cork": {
+      "pose": "cork",
+      "anchor": [
+        996,
+        569
+      ],
+      "worldHeight": 5
+    }
+  },
+  "technicalGeometryRefinement": {
+    "reason": "Measured canonical take-bottle hand and actual tabletop plane; front-side interaction preserves fixed phone framing. Approved panorama/window649,440/hearth798,551 unchanged.",
+    "tableFeet": [
+      900,
+      666
+    ],
+    "tableDepth": 662,
+    "propDepth": 663,
+    "normalSourceHeight": 150,
+    "risingGroundAnchorSource": [
+      190,
+      1560
+    ]
+  },
+  "runtimeRefinements": "Canonical rear shoe anchor for rising, front-table normal-scale150 and supported props at real tabletop y570; same approved panorama, story and final649/440,798/551 contacts.",
+  "designReferenceSourceToWorldScale": 0.4430769230769231,
+  "officialViewportPolicy": {
+    "desktop": [
+      [
+        1280,
+        720
+      ],
+      [
+        1366,
+        640
+      ]
+    ],
+    "mobile": [
+      [
+        360,
+        800
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        430,
+        932
+      ]
+    ],
+    "vertical": [
+      [
+        1080,
+        1920
+      ]
+    ],
+    "extraViewportSweeps": false
+  },
+  "groundSupport": {
+    "sourceBottom": 544,
+    "worldY": 677.76,
+    "reference": "wood floor immediately in front of hearth"
+  },
+  "videoReview": {
+    "source": "2026-11-08 19-20-27.mkv",
+    "bodyShiftRightWorld": 36,
+    "kick": "Rooted1.8-degree rotation; no x/y lift"
+  },
+  "secondVideoReview": {
+    "sourceVideos": [
+      "2026-11-08 20-24-51.mkv",
+      "2026-11-08 20-29-33.mkv"
+    ],
+    "additionalBodyShiftRight": 20,
+    "stoneRepairROI": [
+      686,
+      500,
+      748,
+      574
+    ],
+    "wideDesktopFitScale": 0.833
+  }
+}

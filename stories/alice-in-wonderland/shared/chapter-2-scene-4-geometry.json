@@ -1,0 +1,1054 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "chapter": 2,
+  "scene": 4,
+  "title": "Mary Ann!",
+  "status": "Gates1/2A approved2026-11-03; Gates3/4 complete in recorded local scope",
+  "implementationAllowed": true,
+  "sound": {
+    "silent": true,
+    "gate2B": "paused; future ElevenLabs point SFX only, no melody"
+  },
+  "continuity": {
+    "source": "chapter-2-scene-3-geometry.json#continuityToScene4",
+    "initialState": {
+      "actors": {
+        "alice": {
+          "x": 537.0820393249937,
+          "y": 594.1824082710219,
+          "visible": 1,
+          "facing": "right",
+          "pose": "idle"
+        },
+        "sister": {
+          "x": 810,
+          "y": 650,
+          "visible": 1,
+          "facing": "right",
+          "pose": "idle"
+        },
+        "white-rabbit": {
+          "x": 625,
+          "y": 550,
+          "visible": 1,
+          "facing": "left",
+          "pose": "idle"
+        },
+        "mouse": {
+          "x": 1380,
+          "y": 800,
+          "visible": 0,
+          "facing": "left",
+          "pose": "idle"
+        },
+        "dodo": {
+          "x": 1250,
+          "y": 425,
+          "visible": 0,
+          "facing": "right",
+          "pose": "idle"
+        },
+        "lory": {
+          "x": 1160,
+          "y": 180,
+          "visible": 0,
+          "facing": "right",
+          "pose": "idle"
+        },
+        "eaglet": {
+          "x": 1160,
+          "y": 180,
+          "visible": 0,
+          "facing": "right",
+          "pose": "idle"
+        }
+      },
+      "staging": {
+        "alice": "brush-palms",
+        "sister": "seated-reading",
+        "rabbit": "right"
+      },
+      "watch": {
+        "owner": "white-rabbit",
+        "visible": 0,
+        "state": "in-pocket"
+      },
+      "book": {
+        "owner": "sister",
+        "visible": 1
+      },
+      "chapter": 0,
+      "view": "s4-upper",
+      "environment": "clearing",
+      "s3": {
+        "falling": false,
+        "clodFall": 1,
+        "clodsVisible": false,
+        "hookMs": 3000
+      },
+      "jar": {
+        "owner": null,
+        "state": "lower-fixed",
+        "orientation": "upright",
+        "visible": 1
+      },
+      "s4": {
+        "shot": "landing",
+        "landed": true
+      },
+      "s5": {
+        "shot": "hall-corridor"
+      },
+      "hall": {
+        "pose": "standing-steady",
+        "shot": "bottle-discovery",
+        "curtain": 1,
+        "door": 0,
+        "key": {
+          "owner": null
+        },
+        "roomLock": 1
+      },
+      "drink": {
+        "active": true,
+        "pose": "box-open",
+        "face": "left",
+        "magicScale": 0.32,
+        "bottleOwner": "floor",
+        "bottleEmpty": 1,
+        "bottleGrip": "body",
+        "cork": 1,
+        "angle": 0,
+        "boxX": 856.4484011940299,
+        "boxY": 690,
+        "boxOpen": 1,
+        "shot": "hook"
+      },
+      "eat": {
+        "active": true,
+        "pose": "calm",
+        "face": "left",
+        "cake": {
+          "owner": "consumed",
+          "amount": 0
+        },
+        "keyLift": 0,
+        "cryTime": 5250,
+        "rabbitLook": true
+      },
+      "pool": {
+        "active": true,
+        "phase": "swim",
+        "water": 1,
+        "door": 0,
+        "fan": "released",
+        "gloves": "floor",
+        "mouse": 1,
+        "mouseProgress": 1,
+        "swim": 0
+      },
+      "company": {
+        "phase": "door-push",
+        "motionClockMs": 89000,
+        "wadeProgress": 1,
+        "doorPush": 1,
+        "gesture": "idle"
+      },
+      "clearing": {
+        "active": true,
+        "clock": 133988.65845911668,
+        "wet": 0,
+        "hook": 1,
+        "twig": 2,
+        "opening": 1,
+        "arrival": 1
+      },
+      "prizes": {
+        "active": true,
+        "phase": "hook",
+        "clock": 62888.65845911667,
+        "progress": 0,
+        "recipient": "none",
+        "depart": 1,
+        "hook": 1,
+        "box": {
+          "owner": "alice-pocket",
+          "count": 0
+        },
+        "sweet": {
+          "owner": "consumed",
+          "consumed": 4
+        },
+        "thimble": {
+          "owner": "alice-pocket"
+        }
+      }
+    },
+    "initialRendering": {
+      "alice": {
+        "pose": "alice-idle-right-dry",
+        "facing": "left"
+      },
+      "white-rabbit": {
+        "pose": "rabbit-search-stop-left",
+        "facing": "left",
+        "physicalGain": 0.8
+      }
+    },
+    "camera": "Exact S3 final fixed frame per viewport; no dissolve on scene number; copy current Clearing framing algorithm unchanged",
+    "otherAnimals": "All four departed; do not spawn in S4",
+    "props": "Empty sweet box and thimble in Alice pocket; four sweets consumed; twig stays in clearing[345,555]; original gloves/fan remain in hall; watch in Rabbit pocket; replacement pair/fan still inside house, not shown yet"
+  },
+  "actors": {
+    "alice": {
+      "physicalStandingHeightWorld": 180,
+      "bodyScale": 0.32,
+      "physicalGain": 1.0006006006006014,
+      "sourceReferenceStandingWorldHeight": 180,
+      "walkSpeed": 235,
+      "runSpeed": 446.3932920054573,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "referenceStandingScreenHeight390x844": 71.99252480000008,
+      "arrivalDelayMs": 400,
+      "arrivalDurationMs": 3881.417534973809,
+      "arrivalDoneByMs": 4281.417534973809,
+      "initialPose": "alice-sit-left-wet",
+      "finalPose": "alice-pocket-left-dry",
+      "wetNote": "Wet seated pose includes drops; running drops are separate and fade progressively.",
+      "supportPolicy": "Preserve measured sole origin when switching poses; seated height is anatomical, not forced to standing height."
+    },
+    "white-rabbit": {
+      "physicalStandingHeightWorld": 122,
+      "bodyScale": 1,
+      "physicalGain": 0.8,
+      "walkSpeed": 100,
+      "runSpeed": 650,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "initialPresence": "offstage; hidden spawn on measured right path only for hook; no visible jump"
+    }
+  },
+  "environments": {
+    "clearing": {
+      "asset": "/stories/alice-in-wonderland/assets/environments/clearing-c2-s2-v1.png",
+      "sourceWorldMapping": 1,
+      "camera": {
+        "inherit": "chapter-2-scene-3-geometry.json#camera",
+        "measuredLayouts": [
+          {
+            "width": 390,
+            "height": 844,
+            "frame": {
+              "x": 500,
+              "y": 550,
+              "z": 1.1,
+              "fits": true,
+              "lock": "balanced-clearing"
+            },
+            "caption": {
+              "left": 14,
+              "top": 600.484375,
+              "right": 376,
+              "bottom": 776.484375
+            }
+          },
+          {
+            "width": 1366,
+            "height": 640,
+            "frame": {
+              "x": 500,
+              "y": 550.6808199121523,
+              "z": 1.4229166666666666,
+              "fits": true,
+              "lock": "balanced-clearing"
+            },
+            "caption": {
+              "left": 303,
+              "top": 428.40625,
+              "right": 1063,
+              "bottom": 582.40625
+            }
+          },
+          {
+            "width": 720,
+            "height": 1280,
+            "frame": {
+              "x": 500,
+              "y": 550,
+              "z": 1.7066666666666668,
+              "fits": true,
+              "lock": "balanced-clearing"
+            },
+            "caption": {
+              "left": 20,
+              "top": 1016.8125,
+              "right": 700,
+              "bottom": 1164.8125
+            }
+          },
+          {
+            "width": 360,
+            "height": 800,
+            "frame": {
+              "x": 500,
+              "y": 543.6511627906976,
+              "z": 1.011764705882353,
+              "fits": true,
+              "lock": "balanced-clearing"
+            },
+            "caption": {
+              "left": 14,
+              "top": 560,
+              "right": 346,
+              "bottom": 736
+            }
+          },
+          {
+            "width": 430,
+            "height": 932,
+            "frame": {
+              "x": 500,
+              "y": 550,
+              "z": 1.2176470588235293,
+              "fits": true,
+              "lock": "balanced-clearing"
+            },
+            "caption": {
+              "left": 14,
+              "top": 681.453125,
+              "right": 416,
+              "bottom": 857.453125
+            }
+          }
+        ]
+      },
+      "anchors": {
+        "aliceStart": [
+          537.0820393249937,
+          594.1824082710219
+        ],
+        "rabbitStays": [
+          625,
+          550
+        ],
+        "aliceExit": [
+          1000,
+          420
+        ]
+      },
+      "exitCover": {
+        "sourceBounds": [
+          950,
+          330,
+          1080,
+          425
+        ],
+        "method": "Native tree-base fern/flower edge at right path; use source-alpha foliage only, never a rectangular mask. Frame-edge fade on narrow layouts; native foliage fade on wide views."
+      },
+      "narrowPointingGesture": {
+        "condition": "Only if full pointing arm would leave inherited narrow viewport",
+        "pose": "Previously approved rabbit-search-stop-left mirrored right: short open-palm indication toward path; body and gaze turn right",
+        "constraints": "Same physicalGain0.8, same feet[625,550], same camera; use full point pose in ordinary formats; no crop or compressed anatomy"
+      },
+      "rabbitPointHold": "S4 only: keep pointing from moment6 through12 until house transition; retain approved compact rightward variant for narrow viewports"
+    },
+    "rabbitHouse": {
+      "asset": "/stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
+      "sourceDimensions": [
+        1670,
+        942
+      ],
+      "worldDimensions": [
+        1670,
+        942
+      ],
+      "sourceWorldMapping": 1,
+      "overscan": {
+        "base16by9": [
+          195,
+          90,
+          1475,
+          810
+        ],
+        "fullCanvas": [
+          0,
+          0,
+          1670,
+          942
+        ],
+        "margins": {
+          "left": 195,
+          "right": 195,
+          "top": 90,
+          "bottom": 132
+        },
+        "factorX": 1.3046875,
+        "factorY": 1.3083333333333333,
+        "policy": "Real painted extra forest/sky/earth; no stretch, tile or mirrored border"
+      },
+      "lighting": "Approved intermediate lunar night + slight ambient clarity; midnight sky/stars/moon, rich greens and warm muted ground, no tree-cast shadows. Lantern local warmth only.",
+      "anchors": {
+        "arrivalStart": [
+          555,
+          665
+        ],
+        "plaqueLook": [
+          665,
+          665
+        ],
+        "doorPushFeet": [
+          753.5447071705133,
+          622.8286236740663
+        ],
+        "doorInsideFirstStep": [
+          741.5447071705133,
+          606.8286236740663
+        ],
+        "handleContact": [
+          777,
+          581
+        ],
+        "gateOpeningCenter": [
+          455,
+          642
+        ],
+        "gateOpeningBounds": [
+          410,
+          590,
+          508,
+          704
+        ],
+        "nameplateBounds": [
+          814,
+          490,
+          881,
+          524
+        ],
+        "nameplateCenter": [
+          847.5,
+          507
+        ],
+        "windowBounds": [
+          900,
+          430,
+          1014,
+          534
+        ],
+        "windowSill": [
+          957,
+          539
+        ],
+        "chimneyTop": [
+          925,
+          210
+        ],
+        "bushLanding": [
+          1110,
+          630
+        ],
+        "bushBounds": [
+          1032,
+          501,
+          1208,
+          664
+        ]
+      },
+      "door": {
+        "openingPolygon": [
+          [
+            688,
+            618
+          ],
+          [
+            688,
+            478
+          ],
+          [
+            697,
+            457
+          ],
+          [
+            716,
+            442
+          ],
+          [
+            738,
+            437
+          ],
+          [
+            762,
+            445
+          ],
+          [
+            784,
+            462
+          ],
+          [
+            796,
+            484
+          ],
+          [
+            796,
+            618
+          ]
+        ],
+        "closedLeafSourceBounds": [
+          688,
+          437,
+          798,
+          620
+        ],
+        "hinge": [
+          688,
+          620
+        ],
+        "handle": [
+          777,
+          581
+        ],
+        "interiorDepth": 50,
+        "leafDepth": 618.1,
+        "jambDepth": 624,
+        "actorDepth": "feetY; outside support must draw above interior at every opacity; only actual wooden side/jamb may occlude",
+        "openingAngleDegrees": [
+          0,
+          82
+        ],
+        "interior": "Deep shaded brown/blue hall, no exterior foliage; aperture polygon behind Alice, never a foreground black rectangle",
+        "exitFade": "S4 only begins entry: alpha1 toward0.9 as first step enters; S5 inherits pose/position/open door and completes gradual fade, no abrupt cut",
+        "interiorFloor": {
+          "polygon": [
+            [
+              688,
+              618
+            ],
+            [
+              796,
+              618
+            ],
+            [
+              780,
+              591
+            ],
+            [
+              706,
+              591
+            ]
+          ],
+          "color": "#262020",
+          "depth": 51,
+          "purpose": "Dim real floor visible under entering shoes; stays behind Alice, no floating on a flat void"
+        },
+        "supportPlaneCorrection": "Leaf uses real doorway ground plane618+0.1; Alice outside at622.829 stays in front of wood while pushing, then enters behind plane; interior remains50"
+      },
+      "nameplate": {
+        "text": "W. RABBIT",
+        "separateLabel": true,
+        "bounds": [
+          826,
+          496,
+          869,
+          518
+        ],
+        "color": "#211b18",
+        "font": "bold Arial10, proportional normal space, fit max41world px",
+        "note": "Exact semantic lettering separate from background artwork; no generated gibberish",
+        "sharedAsset": "/stories/alice-in-wonderland/shared/rabbit-house-nameplate.json",
+        "center": [
+          847.5,
+          507
+        ]
+      },
+      "camera": {
+        "policy": "One held frame per actual viewport for whole yard; full cottage height and Alice above original bottom caption; no shotDissolve within yard",
+        "perLayout": [
+          {
+            "width": 390,
+            "height": 844,
+            "frame": {
+              "x": 812,
+              "y": 499.41666666666663,
+              "z": 0.96
+            },
+            "caption": {
+              "left": 14,
+              "top": 600.484375,
+              "right": 376,
+              "bottom": 776.484375
+            }
+          },
+          {
+            "width": 1366,
+            "height": 640,
+            "frame": {
+              "x": 836,
+              "y": 558.047619047619,
+              "z": 0.84
+            },
+            "caption": {
+              "left": 303,
+              "top": 428.40625,
+              "right": 1063,
+              "bottom": 582.40625
+            }
+          },
+          {
+            "width": 720,
+            "height": 1280,
+            "frame": {
+              "x": 812,
+              "y": 428.6666666666667,
+              "z": 1.5
+            },
+            "caption": {
+              "left": 20,
+              "top": 1016.8125,
+              "right": 700,
+              "bottom": 1164.8125
+            }
+          },
+          {
+            "width": 360,
+            "height": 800,
+            "frame": {
+              "x": 812,
+              "y": 517.6315789473684,
+              "z": 0.95
+            },
+            "caption": {
+              "left": 14,
+              "top": 560,
+              "right": 346,
+              "bottom": 736
+            }
+          },
+          {
+            "width": 430,
+            "height": 932,
+            "frame": {
+              "x": 812,
+              "y": 484.02488425925924,
+              "z": 1.08
+            },
+            "caption": {
+              "left": 14,
+              "top": 681.453125,
+              "right": 416,
+              "bottom": 857.453125
+            }
+          }
+        ]
+      },
+      "futureOnly": {
+        "scene5": "Interior drawn later; preserve external wall/window/door alignment. No bottle or replacements spawned outside.",
+        "scene6": {
+          "windowArmPortal": [
+            957,
+            482
+          ],
+          "chimneyFootPortal": [
+            925,
+            210
+          ],
+          "ladderFoot": [
+            1030,
+            655
+          ],
+          "ladderRoofContact": [
+            1026,
+            405
+          ],
+          "roofTraverse": [
+            [
+              1026,
+              405
+            ],
+            [
+              970,
+              345
+            ],
+            [
+              925,
+              300
+            ],
+            [
+              925,
+              210
+            ]
+          ],
+          "billLanding": [
+            1110,
+            630
+          ],
+          "status": "Architectural reservation only, remeasure against future poses; no new Bill/ladder implementation"
+        },
+        "scene7": {
+          "escapePath": [
+            [
+              753,
+              624
+            ],
+            [
+              690,
+              666
+            ],
+            [
+              580,
+              710
+            ],
+            [
+              455,
+              700
+            ]
+          ],
+          "gateRemainsOpen": true
+        }
+      }
+    }
+  },
+  "walkPaths": {
+    "clearingExit": {
+      "actor": "alice",
+      "environment": "clearing",
+      "mode": "walk",
+      "speed": 235,
+      "bodyScale": 0.32,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 537.0820393249937,
+          "y": 594.1824082710219
+        },
+        {
+          "x": 760,
+          "y": 560
+        },
+        {
+          "x": 930,
+          "y": 460
+        },
+        {
+          "x": 1000,
+          "y": 420
+        }
+      ],
+      "fade": "Smooth final steps into frame-edge/native fern coverage; Rabbit stays fixed",
+      "physicalDurationMs": 6027.765708725616,
+      "facingBySegment": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "houseArrival": {
+      "actor": "alice",
+      "environment": "rabbitHouse",
+      "mode": "walk",
+      "speed": 235,
+      "bodyScale": 0.32,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 555,
+          "y": 665
+        },
+        {
+          "x": 665,
+          "y": 665
+        }
+      ],
+      "fade": "Whole-shot dissolve0.55s plus arrival and0.2s stopped settle; opacity finishes gradually",
+      "physicalDurationMs": 1181.0105769466734,
+      "facingBySegment": [
+        "right"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "houseDoor": {
+      "actor": "alice",
+      "environment": "rabbitHouse",
+      "mode": "walk",
+      "speed": 235,
+      "bodyScale": 0.32,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 665,
+          "y": 665
+        },
+        {
+          "x": 690,
+          "y": 663
+        },
+        {
+          "x": 714,
+          "y": 642
+        },
+        {
+          "x": 753.5447071705133,
+          "y": 622.8286236740663
+        }
+      ],
+      "terrain": "Dry path then individually visible stone step surfaces; final feet on top step, palm at reachable low ring",
+      "physicalDurationMs": 1097.56646383503,
+      "facingBySegment": [
+        "right",
+        "right",
+        "right"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "doorFirstStep": {
+      "actor": "alice",
+      "environment": "rabbitHouse",
+      "mode": "walk",
+      "speed": 235,
+      "bodyScale": 0.32,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 753.5447071705133,
+          "y": 622.8286236740663
+        },
+        {
+          "x": 741.5447071705133,
+          "y": 606.8286236740663
+        }
+      ],
+      "facing": "back: abs(dy)>abs(dx); reuse approved dry back pose",
+      "physicalDurationMs": 222.49882092695768,
+      "facingBySegment": [
+        "back",
+        "back"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    }
+  },
+  "hook": {
+    "durationMs": 3000,
+    "text": null,
+    "doorFirstStepTiming": "Measured walk occupies last part of3s after door opens; use constant walkSpeed, no stretched step",
+    "finalAlice": [
+      741.5447071705133,
+      606.8286236740663
+    ],
+    "rabbit": "Stays in previous clearing; do not carry into house scene",
+    "firstStepMs": 222.49882092695768,
+    "firstStepStartsMs": 2777.5011790730423
+  },
+  "approval": "Alejandro reviews script and measured board together; no chapter/manifest/renderer changes",
+  "timing": {
+    "plannedAutomaticMs": 69756.34274950731,
+    "measurement": "Planned automatic reading, physical motion-speed integral + stated reading holds; NOT MP4 or implemented playback",
+    "silentTransitionSequenceMs": 7958.776285672289,
+    "maxSilentSequenceLimitMs": 8000,
+    "hookMs": 3000,
+    "actual1msEngineMs": 69759
+  },
+  "continuityToScene5": {
+    "environment": "rabbitHouseExterior",
+    "camera": "Same yard fixed frame at end; replay same3s opening action then continue entrance",
+    "alice": {
+      "x": 741.5447071705133,
+      "y": 606.8286236740663,
+      "visible": 0.9,
+      "pose": "idle",
+      "magicScale": 0.32,
+      "renderedPose": "walk-back",
+      "renderedWalkFrame": 1
+    },
+    "door": {
+      "openAngleDegrees": 82,
+      "interiorDepth": 50,
+      "interiorFloorDepth": 51
+    },
+    "rabbit": {
+      "environment": "clearing",
+      "x": 625,
+      "y": 550,
+      "physicalGain": 0.8,
+      "searching": true
+    },
+    "objects": "Alice empty hands; empty box/thimble pocket; original fan/gloves hall; replacements and bottle still inside house"
+  },
+  "runtime": {
+    "renderer": "/stories/alice-in-wonderland/renderers/mary-ann.js",
+    "sceneId": "alice-c2-mary-ann",
+    "state": "implemented and locally verified",
+    "qaVerdict": ".artifacts\\qa\\alice-in-wonderland\\chapter-2-scene-4\\verdict.md"
+  },
+  "qa": {
+    "errors": 0,
+    "missingResources": 0,
+    "motionLayouts": 20,
+    "continuousResizeLayouts": 228,
+    "fullStoryRegressionCases": 10,
+    "completedSilentMp4s": 2,
+    "physicalDevicesTested": false,
+    "verdict": ".artifacts\\qa\\alice-in-wonderland\\chapter-2-scene-4\\verdict.md",
+    "latestRevision": {
+      "scope": "Requested quick pointing/nameplate check only",
+      "viewports": 4,
+      "errors": 0,
+      "timingsUnchanged": true,
+      "verdict": ".artifacts\\qa\\alice-in-wonderland\\chapter-2-scene-4\\point-and-nameplate\\verdict.md"
+    }
+  }
+}

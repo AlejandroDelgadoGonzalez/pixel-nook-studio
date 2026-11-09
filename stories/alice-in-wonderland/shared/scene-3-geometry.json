@@ -1,0 +1,971 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "chapter": "chapter-1",
+  "scene": "alice-c1-s3",
+  "title": "Where the Ground Gives Way",
+  "status": "Gates1/2A approved by Alejandro. S3 implemented with normalized approved assets; Gate4 evidence is maintained separately.",
+  "measurement": {
+    "date": "2026-10-20",
+    "owner": "NOOK applying03 in main thread",
+    "method": "Selected image inspected native/magnified, actual alpha gutters measured, source supports traced, camera unions sampled. No inferred hidden route.",
+    "evidence": "/.artifacts/alice-in-wonderland/scene-3/"
+  },
+  "assets": {
+    "tunnel-well": {
+      "url": "/stories/alice-in-wonderland/assets/environments/tunnel-well-panorama-s3-v1.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b38ea544929c7cb0bca592a8627c8198d0c0c41df02cf613740a3227a20d359b",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "0a531009fad6fe2d90c7ee0c83e9a171741ace26bbf2cfdbcbce483576211dee",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "alice-s3": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93",
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "230d7a646284137567a54bc171d388614e4240187f1ec594fa184a1811f768a6",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    }
+  },
+  "reusedAssets": {
+    "alice": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+    "white-rabbit": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+    "s2-entry": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png"
+  },
+  "overscan": {
+    "fullSourceBounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "principal16x9SourceRect": [
+      196.0,
+      110.5,
+      1280,
+      720
+    ],
+    "fullToBaseFactor": [
+      1.30625,
+      1.3069444444444445
+    ],
+    "extraWidthPercent": 30.624999999999993,
+    "extraHeightPercent": 30.694444444444446,
+    "marginsSource": {
+      "left": 196.0,
+      "right": 196.0,
+      "top": 110.5,
+      "bottom": 110.5
+    },
+    "interpretation": "Full canvas1.306x base in both axes; about15.3% of the BASE dimension at EACH side, about30.6% extra TOTAL. No resizing, stretch, clones or postprocess margin.",
+    "plannedBaseStoryZoom": 1.2,
+    "note": "Art composition reference; upper-corridor and shaft subshots reveal shelf late. Ordinary resize uses overscan; extreme ultrawide reaches the finite painted-width bound. Pixel-density normalization does not alter canvas, framing or actor scale."
+  },
+  "environments": {
+    "tunnel-well": {
+      "worldBounds": [
+        0,
+        0,
+        3344.0,
+        1882.0
+      ],
+      "mapping": {
+        "sourceToWorld": {
+          "scaleX": 2.0,
+          "scaleY": 2.0,
+          "translateX": 0,
+          "translateY": 0
+        },
+        "worldGrid": 2,
+        "pointPolicy": "Measured source supports snapped to even world coordinates, at most0.5source pixel adjustment."
+      },
+      "spawns": {
+        "alice": {
+          "anchor": "A0-crawl-clear",
+          "pose": "crawl-inside",
+          "scale": 0.62,
+          "state": "Already fully through exterior; interior opening stays behind. Rise here before question."
+        },
+        "white-rabbit": {
+          "anchor": "R0-ahead",
+          "pose": "right",
+          "scale": 0.568128,
+          "watch": "pocketed"
+        },
+        "sister": {
+          "presentInThisEnvironment": false,
+          "location": "riverbank",
+          "unchangedWorldAnchor": [
+            810,
+            650
+          ],
+          "bookOwner": "sister",
+          "pose": "seated-reading"
+        }
+      },
+      "anchors": {
+        "A0-crawl-clear": {
+          "point": [
+            756,
+            488
+          ],
+          "sourcePoint": [
+            378.0,
+            244.0
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "A1-lip-support": {
+          "point": [
+            1968,
+            628
+          ],
+          "sourcePoint": [
+            984.0,
+            314.0
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "A2-clear-of-earth": {
+          "point": [
+            2076,
+            632
+          ],
+          "sourcePoint": [
+            1038.0,
+            316.0
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "A3-first-drop": {
+          "point": [
+            2104,
+            720
+          ],
+          "sourcePoint": [
+            1052.0,
+            360.0
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "A4-slow-fall": {
+          "point": [
+            2176,
+            760
+          ],
+          "sourcePoint": [
+            1088.0,
+            380.0
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "A5-hook-end": {
+          "point": [
+            2148,
+            1200
+          ],
+          "sourcePoint": [
+            1074,
+            600
+          ],
+          "surface": "air, fixed fall-depth scale"
+        },
+        "R0-ahead": {
+          "point": [
+            1000,
+            520
+          ],
+          "sourcePoint": [
+            500.0,
+            260.0
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "R1-inner-turn": {
+          "point": [
+            2208,
+            456
+          ],
+          "sourcePoint": [
+            1104.0,
+            228.0
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "R2-hidden": {
+          "point": [
+            2152,
+            420
+          ],
+          "sourcePoint": [
+            1076,
+            210
+          ],
+          "surface": "inspected dry corridor / lip / receding passage"
+        },
+        "shelf-tip": {
+          "point": [
+            2216,
+            1350
+          ],
+          "sourcePoint": [
+            1108.0,
+            675.0
+          ],
+          "surface": "fixed shelf object, future S4 interaction not authorized"
+        },
+        "jar-contact-reserved": {
+          "point": [
+            2205.6,
+            1311
+          ],
+          "sourcePoint": [
+            1102.8,
+            655.5
+          ],
+          "surface": "Left-edge grip used by S4; fixed jar center1112, base666"
+        }
+      },
+      "walkPaths": {
+        "alice-corridor": {
+          "startAnchor": "A0-crawl-clear",
+          "endAnchor": "A1-lip-support",
+          "sourceWaypoints": [
+            [
+              378.0,
+              244.0
+            ],
+            [
+              520.0,
+              270.0
+            ],
+            [
+              700.0,
+              278.0
+            ],
+            [
+              820.0,
+              292.0
+            ],
+            [
+              920.0,
+              300.0
+            ],
+            [
+              964.0,
+              310.0
+            ],
+            [
+              978.0,
+              313.0
+            ],
+            [
+              984.0,
+              314.0
+            ]
+          ],
+          "waypoints": [
+            [
+              756,
+              488
+            ],
+            [
+              1040,
+              540
+            ],
+            [
+              1400,
+              556
+            ],
+            [
+              1640,
+              584
+            ],
+            [
+              1840,
+              600
+            ],
+            [
+              1928,
+              620
+            ],
+            [
+              1956,
+              626
+            ],
+            [
+              1968,
+              628
+            ]
+          ],
+          "lengthWorld": 1222.3887718686155,
+          "surface": "walkable earth; simultaneous with Rabbit",
+          "commonProgressKnots": [
+            0,
+            0.2,
+            0.45,
+            0.62,
+            0.78,
+            0.9,
+            0.96,
+            1.0
+          ],
+          "motion": "One continuous simultaneous action; terrain-based speed changes at shared knots, no waits or alternate turns."
+        },
+        "rabbit-inner-bend": {
+          "startAnchor": "R0-ahead",
+          "endAnchor": "R2-hidden",
+          "sourceWaypoints": [
+            [
+              500.0,
+              260.0
+            ],
+            [
+              642.0,
+              272.0
+            ],
+            [
+              822.0,
+              280.0
+            ],
+            [
+              942.0,
+              278.0
+            ],
+            [
+              1042.0,
+              256.0
+            ],
+            [
+              1104.0,
+              228.0
+            ],
+            [
+              1100.0,
+              212.0
+            ],
+            [
+              1076,
+              210
+            ]
+          ],
+          "waypoints": [
+            [
+              1000,
+              520
+            ],
+            [
+              1284,
+              544
+            ],
+            [
+              1644,
+              560
+            ],
+            [
+              1884,
+              556
+            ],
+            [
+              2084,
+              512
+            ],
+            [
+              2208,
+              456
+            ],
+            [
+              2200,
+              424
+            ],
+            [
+              2152,
+              420
+            ]
+          ],
+          "lengthWorld": 1307.393837514177,
+          "surface": "walkable inner/back corridor; final steps behind rooted buttress",
+          "commonProgressKnots": [
+            0,
+            0.2,
+            0.45,
+            0.62,
+            0.78,
+            0.9,
+            0.96,
+            1.0
+          ],
+          "motion": "One continuous simultaneous action; terrain-based speed changes at shared knots, no waits or alternate turns."
+        }
+      },
+      "fallPaths": {
+        "alice-support-loss-and-fall": {
+          "startAnchor": "A1-lip-support",
+          "endAnchor": "A5-hook-end",
+          "sourceWaypoints": [
+            [
+              984.0,
+              314.0
+            ],
+            [
+              1038.0,
+              316.0
+            ],
+            [
+              1052.0,
+              360.0
+            ],
+            [
+              1088.0,
+              380.0
+            ],
+            [
+              1084,
+              455
+            ],
+            [
+              1074,
+              535
+            ],
+            [
+              1074,
+              600
+            ]
+          ],
+          "waypoints": [
+            [
+              1968.0,
+              628.0
+            ],
+            [
+              2076.0,
+              632.0
+            ],
+            [
+              2104.0,
+              720.0
+            ],
+            [
+              2176.0,
+              760.0
+            ],
+            [
+              2168,
+              910
+            ],
+            [
+              2148,
+              1070
+            ],
+            [
+              2148,
+              1200
+            ]
+          ],
+          "lengthWorld": 723.7974526446054,
+          "surface": "support at first point only; clear lip before vertical drop, never a walkPath"
+        }
+      },
+      "surfaces": {
+        "dry-corridor": {
+          "sourceSupportPolyline": [
+            [
+              378,
+              244
+            ],
+            [
+              520,
+              270
+            ],
+            [
+              700,
+              278
+            ],
+            [
+              820,
+              292
+            ],
+            [
+              920,
+              300
+            ],
+            [
+              964,
+              310
+            ],
+            [
+              978,
+              313
+            ]
+          ],
+          "note": "Front supporting floor above the shaft; do not lower feet into hanging roots."
+        },
+        "inner-rabbit-route": {
+          "sourceSupportPolyline": [
+            [
+              500,
+              260
+            ],
+            [
+              642,
+              272
+            ],
+            [
+              822,
+              280
+            ],
+            [
+              942,
+              278
+            ],
+            [
+              1042,
+              256
+            ],
+            [
+              1104,
+              228
+            ],
+            [
+              1100,
+              212
+            ],
+            [
+              1076,
+              210
+            ]
+          ],
+          "note": "Inner/back corridor stays above well; actual bend then buttress masks last steps."
+        },
+        "last-loose-support": {
+          "source": [
+            984,
+            314
+          ],
+          "note": "A surface clod slips from the lip, not the entire drawn rock buttress. Clear x1038 before descending below top."
+        },
+        "open-air-safe": {
+          "sourceBounds": [
+            1036,
+            350,
+            187,
+            290
+          ],
+          "note": "Falling body stays in open dark shaft; no terrain support. Shelf remains fixed at lower right."
+        },
+        "first-shelf": {
+          "sourcePlatformBounds": [
+            1108,
+            666,
+            204,
+            31
+          ],
+          "sourceJarBounds": [
+            1098,
+            636,
+            28,
+            30
+          ],
+          "note": "Original PNG jar footprint cleared by shared clean plate; runtime jar uses the same normalized props-S4 texture in S3/S4. Base1112,666 at left edge; no S3 interaction.",
+          "paintedJarBoundsOriginal": [
+            1163,
+            641,
+            26,
+            30
+          ]
+        }
+      },
+      "occluders": [
+        {
+          "id": "interior-entry-lintel",
+          "sourceAperturePolygon": [
+            [
+              296,
+              225
+            ],
+            [
+              296,
+              204
+            ],
+            [
+              308,
+              187
+            ],
+            [
+              329,
+              175
+            ],
+            [
+              345,
+              183
+            ],
+            [
+              361,
+              201
+            ],
+            [
+              365,
+              225
+            ]
+          ],
+          "sourceRoofColumn": [
+            294,
+            0,
+            74,
+            235
+          ],
+          "worldAperturePolygon": [
+            [
+              592,
+              450
+            ],
+            [
+              592,
+              408
+            ],
+            [
+              616,
+              374
+            ],
+            [
+              658,
+              350
+            ],
+            [
+              690,
+              366
+            ],
+            [
+              722,
+              402
+            ],
+            [
+              730,
+              450
+            ]
+          ],
+          "activation": "Only already-crossed entry body; full overhead coverage, then disabled on clear corridor. S2 exterior uses its frozen approved mask."
+        },
+        {
+          "id": "rabbit-receding-buttress",
+          "sourceForegroundPolygon": [
+            [
+              1010,
+              116
+            ],
+            [
+              1044,
+              116
+            ],
+            [
+              1068,
+              146
+            ],
+            [
+              1086,
+              186
+            ],
+            [
+              1098,
+              208
+            ],
+            [
+              1078,
+              236
+            ],
+            [
+              1044,
+              240
+            ],
+            [
+              1022,
+              214
+            ]
+          ],
+          "worldForegroundPolygon": [
+            [
+              2020,
+              232
+            ],
+            [
+              2088,
+              232
+            ],
+            [
+              2136,
+              292
+            ],
+            [
+              2172,
+              372
+            ],
+            [
+              2196,
+              416
+            ],
+            [
+              2156,
+              472
+            ],
+            [
+              2088,
+              480
+            ],
+            [
+              2044,
+              428
+            ]
+          ],
+          "sourceUpperCoverageBounds": [
+            1010,
+            0,
+            88,
+            240
+          ],
+          "activation": "Only Rabbit final inward steps; actual background pixels cover body/ears behind rooted bend, then final covered fade. No full-body fade on open floor."
+        },
+        {
+          "id": "crumbly-lip-foreground",
+          "sourceForegroundPolygon": [
+            [
+              908,
+              307
+            ],
+            [
+              1008,
+              307
+            ],
+            [
+              1012,
+              348
+            ],
+            [
+              982,
+              370
+            ],
+            [
+              950,
+              359
+            ],
+            [
+              924,
+              334
+            ]
+          ],
+          "worldForegroundPolygon": [
+            [
+              1816,
+              614
+            ],
+            [
+              2016,
+              614
+            ],
+            [
+              2024,
+              696
+            ],
+            [
+              1964,
+              740
+            ],
+            [
+              1900,
+              718
+            ],
+            [
+              1848,
+              668
+            ]
+          ],
+          "activation": "Only trailing overlap as Alice clears the near lip; no whole-body masking. Loose clods are surface crust; existing solid buttress remains and Alice must clear it before dropping."
+        }
+      ],
+      "depthScaling": {
+        "referenceStandingHeights": {
+          "alice": 180,
+          "white-rabbit": 122
+        },
+        "terrainCurve": {
+          "sourceReferenceY": 244,
+          "scaleAtReference": 0.62,
+          "slopePerSourceY": 0.0016,
+          "min": 0.56,
+          "max": 0.8
+        },
+        "actorGain": {
+          "alice": 1,
+          "white-rabbit": 0.88
+        },
+        "applyTo": "body, carried props, shadows and local hand offsets exactly once",
+        "fallScaleLocked": 0.732,
+        "fallDepthReferenceSourceY": 314.0,
+        "important": "Vertical FALL y is height, not terrain depth: never grow/shrink Alice as she descends. Lock scale from the last actual terrain support."
+      },
+      "cameras": {
+        "coverage": "Full viewport using one painted image. Source viewH=min(max(600,requiredWidth/(aspect-24/height)),941,1672/aspect), viewW=viewH*aspect. Ordinary layouts preserve the planned baseline or zoom out into real overscan. Extreme ultrawide reaches the finite painted-width bound and reduces vertical field; actor world scale stays unchanged. No letterbox.",
+        "safePaddingPx": 12,
+        "topControlsReservationPx": 77,
+        "captionReserveRule": "min(300,max(180,0.30*viewportHeight)) for conservative technical projections; actual DOM must be retested in04/05.",
+        "baseDesignRectSource": [
+          196.0,
+          110.5,
+          1280,
+          720
+        ],
+        "activePrincipalStoryView16x9": [
+          266.666667,
+          0,
+          1066.666667,
+          600
+        ],
+        "plannedBaseZoomRelativeToArtBox": 1.2,
+        "minimumPlannedSourceHeight": 600,
+        "shelfReveal": "No shelf visible in active shots before hook. Hold prehook camera0..1200ms, then interpolate to measured hook-end framing1200..3000ms. Jar top enters first; shelf lip comes in near end. No shelf motion.",
+        "projectionFile": "/.artifacts/alice-in-wonderland/scene-3/camera-projections.json",
+        "hookEndRevealBoundsSource": [
+          1098,
+          636,
+          1210,
+          686
+        ],
+        "hookEndRevealProvenance": "Exact required source bounds from approved .artifacts/alice-in-wonderland/scene-3/measure.py; formalized as runtime input without changing framing."
+      },
+      "hook": {
+        "durationMs": 3000,
+        "sourceActorPoints": [
+          {
+            "timeMs": 0,
+            "point": [
+              1088,
+              380
+            ]
+          },
+          {
+            "timeMs": 1200,
+            "point": [
+              1100,
+              455
+            ]
+          },
+          {
+            "timeMs": 2400,
+            "point": [
+              1110,
+              535
+            ]
+          },
+          {
+            "timeMs": 3000,
+            "point": [
+              1116,
+              600
+            ]
+          }
+        ],
+        "depthScale": 0.732,
+        "gaze": "mirrored left-facing descent until2400ms, authored right-facing descent for shelf glance",
+        "caption": "clear",
+        "objects": "shelf/jar fixed, untouched, no ownership change",
+        "S4": "same state and camera; independent opening replay only, no duplicate in continuous reading"
+      }
+    }
+  },
+  "gateChecks": {
+    "alphaCropAudit": "/.artifacts/alice-in-wonderland/scene-3/atlas-audit.json",
+    "cameraProjectionAudit": "/.artifacts/alice-in-wonderland/scene-3/projection-audit.json",
+    "characterArtReusableCheck": {
+      "passed": true,
+      "evidence": "/.artifacts/pixel-density/character-art-check.json",
+      "scope": "Current normalized assets, isolated technical atlas plate; no S3 runtime."
+    },
+    "runtimeQA": "Current result: /.artifacts/qa/alice-in-wonderland/scene-3/gate-4-verdict.json. Source-art checks alone are not runtime certification.",
+    "approval": "Alejandro explicitly approved Gates1/2A and authorized Gates3/4 for S3,20October2026.",
+    "pixelDensityAudit": "/.artifacts/qa/alice-in-wonderland/pixel-density/final-source/alice-in-wonderland-pixel-density.json",
+    "geometryInvariantProof": "/.artifacts/pixel-density/invariants.json"
+  },
+  "pixelDensity": {
+    "spec": "/stories/alice-in-wonderland/shared/pixel-density.json",
+    "profile": "concept_art/density-profile.json",
+    "revision": "2026-10-20-golden-master",
+    "bodyStandingLogicalSamples": 68,
+    "alpha": "hard",
+    "geometry": "Cut rectangles, sizes, positions, mapping, paths and masks unchanged; source colors/alpha quantized by NN."
+  },
+  "exteriorContinuation": {
+    "environment": "riverbank",
+    "from": [
+      1610,
+      466
+    ],
+    "through": [
+      1758,
+      466
+    ],
+    "pose": "burrow-entry",
+    "scale": 0.7013333333333334,
+    "derivation": "Full sprite clears max world aperture x1685 plus half202world pose width at actual depth plus2world pixels, snapped outward to2grid. Occlusion, not alpha fade. Existing S2 points/geometry unchanged.",
+    "occluder": {
+      "sourceCoverageBounds": [
+        1262,
+        0,
+        619,
+        836
+      ],
+      "sourceAperturePolygon": [
+        [
+          1248,
+          241
+        ],
+        [
+          1248,
+          226
+        ],
+        [
+          1252,
+          219
+        ],
+        [
+          1258,
+          214
+        ],
+        [
+          1267,
+          211
+        ],
+        [
+          1274,
+          214
+        ],
+        [
+          1281,
+          220
+        ],
+        [
+          1286,
+          228
+        ],
+        [
+          1288,
+          238
+        ],
+        [
+          1288,
+          241
+        ]
+      ],
+      "crossingPlaneWorldX": 1620
+    },
+    "durationMs": 1400,
+    "completionSettleMs": 140,
+    "camera": "Continuous measured follow from exact S2 final frame toward union with full clear-entry sprite bounds; hold destination140ms while already occluded before whole-shot transition."
+  }
+}

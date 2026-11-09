@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "default": "the-first-path",
+  "aliases": {
+    "el-primer-camino": "the-first-path"
+  },
+  "stories": [
+    {
+      "slug": "alice-in-wonderland",
+      "manifest": "/stories/alice-in-wonderland/manifest.json"
+    },
+    {
+      "slug": "the-odyssey",
+      "manifest": "/stories/the-odyssey/manifest.json"
+    },
+    {
+      "slug": "the-second-cup",
+      "manifest": "/stories/the-second-cup/manifest.json"
+    },
+    {
+      "slug": "the-first-path",
+      "manifest": "/stories/the-first-path/manifest.json"
+    }
+  ]
+}

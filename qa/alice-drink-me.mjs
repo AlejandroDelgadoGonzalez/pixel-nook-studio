@@ -1,0 +1,21 @@
+import {officialLayouts,officialSizes} from './official-layouts.mjs';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {launch,openCase} from './helpers/browser.mjs';
+import {storyCases} from './helpers/story-cases.mjs';
+import {inspectViewport} from './checks/viewport-coverage.mjs';
+const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/alice-in-wonderland/drink-me/motion';await fs.mkdir(out,{recursive:true});
+const b=await launch(),report={errors:[],resources:[],layouts:[]};
+try{
+const item=(await storyCases()).find(x=>x.slug==='alice-in-wonderland'),sizes=officialSizes,{page,context}=await openCase(b,item,{width:390,height:844},report);
+await page.evaluate(code=>window.inspectDrink=(0,eval)('('+code+')'),inspectViewport.toString());
+for(const[width,height]of sizes.filter(([w,h])=>!process.argv.includes('--usual-layouts')||(w>=360&&h>=600&&h/w<=2.6))){await page.setViewportSize({width,height});await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+const row=await page.evaluate(()=>{const s=qaScene,e=s.reader,issues=[],zooms=new Set(),frames=new Set(),keys=new Set();let samples=0,pixelReference=null,pixelChanges=0;e.sceneGate=false;
+for(const step of e.story.steps.filter(x=>x.sceneIndex===3&&x.type!=='end')){const n=step.type==='action'?Math.max(2,Math.ceil(step.duration/50)):1;for(let j=0;j<=n;j++){e.start(step.id);e.paused=false;if(step.type==='action')e.tick(step.duration*j/n*.999999);else e.revealed=step.text.length;e.paused=true;e.onChange('back');s.draw();s.game.step(performance.now(),0);const v=inspectDrink(s);if(v.issues.length)issues.push({id:step.id,f:j/n,issues:v.issues});if(!s.framing.fits)issues.push({id:step.id,kind:'frame',frame:s.framing});zooms.add(s.cameras.main.zoom);frames.add(JSON.stringify([s.framing.x,s.framing.y,s.framing.z]));const key=s.objects.key,im=key.texture.getSourceImage(),rgba=im.getContext('2d').getImageData(0,0,im.width,im.height).data;if(pixelReference===null)pixelReference=new Uint8ClampedArray(rgba);else if(rgba.length!==pixelReference.length||rgba.some((v,k)=>v!==pixelReference[k])){pixelChanges++;issues.push({kind:'static-key-pixel-change',id:step.id});}let hash=2166136261;for(const v of rgba)hash=Math.imul(hash^v,16777619)>>>0;keys.add(JSON.stringify([key.texture.key,key.frame.name,key.x,key.y,key.scaleX,key.scaleY,key.originX,key.originY,key.rotation,key.flipX,key.flipY,key.alpha,key._crop,hash]));if(s.shotDissolve?.active||s.shotDissolve?.alpha>0||document.querySelector('.scene-snapshot'))issues.push({kind:'room-dissolve',id:step.id});samples++;
+if(step.id==='alice-c1-drink-shrink'){if(e.model.actors.alice.x!==s.drinkGeometry.anchors['S4-open-floor'].point[0]||e.model.actors.alice.y!==s.drinkGeometry.anchors['S4-open-floor'].point[1])issues.push({kind:'shrink-foot-drift'});const z=s.hall.scaleAt(1400)*e.model.drink.magicScale;if(Math.abs(s.people.alice.actor.scaleY-z)>1e-9)issues.push({kind:'magic-scale'});}
+}}
+e.start('alice-c1-eat-inherit');const d=e.model.drink;if(d.magicScale!==.32||d.bottleOwner!=='floor'||d.boxOpen!==1||e.model.hall.key.owner!==null||e.model.hall.door!==0||e.model.hall.curtain!==1)issues.push({kind:'final-state',d});if(frames.size!==1)issues.push({kind:'camera-position-change',frames:[...frames]});if(keys.size!==1)issues.push({kind:'static-key-change',keys:[...keys]});if(zooms.size!==1)issues.push({kind:'zoom-jump',zooms:[...zooms]});return{samples,issues,zooms:[...zooms],cameraStates:frames.size,keyStates:keys.size,pixelChanges};});report.layouts.push({width,height,...row});console.log(JSON.stringify({width,height,samples:row.samples,issues:row.issues.slice(0,2)}));
+if(width===390&&height===844)for(const id of ['warning','smaller','fit','forgot-key','smooth','hook-hold']){await page.evaluate(id=>{const e=qaScene.reader;e.start('alice-c1-drink-'+id);e.paused=true;e.revealed=e.step.text?.length||0;e.onChange('back');qaScene.draw();qaScene.game.step(performance.now(),0);},id);await page.screenshot({path:out+'/'+id+'.png'});}
+}
+await context.close();report.passed=report.layouts.every(x=>!x.issues.length)&&!report.errors.length&&!report.resources.length;
+}finally{await b.close();await fs.writeFile(out+'/report.json',JSON.stringify(report,null,2));}assert(report.passed);console.log('PASS Drink Me motion matrix');

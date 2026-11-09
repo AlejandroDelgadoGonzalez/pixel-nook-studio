@@ -1,0 +1,1969 @@
+{
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "title": "The Odyssey",
+  "subtitle": "The Long Way Home",
+  "attribution": "An original abridged adaptation of Homer’s Odyssey",
+  "serialized": true,
+  "episodes": true,
+  "timing": {
+    "characterMs": 30,
+    "wordMs": 440,
+    "minimumHoldMs": 2100,
+    "linePauseMs": 1400
+  },
+  "videoExport": {
+    "logo": {
+      "src": "/stories/the-odyssey/assets/branding/logo.png",
+      "durationMs": 3000
+    },
+    "captionFadeMs": 450,
+    "previewHoldMs": 900
+  },
+  "renderer": "ithaca",
+  "availableChapter": "chapter-2",
+  "intro": "One house. Two ways of refusing to give up.",
+  "ending": "The lamp was still burning. Beyond its light, two journeys were still unfinished.",
+  "description": "While Penelope buys another day, Telemachus begins to look for his father.",
+  "stageLabel": "Penelope and Telemachus in a pixel art retelling of the Odyssey",
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.6,
+    "birdMinMs": 35000,
+    "birdRangeMs": 25000
+  },
+  "assets": {
+    "chamber": "/stories/the-odyssey/assets/backgrounds/native/chamber.png",
+    "hall": "/stories/the-odyssey/assets/backgrounds/native/hall.png",
+    "harbor": "/stories/the-odyssey/assets/backgrounds/native/harbor.png",
+    "sparta": "/stories/the-odyssey/assets/backgrounds/native/sparta.png",
+    "ithaca-atlas": "/stories/the-odyssey/assets/atlases/characters/ithaca-atlas.png",
+    "ithaca-props": "/stories/the-odyssey/assets/atlases/props/ithaca-props.png",
+    "ithaca-hosts": "/stories/the-odyssey/assets/atlases/characters/ithaca-hosts.png",
+    "spartaLanding": "/stories/the-odyssey/assets/backgrounds/panoramas/sparta-landing-panorama.png",
+    "journeySea": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png"
+  },
+  "characters": {
+    "penelope": {
+      "name": "Penelope",
+      "role": "The queen of Ithaca",
+      "color": "#ead1e9"
+    },
+    "telemachus": {
+      "name": "Telemachus",
+      "role": "The son",
+      "color": "#c8e4d9"
+    },
+    "athena": {
+      "name": "The traveler",
+      "role": "Athena in disguise",
+      "color": "#d8dfb2"
+    },
+    "eurycleia": {
+      "name": "Eurycleia",
+      "role": "The old nurse",
+      "color": "#e9d8b8"
+    },
+    "menelaus": {
+      "name": "Menelaus",
+      "role": "The king of Sparta",
+      "color": "#eac6a7"
+    },
+    "elder": {
+      "name": "An elder",
+      "role": "The assembly",
+      "color": "#d5d8df"
+    }
+  },
+  "initialState": {
+    "actors": {
+      "penelope": {
+        "x": 1110,
+        "y": 640,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "seated": 0
+      },
+      "telemachus": {
+        "x": 650,
+        "y": 880,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle",
+        "seated": 0
+      },
+      "athena": {
+        "x": 1120,
+        "y": 640,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "seated": 0
+      },
+      "eurycleia": {
+        "x": 1120,
+        "y": 640,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "seated": 0
+      },
+      "menelaus": {
+        "x": 905,
+        "y": 860,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "seated": 0
+      },
+      "elder": {
+        "x": 890,
+        "y": 850,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "seated": 0
+      }
+    },
+    "lamp": {
+      "owner": null
+    },
+    "chapter": 0,
+    "room": "chamber",
+    "view": "chamber-wide",
+    "cloth": 0.78,
+    "unpick": 0,
+    "loom": {
+      "x": 850,
+      "y": 895,
+      "visible": 1
+    },
+    "stool": {
+      "x": 740,
+      "y": 890,
+      "visible": 1
+    },
+    "table": {
+      "x": 770,
+      "y": 880,
+      "visible": 0
+    },
+    "bread": {
+      "x": 680,
+      "y": 815,
+      "visible": 0
+    },
+    "cup": {
+      "x": 735,
+      "y": 800,
+      "visible": 0,
+      "held": 0
+    },
+    "oil": {
+      "x": 1010,
+      "y": 865,
+      "visible": 1
+    },
+    "boat": {
+      "x": 535,
+      "y": 700,
+      "visible": 0,
+      "aboard": 0,
+      "departing": 0
+    },
+    "travel": 0
+  },
+  "shots": {
+    "loom": {
+      "cx": 875,
+      "cy": 830,
+      "w": 490,
+      "h": 390,
+      "actors": [
+        "penelope"
+      ],
+      "props": [
+        "loom",
+        "oil"
+      ]
+    },
+    "welcome": {
+      "cx": 780,
+      "cy": 765,
+      "w": 530,
+      "h": 390,
+      "actors": [
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table",
+        "bread"
+      ]
+    },
+    "assembly": {
+      "cx": 780,
+      "cy": 945,
+      "w": 480,
+      "h": 350,
+      "actors": [
+        "telemachus",
+        "elder"
+      ],
+      "props": [],
+      "hiddenActors": [
+        "athena"
+      ],
+      "hiddenProps": [
+        "boat"
+      ]
+    },
+    "harbor": {
+      "cx": 725,
+      "cy": 690,
+      "w": 660,
+      "h": 450,
+      "actors": [
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "boat"
+      ]
+    },
+    "departing": {
+      "cx": 535,
+      "cy": 580,
+      "w": 580,
+      "h": 430,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [
+        "boat"
+      ]
+    },
+    "sparta": {
+      "cx": 785,
+      "cy": 765,
+      "w": 500,
+      "h": 370,
+      "actors": [
+        "telemachus",
+        "menelaus"
+      ],
+      "props": [
+        "table",
+        "cup"
+      ]
+    },
+    "night": {
+      "cx": 875,
+      "cy": 830,
+      "w": 490,
+      "h": 390,
+      "actors": [
+        "penelope",
+        "eurycleia"
+      ],
+      "props": [
+        "loom",
+        "oil"
+      ]
+    },
+    "chamber-wide": {
+      "cx": 900,
+      "cy": 580,
+      "w": 1000,
+      "h": 760,
+      "actors": [
+        "penelope",
+        "eurycleia"
+      ],
+      "props": [
+        "loom",
+        "oil"
+      ]
+    },
+    "hall-wide": {
+      "cx": 820,
+      "cy": 610,
+      "w": 950,
+      "h": 690,
+      "actors": [
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table"
+      ]
+    },
+    "guest-arrival": {
+      "cx": 780,
+      "cy": 630,
+      "w": 520,
+      "h": 630,
+      "preserveHeight": true,
+      "actors": [
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table"
+      ]
+    },
+    "clarity-voyage": {
+      "cx": 770,
+      "cy": 930,
+      "w": 650,
+      "h": 490,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [
+        "boat"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-sparta-landing": {
+      "cx": 770,
+      "cy": 1450,
+      "w": 650,
+      "h": 640,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [
+        "boat"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-sparta-path": {
+      "cx": 820,
+      "cy": 890,
+      "w": 440,
+      "h": 680,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c2-s4-clarity-walk-off-the-boat-route": {
+      "cx": 770,
+      "cy": 1429,
+      "w": 660,
+      "h": 682,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [
+        "boat"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c2-s4-clarity-follow-the-palace-path-route": {
+      "cx": 820,
+      "cy": 753,
+      "w": 440,
+      "h": 1070,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c2-s2-welcome-the-traveler-framing": {
+      "cx": 780,
+      "cy": 630,
+      "w": 520,
+      "h": 630,
+      "preserveHeight": true,
+      "actors": [
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "table"
+      ]
+    },
+    "odyssey-c2-s4-clarity-walk-off-the-boat-framing": {
+      "cx": 770,
+      "cy": 1429,
+      "w": 660,
+      "h": 682,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [
+        "boat"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c2-s4-clarity-follow-the-palace-path-framing": {
+      "cx": 820,
+      "cy": 753,
+      "w": 440,
+      "h": 1070,
+      "actors": [
+        "telemachus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    }
+  },
+  "scenes": [
+    {
+      "id": "odyssey-c2-s1",
+      "chapterId": "chapter-2",
+      "name": "The Unfinished Cloth",
+      "atmosphere": {
+        "water": 0.002,
+        "wind": 0.016,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.009
+      },
+      "steps": [
+        {
+          "id": "odyssey-c2-s1-frame",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "room": "chamber",
+            "view": "chamber-wide",
+            "chapter": 0,
+            "actors": {
+              "penelope": {
+                "visible": 0,
+                "x": 1110,
+                "y": 640,
+                "facing": "left"
+              },
+              "telemachus": {
+                "visible": 0
+              },
+              "athena": {
+                "visible": 0
+              },
+              "eurycleia": {
+                "visible": 0
+              },
+              "menelaus": {
+                "visible": 0
+              },
+              "elder": {
+                "visible": 0
+              }
+            },
+            "boat": {
+              "aboard": 0,
+              "departing": 0,
+              "visible": 0
+            },
+            "loom": {
+              "visible": 1
+            },
+            "stool": {
+              "visible": 1
+            },
+            "table": {
+              "visible": 0
+            },
+            "bread": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 1
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c2-s1-cross-to-the-loom",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "x": 740,
+                "y": 860,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "paths": {
+            "penelope": [
+              {
+                "x": 1050,
+                "y": 910
+              },
+              {
+                "x": 790,
+                "y": 920
+              },
+              {
+                "x": 740,
+                "y": 860
+              }
+            ]
+          },
+          "presence": {
+            "penelope": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Chamber doorway"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s1-sit-at-the-loom",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "pose": "sit",
+                "facing": "right",
+                "seated": 1
+              }
+            },
+            "view": "loom"
+          }
+        },
+        {
+          "id": "odyssey-c2-s1-unpick-the-first-thread",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "cloth": 0.6,
+            "unpick": 1,
+            "actors": {
+              "penelope": {
+                "pose": "sit",
+                "facing": "right",
+                "seated": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s1-clarity-elsewhere",
+          "type": "text",
+          "kind": "narration",
+          "text": "While Odysseus longed for home on Calypso’s island, his wife and son were waiting in Ithaca."
+        },
+        {
+          "id": "odyssey-c2-s1-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "By lamplight, Penelope drew a thread out of the cloth."
+        },
+        {
+          "id": "odyssey-c2-s1-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Every morning, she wove. Every night, she quietly undid a little of her work."
+        },
+        {
+          "id": "odyssey-c2-s1-clarity-suitors",
+          "type": "text",
+          "kind": "narration",
+          "text": "Men called suitors wanted to marry Penelope and take Odysseus’s place. They ate the family’s food while they waited."
+        },
+        {
+          "id": "odyssey-c2-s1-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Penelope promised to choose a new husband when she finished a cloth for Laertes, Odysseus’s elderly father."
+        },
+        {
+          "id": "odyssey-c2-s1-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The men who wanted her hand believed they were waiting for a piece of work."
+        },
+        {
+          "id": "odyssey-c2-s1-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "By undoing her weaving each night, she kept the cloth unfinished. This gave her more time to wait for Odysseus."
+        },
+        {
+          "id": "odyssey-c2-s1-draw-back-another-row",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "cloth": 0.42,
+            "unpick": 2,
+            "actors": {
+              "penelope": {
+                "pose": "sit",
+                "facing": "right",
+                "seated": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s1-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Another row loosened. Another small part of the morning came away."
+        },
+        {
+          "id": "odyssey-c2-s1-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "She could not bring Odysseus home by pulling a thread."
+        },
+        {
+          "id": "odyssey-c2-s1-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "But she could keep his place from being given away before morning."
+        },
+        {
+          "id": "odyssey-c2-s1-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Another day. Tonight, that was what she could make."
+        },
+        {
+          "id": "odyssey-c2-s1-leave-the-moment",
+          "type": "action",
+          "duration": 550,
+          "effects": {
+            "actors": {
+              "penelope": {},
+              "telemachus": {},
+              "athena": {},
+              "eurycleia": {},
+              "menelaus": {},
+              "elder": {}
+            }
+          }
+        }
+      ],
+      "estimatedSeconds": 91,
+      "durationMs": 90670
+    },
+    {
+      "id": "odyssey-c2-s2",
+      "chapterId": "chapter-2",
+      "name": "A Guest at the Door",
+      "atmosphere": {
+        "water": 0.002,
+        "wind": 0.016,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.009
+      },
+      "steps": [
+        {
+          "id": "odyssey-c2-s2-frame",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "room": "hall",
+            "view": "odyssey-c2-s2-welcome-the-traveler-framing",
+            "chapter": 1,
+            "actors": {
+              "penelope": {
+                "visible": 0
+              },
+              "telemachus": {
+                "visible": 1,
+                "x": 635,
+                "y": 875,
+                "facing": "right"
+              },
+              "athena": {
+                "visible": 0,
+                "x": 950,
+                "y": 490,
+                "facing": "front"
+              },
+              "eurycleia": {
+                "visible": 0
+              },
+              "menelaus": {
+                "visible": 0
+              },
+              "elder": {
+                "visible": 0
+              }
+            },
+            "boat": {
+              "aboard": 0,
+              "departing": 0,
+              "visible": 0
+            },
+            "loom": {
+              "visible": 0
+            },
+            "stool": {
+              "visible": 0
+            },
+            "table": {
+              "visible": 1
+            },
+            "bread": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c2-s2-welcome-the-traveler",
+          "type": "action",
+          "duration": 3400,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "visible": 1
+              },
+              "athena": {
+                "x": 900,
+                "y": 875,
+                "visible": 1,
+                "facing": "left",
+                "pose": "walk"
+              }
+            },
+            "bread": {
+              "visible": 1
+            }
+          },
+          "paths": {
+            "athena": [
+              {
+                "x": 950,
+                "y": 750
+              },
+              {
+                "x": 950,
+                "y": 875
+              },
+              {
+                "x": 900,
+                "y": 875
+              }
+            ]
+          },
+          "presence": {
+            "athena": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Paved central aisle below the open doorway",
+              "from": {
+                "x": 950,
+                "y": 490
+              }
+            }
+          },
+          "travelFacing": [
+            "athena"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c2-s2-offer-the-bread",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "pose": "reach",
+                "facing": "right"
+              },
+              "athena": {
+                "pose": "idle",
+                "facing": "left"
+              }
+            },
+            "bread": {
+              "x": 740,
+              "y": 798
+            },
+            "view": "welcome"
+          }
+        },
+        {
+          "id": "odyssey-c2-s2-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Telemachus, Penelope and Odysseus’s son, welcomed a stranger into the hall and offered him bread."
+        },
+        {
+          "id": "odyssey-c2-s2-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The house still belonged to his father. He wanted it to remember how to welcome a guest."
+        },
+        {
+          "id": "odyssey-c2-s2-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The stranger was really Athena, a goddess helping Odysseus’s family. She had changed her appearance to visit the house."
+        },
+        {
+          "id": "odyssey-c2-s2-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“Eat first. You can tell me where you have come from afterward.”",
+          "listener": "athena"
+        },
+        {
+          "id": "odyssey-c2-s2-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“And where would you go, if you could leave?”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c2-s2-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“Somewhere a person might have seen my father.”",
+          "listener": "athena"
+        },
+        {
+          "id": "odyssey-c2-s2-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“Then ask. A son can seek an answer, even when a house has learned to wait.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c2-s2-look-toward-the-door",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s2-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Telemachus turned toward the doorway."
+        },
+        {
+          "id": "odyssey-c2-s2-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "For years, he had watched it for someone coming in. Now he imagined himself going out."
+        },
+        {
+          "id": "odyssey-c2-s2-leave-the-moment",
+          "type": "action",
+          "duration": 550,
+          "effects": {
+            "actors": {
+              "penelope": {},
+              "telemachus": {},
+              "athena": {},
+              "eurycleia": {},
+              "menelaus": {},
+              "elder": {}
+            }
+          }
+        }
+      ],
+      "estimatedSeconds": 71,
+      "durationMs": 70730
+    },
+    {
+      "id": "odyssey-c2-s3",
+      "chapterId": "chapter-2",
+      "name": "The Son Who Stayed",
+      "atmosphere": {
+        "water": 0.065,
+        "wind": 0.016,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.009
+      },
+      "steps": [
+        {
+          "id": "odyssey-c2-s3-frame",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "room": "harbor",
+            "view": "assembly",
+            "chapter": 2,
+            "actors": {
+              "penelope": {
+                "visible": 0
+              },
+              "telemachus": {
+                "visible": 1,
+                "x": 605,
+                "y": 1090,
+                "facing": "right"
+              },
+              "athena": {
+                "visible": 1,
+                "x": 875,
+                "y": 740,
+                "facing": "left"
+              },
+              "eurycleia": {
+                "visible": 0
+              },
+              "menelaus": {
+                "visible": 0
+              },
+              "elder": {
+                "visible": 1,
+                "x": 920,
+                "y": 1030,
+                "facing": "left"
+              }
+            },
+            "boat": {
+              "aboard": 0,
+              "departing": 0,
+              "visible": 1
+            },
+            "loom": {
+              "visible": 0
+            },
+            "stool": {
+              "visible": 0
+            },
+            "table": {
+              "visible": 0
+            },
+            "bread": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c2-s3-step-before-the-elder",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "x": 665,
+                "y": 1040,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "elder": {
+                "visible": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s3-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The next morning, Telemachus went to a meeting of Ithaca’s people near the harbor. He asked them for help."
+        },
+        {
+          "id": "odyssey-c2-s3-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“Men are eating through my house while they ask to marry my mother.”",
+          "listener": "elder"
+        },
+        {
+          "id": "odyssey-c2-s3-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "elder",
+          "text": "“And what do you ask of us?”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c2-s3-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“A ship. And the chance to learn whether my father is alive.”",
+          "listener": "elder"
+        },
+        {
+          "id": "odyssey-c2-s3-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The elder looked at him for a long moment. No promise followed."
+        },
+        {
+          "id": "odyssey-c2-s3-turn-toward-the-harbor",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "view": "harbor",
+            "boat": {
+              "visible": 1
+            },
+            "actors": {
+              "elder": {
+                "visible": 1
+              },
+              "athena": {
+                "visible": 1
+              },
+              "telemachus": {
+                "x": 920,
+                "y": 865,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "From the assembly to the prepared boat"
+          }
+        },
+        {
+          "id": "odyssey-c2-s3-clarity-plan",
+          "type": "text",
+          "kind": "narration",
+          "text": "The meeting ended without help. Telemachus went down to the pier, where Athena had arranged a boat and companions."
+        },
+        {
+          "id": "odyssey-c2-s3-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "At the harbor, the traveler was waiting beside a prepared boat."
+        },
+        {
+          "id": "odyssey-c2-s3-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Athena had found the help that the assembly had not offered."
+        },
+        {
+          "id": "odyssey-c2-s3-walk-down-the-pier",
+          "type": "action",
+          "duration": 2500,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "x": 860,
+                "y": 685,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "paths": {
+            "telemachus": [
+              {
+                "x": 875,
+                "y": 810
+              },
+              {
+                "x": 860,
+                "y": 685
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c2-s3-step-into-the-boat",
+          "type": "action",
+          "duration": 2100,
+          "effects": {
+            "boat": {
+              "aboard": 1
+            },
+            "actors": {
+              "telemachus": {
+                "x": 585,
+                "y": 640,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s3-clarity-destination",
+          "type": "text",
+          "kind": "narration",
+          "text": "He would sail away to ask people who had fought at Troy about his father. Eurycleia, his old nurse, had packed food."
+        },
+        {
+          "id": "odyssey-c2-s3-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Telemachus stepped aboard. Speaking had not solved his trouble. It had made him ready to move."
+        },
+        {
+          "id": "odyssey-c2-s3-leave-ithaca",
+          "type": "action",
+          "duration": 2800,
+          "effects": {
+            "view": "departing",
+            "boat": {
+              "x": 430,
+              "y": 540,
+              "departing": 1
+            },
+            "actors": {
+              "athena": {
+                "visible": 1
+              },
+              "telemachus": {
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s3-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "For the first time, waiting would have to happen without him."
+        },
+        {
+          "id": "odyssey-c2-s3-leave-the-moment",
+          "type": "action",
+          "duration": 550,
+          "effects": {
+            "actors": {
+              "penelope": {},
+              "telemachus": {},
+              "athena": {},
+              "eurycleia": {},
+              "menelaus": {},
+              "elder": {}
+            }
+          }
+        }
+      ],
+      "estimatedSeconds": 96,
+      "durationMs": 95170
+    },
+    {
+      "id": "odyssey-c2-s4",
+      "chapterId": "chapter-2",
+      "name": "News Across the Water",
+      "atmosphere": {
+        "water": 0.002,
+        "wind": 0.016,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.009
+      },
+      "steps": [
+        {
+          "id": "odyssey-c2-s4-clarity-cross-the-sea",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "journeySea",
+            "view": "clarity-voyage",
+            "chapter": 3,
+            "actors": {
+              "penelope": {
+                "visible": 0
+              },
+              "telemachus": {
+                "x": 820,
+                "y": 950,
+                "visible": 1,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "back"
+              },
+              "athena": {
+                "visible": 0
+              },
+              "eurycleia": {
+                "visible": 0
+              },
+              "menelaus": {
+                "visible": 0,
+                "x": 910,
+                "y": 860,
+                "facing": "left"
+              },
+              "elder": {
+                "visible": 0
+              }
+            },
+            "boat": {
+              "x": 770,
+              "y": 1010,
+              "visible": 1,
+              "aboard": 1,
+              "departing": 1
+            },
+            "loom": {
+              "visible": 0
+            },
+            "stool": {
+              "visible": 0
+            },
+            "table": {
+              "visible": 0
+            },
+            "bread": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "Telemachus travels toward Menelaus"
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-voyage",
+          "type": "text",
+          "kind": "narration",
+          "text": "Telemachus sailed with the companions Athena had found. They were heading for Sparta, where Menelaus might have news of his father."
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-reach-spartas-shore",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "spartaLanding",
+            "view": "clarity-sparta-landing",
+            "chapter": 3,
+            "actors": {
+              "penelope": {
+                "visible": 0
+              },
+              "telemachus": {
+                "x": 820,
+                "y": 1670,
+                "visible": 1,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "back"
+              },
+              "athena": {
+                "visible": 0
+              },
+              "eurycleia": {
+                "visible": 0
+              },
+              "menelaus": {
+                "visible": 0,
+                "x": 910,
+                "y": 860,
+                "facing": "left"
+              },
+              "elder": {
+                "visible": 0
+              }
+            },
+            "boat": {
+              "x": 770,
+              "y": 1730,
+              "visible": 1,
+              "aboard": 1,
+              "departing": 1
+            },
+            "loom": {
+              "visible": 0
+            },
+            "stool": {
+              "visible": 0
+            },
+            "table": {
+              "visible": 0
+            },
+            "bread": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "Telemachus travels toward Menelaus"
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-land-the-boat",
+          "type": "action",
+          "duration": 2100,
+          "effects": {
+            "boat": {
+              "y": 1540
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-step-out-in-sparta",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "boat": {
+              "aboard": 0
+            },
+            "actors": {
+              "telemachus": {
+                "x": 820,
+                "y": 1480
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-walk-off-the-boat-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c2-s4-clarity-walk-off-the-boat-framing"
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-walk-off-the-boat",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "x": 820,
+                "y": 1260,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "telemachus"
+          ]
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-walk-off-the-boat-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-sparta-landing"
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-sparta-route",
+          "type": "text",
+          "kind": "narration",
+          "text": "His companions stayed with the boat. A broad path and steps led from the shore to the king’s palace."
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-follow-the-palace-path-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c2-s4-clarity-follow-the-palace-path-framing"
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-follow-the-palace-path",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "x": 820,
+                "y": 390,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "telemachus"
+          ],
+          "presence": {
+            "telemachus": {
+              "kind": "exit",
+              "fadeMs": 450
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-clarity-follow-the-palace-path-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-sparta-path"
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-frame",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "room": "sparta",
+            "view": "sparta",
+            "chapter": 3,
+            "actors": {
+              "penelope": {
+                "visible": 0
+              },
+              "telemachus": {
+                "visible": 1,
+                "x": 550,
+                "y": 930,
+                "facing": "right"
+              },
+              "athena": {
+                "visible": 0
+              },
+              "eurycleia": {
+                "visible": 0
+              },
+              "menelaus": {
+                "visible": 1,
+                "x": 910,
+                "y": 860,
+                "facing": "left"
+              },
+              "elder": {
+                "visible": 0
+              }
+            },
+            "boat": {
+              "aboard": 0,
+              "departing": 0,
+              "visible": 0
+            },
+            "loom": {
+              "visible": 0
+            },
+            "stool": {
+              "visible": 0
+            },
+            "table": {
+              "visible": 1
+            },
+            "bread": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 1
+            },
+            "oil": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-approach-the-host",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "x": 650,
+                "y": 875,
+                "visible": 1,
+                "facing": "right",
+                "pose": "walk"
+              },
+              "menelaus": {
+                "visible": 1
+              }
+            },
+            "cup": {
+              "x": 735,
+              "y": 800
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After reaching Sparta, Telemachus came to King Menelaus’s palace. Menelaus had fought beside Odysseus at Troy."
+        },
+        {
+          "id": "odyssey-c2-s4-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Telemachus had traveled here to ask for news. This time, his host knew something about where Odysseus was."
+        },
+        {
+          "id": "odyssey-c2-s4-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "menelaus",
+          "text": "“Your father found a way when the rest of us could not see one.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c2-s4-lift-the-cup",
+          "type": "action",
+          "duration": 950,
+          "effects": {
+            "cup": {
+              "x": 691,
+              "y": 817,
+              "held": 1
+            },
+            "actors": {
+              "telemachus": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Telemachus lifted his cup, then held it without drinking."
+        },
+        {
+          "id": "odyssey-c2-s4-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“Did you hear what became of him?”",
+          "listener": "menelaus"
+        },
+        {
+          "id": "odyssey-c2-s4-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "menelaus",
+          "text": "“I heard he was alive. Held on an island, with no ship to carry him away.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c2-s4-lower-the-cup",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "cup": {
+              "x": 735,
+              "y": 800,
+              "held": 0
+            },
+            "actors": {
+              "telemachus": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s4-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He set the cup down carefully. Alive."
+        },
+        {
+          "id": "odyssey-c2-s4-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "It was not the same as home. It was not a promise that the sea would be kind."
+        },
+        {
+          "id": "odyssey-c2-s4-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "But it was a word he could carry back to his mother."
+        },
+        {
+          "id": "odyssey-c2-s4-leave-the-moment",
+          "type": "action",
+          "duration": 550,
+          "effects": {
+            "actors": {
+              "penelope": {},
+              "telemachus": {},
+              "athena": {},
+              "eurycleia": {},
+              "menelaus": {},
+              "elder": {}
+            }
+          }
+        }
+      ],
+      "estimatedSeconds": 104,
+      "durationMs": 103481
+    },
+    {
+      "id": "odyssey-c2-s5",
+      "chapterId": "chapter-2",
+      "name": "A Promise in the Dark",
+      "atmosphere": {
+        "water": 0.002,
+        "wind": 0.016,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.009
+      },
+      "steps": [
+        {
+          "id": "odyssey-c2-s5-frame",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "room": "chamber",
+            "view": "chamber-wide",
+            "chapter": 4,
+            "actors": {
+              "penelope": {
+                "visible": 1,
+                "x": 740,
+                "y": 860,
+                "facing": "right"
+              },
+              "telemachus": {
+                "visible": 0
+              },
+              "athena": {
+                "visible": 0
+              },
+              "eurycleia": {
+                "visible": 0,
+                "x": 1120,
+                "y": 640,
+                "facing": "left"
+              },
+              "menelaus": {
+                "visible": 0
+              },
+              "elder": {
+                "visible": 0
+              }
+            },
+            "boat": {
+              "aboard": 0,
+              "departing": 0,
+              "visible": 0
+            },
+            "loom": {
+              "visible": 1
+            },
+            "stool": {
+              "visible": 1
+            },
+            "table": {
+              "visible": 0
+            },
+            "bread": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 1
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c2-s5-eurycleia-enters",
+          "type": "action",
+          "duration": 2500,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "visible": 1,
+                "pose": "sit",
+                "seated": 1
+              },
+              "eurycleia": {
+                "x": 955,
+                "y": 985,
+                "visible": 1,
+                "facing": "left",
+                "pose": "walk"
+              }
+            }
+          },
+          "paths": {
+            "eurycleia": [
+              {
+                "x": 1080,
+                "y": 985
+              },
+              {
+                "x": 955,
+                "y": 985
+              }
+            ]
+          },
+          "presence": {
+            "eurycleia": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Chamber doorway"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s5-penelope-rises",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "x": 740,
+                "y": 905,
+                "facing": "right",
+                "seated": 0
+              }
+            },
+            "view": "night"
+          }
+        },
+        {
+          "id": "odyssey-c2-s5-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Meanwhile, back in Ithaca, Eurycleia told Penelope that Telemachus had sailed. He was still away on his search."
+        },
+        {
+          "id": "odyssey-c2-s5-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "penelope",
+          "text": "“You knew?”",
+          "listener": "eurycleia"
+        },
+        {
+          "id": "odyssey-c2-s5-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eurycleia",
+          "text": "“He asked me to wait before telling you. He feared that you would grieve.”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c2-s5-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "penelope",
+          "text": "“And so he left me to do it afterward.”",
+          "listener": "eurycleia"
+        },
+        {
+          "id": "odyssey-c2-s5-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Eurycleia stayed beside her. There was no answer that could make a mother less afraid."
+        },
+        {
+          "id": "odyssey-c2-s5-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eurycleia",
+          "text": "“He took provisions. He found companions. He prepared, my lady.”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c2-s5-return-to-the-stool",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "x": 740,
+                "y": 860,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s5-sit-beside-the-light",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "pose": "sit",
+                "facing": "right",
+                "seated": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c2-s5-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Penelope sat beside the unfinished cloth. The loose thread lay where she had left it."
+        },
+        {
+          "id": "odyssey-c2-s5-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "A husband somewhere beyond the water. A son now crossing it."
+        },
+        {
+          "id": "odyssey-c2-s5-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "She could keep the lamp lit. She could not see beyond its circle."
+        },
+        {
+          "id": "odyssey-c2-end",
+          "type": "end"
+        }
+      ],
+      "estimatedSeconds": 66,
+      "durationMs": 65580
+    }
+  ],
+  "visuals": {
+    "rooms": {
+      "spartaLanding": {
+        "atlas": "spartaLanding",
+        "src": "/stories/the-odyssey/assets/backgrounds/panoramas/sparta-landing-panorama.png",
+        "fullDepth": true,
+        "nativeBounds": true,
+        "centralThird": true
+      },
+      "journeySea": {
+        "atlas": "journeySea",
+        "src": "/stories/the-odyssey/assets/backgrounds/panoramas/panorama-sea-wide-full.png",
+        "fullDepth": true,
+        "nativeBounds": true,
+        "centralThird": true
+      }
+    }
+  },
+  "causalRevision": {
+    "version": 1,
+    "scope": "Child-readable cause, time, place and cast continuity",
+    "routePlans": [
+      "odyssey-c2-s4-clarity-walk-off-the-boat",
+      "odyssey-c2-s4-clarity-follow-the-palace-path"
+    ]
+  },
+  "durationMs": 425631,
+  "documentRevision": {
+    "version": 1,
+    "source": "Correciones visuales.docx",
+    "date": "2026-10-14",
+    "scope": "Requested visual, motion and narration corrections"
+  }
+}

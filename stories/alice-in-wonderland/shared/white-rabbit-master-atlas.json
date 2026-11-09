@@ -1,0 +1,4846 @@
+{
+  "schemaVersion": 2,
+  "character": "white-rabbit",
+  "canonicalSource": "/.artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+  "canonicalSha256": "b615d8ada4aff9c634707df5617abd9c51ed0016fe68c7e47bc39dce9e1423de",
+  "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+  "dimensions": [
+    2048,
+    105
+  ],
+  "poses": [
+    {
+      "pose": "front",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        710,
+        4,
+        741,
+        58
+      ],
+      "normalizedSize": [
+        64,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          16,
+          16,
+          272,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        36,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "3912ff0490fb485a4e7edbdbcddd5666bbadd4e77d8eab78071bcfb2a32f4f10",
+      "sourceFootAnchor": [
+        208.0,
+        568.0
+      ],
+      "cellBoundsExclusive": [
+        706,
+        0,
+        745,
+        62
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          256,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          80,
+          80,
+          336,
+          568
+        ],
+        "cellBoundsExclusive": [
+          0,
+          0,
+          416,
+          648
+        ],
+        "xRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          11,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          11
+        ],
+        "yRuns": [
+          11,
+          10,
+          1,
+          10,
+          10,
+          11,
+          1,
+          10,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          1,
+          9,
+          11,
+          10,
+          10,
+          1,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          1,
+          9,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          9,
+          1,
+          11,
+          11,
+          10,
+          10,
+          1,
+          10,
+          10,
+          1
+        ]
+      }
+    },
+    {
+      "pose": "right",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        540,
+        4,
+        581,
+        69
+      ],
+      "normalizedSize": [
+        66,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          296,
+          16,
+          560,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        37,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "850e41de75cf3701e6c0c625ff3864ea2f93b6a4fa1a0b5cb261c941dde4101a",
+      "sourceFootAnchor": [
+        644.0,
+        568.0
+      ],
+      "cellBoundsExclusive": [
+        536,
+        0,
+        585,
+        73
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          264,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          512,
+          80,
+          776,
+          568
+        ],
+        "cellBoundsExclusive": [
+          432,
+          0,
+          856,
+          648
+        ],
+        "xRuns": [
+          11,
+          1,
+          9,
+          11,
+          1,
+          9,
+          11,
+          1,
+          9,
+          1,
+          9,
+          1,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          1,
+          9,
+          10,
+          1,
+          11,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          8,
+          1,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          1,
+          9,
+          11,
+          1,
+          10,
+          10,
+          11,
+          1,
+          9,
+          11,
+          11,
+          10,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          11,
+          10,
+          1,
+          10,
+          1,
+          10,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          10,
+          10,
+          10,
+          1,
+          9,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "back",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        589,
+        4,
+        624,
+        66
+      ],
+      "normalizedSize": [
+        62,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          584,
+          16,
+          832,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        35,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "395f1849002fcbc48e823d1bc752e19bffc64fedc7b712e51ad7395bf82c177e",
+      "sourceFootAnchor": [
+        1076.0,
+        568.0
+      ],
+      "groundAnchorNormalized": [
+        31,
+        122
+      ],
+      "cellBoundsExclusive": [
+        585,
+        0,
+        628,
+        70
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          248,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          952,
+          80,
+          1200,
+          568
+        ],
+        "cellBoundsExclusive": [
+          872,
+          0,
+          1280,
+          648
+        ],
+        "xRuns": [
+          11,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          10,
+          1,
+          10,
+          1,
+          10,
+          1,
+          10,
+          11,
+          11,
+          11,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          10,
+          11,
+          1,
+          10,
+          9,
+          1,
+          11,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          11,
+          10,
+          1,
+          10,
+          1,
+          9,
+          11,
+          11,
+          10,
+          1,
+          10,
+          10,
+          11,
+          11,
+          9,
+          1,
+          11,
+          10,
+          11,
+          11,
+          10,
+          1,
+          10,
+          1,
+          9,
+          11,
+          11,
+          10,
+          10,
+          1,
+          11,
+          10,
+          11,
+          9,
+          1,
+          11,
+          10,
+          1,
+          1,
+          9,
+          1,
+          10,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "pocket",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        671,
+        4,
+        702,
+        59
+      ],
+      "normalizedSize": [
+        62,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          856,
+          16,
+          1104,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        35,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "f0c3dd73229f7af470167814a3afa9bedbbeeea1de21a69abe6458ac0e6d9d82",
+      "sourceFootAnchor": [
+        1500.0,
+        568.0
+      ],
+      "cellBoundsExclusive": [
+        667,
+        0,
+        706,
+        63
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          248,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          1376,
+          80,
+          1624,
+          568
+        ],
+        "cellBoundsExclusive": [
+          1296,
+          0,
+          1704,
+          648
+        ],
+        "xRuns": [
+          11,
+          11,
+          10,
+          11,
+          11,
+          1,
+          10,
+          10,
+          11,
+          10,
+          1,
+          11,
+          11,
+          1,
+          8,
+          1,
+          1,
+          10,
+          11,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          1,
+          9,
+          1,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          9,
+          1,
+          11,
+          10,
+          11,
+          1,
+          10,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          10,
+          1,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          1,
+          1,
+          9,
+          11,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "extract",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        749,
+        4,
+        784,
+        58
+      ],
+      "normalizedSize": [
+        74,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          1128,
+          16,
+          1424,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        41,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "3a76202a65be0c3b280fd0c01e115a1b0a16355509ed95674fcc0ebc46a0583a",
+      "sourceFootAnchor": [
+        1948.0,
+        568.0
+      ],
+      "cellBoundsExclusive": [
+        745,
+        0,
+        788,
+        62
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          296,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          1800,
+          80,
+          2096,
+          568
+        ],
+        "cellBoundsExclusive": [
+          1720,
+          0,
+          2176,
+          648
+        ],
+        "xRuns": [
+          11,
+          10,
+          11,
+          1,
+          9,
+          1,
+          9,
+          1,
+          1,
+          9,
+          11,
+          1,
+          10,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          9,
+          1,
+          11,
+          11,
+          9,
+          1,
+          11,
+          10,
+          11,
+          10,
+          11
+        ],
+        "yRuns": [
+          11,
+          10,
+          1,
+          10,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          9,
+          1,
+          11,
+          11,
+          10,
+          11,
+          1,
+          9,
+          11,
+          11,
+          10,
+          1,
+          10,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          1,
+          2,
+          8,
+          1,
+          9,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "consult",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        792,
+        4,
+        824,
+        57
+      ],
+      "normalizedSize": [
+        68,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          1448,
+          16,
+          1720,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        38,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "0ae9c36ef3a2bf7104a0b1ce0a16360bad6f5b29851053a738e3415f41ac93bf",
+      "sourceFootAnchor": [
+        2408.0,
+        568.0
+      ],
+      "cellBoundsExclusive": [
+        788,
+        0,
+        828,
+        61
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          272,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          2272,
+          80,
+          2544,
+          568
+        ],
+        "cellBoundsExclusive": [
+          2192,
+          0,
+          2624,
+          648
+        ],
+        "xRuns": [
+          10,
+          11,
+          10,
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          11,
+          10,
+          11,
+          10,
+          10,
+          1,
+          10,
+          10,
+          11,
+          10,
+          10,
+          1,
+          10,
+          11,
+          10,
+          1,
+          10,
+          10,
+          11,
+          10,
+          11,
+          10
+        ],
+        "yRuns": [
+          11,
+          10,
+          11,
+          10,
+          1,
+          10,
+          10,
+          1,
+          10,
+          10,
+          1,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          1,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          9,
+          1,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "return",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        632,
+        4,
+        663,
+        61
+      ],
+      "normalizedSize": [
+        62,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          1744,
+          16,
+          1992,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        35,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "d1dab7cc45f354a8ea47eaf6257b8901888e84181e71029cfc789fe5d246e1c1",
+      "sourceFootAnchor": [
+        2844.0,
+        568.0
+      ],
+      "cellBoundsExclusive": [
+        628,
+        0,
+        667,
+        65
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          248,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          2720,
+          80,
+          2968,
+          568
+        ],
+        "cellBoundsExclusive": [
+          2640,
+          0,
+          3048,
+          648
+        ],
+        "xRuns": [
+          11,
+          1,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          11,
+          11,
+          11,
+          11,
+          10,
+          11,
+          11,
+          11,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          11,
+          9,
+          1,
+          11,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          10,
+          1,
+          11,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          9,
+          1,
+          10,
+          1,
+          11,
+          10,
+          11,
+          10,
+          11,
+          3,
+          8,
+          1,
+          9,
+          11,
+          10,
+          11,
+          11,
+          9,
+          1,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          1,
+          9,
+          11,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "ready",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        832,
+        4,
+        859,
+        55
+      ],
+      "normalizedSize": [
+        62,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          2016,
+          16,
+          2264,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        35,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "495f29fac9fde2337c8ff8bd63a39a00c2b302fbf9c2c8d51688d387d7148a13",
+      "sourceFootAnchor": [
+        3268.0,
+        568.0
+      ],
+      "cellBoundsExclusive": [
+        828,
+        0,
+        863,
+        59
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          248,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          3144,
+          80,
+          3392,
+          568
+        ],
+        "cellBoundsExclusive": [
+          3064,
+          0,
+          3472,
+          648
+        ],
+        "xRuns": [
+          11,
+          11,
+          10,
+          11,
+          1,
+          10,
+          1,
+          10,
+          10,
+          11,
+          11,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          1,
+          11,
+          10,
+          11,
+          11,
+          10,
+          1,
+          10,
+          11,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          9,
+          1,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          3,
+          8,
+          10,
+          1,
+          10,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          9,
+          1,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-carry-walk",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        294,
+        4,
+        354,
+        76
+      ],
+      "normalizedSize": [
+        94,
+        122
+      ],
+      "origin": [
+        0.40425531914893614,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 180,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          2288,
+          16,
+          2664,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        36,
+        46
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "34a7a9a82ad92f82dc6dc9251903465b168058cbf478b3a5285bc736cdc887d1",
+      "groundAnchorNormalized": [
+        38.0,
+        122
+      ],
+      "cellBoundsExclusive": [
+        290,
+        0,
+        358,
+        80
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          376,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          3568,
+          80,
+          3944,
+          568
+        ],
+        "cellBoundsExclusive": [
+          3488,
+          0,
+          4024,
+          648
+        ],
+        "xRuns": [
+          10,
+          11,
+          1,
+          9,
+          11,
+          1,
+          8,
+          1,
+          1,
+          10,
+          1,
+          9,
+          10,
+          1,
+          10,
+          1,
+          9,
+          11,
+          10,
+          11,
+          1,
+          8,
+          1,
+          10,
+          1,
+          10,
+          11,
+          9,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          10,
+          1,
+          1,
+          9,
+          10,
+          1,
+          10,
+          1,
+          9,
+          11,
+          10,
+          11,
+          9,
+          1,
+          11,
+          9,
+          1,
+          10,
+          1,
+          10
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          11,
+          10,
+          1,
+          10,
+          10,
+          10,
+          1,
+          10,
+          1,
+          1,
+          8,
+          1,
+          11,
+          11,
+          10,
+          11,
+          10,
+          22,
+          1,
+          9,
+          11,
+          10,
+          1,
+          10,
+          1,
+          10,
+          10,
+          1,
+          10,
+          10,
+          1,
+          10,
+          1,
+          2,
+          7,
+          1,
+          1,
+          8,
+          1,
+          11,
+          9,
+          1,
+          10,
+          1,
+          11,
+          10,
+          10,
+          1,
+          11,
+          10,
+          11,
+          9,
+          1,
+          11,
+          1,
+          10,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-carry-stop",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        480,
+        4,
+        532,
+        72
+      ],
+      "normalizedSize": [
+        84,
+        122
+      ],
+      "origin": [
+        0.40476190476190477,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 180,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          2688,
+          16,
+          3024,
+          504
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        32,
+        46
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "52b80412cbf6c8c9960079312c2325899565421b4e19f858ad029450a1c9f433",
+      "groundAnchorNormalized": [
+        34.0,
+        122
+      ],
+      "cellBoundsExclusive": [
+        476,
+        0,
+        536,
+        76
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          336,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          80,
+          744,
+          416,
+          1232
+        ],
+        "cellBoundsExclusive": [
+          0,
+          664,
+          496,
+          1312
+        ],
+        "xRuns": [
+          10,
+          11,
+          1,
+          9,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          9,
+          10,
+          1,
+          10,
+          10,
+          1,
+          10,
+          11,
+          9,
+          1,
+          10,
+          1,
+          10,
+          11
+        ],
+        "yRuns": [
+          11,
+          10,
+          11,
+          10,
+          11,
+          1,
+          10,
+          1,
+          9,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          10,
+          1,
+          1,
+          10,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          10,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          11,
+          11,
+          10,
+          1,
+          10,
+          10,
+          10,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          10,
+          9,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-carry-look",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        362,
+        4,
+        421,
+        75
+      ],
+      "normalizedSize": [
+        94,
+        122
+      ],
+      "origin": [
+        0.4574468085106383,
+        1
+      ],
+      "facing": "right",
+      "referenceStandingHeightWorld": 180,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          16,
+          528,
+          392,
+          1016
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        36,
+        46
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "9c596ec1e01bfdae30ac6f0dbb7eb00cc13b203a46ed20461c2bd75f9cd1e2d6",
+      "groundAnchorNormalized": [
+        43.0,
+        122
+      ],
+      "cellBoundsExclusive": [
+        358,
+        0,
+        425,
+        79
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          376,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          592,
+          744,
+          968,
+          1232
+        ],
+        "cellBoundsExclusive": [
+          512,
+          664,
+          1048,
+          1312
+        ],
+        "xRuns": [
+          10,
+          1,
+          10,
+          1,
+          9,
+          11,
+          10,
+          10,
+          1,
+          1,
+          9,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          10,
+          11,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          11,
+          10,
+          1,
+          8,
+          1,
+          1,
+          10,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          11,
+          1,
+          9,
+          11,
+          10,
+          1,
+          9,
+          11,
+          10,
+          10,
+          1,
+          10,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10
+        ],
+        "yRuns": [
+          11,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          9,
+          1,
+          1,
+          10,
+          9,
+          1,
+          11,
+          11,
+          1,
+          9,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          8,
+          1,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          3,
+          7,
+          1,
+          9,
+          1,
+          11,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          11,
+          10,
+          10,
+          1,
+          10,
+          10,
+          1,
+          11,
+          10,
+          10,
+          1,
+          9,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-empty-startled",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        138,
+        4,
+        198,
+        87
+      ],
+      "normalizedSize": [
+        78,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "left",
+      "referenceStandingHeightWorld": 180,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          416,
+          528,
+          728,
+          1016
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        29,
+        46
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "91c22574e931534a1a18aa4912c917038a84c3ea959854a6da442863d1f79029",
+      "groundAnchorNormalized": [
+        39,
+        122
+      ],
+      "cellBoundsExclusive": [
+        134,
+        0,
+        202,
+        91
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 4,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          312,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          1144,
+          744,
+          1456,
+          1232
+        ],
+        "cellBoundsExclusive": [
+          1064,
+          664,
+          1536,
+          1312
+        ],
+        "xRuns": [
+          11,
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          11,
+          10,
+          1,
+          1,
+          9,
+          11,
+          11,
+          10,
+          1,
+          9,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          10,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          9,
+          1,
+          10,
+          1,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          11,
+          1,
+          9,
+          1,
+          10,
+          11,
+          9,
+          1,
+          11,
+          1,
+          9,
+          11,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          10,
+          1,
+          21,
+          1,
+          9,
+          1,
+          10,
+          9,
+          1,
+          10,
+          1,
+          10,
+          1,
+          10,
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          10,
+          1,
+          1,
+          9,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          9,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-search-left",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        4,
+        4,
+        64,
+        101
+      ],
+      "normalizedSize": [
+        66,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "left",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          752,
+          528,
+          1016,
+          1016
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        37,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "1608e8fb1fee6fa3c0d52c0120cf2b716ee5be80a23b43276f4d80281772fe59",
+      "groundAnchorNormalized": [
+        33.0,
+        122
+      ],
+      "cellBoundsExclusive": [
+        0,
+        0,
+        68,
+        105
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          264,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          1632,
+          744,
+          1896,
+          1232
+        ],
+        "cellBoundsExclusive": [
+          1552,
+          664,
+          1976,
+          1312
+        ],
+        "xRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          1,
+          9,
+          10,
+          1,
+          1,
+          8,
+          1,
+          10,
+          1,
+          9,
+          1,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          8,
+          1,
+          1,
+          10,
+          9,
+          1,
+          11,
+          11,
+          9,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          1,
+          8,
+          1,
+          11,
+          9,
+          1,
+          10,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          8,
+          1,
+          10,
+          1,
+          1,
+          8,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-search-stop-left",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        72,
+        4,
+        130,
+        92
+      ],
+      "normalizedSize": [
+        70,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "left",
+      "referenceStandingHeightWorld": 122,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          1040,
+          528,
+          1320,
+          1016
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        39,
+        68
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "48b7b4b3b9553cc9e598136382dd00c1ae9ec9e98ead8d2111882b25380c6992",
+      "groundAnchorNormalized": [
+        35.0,
+        122
+      ],
+      "cellBoundsExclusive": [
+        68,
+        0,
+        134,
+        96
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          280,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          2072,
+          744,
+          2352,
+          1232
+        ],
+        "cellBoundsExclusive": [
+          1992,
+          664,
+          2432,
+          1312
+        ],
+        "xRuns": [
+          11,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          10,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          10,
+          1,
+          1,
+          10,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          8,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          9,
+          1,
+          11,
+          9,
+          1,
+          1,
+          10,
+          11,
+          9,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          11,
+          1,
+          9,
+          11,
+          1,
+          10,
+          10,
+          10,
+          1,
+          9,
+          1,
+          11,
+          11,
+          1,
+          9,
+          10,
+          1,
+          1,
+          8,
+          1,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          8,
+          1,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          9,
+          1,
+          11,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          9,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-point-path-right",
+      "actor": "white-rabbit",
+      "sourceBoundsExclusive": [
+        429,
+        4,
+        472,
+        73
+      ],
+      "normalizedSize": [
+        70,
+        122
+      ],
+      "origin": [
+        0.2964071856287425,
+        0.9982788296041308
+      ],
+      "facing": "left",
+      "referenceStandingHeightWorld": 180,
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalBounds": [
+          1344,
+          528,
+          1624,
+          1016
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "e0832f8749dec0d4bb872004fa8cf237acae1dc93ee9a42353d5e5176ec80c6a"
+      },
+      "logicalSize": [
+        26,
+        46
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "lockedCropSha256": "cd7b33da3aa23bf487ecd3cc533a9dcef289e14d659d0fd09da8d2c83913d1f1",
+      "cellBoundsExclusive": [
+        425,
+        0,
+        476,
+        77
+      ],
+      "logicalCellPx": 20,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 20,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          280,
+          488
+        ],
+        "sourceBoundsExclusive": [
+          2528,
+          744,
+          2808,
+          1232
+        ],
+        "cellBoundsExclusive": [
+          2448,
+          664,
+          2888,
+          1312
+        ],
+        "xRuns": [
+          11,
+          1,
+          10,
+          1,
+          9,
+          1,
+          10,
+          11,
+          1,
+          10,
+          10,
+          11,
+          1,
+          9,
+          1,
+          1,
+          10,
+          10,
+          11,
+          1,
+          10,
+          11,
+          10,
+          1,
+          9,
+          1,
+          10,
+          1,
+          10,
+          1,
+          10,
+          1,
+          1,
+          9,
+          1,
+          10,
+          10,
+          1,
+          10,
+          1,
+          10,
+          11,
+          11
+        ],
+        "yRuns": [
+          11,
+          1,
+          9,
+          11,
+          1,
+          9,
+          1,
+          10,
+          11,
+          10,
+          11,
+          10,
+          10,
+          1,
+          11,
+          9,
+          1,
+          10,
+          1,
+          10,
+          1,
+          10,
+          1,
+          10,
+          1,
+          9,
+          22,
+          9,
+          1,
+          11,
+          9,
+          1,
+          11,
+          1,
+          10,
+          9,
+          1,
+          11,
+          9,
+          1,
+          10,
+          1,
+          11,
+          1,
+          9,
+          11,
+          10,
+          1,
+          10,
+          11,
+          9,
+          1,
+          1,
+          9,
+          1,
+          11,
+          10,
+          10,
+          1,
+          10,
+          11,
+          11,
+          1,
+          9,
+          1,
+          10,
+          9,
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "pose": "rabbit-empty-run",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "sourceBoundsExclusive": [
+        206,
+        4,
+        286,
+        77
+      ],
+      "normalizedSize": [
+        84,
+        122
+      ],
+      "human": false,
+      "anatomicalStandingReferenceWorld": 180,
+      "facing": "left",
+      "groundAnchorNormalized": [
+        42,
+        122
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "actor": "white-rabbit",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "cellBoundsExclusive": [
+        202,
+        0,
+        290,
+        81
+      ],
+      "logicalCellPx": 19,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "white-rabbit",
+      "lockedCropSha256": "235f93f2428044100ceea35f9da4f783d0ba2b3c6fa201b845d70464d591b51a",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/square-pixel-closure/rabbit-run-authored-feet.png",
+        "originalBounds": [
+          0,
+          0,
+          329,
+          474
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "834102e117b97db7562bdcb5aca5aba98beb50f50e2454fe4236a347d92140f3",
+        "authorizedRepair": {
+          "previousSource": {
+            "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/pool-creatures-c1-s6-v1.png",
+            "originalBounds": [
+              955,
+              38,
+              1284,
+              512
+            ],
+            "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+            "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+            "originalSourceSha256": "d8ced23fb84e91220306b8791e76f2ccfb2b0c58bbeb3e3d443d4f45e26dfd97"
+          },
+          "method": "Native approved right-walking feet copied without rescaling into clipped run frame; frame/world anchors retained"
+        }
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            254,
+            238,
+            215
+          ],
+          [
+            248,
+            212,
+            177
+          ],
+          [
+            210,
+            143,
+            57
+          ],
+          [
+            253,
+            188,
+            143
+          ],
+          [
+            103,
+            76,
+            60
+          ],
+          [
+            76,
+            52,
+            40
+          ],
+          [
+            174,
+            68,
+            45
+          ],
+          [
+            136,
+            77,
+            18
+          ],
+          [
+            229,
+            153,
+            107
+          ],
+          [
+            227,
+            178,
+            131
+          ],
+          [
+            84,
+            44,
+            10
+          ],
+          [
+            177,
+            157,
+            138
+          ],
+          [
+            134,
+            125,
+            111
+          ],
+          [
+            79,
+            14,
+            3
+          ],
+          [
+            108,
+            61,
+            17
+          ],
+          [
+            108,
+            95,
+            88
+          ],
+          [
+            254,
+            254,
+            246
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          254,
+          198,
+          150
+        ],
+        "eyes": [],
+        "spriteType": "non-human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 19,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "nativeFrame": {
+        "size": [
+          329,
+          474
+        ],
+        "sourceBoundsExclusive": [
+          2980,
+          740,
+          3309,
+          1214
+        ],
+        "cellBoundsExclusive": [
+          2904,
+          664,
+          3385,
+          1290
+        ],
+        "xRuns": [
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          8,
+          1,
+          1,
+          8,
+          2,
+          9,
+          1,
+          1,
+          1,
+          7,
+          2,
+          8,
+          1,
+          2,
+          8,
+          1,
+          1,
+          8,
+          3,
+          7,
+          1,
+          2,
+          7,
+          4,
+          7,
+          1,
+          2,
+          1,
+          6,
+          1,
+          3,
+          6,
+          5,
+          5,
+          5,
+          6,
+          5,
+          4,
+          1,
+          5,
+          4,
+          1,
+          6,
+          5,
+          6,
+          3,
+          1,
+          1,
+          5,
+          4,
+          6,
+          1,
+          2,
+          1,
+          6,
+          1,
+          4,
+          1,
+          6,
+          3,
+          6,
+          1,
+          2,
+          1,
+          7,
+          1,
+          3,
+          7,
+          3,
+          10,
+          10,
+          11,
+          10
+        ],
+        "yRuns": [
+          10,
+          1,
+          10,
+          1,
+          9,
+          1,
+          9,
+          1,
+          10,
+          1,
+          9,
+          10,
+          10,
+          11,
+          10,
+          1,
+          8,
+          1,
+          11,
+          10,
+          9,
+          1,
+          10,
+          1,
+          1,
+          9,
+          10,
+          10,
+          1,
+          10,
+          1,
+          9,
+          10,
+          11,
+          10,
+          1,
+          9,
+          11,
+          9,
+          1,
+          10,
+          10,
+          1,
+          9,
+          1,
+          1,
+          9,
+          10,
+          11,
+          10,
+          1,
+          9,
+          1,
+          10,
+          7,
+          1,
+          10,
+          9,
+          1,
+          10,
+          1,
+          9,
+          1,
+          1,
+          10,
+          1,
+          10,
+          10,
+          10,
+          1,
+          9,
+          1,
+          11
+        ]
+      }
+    }
+  ],
+  "cellPolicy": "Full storage cells have >=4 logical transparent cells on all sides. Runtime content trims retain prior physical sizes and anchors, and include complete silhouettes.",
+  "storageEncoding": "lossless-axis-runs-v1",
+  "imageSize": [
+    2048,
+    105
+  ]
+}

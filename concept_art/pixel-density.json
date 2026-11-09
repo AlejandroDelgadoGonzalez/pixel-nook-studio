@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "profile": "concept_art/density-profile.json",
+  "referenceStandingHeightWorld": 180,
+  "assets": [
+    {
+      "path": "concept_art/scenes/01-forest-cottage-river.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/02-harbor-market-docks.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/03-forest-pond-waterfall.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/04-snowy-winter-village.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/05-crystal-mine-cavern.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/06-grand-wooden-library.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/07-medieval-castle-plaza.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/08-rustic-cottage-interior.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/09-modern-cozy-city-street.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/10-modern-loft-apartment.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/11-moonlit-botanical-garden.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/12-sunset-desert-oasis-bazaar.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/13-grand-palace-marble-hall.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/14-autumn-zen-shrine-bridge.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "concept_art/scenes/15-vintage-steam-train-platform.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    }
+  ]
+}

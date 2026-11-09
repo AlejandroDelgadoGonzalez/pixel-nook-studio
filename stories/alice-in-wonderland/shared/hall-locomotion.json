@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "reference": {
+    "action": "alice-c1-s5-walk",
+    "routeLengthWorld": 2291.2297002760297,
+    "durationMs": 8641.645689569174,
+    "meanWorldPxPerSecond": 265.13812097638294
+  },
+  "profiles": {
+    "corridor": {
+      "alice": {
+        "walkSpeed": 350,
+        "runSpeed": 650
+      }
+    },
+    "hall-of-doors": {
+      "alice": {
+        "walkSpeed": 235,
+        "runSpeed": 650
+      }
+    }
+  },
+  "hallReferenceScale": 1.14,
+  "hallReferenceWorldPxPerSecond": 267.9,
+  "magicRule": "actualSpeed=modeSpeed*groundDepthScale*bodyScale; at0.32use32percent speed. Apply each factor once.",
+  "scope": "S3 Hall and S4; corridor and S1/S2 untouched"
+}

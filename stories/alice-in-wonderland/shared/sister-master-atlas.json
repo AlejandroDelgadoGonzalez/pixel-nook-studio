@@ -1,0 +1,3651 @@
+{
+  "schemaVersion": 2,
+  "character": "sister",
+  "canonicalSource": "/.artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+  "canonicalSha256": "702369f399b8785a4dd0e4c4c4bd84e2ec06623b46b7ebf32549f0d0c00b2ad8",
+  "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+  "dimensions": [
+    2048,
+    95
+  ],
+  "poses": [
+    {
+      "pose": "front",
+      "sourceBoundsExclusive": [
+        4,
+        4,
+        50,
+        91
+      ],
+      "crop": [
+        53,
+        56,
+        252,
+        503
+      ],
+      "row": 0,
+      "column": 0,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        91870
+      ],
+      "sourceFootAnchor": [
+        170.0,
+        543
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        100,
+        202
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        0,
+        0,
+        54,
+        95
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "c7160c78d882a0576c909ce9c91eb964a44fb2854229c1d75329e57115597ed1",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          57,
+          60,
+          301,
+          555
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [
+          [
+            103,
+            124,
+            116,
+            150
+          ],
+          [
+            167,
+            124,
+            180,
+            150
+          ]
+        ],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [
+          13,
+          13
+        ],
+        "eyeMargin": 1,
+        "neckOpenings": [
+          [
+            133,
+            173,
+            142,
+            174
+          ],
+          [
+            133,
+            174,
+            142,
+            175
+          ],
+          [
+            133,
+            175,
+            142,
+            176
+          ],
+          [
+            133,
+            176,
+            142,
+            177
+          ],
+          [
+            133,
+            177,
+            142,
+            178
+          ],
+          [
+            133,
+            178,
+            142,
+            179
+          ],
+          [
+            133,
+            179,
+            142,
+            180
+          ],
+          [
+            133,
+            180,
+            142,
+            181
+          ],
+          [
+            133,
+            181,
+            142,
+            182
+          ],
+          [
+            122,
+            182,
+            128,
+            183
+          ],
+          [
+            133,
+            182,
+            142,
+            183
+          ]
+        ],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          244,
+          176
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 13,
+        "view": "front"
+      },
+      "nativeFrame": {
+        "size": [
+          244,
+          495
+        ],
+        "sourceBoundsExclusive": [
+          48,
+          48,
+          292,
+          543
+        ],
+        "cellBoundsExclusive": [
+          0,
+          0,
+          340,
+          591
+        ],
+        "xRuns": [
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          5,
+          2,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          6,
+          6,
+          1,
+          6,
+          7,
+          5,
+          1,
+          6,
+          1,
+          5,
+          1,
+          5,
+          1,
+          7,
+          5,
+          1,
+          7,
+          6
+        ],
+        "yRuns": [
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          4,
+          3,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          1,
+          3,
+          3,
+          6,
+          1,
+          5,
+          1,
+          5,
+          1,
+          1,
+          5,
+          1,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          5,
+          1,
+          7,
+          6,
+          7,
+          1,
+          5,
+          7,
+          6,
+          7,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "pose": "right",
+      "sourceBoundsExclusive": [
+        118,
+        4,
+        167,
+        86
+      ],
+      "crop": [
+        424,
+        68,
+        277,
+        491
+      ],
+      "row": 0,
+      "column": 1,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        91034
+      ],
+      "sourceFootAnchor": [
+        538.5,
+        531
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        112,
+        202
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        114,
+        0,
+        171,
+        90
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "29c53abdcc29bc1bf1793dc5984b0cef87b8eb82a8f1e6fbe56f0f5407faad5b",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          428,
+          72,
+          697,
+          555
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [
+          [
+            205,
+            108,
+            211,
+            140
+          ]
+        ],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [
+          6
+        ],
+        "eyeMargin": 1,
+        "neckOpenings": [
+          [
+            147,
+            162,
+            160,
+            163
+          ],
+          [
+            191,
+            162,
+            200,
+            163
+          ],
+          [
+            147,
+            163,
+            160,
+            164
+          ],
+          [
+            191,
+            163,
+            200,
+            164
+          ],
+          [
+            147,
+            164,
+            160,
+            165
+          ],
+          [
+            191,
+            164,
+            200,
+            165
+          ],
+          [
+            147,
+            165,
+            167,
+            166
+          ],
+          [
+            191,
+            165,
+            200,
+            166
+          ],
+          [
+            147,
+            166,
+            167,
+            167
+          ],
+          [
+            191,
+            166,
+            200,
+            167
+          ],
+          [
+            147,
+            167,
+            167,
+            168
+          ],
+          [
+            191,
+            167,
+            200,
+            168
+          ],
+          [
+            147,
+            168,
+            167,
+            169
+          ],
+          [
+            191,
+            168,
+            200,
+            169
+          ],
+          [
+            147,
+            169,
+            167,
+            170
+          ],
+          [
+            191,
+            169,
+            200,
+            170
+          ],
+          [
+            147,
+            170,
+            167,
+            171
+          ],
+          [
+            191,
+            170,
+            200,
+            171
+          ],
+          [
+            147,
+            171,
+            167,
+            172
+          ],
+          [
+            191,
+            171,
+            200,
+            172
+          ]
+        ],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          269,
+          165
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 6,
+        "view": "walk-right"
+      },
+      "nativeFrame": {
+        "size": [
+          269,
+          483
+        ],
+        "sourceBoundsExclusive": [
+          404,
+          48,
+          673,
+          531
+        ],
+        "cellBoundsExclusive": [
+          356,
+          0,
+          721,
+          579
+        ],
+        "xRuns": [
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          5,
+          1,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          5,
+          1,
+          7,
+          1,
+          4,
+          1,
+          5,
+          1,
+          7,
+          6,
+          7,
+          5,
+          1,
+          5,
+          1,
+          7,
+          6,
+          7,
+          6
+        ],
+        "yRuns": [
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          1,
+          5,
+          7,
+          6,
+          7,
+          6,
+          3,
+          3,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          1,
+          6,
+          5,
+          1,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          1,
+          5,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "pose": "back",
+      "sourceBoundsExclusive": [
+        175,
+        4,
+        217,
+        86
+      ],
+      "crop": [
+        849,
+        68,
+        239,
+        491
+      ],
+      "row": 0,
+      "column": 2,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        86804
+      ],
+      "sourceFootAnchor": [
+        900.5,
+        531
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        96,
+        202
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        171,
+        0,
+        221,
+        90
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "6b02161ac05d4ec6dbd7fd7bedc8fc4e6399c415fdd79cddb34dfde3348b4b91",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          853,
+          72,
+          1084,
+          555
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [],
+        "eyeMargin": 1,
+        "neckOpenings": [],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          231,
+          153
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 12,
+        "view": "back"
+      },
+      "nativeFrame": {
+        "size": [
+          231,
+          483
+        ],
+        "sourceBoundsExclusive": [
+          785,
+          48,
+          1016,
+          531
+        ],
+        "cellBoundsExclusive": [
+          737,
+          0,
+          1064,
+          579
+        ],
+        "xRuns": [
+          6,
+          7,
+          1,
+          5,
+          7,
+          1,
+          5,
+          1,
+          4,
+          1,
+          6,
+          1,
+          6,
+          7,
+          1,
+          5,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6
+        ],
+        "yRuns": [
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          1,
+          6,
+          5,
+          1,
+          1,
+          4,
+          1,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          1,
+          5,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "pose": "right-gesture",
+      "sourceBoundsExclusive": [
+        58,
+        4,
+        110,
+        90
+      ],
+      "crop": [
+        1213,
+        69,
+        273,
+        490
+      ],
+      "row": 0,
+      "column": 3,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        89448
+      ],
+      "sourceFootAnchor": [
+        1260.5,
+        530
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        112,
+        202
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        54,
+        0,
+        114,
+        94
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "6001bd74df71629e7c7b7591657f6d1f7ed800f14301f363bf232b3a3a3168b3",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          1217,
+          73,
+          1482,
+          555
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [
+          [
+            202,
+            108,
+            215,
+            146
+          ]
+        ],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [
+          13
+        ],
+        "eyeMargin": 1,
+        "neckOpenings": [
+          [
+            145,
+            168,
+            164,
+            169
+          ],
+          [
+            192,
+            168,
+            201,
+            169
+          ],
+          [
+            145,
+            169,
+            164,
+            170
+          ],
+          [
+            192,
+            169,
+            201,
+            170
+          ],
+          [
+            145,
+            170,
+            164,
+            171
+          ],
+          [
+            192,
+            170,
+            201,
+            171
+          ],
+          [
+            145,
+            171,
+            164,
+            172
+          ],
+          [
+            192,
+            171,
+            201,
+            172
+          ],
+          [
+            145,
+            172,
+            164,
+            173
+          ],
+          [
+            192,
+            172,
+            201,
+            173
+          ],
+          [
+            145,
+            173,
+            164,
+            174
+          ],
+          [
+            192,
+            173,
+            201,
+            174
+          ],
+          [
+            145,
+            174,
+            164,
+            175
+          ],
+          [
+            192,
+            174,
+            201,
+            175
+          ],
+          [
+            145,
+            175,
+            164,
+            176
+          ],
+          [
+            192,
+            175,
+            201,
+            176
+          ],
+          [
+            145,
+            176,
+            164,
+            177
+          ],
+          [
+            192,
+            176,
+            201,
+            177
+          ],
+          [
+            145,
+            177,
+            164,
+            178
+          ],
+          [
+            192,
+            177,
+            195,
+            178
+          ]
+        ],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          265,
+          171
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 13,
+        "view": "walk-right"
+      },
+      "nativeFrame": {
+        "size": [
+          265,
+          482
+        ],
+        "sourceBoundsExclusive": [
+          1128,
+          48,
+          1393,
+          530
+        ],
+        "cellBoundsExclusive": [
+          1080,
+          0,
+          1441,
+          578
+        ],
+        "xRuns": [
+          6,
+          7,
+          6,
+          6,
+          1,
+          6,
+          6,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          1,
+          5,
+          7,
+          6,
+          6,
+          6,
+          7,
+          5,
+          1,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          3,
+          3,
+          1,
+          5,
+          1,
+          6,
+          1,
+          6,
+          1,
+          4,
+          1,
+          5,
+          1,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6
+        ],
+        "yRuns": [
+          6,
+          7,
+          6,
+          1,
+          5,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          3,
+          3,
+          6,
+          1,
+          5,
+          1,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          1,
+          6,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          5,
+          1,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "pose": "seated-listening",
+      "sourceBoundsExclusive": [
+        225,
+        4,
+        281,
+        68
+      ],
+      "crop": [
+        27,
+        588,
+        331,
+        395
+      ],
+      "row": 1,
+      "column": 0,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        80210
+      ],
+      "sourceFootAnchor": [
+        1666.5,
+        435
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        132,
+        158
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        221,
+        0,
+        285,
+        72
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "1758873caa2cbcee0af4ecd1f41c762fef5f96c8e92e6cd06cbd2de51b86f245",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          31,
+          592,
+          354,
+          979
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [
+          [
+            213,
+            103,
+            226,
+            135
+          ]
+        ],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [
+          13
+        ],
+        "eyeMargin": 1,
+        "neckOpenings": [
+          [
+            161,
+            158,
+            168,
+            159
+          ],
+          [
+            209,
+            158,
+            218,
+            159
+          ],
+          [
+            161,
+            159,
+            168,
+            160
+          ],
+          [
+            209,
+            159,
+            218,
+            160
+          ],
+          [
+            161,
+            160,
+            168,
+            161
+          ],
+          [
+            209,
+            160,
+            218,
+            161
+          ],
+          [
+            155,
+            161,
+            174,
+            162
+          ],
+          [
+            209,
+            161,
+            218,
+            162
+          ],
+          [
+            155,
+            162,
+            174,
+            163
+          ],
+          [
+            209,
+            162,
+            218,
+            163
+          ],
+          [
+            155,
+            163,
+            174,
+            164
+          ],
+          [
+            209,
+            163,
+            218,
+            164
+          ],
+          [
+            155,
+            164,
+            174,
+            165
+          ],
+          [
+            209,
+            164,
+            218,
+            165
+          ],
+          [
+            155,
+            165,
+            174,
+            166
+          ],
+          [
+            209,
+            165,
+            218,
+            166
+          ],
+          [
+            155,
+            166,
+            174,
+            167
+          ],
+          [
+            209,
+            166,
+            218,
+            167
+          ],
+          [
+            155,
+            167,
+            174,
+            168
+          ],
+          [
+            209,
+            167,
+            218,
+            168
+          ]
+        ],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          323,
+          161
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 13,
+        "view": "walk-right"
+      },
+      "nativeFrame": {
+        "size": [
+          323,
+          387
+        ],
+        "sourceBoundsExclusive": [
+          1505,
+          48,
+          1828,
+          435
+        ],
+        "cellBoundsExclusive": [
+          1457,
+          0,
+          1876,
+          483
+        ],
+        "xRuns": [
+          6,
+          7,
+          6,
+          7,
+          1,
+          5,
+          7,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          1,
+          6,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          2,
+          4,
+          5,
+          2,
+          6,
+          7,
+          6,
+          5,
+          1,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6
+        ],
+        "yRuns": [
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          6,
+          1,
+          6,
+          7,
+          3,
+          3,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          5,
+          1,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "pose": "seated-reply-left",
+      "sourceBoundsExclusive": [
+        349,
+        4,
+        401,
+        67
+      ],
+      "crop": [
+        419,
+        583,
+        323,
+        400
+      ],
+      "row": 1,
+      "column": 1,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        80071
+      ],
+      "sourceFootAnchor": [
+        2097.5,
+        440
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        128,
+        160
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        345,
+        0,
+        405,
+        71
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "197e1b9bbaf6fbd7e65f2d2adff8d16c0f11ac633d8bef187974d33a1b0caf32",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          423,
+          587,
+          738,
+          979
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [
+          [
+            112,
+            111,
+            125,
+            137
+          ]
+        ],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [
+          13
+        ],
+        "eyeMargin": 1,
+        "neckOpenings": [
+          [
+            126,
+            160,
+            135,
+            161
+          ],
+          [
+            157,
+            160,
+            164,
+            161
+          ],
+          [
+            126,
+            161,
+            135,
+            162
+          ],
+          [
+            157,
+            161,
+            164,
+            162
+          ],
+          [
+            126,
+            162,
+            135,
+            163
+          ],
+          [
+            157,
+            162,
+            164,
+            163
+          ],
+          [
+            126,
+            163,
+            135,
+            164
+          ],
+          [
+            138,
+            163,
+            144,
+            164
+          ],
+          [
+            126,
+            164,
+            135,
+            165
+          ],
+          [
+            138,
+            164,
+            144,
+            165
+          ],
+          [
+            126,
+            165,
+            135,
+            166
+          ],
+          [
+            138,
+            165,
+            144,
+            166
+          ],
+          [
+            126,
+            166,
+            135,
+            167
+          ],
+          [
+            138,
+            166,
+            144,
+            167
+          ],
+          [
+            126,
+            167,
+            135,
+            168
+          ],
+          [
+            138,
+            167,
+            144,
+            168
+          ],
+          [
+            126,
+            168,
+            135,
+            169
+          ],
+          [
+            138,
+            168,
+            144,
+            169
+          ],
+          [
+            126,
+            169,
+            135,
+            170
+          ],
+          [
+            138,
+            169,
+            144,
+            170
+          ]
+        ],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          315,
+          163
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 13,
+        "view": "walk-right"
+      },
+      "nativeFrame": {
+        "size": [
+          315,
+          392
+        ],
+        "sourceBoundsExclusive": [
+          1940,
+          48,
+          2255,
+          440
+        ],
+        "cellBoundsExclusive": [
+          1892,
+          0,
+          2303,
+          488
+        ],
+        "xRuns": [
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          1,
+          5,
+          6,
+          1,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          1,
+          5,
+          4,
+          3,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7
+        ],
+        "yRuns": [
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          5,
+          1,
+          7,
+          3,
+          2,
+          1,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "pose": "seated-reading",
+      "sourceBoundsExclusive": [
+        409,
+        4,
+        466,
+        67
+      ],
+      "crop": [
+        786,
+        595,
+        336,
+        388
+      ],
+      "row": 1,
+      "column": 2,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        82222
+      ],
+      "sourceFootAnchor": [
+        2531.0,
+        428
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        134,
+        156
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        405,
+        0,
+        470,
+        71
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "5fd2ce67001efc8a99826e2b1fbed02d3eb754347f01aa4a45bb2ad28d1c1466",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          790,
+          599,
+          1118,
+          979
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [
+          [
+            209,
+            129,
+            222,
+            161
+          ]
+        ],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [
+          13
+        ],
+        "eyeMargin": 1,
+        "neckOpenings": [
+          [
+            135,
+            177,
+            148,
+            178
+          ],
+          [
+            197,
+            177,
+            206,
+            178
+          ],
+          [
+            135,
+            178,
+            148,
+            179
+          ],
+          [
+            197,
+            178,
+            206,
+            179
+          ],
+          [
+            135,
+            179,
+            148,
+            180
+          ],
+          [
+            197,
+            179,
+            206,
+            180
+          ],
+          [
+            141,
+            180,
+            148,
+            181
+          ],
+          [
+            197,
+            180,
+            206,
+            181
+          ],
+          [
+            141,
+            181,
+            148,
+            182
+          ],
+          [
+            197,
+            181,
+            206,
+            182
+          ],
+          [
+            141,
+            182,
+            148,
+            183
+          ],
+          [
+            197,
+            182,
+            206,
+            183
+          ],
+          [
+            141,
+            183,
+            148,
+            184
+          ],
+          [
+            197,
+            183,
+            206,
+            184
+          ],
+          [
+            141,
+            184,
+            148,
+            185
+          ],
+          [
+            197,
+            184,
+            206,
+            185
+          ],
+          [
+            141,
+            185,
+            148,
+            186
+          ],
+          [
+            197,
+            185,
+            206,
+            186
+          ],
+          [
+            141,
+            186,
+            148,
+            187
+          ],
+          [
+            197,
+            186,
+            205,
+            187
+          ]
+        ],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          328,
+          180
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 13,
+        "view": "walk-right"
+      },
+      "nativeFrame": {
+        "size": [
+          328,
+          380
+        ],
+        "sourceBoundsExclusive": [
+          2367,
+          48,
+          2695,
+          428
+        ],
+        "cellBoundsExclusive": [
+          2319,
+          0,
+          2743,
+          476
+        ],
+        "xRuns": [
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          4,
+          2,
+          6,
+          1,
+          3,
+          3,
+          7,
+          3,
+          3,
+          7,
+          6,
+          6,
+          7,
+          1,
+          5,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          5,
+          1,
+          7,
+          6
+        ],
+        "yRuns": [
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          6,
+          1,
+          3,
+          3,
+          6,
+          1,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "pose": "seated-book-tilt",
+      "sourceBoundsExclusive": [
+        289,
+        4,
+        341,
+        68
+      ],
+      "crop": [
+        1194,
+        588,
+        324,
+        393
+      ],
+      "row": 1,
+      "column": 3,
+      "thresholdComponents": 1,
+      "componentSizes": [
+        82145
+      ],
+      "sourceFootAnchor": [
+        2965.0,
+        433
+      ],
+      "emptyCropBorderAtAlpha80": true,
+      "normalizedSize": [
+        128,
+        158
+      ],
+      "sourceScaleReference": 0.4080808080808081,
+      "actor": "sister",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "detailAsset": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "cellBoundsExclusive": [
+        285,
+        0,
+        345,
+        72
+      ],
+      "logicalCellPx": 12,
+      "minimumTransparentCells": 4,
+      "masterCharacter": "sister",
+      "lockedCropSha256": "47e6987f90729bf4705e1b9fe131f0feb2d1e4b0f1045cf12ccadfe0671b26cf",
+      "provenance": {
+        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalBounds": [
+          1198,
+          592,
+          1514,
+          977
+        ],
+        "directMasterReference": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+        "reuse": "Native cleaned existing pose; no generation or silhouette scaling",
+        "originalSourceSha256": "b479ab36d352cffdf1027a35d5aab9234b972e80b505460a80e01c8019d604f8"
+      },
+      "nativePixelContract": {
+        "paletteRGB": [
+          [
+            24,
+            18,
+            16
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            163,
+            164,
+            122
+          ],
+          [
+            253,
+            189,
+            143
+          ],
+          [
+            253,
+            225,
+            187
+          ],
+          [
+            95,
+            45,
+            24
+          ],
+          [
+            132,
+            138,
+            97
+          ],
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            83,
+            90,
+            56
+          ],
+          [
+            108,
+            114,
+            75
+          ],
+          [
+            250,
+            159,
+            109
+          ],
+          [
+            60,
+            65,
+            36
+          ],
+          [
+            212,
+            158,
+            107
+          ],
+          [
+            251,
+            141,
+            83
+          ],
+          [
+            146,
+            99,
+            71
+          ],
+          [
+            158,
+            121,
+            91
+          ],
+          [
+            187,
+            122,
+            73
+          ],
+          [
+            182,
+            147,
+            103
+          ]
+        ],
+        "outlineRGB": [
+          24,
+          18,
+          16
+        ],
+        "skinRGB": [
+          253,
+          189,
+          143
+        ],
+        "eyes": [
+          [
+            204,
+            103,
+            217,
+            141
+          ]
+        ],
+        "spriteType": "human",
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "neckRGB": [
+          250,
+          159,
+          109
+        ],
+        "expectedEyeWidths": [
+          13
+        ],
+        "eyeMargin": 1,
+        "neckOpenings": [
+          [
+            151,
+            164,
+            165,
+            165
+          ],
+          [
+            196,
+            164,
+            205,
+            165
+          ],
+          [
+            151,
+            165,
+            165,
+            166
+          ],
+          [
+            196,
+            165,
+            205,
+            166
+          ],
+          [
+            151,
+            166,
+            165,
+            167
+          ],
+          [
+            196,
+            166,
+            205,
+            167
+          ],
+          [
+            145,
+            167,
+            171,
+            168
+          ],
+          [
+            196,
+            167,
+            205,
+            168
+          ],
+          [
+            145,
+            168,
+            171,
+            169
+          ],
+          [
+            196,
+            168,
+            205,
+            169
+          ],
+          [
+            145,
+            169,
+            171,
+            170
+          ],
+          [
+            196,
+            169,
+            205,
+            170
+          ],
+          [
+            145,
+            170,
+            171,
+            171
+          ],
+          [
+            196,
+            170,
+            205,
+            171
+          ],
+          [
+            145,
+            171,
+            171,
+            172
+          ],
+          [
+            196,
+            171,
+            205,
+            172
+          ],
+          [
+            145,
+            172,
+            171,
+            173
+          ],
+          [
+            145,
+            173,
+            171,
+            174
+          ]
+        ],
+        "hairTonesRGB": [
+          [
+            65,
+            32,
+            17
+          ],
+          [
+            121,
+            64,
+            37
+          ],
+          [
+            187,
+            122,
+            73
+          ]
+        ],
+        "hairRegionBounds": [
+          0,
+          0,
+          316,
+          167
+        ],
+        "minimumHairTonePixels": 8,
+        "strictHuman": true,
+        "logicalEyeWidth": 13,
+        "view": "walk-right"
+      },
+      "nativeFrame": {
+        "size": [
+          316,
+          385
+        ],
+        "sourceBoundsExclusive": [
+          2807,
+          48,
+          3123,
+          433
+        ],
+        "cellBoundsExclusive": [
+          2759,
+          0,
+          3171,
+          481
+        ],
+        "xRuns": [
+          1,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7,
+          5,
+          1,
+          7,
+          1,
+          6,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          7,
+          7,
+          6,
+          7,
+          6,
+          7
+        ],
+        "yRuns": [
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          4,
+          3,
+          5,
+          1,
+          7,
+          6,
+          6,
+          1,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          6,
+          6,
+          1,
+          6,
+          7,
+          6
+        ]
+      }
+    }
+  ],
+  "cellPolicy": "Full storage cells have >=4 logical transparent cells on all sides. Runtime content trims retain prior physical sizes and anchors, and include complete silhouettes.",
+  "storageEncoding": "lossless-axis-runs-v1",
+  "imageSize": [
+    2048,
+    95
+  ]
+}

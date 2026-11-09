@@ -1,0 +1,1076 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "scene": "alice-c1-s5",
+  "title": "Solid Ground",
+  "status": "Gates 1/2A proposal. Stop before implementation; no S5 runtime authorized.",
+  "coordinateSystem": {
+    "source": "S5 panorama pixels, top-left origin; source crop begins at S4 source(48,974)",
+    "world": "world = 2*(S5 source + [48,974]); inherited S4 world coordinates unchanged",
+    "worldOrigin": [
+      96,
+      1948
+    ],
+    "sourceToWorldScale": 2
+  },
+  "panorama": {
+    "asset": "/stories/alice-in-wonderland/assets/environments/well-corridor-panorama-s5-v1.png",
+    "dimensions": [
+      3344,
+      942
+    ],
+    "worldBounds": [
+      96,
+      1948,
+      6688,
+      1884
+    ],
+    "overscan": {
+      "territories": [
+        {
+          "fullSourceBounds": [
+            0,
+            0,
+            1672,
+            942
+          ],
+          "base16by9": [
+            196,
+            111,
+            1280,
+            720
+          ]
+        },
+        {
+          "fullSourceBounds": [
+            1672,
+            0,
+            1672,
+            942
+          ],
+          "base16by9": [
+            1868,
+            111,
+            1280,
+            720
+          ]
+        }
+      ],
+      "widthRatio": 1.30625,
+      "heightRatio": 1.3083333333333333,
+      "marginsPerTerritory": [
+        196,
+        111
+      ],
+      "note": "Two adjoining physical camera territories, each 1.30625x by1.30833x. Complete3344width is route length, not a single overscan ratio."
+    },
+    "continuity": {
+      "inheritedLandingSourceS4": [
+        1080,
+        1664
+      ],
+      "inheritedLandingSourceS5": [
+        1032,
+        690
+      ],
+      "inheritedLandingWorld": [
+        2160,
+        3328
+      ],
+      "preservedLandingSourceBounds": [
+        800,
+        580,
+        1150,
+        760
+      ],
+      "integrationRequiredAtGate3": "Use the same approved extended ground plate for S4 closing view and S5 opening where the expanded corridor is in view. Preserve existing landing pixels, pose, contact and camera; verify full-frame equality in each aspect. This shared scenery integration is proposed, not implemented. No same-place dissolve, repeated impact or frame reset."
+    },
+    "s4IntegrationSourceBounds": [
+      0,
+      2,
+      1672,
+      940
+    ],
+    "s4IntegrationEdgeRule": "Exclude generated top2px light crop gutter from common S4/S5 plate; preserve existing shaft rock underneath. Source and destination remain 1:1, all anchors unchanged."
+  },
+  "assets": {
+    "well-corridor-panorama-s5-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/environments/well-corridor-panorama-s5-v1.png",
+      "dimensions": [
+        3344,
+        942
+      ],
+      "sha256": "9d9e44c74c806caa5317074096b88f4315203ca51370c129cbdccd257ad5872d"
+    },
+    "alice-s5-rise-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93"
+    }
+  },
+  "spawns": {
+    "alice": {
+      "anchor": "A0-seated-s4",
+      "pose": "scene-4-atlas-cells.json#seated-braced",
+      "scale": 0.732,
+      "hands": "empty",
+      "footAnchorWorld": [
+        2160,
+        3328
+      ],
+      "motion": "not falling"
+    },
+    "white-rabbit": {
+      "anchor": "R0-side-passage",
+      "presence": "hidden inside authored side passage until moment4; no invented Rabbit fall",
+      "watch": "inside pocket"
+    },
+    "sister": {
+      "presence": "offscreen, seated-reading at unchanged riverbank position",
+      "point": [
+        810,
+        650
+      ],
+      "book": "retained"
+    }
+  },
+  "anchors": {
+    "A0-seated-s4": {
+      "sourcePoint": [
+        1032,
+        690
+      ],
+      "point": [
+        2160,
+        3328
+      ],
+      "scale": 0.732
+    },
+    "A1-standing-safe": {
+      "sourcePoint": [
+        1032,
+        690
+      ],
+      "point": [
+        2160,
+        3328
+      ],
+      "scale": 0.732
+    },
+    "A2-leaf-edge": {
+      "sourcePoint": [
+        1220,
+        740
+      ],
+      "point": [
+        2536,
+        3428
+      ],
+      "scale": 0.774
+    },
+    "A3-clear-floor": {
+      "sourcePoint": [
+        1510,
+        740
+      ],
+      "point": [
+        3116,
+        3428
+      ],
+      "scale": 0.774
+    },
+    "A4-corridor-near": {
+      "sourcePoint": [
+        1800,
+        740
+      ],
+      "point": [
+        3696,
+        3428
+      ],
+      "scale": 0.774
+    },
+    "A5-observe": {
+      "sourcePoint": [
+        2160,
+        650
+      ],
+      "point": [
+        4416,
+        3248
+      ],
+      "scale": 0.6982222222222222
+    },
+    "R0-side-passage": {
+      "sourcePoint": [
+        2150,
+        440
+      ],
+      "point": [
+        4396,
+        2828
+      ],
+      "scale": 0.525
+    },
+    "R1-visible-line": {
+      "sourcePoint": [
+        2200,
+        520
+      ],
+      "point": [
+        4496,
+        2988
+      ],
+      "scale": 0.593
+    },
+    "R2-clear-corridor": {
+      "sourcePoint": [
+        2380.741,
+        615.333
+      ],
+      "point": [
+        4857.482,
+        3178.666
+      ],
+      "scale": 0.6689478666666666
+    },
+    "R3-bend-approach": {
+      "sourcePoint": [
+        2605.926,
+        576.0
+      ],
+      "point": [
+        5307.852,
+        3100.0
+      ],
+      "scale": 0.6371
+    },
+    "R4-turn-visible": {
+      "sourcePoint": [
+        2820,
+        454
+      ],
+      "point": [
+        5736,
+        2856
+      ],
+      "scale": 0.5369
+    },
+    "R5-behind-corner": {
+      "sourcePoint": [
+        2940,
+        442
+      ],
+      "point": [
+        5976,
+        2832
+      ],
+      "scale": 0.5267000000000001
+    },
+    "J1-inherited-fixed": {
+      "sourcePoint": [
+        1066,
+        170
+      ],
+      "point": [
+        2228,
+        2288
+      ],
+      "scale": null
+    }
+  },
+  "walkPaths": {
+    "alice-leaves-to-observation": {
+      "from": "A1-standing-safe",
+      "to": "A5-observe",
+      "sourceWaypoints": [
+        [
+          1032,
+          690
+        ],
+        [
+          1220,
+          740
+        ],
+        [
+          1510,
+          740
+        ],
+        [
+          1800,
+          740
+        ],
+        [
+          2160,
+          650
+        ]
+      ],
+      "waypoints": [
+        [
+          2160,
+          3328
+        ],
+        [
+          2536,
+          3428
+        ],
+        [
+          3116,
+          3428
+        ],
+        [
+          3696,
+          3428
+        ],
+        [
+          4416,
+          3248
+        ]
+      ],
+      "movement": "one uninterrupted arc-length walk, no waypoint stops; stops only at observation; explicit continuous following camera",
+      "durationProposedMs": 10500,
+      "facingByLeg": [
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "caption": "clear"
+    },
+    "rabbit-visible-arrival": {
+      "from": "R0-side-passage",
+      "to": "R1-visible-line",
+      "sourceWaypoints": [
+        [
+          2150,
+          440
+        ],
+        [
+          2180,
+          480
+        ],
+        [
+          2200,
+          520
+        ]
+      ],
+      "waypoints": [
+        [
+          4396,
+          2828
+        ],
+        [
+          4456,
+          2908
+        ],
+        [
+          4496,
+          2988
+        ]
+      ],
+      "durationProposedMs": 2200,
+      "fadeMs": 2000,
+      "fadeRule": "visible gradual physical entrance; becomes fully opaque in visible corridor, not wholly behind cover"
+    },
+    "rabbit-corridor-to-corner": {
+      "from": "R1-visible-line",
+      "to": "R5-behind-corner",
+      "sourceWaypoints": [
+        [
+          2200.0,
+          520.0
+        ],
+        [
+          2218.263,
+          541.059
+        ],
+        [
+          2237.98,
+          559.302
+        ],
+        [
+          2259.043,
+          574.832
+        ],
+        [
+          2281.343,
+          587.75
+        ],
+        [
+          2304.771,
+          598.158
+        ],
+        [
+          2329.219,
+          606.156
+        ],
+        [
+          2354.578,
+          611.848
+        ],
+        [
+          2380.741,
+          615.333
+        ],
+        [
+          2407.598,
+          616.715
+        ],
+        [
+          2435.041,
+          616.094
+        ],
+        [
+          2462.961,
+          613.572
+        ],
+        [
+          2491.25,
+          609.25
+        ],
+        [
+          2519.8,
+          603.23
+        ],
+        [
+          2548.501,
+          595.615
+        ],
+        [
+          2577.246,
+          586.504
+        ],
+        [
+          2605.926,
+          576.0
+        ],
+        [
+          2634.432,
+          564.204
+        ],
+        [
+          2662.656,
+          551.219
+        ],
+        [
+          2690.49,
+          537.145
+        ],
+        [
+          2717.824,
+          522.083
+        ],
+        [
+          2744.551,
+          506.137
+        ],
+        [
+          2770.561,
+          489.406
+        ],
+        [
+          2795.747,
+          471.993
+        ],
+        [
+          2820.0,
+          454.0
+        ],
+        [
+          2831.719,
+          446.594
+        ],
+        [
+          2844.375,
+          442.0
+        ],
+        [
+          2857.969,
+          439.656
+        ],
+        [
+          2872.5,
+          439.0
+        ],
+        [
+          2887.969,
+          439.469
+        ],
+        [
+          2904.375,
+          440.5
+        ],
+        [
+          2921.719,
+          441.531
+        ],
+        [
+          2940.0,
+          442.0
+        ]
+      ],
+      "waypoints": [
+        [
+          4496.0,
+          2988.0
+        ],
+        [
+          4532.526,
+          3030.118
+        ],
+        [
+          4571.96,
+          3066.604
+        ],
+        [
+          4614.086,
+          3097.664
+        ],
+        [
+          4658.686,
+          3123.5
+        ],
+        [
+          4705.542,
+          3144.316
+        ],
+        [
+          4754.438,
+          3160.312
+        ],
+        [
+          4805.156,
+          3171.696
+        ],
+        [
+          4857.482,
+          3178.666
+        ],
+        [
+          4911.196,
+          3181.43
+        ],
+        [
+          4966.082,
+          3180.188
+        ],
+        [
+          5021.922,
+          3175.144
+        ],
+        [
+          5078.5,
+          3166.5
+        ],
+        [
+          5135.6,
+          3154.46
+        ],
+        [
+          5193.002,
+          3139.23
+        ],
+        [
+          5250.492,
+          3121.008
+        ],
+        [
+          5307.852,
+          3100.0
+        ],
+        [
+          5364.864,
+          3076.408
+        ],
+        [
+          5421.312,
+          3050.438
+        ],
+        [
+          5476.98,
+          3022.29
+        ],
+        [
+          5531.648,
+          2992.166
+        ],
+        [
+          5585.102,
+          2960.274
+        ],
+        [
+          5637.122,
+          2926.812
+        ],
+        [
+          5687.494,
+          2891.986
+        ],
+        [
+          5736.0,
+          2856.0
+        ],
+        [
+          5759.438,
+          2841.188
+        ],
+        [
+          5784.75,
+          2832.0
+        ],
+        [
+          5811.938,
+          2827.312
+        ],
+        [
+          5841.0,
+          2826.0
+        ],
+        [
+          5871.938,
+          2826.938
+        ],
+        [
+          5904.75,
+          2829.0
+        ],
+        [
+          5939.438,
+          2831.062
+        ],
+        [
+          5976.0,
+          2832.0
+        ]
+      ],
+      "durationProposedMs": 5200,
+      "movement": "one uninterrupted arc-length traversal of sampled smooth cubic curves over open dirt, farther from the wall; no waypoint stops; Alice remains at A5",
+      "caption": "clear",
+      "occlusion": "physical full-height corner foreground, no pop or reappearance",
+      "curveControlsSource": [
+        [
+          [
+            2200,
+            520
+          ],
+          [
+            2340,
+            700
+          ],
+          [
+            2630,
+            600
+          ],
+          [
+            2820,
+            454
+          ]
+        ],
+        [
+          [
+            2820,
+            454
+          ],
+          [
+            2850,
+            430
+          ],
+          [
+            2890,
+            442
+          ],
+          [
+            2940,
+            442
+          ]
+        ]
+      ]
+    }
+  },
+  "depthScaling": {
+    "standingHeightsWorld": {
+      "alice": 180,
+      "white-rabbit": 122
+    },
+    "sourceYToScale": [
+      [
+        400,
+        0.49
+      ],
+      [
+        440,
+        0.525
+      ],
+      [
+        520,
+        0.593
+      ],
+      [
+        600,
+        0.656
+      ],
+      [
+        690,
+        0.732
+      ],
+      [
+        740,
+        0.774
+      ],
+      [
+        800,
+        0.825
+      ]
+    ],
+    "interpolation": "continuous piecewise-linear by ground y, once around foot anchor; all props/shadows follow owner",
+    "incomingScale": 0.732,
+    "reference": "same y means same perspective factor for both actors; natural Rabbit size remains smaller",
+    "s5NoFollowChase": "Alice finishes her one walk before Rabbit entrance; she observes and never alternates steps with him. If production changes to both walking, use continuous simultaneous motion."
+  },
+  "surfaces": {
+    "groundBandSourcePolygon": [
+      [
+        950,
+        650
+      ],
+      [
+        1180,
+        680
+      ],
+      [
+        1300,
+        710
+      ],
+      [
+        1600,
+        710
+      ],
+      [
+        1860,
+        640
+      ],
+      [
+        2050,
+        560
+      ],
+      [
+        2250,
+        490
+      ],
+      [
+        2420,
+        490
+      ],
+      [
+        2660,
+        460
+      ],
+      [
+        2820,
+        426
+      ],
+      [
+        2860,
+        460
+      ],
+      [
+        2680,
+        570
+      ],
+      [
+        2420,
+        630
+      ],
+      [
+        2150,
+        680
+      ],
+      [
+        1840,
+        790
+      ],
+      [
+        1500,
+        840
+      ],
+      [
+        1160,
+        800
+      ],
+      [
+        930,
+        740
+      ]
+    ],
+    "rabbitSideThresholdSource": [
+      2100,
+      440,
+      130,
+      80
+    ],
+    "solidRootCornerSource": [
+      [
+        2900,
+        0
+      ],
+      [
+        2902,
+        300
+      ],
+      [
+        2892,
+        380
+      ],
+      [
+        2878,
+        420
+      ],
+      [
+        2850,
+        470
+      ],
+      [
+        2812,
+        520
+      ],
+      [
+        2770,
+        560
+      ],
+      [
+        2690,
+        660
+      ],
+      [
+        2600,
+        780
+      ],
+      [
+        2530,
+        942
+      ],
+      [
+        3344,
+        942
+      ],
+      [
+        3344,
+        0
+      ]
+    ],
+    "obstacleAvoidance": "Measured dirt strip avoids central buttress base and discrete foreground rocks; see board. No walking through the side-passage jamb.",
+    "rabbitExitClearance": "Curve bows toward open foreground dirt (maximum source y 616.715), above the foreground rock near (2400,650), then curves back to the unchanged physical corner threshold. Entry, speaking point and hidden endpoint remain fixed."
+  },
+  "occluders": [
+    {
+      "id": "corridor-corner-full-height",
+      "asset": "same panorama foreground, no repainted cutout",
+      "sourcePolygon": [
+        [
+          2900,
+          0
+        ],
+        [
+          2902,
+          300
+        ],
+        [
+          2892,
+          380
+        ],
+        [
+          2878,
+          420
+        ],
+        [
+          2850,
+          470
+        ],
+        [
+          2812,
+          520
+        ],
+        [
+          2770,
+          560
+        ],
+        [
+          2690,
+          660
+        ],
+        [
+          2600,
+          780
+        ],
+        [
+          2530,
+          942
+        ],
+        [
+          3344,
+          942
+        ],
+        [
+          3344,
+          0
+        ]
+      ],
+      "worldPolygon": [
+        [
+          5896,
+          1948
+        ],
+        [
+          5900,
+          2548
+        ],
+        [
+          5880,
+          2708
+        ],
+        [
+          5852,
+          2788
+        ],
+        [
+          5796,
+          2888
+        ],
+        [
+          5720,
+          2988
+        ],
+        [
+          5636,
+          3068
+        ],
+        [
+          5476,
+          3268
+        ],
+        [
+          5296,
+          3508
+        ],
+        [
+          5156,
+          3832
+        ],
+        [
+          6784,
+          3832
+        ],
+        [
+          6784,
+          1948
+        ]
+      ],
+      "clipBoundsSource": [
+        2530,
+        0,
+        814,
+        942
+      ],
+      "coverage": "full height from y0 through y942; includes all ears, hair and hats; alpha-clipped actor at every entry sample",
+      "order": "draw actors on floor then same-source foreground rock mask",
+      "hideAt": "R5-behind-corner",
+      "persistence": "once behind corner actor remains hidden; neither white pixels nor shadow may leak above/right of cover"
+    }
+  ],
+  "heldProps": {
+    "alice": "none throughout",
+    "jar": {
+      "owner": "fixed lower shelf inherited from S4",
+      "anchor": "J1-inherited-fixed",
+      "worldBase": [
+        2228,
+        2288
+      ],
+      "asset": "scene-4-atlas-cells.json#jar-upright",
+      "scale": 0.732,
+      "rule": "one fixed copy only if source shelf enters camera; never in Alice hand"
+    },
+    "rabbitWatch": "pocket throughout"
+  },
+  "camera": {
+    "fullViewportRequired": true,
+    "zoom": "inherit S4 final planned zoom per viewport/safe area and lock it for all S5 beats; only centers follow explicitly approved paths",
+    "safeSourceBounds": [
+      0,
+      0,
+      3344,
+      942
+    ],
+    "centerLimitsFormula": "For locked z and viewport(w,h), halfW=w/(4z), halfH=h/(4z); cx in[halfW,3344-halfW],cy in[halfH,942-halfH]. Use hard body and caption constraints before interpolation.",
+    "captionRule": "protect whole speaking actor and support above actual #dialogue; no text during long walk or Rabbit exit",
+    "shots": [
+      {
+        "id": "landing",
+        "required": [
+          "alice",
+          "leaf-contact"
+        ],
+        "sourceCenter": [
+          1032,
+          642
+        ]
+      },
+      {
+        "id": "observe-arrival",
+        "required": [
+          "alice",
+          "white-rabbit",
+          "side-threshold"
+        ],
+        "sourceCenter": [
+          2190,
+          642
+        ]
+      },
+      {
+        "id": "bend-follow",
+        "required": [
+          "white-rabbit",
+          "corner-full-height"
+        ],
+        "sourceCenter": [
+          2850,
+          460
+        ]
+      },
+      {
+        "id": "chapter-close",
+        "required": [
+          "alice",
+          "corridor-ground"
+        ],
+        "sourceCenter": [
+          2160,
+          642
+        ]
+      }
+    ],
+    "followException": "Moments3 and5 explicitly authorize smooth continuous tracking at fixed zoom. Alice world anchor stays A5 while camera follows Rabbit and returns. No accidental slide of waiting actor.",
+    "gate3RequiredChecks": [
+      "exact S4/S5 first-frame equality in all layouts",
+      "actual dialogue DOM bounds",
+      "constant zoom set size1 per viewport",
+      "pause/save/reconstruction/export state equivalence",
+      "360/390/430,9:16,16:9,square,flattened Chrome windows"
+    ]
+  },
+  "closingHook": {
+    "durationMs": 3000,
+    "text": false,
+    "sound": false,
+    "aliceAnchor": "A5-observe",
+    "state": "stable standing, empty hands, shoulders release; faces visible corridor; no pursuit or step into Chapter2",
+    "rabbit": "fully behind corner",
+    "chapterFinal": true,
+    "noNextChapterTeaser": true
+  },
+  "approvalRequired": true
+}

@@ -1,0 +1,7903 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "chapter": 2,
+  "scene": 1,
+  "title": "A Way Out",
+  "status": "Gates1/2A approved; C2-S1 implemented and Gate4 passed in current usual-layout scope31Oct2026",
+  "approval": {
+    "causalTable": "Approved by Alejandro31Oct2026, eight scenes",
+    "spatialCorrection": "Explicitly requested: only Alice/Mouse in closed pool; left-shore exit then terrestrial left entrance of birds",
+    "scope": "Implement and audit C2-S1 only; two authorized dialogue-order/prop-clearance refinements; silent",
+    "art": "Explicitly approved by Alejandro31Oct2026"
+  },
+  "measurement": {
+    "sourceAsset": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+    "sourceDimensions": [
+      1664,
+      936
+    ],
+    "worldDimensions": [
+      3328,
+      1872
+    ],
+    "sourceToWorldScale": 2,
+    "method": "Approved panorama/captured S6 transforms and actual alpha masks; implemented paths measured and audited in current reader/export.",
+    "evidence": ".artifacts/alice-in-wonderland/chapter-2/scene-1"
+  },
+  "camera": {
+    "inherit": "chapter-1-scene-6-geometry.json#camera",
+    "fixedXYZ": true,
+    "changesXYZ": 0,
+    "perLayout": [
+      {
+        "width": 390,
+        "height": 844,
+        "frame": {
+          "x": 1741,
+          "y": 1270.5781990521327,
+          "z": 0.7033333333333334,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 600.484375,
+          "right": 376,
+          "bottom": 776.484375
+        }
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "frame": {
+          "x": 1741,
+          "y": 1258.1787709497207,
+          "z": 0.6532846715328468,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 560,
+          "right": 346,
+          "bottom": 736
+        }
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "frame": {
+          "x": 1741,
+          "y": 1270.7124463519312,
+          "z": 0.7766666666666666,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 681.453125,
+          "right": 416,
+          "bottom": 857.453125
+        }
+      },
+      {
+        "width": 1366,
+        "height": 641,
+        "frame": {
+          "x": 1741,
+          "y": 1314.353982300885,
+          "z": 0.576530612244898,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 303,
+          "top": 429.3125,
+          "right": 1063,
+          "bottom": 583.3125
+        }
+      },
+      {
+        "width": 800,
+        "height": 800,
+        "frame": {
+          "x": 1741,
+          "y": 1270.5,
+          "z": 0.6666666666666666,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 20,
+          "top": 580,
+          "right": 780,
+          "bottom": 728
+        }
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "frame": {
+          "x": 1741,
+          "y": 1271.0625,
+          "z": 1.0666666666666667,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 20,
+          "top": 1016.8125,
+          "right": 700,
+          "bottom": 1164.8125
+        }
+      }
+    ],
+    "uiLayoutLock": "Exact inherited standard lower centred dialogue card; never moved or shrunk."
+  },
+  "inherited": {
+    "stateFile": ".artifacts/alice-in-wonderland/chapter-2/scene-1/inherited-c1-s6-final.json",
+    "model": {
+      "actors": {
+        "alice": {
+          "x": 1676,
+          "y": 1448,
+          "visible": 1,
+          "facing": "left",
+          "pose": "idle"
+        },
+        "sister": {
+          "x": 810,
+          "y": 650,
+          "visible": 1,
+          "facing": "right",
+          "pose": "idle"
+        },
+        "white-rabbit": {
+          "x": 1500,
+          "y": 900,
+          "visible": 0,
+          "facing": "right",
+          "pose": "idle"
+        }
+      },
+      "staging": {
+        "alice": "brush-palms",
+        "sister": "seated-reading",
+        "rabbit": "right"
+      },
+      "watch": {
+        "owner": "white-rabbit",
+        "visible": 0,
+        "state": "in-pocket"
+      },
+      "book": {
+        "owner": "sister",
+        "visible": 1
+      },
+      "chapter": 1,
+      "view": "s4-upper",
+      "environment": "hall-of-doors",
+      "s3": {
+        "falling": false,
+        "clodFall": 1,
+        "clodsVisible": false,
+        "hookMs": 3000
+      },
+      "jar": {
+        "owner": null,
+        "state": "lower-fixed",
+        "orientation": "upright",
+        "visible": 1
+      },
+      "s4": {
+        "shot": "landing",
+        "landed": true
+      },
+      "s5": {
+        "shot": "hall-corridor"
+      },
+      "hall": {
+        "pose": "standing-steady",
+        "shot": "bottle-discovery",
+        "curtain": 1,
+        "door": 0,
+        "key": {
+          "owner": null
+        },
+        "roomLock": 1
+      },
+      "drink": {
+        "active": true,
+        "pose": "box-open",
+        "face": "left",
+        "magicScale": 0.32,
+        "bottleOwner": "floor",
+        "bottleEmpty": 1,
+        "bottleGrip": "body",
+        "cork": 1,
+        "angle": 0,
+        "boxX": 856.4484011940299,
+        "boxY": 690,
+        "boxOpen": 1,
+        "shot": "hook"
+      },
+      "eat": {
+        "active": true,
+        "pose": "calm",
+        "face": "left",
+        "cake": {
+          "owner": "consumed",
+          "amount": 0
+        },
+        "keyLift": 0,
+        "cryTime": 5250,
+        "rabbitLook": true
+      },
+      "pool": {
+        "active": true,
+        "phase": "swim",
+        "water": 1,
+        "door": 0,
+        "fan": "released",
+        "gloves": "floor",
+        "mouse": 1,
+        "mouseProgress": 1,
+        "swim": 0
+      }
+    },
+    "restingLayers": {
+      "key": {
+        "texture": "alice-hall-golden-key",
+        "x": 1608.0000588235293,
+        "y": 1275.9716937354988,
+        "scaleX": 1.14,
+        "scaleY": 1.14,
+        "originX": 0.20555555555555555,
+        "originY": 0.5,
+        "depth": 1381,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "bottle": {
+        "texture": "alice-drink-bottle-open-empty",
+        "x": 1867.0196296296297,
+        "y": 1400,
+        "scaleX": 1.1533333333333333,
+        "scaleY": 1.1533333333333333,
+        "originX": 0.5,
+        "originY": 1,
+        "depth": 1400,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "box": {
+        "texture": "alice-drink-box-base",
+        "x": 1712.8968023880598,
+        "y": 1380,
+        "scaleX": 1.14,
+        "scaleY": 1.14,
+        "originX": 0.5,
+        "originY": 1,
+        "depth": 1380,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "cork": {
+        "texture": "alice-drink-cork",
+        "x": 1774,
+        "y": 1278,
+        "scaleX": 1.14,
+        "scaleY": 1.14,
+        "originX": 0.5,
+        "originY": 1,
+        "depth": 1381,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "lid": {
+        "texture": "alice-drink-box-lid-open",
+        "x": 1728.8568023880598,
+        "y": 1365.08,
+        "scaleX": 1.14,
+        "scaleY": 1.14,
+        "originX": 1,
+        "originY": 1,
+        "depth": 1380.004,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "cake": {
+        "texture": "alice-drink-cake",
+        "x": 1712.8968023880598,
+        "y": 1372,
+        "scaleX": 1.14,
+        "scaleY": 1.14,
+        "originX": 0.5,
+        "originY": 1,
+        "depth": 1380.002,
+        "visible": false,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "curtain-closed": {
+        "texture": "alice-hall-curtain-closed",
+        "x": 1812,
+        "y": 828,
+        "scaleX": 0.19999999999999996,
+        "scaleY": 1,
+        "originX": 0,
+        "originY": 0,
+        "depth": 5,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 0,
+        "crop": null
+      },
+      "curtain-open": {
+        "texture": "alice-hall-curtain-open",
+        "x": 1812,
+        "y": 828,
+        "scaleX": 1,
+        "scaleY": 1,
+        "originX": 0,
+        "originY": 0,
+        "depth": 5,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "door-0": {
+        "texture": "alice-hall-door-0",
+        "x": 1860,
+        "y": 880,
+        "scaleX": 2,
+        "scaleY": 2,
+        "originX": 0,
+        "originY": 0,
+        "depth": 3,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "table": {
+        "texture": "alice-hall-table-foreground",
+        "x": 1584,
+        "y": 1252,
+        "scaleX": 2,
+        "scaleY": 2,
+        "originX": 0,
+        "originY": 0,
+        "depth": 1380,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "tears": {
+        "texture": "alice-eat-expanded-water-80",
+        "x": 1470,
+        "y": 1480,
+        "scaleX": 1,
+        "scaleY": 1,
+        "originX": 0,
+        "originY": 1,
+        "depth": 1300,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "fan": {
+        "texture": "alice-pool-fan",
+        "x": 1618,
+        "y": 1180,
+        "scaleX": 1.0066666666666666,
+        "scaleY": 1.0066666666666666,
+        "originX": 0.5,
+        "originY": 1,
+        "depth": 1180,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      },
+      "gloves": {
+        "texture": "alice-pool-gloves",
+        "x": 1480,
+        "y": 1088,
+        "scaleX": 0.9333333333,
+        "scaleY": 0.9333333333,
+        "originX": 0.5,
+        "originY": 1,
+        "depth": 1088,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "rotation": 0,
+        "alpha": 1,
+        "crop": null
+      }
+    },
+    "panoramaSha256": "e9dd7992e634759827144d3d7feaae2723cc683b9d71e7dfa3fb71e084e902c7",
+    "staticPropLock": "All inherited layer transform/frame/alpha/crop/depth fields identical. Door leaf is the only newly moving set element in final3s."
+  },
+  "lagoon": {
+    "closed": true,
+    "sourceBounds": [
+      735,
+      684,
+      1005,
+      740
+    ],
+    "worldBounds": [
+      1470,
+      1368,
+      2010,
+      1480
+    ],
+    "sourceSize": [
+      270,
+      56
+    ],
+    "maximumOccupancy": 2,
+    "occupants": [
+      "alice",
+      "mouse"
+    ],
+    "birdsNeverInWater": true,
+    "textureSha256": "6ef68acf64f2f713be5031b30b282273d67312006db7aeeda58320a3fa61a192"
+  },
+  "depthScaling": {
+    "sourceYToScale": [
+      [
+        426,
+        0.5267
+      ],
+      [
+        450,
+        0.68
+      ],
+      [
+        480,
+        0.84
+      ],
+      [
+        510,
+        0.9
+      ],
+      [
+        600,
+        1.02
+      ],
+      [
+        720,
+        1.18
+      ]
+    ],
+    "rule": "Interpolate approved floor scale once; multiply Alice body0.32 once. Mouse1.4 is inherited physical visual gain, not another magic factor. Animal ground speeds are their own fixed profiles."
+  },
+  "actors": {
+    "alice": {
+      "bodyScale": 0.32,
+      "physicalGain": 1,
+      "standingHeightWorld": 180,
+      "walkSpeed": 235,
+      "runSpeed": 650,
+      "reference": "Unchanged approved hall profile; bodyScale applies once."
+    },
+    "mouse": {
+      "bodyScale": 1,
+      "physicalGain": 1.4,
+      "standingHeightWorld": 18,
+      "walkSpeed": 140,
+      "runSpeed": 270,
+      "reference": "S6 side/swim sprites and140 reference walking speed retained. New back poses only."
+    },
+    "dodo": {
+      "bodyScale": 1,
+      "physicalGain": 1,
+      "standingHeightWorld": 56,
+      "walkSpeed": 64,
+      "runSpeed": 128
+    },
+    "lory": {
+      "bodyScale": 1,
+      "physicalGain": 1,
+      "standingHeightWorld": 36,
+      "walkSpeed": 60,
+      "runSpeed": 120
+    },
+    "eaglet": {
+      "bodyScale": 1,
+      "physicalGain": 1,
+      "standingHeightWorld": 42,
+      "walkSpeed": 60,
+      "runSpeed": 120
+    }
+  },
+  "anchors": {
+    "aliceInherited": {
+      "sourcePoint": [
+        838,
+        724
+      ],
+      "point": [
+        1676,
+        1448
+      ],
+      "surface": "water"
+    },
+    "mouseInherited": {
+      "sourcePoint": [
+        794,
+        724
+      ],
+      "point": [
+        1588,
+        1448
+      ],
+      "surface": "water"
+    },
+    "aliceWaterLip": {
+      "sourcePoint": [
+        758,
+        694
+      ],
+      "point": [
+        1516,
+        1388
+      ],
+      "surface": "water"
+    },
+    "mouseWaterLip": {
+      "sourcePoint": [
+        750,
+        722
+      ],
+      "point": [
+        1500,
+        1444
+      ],
+      "surface": "water"
+    },
+    "aliceDry": {
+      "sourcePoint": [
+        775,
+        668
+      ],
+      "point": [
+        1550,
+        1336
+      ],
+      "surface": "left-dry-floor"
+    },
+    "mouseDry": {
+      "sourcePoint": [
+        750,
+        680
+      ],
+      "point": [
+        1500,
+        1360
+      ],
+      "surface": "left-dry-floor"
+    },
+    "dodoSpawn": {
+      "sourcePoint": [
+        720,
+        610
+      ],
+      "point": [
+        1440,
+        1220
+      ],
+      "surface": "left-dry-floor"
+    },
+    "lorySpawn": {
+      "sourcePoint": [
+        720,
+        624
+      ],
+      "point": [
+        1440,
+        1248
+      ],
+      "surface": "left-dry-floor"
+    },
+    "eagletSpawn": {
+      "sourcePoint": [
+        720,
+        570
+      ],
+      "point": [
+        1440,
+        1140
+      ],
+      "surface": "left-dry-floor"
+    },
+    "dodoMeeting": {
+      "sourcePoint": [
+        779,
+        610
+      ],
+      "point": [
+        1558,
+        1220
+      ],
+      "surface": "left-dry-floor"
+    },
+    "loryMeeting": {
+      "sourcePoint": [
+        754,
+        624
+      ],
+      "point": [
+        1508,
+        1248
+      ],
+      "surface": "left-dry-floor"
+    },
+    "eagletMeeting": {
+      "sourcePoint": [
+        830,
+        616
+      ],
+      "point": [
+        1660,
+        1232
+      ],
+      "surface": "left-dry-floor"
+    },
+    "aliceDoorWait": {
+      "sourcePoint": [
+        795,
+        521
+      ],
+      "point": [
+        1590,
+        1042
+      ],
+      "surface": "left-dry-floor"
+    },
+    "mouseDoorWait": {
+      "sourcePoint": [
+        768,
+        546
+      ],
+      "point": [
+        1536,
+        1092
+      ],
+      "surface": "left-dry-floor"
+    },
+    "dodoDoorContact": {
+      "sourcePoint": [
+        751,
+        448
+      ],
+      "point": [
+        1502,
+        896
+      ],
+      "surface": "left-door-top-stone-step"
+    },
+    "loryDoorWait": {
+      "sourcePoint": [
+        753,
+        522
+      ],
+      "point": [
+        1506,
+        1044
+      ],
+      "surface": "left-dry-floor"
+    },
+    "eagletDoorWait": {
+      "sourcePoint": [
+        834,
+        516
+      ],
+      "point": [
+        1668,
+        1032
+      ],
+      "surface": "left-dry-floor"
+    }
+  },
+  "spawns": {
+    "dodo": {
+      "anchor": "dodoSpawn",
+      "from": "continuous left dry-floor frame edge, not right-hand water",
+      "retroFadeMs": 2000,
+      "visibleWhileEmerging": true,
+      "afterAliceAndMouseDry": true
+    },
+    "lory": {
+      "anchor": "lorySpawn",
+      "from": "continuous left dry-floor frame edge, not right-hand water",
+      "retroFadeMs": 2000,
+      "visibleWhileEmerging": true,
+      "afterAliceAndMouseDry": true
+    },
+    "eaglet": {
+      "anchor": "eagletSpawn",
+      "from": "continuous left dry-floor frame edge, not right-hand water",
+      "retroFadeMs": 2000,
+      "visibleWhileEmerging": true,
+      "afterAliceAndMouseDry": true
+    }
+  },
+  "walkPaths": {
+    "alice-to-left-lip": {
+      "actor": "alice",
+      "from": "aliceInherited",
+      "to": "aliceWaterLip",
+      "beat": 4,
+      "surface": "inherited-closed-lagoon",
+      "mode": "swim",
+      "sourceWaypoints": [
+        [
+          838,
+          724
+        ],
+        [
+          804,
+          710
+        ],
+        [
+          776,
+          700
+        ],
+        [
+          758,
+          694
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1676,
+          "y": 1448
+        },
+        {
+          "x": 1608,
+          "y": 1420
+        },
+        {
+          "x": 1552,
+          "y": 1400
+        },
+        {
+          "x": 1516,
+          "y": 1388
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 170.9507121546955,
+      "durationMs": 5000,
+      "linearArcSpeedWorldPerSecond": 34.190142430939105,
+      "aquaticPolicy": "Aquatic common-arrival rhythm proposal; distinct from ground walk/run. Continuous arc-speed, no pauses at bends."
+    },
+    "mouse-to-left-lip": {
+      "actor": "mouse",
+      "from": "mouseInherited",
+      "to": "mouseWaterLip",
+      "beat": 4,
+      "surface": "inherited-closed-lagoon",
+      "mode": "swim",
+      "sourceWaypoints": [
+        [
+          794,
+          724
+        ],
+        [
+          750,
+          722
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1588,
+          "y": 1448
+        },
+        {
+          "x": 1500,
+          "y": 1444
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 88.09086218218096,
+      "durationMs": 5000,
+      "linearArcSpeedWorldPerSecond": 17.61817243643619,
+      "aquaticPolicy": "Aquatic common-arrival rhythm proposal; distinct from ground walk/run. Continuous arc-speed, no pauses at bends."
+    },
+    "alice-emerge-left": {
+      "actor": "alice",
+      "from": "aliceWaterLip",
+      "to": "aliceDry",
+      "beat": 5,
+      "surface": "left-water-lip-to-dry-floor",
+      "mode": "wade",
+      "sourceWaypoints": [
+        [
+          758,
+          694
+        ],
+        [
+          760,
+          677
+        ],
+        [
+          775,
+          668
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1516,
+          "y": 1388
+        },
+        {
+          "x": 1520,
+          "y": 1354
+        },
+        {
+          "x": 1550,
+          "y": 1336
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 69.22019690631919,
+      "durationMs": 4000,
+      "policy": "Complete emergence and unfolded legs with authored existing rising/standing poses. Feet and hand supports must stay aligned; no click advances this action."
+    },
+    "mouse-emerge-left": {
+      "actor": "mouse",
+      "from": "mouseWaterLip",
+      "to": "mouseDry",
+      "beat": 5,
+      "surface": "left-water-lip-to-dry-floor",
+      "mode": "wade",
+      "sourceWaypoints": [
+        [
+          750,
+          722
+        ],
+        [
+          750,
+          684
+        ],
+        [
+          750,
+          680
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1500,
+          "y": 1444
+        },
+        {
+          "x": 1500,
+          "y": 1368
+        },
+        {
+          "x": 1500,
+          "y": 1360
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 84,
+      "durationMs": 4000,
+      "policy": "Complete emergence and unfolded legs with authored existing rising/standing poses. Feet and hand supports must stay aligned; no click advances this action."
+    },
+    "dodo-enter-left": {
+      "actor": "dodo",
+      "from": "dodoSpawn",
+      "to": "dodoMeeting",
+      "beat": 8,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          720,
+          610
+        ],
+        [
+          779,
+          610
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1440,
+          "y": 1220
+        },
+        {
+          "x": 1558,
+          "y": 1220
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 118,
+      "durationMs": 1784.274193548387,
+      "speed": 64,
+      "runSpeed": 128,
+      "bodyFactor": 1,
+      "physicalGainIsVisualOnly": 1,
+      "scaleKnots": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "facingBySegment": [
+        "right"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1440,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1443.3066666666666,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1446.6133333333332,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1449.92,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1453.2266666666667,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1456.5333333333333,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1459.84,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1463.1466666666668,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1466.4533333333334,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1469.76,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1473.0666666666666,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1476.3733333333334,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1479.68,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1482.9866666666667,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1486.2933333333333,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1489.6,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1492.9066666666668,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1496.2133333333334,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1499.52,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1502.8266666666666,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1506.1333333333334,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1509.44,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1100,
+          "point": [
+            1512.7466666666667,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1150,
+          "point": [
+            1516.0533333333333,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1200,
+          "point": [
+            1519.36,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1250,
+          "point": [
+            1522.6666666666667,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1300,
+          "point": [
+            1525.9733333333334,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1350,
+          "point": [
+            1529.28,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1400,
+          "point": [
+            1532.5866666666666,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1450,
+          "point": [
+            1535.8933333333334,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1500,
+          "point": [
+            1539.2,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1550,
+          "point": [
+            1542.5066666666667,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1600,
+          "point": [
+            1545.8133333333333,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1650,
+          "point": [
+            1549.12,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1700,
+          "point": [
+            1552.4266666666667,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1750,
+          "point": [
+            1555.7333333333333,
+            1220
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1784.274193548387,
+          "point": [
+            1558,
+            1220
+          ],
+          "facing": "right"
+        }
+      ],
+      "startDelayMs": 0
+    },
+    "lory-enter-left": {
+      "actor": "lory",
+      "from": "lorySpawn",
+      "to": "loryMeeting",
+      "beat": 8,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          720,
+          624
+        ],
+        [
+          754,
+          624
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1440,
+          "y": 1248
+        },
+        {
+          "x": 1508,
+          "y": 1248
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 68,
+      "durationMs": 1077.3130544993662,
+      "speed": 60,
+      "runSpeed": 120,
+      "bodyFactor": 1,
+      "physicalGainIsVisualOnly": 1,
+      "scaleKnots": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "facingBySegment": [
+        "right"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1440,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1443.156,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1446.312,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1449.468,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1452.624,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1455.78,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1458.936,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1462.092,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1465.248,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1468.404,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1471.56,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1474.716,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1477.872,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1481.028,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1484.184,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1487.34,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1490.496,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1493.652,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1496.808,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1499.964,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1503.1200000000001,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1506.276,
+            1248
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1077.3130544993662,
+          "point": [
+            1508,
+            1248
+          ],
+          "facing": "right"
+        }
+      ],
+      "startDelayMs": 1400
+    },
+    "eaglet-enter-left": {
+      "actor": "eaglet",
+      "from": "eagletSpawn",
+      "to": "eagletMeeting",
+      "beat": 8,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          720,
+          570
+        ],
+        [
+          830,
+          570
+        ],
+        [
+          830,
+          616
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1440,
+          "y": 1140
+        },
+        {
+          "x": 1660,
+          "y": 1140
+        },
+        {
+          "x": 1660,
+          "y": 1232
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 312,
+      "durationMs": 5259.112864310688,
+      "speed": 60,
+      "runSpeed": 120,
+      "bodyFactor": 1,
+      "physicalGainIsVisualOnly": 1,
+      "scaleKnots": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "facingBySegment": [
+        "right",
+        "front"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1440,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1442.94,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1445.88,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1448.82,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1451.76,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1454.7,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1457.64,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1460.58,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1463.52,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1466.46,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1469.4,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1472.34,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1475.28,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1478.22,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1481.16,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1484.1,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1487.04,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1489.98,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1492.92,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1495.86,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1498.8,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1501.74,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1100,
+          "point": [
+            1504.68,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1150,
+          "point": [
+            1507.62,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1200,
+          "point": [
+            1510.56,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1250,
+          "point": [
+            1513.5,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1300,
+          "point": [
+            1516.44,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1350,
+          "point": [
+            1519.38,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1400,
+          "point": [
+            1522.32,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1450,
+          "point": [
+            1525.26,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1500,
+          "point": [
+            1528.2,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1550,
+          "point": [
+            1531.14,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1600,
+          "point": [
+            1534.08,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1650,
+          "point": [
+            1537.02,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1700,
+          "point": [
+            1539.96,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1750,
+          "point": [
+            1542.9,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1800,
+          "point": [
+            1545.84,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1850,
+          "point": [
+            1548.78,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1900,
+          "point": [
+            1551.72,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 1950,
+          "point": [
+            1554.66,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2000,
+          "point": [
+            1557.6,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2050,
+          "point": [
+            1560.54,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2100,
+          "point": [
+            1563.48,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2150,
+          "point": [
+            1566.42,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2200,
+          "point": [
+            1569.36,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2250,
+          "point": [
+            1572.3,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2300,
+          "point": [
+            1575.24,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2350,
+          "point": [
+            1578.18,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2400,
+          "point": [
+            1581.12,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2450,
+          "point": [
+            1584.06,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2500,
+          "point": [
+            1587,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2550,
+          "point": [
+            1589.94,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2600,
+          "point": [
+            1592.88,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2650,
+          "point": [
+            1595.82,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2700,
+          "point": [
+            1598.76,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2750,
+          "point": [
+            1601.7,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2800,
+          "point": [
+            1604.6399999999999,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2850,
+          "point": [
+            1607.58,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2900,
+          "point": [
+            1610.52,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 2950,
+          "point": [
+            1613.46,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3000,
+          "point": [
+            1616.4,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3050,
+          "point": [
+            1619.34,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3100,
+          "point": [
+            1622.28,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3150,
+          "point": [
+            1625.22,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3200,
+          "point": [
+            1628.16,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3250,
+          "point": [
+            1631.1,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3300,
+          "point": [
+            1634.04,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3350,
+          "point": [
+            1636.98,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3400,
+          "point": [
+            1639.92,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3450,
+          "point": [
+            1642.86,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3500,
+          "point": [
+            1645.8,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3550,
+          "point": [
+            1648.74,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3600,
+          "point": [
+            1651.68,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3650,
+          "point": [
+            1654.62,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3700,
+          "point": [
+            1657.56,
+            1140
+          ],
+          "facing": "right"
+        },
+        {
+          "ms": 3750,
+          "point": [
+            1660,
+            1140.5000850436554
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 3800,
+          "point": [
+            1660,
+            1143.4440281755603
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 3850,
+          "point": [
+            1660,
+            1146.3938650855425
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 3900,
+          "point": [
+            1660,
+            1149.3496075729536
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 3950,
+          "point": [
+            1660,
+            1152.3112674607676
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4000,
+          "point": [
+            1660,
+            1155.2788565956275
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4050,
+          "point": [
+            1660,
+            1158.2523868478943
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4100,
+          "point": [
+            1660,
+            1161.2318701116928
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4150,
+          "point": [
+            1660,
+            1164.2173183049604
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4200,
+          "point": [
+            1660,
+            1167.208743369493
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4250,
+          "point": [
+            1660,
+            1170.2061572709956
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4300,
+          "point": [
+            1660,
+            1173.2095719991275
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4350,
+          "point": [
+            1660,
+            1176.218999567552
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4400,
+          "point": [
+            1660,
+            1179.2344520139827
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4450,
+          "point": [
+            1660,
+            1182.2559414002337
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4500,
+          "point": [
+            1660,
+            1185.283479812267
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4550,
+          "point": [
+            1660,
+            1188.3170793602396
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4600,
+          "point": [
+            1660,
+            1191.3567521785542
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4650,
+          "point": [
+            1660,
+            1194.402510425906
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4700,
+          "point": [
+            1660,
+            1197.454366285332
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4750,
+          "point": [
+            1660,
+            1200.5123319642598
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4800,
+          "point": [
+            1660,
+            1203.576419694556
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4850,
+          "point": [
+            1660,
+            1206.646641732576
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4900,
+          "point": [
+            1660,
+            1209.7230103592117
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 4950,
+          "point": [
+            1660,
+            1212.8055378799415
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 5000,
+          "point": [
+            1660,
+            1215.8942366248803
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 5050,
+          "point": [
+            1660,
+            1218.9891189488267
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 5100,
+          "point": [
+            1660,
+            1222.090197231314
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 5150,
+          "point": [
+            1660,
+            1225.1974838766598
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 5200,
+          "point": [
+            1660,
+            1228.310991314015
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 5250,
+          "point": [
+            1660,
+            1231.4307319974127
+          ],
+          "facing": "front"
+        },
+        {
+          "ms": 5259.112864310688,
+          "point": [
+            1660,
+            1232
+          ],
+          "facing": "front"
+        }
+      ],
+      "startDelayMs": 0
+    },
+    "alice-to-door": {
+      "actor": "alice",
+      "from": "aliceDry",
+      "to": "aliceDoorWait",
+      "beat": 15,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          775,
+          668
+        ],
+        [
+          782,
+          622
+        ],
+        [
+          789,
+          574
+        ],
+        [
+          795,
+          521
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1550,
+          "y": 1336
+        },
+        {
+          "x": 1564,
+          "y": 1244
+        },
+        {
+          "x": 1578,
+          "y": 1148
+        },
+        {
+          "x": 1590,
+          "y": 1042
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 296.75166650289066,
+      "durationMs": 3908.5969578218487,
+      "speed": 235,
+      "runSpeed": 650,
+      "bodyFactor": 0.32,
+      "physicalGainIsVisualOnly": 1,
+      "scaleKnots": [
+        [
+          852,
+          0.168544
+        ],
+        [
+          900,
+          0.21760000000000002
+        ],
+        [
+          960,
+          0.2688
+        ],
+        [
+          1020,
+          0.28800000000000003
+        ],
+        [
+          1200,
+          0.3264
+        ],
+        [
+          1440,
+          0.3776
+        ]
+      ],
+      "facingBySegment": [
+        "back",
+        "back",
+        "back"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1550,
+            1336
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1550.62748400949,
+            1331.8765336519236
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1551.2534149522348,
+            1327.7632731710282
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1551.8777966721834,
+            1323.66019329708
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1552.5006330037704,
+            1319.5672688323657
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1553.12192777194,
+            1315.4844746415383
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1553.7416847921688,
+            1311.4117856514622
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1554.3599078704908,
+            1307.3491768510603
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1554.9766008035194,
+            1303.2966232911585
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1555.5917673784706,
+            1299.2541000843353
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1556.2054113731879,
+            1295.2215824047653
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1556.817536556163,
+            1291.1990454880706
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1557.4281466865618,
+            1287.1864646311656
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1558.0372455142447,
+            1283.1838151921072
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1558.6448367797914,
+            1279.1910725899427
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1559.2509242145236,
+            1275.2082123045586
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1559.855511540528,
+            1271.2352098765311
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1560.4586024706778,
+            1267.2720409069748
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1561.0602007086575,
+            1263.318681057393
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1561.6603099489848,
+            1259.3751060495288
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1562.2589338770324,
+            1255.4412916652159
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1562.8560761690521,
+            1251.5172137462287
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1100,
+          "point": [
+            1563.4517404921967,
+            1247.6028481941362
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1150,
+          "point": [
+            1564.0440574304569,
+            1243.6978919054384
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1200,
+          "point": [
+            1564.6126046216152,
+            1239.7992825946385
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1250,
+          "point": [
+            1565.1797433191964,
+            1235.91033152551
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1300,
+          "point": [
+            1565.74547701254,
+            1232.031014771154
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1350,
+          "point": [
+            1566.309809182341,
+            1228.1613084639469
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1400,
+          "point": [
+            1566.8727433006718,
+            1224.301188795393
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1450,
+          "point": [
+            1567.434282831003,
+            1220.4506320159794
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1500,
+          "point": [
+            1567.994431228225,
+            1216.609614435029
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1550,
+          "point": [
+            1568.5531919386692,
+            1212.7781124205549
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1600,
+          "point": [
+            1569.110568400129,
+            1208.956102399115
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1650,
+          "point": [
+            1569.6665640418819,
+            1205.1435608556674
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1700,
+          "point": [
+            1570.2211822847091,
+            1201.3404643334243
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1750,
+          "point": [
+            1570.7744265409174,
+            1197.5467894337098
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1800,
+          "point": [
+            1571.3263002143603,
+            1193.7625128158145
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1850,
+          "point": [
+            1571.8768067004592,
+            1189.987611196852
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1900,
+          "point": [
+            1572.4259493862228,
+            1186.2220613516158
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1950,
+          "point": [
+            1572.9737316502697,
+            1182.4658401124373
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2000,
+          "point": [
+            1573.5201568628481,
+            1178.7189243690414
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2050,
+          "point": [
+            1574.0652283858574,
+            1174.981291068406
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2100,
+          "point": [
+            1574.608949572868,
+            1171.2529172146196
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2150,
+          "point": [
+            1575.1513237691422,
+            1167.5337798687392
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2200,
+          "point": [
+            1575.6923543116552,
+            1163.8238561486503
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2250,
+          "point": [
+            1576.232044529115,
+            1160.1231232289254
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2300,
+          "point": [
+            1576.7703977419837,
+            1156.4315583406833
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2350,
+          "point": [
+            1577.307417262497,
+            1152.7491387714497
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2400,
+          "point": [
+            1577.843106394685,
+            1149.0758418650175
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2450,
+          "point": [
+            1578.2942402589986,
+            1145.4008777121794
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2500,
+          "point": [
+            1578.7097450058645,
+            1141.7305857815309
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2550,
+          "point": [
+            1579.1242161192665,
+            1138.0694242798115
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2600,
+          "point": [
+            1579.5376561705311,
+            1134.4173704936425
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2650,
+          "point": [
+            1579.9500677245871,
+            1130.774401766147
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2700,
+          "point": [
+            1580.3614533399834,
+            1127.1404954968123
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2750,
+          "point": [
+            1580.7718155689042,
+            1123.5156291413468
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2800,
+          "point": [
+            1581.181156957184,
+            1119.8997802115416
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2850,
+          "point": [
+            1581.5894800443248,
+            1116.292926275131
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2900,
+          "point": [
+            1581.996787363511,
+            1112.6950449556534
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2950,
+          "point": [
+            1582.403081441625,
+            1109.1061139323112
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3000,
+          "point": [
+            1582.8083647992642,
+            1105.526110939834
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3050,
+          "point": [
+            1583.212639950754,
+            1101.95501376834
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3100,
+          "point": [
+            1583.6159094041664,
+            1098.3928002631974
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3150,
+          "point": [
+            1584.0181756613335,
+            1094.8394483248876
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3200,
+          "point": [
+            1584.419441217864,
+            1091.2949359088682
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3250,
+          "point": [
+            1584.8197085631582,
+            1087.759241025436
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3300,
+          "point": [
+            1585.2189801804236,
+            1084.2323417395912
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3350,
+          "point": [
+            1585.6172585466907,
+            1080.7142161708996
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3400,
+          "point": [
+            1586.0145461328273,
+            1077.2048424933591
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3450,
+          "point": [
+            1586.4108454035552,
+            1073.7041989352626
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3500,
+          "point": [
+            1586.8061588174644,
+            1070.2122637790637
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3550,
+          "point": [
+            1587.2004888270292,
+            1066.7290153612423
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3600,
+          "point": [
+            1587.5938378786225,
+            1063.2544320721686
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3650,
+          "point": [
+            1587.9862084125316,
+            1059.7884923559714
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3700,
+          "point": [
+            1588.3776028629734,
+            1056.3311747104024
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3750,
+          "point": [
+            1588.768023658109,
+            1052.8824576867034
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3800,
+          "point": [
+            1589.1574732200595,
+            1049.4423198894742
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3850,
+          "point": [
+            1589.5459539649203,
+            1046.010739976538
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3900,
+          "point": [
+            1589.9334683027762,
+            1042.5876966588107
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3908.5969578218487,
+          "point": [
+            1590,
+            1042
+          ],
+          "facing": "back"
+        }
+      ],
+      "startDelayMs": 1852.1791851275598
+    },
+    "mouse-to-door": {
+      "actor": "mouse",
+      "from": "mouseDry",
+      "to": "mouseDoorWait",
+      "beat": 15,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          750,
+          680
+        ],
+        [
+          750,
+          611
+        ],
+        [
+          750,
+          570
+        ],
+        [
+          768,
+          546
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1500,
+          "y": 1360
+        },
+        {
+          "x": 1500,
+          "y": 1222
+        },
+        {
+          "x": 1500,
+          "y": 1140
+        },
+        {
+          "x": 1536,
+          "y": 1092
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 280,
+      "speed": 140,
+      "runSpeed": 270,
+      "bodyFactor": 1,
+      "physicalGainIsVisualOnly": 1.4,
+      "scaleKnots": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "facingBySegment": [
+        "back",
+        "back",
+        "back"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1500,
+            1360
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1500,
+            1352.131706963242
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1500,
+            1344.3000470834736
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1500,
+            1336.5048498042365
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1500,
+            1328.745945363149
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1500,
+            1321.0231647882074
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1500,
+            1313.3363398941071
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1500,
+            1305.6853032785805
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1500,
+            1298.0698883187497
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1500,
+            1290.489929167499
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1500,
+            1282.9452607498627
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1500,
+            1275.435718759431
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1500,
+            1267.9611396547698
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1500,
+            1260.5213606558611
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1500,
+            1253.1162197405574
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1500,
+            1245.7455556410525
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1500,
+            1238.4092078403703
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1500,
+            1231.1070165688689
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1500,
+            1223.8388228007607
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1500,
+            1216.6044682506497
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1500,
+            1209.4037953700845
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1500,
+            1202.2366473441264
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1100,
+          "point": [
+            1500,
+            1195.1028680879351
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1150,
+          "point": [
+            1500,
+            1188.0023022433695
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1200,
+          "point": [
+            1500,
+            1180.9347951756038
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1250,
+          "point": [
+            1500,
+            1173.9001929697602
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1300,
+          "point": [
+            1500,
+            1166.8983424275573
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1350,
+          "point": [
+            1500,
+            1159.9290910639731
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1400,
+          "point": [
+            1500,
+            1152.9922871039248
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1450,
+          "point": [
+            1500,
+            1146.0877794789628
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1500,
+          "point": [
+            1500.4707744362495,
+            1139.3723007516671
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1550,
+          "point": [
+            1504.5773465074485,
+            1133.8968713234021
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1600,
+          "point": [
+            1508.668615958912,
+            1128.4418453881174
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1650,
+          "point": [
+            1512.744639813911,
+            1123.0071469147856
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1700,
+          "point": [
+            1516.805474883226,
+            1117.5927001556988
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1750,
+          "point": [
+            1520.8511777659396,
+            1112.1984296454139
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1800,
+          "point": [
+            1524.881804850225,
+            1106.8242601997
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1850,
+          "point": [
+            1528.8974123141325,
+            1101.4701169144903
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1900,
+          "point": [
+            1532.8980561263709,
+            1096.135925164839
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1938.896945424985,
+          "point": [
+            1536,
+            1092
+          ],
+          "facing": "back"
+        }
+      ],
+      "startDelayMs": 3821.8791975244235,
+      "durationMs": 1938.896945424985
+    },
+    "dodo-to-door": {
+      "actor": "dodo",
+      "from": "dodoMeeting",
+      "to": "dodoDoorContact",
+      "beat": 15,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          779,
+          610
+        ],
+        [
+          775,
+          549
+        ],
+        [
+          760,
+          478
+        ],
+        [
+          751,
+          448
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1558,
+          "y": 1220
+        },
+        {
+          "x": 1550,
+          "y": 1098
+        },
+        {
+          "x": 1520,
+          "y": 956
+        },
+        {
+          "x": 1502,
+          "y": 896
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 330.03827323030055,
+      "durationMs": 5760.7761429494085,
+      "speed": 64,
+      "runSpeed": 128,
+      "bodyFactor": 1,
+      "physicalGainIsVisualOnly": 1,
+      "scaleKnots": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "facingBySegment": [
+        "back",
+        "back",
+        "back"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1558,
+            1220
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1557.783864210326,
+            1216.7039292074746
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1557.5681880328225,
+            1213.4148675005424
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1557.3529704901248,
+            1210.1327999744017
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1557.1382106069473,
+            1206.8577117559462
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1556.9239074100785,
+            1203.5895880036971
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1556.7100599283763,
+            1200.328413907736
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1556.4966671927632,
+            1197.0741746896372
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1556.2837282362232,
+            1193.826855602402
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1556.0712420937962,
+            1190.5864419303912
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1555.8592078025742,
+            1187.3529189892577
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1555.6476244016972,
+            1184.1262721258813
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1555.4364909323476,
+            1180.906486718301
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1555.2258064377475,
+            1177.6935481756498
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1555.0155699631534,
+            1174.487441938088
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1554.8057805558517,
+            1171.2881534767375
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1554.5964372651551,
+            1168.0956682936155
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1554.387539142398,
+            1164.9099719215694
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1554.179085240932,
+            1161.731049924211
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1553.9710746161213,
+            1158.5588878958506
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1553.76350632534,
+            1155.393471461433
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1553.5563794279653,
+            1152.2347862764705
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1100,
+          "point": [
+            1553.3496929853757,
+            1149.0828180269793
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1150,
+          "point": [
+            1553.1434460609453,
+            1145.937552429415
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1200,
+          "point": [
+            1552.9376377200397,
+            1142.798975230606
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1250,
+          "point": [
+            1552.7322670300125,
+            1139.6670722076906
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1300,
+          "point": [
+            1552.5273330602001,
+            1136.541829168052
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1350,
+          "point": [
+            1552.3228348819182,
+            1133.4232319492535
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1400,
+          "point": [
+            1552.1187715684573,
+            1130.3112664189753
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1450,
+          "point": [
+            1551.9151421950787,
+            1127.2059184749498
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1500,
+          "point": [
+            1551.7119458390098,
+            1124.107174044898
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1550,
+          "point": [
+            1551.5091815794403,
+            1121.0150190864651
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1600,
+          "point": [
+            1551.3068484975186,
+            1117.9294395871577
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1650,
+          "point": [
+            1551.1049456763462,
+            1114.8504215642797
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1700,
+          "point": [
+            1550.903472200975,
+            1111.7779510648693
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1750,
+          "point": [
+            1550.7024271584023,
+            1108.7120141656358
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1800,
+          "point": [
+            1550.501809637567,
+            1105.652596972896
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1850,
+          "point": [
+            1550.3016187293451,
+            1102.5996856225117
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1900,
+          "point": [
+            1550.101853526546,
+            1099.553266279827
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1950,
+          "point": [
+            1549.6920338725195,
+            1096.5422936632583
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2000,
+          "point": [
+            1549.0636268366186,
+            1093.5678336933279
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2050,
+          "point": [
+            1548.436530081935,
+            1090.5995757211592
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2100,
+          "point": [
+            1547.810740876423,
+            1087.6375068150687
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2150,
+          "point": [
+            1547.186256493733,
+            1084.681614070336
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2200,
+          "point": [
+            1546.5630742132003,
+            1081.7318846091482
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2250,
+          "point": [
+            1545.9411913198333,
+            1078.7883055805437
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2300,
+          "point": [
+            1545.3206051043007,
+            1075.8508641603564
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2350,
+          "point": [
+            1544.701312862921,
+            1072.9195475511592
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2400,
+          "point": [
+            1544.08331189765,
+            1069.9943429822094
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2450,
+          "point": [
+            1543.4665995160688,
+            1067.0752377093918
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2500,
+          "point": [
+            1542.8511730313726,
+            1064.1622190151638
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2550,
+          "point": [
+            1542.2370297623593,
+            1061.2552742085004
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2600,
+          "point": [
+            1541.6241670334166,
+            1058.3543906248378
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2650,
+          "point": [
+            1541.0125821745112,
+            1055.4595556260197
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2700,
+          "point": [
+            1540.4022725211776,
+            1052.5707566002404
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2750,
+          "point": [
+            1539.7932354145053,
+            1049.6879809619916
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2800,
+          "point": [
+            1539.1854682011283,
+            1046.8112161520066
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2850,
+          "point": [
+            1538.5789682332124,
+            1043.9404496372058
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2900,
+          "point": [
+            1537.9737328684455,
+            1041.0756689106422
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2950,
+          "point": [
+            1537.369759470024,
+            1038.216861491447
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3000,
+          "point": [
+            1536.7670454066426,
+            1035.3640149247744
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3050,
+          "point": [
+            1536.1655880524822,
+            1032.5171167817489
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3100,
+          "point": [
+            1535.5653847871993,
+            1029.6761546594093
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3150,
+          "point": [
+            1534.9664329959135,
+            1026.8411161806566
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3200,
+          "point": [
+            1534.368730069197,
+            1024.0119889941984
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3250,
+          "point": [
+            1533.7722734030626,
+            1021.1887607744959
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3300,
+          "point": [
+            1533.1771641864668,
+            1018.3719104826097
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3350,
+          "point": [
+            1532.5838601712937,
+            1015.5636048107906
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3400,
+          "point": [
+            1531.9924108212226,
+            1012.7640778871206
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3450,
+          "point": [
+            1531.4028103385806,
+            1009.9733022692812
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3500,
+          "point": [
+            1530.815052943818,
+            1007.1912506007382
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3550,
+          "point": [
+            1530.2291328754523,
+            1004.4178956104738
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3600,
+          "point": [
+            1529.6450443900112,
+            1001.6532101127193
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3650,
+          "point": [
+            1529.0627817619766,
+            998.8971670066888
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3700,
+          "point": [
+            1528.4823392837282,
+            996.1497392763131
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3750,
+          "point": [
+            1527.9037112654876,
+            993.410899989975
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3800,
+          "point": [
+            1527.3268920352632,
+            990.6806223002453
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3850,
+          "point": [
+            1526.751875938793,
+            987.9588794436202
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3900,
+          "point": [
+            1526.178657339491,
+            985.2456447402578
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3950,
+          "point": [
+            1525.6072306183912,
+            982.5408915937181
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4000,
+          "point": [
+            1525.0375901740917,
+            979.8445934907006
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4050,
+          "point": [
+            1524.469730422701,
+            977.1567240007855
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4100,
+          "point": [
+            1523.9036457977834,
+            974.4772567761746
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4150,
+          "point": [
+            1523.3393307503027,
+            971.8061655514324
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4200,
+          "point": [
+            1522.7767797485697,
+            969.1434241432294
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4250,
+          "point": [
+            1522.215987278187,
+            966.4890064500846
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4300,
+          "point": [
+            1521.6569478419951,
+            963.8428864521105
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4350,
+          "point": [
+            1521.0996559600192,
+            961.2050382107574
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4400,
+          "point": [
+            1520.5445313492523,
+            958.5774483864614
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4450,
+          "point": [
+            1519.9912703379214,
+            955.9709011264046
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4500,
+          "point": [
+            1519.2318664171792,
+            953.4395547239304
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4550,
+          "point": [
+            1518.4786441500123,
+            950.9288138333743
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4600,
+          "point": [
+            1517.7315532169007,
+            948.4385107230024
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4650,
+          "point": [
+            1516.990543707932,
+            945.96847902644
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4700,
+          "point": [
+            1516.2555661194676,
+            943.5185537315585
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4750,
+          "point": [
+            1515.5265713508352,
+            941.0885711694506
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4800,
+          "point": [
+            1514.803510701049,
+            938.6783690034966
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4850,
+          "point": [
+            1514.086335865556,
+            936.2877862185201
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4900,
+          "point": [
+            1513.374998933009,
+            933.9166631100297
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 4950,
+          "point": [
+            1512.6694523820654,
+            931.5648412735515
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5000,
+          "point": [
+            1511.9696490782137,
+            929.2321635940457
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5050,
+          "point": [
+            1511.2755422706232,
+            926.9184742354109
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5100,
+          "point": [
+            1510.587085589022,
+            924.6236186300735
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5150,
+          "point": [
+            1509.9042330405982,
+            922.3474434686608
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5200,
+          "point": [
+            1509.2269390069282,
+            920.0897966897604
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5250,
+          "point": [
+            1508.5551582409282,
+            917.8505274697607
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5300,
+          "point": [
+            1507.8888458638326,
+            915.629486212775
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5350,
+          "point": [
+            1507.2279573621945,
+            913.4265245406485
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5400,
+          "point": [
+            1506.5724485849134,
+            911.2414952830447
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5450,
+          "point": [
+            1505.9222757402845,
+            909.0742524676145
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5500,
+          "point": [
+            1505.2773953930732,
+            906.9246513102438
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5550,
+          "point": [
+            1504.6377644616146,
+            904.7925482053814
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5600,
+          "point": [
+            1504.0033402149336,
+            902.6778007164453
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5650,
+          "point": [
+            1503.3740802698921,
+            900.5802675663069
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5700,
+          "point": [
+            1502.750204671786,
+            898.5006822392867
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5750,
+          "point": [
+            1502.1323676445716,
+            896.4412254819053
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 5760.7761429494085,
+          "point": [
+            1502,
+            896
+          ],
+          "facing": "back"
+        }
+      ],
+      "startDelayMs": 0,
+      "surfaceSegments": [
+        "left-dry-floor",
+        "left-dry-floor",
+        "existing-door-stone-steps"
+      ]
+    },
+    "lory-to-door": {
+      "actor": "lory",
+      "from": "loryMeeting",
+      "to": "loryDoorWait",
+      "beat": 15,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          754,
+          624
+        ],
+        [
+          750,
+          574
+        ],
+        [
+          753,
+          522
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1508,
+          "y": 1248
+        },
+        {
+          "x": 1500,
+          "y": 1148
+        },
+        {
+          "x": 1506,
+          "y": 1044
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 204.49242277671897,
+      "durationMs": 3469.062966491211,
+      "speed": 60,
+      "runSpeed": 120,
+      "bodyFactor": 1,
+      "physicalGainIsVisualOnly": 1,
+      "scaleKnots": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "facingBySegment": [
+        "back",
+        "back"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1508,
+            1248
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1507.7485747862452,
+            1244.857184828064
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1507.4976503221585,
+            1241.7206290269803
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1507.2472256104245,
+            1238.5903201303067
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1506.9972996557144,
+            1235.46624569643
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1506.7478714646813,
+            1232.3483933085158
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1506.498940045957,
+            1229.23675057446
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1506.2505044101472,
+            1226.1313051268392
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1506.002563569829,
+            1223.0320446228611
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1505.7551165395453,
+            1219.9389567443163
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1505.5081623358024,
+            1216.8520291975287
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1505.2616999770646,
+            1213.771249713307
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1505.0157284837517,
+            1210.6966060468953
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1504.770246878234,
+            1207.6280859779254
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1504.5252541848295,
+            1204.5656773103674
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1504.2807494297986,
+            1201.5093678724818
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1504.0367316413417,
+            1198.459145516771
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1503.7931998495944,
+            1195.4149981199303
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1503.550153086624,
+            1192.376913582801
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1503.3075903864258,
+            1189.3448798303211
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1503.0655107849184,
+            1186.3188848114783
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1502.8239133199409,
+            1183.298916499261
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1100,
+          "point": [
+            1502.582797031249,
+            1180.284962890612
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1150,
+          "point": [
+            1502.3421609605105,
+            1177.277012006379
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1200,
+          "point": [
+            1502.1020041513016,
+            1174.2750518912687
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1250,
+          "point": [
+            1501.862325649104,
+            1171.279070613798
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1300,
+          "point": [
+            1501.6231245012998,
+            1168.2890562662474
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1350,
+          "point": [
+            1501.3843997571691,
+            1165.3049969646127
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1400,
+          "point": [
+            1501.1461504678848,
+            1162.3268808485593
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1450,
+          "point": [
+            1500.90837568651,
+            1159.3546960813737
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1500,
+          "point": [
+            1500.6710744679933,
+            1156.388430849917
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1550,
+          "point": [
+            1500.4342458691663,
+            1153.4280733645778
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1600,
+          "point": [
+            1500.197888948738,
+            1150.4736118592255
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1650,
+          "point": [
+            1500.0274437558342,
+            1147.5243082322086
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1700,
+          "point": [
+            1500.1974745122004,
+            1144.5771084551932
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1750,
+          "point": [
+            1500.3671661102837,
+            1141.6357874217474
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1800,
+          "point": [
+            1500.5365192265992,
+            1138.7003334056126
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1850,
+          "point": [
+            1500.7055345363124,
+            1135.7707347039207
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1900,
+          "point": [
+            1500.8742127132416,
+            1132.8469796371471
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1950,
+          "point": [
+            1501.0425544298616,
+            1129.9290565490644
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2000,
+          "point": [
+            1501.2105603573061,
+            1127.0169538066957
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2050,
+          "point": [
+            1501.3782311653692,
+            1124.110659800268
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2100,
+          "point": [
+            1501.5455675225096,
+            1121.210162943166
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2150,
+          "point": [
+            1501.7125700958527,
+            1118.315451671887
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2200,
+          "point": [
+            1501.8792395511928,
+            1115.4265144459932
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2250,
+          "point": [
+            1502.0455765529962,
+            1112.5433397480663
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2300,
+          "point": [
+            1502.2115817644042,
+            1109.6659160836616
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2350,
+          "point": [
+            1502.377255847235,
+            1106.7942319812628
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2400,
+          "point": [
+            1502.5425994619864,
+            1103.928275992235
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2450,
+          "point": [
+            1502.7076132678396,
+            1101.0680366907804
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2500,
+          "point": [
+            1502.87229792266,
+            1098.2135026738918
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2550,
+          "point": [
+            1503.0366540830014,
+            1095.3646625613071
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2600,
+          "point": [
+            1503.2006824041077,
+            1092.521504995465
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2650,
+          "point": [
+            1503.364383539916,
+            1089.6840186414584
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2700,
+          "point": [
+            1503.5277581430582,
+            1086.8521921869897
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2750,
+          "point": [
+            1503.6908068648659,
+            1084.0260143423266
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2800,
+          "point": [
+            1503.85353035537,
+            1081.2054738402555
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2850,
+          "point": [
+            1504.0159292633055,
+            1078.3905594360376
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2900,
+          "point": [
+            1504.1780042361136,
+            1075.5812599073643
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2950,
+          "point": [
+            1504.3397559199436,
+            1072.7775640543111
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3000,
+          "point": [
+            1504.501184959656,
+            1069.9794606992946
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3050,
+          "point": [
+            1504.6622919988254,
+            1067.1869386870271
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3100,
+          "point": [
+            1504.823077679742,
+            1064.3999868844717
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3150,
+          "point": [
+            1504.9835426434154,
+            1061.618594180799
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3200,
+          "point": [
+            1505.1436875295765,
+            1058.8427494873422
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3250,
+          "point": [
+            1505.3035129766797,
+            1056.0724417375523
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3300,
+          "point": [
+            1505.4630196219064,
+            1053.3076598869557
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3350,
+          "point": [
+            1505.622208101167,
+            1050.5483929131078
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3400,
+          "point": [
+            1505.7810790491028,
+            1047.7946298155514
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3450,
+          "point": [
+            1505.93963309909,
+            1045.0463596157713
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3469.062966491211,
+          "point": [
+            1506,
+            1044
+          ],
+          "facing": "back"
+        }
+      ],
+      "startDelayMs": 2291.7131764581977
+    },
+    "eaglet-to-door": {
+      "actor": "eaglet",
+      "from": "eagletMeeting",
+      "to": "eagletDoorWait",
+      "beat": 15,
+      "surface": "left-dry-floor",
+      "mode": "walk",
+      "sourceWaypoints": [
+        [
+          830,
+          616
+        ],
+        [
+          834,
+          565
+        ],
+        [
+          834,
+          516
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 1660,
+          "y": 1232
+        },
+        {
+          "x": 1668,
+          "y": 1130
+        },
+        {
+          "x": 1668,
+          "y": 1032
+        }
+      ],
+      "mandatory": true,
+      "textFree": true,
+      "tapToContinue": false,
+      "maxActorsInWater": 2,
+      "worldLength": 200.3132444994293,
+      "durationMs": 3430.505796644104,
+      "speed": 60,
+      "runSpeed": 120,
+      "bodyFactor": 1,
+      "physicalGainIsVisualOnly": 1,
+      "scaleKnots": [
+        [
+          852,
+          0.5267
+        ],
+        [
+          900,
+          0.68
+        ],
+        [
+          960,
+          0.84
+        ],
+        [
+          1020,
+          0.9
+        ],
+        [
+          1200,
+          1.02
+        ],
+        [
+          1440,
+          1.18
+        ]
+      ],
+      "facingBySegment": [
+        "back",
+        "back"
+      ],
+      "samples": [
+        {
+          "ms": 0,
+          "point": [
+            1660,
+            1232
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 50,
+          "point": [
+            1660.2440260905557,
+            1228.888667345413
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 100,
+          "point": [
+            1660.487566107908,
+            1225.783532124173
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 150,
+          "point": [
+            1660.730621020261,
+            1222.684581991672
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 200,
+          "point": [
+            1660.973191793891,
+            1219.591804627892
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 250,
+          "point": [
+            1661.2152793931486,
+            1216.505187737355
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 300,
+          "point": [
+            1661.4568847804649,
+            1213.424719049074
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 350,
+          "point": [
+            1661.6980089163526,
+            1210.3503863165042
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 400,
+          "point": [
+            1661.9386527594122,
+            1207.282177317495
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 450,
+          "point": [
+            1662.178817266334,
+            1204.2200798542415
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 500,
+          "point": [
+            1662.4185033919032,
+            1201.164081753234
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 550,
+          "point": [
+            1662.6577120890029,
+            1198.1141708652128
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 600,
+          "point": [
+            1662.8964443086184,
+            1195.070335065117
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 650,
+          "point": [
+            1663.13470099984,
+            1192.0325622520377
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 700,
+          "point": [
+            1663.372483109869,
+            1189.00084034917
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 750,
+          "point": [
+            1663.6097915840185,
+            1185.9751573037645
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 800,
+          "point": [
+            1663.8466273657193,
+            1182.9555010870797
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 850,
+          "point": [
+            1664.0829913965229,
+            1179.941859694334
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 900,
+          "point": [
+            1664.3188846161054,
+            1176.9342211446574
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 950,
+          "point": [
+            1664.554307962271,
+            1173.9325734810454
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1000,
+          "point": [
+            1664.789262370956,
+            1170.9369047703103
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1050,
+          "point": [
+            1665.0237487762327,
+            1167.9472031030334
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1100,
+          "point": [
+            1665.2577681103123,
+            1164.9634565935191
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1150,
+          "point": [
+            1665.4913213035493,
+            1161.985653379746
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1200,
+          "point": [
+            1665.7244092844453,
+            1159.0137816233214
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1250,
+          "point": [
+            1665.9570329796525,
+            1156.0478295094324
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1300,
+          "point": [
+            1666.1891933139764,
+            1153.0877852468006
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1350,
+          "point": [
+            1666.4208912103816,
+            1150.1336370676347
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1400,
+          "point": [
+            1666.6521275899936,
+            1147.1853732275829
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1450,
+          "point": [
+            1666.8829033721029,
+            1144.2429820056873
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1500,
+          "point": [
+            1667.1132194741697,
+            1141.3064517043365
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1550,
+          "point": [
+            1667.343076811826,
+            1138.37577064922
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1600,
+          "point": [
+            1667.57247629888,
+            1135.4509271892807
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1650,
+          "point": [
+            1667.80141884732,
+            1132.5319096966696
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1700,
+          "point": [
+            1668,
+            1129.6175357586087
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1750,
+          "point": [
+            1668,
+            1126.701217976979
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1800,
+          "point": [
+            1668,
+            1123.7907270021635
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1850,
+          "point": [
+            1668,
+            1120.8860511921944
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1900,
+          "point": [
+            1668,
+            1117.9871789283645
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 1950,
+          "point": [
+            1668,
+            1115.0940986151809
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2000,
+          "point": [
+            1668,
+            1112.2067986803188
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2050,
+          "point": [
+            1668,
+            1109.3252675745741
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2100,
+          "point": [
+            1668,
+            1106.4494937718189
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2150,
+          "point": [
+            1668,
+            1103.5794657689542
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2200,
+          "point": [
+            1668,
+            1100.7151720858637
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2250,
+          "point": [
+            1668,
+            1097.8566012653694
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2300,
+          "point": [
+            1668,
+            1095.003741873184
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2350,
+          "point": [
+            1668,
+            1092.1565824978659
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2400,
+          "point": [
+            1668,
+            1089.3151117507741
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2450,
+          "point": [
+            1668,
+            1086.479318266022
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2500,
+          "point": [
+            1668,
+            1083.649190700431
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2550,
+          "point": [
+            1668,
+            1080.8247177334881
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2600,
+          "point": [
+            1668,
+            1078.0058880672973
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2650,
+          "point": [
+            1668,
+            1075.1926904265358
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2700,
+          "point": [
+            1668,
+            1072.3851135584098
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2750,
+          "point": [
+            1668,
+            1069.5831462326078
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2800,
+          "point": [
+            1668,
+            1066.786777241257
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2850,
+          "point": [
+            1668,
+            1063.9959953988773
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2900,
+          "point": [
+            1668,
+            1061.210789542338
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 2950,
+          "point": [
+            1668,
+            1058.4311485308117
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3000,
+          "point": [
+            1668,
+            1055.657061245731
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3050,
+          "point": [
+            1668,
+            1052.8885165907427
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3100,
+          "point": [
+            1668,
+            1050.1255034916644
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3150,
+          "point": [
+            1668,
+            1047.3680108964406
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3200,
+          "point": [
+            1668,
+            1044.6160277750967
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3250,
+          "point": [
+            1668,
+            1041.8695431196966
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3300,
+          "point": [
+            1668,
+            1039.1285459442984
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3350,
+          "point": [
+            1668,
+            1036.3930252849093
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3400,
+          "point": [
+            1668,
+            1033.6629701994432
+          ],
+          "facing": "back"
+        },
+        {
+          "ms": 3430.505796644104,
+          "point": [
+            1668,
+            1032
+          ],
+          "facing": "back"
+        }
+      ],
+      "startDelayMs": 2330.2703463053044
+    },
+    "dodo-entry": {
+      "actor": "dodo",
+      "beat": 6,
+      "mode": "run",
+      "speed": 83.2,
+      "waypoints": [
+        {
+          "x": 2000,
+          "y": 1436
+        },
+        {
+          "x": 2006,
+          "y": 1400
+        },
+        {
+          "x": 1998,
+          "y": 1356
+        },
+        {
+          "x": 1986.0144946927537,
+          "y": 1308.057978771015
+        },
+        {
+          "x": 1984,
+          "y": 1300
+        },
+        {
+          "x": 1981.9147067700956,
+          "y": 1294.7867669252391
+        },
+        {
+          "x": 1973.6771621215046,
+          "y": 1274.1929053037613
+        },
+        {
+          "x": 1964,
+          "y": 1250
+        },
+        {
+          "x": 1952.6374342048196,
+          "y": 1235.7967927560244
+        },
+        {
+          "x": 1932,
+          "y": 1210
+        },
+        {
+          "x": 1925.0578931054786,
+          "y": 1205.6611831909242
+        },
+        {
+          "x": 1916,
+          "y": 1200
+        },
+        {
+          "x": 1913.9705525205645,
+          "y": 1198.7315953253528
+        },
+        {
+          "x": 1911.3679644686774,
+          "y": 1197.1049777929234
+        },
+        {
+          "x": 1896.2252496528254,
+          "y": 1187.6407810330159
+        },
+        {
+          "x": 1884,
+          "y": 1180
+        },
+        {
+          "x": 1863.090747945194,
+          "y": 1173.4658587328731
+        },
+        {
+          "x": 1857.5429984673897,
+          "y": 1171.7321870210592
+        },
+        {
+          "x": 1820,
+          "y": 1160
+        },
+        {
+          "x": 1812.8590908471087,
+          "y": 1158.7758441452186
+        },
+        {
+          "x": 1807.0332166880955,
+          "y": 1157.7771228608165
+        },
+        {
+          "x": 1804.0882184355917,
+          "y": 1157.27226601753
+        },
+        {
+          "x": 1793.6411997922078,
+          "y": 1155.481348535807
+        },
+        {
+          "x": 1754.9552871005872,
+          "y": 1148.8494777886722
+        },
+        {
+          "x": 1751.7792398325098,
+          "y": 1148.305012542716
+        },
+        {
+          "x": 1750,
+          "y": 1148
+        },
+        {
+          "x": 1700.3657786610045,
+          "y": 1143.0365778661005
+        },
+        {
+          "x": 1685.0197823954122,
+          "y": 1141.5019782395411
+        },
+        {
+          "x": 1681.1606837473955,
+          "y": 1141.1160683747396
+        },
+        {
+          "x": 1670,
+          "y": 1140
+        },
+        {
+          "x": 1642.2839456638399,
+          "y": 1140
+        },
+        {
+          "x": 1610.0453920907732,
+          "y": 1140
+        },
+        {
+          "x": 1580,
+          "y": 1140
+        },
+        {
+          "x": 1577.924077893295,
+          "y": 1147.5488076607455
+        },
+        {
+          "x": 1565.0178893174102,
+          "y": 1194.480402482145
+        },
+        {
+          "x": 1563.5,
+          "y": 1200
+        },
+        {
+          "x": 1558,
+          "y": 1220
+        }
+      ],
+      "sourceWaypoints": [
+        [
+          1000,
+          718
+        ],
+        [
+          1003,
+          700
+        ],
+        [
+          999,
+          678
+        ],
+        [
+          993.0072473463769,
+          654.0289893855075
+        ],
+        [
+          992,
+          650
+        ],
+        [
+          990.9573533850478,
+          647.3933834626196
+        ],
+        [
+          986.8385810607523,
+          637.0964526518807
+        ],
+        [
+          982,
+          625
+        ],
+        [
+          976.3187171024098,
+          617.8983963780122
+        ],
+        [
+          966,
+          605
+        ],
+        [
+          962.5289465527393,
+          602.8305915954621
+        ],
+        [
+          958,
+          600
+        ],
+        [
+          956.9852762602823,
+          599.3657976626764
+        ],
+        [
+          955.6839822343387,
+          598.5524888964617
+        ],
+        [
+          948.1126248264127,
+          593.8203905165079
+        ],
+        [
+          942,
+          590
+        ],
+        [
+          931.545373972597,
+          586.7329293664366
+        ],
+        [
+          928.7714992336948,
+          585.8660935105296
+        ],
+        [
+          910,
+          580
+        ],
+        [
+          906.4295454235544,
+          579.3879220726093
+        ],
+        [
+          903.5166083440478,
+          578.8885614304082
+        ],
+        [
+          902.0441092177958,
+          578.636133008765
+        ],
+        [
+          896.8205998961039,
+          577.7406742679035
+        ],
+        [
+          877.4776435502936,
+          574.4247388943361
+        ],
+        [
+          875.8896199162549,
+          574.152506271358
+        ],
+        [
+          875,
+          574
+        ],
+        [
+          850.1828893305022,
+          571.5182889330503
+        ],
+        [
+          842.5098911977061,
+          570.7509891197706
+        ],
+        [
+          840.5803418736978,
+          570.5580341873698
+        ],
+        [
+          835,
+          570
+        ],
+        [
+          821.1419728319199,
+          570
+        ],
+        [
+          805.0226960453866,
+          570
+        ],
+        [
+          790,
+          570
+        ],
+        [
+          788.9620389466475,
+          573.7744038303728
+        ],
+        [
+          782.5089446587051,
+          597.2402012410726
+        ],
+        [
+          781.75,
+          600
+        ],
+        [
+          779,
+          610
+        ]
+      ],
+      "segments": [
+        {
+          "step": "alice-c2-way-out-enter-1",
+          "durationMs": 376.43844277053046,
+          "clockStartMs": 0,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-2",
+          "durationMs": 472.08378508411676,
+          "clockStartMs": 376.43844277053046,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-3",
+          "durationMs": 536.0931567607373,
+          "clockStartMs": 848.5222278546472,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-4",
+          "durationMs": 91.64307308112642,
+          "clockStartMs": 1384.6153846153845,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-5",
+          "durationMs": 62.20308076502743,
+          "clockStartMs": 1476.258457696511,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-6",
+          "durationMs": 247.68818510907855,
+          "clockStartMs": 1538.4615384615383,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-7",
+          "durationMs": 295.06923804942426,
+          "clockStartMs": 1786.149723570617,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-8",
+          "durationMs": 208.4867993736337,
+          "clockStartMs": 2081.2189616200412,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-9",
+          "durationMs": 383.5504685360502,
+          "clockStartMs": 2289.705760993675,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-10",
+          "durationMs": 95.97453970104407,
+          "clockStartMs": 2673.2562295297253,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-11",
+          "durationMs": 125.63379383973195,
+          "clockStartMs": 2769.2307692307695,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-12",
+          "durationMs": 28.212360006421896,
+          "clockStartMs": 2894.8645630705014,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-13",
+          "durationMs": 36.21414974807311,
+          "clockStartMs": 2923.0769230769233,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-14",
+          "durationMs": 211.47403536100543,
+          "clockStartMs": 2959.2910728249963,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-15",
+          "durationMs": 171.69484540701748,
+          "clockStartMs": 3170.7651081860017,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-16",
+          "durationMs": 262.12232341707653,
+          "clockStartMs": 3342.4599535930192,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-17",
+          "durationMs": 69.73886859896363,
+          "clockStartMs": 3604.582277010096,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-18",
+          "durationMs": 474.0668350230317,
+          "clockStartMs": 3674.3211456090594,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-19",
+          "durationMs": 87.70071548166715,
+          "clockStartMs": 4148.387980632091,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-20",
+          "durationMs": 71.60361157854962,
+          "clockStartMs": 4236.0886961137585,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-21",
+          "durationMs": 36.21414974807311,
+          "clockStartMs": 4307.6923076923085,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-22",
+          "durationMs": 128.56446111687126,
+          "clockStartMs": 4343.906457440382,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-23",
+          "durationMs": 477.43508322402005,
+          "clockStartMs": 4472.470918557253,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-24",
+          "durationMs": 39.29165984420811,
+          "clockStartMs": 4949.906001781273,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-25",
+          "durationMs": 22.0177371052684,
+          "clockStartMs": 4989.197661625481,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-26",
+          "durationMs": 609.488681998394,
+          "clockStartMs": 5011.215398730749,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-27",
+          "durationMs": 188.85848322713872,
+          "clockStartMs": 5620.704080729143,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-28",
+          "durationMs": 47.52373921635528,
+          "clockStartMs": 5809.562563956282,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-29",
+          "durationMs": 137.51094742927867,
+          "clockStartMs": 5857.086303172638,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-30",
+          "durationMs": 339.92413579474135,
+          "clockStartMs": 5994.597250601916,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-31",
+          "durationMs": 395.3904235315279,
+          "clockStartMs": 6334.521386396657,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-32",
+          "durationMs": 368.49234805206623,
+          "clockStartMs": 6729.911809928185,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-33",
+          "durationMs": 95.77379059141514,
+          "clockStartMs": 7098.4041579802515,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-34",
+          "durationMs": 584.6745033524278,
+          "clockStartMs": 7194.177948571667,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-35",
+          "durationMs": 67.57700073555428,
+          "clockStartMs": 7778.852451924095,
+          "mode": "run",
+          "speed": 83.2
+        },
+        {
+          "step": "alice-c2-way-out-enter-36",
+          "durationMs": 242.83638306765098,
+          "clockStartMs": 7846.429452659649,
+          "mode": "run",
+          "speed": 83.2
+        }
+      ],
+      "policy": "User-approved brisk walking over identical measured right-lagoon emergence and rear-table arc; run is the existing faster locomotion slot, with walking art."
+    },
+    "lory-entry": {
+      "actor": "lory",
+      "beat": 6,
+      "mode": "run",
+      "speed": 78,
+      "waypoints": [
+        {
+          "x": 2000,
+          "y": 1436
+        },
+        {
+          "x": 2001.3802968669042,
+          "y": 1427.718218798575
+        },
+        {
+          "x": 2002.3134888421841,
+          "y": 1422.1190669468954
+        },
+        {
+          "x": 2006,
+          "y": 1400
+        },
+        {
+          "x": 2001.2872498376753,
+          "y": 1374.0798741072147
+        },
+        {
+          "x": 1998,
+          "y": 1356
+        },
+        {
+          "x": 1989.922738637922,
+          "y": 1323.6909545516887
+        },
+        {
+          "x": 1987.9259212890088,
+          "y": 1315.7036851560354
+        },
+        {
+          "x": 1985.3265909927634,
+          "y": 1305.3063639710533
+        },
+        {
+          "x": 1984.7451463000054,
+          "y": 1302.980585200022
+        },
+        {
+          "x": 1984,
+          "y": 1300
+        },
+        {
+          "x": 1977.3768623443593,
+          "y": 1283.4421558608983
+        },
+        {
+          "x": 1972.049083546547,
+          "y": 1270.1227088663677
+        },
+        {
+          "x": 1964,
+          "y": 1250
+        },
+        {
+          "x": 1960.4257195365558,
+          "y": 1245.5321494206946
+        },
+        {
+          "x": 1936.3951001643582,
+          "y": 1215.4938752054477
+        },
+        {
+          "x": 1932,
+          "y": 1210
+        },
+        {
+          "x": 1927.1423577179908,
+          "y": 1206.9639735737442
+        },
+        {
+          "x": 1924.6892105655365,
+          "y": 1205.4307566034602
+        },
+        {
+          "x": 1916,
+          "y": 1200
+        },
+        {
+          "x": 1884,
+          "y": 1180
+        },
+        {
+          "x": 1881.0561535004335,
+          "y": 1179.0800479688855
+        },
+        {
+          "x": 1879.4073041732352,
+          "y": 1178.564782554136
+        },
+        {
+          "x": 1833.9871478753564,
+          "y": 1164.370983711049
+        },
+        {
+          "x": 1820,
+          "y": 1160
+        },
+        {
+          "x": 1816.3715591253301,
+          "y": 1159.3779815643422
+        },
+        {
+          "x": 1805.8811187443014,
+          "y": 1157.5796203561658
+        },
+        {
+          "x": 1780.0032984142106,
+          "y": 1153.1434225852931
+        },
+        {
+          "x": 1750,
+          "y": 1148
+        },
+        {
+          "x": 1721.8465510044432,
+          "y": 1145.1846551004444
+        },
+        {
+          "x": 1714.538053279138,
+          "y": 1144.4538053279139
+        },
+        {
+          "x": 1670,
+          "y": 1140
+        },
+        {
+          "x": 1664.8344140637744,
+          "y": 1140
+        },
+        {
+          "x": 1646.272000942083,
+          "y": 1140
+        },
+        {
+          "x": 1644.3410226741673,
+          "y": 1140
+        },
+        {
+          "x": 1593.4059974366016,
+          "y": 1140
+        },
+        {
+          "x": 1580,
+          "y": 1140
+        },
+        {
+          "x": 1554.4633227295465,
+          "y": 1140
+        },
+        {
+          "x": 1524.035328190216,
+          "y": 1140
+        },
+        {
+          "x": 1500.0000000000002,
+          "y": 1140
+        },
+        {
+          "x": 1486.3912820954654,
+          "y": 1140
+        },
+        {
+          "x": 1440.0000000000002,
+          "y": 1140
+        },
+        {
+          "x": 1440,
+          "y": 1200
+        },
+        {
+          "x": 1440,
+          "y": 1248
+        },
+        {
+          "x": 1508,
+          "y": 1248
+        }
+      ],
+      "sourceWaypoints": [
+        [
+          1000,
+          718
+        ],
+        [
+          1000.6901484334521,
+          713.8591093992875
+        ],
+        [
+          1001.1567444210921,
+          711.0595334734477
+        ],
+        [
+          1003,
+          700
+        ],
+        [
+          1000.6436249188376,
+          687.0399370536073
+        ],
+        [
+          999,
+          678
+        ],
+        [
+          994.961369318961,
+          661.8454772758444
+        ],
+        [
+          993.9629606445044,
+          657.8518425780177
+        ],
+        [
+          992.6632954963817,
+          652.6531819855267
+        ],
+        [
+          992.3725731500027,
+          651.490292600011
+        ],
+        [
+          992,
+          650
+        ],
+        [
+          988.6884311721797,
+          641.7210779304492
+        ],
+        [
+          986.0245417732735,
+          635.0613544331839
+        ],
+        [
+          982,
+          625
+        ],
+        [
+          980.2128597682779,
+          622.7660747103473
+        ],
+        [
+          968.1975500821791,
+          607.7469376027238
+        ],
+        [
+          966,
+          605
+        ],
+        [
+          963.5711788589954,
+          603.4819867868721
+        ],
+        [
+          962.3446052827683,
+          602.7153783017301
+        ],
+        [
+          958,
+          600
+        ],
+        [
+          942,
+          590
+        ],
+        [
+          940.5280767502168,
+          589.5400239844428
+        ],
+        [
+          939.7036520866176,
+          589.282391277068
+        ],
+        [
+          916.9935739376782,
+          582.1854918555244
+        ],
+        [
+          910,
+          580
+        ],
+        [
+          908.1857795626651,
+          579.6889907821711
+        ],
+        [
+          902.9405593721507,
+          578.7898101780829
+        ],
+        [
+          890.0016492071053,
+          576.5717112926466
+        ],
+        [
+          875,
+          574
+        ],
+        [
+          860.9232755022216,
+          572.5923275502222
+        ],
+        [
+          857.269026639569,
+          572.2269026639569
+        ],
+        [
+          835,
+          570
+        ],
+        [
+          832.4172070318872,
+          570
+        ],
+        [
+          823.1360004710415,
+          570
+        ],
+        [
+          822.1705113370837,
+          570
+        ],
+        [
+          796.7029987183008,
+          570
+        ],
+        [
+          790,
+          570
+        ],
+        [
+          777.2316613647732,
+          570
+        ],
+        [
+          762.017664095108,
+          570
+        ],
+        [
+          750.0000000000001,
+          570
+        ],
+        [
+          743.1956410477327,
+          570
+        ],
+        [
+          720.0000000000001,
+          570
+        ],
+        [
+          720,
+          600
+        ],
+        [
+          720,
+          624
+        ],
+        [
+          754,
+          624
+        ]
+      ],
+      "segments": [
+        {
+          "step": "alice-c2-way-out-enter-4",
+          "durationMs": 91.64307308112642,
+          "clockStartMs": 1384.6153846153845,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-5",
+          "durationMs": 62.20308076502743,
+          "clockStartMs": 1476.258457696511,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-6",
+          "durationMs": 247.68818510907855,
+          "clockStartMs": 1538.4615384615383,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-7",
+          "durationMs": 295.06923804942426,
+          "clockStartMs": 1786.149723570617,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-8",
+          "durationMs": 208.4867993736337,
+          "clockStartMs": 2081.2189616200412,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-9",
+          "durationMs": 383.5504685360502,
+          "clockStartMs": 2289.705760993675,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-10",
+          "durationMs": 95.97453970104407,
+          "clockStartMs": 2673.2562295297253,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-11",
+          "durationMs": 125.63379383973195,
+          "clockStartMs": 2769.2307692307695,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-12",
+          "durationMs": 28.212360006421896,
+          "clockStartMs": 2894.8645630705014,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-13",
+          "durationMs": 36.21414974807311,
+          "clockStartMs": 2923.0769230769233,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-14",
+          "durationMs": 211.47403536100543,
+          "clockStartMs": 2959.2910728249963,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-15",
+          "durationMs": 171.69484540701748,
+          "clockStartMs": 3170.7651081860017,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-16",
+          "durationMs": 262.12232341707653,
+          "clockStartMs": 3342.4599535930192,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-17",
+          "durationMs": 69.73886859896363,
+          "clockStartMs": 3604.582277010096,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-18",
+          "durationMs": 474.0668350230317,
+          "clockStartMs": 3674.3211456090594,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-19",
+          "durationMs": 87.70071548166715,
+          "clockStartMs": 4148.387980632091,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-20",
+          "durationMs": 71.60361157854962,
+          "clockStartMs": 4236.0886961137585,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-21",
+          "durationMs": 36.21414974807311,
+          "clockStartMs": 4307.6923076923085,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-22",
+          "durationMs": 128.56446111687126,
+          "clockStartMs": 4343.906457440382,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-23",
+          "durationMs": 477.43508322402005,
+          "clockStartMs": 4472.470918557253,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-24",
+          "durationMs": 39.29165984420811,
+          "clockStartMs": 4949.906001781273,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-25",
+          "durationMs": 22.0177371052684,
+          "clockStartMs": 4989.197661625481,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-26",
+          "durationMs": 609.488681998394,
+          "clockStartMs": 5011.215398730749,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-27",
+          "durationMs": 188.85848322713872,
+          "clockStartMs": 5620.704080729143,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-28",
+          "durationMs": 47.52373921635528,
+          "clockStartMs": 5809.562563956282,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-29",
+          "durationMs": 137.51094742927867,
+          "clockStartMs": 5857.086303172638,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-30",
+          "durationMs": 339.92413579474135,
+          "clockStartMs": 5994.597250601916,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-31",
+          "durationMs": 395.3904235315279,
+          "clockStartMs": 6334.521386396657,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-32",
+          "durationMs": 368.49234805206623,
+          "clockStartMs": 6729.911809928185,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-33",
+          "durationMs": 95.77379059141514,
+          "clockStartMs": 7098.4041579802515,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-34",
+          "durationMs": 584.6745033524278,
+          "clockStartMs": 7194.177948571667,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-35",
+          "durationMs": 67.57700073555428,
+          "clockStartMs": 7778.852451924095,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-36",
+          "durationMs": 242.83638306765098,
+          "clockStartMs": 7846.429452659649,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-37",
+          "durationMs": 25.26135881627012,
+          "clockStartMs": 8089.265835727299,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-38",
+          "durationMs": 666.3399429299534,
+          "clockStartMs": 8114.52719454357,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-39",
+          "durationMs": 175.37934898746383,
+          "clockStartMs": 8780.867137473524,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-40",
+          "durationMs": 334.07479422361996,
+          "clockStartMs": 8956.246486460988,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-41",
+          "durationMs": 398.0637694836556,
+          "clockStartMs": 9290.321280684608,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-42",
+          "durationMs": 314.43391143662666,
+          "clockStartMs": 9688.385050168263,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-43",
+          "durationMs": 178.03136976105003,
+          "clockStartMs": 10002.81896160489,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-44",
+          "durationMs": 606.897986596877,
+          "clockStartMs": 10180.85033136594,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-45",
+          "durationMs": 769.3333579557544,
+          "clockStartMs": 10787.748317962818,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-46",
+          "durationMs": 594.0478272949691,
+          "clockStartMs": 11557.081675918573,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-47",
+          "durationMs": 828.7023496148979,
+          "clockStartMs": 12151.129503213542,
+          "mode": "run",
+          "speed": 78
+        }
+      ],
+      "policy": "User-approved brisk walking over identical measured right-lagoon emergence and rear-table arc; run is the existing faster locomotion slot, with walking art."
+    },
+    "eaglet-entry": {
+      "actor": "eaglet",
+      "beat": 6,
+      "mode": "run",
+      "speed": 78,
+      "waypoints": [
+        {
+          "x": 2000,
+          "y": 1436
+        },
+        {
+          "x": 2001.8906062750923,
+          "y": 1424.656362349446
+        },
+        {
+          "x": 2002.3134888421841,
+          "y": 1422.1190669468954
+        },
+        {
+          "x": 2002.8554162288071,
+          "y": 1418.8675026271574
+        },
+        {
+          "x": 2006,
+          "y": 1400
+        },
+        {
+          "x": 2003.2490946893386,
+          "y": 1384.8700207913616
+        },
+        {
+          "x": 1999.0956852020138,
+          "y": 1362.026268611076
+        },
+        {
+          "x": 1998,
+          "y": 1356
+        },
+        {
+          "x": 1988.0392233034447,
+          "y": 1316.1568932137784
+        },
+        {
+          "x": 1986.2224828797173,
+          "y": 1308.8899315188692
+        },
+        {
+          "x": 1984.7451463000054,
+          "y": 1302.980585200022
+        },
+        {
+          "x": 1984,
+          "y": 1300
+        },
+        {
+          "x": 1979.9654444372518,
+          "y": 1289.9136110931295
+        },
+        {
+          "x": 1965.2000623298052,
+          "y": 1253.0001558245128
+        },
+        {
+          "x": 1964,
+          "y": 1250
+        },
+        {
+          "x": 1962.8704458569089,
+          "y": 1248.5880573211361
+        },
+        {
+          "x": 1932,
+          "y": 1210
+        },
+        {
+          "x": 1919.2083726253168,
+          "y": 1202.005232890823
+        },
+        {
+          "x": 1916,
+          "y": 1200
+        },
+        {
+          "x": 1906.7401415274862,
+          "y": 1194.212588454679
+        },
+        {
+          "x": 1884,
+          "y": 1180
+        },
+        {
+          "x": 1854.4578391670645,
+          "y": 1170.7680747397078
+        },
+        {
+          "x": 1827.0880328088017,
+          "y": 1162.2150102527505
+        },
+        {
+          "x": 1820,
+          "y": 1160
+        },
+        {
+          "x": 1775.4652256193615,
+          "y": 1152.3654672490334
+        },
+        {
+          "x": 1770.332605476257,
+          "y": 1151.4855895102155
+        },
+        {
+          "x": 1751.9137851616836,
+          "y": 1148.3280774562886
+        },
+        {
+          "x": 1750,
+          "y": 1148
+        },
+        {
+          "x": 1700,
+          "y": 1160
+        },
+        {
+          "x": 1700,
+          "y": 1173.6505419529121
+        },
+        {
+          "x": 1700,
+          "y": 1200
+        },
+        {
+          "x": 1700,
+          "y": 1231.9999999999998
+        },
+        {
+          "x": 1674.4604199774715,
+          "y": 1232
+        },
+        {
+          "x": 1660,
+          "y": 1232
+        }
+      ],
+      "sourceWaypoints": [
+        [
+          1000,
+          718
+        ],
+        [
+          1000.9453031375461,
+          712.328181174723
+        ],
+        [
+          1001.1567444210921,
+          711.0595334734477
+        ],
+        [
+          1001.4277081144036,
+          709.4337513135787
+        ],
+        [
+          1003,
+          700
+        ],
+        [
+          1001.6245473446693,
+          692.4350103956808
+        ],
+        [
+          999.5478426010069,
+          681.013134305538
+        ],
+        [
+          999,
+          678
+        ],
+        [
+          994.0196116517224,
+          658.0784466068892
+        ],
+        [
+          993.1112414398586,
+          654.4449657594346
+        ],
+        [
+          992.3725731500027,
+          651.490292600011
+        ],
+        [
+          992,
+          650
+        ],
+        [
+          989.9827222186259,
+          644.9568055465647
+        ],
+        [
+          982.6000311649026,
+          626.5000779122564
+        ],
+        [
+          982,
+          625
+        ],
+        [
+          981.4352229284544,
+          624.2940286605681
+        ],
+        [
+          966,
+          605
+        ],
+        [
+          959.6041863126584,
+          601.0026164454115
+        ],
+        [
+          958,
+          600
+        ],
+        [
+          953.3700707637431,
+          597.1062942273395
+        ],
+        [
+          942,
+          590
+        ],
+        [
+          927.2289195835323,
+          585.3840373698539
+        ],
+        [
+          913.5440164044008,
+          581.1075051263753
+        ],
+        [
+          910,
+          580
+        ],
+        [
+          887.7326128096807,
+          576.1827336245167
+        ],
+        [
+          885.1663027381285,
+          575.7427947551078
+        ],
+        [
+          875.9568925808418,
+          574.1640387281443
+        ],
+        [
+          875,
+          574
+        ],
+        [
+          850,
+          580
+        ],
+        [
+          850,
+          586.8252709764561
+        ],
+        [
+          850,
+          600
+        ],
+        [
+          850,
+          615.9999999999999
+        ],
+        [
+          837.2302099887357,
+          616
+        ],
+        [
+          830,
+          616
+        ]
+      ],
+      "segments": [
+        {
+          "step": "alice-c2-way-out-enter-11",
+          "durationMs": 125.63379383973195,
+          "clockStartMs": 2769.2307692307695,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-12",
+          "durationMs": 28.212360006421896,
+          "clockStartMs": 2894.8645630705014,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-13",
+          "durationMs": 36.21414974807311,
+          "clockStartMs": 2923.0769230769233,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-14",
+          "durationMs": 211.47403536100543,
+          "clockStartMs": 2959.2910728249963,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-15",
+          "durationMs": 171.69484540701748,
+          "clockStartMs": 3170.7651081860017,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-16",
+          "durationMs": 262.12232341707653,
+          "clockStartMs": 3342.4599535930192,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-17",
+          "durationMs": 69.73886859896363,
+          "clockStartMs": 3604.582277010096,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-18",
+          "durationMs": 474.0668350230317,
+          "clockStartMs": 3674.3211456090594,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-19",
+          "durationMs": 87.70071548166715,
+          "clockStartMs": 4148.387980632091,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-20",
+          "durationMs": 71.60361157854962,
+          "clockStartMs": 4236.0886961137585,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-21",
+          "durationMs": 36.21414974807311,
+          "clockStartMs": 4307.6923076923085,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-22",
+          "durationMs": 128.56446111687126,
+          "clockStartMs": 4343.906457440382,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-23",
+          "durationMs": 477.43508322402005,
+          "clockStartMs": 4472.470918557253,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-24",
+          "durationMs": 39.29165984420811,
+          "clockStartMs": 4949.906001781273,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-25",
+          "durationMs": 22.0177371052684,
+          "clockStartMs": 4989.197661625481,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-26",
+          "durationMs": 609.488681998394,
+          "clockStartMs": 5011.215398730749,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-27",
+          "durationMs": 188.85848322713872,
+          "clockStartMs": 5620.704080729143,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-28",
+          "durationMs": 47.52373921635528,
+          "clockStartMs": 5809.562563956282,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-29",
+          "durationMs": 137.51094742927867,
+          "clockStartMs": 5857.086303172638,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-30",
+          "durationMs": 339.92413579474135,
+          "clockStartMs": 5994.597250601916,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-31",
+          "durationMs": 395.3904235315279,
+          "clockStartMs": 6334.521386396657,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-32",
+          "durationMs": 368.49234805206623,
+          "clockStartMs": 6729.911809928185,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-33",
+          "durationMs": 95.77379059141514,
+          "clockStartMs": 7098.4041579802515,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-34",
+          "durationMs": 584.6745033524278,
+          "clockStartMs": 7194.177948571667,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-35",
+          "durationMs": 67.57700073555428,
+          "clockStartMs": 7778.852451924095,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-36",
+          "durationMs": 242.83638306765098,
+          "clockStartMs": 7846.429452659649,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-37",
+          "durationMs": 25.26135881627012,
+          "clockStartMs": 8089.265835727299,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-38",
+          "durationMs": 666.3399429299534,
+          "clockStartMs": 8114.52719454357,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-39",
+          "durationMs": 175.37934898746383,
+          "clockStartMs": 8780.867137473524,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-40",
+          "durationMs": 334.07479422361996,
+          "clockStartMs": 8956.246486460988,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-41",
+          "durationMs": 398.0637694836556,
+          "clockStartMs": 9290.321280684608,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-42",
+          "durationMs": 314.43391143662666,
+          "clockStartMs": 9688.385050168263,
+          "mode": "run",
+          "speed": 78
+        },
+        {
+          "step": "alice-c2-way-out-enter-43",
+          "durationMs": 178.03136976105003,
+          "clockStartMs": 10002.81896160489,
+          "mode": "run",
+          "speed": 78
+        }
+      ],
+      "policy": "User-approved brisk walking over identical measured right-lagoon emergence and rear-table arc; run is the existing faster locomotion slot, with walking art."
+    }
+  },
+  "occluders": [
+    {
+      "id": "inherited-left-door-arch",
+      "inherit": "chapter-1-scene-6-geometry.json#occluders[0]",
+      "sourceAperturePolygon": [
+        [
+          674,
+          474
+        ],
+        [
+          674,
+          280
+        ],
+        [
+          682,
+          250
+        ],
+        [
+          702,
+          224
+        ],
+        [
+          724,
+          224
+        ],
+        [
+          748,
+          248
+        ],
+        [
+          766,
+          285
+        ],
+        [
+          766,
+          474
+        ]
+      ],
+      "stonePixelsUnchanged": true,
+      "movingWoodClipBottomSourceY": 440,
+      "stepPixelsBelow440RemainFixed": true,
+      "waitingDodoDepth": 1001
+    },
+    {
+      "id": "table-and-resting-props",
+      "depth": 1380,
+      "tabletopPropDepth": 1381,
+      "sourceBounds": [
+        792,
+        626,
+        904,
+        690
+      ],
+      "mask": "Exact captured table texture alpha; props use their inherited alpha masks, transforms and support planes. No guessed rectangular cover over actors."
+    },
+    {
+      "id": "left-frame-boundary",
+      "surface": "Continuous unobstructed left floor",
+      "physicalObject": false,
+      "policy": "Actors approach from off-frame left floor, fade visible as they cross inherited viewport edge. No invented water, new wall opening, or presumed foliage mask."
+    }
+  ],
+  "doorPush": {
+    "beat": 17,
+    "durationMs": 3000,
+    "groundAnchor": "dodoDoorContact",
+    "contactPose": "dodo-push-left-contact",
+    "weightPose": "dodo-push-left-weight",
+    "contactLocalNormalized": [
+      1,
+      20
+    ],
+    "groundLocalContactPose": [
+      21,
+      50
+    ],
+    "groundLocalWeightPose": [
+      25,
+      50
+    ],
+    "sourceHingeX": 674,
+    "closedLeafRightX": 762,
+    "woodLeafBottomSourceY": 440,
+    "sourceContactAtStart": [
+      744.32775,
+      437.991625
+    ],
+    "sourceContactAtEnd": [
+      742.9933,
+      437.991625
+    ],
+    "freeEdgeTravelSourcePx": 1.67,
+    "foregroundDepth": 1001,
+    "support": "Feet atsource(751,448) rest on the top stone step below the actual wood leaf. NOT the lower stone at471.28.",
+    "policy": "Shoulder/short wing touches actual wood above y440; head/beak face right. Feet planted on existing top step, authored leaning poses. Existing open/closed art only, clipped to real wood above y440 so stone steps below remain unchanged. Narrow slit only; S2 completes opening before crossing. Actor stays in front of leaf until any later actual crossing.",
+    "interiorPolicy": "Dedicated black aperture copied from exact closed-leaf alpha, clipped above sourceY440. No generated open-door wooden leaf/steps behind the moving original leaf."
+  },
+  "timing": {
+    "measurement": "Automatic reading:73000ms authored,73019ms actual1ms engine; not MP4",
+    "nominalSeconds": 73,
+    "previousNarrativeSeconds": 72,
+    "authorizedChange": "One extra second reserved for calm measured bird entrance; all approved dialogue/holds preserved. Never compensate by cutting another moment.",
+    "beatDurationsSeconds": [
+      4.5,
+      4,
+      3.5,
+      5,
+      4,
+      4.5,
+      4,
+      6,
+      4.5,
+      3.5,
+      4,
+      4,
+      3.5,
+      4,
+      7,
+      4,
+      3
+    ],
+    "hookSeconds": 3,
+    "beat15PhysicalTravelMs": 5760.7761429494085,
+    "authorizedDialogueOrder": "Mouse edge/Alice sleeve immediately after water exit; birds and uninterrupted group discussion afterward. Same12lines and holds,73s.",
+    "beat8PhysicalTravelMs": 5259.112864310688,
+    "entryRevisionAuthoredAutomaticMs": 84846.15384615384,
+    "entryRevisionNote": "Only entry window reduced18000to13846.154ms. Other beats/12lines unchanged. MP4 not used."
+  },
+  "futureGate3": {
+    "permittedNow": true,
+    "newSceneRegistered": true,
+    "completed": true,
+    "stageGeometry": "Registered only C2-S1; manifest and shared pointer integrated",
+    "assetSpec": "chapter-2-scene-1-atlas-cells.json",
+    "densitySpec": "chapter-2-scene-1-pixel-density.json"
+  },
+  "audio": {
+    "silent": true,
+    "gate2B": "paused",
+    "providerCalls": 0
+  },
+  "beatActing": {
+    "10": {
+      "lory": {
+        "pose": "lory-inspect-wing-right",
+        "feet": "fixed measured support",
+        "facing": "right"
+      }
+    },
+    "13": {
+      "eaglet": {
+        "pose": "eaglet-point-right",
+        "flipX": true,
+        "lookAtAnchor": "dodoDoorContact",
+        "meaning": "Exit the hall together; all five are already out of water",
+        "feet": "fixed measured support"
+      }
+    }
+  },
+  "qaCorrections": [
+    {
+      "date": "2026-10-31",
+      "scope": "Mouse dry-floor support +2 source px right within approved left-floor corridor; prevents 1.253px bounding-box crop at360x844. Same camera, dialogue, beat durations and doorway endpoint; no prop contact.",
+      "from": [
+        748,
+        680
+      ],
+      "to": [
+        750,
+        680
+      ]
+    }
+  ],
+  "qa": {
+    "verdict": ".artifacts/qa/alice-in-wonderland/chapter-2-scene-1/gate-4-verdict.json",
+    "usualViewportIssues": 0,
+    "extremeScope": "Previous panorama decision retained; see full viewport report",
+    "mainThread": true
+  },
+  "entryPacingRevision": {
+    "factor": 1.3,
+    "previousMs": 18000,
+    "newMs": 13846.153846153846,
+    "scope": "Only bird entry, identical paths/poses/endpoints; other beats unchanged",
+    "mode": "run is the engine brisk-walk speed slot; same walking sprites. walkSpeed elsewhere unchanged",
+    "speeds": {
+      "dodo": 83.2,
+      "lory": 78,
+      "eaglet": 78
+    }
+  },
+  "entryFromRightLagoon": {
+    "windowMs": 13846.15384615385,
+    "policy": "Authoritative route reconstructed from chapter data after interruption; no historical left entrance restored"
+  }
+}

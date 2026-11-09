@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "provider": "ElevenLabs connected plugin",
+  "scope": {
+    "chapter": "chapter-1",
+    "scene": "alice-c1-riverbank"
+  },
+  "flowId": "RBErGbPYloQiBAAn8Djl",
+  "estimatedCredits": 516,
+  "chargedRunCalls": 1,
+  "maximumGenerations": 4,
+  "regenerationAllowed": false,
+  "assets": [
+    {
+      "file": "s1-riverbank-melody.mp3",
+      "nodeId": "6yCFrbC5nrm9p1ryQ5ei",
+      "modelId": "eleven_music_v2",
+      "parameters": {
+        "duration_seconds": 30,
+        "instrumental": true,
+        "lyrics_type": "instrumental"
+      },
+      "prompt": "Very quiet, warm and nostalgic acoustic storybook chamber music: a delicate real music-box melody shared by softly plucked harp and gentle celesta, slow unhurried 62 BPM with breathing space, natural instrument decays and a soft intimate room. Original mid-century fairytale fantasy character, understated and comforting for relaxed reading, even low dynamics throughout; purely instrumental, no percussion, vocals, electronic beeps, synth leads, noise beds or hiss. A smooth repeatable 30-second musical passage with compatible opening and ending harmony, no dramatic build, no opening sting or final flourish.",
+      "status": "saved",
+      "generationsRequested": 1,
+      "generationId": "hq2oIJhbcbrRVp5zYZZt",
+      "actualModelId": "eleven_music_v2_5",
+      "durationSeconds": 30,
+      "price": {
+        "credits": 450,
+        "price_cents": 4.5,
+        "cost_fiat_currency": "usd"
+      },
+      "bytes": 738322,
+      "sha256": "b864e4f03f46adb5c168542ef0a9e3097f59a317923b66ab42e14d3809754551"
+    },
+    {
+      "file": "s1-rabbit-hurried-steps.mp3",
+      "nodeId": "yDrZ5YFcJdmfV8zBeqEv",
+      "modelId": "eleven_text_to_sound_v2",
+      "parameters": {
+        "duration_seconds": 4,
+        "prompt_influence": 0.55,
+        "loop": false
+      },
+      "prompt": "Quiet, quick, light rabbit-like paw steps pattering on a soft dry earth and short grass path, close natural foley, evenly hurried little footfalls with soft transients; isolated clean recording, no voice, music, bells, background ambience or hiss.",
+      "status": "saved",
+      "generationsRequested": 1,
+      "generationId": "TaMeuPueOtiCy72V6TwQ",
+      "actualModelId": "eleven_text_to_sound_v3",
+      "durationSeconds": 4,
+      "price": {
+        "credits": 40,
+        "price_cents": 0.4,
+        "cost_fiat_currency": "usd"
+      },
+      "bytes": 82370,
+      "sha256": "8696932e0d8b372e477406e784d1732f2ed4f104bcbab1aaff786ae845c311f5"
+    },
+    {
+      "file": "s1-pocket-watch.mp3",
+      "nodeId": "II2w6Jm4PHI1oi5TDp69",
+      "modelId": "eleven_text_to_sound_v2",
+      "parameters": {
+        "duration_seconds": 1.2,
+        "prompt_influence": 0.55,
+        "loop": false
+      },
+      "prompt": "One delicate opening click of an antique brass pocket watch, followed immediately by a few fine crystalline mechanical tick-tocks, intimate quiet natural foley, soft rounded transients; no voice, music, alarm, loud chime or background hiss.",
+      "status": "saved",
+      "generationsRequested": 1,
+      "generationId": "LKqIMQVJXQJRqzhw5WwS",
+      "actualModelId": "eleven_text_to_sound_v3",
+      "durationSeconds": 1.2,
+      "price": {
+        "credits": 12,
+        "price_cents": 0.12,
+        "cost_fiat_currency": "usd"
+      },
+      "bytes": 37231,
+      "sha256": "cd726d2896c38e3228c5c7b9ad4830aa47ce0960b45b6c43d968e6d61554f251"
+    },
+    {
+      "file": "s1-burrow-rustle.mp3",
+      "nodeId": "ifO3fg8X3egff867IemN",
+      "modelId": "eleven_text_to_sound_v2",
+      "parameters": {
+        "duration_seconds": 1.4,
+        "prompt_influence": 0.55,
+        "loop": false
+      },
+      "prompt": "One short gentle brush through dry leaves, a low hedge and loose soft soil, close natural cloth-and-foliage foley with a rounded quiet ending; no speech, music, footsteps, steady wind, noise bed or hiss.",
+      "status": "saved",
+      "generationsRequested": 1,
+      "generationId": "JQbdzdzIE9QnD0WpffPK",
+      "actualModelId": "eleven_text_to_sound_v3",
+      "durationSeconds": 1.36,
+      "price": {
+        "credits": 13.999999999999998,
+        "price_cents": 0.13999999999999999,
+        "cost_fiat_currency": "usd"
+      },
+      "bytes": 40156,
+      "sha256": "b2880d8ef85cfdae0db7c0035eda43d40529c058890b8d44077c6dbad972fd55"
+    }
+  ],
+  "status": "four-files-saved",
+  "generationsStarted": 4,
+  "chargedCredits": 516,
+  "retryRequiresNewUserRequest": false,
+  "providerMessage": "Initial batch returned busy, then all four nodes completed. All four existing results recovered; no second generation request and no repeated takes.",
+  "generationRequestAttempts": 1
+}

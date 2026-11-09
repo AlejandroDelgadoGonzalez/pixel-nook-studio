@@ -1,0 +1,2404 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "scene": "chapter-1-scene-3-solid-ground",
+  "status": "25Oct explicitly authorized slower Hall, two600ms pauses, fixed final room composition.",
+  "legacyOpening": {
+    "source": ".artifacts/alice-in-wonderland/chapter-1-restructure/scene-3-opening-preserved.json",
+    "durationMs": 38151,
+    "geometry": "scene-5-geometry.json",
+    "preserve": "Superseded by22October user correction: remove old3s closing hold and retime all S3 locomotion. Keep existing art, poses, approved old route shapes and logical story order.",
+    "lastFootWorld": [
+      4416,
+      3248
+    ]
+  },
+  "hall": {
+    "panorama": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+    "dimensions": [
+      1664,
+      936
+    ],
+    "sourceToWorldScale": 2,
+    "worldOrigin": [
+      0,
+      0
+    ],
+    "worldBounds": [
+      0,
+      0,
+      3328,
+      1872
+    ],
+    "overscan": {
+      "base16by9": [
+        192,
+        108,
+        1280,
+        720
+      ],
+      "fullBounds": [
+        0,
+        0,
+        1664,
+        936
+      ],
+      "ratios": [
+        1.3,
+        1.3
+      ],
+      "margins": [
+        192,
+        108,
+        192,
+        108
+      ],
+      "noStretch": true
+    },
+    "reuse": [
+      "Chapter1 Scene4 bottle and shrink",
+      "Scene5 cake/growth/tears",
+      "Scene6 fan and pool; future overlays require their own approval"
+    ]
+  },
+  "spawns": {
+    "alice": {
+      "inheritedOpeningWorld": [
+        2160,
+        3328
+      ],
+      "pose": "seated-braced",
+      "hallEntry": "H0-entry",
+      "hallArrivalScale": 0.5267,
+      "entryRule": "After the physical corner crossing and real-place whole-shot dissolve, emerge from the measured left portal; inherited scale matches corridor endpoint. Gradual2000ms entrance is visible while walking, never completed entirely behind cover."
+    },
+    "rabbit": {
+      "opening": "Reuse old S5 exactly; after its exit stays offscreen ahead. No second arrival in hall."
+    },
+    "sister": {
+      "environment": "riverbank",
+      "point": [
+        810,
+        650
+      ],
+      "pose": "seated-reading",
+      "bookOwner": "sister"
+    },
+    "jar": {
+      "environment": "well",
+      "owner": null,
+      "anchor": "scene-4-geometry.json#J1-lower-base"
+    }
+  },
+  "anchors": {
+    "H0-entry": {
+      "sourcePoint": [
+        165,
+        426
+      ],
+      "point": [
+        330,
+        852
+      ],
+      "scale": 0.5267
+    },
+    "H1-first-door": {
+      "sourcePoint": [
+        452,
+        476
+      ],
+      "point": [
+        904,
+        952
+      ],
+      "scale": 0.8186666666666667
+    },
+    "H2-second-door": {
+      "sourcePoint": [
+        708,
+        476
+      ],
+      "point": [
+        1416,
+        952
+      ],
+      "scale": 0.8186666666666667
+    },
+    "H3-table": {
+      "sourcePoint": [
+        782.1265,
+        690
+      ],
+      "point": [
+        1564.253,
+        1380
+      ],
+      "scale": 1.14
+    },
+    "H4-curtain": {
+      "sourcePoint": [
+        910,
+        488
+      ],
+      "point": [
+        1820,
+        976
+      ],
+      "scale": 0.856
+    },
+    "H5-unlock": {
+      "sourcePoint": [
+        922.9617,
+        488.7228
+      ],
+      "point": [
+        1845.9234,
+        977.4456
+      ],
+      "scale": 0.8574456
+    },
+    "H6-peek": {
+      "sourcePoint": [
+        908.4829,
+        489.4586
+      ],
+      "point": [
+        1816.9658,
+        978.9172
+      ],
+      "scale": 0.8589171999999999
+    }
+  },
+  "walkPaths": {
+    "hall-ingress-to-first-door": {
+      "sourceWaypoints": [
+        [
+          165,
+          426
+        ],
+        [
+          173.8189,
+          431.3993
+        ],
+        [
+          182.8009,
+          438.3611
+        ],
+        [
+          191.9844,
+          446.5312
+        ],
+        [
+          201.4074,
+          455.5556
+        ],
+        [
+          211.1082,
+          465.0799
+        ],
+        [
+          221.125,
+          474.75
+        ],
+        [
+          231.4959,
+          484.2118
+        ],
+        [
+          242.2593,
+          493.1111
+        ],
+        [
+          253.4531,
+          501.0938
+        ],
+        [
+          265.1157,
+          507.8056
+        ],
+        [
+          277.2853,
+          512.8924
+        ],
+        [
+          290,
+          516
+        ],
+        [
+          305.1042,
+          518.8414
+        ],
+        [
+          320.3333,
+          520.3981
+        ],
+        [
+          335.5625,
+          520.7188
+        ],
+        [
+          350.6667,
+          519.8519
+        ],
+        [
+          365.5208,
+          517.8461
+        ],
+        [
+          380,
+          514.75
+        ],
+        [
+          393.9792,
+          510.6123
+        ],
+        [
+          407.3333,
+          505.4815
+        ],
+        [
+          419.9375,
+          499.4062
+        ],
+        [
+          431.6667,
+          492.4352
+        ],
+        [
+          442.3958,
+          484.6169
+        ],
+        [
+          452,
+          476
+        ]
+      ],
+      "waypoints": [
+        [
+          330,
+          852
+        ],
+        [
+          347.6378,
+          862.7986
+        ],
+        [
+          365.6018,
+          876.7222
+        ],
+        [
+          383.9688,
+          893.0624
+        ],
+        [
+          402.8148,
+          911.1112
+        ],
+        [
+          422.2164,
+          930.1598
+        ],
+        [
+          442.25,
+          949.5
+        ],
+        [
+          462.9918,
+          968.4236
+        ],
+        [
+          484.5186,
+          986.2222
+        ],
+        [
+          506.9062,
+          1002.1876
+        ],
+        [
+          530.2314,
+          1015.6112
+        ],
+        [
+          554.5706,
+          1025.7848
+        ],
+        [
+          580,
+          1032
+        ],
+        [
+          610.2084,
+          1037.6828
+        ],
+        [
+          640.6666,
+          1040.7962
+        ],
+        [
+          671.125,
+          1041.4376
+        ],
+        [
+          701.3334,
+          1039.7038
+        ],
+        [
+          731.0416,
+          1035.6922
+        ],
+        [
+          760,
+          1029.5
+        ],
+        [
+          787.9584,
+          1021.2246
+        ],
+        [
+          814.6666,
+          1010.963
+        ],
+        [
+          839.875,
+          998.8124
+        ],
+        [
+          863.3334,
+          984.8704
+        ],
+        [
+          884.7916,
+          969.2338
+        ],
+        [
+          904,
+          952
+        ]
+      ],
+      "motion": "single continuous arc-length traversal per path, no waypoint stops; interpolated ground-depth scale",
+      "from": "H0-entry",
+      "to": "H1-first-door",
+      "durationMs": 3407.8684964792074,
+      "speed": 235,
+      "bodyScale": 1
+    },
+    "between-locked-doors": {
+      "sourceWaypoints": [
+        [
+          452,
+          476
+        ],
+        [
+          470.5579,
+          485.1285
+        ],
+        [
+          490.963,
+          492.5278
+        ],
+        [
+          512.8125,
+          498.2188
+        ],
+        [
+          535.7037,
+          502.2222
+        ],
+        [
+          559.2338,
+          504.559
+        ],
+        [
+          583,
+          505.25
+        ],
+        [
+          606.5995,
+          504.316
+        ],
+        [
+          629.6296,
+          501.7778
+        ],
+        [
+          651.6875,
+          497.6562
+        ],
+        [
+          672.3704,
+          491.9722
+        ],
+        [
+          691.2755,
+          484.7465
+        ],
+        [
+          708,
+          476
+        ]
+      ],
+      "waypoints": [
+        [
+          904,
+          952
+        ],
+        [
+          941.1158,
+          970.257
+        ],
+        [
+          981.926,
+          985.0556
+        ],
+        [
+          1025.625,
+          996.4376
+        ],
+        [
+          1071.4074,
+          1004.4444
+        ],
+        [
+          1118.4676,
+          1009.118
+        ],
+        [
+          1166,
+          1010.5
+        ],
+        [
+          1213.199,
+          1008.632
+        ],
+        [
+          1259.2592,
+          1003.5556
+        ],
+        [
+          1303.375,
+          995.3124
+        ],
+        [
+          1344.7408,
+          983.9444
+        ],
+        [
+          1382.551,
+          969.493
+        ],
+        [
+          1416,
+          952
+        ]
+      ],
+      "motion": "single continuous arc-length traversal per path, no waypoint stops; interpolated ground-depth scale",
+      "from": "H1-first-door",
+      "to": "H2-second-door",
+      "durationMs": 2593.465820098214,
+      "speed": 235,
+      "bodyScale": 1
+    },
+    "second-door-to-table": {
+      "sourceWaypoints": [
+        [
+          708,
+          476
+        ],
+        [
+          714.3832,
+          494.1134
+        ],
+        [
+          720.5654,
+          513.2407
+        ],
+        [
+          726.5957,
+          533.0625
+        ],
+        [
+          732.5232,
+          553.2593
+        ],
+        [
+          738.3969,
+          573.5116
+        ],
+        [
+          744.2658,
+          593.5
+        ],
+        [
+          750.179,
+          612.9051
+        ],
+        [
+          756.1856,
+          631.4074
+        ],
+        [
+          762.3346,
+          648.6875
+        ],
+        [
+          768.6751,
+          664.4259
+        ],
+        [
+          775.256,
+          678.3032
+        ],
+        [
+          782.1265,
+          690
+        ]
+      ],
+      "waypoints": [
+        [
+          1416,
+          952
+        ],
+        [
+          1428.7664,
+          988.2268
+        ],
+        [
+          1441.1308,
+          1026.4814
+        ],
+        [
+          1453.1914,
+          1066.125
+        ],
+        [
+          1465.0464,
+          1106.5186
+        ],
+        [
+          1476.7938,
+          1147.0232
+        ],
+        [
+          1488.5316,
+          1187
+        ],
+        [
+          1500.358,
+          1225.8102
+        ],
+        [
+          1512.3712,
+          1262.8148
+        ],
+        [
+          1524.6692,
+          1297.375
+        ],
+        [
+          1537.3502,
+          1328.8518
+        ],
+        [
+          1550.512,
+          1356.6064
+        ],
+        [
+          1564.253,
+          1380
+        ]
+      ],
+      "motion": "single continuous arc-length traversal per path, no waypoint stops; interpolated ground-depth scale",
+      "from": "H2-second-door",
+      "to": "H3-table",
+      "durationMs": 1952.656989764412,
+      "speed": 235,
+      "bodyScale": 1
+    },
+    "table-to-curtain": {
+      "sourceWaypoints": [
+        [
+          782.1265,
+          690
+        ],
+        [
+          782.1265,
+          614
+        ],
+        [
+          910,
+          488
+        ]
+      ],
+      "waypoints": [
+        [
+          1564.253,
+          1380
+        ],
+        [
+          1564.253,
+          1228
+        ],
+        [
+          1820,
+          976
+        ]
+      ],
+      "motion": "Continuous depth-scaled constant speed. Facing follows45degree slope: vertical dominant back/front, otherwise right/left. No backward detour.",
+      "from": "H3-table",
+      "to": "H4-curtain",
+      "durationMs": 2201.2816554884757,
+      "speed": 235,
+      "bodyScale": 1
+    },
+    "curtain-to-lock": {
+      "sourceWaypoints": [
+        [
+          910,
+          488
+        ],
+        [
+          922.9617,
+          488.7228
+        ]
+      ],
+      "waypoints": [
+        [
+          1820,
+          976
+        ],
+        [
+          1845.9234,
+          977.4456
+        ]
+      ],
+      "motion": "single continuous arc-length traversal per path, no waypoint stops; interpolated ground-depth scale",
+      "from": "H4-curtain",
+      "to": "H5-unlock",
+      "durationMs": 128.96090803912222,
+      "speed": 235,
+      "bodyScale": 1
+    },
+    "lock-to-peek": {
+      "sourceWaypoints": [
+        [
+          922.9617,
+          488.7228
+        ],
+        [
+          908.4829,
+          489.4586
+        ]
+      ],
+      "waypoints": [
+        [
+          1845.9234,
+          977.4456
+        ],
+        [
+          1816.9658,
+          978.9172
+        ]
+      ],
+      "motion": "single continuous arc-length traversal per path, no waypoint stops; interpolated ground-depth scale",
+      "from": "H5-unlock",
+      "to": "H6-peek",
+      "durationMs": 143.77248837529064,
+      "speed": 235,
+      "bodyScale": 1
+    },
+    "return-key-to-table": {
+      "sourceWaypoints": [
+        [
+          908.4829,
+          489.4586
+        ],
+        [
+          782.1265,
+          614
+        ],
+        [
+          782.1265,
+          690
+        ]
+      ],
+      "waypoints": [
+        [
+          1816.9658,
+          978.9172
+        ],
+        [
+          1564.253,
+          1228
+        ],
+        [
+          1564.253,
+          1380
+        ]
+      ],
+      "motion": "Continuous depth-scaled constant speed. Facing follows45degree slope: vertical dominant back/front, otherwise right/left. No backward detour.",
+      "from": "H6-peek",
+      "to": "H3-table",
+      "durationMs": 2180.4205580887074,
+      "speed": 235,
+      "bodyScale": 1
+    }
+  },
+  "corridorExtension": {
+    "startsAfterMs": 38151,
+    "sourceWaypoints": [
+      [
+        2160,
+        650
+      ],
+      [
+        2184.2057,
+        649.9659
+      ],
+      [
+        2209.2708,
+        649.3519
+      ],
+      [
+        2235.1172,
+        648.1406
+      ],
+      [
+        2261.6667,
+        646.3148
+      ],
+      [
+        2288.8411,
+        643.8571
+      ],
+      [
+        2316.5625,
+        640.75
+      ],
+      [
+        2344.7526,
+        636.9763
+      ],
+      [
+        2373.3333,
+        632.5185
+      ],
+      [
+        2402.2266,
+        627.3594
+      ],
+      [
+        2431.3542,
+        621.4815
+      ],
+      [
+        2460.638,
+        614.8675
+      ],
+      [
+        2490,
+        607.5
+      ],
+      [
+        2519.362,
+        599.3617
+      ],
+      [
+        2548.6458,
+        590.4352
+      ],
+      [
+        2577.7734,
+        580.7031
+      ],
+      [
+        2606.6667,
+        570.1481
+      ],
+      [
+        2635.2474,
+        558.7529
+      ],
+      [
+        2663.4375,
+        546.5
+      ],
+      [
+        2691.1589,
+        533.3721
+      ],
+      [
+        2718.3333,
+        519.3519
+      ],
+      [
+        2744.8828,
+        504.4219
+      ],
+      [
+        2770.7292,
+        488.5648
+      ],
+      [
+        2795.7943,
+        471.7633
+      ],
+      [
+        2820,
+        454
+      ],
+      [
+        2831.7188,
+        446.5938
+      ],
+      [
+        2844.375,
+        442
+      ],
+      [
+        2857.9688,
+        439.6562
+      ],
+      [
+        2872.5,
+        439
+      ],
+      [
+        2887.9688,
+        439.4688
+      ],
+      [
+        2904.375,
+        440.5
+      ],
+      [
+        2921.7188,
+        441.5312
+      ],
+      [
+        2940,
+        442
+      ]
+    ],
+    "worldWaypoints": [
+      [
+        4416,
+        3248
+      ],
+      [
+        4464.4114,
+        3247.9318
+      ],
+      [
+        4514.5416,
+        3246.7038
+      ],
+      [
+        4566.2344,
+        3244.2812
+      ],
+      [
+        4619.3334,
+        3240.6296
+      ],
+      [
+        4673.6822,
+        3235.7142
+      ],
+      [
+        4729.125,
+        3229.5
+      ],
+      [
+        4785.5052,
+        3221.9526
+      ],
+      [
+        4842.6666,
+        3213.037
+      ],
+      [
+        4900.4532,
+        3202.7188
+      ],
+      [
+        4958.7084,
+        3190.963
+      ],
+      [
+        5017.276,
+        3177.735
+      ],
+      [
+        5076,
+        3163
+      ],
+      [
+        5134.724,
+        3146.7234
+      ],
+      [
+        5193.2916,
+        3128.8704
+      ],
+      [
+        5251.5468,
+        3109.4062
+      ],
+      [
+        5309.3334,
+        3088.2962
+      ],
+      [
+        5366.4948,
+        3065.5058
+      ],
+      [
+        5422.875,
+        3041
+      ],
+      [
+        5478.3178,
+        3014.7442
+      ],
+      [
+        5532.6666,
+        2986.7038
+      ],
+      [
+        5585.7656,
+        2956.8438
+      ],
+      [
+        5637.4584,
+        2925.1296
+      ],
+      [
+        5687.5886,
+        2891.5266
+      ],
+      [
+        5736,
+        2856
+      ],
+      [
+        5759.4376,
+        2841.1876
+      ],
+      [
+        5784.75,
+        2832
+      ],
+      [
+        5811.9376,
+        2827.3124
+      ],
+      [
+        5841,
+        2826
+      ],
+      [
+        5871.9376,
+        2826.9376
+      ],
+      [
+        5904.75,
+        2829
+      ],
+      [
+        5939.4376,
+        2831.0624
+      ],
+      [
+        5976,
+        2832
+      ]
+    ],
+    "durationMs": 7563.92799376639,
+    "startAnchor": "scene-5-geometry.json#A5-observe",
+    "endAnchor": "scene-5-geometry.json#R5-behind-corner",
+    "occluder": "Unchanged scene-5-geometry.json corridor-corner-full-height; test complete Alice head/hair as well as Rabbit ears. Real place transition only after Alice is fully hidden."
+  },
+  "depthScaling": {
+    "referenceStandingWorldHeight": 180,
+    "sourceYToScale": [
+      [
+        426,
+        0.5267
+      ],
+      [
+        450,
+        0.68
+      ],
+      [
+        480,
+        0.84
+      ],
+      [
+        510,
+        0.9
+      ],
+      [
+        600,
+        1.02
+      ],
+      [
+        720,
+        1.18
+      ]
+    ],
+    "hallSourceToWorldY": 2,
+    "rule": "Interpolate scale from foot ground y once; props/shadows share owner scale. H0 .5267 exactly matches old corridor endpoint, so transition never resets apparent actor height."
+  },
+  "surfaces": {
+    "walkableSourceBand": [
+      [
+        130,
+        410
+      ],
+      [
+        225,
+        440
+      ],
+      [
+        270,
+        504
+      ],
+      [
+        350,
+        500
+      ],
+      [
+        420,
+        460
+      ],
+      [
+        720,
+        462
+      ],
+      [
+        860,
+        476
+      ],
+      [
+        980,
+        480
+      ],
+      [
+        1020,
+        760
+      ],
+      [
+        280,
+        760
+      ],
+      [
+        120,
+        480
+      ]
+    ],
+    "closedDoorContact1": [
+      473,
+      440
+    ],
+    "closedDoorContact2": [
+      729,
+      440
+    ],
+    "glassTopSourceBounds": [
+      792,
+      626,
+      112,
+      28
+    ],
+    "glassSurfaceSupportLineSource": [
+      [
+        796,
+        640
+      ],
+      [
+        812,
+        638
+      ],
+      [
+        846,
+        642
+      ],
+      [
+        876,
+        639
+      ],
+      [
+        902,
+        638
+      ]
+    ],
+    "glassLegObstaclesSource": [
+      [
+        798,
+        650,
+        20,
+        40
+      ],
+      [
+        882,
+        650,
+        16,
+        40
+      ],
+      [
+        822,
+        650,
+        12,
+        28
+      ]
+    ],
+    "tinyOpeningSourcePolygon": [
+      [
+        930,
+        474
+      ],
+      [
+        930,
+        454
+      ],
+      [
+        934,
+        444
+      ],
+      [
+        942,
+        440
+      ],
+      [
+        954,
+        440
+      ],
+      [
+        962,
+        444
+      ],
+      [
+        968,
+        452
+      ],
+      [
+        968,
+        474
+      ]
+    ],
+    "thresholdBaseSource": [
+      930,
+      474,
+      38,
+      2
+    ]
+  },
+  "props": {
+    "key": {
+      "atlas": "golden-key",
+      "ownerStates": [
+        "table",
+        "alice",
+        "table"
+      ],
+      "ringGripNormalized": [
+        11.1,
+        12
+      ],
+      "bladeTipNormalized": [
+        52.5,
+        12
+      ],
+      "restGripSource": [
+        804.0000294117647,
+        637.9858468677494
+      ],
+      "restScale": 1.14,
+      "pickupAndPlaceActorAnchor": "H3-table",
+      "selectedContactPose": "carry-key",
+      "handPinPolicy": "At pickup and release, keep identical actor x/y, ground origin, prop scale, pose and ring-grip position. Change ownership only after the supported contact; no position snap, duplicate or floating key.",
+      "whileCarried": "Use measured hand pins per authored pose; retain one key in the hand while testing the curtain/door. Full movement between hand poses belongs to Gate3/4, not this static art approval."
+    },
+    "bottle": {
+      "atlas": "bottle-upright",
+      "baseSource": [
+        875,
+        639
+      ],
+      "scale": 1.14,
+      "state": "upright sealed, label blank/unread in S3; remains fixed on table throughout",
+      "handOwner": null
+    },
+    "tinyDoor": {
+      "closedLeaf": {
+        "sourceLeft": 926,
+        "sourceBaseY": 474,
+        "scale": 1.08
+      },
+      "openLeaf": {
+        "sourceLeft": 927,
+        "sourceBaseY": 474,
+        "scale": 1.08
+      },
+      "closedKeyholeSource": [
+        962.526692607004,
+        450.68252148997135
+      ],
+      "openingClipSourcePolygon": [
+        [
+          930,
+          474
+        ],
+        [
+          930,
+          454
+        ],
+        [
+          934,
+          444
+        ],
+        [
+          942,
+          440
+        ],
+        [
+          954,
+          440
+        ],
+        [
+          962,
+          444
+        ],
+        [
+          968,
+          452
+        ],
+        [
+          968,
+          474
+        ]
+      ],
+      "states": [
+        "closed behind closed curtain",
+        "closed after curtain drawn",
+        "open inward leaf with garden visible",
+        "visibly closed again"
+      ],
+      "noGardenLeakWhenClosed": true
+    },
+    "curtain": {
+      "closed": {
+        "atlas": "curtain-closed",
+        "topLeftSource": [
+          926,
+          414
+        ],
+        "staticScale": 1
+      },
+      "open": {
+        "atlas": "curtain-open",
+        "topLeftSource": [
+          906,
+          414
+        ],
+        "staticScale": 1
+      },
+      "rodSourceBounds": [
+        908,
+        414,
+        84,
+        10
+      ],
+      "doorStartsClosed": true
+    },
+    "box": {
+      "atlas": "box-closed",
+      "baseSource": [
+        856.4484011940299,
+        690
+      ],
+      "scale": 1.14,
+      "groundYSource": 690,
+      "persistent": true,
+      "state": "closed throughout S3, at the final central under-table position"
+    }
+  },
+  "occluders": [
+    {
+      "id": "corridor-corner-reused",
+      "reference": "scene-5-geometry.json#occluders[0]",
+      "coverage": "entire y0..942, unchanged; Alice full head/hair must be hidden before hall dissolve"
+    },
+    {
+      "id": "tiny-door-ceiling-and-jambs",
+      "sourceBounds": [
+        926,
+        0,
+        48,
+        476
+      ],
+      "openingSourcePolygon": [
+        [
+          930,
+          474
+        ],
+        [
+          930,
+          454
+        ],
+        [
+          934,
+          444
+        ],
+        [
+          942,
+          440
+        ],
+        [
+          954,
+          440
+        ],
+        [
+          962,
+          444
+        ],
+        [
+          968,
+          452
+        ],
+        [
+          968,
+          474
+        ]
+      ],
+      "coverage": "full-height y0..440 above aperture plus actual side jambs; applies only when an actor later crosses the threshold plane. S3 stops outside and never enters. No head above roof."
+    },
+    {
+      "id": "glass-front-lip",
+      "sourcePolygon": [
+        [
+          792,
+          638
+        ],
+        [
+          812,
+          650
+        ],
+        [
+          852,
+          654
+        ],
+        [
+          888,
+          648
+        ],
+        [
+          904,
+          638
+        ],
+        [
+          902,
+          646
+        ],
+        [
+          852,
+          660
+        ],
+        [
+          812,
+          656
+        ]
+      ],
+      "coverage": "exact same-source glass/metal foreground pixels, no recoloring; key and reaching fingertips remain above the physical support"
+    }
+  ],
+  "camera": {
+    "policy": "Original corridor tracking unchanged. Hall approaches retain their measured shots; final900ms room-frame establishes a complete fixed table/door composition. All closing-hook frames and all of S4 inherit that same x,y,z.",
+    "sourceSafeBounds": [
+      0,
+      0,
+      1664,
+      936
+    ],
+    "centerLimits": "halfW=W/(4*z),halfH=H/(4*z); cx in[halfW,1664-halfW], cy in[halfH,936-halfH]. Protect actual body/hand/prop bounds above real dialogue and below toolbar.",
+    "shots": [
+      {
+        "id": "door-question",
+        "actor": "H2-second-door",
+        "pose": "test-door",
+        "sourceContext": [
+          650,
+          400,
+          778,
+          500
+        ]
+      },
+      {
+        "id": "table-key",
+        "actor": "H3-table",
+        "pose": "carry-key",
+        "sourceContext": [
+          738,
+          584,
+          908,
+          692
+        ]
+      },
+      {
+        "id": "curtain",
+        "actor": "H4-curtain",
+        "pose": "draw-curtain",
+        "sourceContext": [
+          862,
+          402,
+          984,
+          510
+        ]
+      },
+      {
+        "id": "garden",
+        "actor": "H6-peek",
+        "pose": "kneel-peek",
+        "sourceContext": [
+          860,
+          414,
+          985,
+          512
+        ]
+      },
+      {
+        "id": "key-and-bottle-hook",
+        "actor": "H3-table",
+        "pose": "carry-key",
+        "sourceContext": [
+          738,
+          584,
+          908,
+          692
+        ]
+      }
+    ],
+    "closingRoomFrame": "chapter-1-scene-4-geometry.json#camera/roomLock"
+  },
+  "closingHook": {
+    "durationMs": 3000,
+    "text": false,
+    "sound": false,
+    "actorAnchor": "H3-table",
+    "sequence": "0–1.2s lower the key at measured ring pin;1.2–1.5s release only on glass contact;1.5–3s hand retracts and gaze discovers fixed bottle. Door visibly closed before returning.",
+    "nextSceneState": "key on table, bottle sealed on table, curtain gathered, tiny door closed, Alice at same feet, jar still in well, sister reading"
+  },
+  "approvalRequired": true,
+  "positionRevision": {
+    "secondDoorWoodSourceBounds": [
+      650,
+      218,
+      116,
+      226
+    ],
+    "secondDoorFootCenterSource": [
+      708,
+      476
+    ],
+    "glassTableSourceBounds": [
+      792,
+      626,
+      112,
+      64
+    ],
+    "curtainAndDoorSourceBounds": [
+      906,
+      414,
+      70,
+      63
+    ],
+    "tableDoorClearanceSourceX": 26,
+    "tableCurtainClearanceSourceY": 149,
+    "measuredOn": "imagegen exec-07541b86-6cc5-486a-8bf4-18834c3b98d4, cropped4,2,1668,938 and density2x2 normalized",
+    "status": "Revised Gate2A pending Alejandro approval"
+  },
+  "furnitureGroundPlane": {
+    "actorAnchor": "H3-table",
+    "actorFeetSourceY": 690,
+    "furnitureFrontLegGroundSourceY": 690,
+    "measuredFrontFootBounds": [
+      [
+        798,
+        672,
+        820,
+        690
+      ],
+      [
+        882,
+        672,
+        896,
+        690
+      ]
+    ],
+    "selectedContactPose": "carry-key",
+    "purpose": "Same physical ground plane at pickup and placement; natural elbow-height glass contact, no actor elevation. All H4/H5/H6 actor pixels and held key must clear foreground table and bottle."
+  },
+  "timingProposal": {
+    "automaticNominalMs": 71239.10268239875,
+    "mp4NominalMs": 77689.10268239875,
+    "closingHookMs": 3000,
+    "removedDeadPauseMs": 3000
+  },
+  "locomotion": {
+    "units": "reference-world px/s; actual world speed=modeSpeed*measuredDepthScale(y)",
+    "profiles": {
+      "alice": {
+        "walkSpeed": 235,
+        "runSpeed": 650
+      },
+      "white-rabbit": {
+        "walkSpeed": 300,
+        "runSpeed": 600
+      }
+    },
+    "scope": "All visible displacement in new Chapter1 Scene3; no changes to S1/S2",
+    "integration": "exact integral of ds/scale on each measured linear terrain/route segment",
+    "reference": "hall-locomotion.json",
+    "policy": "Constant environment walk/run reference multiplied once by ground depth and once by durable magical body scale. Corridor remains unchanged."
+  },
+  "slopeRevision": {
+    "rule": "abs(dy)>abs(dx): back/up or front/down; equality and horizontal-dominant: right/left",
+    "bendSource": [
+      782.1265,
+      614
+    ],
+    "derivation": "H3.x; floor(min(H4.y+abs(H4.x-H3.x),H6.y+abs(H6.x-H3.x))-1), keeping both shallow diagonals below45degrees with1sourcepx angular clearance; above table top626."
+  },
+  "durationRevision": {
+    "date": "2026-10-25",
+    "preserveAllTextAndPauses": true,
+    "rangeGated": false
+  },
+  "supportPlanes": {
+    "table": {
+      "groundYSource": 690,
+      "groundYWorld": 1380,
+      "sourceOpaqueRunsYX0X1": [
+        [
+          626,
+          834,
+          860
+        ],
+        [
+          627,
+          834,
+          860
+        ],
+        [
+          628,
+          818,
+          880
+        ],
+        [
+          629,
+          818,
+          880
+        ],
+        [
+          630,
+          806,
+          832
+        ],
+        [
+          630,
+          856,
+          858
+        ],
+        [
+          630,
+          862,
+          892
+        ],
+        [
+          631,
+          806,
+          832
+        ],
+        [
+          631,
+          856,
+          858
+        ],
+        [
+          631,
+          862,
+          892
+        ],
+        [
+          632,
+          798,
+          812
+        ],
+        [
+          632,
+          814,
+          826
+        ],
+        [
+          632,
+          864,
+          870
+        ],
+        [
+          632,
+          886,
+          896
+        ],
+        [
+          633,
+          798,
+          812
+        ],
+        [
+          633,
+          814,
+          826
+        ],
+        [
+          633,
+          864,
+          870
+        ],
+        [
+          633,
+          886,
+          896
+        ],
+        [
+          634,
+          794,
+          804
+        ],
+        [
+          634,
+          818,
+          822
+        ],
+        [
+          634,
+          890,
+          900
+        ],
+        [
+          635,
+          794,
+          804
+        ],
+        [
+          635,
+          818,
+          822
+        ],
+        [
+          635,
+          890,
+          900
+        ],
+        [
+          636,
+          792,
+          802
+        ],
+        [
+          636,
+          816,
+          822
+        ],
+        [
+          636,
+          890,
+          904
+        ],
+        [
+          637,
+          792,
+          802
+        ],
+        [
+          637,
+          816,
+          822
+        ],
+        [
+          637,
+          890,
+          904
+        ],
+        [
+          638,
+          792,
+          800
+        ],
+        [
+          638,
+          814,
+          820
+        ],
+        [
+          638,
+          892,
+          894
+        ],
+        [
+          638,
+          898,
+          904
+        ],
+        [
+          639,
+          792,
+          800
+        ],
+        [
+          639,
+          814,
+          820
+        ],
+        [
+          639,
+          892,
+          894
+        ],
+        [
+          639,
+          898,
+          904
+        ],
+        [
+          640,
+          792,
+          804
+        ],
+        [
+          640,
+          814,
+          818
+        ],
+        [
+          640,
+          874,
+          878
+        ],
+        [
+          640,
+          896,
+          904
+        ],
+        [
+          641,
+          792,
+          804
+        ],
+        [
+          641,
+          814,
+          818
+        ],
+        [
+          641,
+          874,
+          878
+        ],
+        [
+          641,
+          896,
+          904
+        ],
+        [
+          642,
+          792,
+          818
+        ],
+        [
+          642,
+          874,
+          880
+        ],
+        [
+          642,
+          886,
+          904
+        ],
+        [
+          643,
+          792,
+          818
+        ],
+        [
+          643,
+          874,
+          880
+        ],
+        [
+          643,
+          886,
+          904
+        ],
+        [
+          644,
+          792,
+          828
+        ],
+        [
+          644,
+          842,
+          858
+        ],
+        [
+          644,
+          874,
+          904
+        ],
+        [
+          645,
+          792,
+          828
+        ],
+        [
+          645,
+          842,
+          858
+        ],
+        [
+          645,
+          874,
+          904
+        ],
+        [
+          646,
+          794,
+          902
+        ],
+        [
+          647,
+          794,
+          902
+        ],
+        [
+          648,
+          800,
+          892
+        ],
+        [
+          649,
+          800,
+          892
+        ],
+        [
+          650,
+          802,
+          892
+        ],
+        [
+          651,
+          802,
+          892
+        ],
+        [
+          652,
+          802,
+          892
+        ],
+        [
+          653,
+          802,
+          892
+        ],
+        [
+          654,
+          800,
+          816
+        ],
+        [
+          654,
+          826,
+          832
+        ],
+        [
+          654,
+          880,
+          894
+        ],
+        [
+          655,
+          800,
+          816
+        ],
+        [
+          655,
+          826,
+          832
+        ],
+        [
+          655,
+          880,
+          894
+        ],
+        [
+          656,
+          800,
+          814
+        ],
+        [
+          656,
+          826,
+          832
+        ],
+        [
+          656,
+          882,
+          894
+        ],
+        [
+          657,
+          800,
+          814
+        ],
+        [
+          657,
+          826,
+          832
+        ],
+        [
+          657,
+          882,
+          894
+        ],
+        [
+          658,
+          800,
+          812
+        ],
+        [
+          658,
+          822,
+          832
+        ],
+        [
+          658,
+          882,
+          894
+        ],
+        [
+          659,
+          800,
+          812
+        ],
+        [
+          659,
+          822,
+          832
+        ],
+        [
+          659,
+          882,
+          894
+        ],
+        [
+          660,
+          800,
+          812
+        ],
+        [
+          660,
+          822,
+          832
+        ],
+        [
+          660,
+          882,
+          894
+        ],
+        [
+          661,
+          800,
+          812
+        ],
+        [
+          661,
+          822,
+          832
+        ],
+        [
+          661,
+          882,
+          894
+        ],
+        [
+          662,
+          802,
+          812
+        ],
+        [
+          662,
+          822,
+          832
+        ],
+        [
+          662,
+          884,
+          894
+        ],
+        [
+          663,
+          802,
+          812
+        ],
+        [
+          663,
+          822,
+          832
+        ],
+        [
+          663,
+          884,
+          894
+        ],
+        [
+          664,
+          802,
+          812
+        ],
+        [
+          664,
+          822,
+          832
+        ],
+        [
+          664,
+          882,
+          892
+        ],
+        [
+          665,
+          802,
+          812
+        ],
+        [
+          665,
+          822,
+          832
+        ],
+        [
+          665,
+          882,
+          892
+        ],
+        [
+          666,
+          804,
+          812
+        ],
+        [
+          666,
+          822,
+          830
+        ],
+        [
+          666,
+          884,
+          892
+        ],
+        [
+          667,
+          804,
+          812
+        ],
+        [
+          667,
+          822,
+          830
+        ],
+        [
+          667,
+          884,
+          892
+        ],
+        [
+          668,
+          804,
+          812
+        ],
+        [
+          668,
+          822,
+          826
+        ],
+        [
+          668,
+          882,
+          892
+        ],
+        [
+          669,
+          804,
+          812
+        ],
+        [
+          669,
+          822,
+          826
+        ],
+        [
+          669,
+          882,
+          892
+        ],
+        [
+          670,
+          804,
+          812
+        ],
+        [
+          670,
+          822,
+          826
+        ],
+        [
+          670,
+          882,
+          890
+        ],
+        [
+          671,
+          804,
+          812
+        ],
+        [
+          671,
+          822,
+          826
+        ],
+        [
+          671,
+          882,
+          890
+        ],
+        [
+          672,
+          804,
+          812
+        ],
+        [
+          672,
+          822,
+          826
+        ],
+        [
+          672,
+          882,
+          890
+        ],
+        [
+          673,
+          804,
+          812
+        ],
+        [
+          673,
+          822,
+          826
+        ],
+        [
+          673,
+          882,
+          890
+        ],
+        [
+          674,
+          804,
+          812
+        ],
+        [
+          674,
+          822,
+          826
+        ],
+        [
+          674,
+          882,
+          890
+        ],
+        [
+          675,
+          804,
+          812
+        ],
+        [
+          675,
+          822,
+          826
+        ],
+        [
+          675,
+          882,
+          890
+        ],
+        [
+          676,
+          804,
+          812
+        ],
+        [
+          676,
+          822,
+          824
+        ],
+        [
+          676,
+          882,
+          890
+        ],
+        [
+          677,
+          804,
+          812
+        ],
+        [
+          677,
+          822,
+          824
+        ],
+        [
+          677,
+          882,
+          890
+        ],
+        [
+          678,
+          804,
+          812
+        ],
+        [
+          678,
+          882,
+          890
+        ],
+        [
+          679,
+          804,
+          812
+        ],
+        [
+          679,
+          882,
+          890
+        ],
+        [
+          680,
+          802,
+          812
+        ],
+        [
+          680,
+          882,
+          892
+        ],
+        [
+          681,
+          802,
+          812
+        ],
+        [
+          681,
+          882,
+          892
+        ],
+        [
+          682,
+          800,
+          812
+        ],
+        [
+          682,
+          884,
+          896
+        ],
+        [
+          683,
+          800,
+          812
+        ],
+        [
+          683,
+          884,
+          896
+        ],
+        [
+          684,
+          798,
+          810
+        ],
+        [
+          684,
+          884,
+          896
+        ],
+        [
+          685,
+          798,
+          810
+        ],
+        [
+          685,
+          884,
+          896
+        ],
+        [
+          686,
+          798,
+          808
+        ],
+        [
+          686,
+          886,
+          896
+        ],
+        [
+          687,
+          798,
+          808
+        ],
+        [
+          687,
+          886,
+          896
+        ],
+        [
+          688,
+          802,
+          808
+        ],
+        [
+          688,
+          888,
+          892
+        ],
+        [
+          689,
+          802,
+          808
+        ],
+        [
+          689,
+          888,
+          892
+        ]
+      ],
+      "asset": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+      "sourceBoundsExclusive": [
+        792,
+        626,
+        904,
+        690
+      ],
+      "measurement": "Inspected tabletop/leg bounds; actual neutral glass/metal source pixels only. Foreground reuses the exact original panorama pixels; no recoloring or new art.",
+      "restingPropsLocalDepthOffset": 1
+    }
+  }
+}

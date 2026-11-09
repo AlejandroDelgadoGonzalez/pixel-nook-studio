@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "locks": [
+    {
+      "id": "rabbit-house-S4-S5",
+      "base": "stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
+      "variant": "stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v1.png",
+      "baseSha256": "918d4c7b719e3c8a9df43d4ae6ba09b5032223ad818db0882a154ee7410142b6",
+      "dimensions": [
+        1670,
+        942
+      ],
+      "allowedChangePolygon": [
+        [
+          688,
+          444
+        ],
+        [
+          766,
+          444
+        ],
+        [
+          832,
+          402
+        ],
+        [
+          1038,
+          444
+        ],
+        [
+          1038,
+          618
+        ],
+        [
+          688,
+          618
+        ]
+      ],
+      "protectedRectangles": [
+        [
+          1008,
+          532,
+          1220,
+          668
+        ],
+        [
+          1030,
+          494,
+          1220,
+          668
+        ]
+      ],
+      "mask": ".artifacts/alice-in-wonderland/chapter-2/scene-5/exterior-lock/allowed-interior-mask.png",
+      "registration": {
+        "targetAxisX": 925,
+        "sourceAxisByY": [
+          [
+            400,
+            916
+          ],
+          [
+            510,
+            916
+          ],
+          [
+            538,
+            910
+          ],
+          [
+            618,
+            910
+          ]
+        ],
+        "fixedRegistrationX": [
+          840,
+          982,
+          1038
+        ],
+        "purpose": "Generated interior masonry registration only; exterior never resampled"
+      },
+      "allowedChangeRectangles": [
+        [
+          900,
+          432,
+          1016,
+          446
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1088 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "scene": "alice-c1-s4",
+  "title": "The Empty Jar",
+  "status": "User-authorized lower-shelf support and constant scene-zoom correction. Current verification: .artifacts/qa/alice-in-wonderland/scene-4/support-zoom/.",
+  "measurement": {
+    "date": "2026-10-20",
+    "owner": "NOOK applying03 in main thread",
+    "evidence": ".artifacts/alice-in-wonderland/scene-4",
+    "method": "Native generated raster inspected; alpha cuts measured; fixed support tops and pose hand/shoe anchors traced; static scene graph and camera unions projected."
+  },
+  "assets": {
+    "alice-s4-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93"
+    },
+    "props-s4-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/props-s4-v1.png",
+      "dimensions": [
+        2164,
+        727
+      ],
+      "sha256": "394db0d56e838577db9eea96922effac288a7ff6524953618592f793fbc4ad06"
+    },
+    "upper-shelf-empty-s4-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/environments/upper-shelf-empty-s4-v1.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b6b6ebbb35d30c9a321df82b39288eea2d2ebd709d609b90bdcd6de7d2114fd3"
+    },
+    "well-bottom-panorama-s4-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/environments/well-bottom-panorama-s4-v1.png",
+      "dimensions": [
+        1672,
+        1882
+      ],
+      "sha256": "e26b13dd7c8c293122987e4d5fdd6b3818bd7eaa4b66a134f207a11b390a8a6b"
+    },
+    "alice-s4-reach-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93"
+    },
+    "well-junction-s4-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/environments/well-junction-s4-v1.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "abb86a8506cef691b266c7ab17a47e853c9ec7088bf0947150384be89e359f08"
+    },
+    "alice-s4-pass-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93"
+    },
+    "well-wall-clean-s4-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/environments/well-wall-clean-s4-v1.png",
+      "dimensions": [
+        1720,
+        1916
+      ],
+      "sha256": "ac488709a4e8fbda57799847ff9f4f5ba705a017e91f6056fbf495341f8e63ec"
+    },
+    "alice-s4-pass-motion-v1.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93"
+    }
+  },
+  "coordinateSystem": {
+    "worldUnitsPerCanonicalSourcePixel": 2,
+    "continuationSourceOrigin": [
+      48,
+      34
+    ],
+    "safeSourceBounds": [
+      48,
+      0,
+      1672,
+      1916
+    ],
+    "worldBounds": [
+      96,
+      0,
+      3248,
+      3832
+    ],
+    "actorFallScale": 0.732,
+    "verticalFallIsNotGroundDepth": true
+  },
+  "panorama": {
+    "kind": "one continuous vertical environment assembled from immutable upper painting and generated extended shaft painting; no animated scene transition",
+    "canonicalExtendedDimensions": [
+      1672,
+      1882
+    ],
+    "generatedNativeDimensions": [
+      1182,
+      1330
+    ],
+    "canonicalSizing": "NN only; source retained; normalized operative2x2 via qa/pixel_density.py",
+    "overscan": {
+      "measurement": "Two adjoining camera territories in a vertically extended environment. Do not claim full1882height is1.3x a single720frame. Each941high territory has its own720high core.",
+      "panels": [
+        {
+          "sourceBounds": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "base16by9": [
+            196,
+            110.5,
+            1280,
+            720
+          ]
+        },
+        {
+          "sourceBounds": [
+            0,
+            941,
+            1672,
+            941
+          ],
+          "base16by9": [
+            196,
+            1051.5,
+            1280,
+            720
+          ]
+        }
+      ],
+      "widthRatio": 1.30625,
+      "heightRatioPerTerritory": 1.3069444444444445,
+      "marginsPerSide": [
+        196,
+        110.5
+      ]
+    },
+    "immutableUpperLayer": "/stories/alice-in-wonderland/assets/environments/tunnel-well-panorama-s3-v1.png",
+    "upperCoverageBoundarySource": [
+      [
+        0,
+        850
+      ],
+      [
+        80,
+        870
+      ],
+      [
+        176,
+        846
+      ],
+      [
+        250,
+        878
+      ],
+      [
+        338,
+        852
+      ],
+      [
+        428,
+        884
+      ],
+      [
+        524,
+        862
+      ],
+      [
+        616,
+        896
+      ],
+      [
+        708,
+        876
+      ],
+      [
+        790,
+        900
+      ],
+      [
+        868,
+        884
+      ],
+      [
+        964,
+        900
+      ],
+      [
+        1060,
+        882
+      ],
+      [
+        1150,
+        894
+      ],
+      [
+        1240,
+        870
+      ],
+      [
+        1336,
+        888
+      ],
+      [
+        1430,
+        866
+      ],
+      [
+        1526,
+        890
+      ],
+      [
+        1608,
+        866
+      ],
+      [
+        1672,
+        880
+      ]
+    ],
+    "junction": {
+      "asset": "well-junction-s4-v1.png",
+      "sourceCrop": [
+        48,
+        250,
+        1624,
+        500
+      ],
+      "destinationSource": [
+        48,
+        700
+      ],
+      "staticMask": {
+        "type": "hard2x2pixelCoverage",
+        "rise": [
+          700,
+          810
+        ],
+        "fall": [
+          1040,
+          1200
+        ],
+        "hashX": 73856093,
+        "hashY": 19349663,
+        "seed": 83492791,
+        "modulus": 1009,
+        "temporalVariation": false
+      },
+      "method": "Generated seamless environment connection; no whole-shot fade. First S3 end frame remains above this zone."
+    },
+    "upperShelfRemoval": {
+      "generatedPlate": "upper-shelf-empty-s4-v1.png",
+      "sourceClip": [
+        1158,
+        636,
+        38,
+        38
+      ],
+      "activation": "Always in S3 and S4; jar drawn separately at left edge, no background switch at contact."
+    },
+    "wallRepair": {
+      "asset": "well-wall-clean-s4-v1.png",
+      "mask": "/stories/alice-in-wonderland/shared/scene-4-wall-mask.json",
+      "method": "Generated local rock repair; minimum-error irregular2x2 texture contour. Original shelves, upper shot and landing retained."
+    }
+  },
+  "spawns": {
+    "alice": {
+      "anchor": "A0-s3-exact-end",
+      "sourcePoint": [
+        1074,
+        600
+      ],
+      "point": [
+        2148,
+        1200
+      ],
+      "pose": "S3 slow-descent right",
+      "scale": 0.732,
+      "hands": "empty"
+    },
+    "rabbit": {
+      "presence": "unseen beyond S3 bend, not in this well"
+    },
+    "sister": {
+      "presence": "outside, seated-reading, same book",
+      "point": [
+        810,
+        650
+      ]
+    }
+  },
+  "anchors": {
+    "A0-s3-exact-end": {
+      "sourcePoint": [
+        1074,
+        600
+      ],
+      "point": [
+        2148,
+        1200
+      ]
+    },
+    "A1-upper-grasp": {
+      "sourcePoint": [
+        1074,
+        676
+      ],
+      "point": [
+        2148,
+        1352
+      ]
+    },
+    "A2-upper-clear": {
+      "sourcePoint": [
+        1074,
+        678
+      ],
+      "point": [
+        2148,
+        1356
+      ]
+    },
+    "A3-inspect": {
+      "sourcePoint": [
+        1074,
+        800
+      ],
+      "point": [
+        2148,
+        1600
+      ]
+    },
+    "A4-lower-approach": {
+      "sourcePoint": [
+        1074,
+        1010
+      ],
+      "point": [
+        2148,
+        2020
+      ]
+    },
+    "A5-lower-contact": {
+      "sourcePoint": [
+        1074,
+        1154
+      ],
+      "point": [
+        2148,
+        2308
+      ]
+    },
+    "A6-lower-clear": {
+      "sourcePoint": [
+        1074,
+        1156
+      ],
+      "point": [
+        2148,
+        2312
+      ]
+    },
+    "A7-returned": {
+      "sourcePoint": [
+        1074,
+        1280
+      ],
+      "point": [
+        2148,
+        2560
+      ]
+    },
+    "A8-leaves-visible": {
+      "sourcePoint": [
+        1080,
+        1550
+      ],
+      "point": [
+        2160,
+        3100
+      ]
+    },
+    "A9-precontact": {
+      "sourcePoint": [
+        1080,
+        1652
+      ],
+      "point": [
+        2160,
+        3304
+      ]
+    },
+    "A10-first-contact": {
+      "sourcePoint": [
+        1080,
+        1658
+      ],
+      "point": [
+        2160,
+        3316
+      ]
+    },
+    "A11-compression": {
+      "sourcePoint": [
+        1080,
+        1661
+      ],
+      "point": [
+        2160,
+        3322
+      ]
+    },
+    "A12-seated-s5": {
+      "sourcePoint": [
+        1080,
+        1664
+      ],
+      "point": [
+        2160,
+        3328
+      ]
+    },
+    "J0-upper-base": {
+      "sourcePoint": [
+        1112,
+        666
+      ],
+      "point": [
+        2224,
+        1332
+      ]
+    },
+    "J1-lower-base": {
+      "sourcePoint": [
+        1114,
+        1144
+      ],
+      "point": [
+        2228,
+        2288
+      ]
+    }
+  },
+  "walkPaths": {},
+  "motionPaths": {
+    "upper-pickup": {
+      "startAnchor": "A0-s3-exact-end",
+      "endAnchor": "A2-upper-clear",
+      "sourceWaypoints": [
+        [
+          1074,
+          600
+        ],
+        [
+          1074,
+          676
+        ],
+        [
+          1074,
+          678
+        ]
+      ],
+      "kind": "One vertical body column; arm reaches edge then lifts/withdraws jar up-left before passing support.",
+      "waypoints": [
+        [
+          2148,
+          1200
+        ],
+        [
+          2148,
+          1352
+        ],
+        [
+          2148,
+          1356
+        ]
+      ]
+    },
+    "carry-and-inspect": {
+      "startAnchor": "A2-upper-clear",
+      "endAnchor": "A4-lower-approach",
+      "sourceWaypoints": [
+        [
+          1074,
+          678
+        ],
+        [
+          1074,
+          720
+        ],
+        [
+          1074,
+          800
+        ],
+        [
+          1074,
+          1010
+        ]
+      ],
+      "kind": "continuous slow fall, jar owner Alice",
+      "waypoints": [
+        [
+          2148,
+          1356
+        ],
+        [
+          2148,
+          1440
+        ],
+        [
+          2148,
+          1600
+        ],
+        [
+          2148,
+          2020
+        ]
+      ]
+    },
+    "lower-place": {
+      "startAnchor": "A4-lower-approach",
+      "endAnchor": "A6-lower-clear",
+      "sourceWaypoints": [
+        [
+          1074,
+          1010
+        ],
+        [
+          1074,
+          1154
+        ],
+        [
+          1074,
+          1156
+        ]
+      ],
+      "kind": "One vertical body column; arm extends to edge and releases after base contact, then withdraws empty.",
+      "waypoints": [
+        [
+          2148,
+          2020
+        ],
+        [
+          2148,
+          2308
+        ],
+        [
+          2148,
+          2312
+        ]
+      ]
+    },
+    "descent-to-leaves": {
+      "startAnchor": "A6-lower-clear",
+      "endAnchor": "A9-precontact",
+      "sourceWaypoints": [
+        [
+          1074,
+          1156
+        ],
+        [
+          1074,
+          1180
+        ],
+        [
+          1074,
+          1280
+        ],
+        [
+          1080,
+          1450
+        ],
+        [
+          1080,
+          1550
+        ],
+        [
+          1080,
+          1652
+        ]
+      ],
+      "kind": "empty-handed slow fall",
+      "waypoints": [
+        [
+          2148,
+          2312
+        ],
+        [
+          2148,
+          2360
+        ],
+        [
+          2148,
+          2560
+        ],
+        [
+          2160,
+          2900
+        ],
+        [
+          2160,
+          3100
+        ],
+        [
+          2160,
+          3304
+        ]
+      ]
+    },
+    "landing-hook": {
+      "startAnchor": "A9-precontact",
+      "endAnchor": "A12-seated-s5",
+      "sourceWaypoints": [
+        [
+          1080,
+          1652
+        ],
+        [
+          1080,
+          1658
+        ],
+        [
+          1080,
+          1661
+        ],
+        [
+          1080,
+          1664
+        ]
+      ],
+      "timeMs": [
+        0,
+        700,
+        1850,
+        3000
+      ],
+      "kind": "one contact, knee compression, seated settlement; never walking or a repeated impact",
+      "waypoints": [
+        [
+          2160,
+          3304
+        ],
+        [
+          2160,
+          3316
+        ],
+        [
+          2160,
+          3322
+        ],
+        [
+          2160,
+          3328
+        ]
+      ]
+    }
+  },
+  "surfaces": {
+    "upperShelf": {
+      "sourceSupport": [
+        1108,
+        666,
+        204,
+        8
+      ],
+      "jarBaseAnchor": "J0-upper-base"
+    },
+    "lowerShelf": {
+      "sourceSupport": [
+        1110,
+        1144,
+        204,
+        4
+      ],
+      "jarBaseAnchor": "J1-lower-base",
+      "paintedTopFaceSourceBounds": [
+        1110,
+        1138,
+        204,
+        12
+      ],
+      "sourceSolidBodyBounds": [
+        1110,
+        1148,
+        204,
+        28
+      ],
+      "measurement": "Active assembled background, not uncomposited painting: left wooden tip top y1144; jar foot at1114,1144 rests in painted top-face band1138..1150. Evidence support-measure.png."
+    },
+    "leafPile": {
+      "sourceBounds": [
+        950,
+        1590,
+        300,
+        92
+      ],
+      "solidEarthBelow": true,
+      "landingAnchor": "A10-first-contact"
+    }
+  },
+  "heldProps": {
+    "jar": {
+      "physicalNormalizedSize": [
+        74,
+        82
+      ],
+      "ownerScale": 0.732,
+      "gripOnJarNormalized": [
+        0.16,
+        0.15
+      ],
+      "states": [
+        {
+          "id": "upper-fixed",
+          "owner": null,
+          "anchor": "J0-upper-base",
+          "representation": "Single separate jar on accessible left edge, identical S3/S4 texture; upper painting is always jar-free."
+        },
+        {
+          "id": "carried",
+          "owner": "alice",
+          "anchor": "current actual pose handAnchorNormalized",
+          "representation": "single separate jar; original footprint clean-plate active"
+        },
+        {
+          "id": "lower-fixed",
+          "owner": null,
+          "anchor": "J1-lower-base",
+          "representation": "single upright jar; hands empty; upper clean-plate remains active"
+        }
+      ],
+      "pickupContactSource": [
+        1103.4627000850246,
+        640.2569756097561
+      ],
+      "placementGripSource": [
+        1105,
+        1118
+      ],
+      "transitionRule": "Exact registered body column x1074source; articulate only arm across authored frames. Withdraw jar up/left before dropping below support. Release only when single jar base touches lower support.",
+      "gripExplanation": "Measured neck grip: jar hangs below the hand, leaving Alice face and eyes unobstructed; same grip throughout pickup/carry/place.",
+      "lowerPlacementGrip": {
+        "handOffsetNormalized": [
+          3.111111111111111,
+          0
+        ],
+        "sourceFingertipAtContact": [
+          412,
+          224
+        ],
+        "gripOnJarNormalized": [
+          0.16,
+          0.15
+        ],
+        "transition": "Smooth within actual fingers during place-approach; same contact grip until ownership releases. Actor root X unchanged."
+      }
+    }
+  },
+  "occluders": [
+    {
+      "id": "upper-preserved-painting",
+      "kind": "static environment layer",
+      "sourceBoundary": [
+        [
+          0,
+          850
+        ],
+        [
+          80,
+          870
+        ],
+        [
+          176,
+          846
+        ],
+        [
+          250,
+          878
+        ],
+        [
+          338,
+          852
+        ],
+        [
+          428,
+          884
+        ],
+        [
+          524,
+          862
+        ],
+        [
+          616,
+          896
+        ],
+        [
+          708,
+          876
+        ],
+        [
+          790,
+          900
+        ],
+        [
+          868,
+          884
+        ],
+        [
+          964,
+          900
+        ],
+        [
+          1060,
+          882
+        ],
+        [
+          1150,
+          894
+        ],
+        [
+          1240,
+          870
+        ],
+        [
+          1336,
+          888
+        ],
+        [
+          1430,
+          866
+        ],
+        [
+          1526,
+          890
+        ],
+        [
+          1608,
+          866
+        ],
+        [
+          1672,
+          880
+        ]
+      ]
+    },
+    {
+      "id": "upper-empty-shelf-plate",
+      "sourceBounds": [
+        1158,
+        636,
+        38,
+        38
+      ],
+      "activation": "Always-on jar-free shelf plate, shared by S3/S4; no actor occlusion."
+    },
+    {
+      "id": "leaf-front-rim",
+      "sourcePolygon": [
+        [
+          1036,
+          1658
+        ],
+        [
+          1060,
+          1652
+        ],
+        [
+          1084,
+          1656
+        ],
+        [
+          1100,
+          1650
+        ],
+        [
+          1124,
+          1660
+        ],
+        [
+          1128,
+          1676
+        ],
+        [
+          1036,
+          1678
+        ]
+      ],
+      "activation": "shoe soles and seated contact only, never cover face/hands or fake full-body disappearance"
+    }
+  ],
+  "camera": {
+    "fullViewportRequired": true,
+    "orientations": [
+      "9:16",
+      "16:9",
+      "arbitrary resize"
+    ],
+    "sourceHeightPreferred": 600,
+    "captionReservePx": "min300,max180,30% viewport height",
+    "safeSourceBounds": [
+      48,
+      0,
+      1672,
+      1916
+    ],
+    "noNewZoomOnCharactersForPortrait": true,
+    "opening": "exact active S3 frame, no recentering; only subsequent continuous following",
+    "shotConstraints": "See camera-projections.json for static sampled source rectangles, protected body/prop/support union and bounds.",
+    "zoomLock": {
+      "minimumProtectedTopWorld": 1066.776,
+      "maximumProtectedBottomWorld": 3360,
+      "maximumContextSizeWorld": [
+        542.22,
+        461.224
+      ],
+      "openingArtworkHeightWorld": 1882,
+      "policy": "One feasible zoom per viewport/safe-area layout for all S4 actions, text and3000ms hook. Boundaries only clamp center. S3 closing frame shares this planned zoom for exact entry. Context may be cropped before any required body/held object."
+    }
+  },
+  "closingHook": {
+    "durationMs": 3000,
+    "text": null,
+    "endPose": "seated-braced",
+    "endAnchor": "A12-seated-s5",
+    "jarState": "lower-fixed",
+    "repeatInContinuousReading": false
+  },
+  "landingLeafClusters": [
+    {
+      "id": "left-contact-leaf",
+      "sourcePolygon": [
+        [
+          1008,
+          1614
+        ],
+        [
+          1012,
+          1610
+        ],
+        [
+          1018,
+          1612
+        ],
+        [
+          1018,
+          1618
+        ],
+        [
+          1014,
+          1622
+        ],
+        [
+          1010,
+          1620
+        ]
+      ],
+      "shiftSource": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "id": "right-contact-leaf",
+      "sourcePolygon": [
+        [
+          1060,
+          1622
+        ],
+        [
+          1066,
+          1622
+        ],
+        [
+          1068,
+          1628
+        ],
+        [
+          1066,
+          1634
+        ],
+        [
+          1062,
+          1638
+        ],
+        [
+          1058,
+          1632
+        ]
+      ],
+      "shiftSource": [
+        2,
+        -2
+      ]
+    },
+    {
+      "id": "front-contact-leaf",
+      "sourcePolygon": [
+        [
+          1032,
+          1628
+        ],
+        [
+          1040,
+          1626
+        ],
+        [
+          1044,
+          1630
+        ],
+        [
+          1040,
+          1634
+        ],
+        [
+          1034,
+          1634
+        ]
+      ],
+      "shiftSource": [
+        0,
+        2
+      ]
+    }
+  ],
+  "landingLeafMeasurement": {
+    "source": "well-bottom-panorama-s4-v1.png",
+    "evidence": ".artifacts/qa/alice-in-wonderland/scene-4/leaf-measure.png",
+    "scope": "03 measured actual existing leaf contours for approved local contact movement; no new painting or changed scene route. 2source-pixel static blocks, no geometric background patch.",
+    "activation": "compression and settle only, never before shoe contact; final shifts<=2sourcepx"
+  },
+  "interactionContinuity": {
+    "columnSourceX": 1074,
+    "sourceBodyRegistration": "Eight authored arm frames; common176x182world crop, eye-registered origin derived against S3 slow-descent. Root X1074, no lateral pickup/drop detours.",
+    "upperShelfBaseSource": [
+      1112,
+      666
+    ],
+    "lowerShelfBaseSource": [
+      1114,
+      1144
+    ],
+    "preservedLandingSource": [
+      1080,
+      1664
+    ]
+  },
+  "armAnimation": {
+    "frames": [
+      "pass-arm-0",
+      "pass-arm-1",
+      "pass-arm-2",
+      "pass-arm-3",
+      "pass-arm-4",
+      "pass-arm-5",
+      "pass-arm-6",
+      "pass-arm-7"
+    ],
+    "upperWithdrawDurationMs": 1800,
+    "lowerExtendDurationMs": 1900,
+    "noBodyTranslation": true,
+    "sourceRootColumn": 1074,
+    "contactRootY": [
+      676,
+      1154
+    ]
+  }
+}

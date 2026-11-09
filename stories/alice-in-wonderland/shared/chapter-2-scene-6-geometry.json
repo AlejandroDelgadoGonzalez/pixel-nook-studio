@@ -1,0 +1,897 @@
+{
+  "status": "Both November8 video reviews implemented; official-layout browser QA, independent MP4 and source-art audits pass; visual review ready",
+  "coordinateConvention": "native source pixels, x right / y down, source to world1:1. Landmark boxes are measured against approved rasters; route/control points are proposed choreography pending approval.",
+  "reuse": {
+    "interior": "stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v4.png",
+    "exterior": "stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
+    "s5Geometry": "chapter-2-scene-5-geometry.json",
+    "newPanoramas": 0
+  },
+  "interior": {
+    "rig": {
+      "foldedSourceBoundsExclusive": [
+        2380,
+        12764,
+        2876,
+        13308
+      ],
+      "mirror": true,
+      "displayScale": 0.833,
+      "bodyPosition": [
+        684.9866666666667,
+        224.608
+      ],
+      "worldBodyPivot": [
+        989.3093333333331,
+        664.432
+      ],
+      "wholeCanonicalSprite": true,
+      "separateLimbSprites": false
+    },
+    "camera": {
+      "clusterBounds": [
+        628,
+        260,
+        1066,
+        680
+      ],
+      "fixedPerLayout": false,
+      "baseCenterPortrait": 818,
+      "baseCenterLandscape": 832,
+      "minimumSourceLeft": 628,
+      "entranceSourceBounds": [
+        1054,
+        1146
+      ],
+      "actorSafeBottom": 680,
+      "captionGapPx": 4,
+      "artEdgeInset": 2,
+      "finalZoomMultiplier": 1.25,
+      "finalCenterX": 891.5706666666667,
+      "transitionStatePath": [
+        "large",
+        "fold"
+      ],
+      "scope": "User-authorized smooth fold zoom; all text frames held and complete native sprite kept clear of the caption.",
+      "topGuardPx": 12,
+      "finalCaptionGapPx": 12,
+      "floorReuseBottom": 1200,
+      "fixedFoldCaptionFraction": 0.58
+    },
+    "groundSupport": {
+      "sourceBottom": 544,
+      "worldY": 677.76,
+      "reference": "wood floor immediately in front of hearth"
+    },
+    "props": {
+      "fan": {
+        "pose": "fan-replacement",
+        "anchor": [
+          907,
+          570
+        ],
+        "worldHeight": 22
+      },
+      "gloves": {
+        "pose": "gloves-replacement",
+        "anchor": [
+          980,
+          570
+        ],
+        "worldHeight": 18
+      },
+      "bottle": {
+        "fullPose": "bottle-unlabelled-full",
+        "sippedPose": "bottle-unlabelled-sipped",
+        "anchor": [
+          948,
+          570
+        ],
+        "worldHeight": 32,
+        "attachmentPolicy": {
+          "holdMoments": [
+            5,
+            6,
+            7
+          ],
+          "drinkMoment": 8,
+          "tableReturnMoment": 10,
+          "mode": "step"
+        }
+      },
+      "cork": {
+        "pose": "cork",
+        "anchor": [
+          996,
+          569
+        ],
+        "worldHeight": 5
+      }
+    },
+    "window": {
+      "bounds": [
+        577,
+        376,
+        718,
+        514
+      ],
+      "apertureBounds": [
+        616,
+        401,
+        667,
+        490
+      ],
+      "curtains": "cream tied both sides",
+      "casements": "open wood leaves with crossbars",
+      "sill": "gray stone",
+      "handContact": [
+        706.0893333333333,
+        413.42133333333334
+      ]
+    },
+    "flue": {
+      "bounds": [
+        744,
+        214,
+        838,
+        456
+      ],
+      "continuousToCeiling": true,
+      "separateFromWindow": true
+    },
+    "landingBounds": [
+      630,
+      680,
+      708,
+      710
+    ],
+    "pebbleEntry": [
+      [
+        778,
+        558
+      ],
+      [
+        792,
+        558
+      ],
+      [
+        806,
+        558
+      ]
+    ],
+    "cakeRest": [
+      [
+        640,
+        698
+      ],
+      [
+        666,
+        704
+      ],
+      [
+        694,
+        697
+      ]
+    ],
+    "depth": {
+      "table": 662,
+      "tableProps": 663,
+      "alice": 671,
+      "cakes": 705
+    },
+    "aliceRecoil": "Whole sprite4px and return within1.2s; final rig unchanged. No isolated limbs.",
+    "floorReuse": "Three native96px floor strips reused below936; no new panorama PNG or generation. Runtime coverage1224."
+  },
+  "exterior": {
+    "doorHandle": [
+      777,
+      581
+    ],
+    "rabbitDoorFeet": [
+      754,
+      623
+    ],
+    "gate": [
+      455,
+      642
+    ],
+    "chimneyTop": [
+      925,
+      210
+    ],
+    "chimneyOpeningBounds": [
+      910,
+      216,
+      942,
+      232
+    ],
+    "roofChimneyShoulder": [
+      954,
+      319
+    ],
+    "ladderBase": [
+      1020,
+      668
+    ],
+    "ladderTop": [
+      1000,
+      402
+    ],
+    "billRoofRoute": [
+      [
+        1000,
+        402
+      ],
+      [
+        980,
+        358
+      ],
+      [
+        954,
+        319
+      ],
+      [
+        925,
+        210
+      ]
+    ],
+    "billGroundRoute": [
+      [
+        455,
+        642
+      ],
+      [
+        560,
+        690
+      ],
+      [
+        1040,
+        690
+      ],
+      [
+        1020,
+        668
+      ]
+    ],
+    "flightCubic": [
+      [
+        925,
+        210
+      ],
+      [
+        1040,
+        75
+      ],
+      [
+        1165,
+        240
+      ],
+      [
+        1235,
+        675
+      ]
+    ],
+    "bushBounds": [
+      1032,
+      501,
+      1208,
+      664
+    ],
+    "billSeatedFeet": [
+      1235,
+      675
+    ],
+    "windowExterior": [
+      957,
+      480
+    ],
+    "pebbleLaunch": [
+      830,
+      650
+    ],
+    "pebbleChimneyArc": [
+      [
+        1108,
+        650
+      ],
+      [
+        1080,
+        240
+      ],
+      [
+        970,
+        70
+      ],
+      [
+        925,
+        210
+      ]
+    ],
+    "panoramaSha256": "918d4c7b719e3c8a9df43d4ae6ba09b5032223ad818db0882a154ee7410142b6"
+  },
+  "cameraProposal": {
+    "interior": "Inherit exact current S5 folded frame per viewport. No new interior zoom.",
+    "exteriorGround": "Use S4 house framing. Required group at door/ladder; no invisible boundary teleports.",
+    "exteriorRoofFlight": "Separate silent reframe fitting swept flight bounds [880,100,1190,675] and complete body. Caption closed for climb/flight. Return to ground framing before Bill speaks. Must be verified on official viewports at Gate4."
+  },
+  "atlasContract": ".artifacts/alice-in-wonderland/chapter-2/scene-6-gates/bill-atlas-contract.json",
+  "durationSeconds": 70.2,
+  "steps": [
+    {
+      "moment": 1,
+      "location": "I",
+      "seconds": 3,
+      "speaker": "Sin texto",
+      "content": "Apertura idéntica al cierre de S5: misma Alice, props y cámara.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 2,
+      "location": "E",
+      "seconds": 0.7,
+      "speaker": "Sin texto",
+      "content": "Crossfade interior → exterior.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 3,
+      "location": "E",
+      "seconds": 2.5,
+      "speaker": "Sin texto",
+      "content": "El Conejo prueba la puerta; no logra abrirla.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 4,
+      "location": "E",
+      "seconds": 3,
+      "speaker": "Rabbit",
+      "content": "Something enormous is blocking my door!",
+      "advanceLocked": false
+    },
+    {
+      "moment": 5,
+      "location": "E",
+      "seconds": 3,
+      "speaker": "Rabbit",
+      "content": "Bill! Bring your ladder. Try the chimney!",
+      "advanceLocked": false
+    },
+    {
+      "moment": 6,
+      "location": "E",
+      "seconds": 3,
+      "speaker": "Sin texto",
+      "content": "Bill entra por la verja con su escalera; se acerca al Conejo.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 7,
+      "location": "E",
+      "seconds": 3.5,
+      "speaker": "Bill",
+      "content": "The chimney? All right. I will try.",
+      "advanceLocked": false
+    },
+    {
+      "moment": 8,
+      "location": "E",
+      "seconds": 5,
+      "speaker": "Sin texto",
+      "content": "Bill despliega su escalera y la apoya contra el alero derecho.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 9,
+      "location": "E",
+      "seconds": 5,
+      "speaker": "Sin texto",
+      "content": "Sube la escalera y continúa por la vertiente del techo hasta el conducto.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 10,
+      "location": "E",
+      "seconds": 2,
+      "speaker": "Sin texto",
+      "content": "Bill se agacha y desaparece por la boca de la chimenea.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 11,
+      "location": "I",
+      "seconds": 0.7,
+      "speaker": "Sin texto",
+      "content": "Crossfade exterior → interior.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 12,
+      "location": "I",
+      "seconds": 1.5,
+      "speaker": "Sin texto",
+      "content": "Polvo y golpes progresan hacia abajo dentro del conducto de piedra.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 13,
+      "location": "I",
+      "seconds": 6,
+      "speaker": "Alice",
+      "content": "Someone is coming down the chimney! One little kick should send them back up!",
+      "advanceLocked": false
+    },
+    {
+      "moment": 14,
+      "location": "I",
+      "seconds": 1.2,
+      "speaker": "Sin texto",
+      "content": "Alice se sacude contra el hogar; un golpe y polvo suben por el conducto. Sprite entero, sin zapato añadido.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 15,
+      "location": "E",
+      "seconds": 0.7,
+      "speaker": "Sin texto",
+      "content": "Crossfade interior → exterior; el vuelo todavía no empieza.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 16,
+      "location": "E",
+      "seconds": 4.5,
+      "speaker": "Sin texto",
+      "content": "Bill sale desde el tope, describe un arco y aterriza sentado junto al arbusto derecho.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 17,
+      "location": "E",
+      "seconds": 3,
+      "speaker": "Bill",
+      "content": "I think I shall stay out here.",
+      "advanceLocked": false
+    },
+    {
+      "moment": 18,
+      "location": "E",
+      "seconds": 4,
+      "speaker": "Rabbit",
+      "content": "That did not work. Toss a few little pebbles down the chimney!",
+      "advanceLocked": false
+    },
+    {
+      "moment": 19,
+      "location": "E",
+      "seconds": 4,
+      "speaker": "Sin texto",
+      "content": "Three pebbles follow staggered monotonic-left arcs into chimney top925,210.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 20,
+      "location": "I",
+      "seconds": 0.7,
+      "speaker": "Sin texto",
+      "content": "Crossfade exterior → interior. Se conserva la identidad y el número de los tres guijarros.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 21,
+      "location": "I",
+      "seconds": 2,
+      "speaker": "Sin texto",
+      "content": "Three pebbles fall out of the cold gray hearth and roll to the three cake coordinates.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 22,
+      "location": "I",
+      "seconds": 2,
+      "speaker": "Sin texto",
+      "content": "Cada guijarro se convierte visiblemente en un pastelito; breve destello, sin movimiento de Alice.",
+      "advanceLocked": true
+    },
+    {
+      "moment": 23,
+      "location": "I",
+      "seconds": 4,
+      "speaker": "Alice",
+      "content": "Those pebbles have turned into little cakes!",
+      "advanceLocked": false
+    },
+    {
+      "moment": 24,
+      "location": "I",
+      "seconds": 3,
+      "speaker": "Alice",
+      "content": "Perhaps one of them can help me get out.",
+      "advanceLocked": false
+    }
+  ],
+  "billScaleProposal": {
+    "standingHeightWorld": 78,
+    "nativeStandingHeight": 365,
+    "nativeScale": 0.2136986301369863,
+    "ladder": "Candidate art depicts a compact carrying ladder; proposal uses a folding ladder extended at moment8. Separate stationary ladder prop and independent climb silhouette must be finalized in art preparation before Gate3, within the same master, with no anatomy clipping."
+  },
+  "runtimeContinuity": {
+    "groundCameraCenterX": 900,
+    "flightCameraCenterX": 1090,
+    "landingCameraCenterX": 1180,
+    "roofCameraTweenMs": 1500,
+    "landingTweenFraction": 0.35,
+    "rabbitWalk6": [
+      [
+        754,
+        623
+      ],
+      [
+        850,
+        645
+      ]
+    ],
+    "rabbitWalk16": [
+      [
+        850,
+        645
+      ],
+      [
+        1120,
+        675
+      ]
+    ],
+    "billWalk6": [
+      [
+        455,
+        642
+      ],
+      [
+        770,
+        650
+      ]
+    ],
+    "billWalk8": [
+      [
+        770,
+        650
+      ],
+      [
+        1020,
+        668
+      ]
+    ],
+    "ladderExtensionMs": 900,
+    "ladderStartScaleY": 0.32,
+    "ladderBase": [
+      1020,
+      668
+    ],
+    "ladderTop": [
+      1000,
+      402
+    ],
+    "windowPolicy": "Original exterior panorama intact; no overlay. Pebbles use chimney.",
+    "pebbleCameraTweenMs": 1500,
+    "pebbleFlightAfterReframeMs": 2500,
+    "windowOverlay": false,
+    "billEarth6": [
+      [
+        455,
+        642
+      ],
+      [
+        455,
+        686
+      ],
+      [
+        560,
+        710
+      ],
+      [
+        690,
+        710
+      ],
+      [
+        780,
+        675
+      ]
+    ],
+    "rabbitStairs6": [
+      [
+        754,
+        623
+      ],
+      [
+        754,
+        641
+      ],
+      [
+        754,
+        659
+      ],
+      [
+        770,
+        675
+      ],
+      [
+        850,
+        675
+      ]
+    ],
+    "billEarth8": [
+      [
+        780,
+        675
+      ],
+      [
+        850,
+        710
+      ],
+      [
+        980,
+        710
+      ],
+      [
+        1020,
+        668
+      ]
+    ],
+    "rabbitEarthApproach16": [
+      [
+        850,
+        675
+      ],
+      [
+        935,
+        710
+      ],
+      [
+        1100,
+        710
+      ],
+      [
+        1120,
+        675
+      ]
+    ]
+  },
+  "videoReview": {
+    "groundCamera": "Wider and house centered; held across3–8",
+    "rabbitIdle": "Existing canonical ready; right until18, left from18; no watch or pointing19",
+    "billAscentPhases": [
+      {
+        "fraction": [
+          0,
+          0.48
+        ],
+        "kind": "ladder"
+      },
+      {
+        "fraction": [
+          0.48,
+          0.68
+        ],
+        "kind": "roof walk left"
+      },
+      {
+        "fraction": [
+          0.68,
+          0.9
+        ],
+        "kind": "stone climb facing left"
+      },
+      {
+        "fraction": [
+          0.9,
+          1
+        ],
+        "kind": "step to chimney opening"
+      }
+    ],
+    "landingApproachMs": 2200,
+    "impactDust": "One emission at seated landing, then Rabbit approaches",
+    "source": "2026-11-08 19-20-27.mkv",
+    "kickDegrees": 1.8,
+    "roofSurfaceContact": [
+      975,
+      359
+    ],
+    "stoneClimbFootRoute": [
+      [
+        975,
+        359
+      ],
+      [
+        975,
+        220
+      ]
+    ]
+  },
+  "billPoseMetrics": {
+    "idle-front": {
+      "contentBounds": [
+        135,
+        98,
+        376,
+        461
+      ],
+      "faceWidth": 142,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.23509859154929577,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    },
+    "walk-right": {
+      "contentBounds": [
+        622,
+        98,
+        914,
+        461
+      ],
+      "faceWidth": 156,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.214,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    },
+    "carry-ladder-right": {
+      "contentBounds": [
+        1091,
+        98,
+        1469,
+        461
+      ],
+      "faceWidth": 153,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.21819607843137256,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    },
+    "climb-ladder-right": {
+      "contentBounds": [
+        1660,
+        88,
+        1890,
+        400
+      ],
+      "faceWidth": 133,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.25100751879699246,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    },
+    "descend-right": {
+      "contentBounds": [
+        90,
+        706,
+        421,
+        973
+      ],
+      "faceWidth": 126,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.26495238095238094,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    },
+    "airborne-right": {
+      "contentBounds": [
+        613,
+        664,
+        922,
+        1015
+      ],
+      "faceWidth": 139,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.2401726618705036,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    },
+    "seated-dazed-left": {
+      "contentBounds": [
+        1125,
+        696,
+        1434,
+        983
+      ],
+      "faceWidth": 121,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.275900826446281,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    },
+    "recover-left": {
+      "contentBounds": [
+        1650,
+        662,
+        1933,
+        1018
+      ],
+      "faceWidth": 147,
+      "targetFaceWorldWidth": 33.384,
+      "renderScale": 0.22710204081632654,
+      "method": "Measured canonical face envelope and opaque sole trim; crouching/sitting remain anatomically bent. No source resampling."
+    }
+  },
+  "secondVideoReview": {
+    "groundRoutes": {
+      "billEarth6": [
+        [
+          455,
+          642
+        ],
+        [
+          455,
+          686
+        ],
+        [
+          560,
+          710
+        ],
+        [
+          690,
+          710
+        ],
+        [
+          780,
+          675
+        ]
+      ],
+      "rabbitStairs6": [
+        [
+          754,
+          623
+        ],
+        [
+          754,
+          641
+        ],
+        [
+          754,
+          659
+        ],
+        [
+          770,
+          675
+        ],
+        [
+          850,
+          675
+        ]
+      ],
+      "billEarth8": [
+        [
+          780,
+          675
+        ],
+        [
+          850,
+          710
+        ],
+        [
+          980,
+          710
+        ],
+        [
+          1020,
+          668
+        ]
+      ],
+      "rabbitEarthApproach16": [
+        [
+          850,
+          675
+        ],
+        [
+          935,
+          710
+        ],
+        [
+          1100,
+          710
+        ],
+        [
+          1120,
+          675
+        ]
+      ]
+    },
+    "doorCloseMs": 2777.5011790730423,
+    "additionalAliceDx": 20,
+    "billNormalization": "constant33.384 world-pixel face width; native atlas pixels unmodified"
+  }
+}

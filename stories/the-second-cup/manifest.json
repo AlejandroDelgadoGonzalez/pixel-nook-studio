@@ -1,0 +1,35 @@
+{
+  "slug": "the-second-cup",
+  "cover": "/stories/the-second-cup/assets/backgrounds/terrace.png",
+  "coverAlt": "A warm cottage terrace overlooking a quiet stream at sunset.",
+  "duration": "4 min",
+  "category": "Quiet mystery",
+  "themes": [
+    "Belonging",
+    "Friendship",
+    "Small beginnings"
+  ],
+  "synopsis": "The blue cup was supposed to be empty. Tonight, someone has filled it.",
+  "schemaVersion": 1,
+  "id": "the-second-cup-v1",
+  "serialized": false,
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "number": 1,
+      "status": "available",
+      "title": "The Second Cup",
+      "source": "/stories/the-second-cup/chapters/chapter-01.json"
+    }
+  ],
+  "renderers": {
+    "terrace": {
+      "module": "/stories/the-second-cup/renderers/terrace.js",
+      "export": "Terrace"
+    }
+  },
+  "migratedGeometry": {
+    "source": "Approved existing chapter data and renderers",
+    "policy": "Preserved coordinates; new stories must declare shared/stage-geometry.json"
+  }
+}

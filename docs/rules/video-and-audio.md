@@ -1,0 +1,10 @@
+# Video export, sound and verification claims
+
+- Export uses an independent copy of the same story engine and renderer. Preserve 720x1280 (9:16), full-frame artwork, configured safe margins and theme-aware captions. No reader controls, progress bars or outer borders appear in the output.
+- Each export opens with its story logo/wordmark. Preserve the existing three-second logo fade, 450 ms caption fade and configured preview hold. Wrap the full caption before revealing portions of its fixed lines.
+- After the final passage is completely revealed and held, fade its caption and play the following scene's real opening actions without prose. Repeat the same opening in that scene's own export. Use identical state, paths and timing. Respect openingThrough. The last scene finishes on its own artwork; no invented cross-chapter preview.
+- Export never changes reading state, checkpoints, ownership, preferences or completion. Cancel/close must destroy its temporary game, animation loop, recorder, tracks and audio context. Losing tab visibility cancels recording. Test repeated openings and cancellation, sound on/off and actual completed recordings.
+- Use supported browser recording formats: MP4 when available, otherwise supported WebM. Clearly disable unsupported exports. Recording is local and real time; no upload or publishing server is involved.
+- Keep sound restrained, with per-scene atmosphere and smooth fades. Preserve The Second Cup's stream/wind/birds without music or village bells. Walking and ambience follow the reading clock; pausing freezes visual motion and fades sound. No distracting siren music or invented weather overlays.
+- Distinguish automated model checks, simulated browser viewports, captured export previews and completed encoded videos. An accelerated test is not a normal-speed pacing assessment. A preview is not a completed MP4. Do not claim physical-phone or Safari testing from Edge/Chromium simulation.
+- Work stays on localhost. Publication requires a new explicit user request.

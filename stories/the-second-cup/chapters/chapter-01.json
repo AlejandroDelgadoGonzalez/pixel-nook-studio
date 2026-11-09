@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 1,
+  "id": "the-second-cup-v1",
+  "renderer": "terrace",
+  "title": "The Second Cup",
+  "intro": "An empty cup. A small invitation.",
+  "ending": "Tomorrow, there would be biscuits.",
+  "description": "A quiet mystery about an unexpected visitor and the courage to say hello.",
+  "stageLabel": "Mara and Ellis on a cottage terrace at dusk",
+  "episodes": true,
+  "timing": {
+    "characterMs": 27,
+    "wordMs": 440,
+    "minimumHoldMs": 2000,
+    "linePauseMs": 1800
+  },
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.75,
+    "birdMinMs": 26000,
+    "birdRangeMs": 14000
+  },
+  "assets": {
+    "terrace": "/stories/the-second-cup/assets/backgrounds/terrace.png",
+    "atlas": "/stories/the-second-cup/assets/atlases/terrace-props.png",
+    "people": "/stories/the-second-cup/assets/atlases/people.png"
+  },
+  "initialState": {
+    "actors": {
+      "mara": {
+        "x": 582,
+        "y": 566,
+        "visible": 1,
+        "facing": "right",
+        "pose": "idle"
+      },
+      "ellis": {
+        "x": 1140,
+        "y": 377,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle"
+      }
+    },
+    "props": {
+      "blue": {
+        "x": 644,
+        "y": 492,
+        "owner": "table",
+        "filled": 1,
+        "handleLeft": 1,
+        "tilt": 0
+      },
+      "amber": {
+        "x": 756,
+        "y": 492,
+        "owner": "table",
+        "filled": 0,
+        "handleLeft": 0,
+        "tilt": 0
+      },
+      "pot": {
+        "x": 697,
+        "y": 457,
+        "owner": "table",
+        "tilt": 0
+      }
+    },
+    "lamp": {
+      "owner": null
+    },
+    "chapter": 0,
+    "view": "table",
+    "pour": 0
+  },
+  "characters": {
+    "mara": {
+      "name": "Mara",
+      "role": "The host",
+      "color": "#ffe1a2"
+    },
+    "ellis": {
+      "name": "Ellis",
+      "role": "The neighbor",
+      "color": "#d0e4dc"
+    }
+  },
+  "shots": {
+    "table": {
+      "cx": 690,
+      "cy": 450,
+      "w": 370,
+      "h": 330,
+      "actors": [
+        "mara"
+      ],
+      "props": [
+        "blue",
+        "amber",
+        "pot"
+      ],
+      "points": [
+        {
+          "name": "table",
+          "x": 700,
+          "y": 535
+        }
+      ]
+    },
+    "cups": {
+      "cx": 695,
+      "cy": 450,
+      "w": 370,
+      "h": 310,
+      "actors": [
+        "mara",
+        "ellis"
+      ],
+      "props": [
+        "blue",
+        "amber",
+        "pot"
+      ],
+      "points": [
+        {
+          "name": "table",
+          "x": 700,
+          "y": 535
+        }
+      ]
+    },
+    "door": {
+      "cx": 1120,
+      "cy": 292,
+      "w": 350,
+      "h": 280,
+      "actors": [
+        "ellis"
+      ],
+      "props": [],
+      "points": [
+        {
+          "name": "door",
+          "x": 1140,
+          "y": 287
+        }
+      ]
+    },
+    "arrival": {
+      "cx": 1070,
+      "cy": 400,
+      "w": 350,
+      "h": 330,
+      "actors": [
+        "ellis"
+      ],
+      "props": [],
+      "points": []
+    },
+    "conversation": {
+      "cx": 700,
+      "cy": 450,
+      "w": 400,
+      "h": 335,
+      "actors": [
+        "mara",
+        "ellis"
+      ],
+      "props": [
+        "blue",
+        "amber",
+        "pot"
+      ],
+      "points": [
+        {
+          "name": "table",
+          "x": 700,
+          "y": 535
+        }
+      ]
+    },
+    "pour": {
+      "cx": 704,
+      "cy": 450,
+      "w": 400,
+      "h": 335,
+      "actors": [
+        "mara",
+        "ellis"
+      ],
+      "props": [
+        "blue",
+        "amber",
+        "pot"
+      ],
+      "points": [
+        {
+          "name": "table",
+          "x": 700,
+          "y": 535
+        }
+      ]
+    },
+    "together": {
+      "cx": 700,
+      "cy": 450,
+      "w": 400,
+      "h": 335,
+      "actors": [
+        "mara",
+        "ellis"
+      ],
+      "props": [
+        "blue",
+        "amber",
+        "pot"
+      ],
+      "points": [
+        {
+          "name": "table",
+          "x": 700,
+          "y": 535
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "id": "warm-cup",
+      "name": "The cup that waited",
+      "targetSeconds": 70,
+      "atmosphere": {
+        "water": 0.035,
+        "wind": 0.018,
+        "birds": 0.003,
+        "village": 0,
+        "music": 0
+      },
+      "media": {
+        "type": "animation"
+      },
+      "steps": [
+        {
+          "type": "text",
+          "id": "cup-1",
+          "text": "Mara always left the blue cup empty. Tonight, a thin ribbon of steam rose from it.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "cup-2",
+          "text": "The amber cup beside it was still cold. She had not poured either one.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "action",
+          "id": "touch-the-cup",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "mara": {
+                "pose": "reach"
+              }
+            },
+            "view": "cups"
+          }
+        },
+        {
+          "type": "action",
+          "id": "lift-blue",
+          "duration": 1400,
+          "effects": {
+            "props": {
+              "blue": {
+                "x": 636,
+                "y": 505,
+                "owner": "mara"
+              }
+            },
+            "actors": {
+              "mara": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-3",
+          "text": "She lifted the blue cup. Warmth settled into her fingers, gentle as a hand finding hers.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "cup-4",
+          "text": "That’s odd. I’ve been alone all afternoon.",
+          "pauseMs": 1800,
+          "who": "mara"
+        },
+        {
+          "type": "action",
+          "id": "return-blue",
+          "duration": 1500,
+          "effects": {
+            "props": {
+              "blue": {
+                "x": 644,
+                "y": 492,
+                "owner": "table"
+              }
+            }
+          }
+        },
+        {
+          "type": "action",
+          "id": "someone-at-the-door",
+          "duration": 2400,
+          "effects": {
+            "view": "door",
+            "actors": {
+              "ellis": {
+                "visible": 1,
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-5",
+          "text": "At the cottage door stood a stranger in a teal cardigan. He carried nothing, except the look of someone considering an apology.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "cup-6",
+          "text": "I’m sorry. I thought the second cup meant someone was welcome.",
+          "pauseMs": 1800,
+          "who": "ellis"
+        },
+        {
+          "type": "action",
+          "id": "answer-from-terrace",
+          "duration": 2200,
+          "effects": {
+            "view": "table"
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-7",
+          "text": "It did. I just hadn’t expected anyone to understand.",
+          "pauseMs": 3400,
+          "who": "mara"
+        }
+      ],
+      "estimatedSeconds": 64.4
+    },
+    {
+      "id": "small-hello",
+      "name": "A small hello",
+      "targetSeconds": 70,
+      "atmosphere": {
+        "water": 0.03,
+        "wind": 0.016,
+        "birds": 0.0025,
+        "village": 0,
+        "music": 0
+      },
+      "media": {
+        "type": "animation"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "id": "follow-ellis-from-door",
+          "duration": 1700,
+          "effects": {
+            "chapter": 1,
+            "view": "door"
+          }
+        },
+        {
+          "type": "action",
+          "id": "down-the-steps",
+          "duration": 3300,
+          "effects": {
+            "chapter": 1,
+            "view": "arrival",
+            "actors": {
+              "ellis": {
+                "x": 1120,
+                "y": 505,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "paths": {
+            "ellis": [
+              {
+                "x": 1180,
+                "y": 398
+              },
+              {
+                "x": 1205,
+                "y": 430
+              },
+              {
+                "x": 1195,
+                "y": 460
+              },
+              {
+                "x": 1165,
+                "y": 485
+              },
+              {
+                "x": 1120,
+                "y": 505
+              }
+            ]
+          }
+        },
+        {
+          "type": "action",
+          "id": "approach-the-table",
+          "duration": 3600,
+          "effects": {
+            "actors": {
+              "ellis": {
+                "x": 820,
+                "y": 566,
+                "pose": "walk",
+                "facing": "left"
+              }
+            },
+            "view": "arrival"
+          },
+          "paths": {
+            "ellis": [
+              {
+                "x": 1065,
+                "y": 520
+              },
+              {
+                "x": 940,
+                "y": 545
+              },
+              {
+                "x": 820,
+                "y": 566
+              }
+            ]
+          }
+        },
+        {
+          "type": "action",
+          "id": "settle-at-the-table",
+          "duration": 1100,
+          "effects": {
+            "view": "conversation",
+            "actors": {
+              "ellis": {
+                "pose": "idle",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-8",
+          "text": "He crossed the terrace and stopped beside the table, leaving enough space for Mara to send him away.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "cup-9",
+          "text": "I’m Ellis. Next door. I saw you setting this out every evening.",
+          "pauseMs": 1800,
+          "who": "ellis"
+        },
+        {
+          "type": "text",
+          "id": "cup-10",
+          "text": "My sister used to visit at this hour. After she moved, I kept bringing out two cups.",
+          "pauseMs": 1800,
+          "who": "mara"
+        },
+        {
+          "type": "text",
+          "id": "cup-11",
+          "text": "I waited by the door yesterday. I couldn’t work out how to say hello.",
+          "pauseMs": 1800,
+          "who": "ellis"
+        },
+        {
+          "type": "action",
+          "id": "reach-for-teapot",
+          "duration": 1100,
+          "effects": {
+            "actors": {
+              "ellis": {
+                "pose": "reach"
+              }
+            },
+            "props": {
+              "pot": {
+                "x": 782,
+                "y": 505,
+                "owner": "ellis"
+              }
+            },
+            "view": "pour"
+          }
+        },
+        {
+          "type": "action",
+          "id": "tip-the-teapot",
+          "duration": 1100,
+          "effects": {
+            "props": {
+              "pot": {
+                "x": 721,
+                "y": 465,
+                "tilt": 0.3
+              }
+            },
+            "pour": 1
+          }
+        },
+        {
+          "type": "action",
+          "id": "fill-amber",
+          "duration": 1800,
+          "effects": {
+            "props": {
+              "amber": {
+                "filled": 1
+              }
+            },
+            "pour": 1
+          }
+        },
+        {
+          "type": "action",
+          "id": "set-down-teapot",
+          "duration": 1400,
+          "effects": {
+            "props": {
+              "pot": {
+                "x": 697,
+                "y": 457,
+                "tilt": 0,
+                "owner": "table"
+              }
+            },
+            "pour": 0
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-12",
+          "text": "He lifted the little teapot and filled the amber cup. This time, Mara watched the tea find its level.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "cup-13",
+          "text": "You could have knocked.",
+          "pauseMs": 1800,
+          "who": "mara"
+        },
+        {
+          "type": "text",
+          "id": "cup-14",
+          "text": "I could. But there’s something I still need to ask.",
+          "pauseMs": 3400,
+          "who": "ellis"
+        }
+      ],
+      "estimatedSeconds": 70.7
+    },
+    {
+      "id": "tomorrow",
+      "name": "A place for tomorrow",
+      "targetSeconds": 70,
+      "atmosphere": {
+        "water": 0.028,
+        "wind": 0.016,
+        "birds": 0.002,
+        "village": 0,
+        "music": 0
+      },
+      "media": {
+        "type": "animation"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "id": "settle-in",
+          "duration": 1800,
+          "effects": {
+            "chapter": 2,
+            "view": "conversation"
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-15",
+          "text": "Then ask. The tea will keep.",
+          "pauseMs": 1800,
+          "who": "mara"
+        },
+        {
+          "type": "text",
+          "id": "cup-16",
+          "text": "Would you mind if I came back tomorrow? I don’t know many people here yet.",
+          "pauseMs": 1800,
+          "who": "ellis"
+        },
+        {
+          "type": "action",
+          "id": "turn-the-handle",
+          "duration": 1100,
+          "effects": {
+            "view": "cups",
+            "props": {
+              "blue": {
+                "handleLeft": 0
+              }
+            },
+            "actors": {
+              "mara": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "type": "action",
+          "id": "slide-the-invitation",
+          "duration": 1700,
+          "effects": {
+            "props": {
+              "blue": {
+                "x": 719,
+                "y": 516
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-17",
+          "text": "Mara turned the blue cup’s handle toward him, then slid it across the table. A small invitation, made of porcelain.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "cup-18",
+          "text": "Tomorrow, you can knock. You don’t need to wait for a sign.",
+          "pauseMs": 1800,
+          "who": "mara"
+        },
+        {
+          "type": "action",
+          "id": "ellis-takes-blue",
+          "duration": 1800,
+          "effects": {
+            "props": {
+              "blue": {
+                "x": 786,
+                "y": 506,
+                "owner": "ellis"
+              }
+            },
+            "actors": {
+              "ellis": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "type": "action",
+          "id": "mara-takes-amber",
+          "duration": 1800,
+          "effects": {
+            "props": {
+              "amber": {
+                "x": 636,
+                "y": 505,
+                "owner": "mara"
+              }
+            },
+            "actors": {
+              "mara": {
+                "pose": "reach"
+              }
+            },
+            "view": "together"
+          }
+        },
+        {
+          "type": "text",
+          "id": "cup-19",
+          "text": "Ellis took the blue cup. Mara picked up the amber one. They stood together while the last light warmed the terrace.",
+          "pauseMs": 1800,
+          "kind": "narration"
+        },
+        {
+          "type": "text",
+          "id": "cup-20",
+          "text": "I can bring biscuits.",
+          "pauseMs": 1800,
+          "who": "ellis"
+        },
+        {
+          "type": "text",
+          "id": "cup-21",
+          "text": "Good. I never know how many to make for one.",
+          "pauseMs": 1800,
+          "who": "mara"
+        },
+        {
+          "type": "text",
+          "id": "cup-22",
+          "text": "For the first time in weeks, the second cup was not a habit. It was a place for someone.",
+          "pauseMs": 4200,
+          "kind": "narration"
+        },
+        {
+          "type": "end",
+          "id": "cup-end"
+        }
+      ],
+      "estimatedSeconds": 72.1
+    }
+  ]
+}

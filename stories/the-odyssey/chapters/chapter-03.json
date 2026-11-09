@@ -1,0 +1,1582 @@
+{
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "title": "The Odyssey",
+  "subtitle": "The Long Way Home",
+  "attribution": "An original abridged adaptation of Homer’s Odyssey",
+  "serialized": true,
+  "episodes": true,
+  "timing": {
+    "characterMs": 30,
+    "wordMs": 440,
+    "minimumHoldMs": 2100,
+    "linePauseMs": 1400
+  },
+  "videoExport": {
+    "logo": {
+      "src": "/stories/the-odyssey/assets/branding/logo.png",
+      "durationMs": 3000
+    },
+    "captionFadeMs": 450,
+    "previewHoldMs": 900
+  },
+  "renderer": "scheria",
+  "availableChapter": "chapter-3",
+  "intro": "He has lost his raft. He has not lost his way home.",
+  "ending": "The stranger had given them his name. Now he would have to give them his story.",
+  "description": "On Scheria, Odysseus finds kindness before he finds the courage to tell his story.",
+  "stageLabel": "Odysseus reaches Scheria and the hall of Alcinous",
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.6,
+    "birdMinMs": 37000,
+    "birdRangeMs": 28000
+  },
+  "adaptationSource": {
+    "title": "Homer, Odyssey, Books V–IX",
+    "url": "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm",
+    "note": "Original abridged dialogue and narration; the storm, river encounter and Phaeacian welcome are condensed. The name reveal opens Book IX."
+  },
+  "assets": {
+    "hero": "/stories/the-odyssey/assets/atlases/characters/odyssey-core.png",
+    "people": "/stories/the-odyssey/assets/atlases/characters/scheria-people.png",
+    "props": "/stories/the-odyssey/assets/atlases/props/scheria-props.png",
+    "sea": "/stories/the-odyssey/assets/backgrounds/native/crossing.png",
+    "river": "/stories/the-odyssey/assets/backgrounds/native/river.png",
+    "hall": "/stories/the-odyssey/assets/backgrounds/native/phaeacia.png"
+  },
+  "characters": {
+    "odysseus": {
+      "name": "Odysseus",
+      "role": "The traveler",
+      "color": "#cbe4df"
+    },
+    "nausicaa": {
+      "name": "Nausicaa",
+      "role": "The daughter of Alcinous",
+      "color": "#c9e5f4"
+    },
+    "arete": {
+      "name": "Arete",
+      "role": "The queen of Scheria",
+      "color": "#e4cee9"
+    },
+    "alcinous": {
+      "name": "Alcinous",
+      "role": "The king of Scheria",
+      "color": "#d1e1f3"
+    },
+    "demodocus": {
+      "name": "Demodocus",
+      "role": "The singer",
+      "color": "#edcf99"
+    }
+  },
+  "initialState": {
+    "actors": {
+      "odysseus": {
+        "x": 768,
+        "y": 930,
+        "visible": 1,
+        "facing": "back",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0
+      },
+      "nausicaa": {
+        "x": 990,
+        "y": 810,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0
+      },
+      "arete": {
+        "x": 915,
+        "y": 775,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0
+      },
+      "alcinous": {
+        "x": 805,
+        "y": 710,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0
+      },
+      "demodocus": {
+        "x": 1100,
+        "y": 750,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0
+      }
+    },
+    "lamp": {
+      "owner": null
+    },
+    "chapter": 0,
+    "room": "sea",
+    "view": "crossing",
+    "raft": {
+      "x": 805,
+      "y": 985,
+      "visible": 1,
+      "broken": 0
+    },
+    "basket": {
+      "x": 920,
+      "y": 987,
+      "visible": 0,
+      "owner": null
+    },
+    "bread": {
+      "x": 872,
+      "y": 914,
+      "visible": 0,
+      "owner": null
+    },
+    "lyre": {
+      "x": 934,
+      "y": 812,
+      "visible": 0,
+      "owner": null
+    },
+    "table": {
+      "x": 780,
+      "y": 920,
+      "visible": 0,
+      "owner": null
+    },
+    "stool": {
+      "x": 1100,
+      "y": 773,
+      "visible": 0,
+      "owner": null
+    },
+    "oil": {
+      "x": 795,
+      "y": 850,
+      "visible": 0,
+      "owner": null
+    },
+    "cloak": {
+      "x": 730,
+      "y": 952,
+      "visible": 0,
+      "owner": null
+    },
+    "swell": 0.45,
+    "singing": 0,
+    "tears": 0
+  },
+  "shots": {
+    "crossing": {
+      "cx": 805,
+      "cy": 850,
+      "w": 480,
+      "h": 405,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [
+        "raft"
+      ]
+    },
+    "wreck": {
+      "cx": 805,
+      "cy": 875,
+      "w": 470,
+      "h": 335,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [
+        "raft"
+      ]
+    },
+    "shore": {
+      "cx": 730,
+      "cy": 860,
+      "w": 440,
+      "h": 340,
+      "actors": [
+        "odysseus"
+      ],
+      "props": []
+    },
+    "river-arrival": {
+      "cx": 795,
+      "cy": 840,
+      "w": 530,
+      "h": 420,
+      "actors": [
+        "odysseus",
+        "nausicaa"
+      ],
+      "props": [
+        "basket"
+      ]
+    },
+    "river-close": {
+      "cx": 780,
+      "cy": 865,
+      "w": 440,
+      "h": 340,
+      "actors": [
+        "odysseus",
+        "nausicaa"
+      ],
+      "props": [
+        "basket",
+        "bread",
+        "cloak"
+      ]
+    },
+    "palace-entry": {
+      "cx": 840,
+      "cy": 790,
+      "w": 650,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "arete",
+        "alcinous"
+      ],
+      "props": [
+        "table",
+        "bread"
+      ]
+    },
+    "welcome": {
+      "cx": 800,
+      "cy": 790,
+      "w": 520,
+      "h": 350,
+      "actors": [
+        "odysseus",
+        "arete",
+        "alcinous"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "oil"
+      ]
+    },
+    "song": {
+      "cx": 875,
+      "cy": 800,
+      "w": 640,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "arete",
+        "alcinous",
+        "demodocus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "oil",
+        "stool",
+        "lyre"
+      ]
+    },
+    "name": {
+      "cx": 875,
+      "cy": 800,
+      "w": 640,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "arete",
+        "alcinous",
+        "demodocus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "oil",
+        "stool",
+        "lyre"
+      ]
+    },
+    "song-arrival": {
+      "cx": 910,
+      "cy": 780,
+      "w": 760,
+      "h": 430,
+      "actors": [
+        "odysseus",
+        "arete",
+        "alcinous",
+        "demodocus"
+      ],
+      "props": [
+        "table",
+        "bread",
+        "oil",
+        "stool",
+        "lyre"
+      ]
+    },
+    "clarity-river-path": {
+      "cx": 770,
+      "cy": 740,
+      "w": 370,
+      "h": 370,
+      "actors": [
+        "odysseus",
+        "nausicaa"
+      ],
+      "props": [
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c3-s2-clarity-follow-the-river-path-1-route": {
+      "cx": 774,
+      "cy": 774,
+      "w": 378,
+      "h": 438,
+      "actors": [
+        "odysseus",
+        "nausicaa"
+      ],
+      "props": [
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c3-s2-clarity-follow-the-river-path-2-route": {
+      "cx": 814,
+      "cy": 729,
+      "w": 458,
+      "h": 392,
+      "actors": [
+        "odysseus",
+        "nausicaa"
+      ],
+      "props": [
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c3-s2-clarity-follow-the-river-path-3-route": {
+      "cx": 851.5,
+      "cy": 664,
+      "w": 533,
+      "h": 522,
+      "actors": [
+        "odysseus",
+        "nausicaa"
+      ],
+      "props": [
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "doc-river-follow": {
+      "cx": 790,
+      "cy": 800,
+      "w": 440,
+      "h": 360,
+      "actors": [
+        "odysseus",
+        "nausicaa"
+      ],
+      "props": [
+        "bread"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    }
+  },
+  "scenes": [
+    {
+      "id": "odyssey-c3-s1",
+      "chapterId": "chapter-3",
+      "name": "The Broken Raft",
+      "atmosphere": {
+        "water": 0.15,
+        "wind": 0.038,
+        "birds": 0,
+        "village": 0,
+        "music": 0.003
+      },
+      "steps": [
+        {
+          "id": "odyssey-c3-s1-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "sea",
+            "view": "crossing",
+            "chapter": 0,
+            "actors": {
+              "odysseus": {
+                "visible": 1,
+                "bow": 0,
+                "seated": 0,
+                "x": 768,
+                "y": 930,
+                "facing": "back"
+              },
+              "nausicaa": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              },
+              "arete": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              },
+              "alcinous": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              },
+              "demodocus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              }
+            },
+            "singing": 0,
+            "tears": 0,
+            "raft": {
+              "visible": 1
+            },
+            "basket": {
+              "visible": 0
+            },
+            "bread": {
+              "visible": 0
+            },
+            "lyre": {
+              "visible": 0
+            },
+            "table": {
+              "visible": 0
+            },
+            "stool": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 0
+            },
+            "cloak": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c3-s1-brace-against-the-swell",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "swell": 1,
+            "raft": {
+              "x": 825,
+              "y": 975
+            },
+            "actors": {
+              "odysseus": {
+                "x": 788,
+                "y": 920
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s1-clarity-return",
+          "type": "text",
+          "kind": "narration",
+          "text": "We return to Odysseus’s journey. He had left Calypso on the raft he built, hoping to reach Ithaca."
+        },
+        {
+          "id": "odyssey-c3-s1-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The little sail had carried him for days. Now the water rose."
+        },
+        {
+          "id": "odyssey-c3-s1-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus held to the timber. His carefully tied knots strained beneath him."
+        },
+        {
+          "id": "odyssey-c3-s1-the-bindings-give",
+          "type": "action",
+          "duration": 2500,
+          "effects": {
+            "view": "wreck",
+            "raft": {
+              "broken": 1,
+              "y": 978
+            },
+            "actors": {
+              "odysseus": {
+                "x": 790,
+                "y": 966,
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s1-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "A wave broke the raft apart. He came up beside the broken timber, still holding on."
+        },
+        {
+          "id": "odyssey-c3-s1-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "No sail now. No provisions. Only the next breath, and the one after it."
+        },
+        {
+          "id": "odyssey-c3-s1-follow-the-current",
+          "type": "action",
+          "duration": 2500,
+          "effects": {
+            "raft": {
+              "x": 850,
+              "y": 980
+            },
+            "actors": {
+              "odysseus": {
+                "x": 815,
+                "y": 968,
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s1-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He let the wood carry his weight. He could not fight every wave."
+        },
+        {
+          "id": "odyssey-c3-s1-reach-sheltered-ground",
+          "type": "action",
+          "duration": 2600,
+          "transition": {
+            "kind": "shot",
+            "durationMs": 1400,
+            "reason": "Dissolve the complete sea shot, including Odysseus and the wreck, into his arrival on the river bank"
+          },
+          "effects": {
+            "room": "river",
+            "view": "shore",
+            "basket": {
+              "visible": 1
+            },
+            "raft": {
+              "visible": 0
+            },
+            "swell": 0,
+            "actors": {
+              "odysseus": {
+                "x": 700,
+                "y": 946,
+                "facing": "left",
+                "pose": "walk",
+                "bow": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s1-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "At a sheltered river mouth, his feet found sand. For a moment, he could not make them move."
+        },
+        {
+          "id": "odyssey-c3-s1-a-few-steps-inland",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 730,
+                "y": 945,
+                "pose": "walk",
+                "facing": "right",
+                "bow": 0.65
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s1-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He took a few steps inland and lowered his head. The ground stayed beneath him."
+        },
+        {
+          "id": "odyssey-c3-s1-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He had reached another shore. He still did not know whose shore it was.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 84,
+      "durationMs": 83380
+    },
+    {
+      "id": "odyssey-c3-s2",
+      "chapterId": "chapter-3",
+      "name": "The Girl by the River",
+      "atmosphere": {
+        "water": 0.065,
+        "wind": 0.015,
+        "birds": 0.01,
+        "village": 0,
+        "music": 0.008
+      },
+      "steps": [
+        {
+          "id": "odyssey-c3-s2-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "river",
+            "view": "river-arrival",
+            "chapter": 1,
+            "actors": {
+              "odysseus": {
+                "visible": 1,
+                "bow": 0.4,
+                "seated": 0,
+                "x": 730,
+                "y": 945,
+                "facing": "right"
+              },
+              "nausicaa": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "x": 900,
+                "y": 780,
+                "facing": "front"
+              },
+              "arete": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              },
+              "alcinous": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              },
+              "demodocus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              }
+            },
+            "singing": 0,
+            "tears": 0,
+            "raft": {
+              "visible": 0
+            },
+            "basket": {
+              "visible": 1
+            },
+            "bread": {
+              "visible": 0
+            },
+            "lyre": {
+              "visible": 0
+            },
+            "table": {
+              "visible": 0
+            },
+            "stool": {
+              "visible": 0
+            },
+            "oil": {
+              "visible": 0
+            },
+            "cloak": {
+              "visible": 0
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s2-nausicaa-comes-from-the-path",
+          "type": "action",
+          "duration": 2900,
+          "effects": {
+            "actors": {
+              "nausicaa": {
+                "x": 875,
+                "y": 960,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "paths": {
+            "nausicaa": [
+              {
+                "x": 860,
+                "y": 865
+              },
+              {
+                "x": 875,
+                "y": 960
+              }
+            ]
+          },
+          "presence": {
+            "nausicaa": {
+              "kind": "enter",
+              "fadeMs": 900,
+              "zone": "Upper sandy river path, descending between the banks",
+              "from": {
+                "x": 900,
+                "y": 780
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s2-turn-toward-the-traveler",
+          "type": "action",
+          "duration": 350,
+          "effects": {
+            "actors": {
+              "nausicaa": {
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s2-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Nausicaa had come down the path to wash clothes by the river. She stopped beside her basket when she saw the stranger."
+        },
+        {
+          "id": "odyssey-c3-s2-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus kept a little distance. He had frightened enough people in his life."
+        },
+        {
+          "id": "odyssey-c3-s2-ask-with-open-hands",
+          "type": "action",
+          "duration": 750,
+          "effects": {
+            "view": "river-close",
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right",
+                "bow": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s2-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I have come from the sea. Is there somewhere I could find help?”",
+          "listener": "nausicaa"
+        },
+        {
+          "id": "odyssey-c3-s2-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "nausicaa",
+          "text": "“You have found someone who can offer it.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s2-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Her name was Nausicaa. Her parents, Alcinous and Arete, ruled this island, Scheria. She decided to help him."
+        },
+        {
+          "id": "odyssey-c3-s2-take-food-from-the-basket",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "bread": {
+              "x": 836,
+              "y": 899,
+              "visible": 1,
+              "owner": "nausicaa"
+            },
+            "actors": {
+              "nausicaa": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s2-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "nausicaa",
+          "text": "“Rest a while. There is bread, and clean cloth for your shoulders.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s2-step-close-enough-to-help",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "actors": {
+              "nausicaa": {
+                "x": 800,
+                "y": 965,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s2-pass-the-bread",
+          "type": "action",
+          "duration": 1450,
+          "effects": {
+            "bread": {
+              "x": 721,
+              "y": 904,
+              "owner": "odysseus"
+            },
+            "cloak": {
+              "x": 748,
+              "y": 973,
+              "visible": 1
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s2-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "She passed him the bread and laid the folded cloak beside him."
+        },
+        {
+          "id": "odyssey-c3-s2-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He had prepared words of gratitude. For a moment, he could only look at the food."
+        },
+        {
+          "id": "odyssey-c3-s2-p9",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "nausicaa",
+          "text": "“After you have rested, I will show you the way to my mother’s house.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s2-clarity-follow-her",
+          "type": "text",
+          "kind": "narration",
+          "text": "Odysseus rested and ate. Then Nausicaa led him up the river path toward her parents’ palace."
+        },
+        {
+          "id": "odyssey-c3-s2-doc-follow-the-river-path",
+          "type": "action",
+          "duration": 6500,
+          "effects": {
+            "view": "doc-river-follow",
+            "actors": {
+              "nausicaa": {
+                "x": 1030,
+                "y": 575,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "odysseus": {
+                "x": 950,
+                "y": 615,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "follow": [
+              "odysseus",
+              "nausicaa"
+            ]
+          },
+          "travelFacing": [
+            "odysseus",
+            "nausicaa"
+          ],
+          "paths": {
+            "nausicaa": [
+              {
+                "x": 875,
+                "y": 835
+              },
+              {
+                "x": 955,
+                "y": 705
+              },
+              {
+                "x": 1030,
+                "y": 575
+              }
+            ],
+            "odysseus": [
+              {
+                "x": 775,
+                "y": 860
+              },
+              {
+                "x": 865,
+                "y": 745
+              },
+              {
+                "x": 950,
+                "y": 615
+              }
+            ]
+          },
+          "presence": {
+            "nausicaa": {
+              "kind": "exit",
+              "fadeMs": 450
+            },
+            "odysseus": {
+              "kind": "exit",
+              "fadeMs": 450
+            }
+          }
+        }
+      ],
+      "estimatedSeconds": 93,
+      "durationMs": 92510
+    },
+    {
+      "id": "odyssey-c3-s3",
+      "chapterId": "chapter-3",
+      "name": "Bread for a Stranger",
+      "atmosphere": {
+        "water": 0.003,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0.001,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c3-s3-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "hall",
+            "view": "palace-entry",
+            "chapter": 2,
+            "actors": {
+              "odysseus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "x": 1200,
+                "y": 735,
+                "facing": "left"
+              },
+              "nausicaa": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0
+              },
+              "arete": {
+                "visible": 1,
+                "bow": 0,
+                "seated": 0,
+                "x": 885,
+                "y": 795,
+                "facing": "left"
+              },
+              "alcinous": {
+                "visible": 1,
+                "bow": 0,
+                "seated": 0,
+                "x": 1005,
+                "y": 710,
+                "facing": "front"
+              },
+              "demodocus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "x": 1200,
+                "y": 735,
+                "facing": "left"
+              }
+            },
+            "singing": 0,
+            "tears": 0,
+            "raft": {
+              "visible": 0
+            },
+            "basket": {
+              "visible": 0
+            },
+            "bread": {
+              "visible": 1
+            },
+            "lyre": {
+              "visible": 1,
+              "owner": "demodocus"
+            },
+            "table": {
+              "visible": 1
+            },
+            "stool": {
+              "visible": 1
+            },
+            "oil": {
+              "visible": 1
+            },
+            "cloak": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c3-s3-walk-into-the-hall",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 650,
+                "y": 875,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left",
+                "bow": 0
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 1100,
+                "y": 895
+              },
+              {
+                "x": 900,
+                "y": 1010
+              },
+              {
+                "x": 650,
+                "y": 875
+              }
+            ]
+          },
+          "presence": {
+            "odysseus": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Palace entrance"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s3-set-the-bread-on-the-table",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            },
+            "bread": {
+              "x": 725,
+              "y": 846,
+              "owner": null
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s3-clarity-palace",
+          "type": "text",
+          "kind": "narration",
+          "text": "Nausicaa showed Odysseus the way from the river to her parents’ palace. He carried the bread she had given him."
+        },
+        {
+          "id": "odyssey-c3-s3-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Inside, Queen Arete, Nausicaa’s mother, watched the stranger approach the table."
+        },
+        {
+          "id": "odyssey-c3-s3-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "arete",
+          "text": "“My daughter sent you here?”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s3-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“She found me by the river. She made this shore feel safe.”",
+          "listener": "arete"
+        },
+        {
+          "id": "odyssey-c3-s3-alcinous-joins-the-table",
+          "type": "action",
+          "duration": 2000,
+          "camera": {
+            "hold": true
+          },
+          "effects": {
+            "actors": {
+              "alcinous": {
+                "x": 1005,
+                "y": 940,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s3-alcinous-turns-to-the-table",
+          "type": "action",
+          "duration": 650,
+          "camera": {
+            "hold": true
+          },
+          "effects": {
+            "actors": {
+              "alcinous": {
+                "x": 955,
+                "y": 940,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s3-frame-the-welcome",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "welcome"
+          }
+        },
+        {
+          "id": "odyssey-c3-s3-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Alcinous approached the table. The king looked first at the guest, then at the bread."
+        },
+        {
+          "id": "odyssey-c3-s3-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alcinous",
+          "text": "“Eat. We can ask our questions afterward.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s3-accept-the-meal",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "bread": {
+              "owner": "odysseus"
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s3-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus lifted the bread. No one asked him to earn it with a story."
+        },
+        {
+          "id": "odyssey-c3-s3-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alcinous",
+          "text": "“Our ships know these waters. When you are ready, we can help you leave them.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s3-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "For the first time since the raft broke, home felt like a place he might reach."
+        }
+      ],
+      "estimatedSeconds": 73,
+      "durationMs": 72600
+    },
+    {
+      "id": "odyssey-c3-s4",
+      "chapterId": "chapter-3",
+      "name": "The Song of Troy",
+      "atmosphere": {
+        "water": 0.003,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0.001,
+        "music": 0.011
+      },
+      "steps": [
+        {
+          "id": "odyssey-c3-s4-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "song-arrival",
+            "chapter": 3
+          }
+        },
+        {
+          "id": "odyssey-c3-s4-the-singer-takes-his-seat",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "actors": {
+              "demodocus": {
+                "x": 1100,
+                "y": 760,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "presence": {
+            "demodocus": {
+              "kind": "enter",
+              "fadeMs": 700,
+              "zone": "Palace doorway and clear upper right aisle",
+              "from": {
+                "x": 1200,
+                "y": 735
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c3-s4-rest-the-lyre",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "song",
+            "actors": {
+              "demodocus": {
+                "seated": 1,
+                "pose": "sit",
+                "facing": "left"
+              }
+            },
+            "singing": 1
+          }
+        },
+        {
+          "id": "odyssey-c3-s4-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Demodocus settled the lyre against his knees. The hall grew quiet."
+        },
+        {
+          "id": "odyssey-c3-s4-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Demodocus sang about Troy, where Odysseus had fought. The song reminded the stranger of friends lost in that war."
+        },
+        {
+          "id": "odyssey-c3-s4-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "To the people listening, it was a story carried across the years."
+        },
+        {
+          "id": "odyssey-c3-s4-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "To Odysseus, it was a door that had never quite closed."
+        },
+        {
+          "id": "odyssey-c3-s4-lower-his-head",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "bow": 1
+              }
+            },
+            "tears": 1
+          }
+        },
+        {
+          "id": "odyssey-c3-s4-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He lowered his head. Tears reached his beard before he thought to hide them."
+        },
+        {
+          "id": "odyssey-c3-s4-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He remembered voices the song could not give back. Men who would never hear it."
+        },
+        {
+          "id": "odyssey-c3-s4-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The singer’s hands kept moving. Odysseus stayed still."
+        },
+        {
+          "id": "odyssey-c3-s4-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Then the king noticed what the song was costing his guest.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 61,
+      "durationMs": 60490
+    },
+    {
+      "id": "odyssey-c3-s5",
+      "chapterId": "chapter-3",
+      "name": "A Name at Last",
+      "atmosphere": {
+        "water": 0.003,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0.001,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c3-s5-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "name",
+            "chapter": 4
+          }
+        },
+        {
+          "id": "odyssey-c3-s5-the-song-comes-to-rest",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "singing": 0
+          }
+        },
+        {
+          "id": "odyssey-c3-s5-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Alcinous asked the singer to rest. The last note faded."
+        },
+        {
+          "id": "odyssey-c3-s5-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alcinous",
+          "text": "“That song has found something in you. It need not continue.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s5-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Arete waited beside them. No one filled the silence for him."
+        },
+        {
+          "id": "odyssey-c3-s5-meet-their-eyes",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "bow": 0,
+                "facing": "right"
+              }
+            },
+            "tears": 0
+          }
+        },
+        {
+          "id": "odyssey-c3-s5-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I have been a guest in many places. Not all of them let me leave.”",
+          "listener": "alcinous"
+        },
+        {
+          "id": "odyssey-c3-s5-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alcinous",
+          "text": "“We can prepare a ship. Tell us where it must take you.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c3-s5-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus looked from the king to the queen. He had kept his name back long enough."
+        },
+        {
+          "id": "odyssey-c3-s5-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I am Odysseus, son of Laertes. My home is Ithaca.”",
+          "listener": "alcinous",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c3-s5-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "A name they had heard in songs now belonged to the tired man before them."
+        },
+        {
+          "id": "odyssey-c3-s5-p9",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“But Troy was only the beginning of the journey.”",
+          "listener": "alcinous"
+        },
+        {
+          "id": "odyssey-c3-s5-p10",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus began telling the king and queen what had happened after Troy. The next part takes us back to those earlier years.",
+          "pauseMs": 2100
+        },
+        {
+          "id": "odyssey-c3-end",
+          "type": "end"
+        }
+      ],
+      "estimatedSeconds": 76,
+      "durationMs": 75440
+    }
+  ],
+  "causalRevision": {
+    "version": 1,
+    "scope": "Child-readable cause, time, place and cast continuity",
+    "routePlans": [
+      "odyssey-c3-s2-clarity-follow-the-river-path-1",
+      "odyssey-c3-s2-clarity-follow-the-river-path-2",
+      "odyssey-c3-s2-clarity-follow-the-river-path-3"
+    ]
+  },
+  "durationMs": 384420,
+  "documentRevision": {
+    "version": 1,
+    "source": "Correciones visuales.docx",
+    "date": "2026-10-14",
+    "scope": "Requested visual, motion and narration corrections"
+  }
+}

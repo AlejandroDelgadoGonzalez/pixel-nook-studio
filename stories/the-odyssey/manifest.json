@@ -1,0 +1,239 @@
+{
+  "slug": "the-odyssey",
+  "cover": "/stories/the-odyssey/assets/backgrounds/native/island.png",
+  "coverAlt": "A sunlit pixel art island shore overlooking a turquoise sea.",
+  "duration": "78 min · Complete · 10 chapters",
+  "category": "Mythic journey",
+  "themes": [
+    "Homecoming",
+    "Memory",
+    "Courage"
+  ],
+  "synopsis": "A man who can live forever chooses the uncertain road home. A complete, ten-chapter pixel art retelling of Homer’s Odyssey.",
+  "label": "HOMER · AN ADAPTED CLASSIC",
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "serialized": true,
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "number": 1,
+      "title": "The Shore That Wasn’t Home",
+      "description": "A beautiful island. A man who cannot leave.",
+      "status": "available",
+      "scenes": [
+        "The Other Shore",
+        "A Life Without an Ending",
+        "The Visitor",
+        "Wood and Rope",
+        "Beyond the Shelter"
+      ],
+      "linePrefix": "odyssey-c1-",
+      "duration": "7 min",
+      "source": "/stories/the-odyssey/chapters/chapter-01.json"
+    },
+    {
+      "id": "chapter-2",
+      "number": 2,
+      "title": "The House That Waited",
+      "description": "Penelope keeps a household alive; Telemachus searches for an answer.",
+      "status": "available",
+      "scenes": [
+        "The Unfinished Cloth",
+        "A Guest at the Door",
+        "The Son Who Stayed",
+        "News Across the Water",
+        "A Promise in the Dark"
+      ],
+      "linePrefix": "odyssey-c2-",
+      "duration": "7 min",
+      "source": "/stories/the-odyssey/chapters/chapter-02.json",
+      "durationMs": 425631,
+      "sceneCount": 5
+    },
+    {
+      "id": "chapter-3",
+      "number": 3,
+      "title": "A Stranger from the Sea",
+      "description": "A stranger washes ashore with nothing but his story.",
+      "status": "available",
+      "scenes": [
+        "The Broken Raft",
+        "The Girl by the River",
+        "Bread for a Stranger",
+        "The Song of Troy",
+        "A Name at Last"
+      ],
+      "linePrefix": "odyssey-c3-",
+      "source": "/stories/the-odyssey/chapters/chapter-03.json",
+      "duration": "6 min",
+      "durationMs": 384420,
+      "sceneCount": 5
+    },
+    {
+      "id": "chapter-4",
+      "number": 4,
+      "title": "The Name in the Cave",
+      "description": "The journey remembered: sweet forgetting and a dangerous name.",
+      "status": "available",
+      "scenes": [
+        "After the War",
+        "The Sweetest Forgetting",
+        "The Open Cave",
+        "Nobody",
+        "The Name He Gave Away"
+      ],
+      "linePrefix": "odyssey-c4-",
+      "source": "/stories/the-odyssey/chapters/chapter-04.json",
+      "duration": "8 min",
+      "durationMs": 484485,
+      "sceneCount": 5
+    },
+    {
+      "id": "chapter-5",
+      "number": 5,
+      "title": "Almost Home",
+      "description": "A shore within sight, a closed bag and another island.",
+      "status": "available",
+      "scenes": [
+        "The Keeper of Winds",
+        "The Shore in the Distance",
+        "What Was in the Bag",
+        "The Empty Harbor",
+        "The House of Circe",
+        "The White Flower"
+      ],
+      "linePrefix": "odyssey-c5-",
+      "source": "/stories/the-odyssey/chapters/chapter-05.json",
+      "duration": "14 min",
+      "durationMs": 831479,
+      "sceneCount": 6
+    },
+    {
+      "id": "chapter-6",
+      "number": 6,
+      "title": "The Voices Below",
+      "description": "In the dark, a son hears the voice of his mother.",
+      "status": "available",
+      "scenes": [
+        "One More Farewell",
+        "A Shore Without Morning",
+        "The Mother He Missed",
+        "The Cost of Returning",
+        "What He Carries Back"
+      ],
+      "linePrefix": "odyssey-c6-",
+      "source": "/stories/the-odyssey/chapters/chapter-06.json",
+      "duration": "8 min",
+      "durationMs": 507815,
+      "sceneCount": 5
+    },
+    {
+      "id": "chapter-7",
+      "number": 7,
+      "title": "What the Sea Keeps",
+      "description": "The hardest choices take what no victory can restore.",
+      "status": "available",
+      "scenes": [
+        "The Song Beyond the Mast",
+        "Between Two Dangers",
+        "The Island of the Sun",
+        "The Last Companions",
+        "One Man on the Water"
+      ],
+      "linePrefix": "odyssey-c7-",
+      "source": "/stories/the-odyssey/chapters/chapter-07.json",
+      "duration": "8 min",
+      "durationMs": 477954,
+      "sceneCount": 5
+    },
+    {
+      "id": "chapter-8",
+      "number": 8,
+      "title": "Home, Unrecognized",
+      "description": "Ithaca welcomes a beggar before it recognizes its king.",
+      "status": "available",
+      "scenes": [
+        "The Familiar Shore",
+        "A Face No One Knows",
+        "The Keeper of Pigs",
+        "The Son at the Threshold",
+        "Two Men, One Home"
+      ],
+      "linePrefix": "odyssey-c8-",
+      "source": "/stories/the-odyssey/chapters/chapter-08.json",
+      "duration": "7 min",
+      "durationMs": 414458,
+      "sceneCount": 5
+    },
+    {
+      "id": "chapter-9",
+      "number": 9,
+      "title": "The Bow in the Hall",
+      "description": "Inside his own house, Odysseus waits for the right moment.",
+      "status": "available",
+      "scenes": [
+        "The Dog at the Gate",
+        "A Stranger by the Fire",
+        "The Scar",
+        "The Bow That Waited",
+        "The Doors of the Hall"
+      ],
+      "linePrefix": "odyssey-c9-",
+      "source": "/stories/the-odyssey/chapters/chapter-09.json",
+      "duration": "7 min",
+      "durationMs": 425289,
+      "sceneCount": 5
+    },
+    {
+      "id": "chapter-10",
+      "number": 10,
+      "title": "The Tree Beneath the Bed",
+      "description": "Returning is one thing. Being recognized is another.",
+      "status": "available",
+      "scenes": [
+        "After the Noise",
+        "The Woman Who Waited",
+        "Move the Bed",
+        "The Root That Stayed",
+        "A Morning Without Leaving"
+      ],
+      "linePrefix": "odyssey-c10-",
+      "source": "/stories/the-odyssey/chapters/chapter-10.json",
+      "duration": "6 min",
+      "durationMs": 379497,
+      "sceneCount": 5
+    }
+  ],
+  "renderers": {
+    "odyssey": {
+      "module": "/stories/the-odyssey/renderers/calypso-island.js",
+      "export": "Odyssey"
+    },
+    "ithaca": {
+      "module": "/stories/the-odyssey/renderers/ithaca.js",
+      "export": "Ithaca"
+    },
+    "scheria": {
+      "module": "/stories/the-odyssey/renderers/scheria.js",
+      "export": "Scheria"
+    },
+    "cyclops": {
+      "module": "/stories/the-odyssey/renderers/cyclops.js",
+      "export": "Cyclops"
+    },
+    "aeaea": {
+      "module": "/stories/the-odyssey/renderers/aeaea.js",
+      "export": "Aeaea"
+    },
+    "homecoming": {
+      "module": "/stories/the-odyssey/renderers/homecoming.js",
+      "export": "Homecoming"
+    }
+  },
+  "environments": "/stories/the-odyssey/shared/environments.json",
+  "migratedGeometry": {
+    "source": "Approved existing chapter data and renderers",
+    "policy": "Preserved coordinates; new stories must declare shared/stage-geometry.json"
+  }
+}

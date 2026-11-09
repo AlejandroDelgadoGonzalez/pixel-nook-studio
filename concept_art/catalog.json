@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "title": "Pixel Nook Official Visual Bible / Golden Masters Catalog",
+  "officialDesignation": "Permanent direct visual canon: eight character sheets and sixteen scene references",
+  "batchesComplete": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "characterDesignRevisionPending": true,
+  "policy": "Only concept_art/characters and concept_art/scenes supply global visual authority. Preserve explicit approval states. Eight character sheets registered; three additions still require human audit. No chained scene generations or destructive character sampling.",
+  "calibrationManifest": "concept_art/manifest.json",
+  "densityProfile": "concept_art/density-profile.json",
+  "operativeDensitySpec": "concept_art/pixel-density.json",
+  "directoryAuditCommand": "python qa/pixel_density.py check-directory --directory concept_art --output .artifacts/qa/concept-art-directory.json",
+  "counts": {
+    "rasters": 24,
+    "normalizedPanoramas": 15,
+    "normalizedRosterSheets": 0,
+    "rosterCharacters": 0,
+    "immutableSourceReferences": 9,
+    "characterSheets": 8,
+    "newCharacterCoreSheets": 5,
+    "newCoreCharacters": 15,
+    "newCoreSprites": 60
+  },
+  "assets": [
+    {
+      "path": "concept_art/characters/master-pose-sheet-alice.png",
+      "sha256": "7ec15880ab20d6430d7f6b2aafc18dda034a6ad2607cab4f3cc22653ea4dd065",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Canonical eight Alice poses: narrow profile eyes, warm central jaw, three clean hair tones",
+      "visualStatus": "Part 1 explicitly approved by Alejandro",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": "Existing approvals preserved; no new scene approval inferred",
+      "previousSha256": "e93353f0d7d558baa4bc8fe5d7f9d583e222706e4e9d10e0795cd3a520e3e477",
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/characters/odyssey-core.png",
+      "sha256": "3d16b6dd8e6fc11ac6a4431b2cf4ee50a602097da74c4dfaafe8b06407b445b3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Immutable legacy density/style calibration",
+      "visualStatus": "canonical-source-preserved",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": "Existing approvals preserved; no new scene approval inferred"
+    },
+    {
+      "path": "concept_art/characters/second-cup-people.png",
+      "sha256": "a27b8326421264d6ccd34b8664c77f528836d097c10f226a672fca5f3c898483",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Immutable legacy density/style calibration",
+      "visualStatus": "canonical-source-preserved",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": "Existing approvals preserved; no new scene approval inferred"
+    },
+    {
+      "path": "concept_art/scenes/01-forest-cottage-river.png",
+      "sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/02-harbor-market-docks.png",
+      "sha256": "92a6a796abec95f9ad8fd4d7bc6a29facf25fe837f2414eda36394108d785bcb",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/03-forest-pond-waterfall.png",
+      "sha256": "0344c9f02e625220f2e31a5ebf6e02398bf5e180ac7d4df8e87197474169bee9",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/04-snowy-winter-village.png",
+      "sha256": "6140533567cd4c0e606994338124489167da25b6976a5fad8f2da3cd27858eac",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/05-crystal-mine-cavern.png",
+      "sha256": "54da976022a3da03e2de174c66c3fd95442ed73ff0edd7306ba9b8428d5bcc95",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/06-grand-wooden-library.png",
+      "sha256": "768a4347535f9ac9d13321cc1ae1206972b4984ccae2df75f29e15b551ba0e38",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/07-medieval-castle-plaza.png",
+      "sha256": "8478f6050e57ce0caf4201dc3afccb0832a117fc44a4aa53e66fb29b4759672d",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/08-rustic-cottage-interior.png",
+      "sha256": "0cc452d416996140f68acf76dab31f65d0aa92d1f718a41e89ead660bd219f8f",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/09-modern-cozy-city-street.png",
+      "sha256": "d2f676dbe399ec93a4f51fbfc326e086ed23a2f45856e4a56fc75ff3ea837791",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/10-modern-loft-apartment.png",
+      "sha256": "8ba8624d0fc750975aae8ae52582ec51a83cf2868c291348cbc8648a40e1bfdb",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "Approved direct scene Golden Master reference",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": false,
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/scenes/11-moonlit-botanical-garden.png",
+      "sha256": "31e8ad644f1974926738364a60fa853198b1fc359e198c8cfd82fe8e9be41278",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "New scene Golden Master reference candidate",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "referenceArtApproved": true,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "directStyleReferences": [
+        {
+          "path": "concept_art/scenes/03-forest-pond-waterfall.png",
+          "sha256": "0344c9f02e625220f2e31a5ebf6e02398bf5e180ac7d4df8e87197474169bee9"
+        },
+        {
+          "path": "concept_art/scenes/04-snowy-winter-village.png",
+          "sha256": "6140533567cd4c0e606994338124489167da25b6976a5fad8f2da3cd27858eac"
+        },
+        {
+          "path": "concept_art/scenes/05-crystal-mine-cavern.png",
+          "sha256": "54da976022a3da03e2de174c66c3fd95442ed73ff0edd7306ba9b8428d5bcc95"
+        }
+      ]
+    },
+    {
+      "path": "concept_art/scenes/12-sunset-desert-oasis-bazaar.png",
+      "sha256": "fc918e29e3734c7e1f995257671a384638978aece8d20e061211e042d450862f",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "New scene Golden Master reference candidate",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "referenceArtApproved": true,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "directStyleReferences": [
+        {
+          "path": "concept_art/scenes/01-forest-cottage-river.png",
+          "sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a"
+        },
+        {
+          "path": "concept_art/scenes/02-harbor-market-docks.png",
+          "sha256": "92a6a796abec95f9ad8fd4d7bc6a29facf25fe837f2414eda36394108d785bcb"
+        },
+        {
+          "path": "concept_art/scenes/09-modern-cozy-city-street.png",
+          "sha256": "d2f676dbe399ec93a4f51fbfc326e086ed23a2f45856e4a56fc75ff3ea837791"
+        }
+      ]
+    },
+    {
+      "path": "concept_art/scenes/13-grand-palace-marble-hall.png",
+      "sha256": "cde6c063b10cf54bc3f4d817bb8b99d0960be28b4eaa7179dd897603a0d082fb",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "New scene Golden Master reference candidate",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "referenceArtApproved": true,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "directStyleReferences": [
+        {
+          "path": "concept_art/scenes/06-grand-wooden-library.png",
+          "sha256": "768a4347535f9ac9d13321cc1ae1206972b4984ccae2df75f29e15b551ba0e38"
+        },
+        {
+          "path": "concept_art/scenes/07-medieval-castle-plaza.png",
+          "sha256": "8478f6050e57ce0caf4201dc3afccb0832a117fc44a4aa53e66fb29b4759672d"
+        },
+        {
+          "path": "concept_art/scenes/08-rustic-cottage-interior.png",
+          "sha256": "0cc452d416996140f68acf76dab31f65d0aa92d1f718a41e89ead660bd219f8f"
+        }
+      ]
+    },
+    {
+      "path": "concept_art/scenes/14-autumn-zen-shrine-bridge.png",
+      "sha256": "b0bf8cb99d67bbdc0a734818bc175ff20780be079f63998703b4708c9e6c8ce2",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "New scene Golden Master reference candidate",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "referenceArtApproved": true,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "directStyleReferences": [
+        {
+          "path": "concept_art/scenes/03-forest-pond-waterfall.png",
+          "sha256": "0344c9f02e625220f2e31a5ebf6e02398bf5e180ac7d4df8e87197474169bee9"
+        },
+        {
+          "path": "concept_art/scenes/01-forest-cottage-river.png",
+          "sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a"
+        }
+      ]
+    },
+    {
+      "path": "concept_art/scenes/15-vintage-steam-train-platform.png",
+      "sha256": "fe3266739851a201547079579b8e9b80d9042834985e51117dc842271c82d641",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "verification": "normalized-grid",
+      "officialCatalog": true,
+      "role": "New scene Golden Master reference candidate",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "referenceArtApproved": true,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "directStyleReferences": [
+        {
+          "path": "concept_art/scenes/09-modern-cozy-city-street.png",
+          "sha256": "d2f676dbe399ec93a4f51fbfc326e086ed23a2f45856e4a56fc75ff3ea837791"
+        },
+        {
+          "path": "concept_art/scenes/10-modern-loft-apartment.png",
+          "sha256": "8ba8624d0fc750975aae8ae52582ec51a83cf2868c291348cbc8648a40e1bfdb"
+        },
+        {
+          "path": "concept_art/scenes/02-harbor-market-docks.png",
+          "sha256": "92a6a796abec95f9ad8fd4d7bc6a29facf25fe837f2414eda36394108d785bcb"
+        }
+      ]
+    },
+    {
+      "path": "concept_art/scenes/odyssey-panorama-c4-2.png",
+      "sha256": "575ab8291979603103c9961276f3d7efce44130583c9325bd08fb03ac93387f2",
+      "dimensions": [
+        2171,
+        724
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Immutable legacy density/style calibration",
+      "visualStatus": "All sixteen scene masters explicitly approved by Alejandro in scene-reference-lock request",
+      "useAsGenerationStyleMaster": true,
+      "specificStoryGateApproval": "Existing approvals preserved; no new scene approval inferred",
+      "referenceArtApproved": true
+    },
+    {
+      "path": "concept_art/characters/casual-modern-core.png",
+      "sha256": "3283ee210f691fdc8226fa35d6013055b085151426e3cab46fe3bcb1a8bd50ce",
+      "dimensions": [
+        1332,
+        1269
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Approved Part 2 master: 3 characters \u00d7 4 poses",
+      "visualStatus": "approved 100% by Alejandro",
+      "useAsGenerationStyleMaster": true,
+      "referenceArtApproved": true,
+      "specificStoryGateApproval": false,
+      "nativePixelAuditSpec": "concept_art/character-cores.json"
+    },
+    {
+      "path": "concept_art/characters/storybook-classic-core.png",
+      "sha256": "7a82d62020d0117486fe83574a7e2e1a1fff5ae11efc0ee834a75b1f807db744",
+      "dimensions": [
+        1308,
+        1290
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Approved Part 2 master: 3 characters \u00d7 4 poses",
+      "visualStatus": "approved 100% by Alejandro",
+      "useAsGenerationStyleMaster": true,
+      "referenceArtApproved": true,
+      "specificStoryGateApproval": false,
+      "nativePixelAuditSpec": "concept_art/character-cores.json"
+    },
+    {
+      "path": "concept_art/characters/fantasy-medieval-core.png",
+      "sha256": "0e5658dda489d8752b6bed29ed04bce0424ef2eb62294f2944d0fd7c5fd39737",
+      "dimensions": [
+        1336,
+        1314
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Canonical library master candidate: 3 characters \u00d7 4 poses",
+      "visualStatus": "pending Alejandro 400% review",
+      "referenceArtApproved": false,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "nativePixelAuditSpec": "concept_art/character-cores.json"
+    },
+    {
+      "path": "concept_art/characters/world-tales-core.png",
+      "sha256": "a0b08af0aabf8269326acde9bb41bb7c0563f88615cf7eb530eea81a4701dd77",
+      "dimensions": [
+        1364,
+        1287
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Canonical library master candidate: 3 characters \u00d7 4 poses",
+      "visualStatus": "Complete original head restored; pending Alejandro review",
+      "referenceArtApproved": false,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "nativePixelAuditSpec": "concept_art/character-cores.json"
+    },
+    {
+      "path": "concept_art/characters/diverse-everyday-core.png",
+      "sha256": "ec247e889f734dc393452c673b8efd610c5582783d7f413019ccab97e52d198b",
+      "dimensions": [
+        1336,
+        1308
+      ],
+      "verification": "immutable-source",
+      "officialCatalog": true,
+      "role": "Canonical library master candidate: 3 characters \u00d7 4 poses",
+      "visualStatus": "Complete original head restored; pending Alejandro review",
+      "referenceArtApproved": false,
+      "useAsGenerationStyleMaster": false,
+      "specificStoryGateApproval": false,
+      "nativePixelAuditSpec": "concept_art/character-cores.json"
+    }
+  ],
+  "characterBlockStandard": "concept_art/character-block-standard.md",
+  "nativeCoreAuditCommand": "python qa/character_cores.py --output .artifacts/qa/character-cores-part2/pixel-check.json",
+  "sceneFolderPolicy": "Exactly sixteen canonical PNG masters; diagnostics and layouts archived under .artifacts/qa/scene-reference-lock/",
+  "sceneReferencePolicy": "concept_art/manifest.json#sceneReferencePolicy"
+}

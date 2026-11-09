@@ -1,0 +1,3440 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "chapter": "chapter-1",
+  "scene": "alice-c1-s2",
+  "title": "Under the Hedge",
+  "status": "User-authorized smaller-burrow correction, 03 measurement completed in main thread; fresh 05 protocol pending",
+  "runtimeRegistration": "Active S1/S2 runtime geometry; v5 local burrow correction authorized by Alejandro, main-thread execution.",
+  "measurement": {
+    "date": "2026-10-20",
+    "owner": "NOOK applying 03 profile directly in main thread",
+    "method": "v5 source inspection and real-alpha pose/rim contact measurement; exact local preservation comparison against v4.",
+    "evidence": "/.artifacts/alice-in-wonderland/small-burrow/",
+    "noNewProductionArt": false,
+    "hedgeSeamCorrection": {
+      "date": "2026-10-20",
+      "mouthAndCoordinates": "unchanged from approved v5",
+      "evidence": "/.artifacts/alice-in-wonderland/hedge-seam/integration.json"
+    }
+  },
+  "assets": {
+    "alice": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "6b12217bc5c3431f3184e8a277de43bf8a451640d723d2893cafd65427f15b9b",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "sister": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "sha256": "6410964696df619363731fc4414a9ab2db814cf4f8350d691b9eb266a9a592d2",
+      "dimensions": [
+        2048,
+        95
+      ],
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "35fc111a6fa92a042b8c7b1c58adb649a90140621a48e76304582983169c7ee6",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "white-rabbit": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "sha256": "77d116d308807086420e41abce7f9cc7ab79639df6c8b22a62b0e7a5665bdfe6",
+      "dimensions": [
+        2048,
+        105
+      ],
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "7d6cea306f1671beb4fab69c57dfce1a69aa7a25532cf7487443a23bf7ea1e40",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "props": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/props-s1-v1.png",
+      "sha256": "7fa0b851590a74454fdc270d26b984bccdd17ebded7fda8bd5f5ad9a5520ab71",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "bade6ba9dff6b42c95933bf993396982033acd8a6a75002217120ee0d9cf1d6c",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    },
+    "riverbank": {
+      "url": "/stories/alice-in-wonderland/assets/environments/riverbank-panorama-v6.png",
+      "sha256": "d4014828d8d681f74eeeea425c77cd9c8ed6950f75e42da6993596e1a79071dc",
+      "dimensions": [
+        1881,
+        836
+      ],
+      "provenance": "Generated original followed by user-authorized Golden Master NN normalization,20 October2026; dimensions and measured cuts retained. See shared/pixel-density.json and .artifacts/pixel-density/.",
+      "originalSourceSha256": "7fb0bd46cc4b118a4951351c93d31601673130b29d4f1afafeda1edf93d8f7b7",
+      "pixelDensityProfile": "concept_art/density-profile.json"
+    }
+  },
+  "environments": {
+    "riverbank": {
+      "worldBounds": [
+        -1535,
+        -148,
+        4702.5,
+        2090
+      ],
+      "mapping": {
+        "sourceToWorld": {
+          "scaleX": 2.5,
+          "scaleY": 2.5,
+          "translateX": -1535,
+          "translateY": -148
+        },
+        "portraitAndLandscape": "One complete generated panorama and one uniform mapping for all aspects; camera dynamically crops within these bounds. No aspect-specific art boxes or floor fill.",
+        "registration": "v5 preserves1881x836 and every v4 RGB pixel outside local hedge edit polygon; same scale2.5 and translate(-1535,-148)."
+      },
+      "spawns": {
+        "alice": {
+          "anchor": "alice-s1-end",
+          "pose": "standing-ready",
+          "visible": true,
+          "hands": "empty"
+        },
+        "sister": {
+          "anchor": "sister-fixed",
+          "pose": "seated-reading",
+          "visible": true,
+          "owns": "book"
+        },
+        "white-rabbit": {
+          "anchor": "rabbit-s1-end",
+          "pose": "ready",
+          "visible": true,
+          "watch": "in-pocket"
+        }
+      },
+      "anchors": {
+        "alice-s1-end": {
+          "point": [
+            680,
+            690
+          ],
+          "source": [
+            886,
+            335.2
+          ],
+          "status": "measured ground support"
+        },
+        "sister-fixed": {
+          "point": [
+            810,
+            650
+          ],
+          "source": [
+            938,
+            319.2
+          ],
+          "status": "measured ground support"
+        },
+        "rabbit-s1-end": {
+          "point": [
+            990,
+            452
+          ],
+          "source": [
+            1010,
+            240
+          ],
+          "status": "measured ground support"
+        },
+        "alice-first-stop": {
+          "point": [
+            1170,
+            492
+          ],
+          "source": [
+            1082,
+            256
+          ],
+          "status": "measured ground support"
+        },
+        "rabbit-first-stop": {
+          "point": [
+            1380,
+            510
+          ],
+          "source": [
+            1166,
+            263.2
+          ],
+          "status": "measured ground support"
+        },
+        "alice-pre-hook": {
+          "point": [
+            1560,
+            484
+          ],
+          "source": [
+            1238,
+            252.8
+          ],
+          "status": "measured ground support"
+        },
+        "alice-hook-support": {
+          "point": [
+            1610,
+            470
+          ],
+          "source": [
+            1258,
+            247.2
+          ],
+          "status": "measured ground support"
+        },
+        "burrow-threshold": {
+          "point": [
+            1632,
+            464
+          ],
+          "source": [
+            1266.8,
+            244.8
+          ],
+          "status": "B remeasured on dry threshold just outside v5 dark mouth: source(1266.8,244.8)",
+          "B": [
+            1632,
+            464
+          ]
+        },
+        "rabbit-inside-aperture": {
+          "point": [
+            1632,
+            454
+          ],
+          "source": [
+            1266.8,
+            240.8
+          ],
+          "status": "measured ground support"
+        },
+        "rabbit-covered-deep": {
+          "point": [
+            1632,
+            432
+          ],
+          "source": [
+            1266.8,
+            232
+          ],
+          "status": "measured ground support"
+        },
+        "alice-hand-support-proposed": {
+          "point": [
+            1640,
+            474
+          ],
+          "source": [
+            1270,
+            248.8
+          ],
+          "status": "superseded proposed contact: use authored hook pose contacts and anchors below"
+        },
+        "alice-partial-ingress-proposed": {
+          "point": [
+            1638,
+            474
+          ],
+          "source": [
+            1269.2,
+            248.8
+          ],
+          "status": "superseded proposed contact: use authored hook pose contacts and anchors below"
+        },
+        "alice-hook-kneel": {
+          "point": [
+            1610,
+            470
+          ],
+          "source": [
+            1258,
+            247.2
+          ],
+          "status": "authored S2 pose bottom-center support, source/alpha measured",
+          "note": "v5 measured dry-ground support; y470 to466 is the four-world-unit articulation support change."
+        },
+        "alice-hook-hand": {
+          "point": [
+            1610,
+            466
+          ],
+          "source": [
+            1258,
+            245.6
+          ],
+          "status": "authored S2 pose bottom-center support, source/alpha measured",
+          "note": "v5 measured dry-ground support; y470 to466 is the four-world-unit articulation support change."
+        },
+        "alice-hook-entry": {
+          "point": [
+            1610,
+            466
+          ],
+          "source": [
+            1258,
+            245.6
+          ],
+          "status": "authored S2 pose bottom-center support, source/alpha measured",
+          "note": "v5 measured dry-ground support; y470 to466 is the four-world-unit articulation support change."
+        },
+        "alice-paired-start": {
+          "point": [
+            900,
+            448
+          ],
+          "source": [
+            974,
+            238.4
+          ],
+          "status": "Existing approved waypoint; stop removed, join immediately starts paired action"
+        },
+        "rabbit-paired-start": {
+          "point": [
+            1110,
+            470
+          ],
+          "source": [
+            1058,
+            247.2
+          ],
+          "status": "Existing approved waypoint; Rabbit waits here while Alice rounds sister"
+        }
+      },
+      "walkPaths": {
+        "alice-join-path": {
+          "startAnchor": "alice-s1-end",
+          "endAnchor": "alice-first-stop",
+          "waypoints": [
+            [
+              680,
+              690
+            ],
+            [
+              660,
+              690
+            ],
+            [
+              660,
+              460
+            ],
+            [
+              750,
+              438
+            ],
+            [
+              900,
+              448
+            ],
+            [
+              1050,
+              476
+            ],
+            [
+              1170,
+              492
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              886,
+              335.2
+            ],
+            [
+              878,
+              335.2
+            ],
+            [
+              878,
+              243.2
+            ],
+            [
+              914,
+              234.4
+            ],
+            [
+              974,
+              238.4
+            ],
+            [
+              1034,
+              249.6
+            ],
+            [
+              1082,
+              256
+            ]
+          ],
+          "lengthWorld": 766.6358,
+          "surface": "short dry grass and ochre path",
+          "cameraHold": true,
+          "status": "measured proposal, awaiting approval"
+        },
+        "rabbit-first-leg": {
+          "startAnchor": "rabbit-s1-end",
+          "endAnchor": "rabbit-first-stop",
+          "waypoints": [
+            [
+              990,
+              452
+            ],
+            [
+              1110,
+              470
+            ],
+            [
+              1260,
+              500
+            ],
+            [
+              1380,
+              510
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              1010,
+              240
+            ],
+            [
+              1058,
+              247.2
+            ],
+            [
+              1118,
+              259.2
+            ],
+            [
+              1166,
+              263.2
+            ]
+          ],
+          "lengthWorld": 394.729,
+          "surface": "ochre path / dry threshold",
+          "cameraHold": true,
+          "status": "measured proposal, awaiting approval"
+        },
+        "rabbit-to-threshold": {
+          "startAnchor": "rabbit-first-stop",
+          "endAnchor": "burrow-threshold",
+          "waypoints": [
+            [
+              1380,
+              510
+            ],
+            [
+              1500,
+              500
+            ],
+            [
+              1600,
+              480
+            ],
+            [
+              1632,
+              464
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              1166,
+              263.2
+            ],
+            [
+              1214,
+              259.2
+            ],
+            [
+              1254,
+              251.2
+            ],
+            [
+              1266.8,
+              244.8
+            ]
+          ],
+          "lengthWorld": 258.1734,
+          "surface": "ochre path / dry threshold",
+          "cameraHold": true,
+          "status": "measured proposal, awaiting approval"
+        },
+        "rabbit-ingress": {
+          "startAnchor": "burrow-threshold",
+          "endAnchor": "rabbit-covered-deep",
+          "waypoints": [
+            [
+              1632,
+              464
+            ],
+            [
+              1632,
+              454
+            ],
+            [
+              1632,
+              432
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              1266.8,
+              244.8
+            ],
+            [
+              1266.8,
+              240.8
+            ],
+            [
+              1266.8,
+              232
+            ]
+          ],
+          "lengthWorld": 32,
+          "surface": "ochre path / dry threshold",
+          "cameraHold": true,
+          "status": "measured proposal, awaiting approval"
+        },
+        "alice-follow-to-approach": {
+          "startAnchor": "alice-first-stop",
+          "endAnchor": "alice-pre-hook",
+          "waypoints": [
+            [
+              1170,
+              492
+            ],
+            [
+              1260,
+              500
+            ],
+            [
+              1400,
+              510
+            ],
+            [
+              1500,
+              500
+            ],
+            [
+              1560,
+              484
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              1082,
+              256
+            ],
+            [
+              1118,
+              259.2
+            ],
+            [
+              1174,
+              263.2
+            ],
+            [
+              1214,
+              259.2
+            ],
+            [
+              1238,
+              252.8
+            ]
+          ],
+          "lengthWorld": 393.307,
+          "surface": "ochre path / dry threshold",
+          "cameraHold": true,
+          "status": "measured proposal, awaiting approval"
+        },
+        "alice-hook-final-step": {
+          "startAnchor": "alice-pre-hook",
+          "endAnchor": "alice-hook-support",
+          "waypoints": [
+            [
+              1560,
+              484
+            ],
+            [
+              1610,
+              470
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              1238,
+              252.8
+            ],
+            [
+              1258,
+              247.2
+            ]
+          ],
+          "lengthWorld": 51.923,
+          "surface": "ochre path / dry threshold",
+          "cameraHold": true,
+          "status": "measured proposal, awaiting approval"
+        },
+        "alice-join-before-pair": {
+          "startAnchor": "alice-s1-end",
+          "endAnchor": "alice-paired-start",
+          "waypoints": [
+            [
+              680,
+              690
+            ],
+            [
+              660,
+              690
+            ],
+            [
+              660,
+              460
+            ],
+            [
+              750,
+              438
+            ],
+            [
+              900,
+              448
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              886,
+              335.2
+            ],
+            [
+              878,
+              335.2
+            ],
+            [
+              878,
+              243.2
+            ],
+            [
+              914,
+              234.4
+            ],
+            [
+              974,
+              238.4
+            ]
+          ],
+          "lengthWorld": 492.9828,
+          "surface": "existing approved dry grass/ochre route",
+          "status": "User-authorized continuous motion correction; no new terrain route",
+          "camera": "tall-first"
+        },
+        "rabbit-wait-before-pair": {
+          "startAnchor": "rabbit-s1-end",
+          "endAnchor": "rabbit-paired-start",
+          "waypoints": [
+            [
+              990,
+              452
+            ],
+            [
+              1110,
+              470
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              1010,
+              240
+            ],
+            [
+              1058,
+              247.2
+            ]
+          ],
+          "lengthWorld": 121.3425,
+          "surface": "existing approved dry grass/ochre route",
+          "status": "User-authorized continuous motion correction; no new terrain route",
+          "camera": "tall-first"
+        },
+        "alice-continuous-pair": {
+          "startAnchor": "alice-paired-start",
+          "endAnchor": "alice-first-stop",
+          "waypoints": [
+            [
+              900,
+              448
+            ],
+            [
+              1050,
+              476
+            ],
+            [
+              1170,
+              492
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              974,
+              238.4
+            ],
+            [
+              1034,
+              249.6
+            ],
+            [
+              1082,
+              256
+            ]
+          ],
+          "lengthWorld": 273.6529,
+          "surface": "existing approved dry grass/ochre route",
+          "status": "User-authorized continuous motion correction; no new terrain route",
+          "camera": "s2-paired-path"
+        },
+        "rabbit-continuous-pair": {
+          "startAnchor": "rabbit-paired-start",
+          "endAnchor": "rabbit-first-stop",
+          "waypoints": [
+            [
+              1110,
+              470
+            ],
+            [
+              1260,
+              500
+            ],
+            [
+              1380,
+              510
+            ]
+          ],
+          "sourceWaypoints": [
+            [
+              1058,
+              247.2
+            ],
+            [
+              1118,
+              259.2
+            ],
+            [
+              1166,
+              263.2
+            ]
+          ],
+          "lengthWorld": 273.3865,
+          "surface": "existing approved dry grass/ochre route",
+          "status": "User-authorized continuous motion correction; no new terrain route",
+          "camera": "s2-paired-path"
+        }
+      },
+      "surfaces": {
+        "near-grass": {
+          "kind": "walkable-ground",
+          "safePolygon": [
+            [
+              600,
+              500
+            ],
+            [
+              1100,
+              500
+            ],
+            [
+              1100,
+              740
+            ],
+            [
+              600,
+              740
+            ]
+          ],
+          "evidence": "Magnified v4 source staging inspection. Both fixed sisters and all approved S1 poses stand on short grass below actual ochre path; low tufts are terrain detail.",
+          "sourceSafePolygon": [
+            [
+              854,
+              259.2
+            ],
+            [
+              1054,
+              259.2
+            ],
+            [
+              1054,
+              355.2
+            ],
+            [
+              854,
+              355.2
+            ]
+          ]
+        },
+        "bank-path": {
+          "kind": "walkable-ground",
+          "safePolygon": [
+            [
+              570,
+              399.5
+            ],
+            [
+              715,
+              404.5
+            ],
+            [
+              810,
+              424.5
+            ],
+            [
+              900,
+              432
+            ],
+            [
+              1007.5,
+              444.5
+            ],
+            [
+              1190,
+              462
+            ],
+            [
+              1390,
+              469.5
+            ],
+            [
+              1590,
+              459.5
+            ],
+            [
+              1665,
+              457
+            ],
+            [
+              1665,
+              477
+            ],
+            [
+              1590,
+              497
+            ],
+            [
+              1390,
+              527
+            ],
+            [
+              1190,
+              497
+            ],
+            [
+              1007.5,
+              472
+            ],
+            [
+              900,
+              459.5
+            ],
+            [
+              810,
+              449.5
+            ],
+            [
+              715,
+              434.5
+            ],
+            [
+              570,
+              427
+            ]
+          ],
+          "evidence": "Hand-inspected conservative ochre corridor in v4. Ordered unchanged S1 feet are on ochre at every inspected sample; S2 branch is only a future reservation.",
+          "sourceSafePolygon": [
+            [
+              842,
+              219
+            ],
+            [
+              900,
+              221
+            ],
+            [
+              938,
+              229
+            ],
+            [
+              974,
+              232
+            ],
+            [
+              1017,
+              237
+            ],
+            [
+              1090,
+              244
+            ],
+            [
+              1170,
+              247
+            ],
+            [
+              1250,
+              243
+            ],
+            [
+              1280,
+              242
+            ],
+            [
+              1280,
+              250
+            ],
+            [
+              1250,
+              258
+            ],
+            [
+              1170,
+              270
+            ],
+            [
+              1090,
+              258
+            ],
+            [
+              1017,
+              248
+            ],
+            [
+              974,
+              243
+            ],
+            [
+              938,
+              239
+            ],
+            [
+              900,
+              233
+            ],
+            [
+              842,
+              230
+            ]
+          ]
+        },
+        "alice-join-verge": {
+          "note": "Short grass below bank path, inspected source x878..1082,y248..335; avoid stationary sister by going west at x660 first, then uphill. Feet, not head/body bbox, determine terrain support."
+        }
+      },
+      "occluders": [
+        {
+          "id": "burrow-foreground-rim-proposal",
+          "status": "v5 local smaller burrow measured; runtime QA pending",
+          "sourceOuterPolygon": [
+            [
+              1230,
+              248
+            ],
+            [
+              1230,
+              229
+            ],
+            [
+              1238,
+              211
+            ],
+            [
+              1251,
+              199
+            ],
+            [
+              1267,
+              192
+            ],
+            [
+              1283,
+              198
+            ],
+            [
+              1298,
+              216
+            ],
+            [
+              1304,
+              241
+            ],
+            [
+              1304,
+              248
+            ]
+          ],
+          "sourceAperturePolygon": [
+            [
+              1248,
+              241
+            ],
+            [
+              1248,
+              226
+            ],
+            [
+              1252,
+              219
+            ],
+            [
+              1258,
+              214
+            ],
+            [
+              1267,
+              211
+            ],
+            [
+              1274,
+              214
+            ],
+            [
+              1281,
+              220
+            ],
+            [
+              1286,
+              228
+            ],
+            [
+              1288,
+              238
+            ],
+            [
+              1288,
+              241
+            ]
+          ],
+          "worldOuterPolygon": [
+            [
+              1540,
+              472
+            ],
+            [
+              1540,
+              424.5
+            ],
+            [
+              1560,
+              379.5
+            ],
+            [
+              1592.5,
+              349.5
+            ],
+            [
+              1632.5,
+              332
+            ],
+            [
+              1672.5,
+              347
+            ],
+            [
+              1710,
+              392
+            ],
+            [
+              1725,
+              454.5
+            ],
+            [
+              1725,
+              472
+            ]
+          ],
+          "worldAperturePolygon": [
+            [
+              1585,
+              454.5
+            ],
+            [
+              1585,
+              417
+            ],
+            [
+              1595,
+              399.5
+            ],
+            [
+              1610,
+              387
+            ],
+            [
+              1632.5,
+              379.5
+            ],
+            [
+              1650,
+              387
+            ],
+            [
+              1667.5,
+              402
+            ],
+            [
+              1680,
+              422
+            ],
+            [
+              1685,
+              447
+            ],
+            [
+              1685,
+              454.5
+            ]
+          ],
+          "renderPolicy": "Repaint exact original panorama pixels across the full measured roof column from source y0, subtracting the unchanged aperture. Alice coverage begins only past the existing x1620 crossing plane. No art, silhouette, path, pose, timing or scale changes.",
+          "depthActivation": "Only entering actor after contact/threshold crossing. Sister, book, exterior Alice and terrain remain unaffected.",
+          "activation": {
+            "white-rabbit": "only covered final inside-aperture footsteps and fade; reuse approved back sprite",
+            "alice": "only burrow-entry; source rim pixels over forward body that crossed the plane",
+            "aliceCrossingPlaneWorldX": 1620,
+            "aliceCrossingPlaneSourceX": 1262,
+            "aliceRimPredicate": "inside roofOcclusion.sourceCoverageBounds AND outside sourceAperturePolygon AND worldX>=1620. Entire upper sprite covered; trailing legs remain outside.",
+            "aliceFinalSourceAlpha": {
+              "total": 14296,
+              "coveredByRim": 1420,
+              "trailingLowerBodyPixels": 5774,
+              "trailingLowerBodyCovered": 0,
+              "policy": "v5 source rim; final pose at1610,466 scaled by actualy=.701333; trailing legs remain outside crossingplane1620."
+            },
+            "note": "Mask is actual panorama pixels, not a flat hedge rectangle. Whole body must not vanish; final frame begins entry without fall or interior."
+          },
+          "roofOcclusion": {
+            "sourceCoverageBounds": [
+              1230,
+              0,
+              74,
+              248
+            ],
+            "derivation": "Full source-image height above the measured rim: x=min/max sourceOuterPolygon, y=0 to max outer y. Subtract the existing sourceAperturePolygon. Repaint exact existing background, never a flat-color rectangle.",
+            "approvedApertureAndRoutes": "unchanged"
+          }
+        }
+      ],
+      "cameras": {
+        "shots": {
+          "travel": {
+            "requiredWorldRect": [
+              594,
+              258,
+              825,
+              434
+            ],
+            "preferredCenter": [
+              1006,
+              470.5
+            ],
+            "preferredViewHeight": 1200,
+            "requiredActors": [
+              "alice",
+              "sister",
+              "white-rabbit"
+            ],
+            "note": "Historical broad reservation; active continuous motion uses measured trackingPaths, never serialized character legs."
+          },
+          "entrance": {
+            "requiredWorldRect": [
+              1104,
+              290,
+              640,
+              222
+            ],
+            "preferredCenter": [
+              1424,
+              410
+            ],
+            "preferredViewHeight": 941,
+            "requiredActors": [
+              "alice",
+              "white-rabbit"
+            ],
+            "note": "Reframe only with A1170,492 and R1380,510 stationary. Include aperture and hold for Rabbit entry, second line, Alice approach and hook. Sister remains in world at810,650, possibly outside crop."
+          },
+          "tall-first": {
+            "requiredWorldRect": [
+              594,
+              258,
+              555,
+              434
+            ],
+            "preferredCenter": [
+              871.5,
+              470
+            ],
+            "preferredViewHeight": 1200,
+            "note": "Proposed tall-window stopped subleg; sister remains fixed in world and may be outside crop."
+          },
+          "tall-second": {
+            "requiredWorldRect": [
+              834,
+              258,
+              465,
+              244
+            ],
+            "preferredCenter": [
+              1066.5,
+              470
+            ],
+            "preferredViewHeight": 1200,
+            "note": "Proposed tall-window stopped subleg; sister remains fixed in world and may be outside crop."
+          },
+          "tall-third": {
+            "requiredWorldRect": [
+              984,
+              296,
+              435,
+              216
+            ],
+            "preferredCenter": [
+              1201.5,
+              470
+            ],
+            "preferredViewHeight": 1200,
+            "note": "Proposed tall-window stopped subleg; sister remains fixed in world and may be outside crop."
+          },
+          "tall-catchup": {
+            "requiredWorldRect": [
+              1104,
+              290,
+              435,
+              222
+            ],
+            "preferredCenter": [
+              1321.5,
+              470
+            ],
+            "preferredViewHeight": 1200,
+            "note": "Proposed tall-window stopped subleg; sister remains fixed in world and may be outside crop."
+          },
+          "tall-entry": {
+            "requiredWorldRect": [
+              1334,
+              290,
+              410,
+              222
+            ],
+            "preferredCenter": [
+              1539,
+              470
+            ],
+            "preferredViewHeight": 1200,
+            "note": "Proposed tall-window stopped subleg; sister remains fixed in world and may be outside crop."
+          }
+        },
+        "projectionSamples": {
+          "travel": [
+            {
+              "viewport": [
+                360,
+                844
+              ],
+              "zoom": 0.4072727272727273,
+              "worldRect": [
+                564.5357142857142,
+                -145.5446428571429,
+                883.9285714285714,
+                2072.3214285714284
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                839.8142857142857,
+                0.9821428571428441,
+                353.57142857142856,
+                828.9285714285713
+              ]
+            },
+            {
+              "viewport": [
+                390,
+                844
+              ],
+              "zoom": 0.44363636363636366,
+              "worldRect": [
+                566.9508196721312,
+                -145.7459016393442,
+                879.0983606557377,
+                1902.4590163934424
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                840.7803278688525,
+                0.9016393442623212,
+                351.6393442622951,
+                760.983606557377
+              ]
+            },
+            {
+              "viewport": [
+                430,
+                844
+              ],
+              "zoom": 0.4921212121212121,
+              "worldRect": [
+                569.615763546798,
+                -145.96798029556646,
+                873.768472906404,
+                1715.0246305418718
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                841.8463054187192,
+                0.8128078817734149,
+                349.5073891625616,
+                686.0098522167488
+              ]
+            },
+            {
+              "viewport": [
+                720,
+                1280
+              ],
+              "zoom": 0.8436363636363636,
+              "worldRect": [
+                579.7758620689656,
+                -146.81465517241384,
+                853.448275862069,
+                1517.2413793103449
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                845.9103448275862,
+                0.4741379310344655,
+                341.37931034482756,
+                606.8965517241379
+              ]
+            },
+            {
+              "viewport": [
+                1280,
+                720
+              ],
+              "zoom": 0.6,
+              "worldRect": [
+                -60.66666666666674,
+                -21.16666666666663,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                589.7333333333333,
+                50.73333333333335,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                800,
+                800
+              ],
+              "zoom": 0.6666666666666666,
+              "worldRect": [
+                406,
+                -32,
+                1200,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                776.4,
+                46.4,
+                480,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                500,
+                900
+              ],
+              "zoom": 0.576969696969697,
+              "worldRect": [
+                573.2016806722689,
+                -146.26680672268913,
+                866.5966386554621,
+                1559.8739495798318
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                843.2806722689077,
+                0.6932773109243499,
+                346.63865546218483,
+                623.9495798319327
+              ]
+            },
+            {
+              "viewport": [
+                1600,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                -60.66666666666674,
+                -42.83333333333337,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                589.7333333333333,
+                42.06666666666665,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                320,
+                1080
+              ],
+              "zoom": 0.5177033492822967,
+              "worldRect": [
+                824.0646950092422,
+                -146.0683918669131,
+                618.1146025878004,
+                2086.136783733826
+              ],
+              "fits": false,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                943.6258780036969,
+                0.7726432532347645,
+                247.24584103512015,
+                834.4547134935304
+              ]
+            },
+            {
+              "viewport": [
+                2560,
+                480
+              ],
+              "zoom": 0.5448165869218501,
+              "worldRect": [
+                -1533.1645199063232,
+                147.87119437939117,
+                4698.829039812646,
+                881.0304449648712
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                0.7341920374707115,
+                118.34847775175646,
+                1879.5316159250585,
+                352.41217798594846
+              ]
+            }
+          ],
+          "entrance": [
+            {
+              "viewport": [
+                360,
+                844
+              ],
+              "zoom": 0.525,
+              "worldRect": [
+                1081.142857142857,
+                -146.09523809523807,
+                685.7142857142857,
+                1607.6190476190475
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1046.4571428571428,
+                0.7619047619047705,
+                274.2857142857143,
+                643.047619047619
+              ]
+            },
+            {
+              "viewport": [
+                390,
+                844
+              ],
+              "zoom": 0.571875,
+              "worldRect": [
+                1083.016393442623,
+                -146.25136612021856,
+                681.967213114754,
+                1475.8469945355191
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1047.2065573770492,
+                0.6994535519125747,
+                272.7868852459016,
+                590.3387978142076
+              ]
+            },
+            {
+              "viewport": [
+                430,
+                844
+              ],
+              "zoom": 0.634375,
+              "worldRect": [
+                1085.0837438423646,
+                -107.04433497536945,
+                677.832512315271,
+                1330.4433497536945
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1048.0334975369458,
+                16.38226600985222,
+                271.13300492610836,
+                532.1773399014778
+              ]
+            },
+            {
+              "viewport": [
+                720,
+                1280
+              ],
+              "zoom": 1.0875,
+              "worldRect": [
+                1092.9655172413793,
+                -92.06896551724145,
+                662.0689655172414,
+                1177.0114942528737
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1051.1862068965518,
+                22.37241379310342,
+                264.82758620689657,
+                470.8045977011495
+              ]
+            },
+            {
+              "viewport": [
+                1280,
+                720
+              ],
+              "zoom": 0.7651434643995749,
+              "worldRect": [
+                587.5555555555555,
+                24.451388888888914,
+                1672.888888888889,
+                941
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                849.0222222222222,
+                68.98055555555557,
+                669.1555555555556,
+                376.4
+              ]
+            },
+            {
+              "viewport": [
+                800,
+                800
+              ],
+              "zoom": 0.8501594048884166,
+              "worldRect": [
+                953.5,
+                15.956250000000011,
+                941,
+                941
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                995.4,
+                65.58250000000001,
+                376.4,
+                376.4
+              ]
+            },
+            {
+              "viewport": [
+                500,
+                900
+              ],
+              "zoom": 0.74375,
+              "worldRect": [
+                1087.8655462184875,
+                -68.65546218487395,
+                672.2689075630252,
+                1210.0840336134454
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1049.146218487395,
+                31.737815126050418,
+                268.9075630252101,
+                484.03361344537814
+              ]
+            },
+            {
+              "viewport": [
+                1600,
+                900
+              ],
+              "zoom": 0.9564293304994687,
+              "worldRect": [
+                587.5555555555555,
+                7.461111111111109,
+                1672.888888888889,
+                941
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                849.0222222222222,
+                62.184444444444445,
+                669.1555555555556,
+                376.4
+              ]
+            },
+            {
+              "viewport": [
+                320,
+                1080
+              ],
+              "zoom": 0.5177033492822967,
+              "worldRect": [
+                1149.0646950092423,
+                -146.0683918669131,
+                618.1146025878004,
+                2086.136783733826
+              ],
+              "fits": false,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1073.625878003697,
+                0.7726432532347645,
+                247.24584103512015,
+                834.4547134935304
+              ]
+            },
+            {
+              "viewport": [
+                2560,
+                480
+              ],
+              "zoom": 0.5448165869218501,
+              "worldRect": [
+                -1533.1645199063232,
+                88.7909836065574,
+                4698.829039812646,
+                881.0304449648712
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                0.7341920374707115,
+                94.71639344262296,
+                1879.5316159250585,
+                352.41217798594846
+              ]
+            }
+          ],
+          "tall-first": [
+            {
+              "viewport": [
+                360,
+                844
+              ],
+              "zoom": 0.6054054054054054,
+              "worldRect": [
+                574.1785714285714,
+                -71.78571428571433,
+                594.6428571428571,
+                1394.107142857143
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                843.6714285714286,
+                30.485714285714266,
+                237.85714285714283,
+                557.6428571428571
+              ]
+            },
+            {
+              "viewport": [
+                390,
+                844
+              ],
+              "zoom": 0.6594594594594595,
+              "worldRect": [
+                575.8032786885246,
+                -27.377049180327845,
+                591.3934426229508,
+                1279.8360655737704
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                844.3213114754099,
+                48.249180327868864,
+                236.55737704918033,
+                511.9344262295082
+              ]
+            },
+            {
+              "viewport": [
+                430,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                565.8127962085308,
+                3.6492890995260723,
+                611.3744075829384,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                840.3251184834123,
+                60.65971563981043,
+                244.54976303317534,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                720,
+                1280
+              ],
+              "zoom": 1.0666666666666667,
+              "worldRect": [
+                534,
+                -41.875,
+                675,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                827.6,
+                42.45,
+                270,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1280,
+                720
+              ],
+              "zoom": 0.6,
+              "worldRect": [
+                -195.16666666666674,
+                -21.66666666666663,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                535.9333333333333,
+                50.533333333333346,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                800,
+                800
+              ],
+              "zoom": 0.6666666666666666,
+              "worldRect": [
+                271.5,
+                -32.5,
+                1200,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                722.6,
+                46.2,
+                480,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                500,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                538.1666666666667,
+                -4.666666666666629,
+                666.6666666666666,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                829.2666666666668,
+                57.33333333333335,
+                266.66666666666663,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1600,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                -195.16666666666674,
+                -43.33333333333337,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                535.9333333333333,
+                41.86666666666665,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                320,
+                1080
+              ],
+              "zoom": 0.5333333333333333,
+              "worldRect": [
+                571.5,
+                -146.125,
+                600,
+                2025
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                842.6,
+                0.75,
+                240,
+                810
+              ]
+            },
+            {
+              "viewport": [
+                2560,
+                480
+              ],
+              "zoom": 0.5448165869218501,
+              "worldRect": [
+                -1533.1645199063232,
+                147.87119437939117,
+                4698.829039812646,
+                881.0304449648712
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                0.7341920374707115,
+                118.34847775175646,
+                1879.5316159250585,
+                352.41217798594846
+              ]
+            }
+          ],
+          "tall-second": [
+            {
+              "viewport": [
+                360,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                810.5758293838862,
+                3.6492890995260723,
+                511.8483412322275,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                938.2303317535545,
+                60.65971563981043,
+                204.739336492891,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                390,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                789.2488151658767,
+                3.6492890995260723,
+                554.5023696682464,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                929.6995260663507,
+                60.65971563981043,
+                221.80094786729856,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                430,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                760.8127962085308,
+                3.6492890995260723,
+                611.3744075829384,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                918.3251184834123,
+                60.65971563981043,
+                244.54976303317534,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                720,
+                1280
+              ],
+              "zoom": 1.0666666666666667,
+              "worldRect": [
+                729,
+                -41.875,
+                675,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                905.6,
+                42.45,
+                270,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1280,
+                720
+              ],
+              "zoom": 0.6,
+              "worldRect": [
+                -0.16666666666674246,
+                -21.66666666666663,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                613.9333333333333,
+                50.533333333333346,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                800,
+                800
+              ],
+              "zoom": 0.6666666666666666,
+              "worldRect": [
+                466.5,
+                -32.5,
+                1200,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                800.6,
+                46.2,
+                480,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                500,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                733.1666666666667,
+                -4.666666666666629,
+                666.6666666666666,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                907.2666666666668,
+                57.33333333333335,
+                266.66666666666663,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1600,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                -0.16666666666674246,
+                -43.33333333333337,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                613.9333333333333,
+                41.86666666666665,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                320,
+                1080
+              ],
+              "zoom": 0.6365591397849463,
+              "worldRect": [
+                815.1486486486486,
+                -146.42905405405406,
+                502.70270270270265,
+                1696.6216216216214
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                940.0594594594595,
+                0.6283783783783747,
+                201.08108108108107,
+                678.6486486486485
+              ]
+            },
+            {
+              "viewport": [
+                2560,
+                480
+              ],
+              "zoom": 0.5448165869218501,
+              "worldRect": [
+                -1533.1645199063232,
+                147.87119437939117,
+                4698.829039812646,
+                881.0304449648712
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                0.7341920374707115,
+                118.34847775175646,
+                1879.5316159250585,
+                352.41217798594846
+              ]
+            }
+          ],
+          "tall-third": [
+            {
+              "viewport": [
+                360,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                945.5758293838862,
+                3.6492890995260723,
+                511.8483412322275,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                992.2303317535545,
+                60.65971563981043,
+                204.739336492891,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                390,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                924.2488151658767,
+                3.6492890995260723,
+                554.5023696682464,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                983.6995260663507,
+                60.65971563981043,
+                221.80094786729856,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                430,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                895.8127962085308,
+                3.6492890995260723,
+                611.3744075829384,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                972.3251184834123,
+                60.65971563981043,
+                244.54976303317534,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                720,
+                1280
+              ],
+              "zoom": 1.0666666666666667,
+              "worldRect": [
+                864,
+                -41.875,
+                675,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                959.6,
+                42.45,
+                270,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1280,
+                720
+              ],
+              "zoom": 0.6,
+              "worldRect": [
+                134.83333333333326,
+                -21.66666666666663,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                667.9333333333333,
+                50.533333333333346,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                800,
+                800
+              ],
+              "zoom": 0.6666666666666666,
+              "worldRect": [
+                601.5,
+                -32.5,
+                1200,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                854.6,
+                46.2,
+                480,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                500,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                868.1666666666667,
+                -4.666666666666629,
+                666.6666666666666,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                961.2666666666668,
+                57.33333333333335,
+                266.66666666666663,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1600,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                134.83333333333326,
+                -43.33333333333337,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                667.9333333333333,
+                41.86666666666665,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                320,
+                1080
+              ],
+              "zoom": 0.6804597701149425,
+              "worldRect": [
+                966.3648648648649,
+                -146.5304054054053,
+                470.27027027027026,
+                1587.162162162162
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1000.545945945946,
+                0.5878378378378784,
+                188.1081081081081,
+                634.8648648648648
+              ]
+            },
+            {
+              "viewport": [
+                2560,
+                480
+              ],
+              "zoom": 0.5448165869218501,
+              "worldRect": [
+                -1533.1645199063232,
+                148.7909836065574,
+                4698.829039812646,
+                881.0304449648712
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                0.7341920374707115,
+                118.71639344262296,
+                1879.5316159250585,
+                352.41217798594846
+              ]
+            }
+          ],
+          "tall-catchup": [
+            {
+              "viewport": [
+                360,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                1065.5758293838862,
+                3.6492890995260723,
+                511.8483412322275,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1040.2303317535545,
+                60.65971563981043,
+                204.739336492891,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                390,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                1044.2488151658767,
+                3.6492890995260723,
+                554.5023696682464,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1031.6995260663507,
+                60.65971563981043,
+                221.80094786729856,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                430,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                1015.8127962085308,
+                3.6492890995260723,
+                611.3744075829384,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1020.3251184834123,
+                60.65971563981043,
+                244.54976303317534,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                720,
+                1280
+              ],
+              "zoom": 1.0666666666666667,
+              "worldRect": [
+                984,
+                -41.875,
+                675,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1007.6,
+                42.45,
+                270,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1280,
+                720
+              ],
+              "zoom": 0.6,
+              "worldRect": [
+                254.83333333333326,
+                -21.66666666666663,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                715.9333333333333,
+                50.533333333333346,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                800,
+                800
+              ],
+              "zoom": 0.6666666666666666,
+              "worldRect": [
+                721.5,
+                -32.5,
+                1200,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                902.6,
+                46.2,
+                480,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                500,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                988.1666666666667,
+                -4.666666666666629,
+                666.6666666666666,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1009.2666666666668,
+                57.33333333333335,
+                266.66666666666663,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1600,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                254.83333333333326,
+                -43.33333333333337,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                715.9333333333333,
+                41.86666666666665,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                320,
+                1080
+              ],
+              "zoom": 0.6804597701149425,
+              "worldRect": [
+                1086.3648648648648,
+                -146.5304054054053,
+                470.27027027027026,
+                1587.162162162162
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1048.545945945946,
+                0.5878378378378784,
+                188.1081081081081,
+                634.8648648648648
+              ]
+            },
+            {
+              "viewport": [
+                2560,
+                480
+              ],
+              "zoom": 0.5448165869218501,
+              "worldRect": [
+                -1533.1645199063232,
+                148.7909836065574,
+                4698.829039812646,
+                881.0304449648712
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                0.7341920374707115,
+                118.71639344262296,
+                1879.5316159250585,
+                352.41217798594846
+              ]
+            }
+          ],
+          "tall-entry": [
+            {
+              "viewport": [
+                360,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                1283.0758293838862,
+                3.6492890995260723,
+                511.8483412322275,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1127.2303317535545,
+                60.65971563981043,
+                204.739336492891,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                390,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                1261.7488151658767,
+                3.6492890995260723,
+                554.5023696682464,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1118.6995260663507,
+                60.65971563981043,
+                221.80094786729856,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                430,
+                844
+              ],
+              "zoom": 0.7033333333333334,
+              "worldRect": [
+                1233.312796208531,
+                3.6492890995260723,
+                611.3744075829384,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1107.3251184834123,
+                60.65971563981043,
+                244.54976303317534,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                720,
+                1280
+              ],
+              "zoom": 1.0666666666666667,
+              "worldRect": [
+                1201.5,
+                -41.875,
+                675,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1094.6,
+                42.45,
+                270,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1280,
+                720
+              ],
+              "zoom": 0.6,
+              "worldRect": [
+                472.33333333333326,
+                -21.66666666666663,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                802.9333333333333,
+                50.533333333333346,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                800,
+                800
+              ],
+              "zoom": 0.6666666666666666,
+              "worldRect": [
+                939,
+                -32.5,
+                1200,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                989.6,
+                46.2,
+                480,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                500,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                1205.6666666666667,
+                -4.666666666666629,
+                666.6666666666666,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1096.2666666666669,
+                57.33333333333335,
+                266.66666666666663,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                1600,
+                900
+              ],
+              "zoom": 0.75,
+              "worldRect": [
+                472.33333333333326,
+                -43.33333333333337,
+                2133.3333333333335,
+                1200
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                802.9333333333333,
+                41.86666666666665,
+                853.3333333333334,
+                480
+              ]
+            },
+            {
+              "viewport": [
+                320,
+                1080
+              ],
+              "zoom": 0.7219512195121951,
+              "worldRect": [
+                1317.3783783783783,
+                -146.6148648648649,
+                443.2432432432433,
+                1495.945945945946
+              ],
+              "fits": true,
+              "dialogueReservationPx": 188,
+              "paddingPx": 12,
+              "sourceRect": [
+                1140.9513513513514,
+                0.5540540540540405,
+                177.29729729729732,
+                598.3783783783784
+              ]
+            },
+            {
+              "viewport": [
+                2560,
+                480
+              ],
+              "zoom": 0.5448165869218501,
+              "worldRect": [
+                -1533.1645199063232,
+                148.7909836065574,
+                4698.829039812646,
+                881.0304449648712
+              ],
+              "fits": true,
+              "dialogueReservationPx": 130,
+              "paddingPx": 12,
+              "sourceRect": [
+                0.7341920374707115,
+                118.71639344262296,
+                1879.5316159250585,
+                352.41217798594846
+              ]
+            }
+          ]
+        },
+        "constraints": "Full viewport coverage at every aspect; stay inside painted bounds; actual #dialogue clearance must be measured in Gate3/4. Board uses188px portrait/130px landscape reservation, never claims actual DOM behavior. Never move/fade sister during reframe.",
+        "continuity": "Exact S1 state and camera at boundary. Separate stopped reframe before travel; separate stopped reframe before entrance. No shot dissolve.",
+        "tallWindowPlan": {
+          "reason": "At320x1080 broad travel/entrance shots cannot fit within existing painted bounds. Never choose clipped actors or letterboxing.",
+          "status": "measured additional stopped sublegs proposed for joint approval",
+          "sequence": [
+            {
+              "shot": "tall-first",
+              "rabbitStop": [
+                1110,
+                470
+              ],
+              "aliceStop": [
+                900,
+                448
+              ]
+            },
+            {
+              "shot": "tall-second",
+              "rabbitStop": [
+                1260,
+                500
+              ],
+              "aliceStop": [
+                1050,
+                476
+              ]
+            },
+            {
+              "shot": "tall-third",
+              "rabbitStop": [
+                1380,
+                510
+              ],
+              "aliceStop": [
+                1170,
+                492
+              ],
+              "text": "Wait—please!"
+            },
+            {
+              "shot": "tall-catchup",
+              "rabbitStop": [
+                1500,
+                500
+              ],
+              "aliceStop": [
+                1400,
+                510
+              ]
+            },
+            {
+              "shot": "tall-entry",
+              "rabbit": "complete measured ingress",
+              "aliceWait": [
+                1400,
+                510
+              ],
+              "textAfterIngress": "Just a little farther."
+            }
+          ],
+          "allShotChanges": "Both travelers stationary. Each walking subleg holds its camera; sister world coordinates and book ownership never change."
+        },
+        "continuousTracking": {
+          "id": "s2-paired-path",
+          "fromShot": "tall-first",
+          "toShot": "tall-third",
+          "driverActor": "alice",
+          "driverAxis": "x",
+          "from": 900,
+          "through": 1170,
+          "formula": "t=clamp((Alice.world.x-900)/270,0,1); linearly interpolate requiredWorldRect and preferredCenter from tall-first to tall-third BEFORE responsive frame fitting. preferredViewHeight1200.",
+          "interpolate": "measured required rectangle and preferred center; fit interpolated shot continuously in complete painted bounds",
+          "cameraReframing": true,
+          "sisterPolicy": "Sister stays810,650 reading, book attached. Only during this explicit tracking phase may her full silhouette leave via natural viewport edge; never move/hide her or show her under dialogue. At the final text she is either fully outside the narrow view or wholly included in a broad view.",
+          "evidence": "/.artifacts/alice-in-wonderland/depth-motion/tracking-projection.json"
+        },
+        "trackingPaths": {
+          "s2-paired-path": {
+            "fromShot": "tall-first",
+            "toShot": "tall-third",
+            "driver": {
+              "actor": "alice",
+              "axis": "x",
+              "from": 900,
+              "to": 1170
+            },
+            "departingStationaryActors": [
+              "sister"
+            ],
+            "evidence": "/.artifacts/alice-in-wonderland/depth-motion/tracking-projection.json"
+          }
+        }
+      },
+      "props": {
+        "book": {
+          "owner": "sister",
+          "defaultPose": "book-open",
+          "size": [
+            66,
+            42
+          ],
+          "attachment": {
+            "property": "two hands and lap",
+            "propAnchorNormalized": [
+              0.5,
+              0.75
+            ]
+          },
+          "byOwnerPose": {
+            "seated-reading": {
+              "sourceHandMidpoint": [
+                979,
+                870
+              ],
+              "worldHand": [
+                820,
+                606
+              ],
+              "worldPropBottomCenter": [
+                820,
+                616
+              ]
+            },
+            "seated-reply-left": {
+              "sourceHandMidpoint": [
+                624,
+                880
+              ],
+              "worldHand": [
+                828,
+                610
+              ],
+              "worldPropBottomCenter": [
+                830,
+                620
+              ]
+            }
+          },
+          "note": "Book pages have only text strokes, no pictures. Tilt prop changes with pose while book remains owned. No book is baked into sister sprites."
+        },
+        "watch": {
+          "owner": "white-rabbit",
+          "visible": false,
+          "state": "in-pocket throughout S2"
+        }
+      },
+      "poseReadiness": {
+        "approvedReusable": [
+          "Alice front/right/back/standing-ready/walk derivatives",
+          "Sister seated-reading with separate book",
+          "Rabbit front/right/back/ready/walk derivatives",
+          "Rabbit back62x122 physically fits real dark aperture at1632,454; source-alpha audit records5908/5908 pixels. Final inward step1632,432 crosses real upper rim, then final covered fade."
+        ],
+        "newAuthoredAtlas": "scene-2-atlas-cells.json",
+        "newAuthoredPoseNames": [
+          "burrow-kneel",
+          "burrow-hand",
+          "burrow-entry"
+        ],
+        "sourceArtInspected": true,
+        "doNot": "Never force interactions to standingHeight180. Keep normalizedSize124x162,164x144,202x122 from single source scale. Never squash or rotate standing art. Original S1 atlas unchanged.",
+        "runtimeQA": "03 source/contact measurement only; 05 must audit new textures, mask and transitions in actual renderer."
+      },
+      "sequencePolicy": "Supersedes previous alternating tall-window sublegs: Rabbit first waits1110,470 while Alice rounds sister to900,448; then both move in one uninterrupted simultaneous action to1170,492 /1380,510 using measured tracking. No aspect-ratio-specific actor timing or route. Reframe after Wait with both stationary; later catch-up also simultaneous.",
+      "hook": {
+        "durationMs": 3000,
+        "ranges": [
+          {
+            "from": 0,
+            "through": 600,
+            "action": "Final measured51.923world-unit step to1610,470 on the dry lip approach."
+          },
+          {
+            "from": 600,
+            "through": 1450,
+            "action": "Authored kneel124x162 at(1610,470), depth .706666667; measured physical87.6267x114.48."
+          },
+          {
+            "from": 1450,
+            "through": 2050,
+            "action": "Authored hand-support164x144 at(1610,466), depth .701333333; measured physical115.0187x100.992."
+          },
+          {
+            "from": 2050,
+            "through": 3000,
+            "action": "Authored torso-entry202x122 at(1610,466), depth .701333333; physical141.6693x85.5627; crossed torso behind v5 rim, trailing legs visible."
+          }
+        ],
+        "status": "authored poses and source contacts measured; 600+850+600+950=3000ms; implementation and independent QA pending",
+        "requiredBodyUnionWorldRect": [
+          1509,
+          298,
+          202,
+          180
+        ],
+        "requiredBodyUnionWorldRectNote": "Includes preceding standing-ready110x180 at1610,478, kneel124x162, support164x144 and entry202x122. Existing entrance required rect1104,290,640,222 already contains this entire union.",
+        "depthScaledPoseContacts": [
+          {
+            "pose": "burrow-kneel",
+            "footOrigin": [
+              1610,
+              470
+            ],
+            "depthScale": 0.7066666666666667,
+            "normalizedSize": [
+              124,
+              162
+            ],
+            "worldBounds": [
+              1566.1866666666667,
+              355.52,
+              87.62666666666667,
+              114.48
+            ],
+            "opaqueSamples": 14704,
+            "rimCoveredSamples": 0,
+            "trailingLowerBodySamples": 4632,
+            "trailingLowerBodyCovered": 0
+          },
+          {
+            "pose": "burrow-hand",
+            "footOrigin": [
+              1610,
+              466
+            ],
+            "depthScale": 0.7013333333333334,
+            "normalizedSize": [
+              164,
+              144
+            ],
+            "worldBounds": [
+              1552.4906666666666,
+              365.008,
+              115.01866666666668,
+              100.992
+            ],
+            "opaqueSamples": 14176,
+            "rimCoveredSamples": 0,
+            "trailingLowerBodySamples": 5048,
+            "trailingLowerBodyCovered": 0
+          },
+          {
+            "pose": "burrow-entry",
+            "footOrigin": [
+              1610,
+              466
+            ],
+            "depthScale": 0.7013333333333334,
+            "normalizedSize": [
+              202,
+              122
+            ],
+            "worldBounds": [
+              1539.1653333333334,
+              380.4373333333333,
+              141.66933333333333,
+              85.56266666666667
+            ],
+            "opaqueSamples": 14296,
+            "rimCoveredSamples": 1420,
+            "trailingLowerBodySamples": 5774,
+            "trailingLowerBodyCovered": 0
+          }
+        ],
+        "normalizedPoseReferenceContacts": [
+          {
+            "pose": "burrow-kneel",
+            "actorAnchor": [
+              1610,
+              470
+            ],
+            "worldBounds": [
+              1548,
+              316,
+              124,
+              162
+            ],
+            "groundContactRuns": [
+              {
+                "localPixelRange": [
+                  4,
+                  161,
+                  16,
+                  162
+                ],
+                "worldCenter": [
+                  1558,
+                  478
+                ]
+              },
+              {
+                "localPixelRange": [
+                  46,
+                  161,
+                  62,
+                  162
+                ],
+                "worldCenter": [
+                  1602,
+                  478
+                ]
+              }
+            ],
+            "opaquePixels": 14704,
+            "actualRimCoveredPixels": 0,
+            "trailingLowerBodyPixels": 2868,
+            "trailingLowerBodyPixelsCovered": 0
+          },
+          {
+            "pose": "burrow-hand",
+            "actorAnchor": [
+              1610,
+              466
+            ],
+            "worldBounds": [
+              1528,
+              330,
+              164,
+              144
+            ],
+            "groundContactRuns": [
+              {
+                "localPixelRange": [
+                  4,
+                  143,
+                  16,
+                  144
+                ],
+                "worldCenter": [
+                  1538,
+                  474
+                ]
+              },
+              {
+                "localPixelRange": [
+                  46,
+                  143,
+                  64,
+                  144
+                ],
+                "worldCenter": [
+                  1583,
+                  474
+                ]
+              },
+              {
+                "localPixelRange": [
+                  76,
+                  143,
+                  94,
+                  144
+                ],
+                "worldCenter": [
+                  1613,
+                  474
+                ]
+              },
+              {
+                "localPixelRange": [
+                  108,
+                  143,
+                  136,
+                  144
+                ],
+                "worldCenter": [
+                  1650,
+                  474
+                ]
+              }
+            ],
+            "opaquePixels": 14176,
+            "actualRimCoveredPixels": 0,
+            "trailingLowerBodyPixels": 3324,
+            "trailingLowerBodyPixelsCovered": 0
+          },
+          {
+            "pose": "burrow-entry",
+            "actorAnchor": [
+              1610,
+              466
+            ],
+            "worldBounds": [
+              1509,
+              352,
+              202,
+              122
+            ],
+            "groundContactRuns": [
+              {
+                "localPixelRange": [
+                  4,
+                  121,
+                  16,
+                  122
+                ],
+                "worldCenter": [
+                  1519,
+                  474
+                ]
+              },
+              {
+                "localPixelRange": [
+                  32,
+                  121,
+                  44,
+                  122
+                ],
+                "worldCenter": [
+                  1547,
+                  474
+                ]
+              },
+              {
+                "localPixelRange": [
+                  68,
+                  121,
+                  86,
+                  122
+                ],
+                "worldCenter": [
+                  1586,
+                  474
+                ]
+              },
+              {
+                "localPixelRange": [
+                  92,
+                  121,
+                  110,
+                  122
+                ],
+                "worldCenter": [
+                  1610,
+                  466
+                ]
+              },
+              {
+                "localPixelRange": [
+                  150,
+                  121,
+                  176,
+                  122
+                ],
+                "worldCenter": [
+                  1672,
+                  474
+                ]
+              }
+            ],
+            "opaquePixels": 14296,
+            "actualRimCoveredPixels": 1631,
+            "trailingLowerBodyPixels": 4186,
+            "trailingLowerBodyPixelsCovered": 0
+          }
+        ],
+        "verificationNotes": [
+          "v5 supersedes historical v4 aperture dimensions and contacts. Rabbit B1632,464; Alice kneels1610,470, hand/entry1610,466. Actual aperture height87.5world; standingAlice127.2world, torsoentry85.5627world.",
+          "Sister remains810,650. All earlier path joins, simultaneous motion and depth curve unchanged."
+        ],
+        "geometryNote": "Current v5 contacts and B supersede historical v4 normalized-contact descriptions. Canonical measured records: depthScaledPoseContacts and occluders[0]."
+      },
+      "conditionalSafetyRects": {
+        "sisterFixedBody": [
+          743,
+          494,
+          134,
+          156
+        ],
+        "book": [
+          787,
+          574,
+          66,
+          42
+        ],
+        "policy": "If a stationary sister/body or held book intersects viewport, include its measured rectangle in safe camera fitting. Allow natural offscreen after stopped reframe. Never move/hide her or crop a visible body behind dialogue. If union cannot fit painted bounds, request measured additional stopped shot rather than improvise a moving camera."
+      },
+      "depthScaling": {
+        "method": "linear-in-world-foot-y",
+        "origin": [
+          0.5,
+          1
+        ],
+        "referenceY": 450,
+        "scaleAtReference": 0.68,
+        "slopePerWorldY": 0.0013333333333333333,
+        "minScale": 0.5,
+        "maxScale": 1.1,
+        "actors": {
+          "alice": {
+            "referenceY": 690,
+            "referenceFactor": 1,
+            "normalizedStandingHeight": 180
+          },
+          "white-rabbit": {
+            "referenceY": 452,
+            "referenceFactor": 0.6826666666666668,
+            "normalizedStandingHeight": 122
+          },
+          "sister": {
+            "referenceY": 650,
+            "referenceFactor": 0.9466666666666668,
+            "normalizedStandingHeight": 202
+          }
+        },
+        "evaluation": "clamp(minScale,maxScale,scaleAtReference+(footY-referenceY)*slopePerWorldY) / actors[id].referenceFactor * actorGain[id]",
+        "invariants": [
+          "Foot origin stays at the actual actor support while texture scales uniformly.",
+          "Apply depth factor exactly once after existing anatomical normalization; Rabbit122 is already the approved distant base.",
+          "Props use owner factor for local hand offsets and texture dimensions; shadows scale by same factor.",
+          "No pose change resets depth; entry anatomical sizes124x162,164x144,202x122 remain unmodified.",
+          "Camera does not change actor scale. Sister stays(810,650), seated-reading factor1."
+        ],
+        "samples": [
+          {
+            "y": 412,
+            "alice": 0.629333333,
+            "rabbit": 0.81125
+          },
+          {
+            "y": 424,
+            "alice": 0.645333333,
+            "rabbit": 0.831875
+          },
+          {
+            "y": 432,
+            "alice": 0.656,
+            "rabbit": 0.845625
+          },
+          {
+            "y": 438,
+            "alice": 0.664,
+            "rabbit": 0.8559375
+          },
+          {
+            "y": 448,
+            "alice": 0.677333333,
+            "rabbit": 0.873125
+          },
+          {
+            "y": 450,
+            "alice": 0.68,
+            "rabbit": 0.8765625
+          },
+          {
+            "y": 452,
+            "alice": 0.682666667,
+            "rabbit": 0.88
+          },
+          {
+            "y": 460,
+            "alice": 0.693333333,
+            "rabbit": 0.89375
+          },
+          {
+            "y": 472,
+            "alice": 0.709333333,
+            "rabbit": 0.914375
+          },
+          {
+            "y": 474,
+            "alice": 0.712,
+            "rabbit": 0.9178125
+          },
+          {
+            "y": 476,
+            "alice": 0.714666667,
+            "rabbit": 0.92125
+          },
+          {
+            "y": 478,
+            "alice": 0.717333333,
+            "rabbit": 0.9246875
+          },
+          {
+            "y": 484,
+            "alice": 0.725333333,
+            "rabbit": 0.935
+          },
+          {
+            "y": 492,
+            "alice": 0.736,
+            "rabbit": 0.94875
+          },
+          {
+            "y": 500,
+            "alice": 0.746666667,
+            "rabbit": 0.9625
+          },
+          {
+            "y": 510,
+            "alice": 0.76,
+            "rabbit": 0.9796875
+          },
+          {
+            "y": 650,
+            "alice": 0.946666667,
+            "rabbit": 1.2203125
+          },
+          {
+            "y": 690,
+            "alice": 1,
+            "rabbit": 1.2890625
+          }
+        ],
+        "measurementEvidence": "/.artifacts/alice-in-wonderland/depth-motion/depth-measurements.json",
+        "curve": {
+          "referenceY": 450,
+          "referenceScale": 0.68,
+          "slopePerWorldY": 0.0013333333333333333,
+          "minScale": 0.5,
+          "maxScale": 1.1
+        },
+        "actorReferenceY": {
+          "alice": 690,
+          "sister": 650,
+          "white-rabbit": 452
+        },
+        "actorGain": {
+          "alice": 1,
+          "sister": 1,
+          "white-rabbit": 0.88
+        },
+        "calibration": "NOOK authorizes Rabbit gain .88 with depth correction: normalized122 sprite is unchanged; actual stopped height107.36 at y452. Applied consistently across S1/S2 so there is no boundary jump or double application."
+      }
+    }
+  },
+  "gateChecks": {
+    "approvedUnchangedAssets": "Prior S1 atlas audit still applies to reused poses; no new PASS claimed.",
+    "missingArt": "Resolved by three genuine generated poses, measured transparent cuts, normalized source scale and physical rim/contact board. Runtime verification remains required.",
+    "runtimeQA": "Not run: no S2 story code or technical scene implemented.",
+    "approval": "Latest user explicitly approves S2 five-moment script and measured routes with Wait, please! and authorizes generating entry poses then proceeding directly to04/05 without another approval stop.",
+    "newPoseSourceAudit": "entry-art/entry-measurements.json: all3crops transparent border, one alpha component, complete feet/hands, even dimensions and hard-alpha2worldpixel normalization. Does not substitute actual character-art browser check."
+  },
+  "scope": {
+    "approval": "Alejandro explicitly authorizes local smaller-burrow correction and matching S2 endpoints through QA, 2026-10-20",
+    "productionCodeAuthorized": true
+  },
+  "pixelDensity": {
+    "spec": "/stories/alice-in-wonderland/shared/pixel-density.json",
+    "profile": "concept_art/density-profile.json",
+    "revision": "2026-10-20-golden-master",
+    "bodyStandingLogicalSamples": 68,
+    "alpha": "hard",
+    "geometry": "Cut rectangles, sizes, positions, mapping, paths and masks unchanged; source colors/alpha quantized by NN."
+  }
+}

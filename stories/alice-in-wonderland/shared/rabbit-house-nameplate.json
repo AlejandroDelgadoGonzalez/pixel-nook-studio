@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "scope": "Shared White Rabbit house nameplate for C2-S4, C2-S6 and C2-S7",
+  "text": "W. RABBIT",
+  "center": [
+    847.5,
+    507
+  ],
+  "cleanBounds": [
+    826,
+    496,
+    869,
+    518
+  ],
+  "maximumTextWidth": 41,
+  "fontFamily": "Arial, sans-serif",
+  "fontSize": 10,
+  "color": "#211b18",
+  "spacing": "Single ordinary proportional space after W.; no letter spacing",
+  "policy": "Fit full text inside the clean area between native rivets; preserve complete W, period and final T"
+}

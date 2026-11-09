@@ -1,0 +1,1453 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "chapter": 2,
+  "scene": 3,
+  "title": "Prizes and Dinah",
+  "status": "Gates1/2A approved; Gate3 implemented; Gate4 passed in recorded local scope",
+  "environment": "clearing",
+  "background": {
+    "asset": "/stories/alice-in-wonderland/assets/environments/clearing-c2-s2-v1.png",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "worldDimensions": [
+      1672,
+      941
+    ],
+    "sourceToWorldScale": 1,
+    "method": "Measured selected image, actual-alpha sole pins, approved S1 live camera and common motion-speed integral",
+    "evidence": ".artifacts/alice-in-wonderland/chapter-2/scene-2"
+  },
+  "lighting": {
+    "timeOfDay": "night",
+    "scope": "All Wonderland exteriors; daylight only real world",
+    "assetSha256": "3adb172f615be81f0cb2668f85d5cebbd946af67c4acb162ce345280300c0762",
+    "geometryAndPaths": "unchanged",
+    "pixelGrid": "2x2; qa/pixel_density.py passed",
+    "palette": "Intermediate55-60% lunar night treatment with slight additional ambient clarity; green-teal leaves, brown earth, blue water; fully nighttime sky and distant forest",
+    "castTreeShadows": "removed"
+  },
+  "camera": {
+    "inherit": "chapter-2-scene-2-geometry.json#camera",
+    "initialFrame": "Exact S2 final frame per viewport; no dissolve",
+    "groupCenter": [
+      530,
+      570
+    ],
+    "scalePolicy": "Same close detail and physical scales as S2; follow exits without shrinking the entire cast",
+    "movement": "One held inherited frame, including all exits and Rabbit hook; no camera ping-pong",
+    "UI": "Do not move dialogue; all conversation bodies stay above original caption reserve"
+  },
+  "actors": {
+    "mouse": {
+      "physicalStandingHeightWorld": 18,
+      "bodyScale": 1,
+      "physicalGain": 1.4210210210210237,
+      "sourceReferenceStandingWorldHeight": 180,
+      "walkSpeed": 75,
+      "runSpeed": 154.91238579089435,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "referenceStandingScreenHeight390x844": 31.950464000000064,
+      "arrivalDelayMs": 800,
+      "arrivalDurationMs": 4529.502417175404,
+      "arrivalDoneByMs": 5329.502417175404,
+      "initialPose": "mouse-tell-right-wet",
+      "finalPose": "mouse-tell-right-dry",
+      "wetNote": "Wet seated pose includes drops; running drops are separate and fade progressively.",
+      "supportPolicy": "Preserve measured sole origin when switching poses; seated height is anatomical, not forced to standing height."
+    },
+    "alice": {
+      "physicalStandingHeightWorld": 180,
+      "bodyScale": 0.32,
+      "physicalGain": 1.0006006006006014,
+      "sourceReferenceStandingWorldHeight": 180,
+      "walkSpeed": 235,
+      "runSpeed": 446.3932920054573,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "referenceStandingScreenHeight390x844": 71.99252480000008,
+      "arrivalDelayMs": 400,
+      "arrivalDurationMs": 3881.417534973809,
+      "arrivalDoneByMs": 4281.417534973809,
+      "initialPose": "alice-sit-left-wet",
+      "finalPose": "alice-pocket-left-dry",
+      "wetNote": "Wet seated pose includes drops; running drops are separate and fade progressively.",
+      "supportPolicy": "Preserve measured sole origin when switching poses; seated height is anatomical, not forced to standing height."
+    },
+    "dodo": {
+      "physicalStandingHeightWorld": 56,
+      "bodyScale": 1,
+      "physicalGain": 0.9309309309309328,
+      "sourceReferenceStandingWorldHeight": 180,
+      "walkSpeed": 64,
+      "runSpeed": 130.8228795616454,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "referenceStandingScreenHeight390x844": 65.11928888888903,
+      "arrivalDelayMs": 0,
+      "arrivalDurationMs": 3245.563098872309,
+      "arrivalDoneByMs": 3245.563098872309,
+      "initialPose": "dodo-sit-right-dry",
+      "finalPose": "dodo-request-left-dry",
+      "wetNote": "Use dry seated body plus same isolated droplets from prop atlas at beginning. All running uses dry stride body + progressively reduced attached drops.",
+      "supportPolicy": "Preserve measured sole origin when switching poses; seated height is anatomical, not forced to standing height."
+    },
+    "lory": {
+      "physicalStandingHeightWorld": 36,
+      "bodyScale": 1,
+      "physicalGain": 0.9477477477477495,
+      "sourceReferenceStandingWorldHeight": 180,
+      "walkSpeed": 60,
+      "runSpeed": 118.82657113554161,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "referenceStandingScreenHeight390x844": 42.61862400000009,
+      "arrivalDelayMs": 900,
+      "arrivalDurationMs": 3301.2258178037,
+      "arrivalDoneByMs": 4201.2258178037,
+      "initialPose": "lory-sit-right-dry",
+      "finalPose": "lory-front-dry",
+      "wetNote": "Use dry seated body plus same isolated droplets from prop atlas at beginning. All running uses dry stride body + progressively reduced attached drops.",
+      "supportPolicy": "Preserve measured sole origin when switching poses; seated height is anatomical, not forced to standing height."
+    },
+    "eaglet": {
+      "physicalStandingHeightWorld": 42,
+      "bodyScale": 1,
+      "physicalGain": 0.9381381381381403,
+      "sourceReferenceStandingWorldHeight": 180,
+      "walkSpeed": 60,
+      "runSpeed": 106.85538995861585,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "referenceStandingScreenHeight390x844": 49.21757866666679,
+      "arrivalDelayMs": 1400,
+      "arrivalDurationMs": 4493.002085831202,
+      "arrivalDoneByMs": 5893.002085831202,
+      "initialPose": "eaglet-sit-right-wet",
+      "finalPose": "eaglet-front-dry",
+      "wetNote": "Wet seated pose includes drops; running drops are separate and fade progressively.",
+      "supportPolicy": "Preserve measured sole origin when switching poses; seated height is anatomical, not forced to standing height."
+    },
+    "white-rabbit": {
+      "physicalStandingHeightWorld": 122,
+      "bodyScale": 1,
+      "physicalGain": 0.8,
+      "walkSpeed": 100,
+      "runSpeed": 650,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "initialPresence": "offstage; hidden spawn on measured right path only for hook; no visible jump"
+    }
+  },
+  "initialState": {
+    "actors": {
+      "alice": {
+        "x": 537.0820393249937,
+        "y": 594.1824082710219,
+        "visible": 1,
+        "facing": "left",
+        "pose": "idle"
+      },
+      "sister": {
+        "x": 810,
+        "y": 650,
+        "visible": 1,
+        "facing": "right",
+        "pose": "idle"
+      },
+      "white-rabbit": {
+        "x": 1500,
+        "y": 900,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle"
+      },
+      "mouse": {
+        "x": 630,
+        "y": 520,
+        "visible": 1,
+        "facing": "front",
+        "pose": "idle"
+      },
+      "dodo": {
+        "x": 411.0081306187558,
+        "y": 562.0266455389118,
+        "visible": 1,
+        "facing": "right",
+        "pose": "idle"
+      },
+      "lory": {
+        "x": 419.09830056250524,
+        "y": 481.7939586009893,
+        "visible": 1,
+        "facing": "right",
+        "pose": "idle"
+      },
+      "eaglet": {
+        "x": 527.8115294937452,
+        "y": 464.3631937967335,
+        "visible": 1,
+        "facing": "right",
+        "pose": "idle"
+      }
+    },
+    "staging": {
+      "alice": "brush-palms",
+      "sister": "seated-reading",
+      "rabbit": "right"
+    },
+    "watch": {
+      "owner": "white-rabbit",
+      "visible": 0,
+      "state": "in-pocket"
+    },
+    "book": {
+      "owner": "sister",
+      "visible": 1
+    },
+    "chapter": 0,
+    "view": "s4-upper",
+    "environment": "clearing",
+    "s3": {
+      "falling": false,
+      "clodFall": 1,
+      "clodsVisible": false,
+      "hookMs": 3000
+    },
+    "jar": {
+      "owner": null,
+      "state": "lower-fixed",
+      "orientation": "upright",
+      "visible": 1
+    },
+    "s4": {
+      "shot": "landing",
+      "landed": true
+    },
+    "s5": {
+      "shot": "hall-corridor"
+    },
+    "hall": {
+      "pose": "standing-steady",
+      "shot": "bottle-discovery",
+      "curtain": 1,
+      "door": 0,
+      "key": {
+        "owner": null
+      },
+      "roomLock": 1
+    },
+    "drink": {
+      "active": true,
+      "pose": "box-open",
+      "face": "left",
+      "magicScale": 0.32,
+      "bottleOwner": "floor",
+      "bottleEmpty": 1,
+      "bottleGrip": "body",
+      "cork": 1,
+      "angle": 0,
+      "boxX": 856.4484011940299,
+      "boxY": 690,
+      "boxOpen": 1,
+      "shot": "hook"
+    },
+    "eat": {
+      "active": true,
+      "pose": "calm",
+      "face": "left",
+      "cake": {
+        "owner": "consumed",
+        "amount": 0
+      },
+      "keyLift": 0,
+      "cryTime": 5250,
+      "rabbitLook": true
+    },
+    "pool": {
+      "active": true,
+      "phase": "swim",
+      "water": 1,
+      "door": 0,
+      "fan": "released",
+      "gloves": "floor",
+      "mouse": 1,
+      "mouseProgress": 1,
+      "swim": 0
+    },
+    "company": {
+      "phase": "door-push",
+      "motionClockMs": 89000,
+      "wadeProgress": 1,
+      "doorPush": 1,
+      "gesture": "idle"
+    },
+    "clearing": {
+      "active": true,
+      "clock": 71100,
+      "wet": 0,
+      "hook": 1,
+      "twig": 2,
+      "opening": 1,
+      "arrival": 1
+    }
+  },
+  "waitAnchors": {
+    "alice": [
+      537.0820393249937,
+      594.1824082710219
+    ],
+    "dodo": [
+      430,
+      610
+    ],
+    "lory": [
+      455,
+      520
+    ],
+    "eaglet": [
+      600,
+      525
+    ],
+    "mouse": [
+      625,
+      620
+    ]
+  },
+  "handoffContacts": {
+    "aliceHandRight": [
+      563,
+      557
+    ],
+    "aliceHandLeft": [
+      511,
+      557
+    ],
+    "mouseFeet": [
+      572.4240958298825,
+      562.1079776773954
+    ],
+    "dodoFeet": [
+      469.0519392366026,
+      588.8463587207706
+    ],
+    "loryFeet": [
+      492.52352938565963,
+      578.8575493324901
+    ],
+    "eagletFeet": [
+      578.6912136630274,
+      581.0596595366732
+    ],
+    "mouseTarget": [
+      565.9826875797567,
+      555.3463877319244
+    ],
+    "dodoTarget": [
+      508.18139107023086,
+      555.3463877319244
+    ],
+    "loryTarget": [
+      508.18139107023086,
+      555.3463877319244
+    ],
+    "eagletTarget": [
+      565.9826875797567,
+      555.3463877319244
+    ]
+  },
+  "contactPolicy": "Each recipient alone approaches, stops, receives, eats, and returns to own wait anchor within its text-free beat; no ownership transfer during walking. Hand coordinates measured from selected sheet; preserve sole pivots. Draw baked prop OR independent prop, never both.",
+  "walkPaths": {
+    "dodo-gather": {
+      "actor": "dodo",
+      "mode": "walk",
+      "speed": 64,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 411.0081306187558,
+          "y": 562.0266455389118
+        },
+        {
+          "x": 430,
+          "y": 610
+        }
+      ],
+      "physicalDurationMs": 689.4722140127417,
+      "facingBySegment": [
+        "front"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "lory-gather": {
+      "actor": "lory",
+      "mode": "walk",
+      "speed": 60,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 419.09830056250524,
+          "y": 481.7939586009893
+        },
+        {
+          "x": 455,
+          "y": 520
+        }
+      ],
+      "physicalDurationMs": 802.8447123240443,
+      "facingBySegment": [
+        "front"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "eaglet-gather": {
+      "actor": "eaglet",
+      "mode": "walk",
+      "speed": 60,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 527.8115294937452,
+          "y": 464.3631937967335
+        },
+        {
+          "x": 600,
+          "y": 525
+        }
+      ],
+      "physicalDurationMs": 1453.379595321778,
+      "facingBySegment": [
+        "right",
+        "right"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "mouse-gather": {
+      "actor": "mouse",
+      "mode": "walk",
+      "speed": 75,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 630,
+          "y": 520
+        },
+        {
+          "x": 625,
+          "y": 620
+        }
+      ],
+      "physicalDurationMs": 1156.4286305942267,
+      "facingBySegment": [
+        "front"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "mouse-receive": {
+      "actor": "mouse",
+      "mode": "walk",
+      "speed": 75,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 625,
+          "y": 620
+        },
+        {
+          "x": 572.4240958298825,
+          "y": 562.1079776773954
+        },
+        {
+          "x": 625,
+          "y": 620
+        }
+      ],
+      "physicalDurationMs": 1776.7015027085529,
+      "facingBySegment": [
+        "back",
+        "front"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "dodo-receive": {
+      "actor": "dodo",
+      "mode": "walk",
+      "speed": 64,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 430,
+          "y": 610
+        },
+        {
+          "x": 469.0519392366026,
+          "y": 588.8463587207706
+        },
+        {
+          "x": 430,
+          "y": 610
+        }
+      ],
+      "physicalDurationMs": 1174.7476681073056,
+      "facingBySegment": [
+        "right",
+        "left"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "lory-receive": {
+      "actor": "lory",
+      "mode": "walk",
+      "speed": 60,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 455,
+          "y": 520
+        },
+        {
+          "x": 492.52352938565963,
+          "y": 578.8575493324901
+        },
+        {
+          "x": 455,
+          "y": 520
+        }
+      ],
+      "physicalDurationMs": 2047.6563269230498,
+      "facingBySegment": [
+        "front",
+        "back"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "eaglet-receive": {
+      "actor": "eaglet",
+      "mode": "walk",
+      "speed": 60,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "waypoints": [
+        {
+          "x": 600,
+          "y": 525
+        },
+        {
+          "x": 578.6912136630274,
+          "y": 581.0596595366732
+        },
+        {
+          "x": 600,
+          "y": 525
+        }
+      ],
+      "physicalDurationMs": 1754.300629485056,
+      "facingBySegment": [
+        "front",
+        "back"
+      ],
+      "textFree": true,
+      "tapToContinue": false
+    },
+    "dodo-path": {
+      "actor": "dodo",
+      "mode": "run",
+      "waypoints": [
+        {
+          "x": 430,
+          "y": 610
+        },
+        {
+          "x": 470,
+          "y": 715
+        },
+        {
+          "x": 700,
+          "y": 715
+        },
+        {
+          "x": 900,
+          "y": 570
+        },
+        {
+          "x": 1120,
+          "y": 510
+        },
+        {
+          "x": 1210,
+          "y": 460
+        },
+        {
+          "x": 1250,
+          "y": 425
+        }
+      ],
+      "speed": 130.8228795616454,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "textFree": true,
+      "tapToContinue": false,
+      "physicalDurationMs": 6296.176878778119,
+      "facingBySegment": [
+        "front",
+        "front",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "policy": "Brisk retreat in existing fast speed slot; fade at actual viewport edge or native shrub cover. Camera stays with Alice.",
+      "collisionNote": "Near-right detour below Alice/Mouse, feet at715 keep the whole body clear; then joins original right path. No actor crosses another body."
+    },
+    "mouse-dry-right": {
+      "actor": "mouse",
+      "mode": "run",
+      "waypoints": [
+        {
+          "x": 625,
+          "y": 620
+        },
+        {
+          "x": 850,
+          "y": 640
+        },
+        {
+          "x": 1100,
+          "y": 690
+        },
+        {
+          "x": 1380,
+          "y": 800
+        }
+      ],
+      "speed": 154.91238579089435,
+      "bodyScale": 1,
+      "scaleKnots": [
+        [
+          280,
+          0.8
+        ],
+        [
+          360,
+          0.91
+        ],
+        [
+          440,
+          1.02
+        ],
+        [
+          520,
+          1.11
+        ],
+        [
+          620,
+          1.2
+        ],
+        [
+          760,
+          1.32
+        ]
+      ],
+      "textFree": true,
+      "tapToContinue": false,
+      "physicalDurationMs": 4028.557169604042,
+      "facingBySegment": [
+        "right",
+        "right",
+        "right"
+      ],
+      "terrain": "Dry earth only; right/down-right into native shrubs at (1380,800); never left water"
+    }
+  },
+  "flightPaths": {
+    "lory": {
+      "actor": "lory",
+      "speedWorldPxPerSecond": 131.89749396045121,
+      "waypoints": [
+        [
+          455,
+          520
+        ],
+        [
+          545,
+          440
+        ],
+        [
+          760,
+          290
+        ],
+        [
+          1000,
+          190
+        ],
+        [
+          1160,
+          180
+        ]
+      ],
+      "physicalScale": "Hold takeoff depth scale while airborne; wing expansion preserves body scale",
+      "textFree": true,
+      "tapToContinue": false,
+      "durationMs": 6087.17157299322,
+      "mode": "run",
+      "referenceSpeed": 118.82657113554161,
+      "lockedTakeoffScale": 1.11
+    },
+    "eaglet": {
+      "actor": "eaglet",
+      "speedWorldPxPerSecond": 119.09033210887736,
+      "waypoints": [
+        [
+          600,
+          525
+        ],
+        [
+          680,
+          435
+        ],
+        [
+          760,
+          290
+        ],
+        [
+          1000,
+          190
+        ],
+        [
+          1160,
+          180
+        ]
+      ],
+      "physicalScale": "Hold takeoff depth scale while airborne; wing expansion preserves body scale",
+      "textFree": true,
+      "tapToContinue": false,
+      "durationMs": 5931.069972815003,
+      "mode": "run",
+      "referenceSpeed": 106.85538995861585,
+      "lockedTakeoffScale": 1.1145
+    }
+  },
+  "occluders": {
+    "mouseReeds": {
+      "sourceAnchor": [
+        235,
+        538
+      ],
+      "sourceWater": [
+        207,
+        568
+      ],
+      "fade": "Only after actual reed/water boundary; no fade at seat"
+    },
+    "dodoCover": {
+      "polygon": [
+        [
+          1205,
+          444
+        ],
+        [
+          1210,
+          386
+        ],
+        [
+          1264,
+          368
+        ],
+        [
+          1300,
+          402
+        ],
+        [
+          1300,
+          439
+        ],
+        [
+          1262,
+          452
+        ]
+      ],
+      "sourceBounds": [
+        1200,
+        360,
+        1310,
+        460
+      ],
+      "depth": 470,
+      "source": "Existing foliage pixels from unchanged panorama at same coordinates; no moved/cloned bush"
+    },
+    "birdBranchGap": {
+      "sourceAnchor": [
+        1390,
+        207
+      ],
+      "exit": [
+        1490,
+        120
+      ],
+      "plane": "Airborne in front of canopy then through visible sky gap; no floor Y-sorting while flying"
+    }
+  },
+  "props": {
+    "sweets": {
+      "count": 4,
+      "ledger": [
+        "Alice box",
+        "one to each Mouse/Dodo/Lory/Eaglet",
+        "all four consumed",
+        "empty box back to Alice pocket"
+      ],
+      "slotsLocalWorld": [
+        [
+          -3,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "renderPolicy": "Empty box base plus4/3/2/1/0 independent sweets; first four-full sprite only before first transfer. Source pose palms empty, never duplicate baked props."
+    },
+    "thimble": {
+      "ledger": [
+        "Alice pocket",
+        "Alice hand",
+        "Dodo wing after stopped transfer",
+        "Alice hand after award",
+        "Alice pocket"
+      ],
+      "finalOwner": "alice"
+    },
+    "twig": {
+      "anchor": [
+        345,
+        555
+      ],
+      "inherited": true,
+      "touched": false
+    },
+    "hallProps": {
+      "environment": "hall-of-doors",
+      "unchanged": true
+    }
+  },
+  "sound": {
+    "silent": true,
+    "gate2B": "paused"
+  },
+  "implementationAllowed": false,
+  "rabbitHook": {
+    "from": [
+      900,
+      550
+    ],
+    "to": [
+      625,
+      550
+    ],
+    "camera": "Held with Alice",
+    "durationMs": 3000,
+    "fadeInMs": 2000,
+    "source": "Measured near-right open earth connected continuously to the winding path; behind viewport edge in close layouts",
+    "note": "Walk left from the right path; held frame; edge-aware smooth fade; stop diagonally right/upstage, 98.4 world px from Alice",
+    "visibleFadeWindow": "Gradual opacity during the3second hook, visible at the frame edge; complete opaque search pose before scene end",
+    "physicalGain": 0.8,
+    "walkSpeed": 100
+  },
+  "timing": {
+    "measurement": "Automatic reading only, not MP4",
+    "authoredMs": 62888.65845911667,
+    "actual1msEngineMs": 62902,
+    "retirementSequenceMs": 6500,
+    "antiChaining": true,
+    "preserveAllDialogueAndPauses": true
+  },
+  "initialRendering": {
+    "source": "Actual final Clearing.draw override at S2 beat21, hook1; durable actor.facing alone is insufficient",
+    "actors": {
+      "alice": {
+        "pose": "alice-pocket-left-dry",
+        "facing": "left"
+      },
+      "mouse": {
+        "pose": "mouse-tell-right-dry",
+        "facing": "left",
+        "flipX": true
+      },
+      "dodo": {
+        "pose": "dodo-request-left-dry",
+        "facing": "right",
+        "flipX": true
+      },
+      "lory": {
+        "pose": "lory-sit-right-dry",
+        "facing": "right",
+        "flipX": false
+      },
+      "eaglet": {
+        "pose": "eaglet-sit-right-dry",
+        "facing": "left",
+        "flipX": true
+      }
+    },
+    "wet": 0,
+    "twig": 2,
+    "dialogue": "cleared",
+    "noShotDissolve": true
+  },
+  "handoffPins": {
+    "mouse-tell-right-dry": [
+      0.84,
+      0.73
+    ],
+    "lory-sit-right-dry": [
+      0.92,
+      0.32
+    ],
+    "eaglet-sit-right-dry": [
+      0.92,
+      0.32
+    ]
+  },
+  "spawns": {
+    "alice": {
+      "x": 537.0820393249937,
+      "y": 594.1824082710219,
+      "visible": 1
+    },
+    "mouse": {
+      "x": 630,
+      "y": 520,
+      "visible": 1
+    },
+    "dodo": {
+      "x": 411.0081306187558,
+      "y": 562.0266455389118,
+      "visible": 1
+    },
+    "lory": {
+      "x": 419.09830056250524,
+      "y": 481.7939586009893,
+      "visible": 1
+    },
+    "eaglet": {
+      "x": 527.8115294937452,
+      "y": 464.3631937967335,
+      "visible": 1
+    },
+    "white-rabbit": {
+      "x": 900,
+      "y": 550,
+      "visible": 0
+    }
+  },
+  "anchors": {
+    "alice": [
+      537.0820393249937,
+      594.1824082710219
+    ],
+    "dodo": [
+      430,
+      610
+    ],
+    "lory": [
+      455,
+      520
+    ],
+    "eaglet": [
+      600,
+      525
+    ],
+    "mouse": [
+      625,
+      620
+    ],
+    "aliceHandRight": [
+      563,
+      557
+    ],
+    "aliceHandLeft": [
+      511,
+      557
+    ],
+    "mouseFeet": [
+      572.4240958298825,
+      562.1079776773954
+    ],
+    "dodoFeet": [
+      469.0519392366026,
+      588.8463587207706
+    ],
+    "loryFeet": [
+      492.52352938565963,
+      578.8575493324901
+    ],
+    "eagletFeet": [
+      578.6912136630274,
+      581.0596595366732
+    ],
+    "mouseTarget": [
+      565.9826875797567,
+      555.3463877319244
+    ],
+    "dodoTarget": [
+      508.18139107023086,
+      555.3463877319244
+    ],
+    "loryTarget": [
+      508.18139107023086,
+      555.3463877319244
+    ],
+    "eagletTarget": [
+      565.9826875797567,
+      555.3463877319244
+    ]
+  },
+  "runtime": {
+    "implemented": true,
+    "renderer": "/stories/alice-in-wonderland/renderers/prizes.js",
+    "sceneId": "alice-c2-prizes-and-dinah",
+    "qaVerdict": ".artifacts\\qa\\alice-in-wonderland\\chapter-2-scene-3\\exit-rabbit-revision\\verdict.md"
+  },
+  "qa": {
+    "verdict": ".artifacts\\qa\\alice-in-wonderland\\chapter-2-scene-3\\exit-rabbit-revision\\verdict.md",
+    "errors": 0,
+    "resources": 0,
+    "motionLayouts": 20,
+    "continuousResizeLayouts": 228,
+    "continuousResizeTextStates": 2964,
+    "completedSilentMp4s": 2,
+    "physicalDevicesTested": false
+  },
+  "propSizeContracts": {
+    "mode": "Measured constant world dimensions, native texture resolution4; owners are stationary during transfers",
+    "boxWorldHeight": 12,
+    "sweetWorldHeight": 3,
+    "thimbleWorldHeight": 4
+  },
+  "continuityToScene4": {
+    "rabbit": {
+      "x": 625,
+      "y": 550,
+      "visible": 1,
+      "facing": "left",
+      "pose": "idle",
+      "bodyScale": 1,
+      "physicalGain": 0.8,
+      "standingHeightAtDepthWorld": 110.97120000000001,
+      "walkSpeed": 100
+    },
+    "alice": {
+      "x": 537.0820393249937,
+      "y": 594.1824082710219,
+      "visible": 1
+    },
+    "camera": "Exact held S3 final frame per viewport",
+    "hands": "Empty; searching for missing fan and gloves"
+  },
+  "exitRevision": {
+    "authorization": "User requested dry-right Mouse run, stable airborne bird fade, smaller slower Rabbit with more space",
+    "date": "2026-11-02",
+    "withdrawalMs": 6500,
+    "hookMs": 3000,
+    "qa": "passed; .artifacts\\qa\\alice-in-wonderland\\chapter-2-scene-3\\exit-rabbit-revision\\verdict.md"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "status": "Official close camera and original-detail mode approved by Alejandro; crouched box-open original mirrored to match measured left-facing normalized pose.",
+  "revision": "camera-1793488608365",
+  "backup": ".artifacts/alice-in-wonderland/camera-trial/20261031-185032",
+  "defaultModes": {
+    "c1-s4": true,
+    "c1-s5": true,
+    "c1-s6": true,
+    "c2-s1": true
+  },
+  "zoomMultiplier": 1.6,
+  "detailResolution": 4,
+  "zoomInMs": 2000,
+  "worldBounds": [
+    0,
+    0,
+    3328,
+    1872
+  ],
+  "focus": {
+    "aliceOffsets": [
+      -160,
+      -200,
+      160,
+      40
+    ],
+    "pool": [
+      1440,
+      1080,
+      1740,
+      1495
+    ],
+    "leftDoor": [
+      1430,
+      850,
+      1740,
+      1130
+    ]
+  },
+  "measurement": {
+    "pool": "Envelope of C1-S6 water route and C2-S1 inherited/left-shore/bird meeting anchors, with complete silhouette allowance. World = panorama x2.",
+    "leftDoor": "C2-S1 measured door supports: Dodo1502,896; group1590,1042 /1536,1092 /1506,1044 /1668,1032, with head/foot allowances.",
+    "follow": "Alice root from unchanged authored walkPaths; fixed context offsets; no new actor coordinates."
+  },
+  "authorization": "Current user request overrides intra-room fixed-camera rule only for this reversible trial; no shotDissolve, no timing/route/text/audio changes.",
+  "sources": {
+    "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "dimensions": [
+        2048,
+        243
+      ],
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93"
+    },
+    "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+      "dimensions": [
+        2048,
+        105
+      ],
+      "sha256": "77d116d308807086420e41abce7f9cc7ab79639df6c8b22a62b0e7a5665bdfe6"
+    },
+    "/stories/alice-in-wonderland/assets/atlases/dodo-master-atlas.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/dodo-master-atlas.png",
+      "dimensions": [
+        2048,
+        1876
+      ],
+      "sha256": "9923cc02a96715443d5a1a8e485d7f8b207b8914a5150a8a376ba2045c43c81b"
+    },
+    "/stories/alice-in-wonderland/assets/atlases/lory-master-atlas.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/lory-master-atlas.png",
+      "dimensions": [
+        2048,
+        855
+      ],
+      "sha256": "ea97e492b4203cc47b4dc58a025c18d3cedc58973aec981148d9576c697795c7"
+    },
+    "/stories/alice-in-wonderland/assets/atlases/eaglet-master-atlas.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/eaglet-master-atlas.png",
+      "dimensions": [
+        2048,
+        1222
+      ],
+      "sha256": "35837b4c0c34feeffba14baf9af46833fe5657012e946007af00bb324b956aa5"
+    },
+    "/stories/alice-in-wonderland/assets/atlases/mouse-master-atlas.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/mouse-master-atlas.png",
+      "dimensions": [
+        2048,
+        543
+      ],
+      "sha256": "dcc5f66a3326210d928a33570a3537aa2c5a46d423186e2e545582e3da68a061"
+    },
+    "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png": {
+      "url": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+      "dimensions": [
+        2048,
+        95
+      ],
+      "sha256": "6410964696df619363731fc4414a9ab2db814cf4f8350d691b9eb266a9a592d2"
+    }
+  },
+  "followContext": {
+    "fromWorldY": 1100,
+    "throughWorldY": 1300,
+    "leftShiftWorld": 80,
+    "measurement": "Smoothly bias the close composition toward the tabletop key and box near the measured glass-leg support y1380. Original key bounds start near worldx1595.3; glass-leg Alice is1802.758. Return to an unbiased close composition above y1100 near the tiny door y976. No prop or actor moves."
+  },
+  "official": true,
+  "orientationCorrections": {
+    "box-open": {
+      "originalFacing": "right",
+      "normalizedFacing": "left",
+      "mirrorOriginal": true,
+      "reason": "Keep measured foot and hand anchors aligned with the box on Alice left."
+    }
+  }
+}

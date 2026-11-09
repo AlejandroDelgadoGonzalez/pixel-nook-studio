@@ -1,0 +1,1231 @@
+{
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "renderer": "odyssey",
+  "title": "The Odyssey",
+  "subtitle": "The Long Way Home",
+  "intro": "A beautiful island. A man who cannot leave.",
+  "ending": "He had left the island. The way home was still ahead.",
+  "description": "A quiet, abridged retelling of Homer’s Odyssey about memory, longing and the long way home.",
+  "stageLabel": "Odysseus on Calypso’s island beside the sea",
+  "attribution": "An original abridged adaptation of Homer’s Odyssey",
+  "serialized": true,
+  "availableChapter": "chapter-1",
+  "episodes": true,
+  "timing": {
+    "characterMs": 30,
+    "wordMs": 440,
+    "minimumHoldMs": 2100,
+    "linePauseMs": 1400
+  },
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.65,
+    "birdMinMs": 35000,
+    "birdRangeMs": 24000
+  },
+  "assets": {
+    "island": "/stories/the-odyssey/assets/backgrounds/native/island.png",
+    "atlas": "/stories/the-odyssey/assets/atlases/characters/odyssey-core.png"
+  },
+  "characters": {
+    "odysseus": {
+      "name": "Odysseus",
+      "role": "The traveler",
+      "color": "#cbe4df"
+    },
+    "calypso": {
+      "name": "Calypso",
+      "role": "The island keeper",
+      "color": "#f1dda9"
+    },
+    "hermes": {
+      "name": "Hermes",
+      "role": "The messenger",
+      "color": "#edcba3"
+    }
+  },
+  "initialState": {
+    "actors": {
+      "odysseus": {
+        "x": 790,
+        "y": 955,
+        "visible": 1,
+        "facing": "back",
+        "pose": "idle"
+      },
+      "calypso": {
+        "x": 480,
+        "y": 1010,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle"
+      },
+      "hermes": {
+        "x": 1130,
+        "y": 1030,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle"
+      }
+    },
+    "props": {},
+    "lamp": {
+      "owner": null
+    },
+    "chapter": 0,
+    "view": "shore",
+    "working": 0,
+    "raft": {
+      "x": 860,
+      "y": 1070,
+      "visible": 0,
+      "rigged": 0,
+      "afloat": 0,
+      "aboard": 0
+    },
+    "tools": {
+      "x": 955,
+      "y": 1090,
+      "visible": 0
+    },
+    "supplies": {
+      "visible": 0
+    }
+  },
+  "shots": {
+    "shore": {
+      "cx": 790,
+      "cy": 855,
+      "w": 450,
+      "h": 350,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [],
+      "points": []
+    },
+    "conversation": {
+      "cx": 755,
+      "cy": 890,
+      "w": 430,
+      "h": 340,
+      "actors": [
+        "odysseus",
+        "calypso"
+      ],
+      "props": [],
+      "points": []
+    },
+    "messenger": {
+      "cx": 755,
+      "cy": 900,
+      "w": 430,
+      "h": 350,
+      "actors": [
+        "calypso",
+        "hermes"
+      ],
+      "props": [],
+      "points": []
+    },
+    "work": {
+      "cx": 810,
+      "cy": 960,
+      "w": 470,
+      "h": 350,
+      "actors": [
+        "odysseus",
+        "calypso"
+      ],
+      "props": [
+        "raft",
+        "tools"
+      ],
+      "points": []
+    },
+    "launch": {
+      "cx": 790,
+      "cy": 805,
+      "w": 510,
+      "h": 450,
+      "actors": [
+        "odysseus",
+        "calypso"
+      ],
+      "props": [
+        "raft"
+      ],
+      "points": []
+    },
+    "departure": {
+      "cx": 870,
+      "cy": 760,
+      "w": 460,
+      "h": 380,
+      "actors": [
+        "odysseus"
+      ],
+      "props": [
+        "raft"
+      ],
+      "points": []
+    },
+    "calypso-entry": {
+      "cx": 650,
+      "cy": 960,
+      "w": 490,
+      "h": 420,
+      "actors": [
+        "odysseus",
+        "calypso"
+      ],
+      "props": [],
+      "points": []
+    },
+    "hermes-entry": {
+      "cx": 880,
+      "cy": 985,
+      "w": 560,
+      "h": 350,
+      "actors": [
+        "calypso",
+        "hermes"
+      ],
+      "props": [],
+      "points": []
+    }
+  },
+  "scenes": [
+    {
+      "id": "odyssey-c1-s1",
+      "chapterId": "chapter-1",
+      "name": "The Other Shore",
+      "atmosphere": {
+        "water": 0.13,
+        "wind": 0.025,
+        "birds": 0.014,
+        "village": 0,
+        "music": 0.008
+      },
+      "steps": [
+        {
+          "id": "odyssey-c1-s1-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "shore",
+            "chapter": 0
+          }
+        },
+        {
+          "id": "odyssey-c1-s1-clarity-home",
+          "type": "text",
+          "kind": "narration",
+          "text": "Odysseus was the king of Ithaca. He had left his wife, Penelope, and their son to fight in the war at Troy."
+        },
+        {
+          "id": "odyssey-c1-s1-clarity-time",
+          "type": "text",
+          "kind": "narration",
+          "text": "The war was over, but his journey home had gone wrong. We meet him years later, alone on Calypso’s island."
+        },
+        {
+          "id": "odyssey-c1-s1-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Every morning, Odysseus watched the sea."
+        },
+        {
+          "id": "odyssey-c1-s1-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After losing his ship and companions at sea, he had washed up here. Calypso sheltered him, but would not let him leave."
+        },
+        {
+          "id": "odyssey-c1-s1-pace-along-the-shore",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 880,
+                "y": 950,
+                "facing": "right",
+                "pose": "walk"
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 835,
+                "y": 953
+              },
+              {
+                "x": 880,
+                "y": 950
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c1-s1-look-out-to-sea",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s1-return-to-the-shore",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 790,
+                "y": 955,
+                "facing": "left",
+                "pose": "walk"
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 835,
+                "y": 953
+              },
+              {
+                "x": 790,
+                "y": 955
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c1-s1-face-the-water-again",
+          "type": "action",
+          "duration": 450,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s1-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "This shore had kept him alive for years. It had begun to feel like the edge of his life."
+        },
+        {
+          "id": "odyssey-c1-s1-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Ahead of him was the one thing it could not offer: a way to leave."
+        },
+        {
+          "id": "odyssey-c1-s1-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He had survived a war. He had survived the sea. Now he was surviving another quiet morning."
+        },
+        {
+          "id": "odyssey-c1-s1-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Far across the sea lay Ithaca. Penelope still lived there with their son, Telemachus, who had grown up while he was away."
+        },
+        {
+          "id": "odyssey-c1-s1-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He could remember the weight of an oar. The sound of his son’s voice was becoming harder."
+        },
+        {
+          "id": "odyssey-c1-s1-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He watched the water until the sunlight hurt his eyes."
+        },
+        {
+          "id": "odyssey-c1-s1-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "There was no ship on the water. Still, he looked."
+        }
+      ],
+      "estimatedSeconds": 102
+    },
+    {
+      "id": "odyssey-c1-s2",
+      "chapterId": "chapter-1",
+      "name": "A Life Without an Ending",
+      "atmosphere": {
+        "water": 0.13,
+        "wind": 0.025,
+        "birds": 0.014,
+        "village": 0,
+        "music": 0.008
+      },
+      "steps": [
+        {
+          "id": "odyssey-c1-s2-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "calypso-entry",
+            "chapter": 1
+          }
+        },
+        {
+          "id": "odyssey-c1-s2-calypso-approaches",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "actors": {
+              "calypso": {
+                "x": 675,
+                "y": 965,
+                "visible": 1,
+                "facing": "right",
+                "pose": "walk"
+              },
+              "odysseus": {
+                "facing": "left"
+              }
+            }
+          },
+          "paths": {
+            "calypso": [
+              {
+                "x": 445,
+                "y": 1150
+              },
+              {
+                "x": 535,
+                "y": 1080
+              },
+              {
+                "x": 620,
+                "y": 1005
+              },
+              {
+                "x": 675,
+                "y": 965
+              }
+            ]
+          },
+          "presence": {
+            "calypso": {
+              "kind": "enter",
+              "fadeMs": 2000,
+              "zone": "Behind the lower-left tree, then onto the open sand",
+              "from": {
+                "x": 250,
+                "y": 1190
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c1-s2-settle-after-entry",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "conversation"
+          }
+        },
+        {
+          "id": "odyssey-c1-s2-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Calypso, the goddess who lived on this island, came down to the shore. She wanted Odysseus to stay with her."
+        },
+        {
+          "id": "odyssey-c1-s2-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“You could have a life here.”"
+        },
+        {
+          "id": "odyssey-c1-s2-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I have a life somewhere else.”"
+        },
+        {
+          "id": "odyssey-c1-s2-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“A life that changes. People grow old there. They leave. They forget.”"
+        },
+        {
+          "id": "odyssey-c1-s2-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Calypso offered to make him live forever, without growing old. He would have to give up returning to his family."
+        },
+        {
+          "id": "odyssey-c1-s2-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus looked at the woman beside him, then at the water."
+        },
+        {
+          "id": "odyssey-c1-s2-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Penelope will have changed. So will I.”"
+        },
+        {
+          "id": "odyssey-c1-s2-p8",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“And that is what you want?”"
+        },
+        {
+          "id": "odyssey-c1-s2-p9",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I want the chance to find her. Even if I find her older.”"
+        },
+        {
+          "id": "odyssey-c1-s2-p10",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Calypso said nothing. For a moment, only the water answered."
+        },
+        {
+          "id": "odyssey-c1-s2-p11",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The island could keep a man alive forever. It could not make him stop missing home."
+        }
+      ],
+      "estimatedSeconds": 76
+    },
+    {
+      "id": "odyssey-c1-s3",
+      "chapterId": "chapter-1",
+      "name": "The Visitor",
+      "atmosphere": {
+        "water": 0.13,
+        "wind": 0.025,
+        "birds": 0.014,
+        "village": 0,
+        "music": 0.008
+      },
+      "steps": [
+        {
+          "id": "odyssey-c1-s3-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "messenger",
+            "chapter": 2
+          }
+        },
+        {
+          "id": "odyssey-c1-s3-odysseus-walks-away",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 1320,
+                "y": 1200,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "calypso": {}
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 960,
+                "y": 1090
+              },
+              {
+                "x": 1320,
+                "y": 1200
+              }
+            ]
+          },
+          "presence": {
+            "odysseus": {
+              "kind": "exit",
+              "fadeMs": 350,
+              "zone": "Right sandy path"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s3-hermes-arrives",
+          "type": "action",
+          "duration": 2800,
+          "effects": {
+            "actors": {
+              "hermes": {
+                "x": 835,
+                "y": 965,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            },
+            "view": "hermes-entry"
+          },
+          "paths": {
+            "hermes": [
+              {
+                "x": 1170,
+                "y": 1040
+              },
+              {
+                "x": 1020,
+                "y": 995
+              },
+              {
+                "x": 835,
+                "y": 965
+              }
+            ]
+          },
+          "presence": {
+            "hermes": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Right coastal path beside the vegetation",
+              "from": {
+                "x": 1310,
+                "y": 1050
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s3-settle-after-entry",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "messenger"
+          }
+        },
+        {
+          "id": "odyssey-c1-s3-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "That afternoon, while Odysseus was away from the shore, Hermes arrived. He was the messenger of the gods."
+        },
+        {
+          "id": "odyssey-c1-s3-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Calypso knew the messenger before he spoke."
+        },
+        {
+          "id": "odyssey-c1-s3-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“Hermes. What have the gods decided?”",
+          "listener": "hermes"
+        },
+        {
+          "id": "odyssey-c1-s3-clarity-decision",
+          "type": "text",
+          "kind": "narration",
+          "text": "The gods had decided that Odysseus should have a chance to go home. Hermes had come to tell Calypso their decision."
+        },
+        {
+          "id": "odyssey-c1-s3-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "hermes",
+          "text": "“The man must be allowed to leave.”",
+          "listener": "calypso"
+        },
+        {
+          "id": "odyssey-c1-s3-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“They remember him now?”",
+          "listener": "hermes"
+        },
+        {
+          "id": "odyssey-c1-s3-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Hermes let the question rest between them."
+        },
+        {
+          "id": "odyssey-c1-s3-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "hermes",
+          "text": "“You must help him prepare. The crossing itself will still be his.”",
+          "listener": "calypso"
+        },
+        {
+          "id": "odyssey-c1-s3-look-toward-the-water",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "calypso": {
+                "facing": "back"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s3-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Calypso turned toward the water where Odysseus had looked for so many mornings."
+        },
+        {
+          "id": "odyssey-c1-s3-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "There would be no ship waiting for him. No crew. No promise of a gentle sea."
+        },
+        {
+          "id": "odyssey-c1-s3-p10",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Only permission to try. After all these years, it was enough to change the day."
+        }
+      ],
+      "estimatedSeconds": 79
+    },
+    {
+      "id": "odyssey-c1-s4",
+      "chapterId": "chapter-1",
+      "name": "Wood and Rope",
+      "atmosphere": {
+        "water": 0.13,
+        "wind": 0.025,
+        "birds": 0.014,
+        "village": 0,
+        "music": 0.008
+      },
+      "steps": [
+        {
+          "id": "odyssey-c1-s4-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "work",
+            "chapter": 3
+          }
+        },
+        {
+          "id": "odyssey-c1-s4-messenger-departs",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "actors": {
+              "hermes": {
+                "x": 1310,
+                "y": 1050,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "calypso": {}
+            },
+            "view": "work"
+          },
+          "paths": {
+            "hermes": [
+              {
+                "x": 1100,
+                "y": 1000
+              },
+              {
+                "x": 1310,
+                "y": 1050
+              }
+            ]
+          },
+          "presence": {
+            "hermes": {
+              "kind": "exit",
+              "fadeMs": 350,
+              "zone": "Right coastal path"
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c1-s4-bring-the-tools",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1075,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            },
+            "tools": {
+              "visible": 1
+            },
+            "raft": {
+              "visible": 1
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 950,
+                "y": 1120
+              },
+              {
+                "x": 770,
+                "y": 1130
+              },
+              {
+                "x": 710,
+                "y": 1075
+              }
+            ]
+          },
+          "presence": {
+            "odysseus": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Returns along the right sandy path"
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c1-s4-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After Hermes left, Calypso called Odysseus back. She gave him wood, tools and rope so he could build his own raft."
+        },
+        {
+          "id": "odyssey-c1-s4-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“A raft is a small thing to put between yourself and the sea.”"
+        },
+        {
+          "id": "odyssey-c1-s4-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Then I will have to make it carefully.”"
+        },
+        {
+          "id": "odyssey-c1-s4-work-the-bindings",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "working": 1,
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1075,
+                "facing": "right",
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s4-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He knelt beside the timber and worked the bindings tight."
+        },
+        {
+          "id": "odyssey-c1-s4-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Four days went into the wood: measuring, joining, checking the same knots again."
+        },
+        {
+          "id": "odyssey-c1-s4-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "His hands remembered how to make something that might hold."
+        },
+        {
+          "id": "odyssey-c1-s4-raise-the-sail",
+          "type": "action",
+          "duration": 2300,
+          "effects": {
+            "working": 0,
+            "raft": {
+              "rigged": 1
+            },
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1075,
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s4-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "On the last day, a small sail stood above the timber. The raft was ready."
+        },
+        {
+          "id": "odyssey-c1-s4-load-the-supplies",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "supplies": {
+              "visible": 1
+            },
+            "tools": {
+              "visible": 0
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s4-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The raft stood ready on the sand, with water and provisions secured on its timber."
+        },
+        {
+          "id": "odyssey-c1-s4-p9",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“I cannot promise what you will find.”"
+        },
+        {
+          "id": "odyssey-c1-s4-p10",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Neither can I.”"
+        },
+        {
+          "id": "odyssey-c1-s4-p11",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "For the first time, the next morning would be different."
+        }
+      ],
+      "estimatedSeconds": 83
+    },
+    {
+      "id": "odyssey-c1-s5",
+      "chapterId": "chapter-1",
+      "name": "Beyond the Shelter",
+      "atmosphere": {
+        "water": 0.13,
+        "wind": 0.025,
+        "birds": 0.014,
+        "village": 0,
+        "music": 0.008
+      },
+      "steps": [
+        {
+          "id": "odyssey-c1-s5-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "launch",
+            "chapter": 4
+          }
+        },
+        {
+          "id": "odyssey-c1-s5-to-the-water",
+          "type": "action",
+          "duration": 3100,
+          "effects": {
+            "raft": {
+              "x": 865,
+              "y": 850,
+              "afloat": 1
+            },
+            "actors": {
+              "odysseus": {
+                "x": 750,
+                "y": 900,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "calypso": {
+                "facing": "right"
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 770,
+                "y": 1000
+              },
+              {
+                "x": 750,
+                "y": 900
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c1-s5-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "When the wind was right, the raft reached the water. A little wave lifted it, then set it down again."
+        },
+        {
+          "id": "odyssey-c1-s5-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus stayed beside it for one last moment."
+        },
+        {
+          "id": "odyssey-c1-s5-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "calypso",
+          "text": "“You may still stay.”"
+        },
+        {
+          "id": "odyssey-c1-s5-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I know.”"
+        },
+        {
+          "id": "odyssey-c1-s5-step-aboard",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "raft": {
+              "aboard": 1
+            },
+            "actors": {
+              "odysseus": {
+                "x": 830,
+                "y": 798,
+                "facing": "back",
+                "pose": "walk"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s5-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He stepped aboard before fear could become another year."
+        },
+        {
+          "id": "odyssey-c1-s5-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Calypso watched from the sand. She did not reach out to stop him."
+        },
+        {
+          "id": "odyssey-c1-s5-leave-the-shore",
+          "type": "action",
+          "duration": 4800,
+          "effects": {
+            "view": "departure",
+            "raft": {
+              "x": 900,
+              "y": 710
+            },
+            "actors": {
+              "odysseus": {
+                "x": 865,
+                "y": 658,
+                "facing": "back"
+              },
+              "calypso": {
+                "visible": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c1-s5-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The small sail filled. The water opened between him and the shore."
+        },
+        {
+          "id": "odyssey-c1-s5-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He had no map that could promise the end of this journey."
+        },
+        {
+          "id": "odyssey-c1-s5-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "But the wind was moving him. For today, that was enough."
+        },
+        {
+          "id": "odyssey-c1-s5-p10",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Beyond the island, the sea widened. Somewhere across it, a house was still waiting."
+        },
+        {
+          "id": "odyssey-c1-end",
+          "type": "end"
+        }
+      ],
+      "estimatedSeconds": 71
+    }
+  ],
+  "videoExport": {
+    "logo": {
+      "src": "/stories/the-odyssey/assets/branding/logo.png",
+      "durationMs": 3000
+    },
+    "captionFadeMs": 450,
+    "previewHoldMs": 900
+  },
+  "foregroundOccluders": [
+    {
+      "id": "lower-left-tree",
+      "depth": 1490,
+      "points": [
+        [
+          0,
+          778
+        ],
+        [
+          128,
+          778
+        ],
+        [
+          220,
+          852
+        ],
+        [
+          258,
+          924
+        ],
+        [
+          214,
+          980
+        ],
+        [
+          300,
+          1010
+        ],
+        [
+          318,
+          1066
+        ],
+        [
+          358,
+          1126
+        ],
+        [
+          410,
+          1178
+        ],
+        [
+          440,
+          1250
+        ],
+        [
+          490,
+          1292
+        ],
+        [
+          466,
+          1360
+        ],
+        [
+          306,
+          1434
+        ],
+        [
+          0,
+          1488
+        ]
+      ]
+    }
+  ],
+  "causalRevision": {
+    "version": 1,
+    "scope": "Child-readable cause, time, place and cast continuity",
+    "routePlans": []
+  },
+  "duration": "78 min"
+}

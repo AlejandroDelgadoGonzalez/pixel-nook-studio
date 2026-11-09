@@ -1,0 +1,3480 @@
+{
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "title": "The Odyssey",
+  "subtitle": "The Long Way Home",
+  "attribution": "An original abridged adaptation of Homer’s Odyssey",
+  "serialized": true,
+  "episodes": true,
+  "timing": {
+    "characterMs": 30,
+    "wordMs": 440,
+    "minimumHoldMs": 2100,
+    "linePauseMs": 1400
+  },
+  "videoExport": {
+    "logo": {
+      "src": "/stories/the-odyssey/assets/branding/logo.png",
+      "durationMs": 3000
+    },
+    "captionFadeMs": 450,
+    "previewHoldMs": 900
+  },
+  "renderer": "homecoming",
+  "availableChapter": "chapter-10",
+  "description": "The proof of home is rooted in something no stranger could know.",
+  "intro": "One last question stands between returning and being home.",
+  "ending": "For this morning, no one had to leave.",
+  "stageLabel": "A pixel art retelling of the Odyssey",
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.6,
+    "birdMinMs": 45000,
+    "birdRangeMs": 30000
+  },
+  "adaptationSource": {
+    "title": "Homer, Odyssey, Books XXIII–XXIV",
+    "url": "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm",
+    "note": "Original abridged English narration and dialogue. Events are condensed for quiet episodic reading. Ritual sacrifice and deaths are represented without gore. The final conflict of Book XXIV is condensed to Athena intervening before renewed bloodshed."
+  },
+  "characters": {
+    "odysseus": {
+      "name": "Odysseus",
+      "role": "The traveler",
+      "color": "#cbe4df"
+    },
+    "penelope": {
+      "name": "Penelope",
+      "role": "The queen of Ithaca",
+      "color": "#ead1e9"
+    },
+    "eurycleia": {
+      "name": "Eurycleia",
+      "role": "The old nurse",
+      "color": "#e9d8b8"
+    },
+    "telemachus": {
+      "name": "Telemachus",
+      "role": "His son",
+      "color": "#c8e4d9"
+    },
+    "laertes": {
+      "name": "Laertes",
+      "role": "His father",
+      "color": "#d4d2b1"
+    },
+    "athena": {
+      "name": "Athena",
+      "role": "The guide",
+      "color": "#d8dfb2"
+    },
+    "eumaeus": {
+      "name": "Eumaeus",
+      "role": "The swineherd",
+      "color": "#c9d8af"
+    },
+    "elder": {
+      "name": "An elder",
+      "role": "A grieving father",
+      "color": "#d5d8df"
+    }
+  },
+  "assets": {
+    "hero": "/stories/the-odyssey/assets/atlases/characters/odyssey-core.png",
+    "ithPeople": "/stories/the-odyssey/assets/atlases/characters/ithaca-atlas.png",
+    "returnPeople": "/stories/the-odyssey/assets/atlases/characters/homecoming-people.png",
+    "props": "/stories/the-odyssey/assets/atlases/props/return-props.png",
+    "homeRooms": "/stories/the-odyssey/assets/backgrounds/native/homecoming-environments.png",
+    "ithHosts": "/stories/the-odyssey/assets/atlases/characters/ithaca-hosts.png",
+    "bowLoose": "/stories/the-odyssey/assets/props/unstrung-bow.png"
+  },
+  "visuals": {
+    "grids": {
+      "hero": {
+        "x": [
+          0,
+          321,
+          641,
+          962,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          643,
+          970,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "crew": {
+        "x": [
+          0,
+          298,
+          620,
+          912,
+          1227
+        ],
+        "y": [
+          0,
+          337,
+          640,
+          939,
+          1281
+        ],
+        "w": 1227,
+        "h": 1281
+      },
+      "aePeople": {
+        "x": [
+          0,
+          399,
+          770,
+          1130,
+          1536
+        ],
+        "y": [
+          0,
+          346,
+          691,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      },
+      "ithPeople": {
+        "x": [
+          0,
+          321,
+          643,
+          967,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          645,
+          950,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "scheriaPeople": {
+        "x": [
+          0,
+          322,
+          645,
+          968,
+          1254
+        ],
+        "y": [
+          0,
+          339,
+          664,
+          970,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "shades": {
+        "x": [
+          0,
+          302,
+          625,
+          927,
+          1254
+        ],
+        "y": [
+          0,
+          337,
+          642,
+          956,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "returnPeople": {
+        "x": [
+          0,
+          306,
+          637,
+          931,
+          1254
+        ],
+        "y": [
+          0,
+          342,
+          651,
+          945,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "props": {
+        "x": [
+          0,
+          325,
+          642,
+          929,
+          1254
+        ],
+        "y": [
+          0,
+          346,
+          690,
+          1009,
+          1254
+        ],
+        "w": 1254,
+        "h": 1254
+      },
+      "boatAtlas": {
+        "x": [
+          0,
+          525,
+          922,
+          1267,
+          1774
+        ],
+        "y": [
+          0,
+          491,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "sleepAtlas": {
+        "x": [
+          0,
+          850,
+          1774
+        ],
+        "y": [
+          0,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "actions": {
+        "x": [
+          0,
+          774,
+          1536
+        ],
+        "y": [
+          0,
+          542,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      },
+      "seaActions": {
+        "x": [
+          0,
+          1086,
+          2172
+        ],
+        "y": [
+          0,
+          724
+        ],
+        "w": 2172,
+        "h": 724
+      },
+      "aeProps": {
+        "x": [
+          0,
+          442,
+          847,
+          1295,
+          1774
+        ],
+        "y": [
+          0,
+          482,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "ithHosts": {
+        "x": [
+          0,
+          443.5,
+          887,
+          1330.5,
+          1774
+        ],
+        "y": [
+          0,
+          476,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "bowLoose": {
+        "x": [
+          0,
+          1024
+        ],
+        "y": [
+          0,
+          1536
+        ],
+        "w": 1024,
+        "h": 1536
+      },
+      "bowActions": {
+        "x": [
+          0,
+          887,
+          1774
+        ],
+        "y": [
+          0,
+          887
+        ],
+        "w": 1774,
+        "h": 887
+      },
+      "nurseKneel": {
+        "x": [
+          0,
+          1536
+        ],
+        "y": [
+          0,
+          1024
+        ],
+        "w": 1536,
+        "h": 1024
+      }
+    },
+    "rooms": {
+      "hall": {
+        "atlas": "homeRooms",
+        "cell": [
+          0.5,
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "bedroom": {
+        "atlas": "homeRooms",
+        "cell": [
+          0,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "orchard": {
+        "atlas": "homeRooms",
+        "cell": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "leaves": true
+      }
+    },
+    "cast": {
+      "odysseus": {
+        "atlas": "hero",
+        "row": 0,
+        "reachHeight": 112
+      },
+      "penelope": {
+        "atlas": "ithPeople",
+        "row": 0,
+        "reachHeight": 136
+      },
+      "eurycleia": {
+        "atlas": "ithPeople",
+        "row": 3,
+        "reachHeight": 136
+      },
+      "telemachus": {
+        "atlas": "ithPeople",
+        "row": 1,
+        "reachHeight": 136
+      },
+      "laertes": {
+        "atlas": "returnPeople",
+        "row": 2,
+        "reachHeight": 136
+      },
+      "athena": {
+        "atlas": "ithPeople",
+        "row": 2,
+        "reachHeight": 136
+      },
+      "eumaeus": {
+        "atlas": "returnPeople",
+        "row": 0,
+        "reachHeight": 136
+      },
+      "elder": {
+        "atlas": "ithHosts",
+        "row": 1,
+        "reachHeight": 136
+      }
+    },
+    "objects": {
+      "staff": {
+        "atlas": "props",
+        "col": 3,
+        "row": 0,
+        "height": 135
+      },
+      "bow": {
+        "atlas": "props",
+        "col": 0,
+        "row": 1,
+        "height": 112
+      },
+      "bed": {
+        "atlas": "props",
+        "col": 3,
+        "row": 1,
+        "height": 190
+      },
+      "brazier": {
+        "atlas": "props",
+        "col": 2,
+        "row": 3,
+        "height": 76
+      }
+    },
+    "poses": {},
+    "variants": {
+      "bowLoose": {
+        "atlas": "bowLoose",
+        "col": 0,
+        "row": 0,
+        "height": 112
+      }
+    }
+  },
+  "initialState": {
+    "room": "hall",
+    "view": "quiet-hall",
+    "chapter": 0,
+    "lamp": {
+      "owner": null
+    },
+    "storm": 0,
+    "dogSleep": 0,
+    "actors": {
+      "odysseus": {
+        "x": 740,
+        "y": 1400,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0.4,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "penelope": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "eurycleia": {
+        "x": 950,
+        "y": 1370,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "telemachus": {
+        "x": 640,
+        "y": 1420,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "laertes": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "athena": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "eumaeus": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      },
+      "elder": {
+        "x": 800,
+        "y": 1400,
+        "visible": 0,
+        "facing": "front",
+        "pose": "idle",
+        "mode": "",
+        "bow": 0,
+        "onboard": 0,
+        "ghost": 0,
+        "disguise": 0
+      }
+    },
+    "oar": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "grave": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "basin": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "staff": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bow": {
+      "x": 800,
+      "y": 1390,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "arrow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "axes": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bed": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "dog": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "cow": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "cow2": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "siren": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "pig": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "table": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "stool": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "brazier": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "bread": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "ship": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "wreck": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "scylla": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "gift": {
+      "x": 800,
+      "y": 1350,
+      "visible": 0,
+      "owner": null,
+      "surface": "",
+      "lift": 0,
+      "flip": 0
+    },
+    "lostCrew": 0,
+    "bowStrung": 1
+  },
+  "shots": {
+    "quiet-hall": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "eurycleia",
+        "telemachus"
+      ],
+      "props": [
+        "bow",
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "wife": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "telemachus"
+      ],
+      "props": [
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "bed": {
+      "cx": 850,
+      "cy": 1380,
+      "w": 470,
+      "h": 450,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "eurycleia"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": []
+    },
+    "root": {
+      "cx": 800,
+      "cy": 1410,
+      "w": 420,
+      "h": 420,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": []
+    },
+    "father": {
+      "cx": 800,
+      "cy": 1310,
+      "w": 400,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "opponents": {
+      "cx": 850,
+      "cy": 1380,
+      "w": 720,
+      "h": 500,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "elder"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "peace": {
+      "cx": 860,
+      "cy": 1360,
+      "w": 790,
+      "h": 430,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena",
+        "elder"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s1-lay-down-the-war-route-view": {
+      "cx": 795,
+      "cy": 1310,
+      "w": 462,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "eurycleia",
+        "telemachus"
+      ],
+      "props": [
+        "bow",
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s1-the-nurse-goes-upstairs-route-view": {
+      "cx": 795,
+      "cy": 1227,
+      "w": 462,
+      "h": 546,
+      "actors": [
+        "odysseus",
+        "eurycleia",
+        "telemachus"
+      ],
+      "props": [
+        "bow",
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s2-penelope-comes-down-route-view": {
+      "cx": 840,
+      "cy": 1237,
+      "w": 552,
+      "h": 526,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "telemachus"
+      ],
+      "props": [
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s2-give-them-room-route-view": {
+      "cx": 802.5,
+      "cy": 1262,
+      "w": 477,
+      "h": 476,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "telemachus"
+      ],
+      "props": [
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s3-penelope-closes-the-last-distance-route-view": {
+      "cx": 905.5,
+      "cy": 1279.5,
+      "w": 581,
+      "h": 651,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "eurycleia"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s5-come-to-his-fathers-field-route-view": {
+      "cx": 742.5,
+      "cy": 1314,
+      "w": 537,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s5-his-father-comes-nearer-route-view": {
+      "cx": 742.5,
+      "cy": 1312,
+      "w": 537,
+      "h": 384,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s5-the-grieving-father-comes-route-view": {
+      "cx": 960,
+      "cy": 1380,
+      "w": 972,
+      "h": 500,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "elder"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s5-athena-between-the-men-route-view": {
+      "cx": 860,
+      "cy": 1319.5,
+      "w": 790,
+      "h": 511,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena",
+        "elder"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "clarity-bedroom-route": {
+      "cx": 870,
+      "cy": 1170,
+      "w": 650,
+      "h": 780,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "clarity-morning-route": {
+      "cx": 720,
+      "cy": 1230,
+      "w": 680,
+      "h": 820,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c10-s2-clarity-leave-the-hall-for-the-bedroom-route": {
+      "cx": 870,
+      "cy": 1114,
+      "w": 650,
+      "h": 892,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c10-s4-clarity-leave-for-his-fathers-orchard-route": {
+      "cx": 794,
+      "cy": 1244,
+      "w": 828,
+      "h": 848,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c10-s1-lay-down-the-war-framing": {
+      "cx": 795,
+      "cy": 1310,
+      "w": 462,
+      "h": 380,
+      "actors": [
+        "odysseus",
+        "eurycleia",
+        "telemachus"
+      ],
+      "props": [
+        "bow",
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s1-the-nurse-goes-upstairs-framing": {
+      "cx": 795,
+      "cy": 1227,
+      "w": 462,
+      "h": 546,
+      "actors": [
+        "odysseus",
+        "eurycleia",
+        "telemachus"
+      ],
+      "props": [
+        "bow",
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s2-penelope-comes-down-framing": {
+      "cx": 840,
+      "cy": 1237,
+      "w": 552,
+      "h": 526,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "telemachus"
+      ],
+      "props": [
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s2-give-them-room-framing": {
+      "cx": 802.5,
+      "cy": 1262,
+      "w": 477,
+      "h": 476,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "telemachus"
+      ],
+      "props": [
+        "brazier"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s2-clarity-leave-the-hall-for-the-bedroom-framing": {
+      "cx": 870,
+      "cy": 1114,
+      "w": 650,
+      "h": 892,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c10-s3-penelope-closes-the-last-distance-framing": {
+      "cx": 905.5,
+      "cy": 1279.5,
+      "w": 581,
+      "h": 651,
+      "actors": [
+        "odysseus",
+        "penelope",
+        "eurycleia"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s4-rest-beside-each-other-framing": {
+      "cx": 800,
+      "cy": 1410,
+      "w": 420,
+      "h": 420,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s4-clarity-leave-for-his-fathers-orchard-framing": {
+      "cx": 794,
+      "cy": 1244,
+      "w": 828,
+      "h": 848,
+      "actors": [
+        "odysseus",
+        "penelope"
+      ],
+      "props": [
+        "bed"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c10-s5-come-to-his-fathers-field-framing": {
+      "cx": 742.5,
+      "cy": 1314,
+      "w": 537,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s5-his-father-comes-nearer-framing": {
+      "cx": 742.5,
+      "cy": 1312,
+      "w": 537,
+      "h": 384,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s5-the-grieving-father-comes-framing": {
+      "cx": 960,
+      "cy": 1380,
+      "w": 972,
+      "h": 500,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "elder"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    },
+    "odyssey-c10-s5-athena-between-the-men-framing": {
+      "cx": 860,
+      "cy": 1319.5,
+      "w": 790,
+      "h": 511,
+      "actors": [
+        "odysseus",
+        "laertes",
+        "telemachus",
+        "athena",
+        "elder"
+      ],
+      "props": [
+        "staff",
+        "bow"
+      ],
+      "landmarks": []
+    }
+  },
+  "landmarks": {},
+  "scenes": [
+    {
+      "id": "odyssey-c10-s1",
+      "chapterId": "chapter-10",
+      "name": "After the Noise",
+      "atmosphere": {
+        "water": 0,
+        "wind": 0.002,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c10-s1-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "hall",
+            "view": "quiet-hall",
+            "chapter": 0,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 740,
+                "y": 1400,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0.4,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "penelope": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurycleia": {
+                "x": 950,
+                "y": 1370,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "telemachus": {
+                "x": 640,
+                "y": 1420,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "laertes": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "athena": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eumaeus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elder": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "x": 800,
+              "y": 1390,
+              "visible": 1,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 835,
+              "y": 1470,
+              "visible": 1
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              },
+              "eurycleia": {
+                "visible": 1
+              },
+              "telemachus": {
+                "visible": 1
+              }
+            },
+            "bow": {
+              "visible": 1
+            },
+            "brazier": {
+              "visible": 1
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-lay-down-the-war-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s1-lay-down-the-war-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-lay-down-the-war",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "bow": 0,
+                "x": 760,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-lay-down-the-war-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "quiet-hall"
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After the fighting, Odysseus and Telemachus waited in the hall. Eurycleia would go upstairs to tell Penelope her husband was home."
+        },
+        {
+          "id": "odyssey-c10-s1-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eurycleia",
+          "text": "“She will think this is another dream.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s1-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Then let her ask what she needs to ask.”",
+          "listener": "eurycleia"
+        },
+        {
+          "id": "odyssey-c10-s1-the-nurse-goes-upstairs-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s1-the-nurse-goes-upstairs-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-the-nurse-goes-upstairs",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "actors": {
+              "eurycleia": {
+                "y": 1110,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "presence": {
+            "eurycleia": {
+              "kind": "exit",
+              "fadeMs": 350,
+              "zone": "Stairway to Penelope’s chamber"
+            }
+          },
+          "travelFacing": [
+            "eurycleia"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-the-nurse-goes-upstairs-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "quiet-hall"
+          }
+        },
+        {
+          "id": "odyssey-c10-s1-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He waited while the servants put the house in order. He had survived the sea and the hall; he could wait for her."
+        },
+        {
+          "id": "odyssey-c10-s1-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“Why does she not come running?”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s1-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“She has had twenty years of reasons to be careful.”",
+          "listener": "telemachus"
+        },
+        {
+          "id": "odyssey-c10-s1-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The last distance between them would not be crossed with an arrow.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 58,
+      "durationMs": 57021
+    },
+    {
+      "id": "odyssey-c10-s2",
+      "chapterId": "chapter-10",
+      "name": "The Woman Who Waited",
+      "atmosphere": {
+        "water": 0,
+        "wind": 0.002,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c10-s2-departing-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c10-s2-settle-the-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "wife",
+            "chapter": 1,
+            "actors": {
+              "penelope": {
+                "x": 1040,
+                "y": 1130,
+                "visible": 0,
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-arrive",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c10-s2-penelope-comes-down-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s2-penelope-comes-down-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-penelope-comes-down",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "x": 965,
+                "y": 1400,
+                "pose": "walk",
+                "facing": "front",
+                "visible": 1
+              }
+            }
+          },
+          "presence": {
+            "penelope": {
+              "kind": "enter",
+              "fadeMs": 1000,
+              "zone": "Upper right hall passage",
+              "from": {
+                "x": 1040,
+                "y": 1130
+              }
+            }
+          },
+          "paths": {
+            "penelope": [
+              {
+                "x": 1040,
+                "y": 1270
+              },
+              {
+                "x": 965,
+                "y": 1400
+              }
+            ]
+          },
+          "travelFacing": [
+            "penelope"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-penelope-comes-down-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "wife"
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After hearing Eurycleia’s news, Penelope came downstairs. She wanted proof that this man really was Odysseus."
+        },
+        {
+          "id": "odyssey-c10-s2-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "telemachus",
+          "text": "“Mother, it is him.”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c10-s2-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "penelope",
+          "text": "“If it is, there are things only we will know.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s2-give-them-room-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s2-give-them-room-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-give-them-room",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "telemachus": {
+                "visible": 0,
+                "y": 1180,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "presence": {
+            "telemachus": {
+              "kind": "exit",
+              "fadeMs": 350,
+              "zone": "Hall doorway"
+            }
+          },
+          "travelFacing": [
+            "telemachus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-give-them-room-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "wife"
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Telemachus stepped away to give his parents space. Odysseus knew why Penelope was careful: strangers had lied to her before."
+        },
+        {
+          "id": "odyssey-c10-s2-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“You may test me.”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c10-s2-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "penelope",
+          "text": "“I have waited so long that even hope must answer a question.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s2-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Penelope asked Eurycleia to move their bed outside its room. It was a test: the real Odysseus would know why that was impossible.",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c10-s2-clarity-follow-to-the-bedroom",
+          "type": "text",
+          "kind": "narration",
+          "text": "Eurycleia led them toward the bedroom. Odysseus and Penelope left the hall to look at the bed together."
+        },
+        {
+          "id": "odyssey-c10-s2-clarity-leave-the-hall-for-the-bedroom-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c10-s2-clarity-leave-the-hall-for-the-bedroom-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-clarity-leave-the-hall-for-the-bedroom",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 760,
+                "y": 840,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "penelope": {
+                "x": 965,
+                "y": 910,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus",
+            "penelope"
+          ],
+          "presence": {
+            "odysseus": {
+              "kind": "exit",
+              "fadeMs": 450
+            },
+            "penelope": {
+              "kind": "exit",
+              "fadeMs": 450
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s2-clarity-leave-the-hall-for-the-bedroom-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-bedroom-route"
+          }
+        }
+      ],
+      "estimatedSeconds": 72,
+      "durationMs": 71482
+    },
+    {
+      "id": "odyssey-c10-s3",
+      "chapterId": "chapter-10",
+      "name": "Move the Bed",
+      "atmosphere": {
+        "water": 0,
+        "wind": 0.002,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c10-s3-departing-frame",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "odysseus": {},
+              "penelope": {},
+              "eurycleia": {},
+              "telemachus": {},
+              "laertes": {},
+              "athena": {},
+              "eumaeus": {},
+              "elder": {}
+            },
+            "oar": {},
+            "grave": {},
+            "basin": {},
+            "staff": {},
+            "bow": {},
+            "arrow": {},
+            "axes": {},
+            "bed": {},
+            "dog": {},
+            "cow": {},
+            "cow2": {},
+            "siren": {},
+            "pig": {},
+            "table": {},
+            "stool": {},
+            "brazier": {},
+            "bread": {},
+            "ship": {},
+            "wreck": {},
+            "scylla": {},
+            "gift": {}
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "bedroom",
+            "view": "bed",
+            "chapter": 2,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1470,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "penelope": {
+                "x": 955,
+                "y": 1500,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurycleia": {
+                "x": 970,
+                "y": 1320,
+                "visible": 1,
+                "facing": "left",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "telemachus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "laertes": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "athena": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eumaeus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elder": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 820,
+              "y": 1390,
+              "visible": 1,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              },
+              "penelope": {
+                "visible": 1
+              },
+              "eurycleia": {
+                "visible": 1
+              }
+            },
+            "bed": {
+              "visible": 1
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-the-nurse-touches-the-frame",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "eurycleia": {
+                "x": 980,
+                "y": 1370,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-touch-the-wooden-bed-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "actors": {
+              "eurycleia": {
+                "pose": "reach",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-clarity-go-to-room",
+          "type": "text",
+          "kind": "narration",
+          "text": "Odysseus, Penelope and Eurycleia went from the hall to the bedroom. The bed was still where Odysseus had built it."
+        },
+        {
+          "id": "odyssey-c10-s3-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The bed stood in the chamber. Eurycleia reached toward its wooden frame, but it did not move."
+        },
+        {
+          "id": "odyssey-c10-s3-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Who could move that bed?”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c10-s3-come-to-the-rooted-post",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1390,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I built it around a living olive tree. I shaped the trunk into one post and built this room around it.”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c10-s3-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Unless someone has cut the root, it cannot leave this place.”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c10-s3-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Penelope recognized his answer. The rooted bed was their private secret, so she could finally be sure he was her husband."
+        },
+        {
+          "id": "odyssey-c10-s3-penelope-closes-the-last-distance-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s3-penelope-closes-the-last-distance-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-penelope-closes-the-last-distance",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "x": 890,
+                "y": 1500,
+                "pose": "walk",
+                "facing": "left"
+              },
+              "odysseus": {
+                "x": 780,
+                "y": 1500,
+                "pose": "walk",
+                "facing": "front"
+              },
+              "eurycleia": {
+                "visible": 0,
+                "x": 1120,
+                "y": 1110,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "paths": {
+            "eurycleia": [
+              {
+                "x": 1050,
+                "y": 1270
+              },
+              {
+                "x": 1120,
+                "y": 1110
+              }
+            ]
+          },
+          "presence": {
+            "eurycleia": {
+              "kind": "exit",
+              "fadeMs": 350,
+              "zone": "Chamber doorway"
+            }
+          },
+          "travelFacing": [
+            "penelope",
+            "odysseus",
+            "eurycleia"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-penelope-closes-the-last-distance-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "bed"
+          }
+        },
+        {
+          "id": "odyssey-c10-s3-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "penelope",
+          "text": "“No one else could have told me that.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s3-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "She went to him. This time, neither disguise nor doubt stood between them.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 72,
+      "durationMs": 71991
+    },
+    {
+      "id": "odyssey-c10-s4",
+      "chapterId": "chapter-10",
+      "name": "The Root That Stayed",
+      "atmosphere": {
+        "water": 0,
+        "wind": 0.002,
+        "birds": 0,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c10-s4-departing-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c10-s4-settle-the-frame",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "odyssey-c10-s4-rest-beside-each-other-framing",
+            "chapter": 3
+          }
+        },
+        {
+          "id": "odyssey-c10-s4-arrive",
+          "type": "action",
+          "duration": 1,
+          "effects": {}
+        },
+        {
+          "id": "odyssey-c10-s4-rest-beside-each-other",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "actors": {
+              "penelope": {
+                "x": 875,
+                "y": 1500,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "travelFacing": [
+            "penelope"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s4-hold-each-other-beside-the-root",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "right"
+              },
+              "penelope": {
+                "pose": "reach",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s4-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "They held each other beside the bed that had stayed rooted through every year he was gone."
+        },
+        {
+          "id": "odyssey-c10-s4-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "penelope",
+          "text": "“I was afraid of being deceived.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s4-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“You kept something safe that I could not see.”",
+          "listener": "penelope"
+        },
+        {
+          "id": "odyssey-c10-s4-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "They spoke of the journeys he had survived, and the days she had kept from closing on her. There was so much to tell."
+        },
+        {
+          "id": "odyssey-c10-s4-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Not every loss could be repaired by returning. His mother was gone. His companions would not follow him through the door."
+        },
+        {
+          "id": "odyssey-c10-s4-turn-toward-the-next-morning",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "bow": 0.3
+              },
+              "penelope": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s4-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "His mother had died, but his father, Laertes, was still alive. The next morning, Odysseus and Telemachus would walk to his orchard."
+        },
+        {
+          "id": "odyssey-c10-s4-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "One more person had spent the years waiting. One more recognition remained.",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c10-s4-clarity-morning-departure",
+          "type": "text",
+          "kind": "narration",
+          "text": "When morning came, Odysseus left Penelope in their room. Telemachus would meet him outside and walk with him to Laertes."
+        },
+        {
+          "id": "odyssey-c10-s4-clarity-leave-for-his-fathers-orchard-prepare",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "view": "odyssey-c10-s4-clarity-leave-for-his-fathers-orchard-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s4-clarity-leave-for-his-fathers-orchard",
+          "type": "action",
+          "duration": 2700,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 1120,
+                "y": 1110,
+                "visible": 0,
+                "bow": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 780,
+                "y": 1640
+              },
+              {
+                "x": 1070,
+                "y": 1640
+              },
+              {
+                "x": 1070,
+                "y": 1270
+              },
+              {
+                "x": 1120,
+                "y": 1110
+              }
+            ]
+          },
+          "presence": {
+            "odysseus": {
+              "kind": "exit",
+              "fadeMs": 450
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s4-clarity-leave-for-his-fathers-orchard-settle",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "view": "clarity-morning-route"
+          }
+        }
+      ],
+      "estimatedSeconds": 79,
+      "durationMs": 78242
+    },
+    {
+      "id": "odyssey-c10-s5",
+      "chapterId": "chapter-10",
+      "name": "A Morning Without Leaving",
+      "atmosphere": {
+        "water": 0.026,
+        "wind": 0.011,
+        "birds": 0.008,
+        "village": 0.002,
+        "music": 0.006
+      },
+      "steps": [
+        {
+          "id": "odyssey-c10-s5-departing-frame",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "odysseus": {},
+              "penelope": {},
+              "eurycleia": {},
+              "telemachus": {},
+              "laertes": {},
+              "athena": {},
+              "eumaeus": {},
+              "elder": {}
+            },
+            "oar": {},
+            "grave": {},
+            "basin": {},
+            "staff": {},
+            "bow": {},
+            "arrow": {},
+            "axes": {},
+            "bed": {},
+            "dog": {},
+            "cow": {},
+            "cow2": {},
+            "siren": {},
+            "pig": {},
+            "table": {},
+            "stool": {},
+            "brazier": {},
+            "bread": {},
+            "ship": {},
+            "wreck": {},
+            "scylla": {},
+            "gift": {}
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-settle-the-frame",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "room": "orchard",
+            "view": "father",
+            "chapter": 4,
+            "storm": 0,
+            "actors": {
+              "odysseus": {
+                "x": 710,
+                "y": 1490,
+                "visible": 1,
+                "facing": "back",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "penelope": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eurycleia": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "telemachus": {
+                "x": 550,
+                "y": 1480,
+                "visible": 1,
+                "facing": "right",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "laertes": {
+                "x": 935,
+                "y": 1270,
+                "visible": 1,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "athena": {
+                "x": 1080,
+                "y": 1220,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "eumaeus": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              },
+              "elder": {
+                "x": 800,
+                "y": 1400,
+                "visible": 0,
+                "facing": "front",
+                "pose": "idle",
+                "mode": "",
+                "bow": 0,
+                "onboard": 0,
+                "ghost": 0,
+                "disguise": 0
+              }
+            },
+            "oar": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "grave": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "basin": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "staff": {
+              "x": 800,
+              "y": 1350,
+              "visible": 1,
+              "owner": "laertes",
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bow": {
+              "visible": 1,
+              "owner": "odysseus",
+              "lift": 0
+            },
+            "arrow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "axes": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bed": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "dog": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "cow2": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "siren": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "pig": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "table": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "stool": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "brazier": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "bread": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "ship": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "wreck": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "scylla": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            },
+            "gift": {
+              "x": 800,
+              "y": 1350,
+              "visible": 0,
+              "owner": null,
+              "surface": "",
+              "lift": 0,
+              "flip": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-arrive",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "visible": 1
+              },
+              "laertes": {
+                "visible": 1
+              },
+              "telemachus": {
+                "visible": 1,
+                "x": 550
+              },
+              "athena": {
+                "visible": 0
+              }
+            },
+            "staff": {
+              "visible": 1
+            },
+            "bow": {
+              "visible": 1
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-come-to-his-fathers-field-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s5-come-to-his-fathers-field-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-come-to-his-fathers-field",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 720,
+                "y": 1360,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "laertes": {
+                "y": 1370,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "laertes"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-come-to-his-fathers-field-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "father"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-clarity-walk",
+          "type": "text",
+          "kind": "narration",
+          "text": "Odysseus and Telemachus followed the path from the palace to Laertes’s orchard. The old man was working among his trees."
+        },
+        {
+          "id": "odyssey-c10-s5-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Laertes looked up in the orchard clearing. Odysseus named the fruit trees his father had given him as a boy."
+        },
+        {
+          "id": "odyssey-c10-s5-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "laertes",
+          "text": "“You remember them.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s5-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“You taught me their names.”",
+          "listener": "laertes"
+        },
+        {
+          "id": "odyssey-c10-s5-his-father-comes-nearer-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s5-his-father-comes-nearer-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-his-father-comes-nearer",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "laertes": {
+                "x": 845,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "travelFacing": [
+            "laertes"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-his-father-comes-nearer-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "father"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-the-grieving-father-comes-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s5-the-grieving-father-comes-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-the-grieving-father-comes",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "elder": {
+                "x": 1110,
+                "y": 1340,
+                "visible": 1,
+                "facing": "right",
+                "pose": "walk"
+              }
+            },
+            "bow": {
+              "visible": 1,
+              "owner": "odysseus"
+            }
+          },
+          "presence": {
+            "elder": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Right orchard path",
+              "from": {
+                "x": 1370,
+                "y": 1320
+              }
+            }
+          },
+          "travelFacing": [
+            "elder"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-the-grieving-father-comes-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "opponents"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-clarity-families",
+          "type": "text",
+          "kind": "narration",
+          "text": "The dead suitors’ families had heard about the fighting. Angry and grieving, they came looking for Odysseus."
+        },
+        {
+          "id": "odyssey-c10-s5-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Laertes came closer to his son. Then a man arrived to speak for the suitors’ families. He wanted them to fight again."
+        },
+        {
+          "id": "odyssey-c10-s5-athena-between-the-men-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c10-s5-athena-between-the-men-framing"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-athena-between-the-men",
+          "type": "action",
+          "duration": 2300,
+          "effects": {
+            "actors": {
+              "athena": {
+                "x": 1000,
+                "y": 1390,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "front"
+              },
+              "odysseus": {
+                "facing": "right"
+              },
+              "telemachus": {
+                "x": 550,
+                "y": 1420,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "presence": {
+            "athena": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Upper orchard path"
+            }
+          },
+          "travelFacing": [
+            "athena",
+            "telemachus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-athena-between-the-men-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "peace"
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Athena stepped between the men and ordered them to stop. Odysseus listened. Another fight would only bring more loss."
+        },
+        {
+          "id": "odyssey-c10-s5-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "athena",
+          "text": "“Enough. Let this land live.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c10-s5-lower-the-last-weapon",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "bow": {
+              "owner": null,
+              "x": 778,
+              "y": 1420
+            },
+            "actors": {
+              "odysseus": {
+                "bow": 0.4,
+                "pose": "reach"
+              },
+              "telemachus": {
+                "bow": 0.4,
+                "x": 550
+              },
+              "athena": {
+                "pose": "reach"
+              },
+              "elder": {
+                "bow": 0.5
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c10-s5-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "There would be work after the journey: a house to mend, a kingdom to steady, years to learn about one another."
+        },
+        {
+          "id": "odyssey-c10-s5-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "With peace agreed, Odysseus could stay with his family at last. There was work ahead, but his long journey home was over.",
+          "pauseMs": 2600
+        },
+        {
+          "id": "odyssey-c10-end",
+          "type": "end"
+        }
+      ],
+      "estimatedSeconds": 101,
+      "durationMs": 100761
+    }
+  ],
+  "causalRevision": {
+    "version": 1,
+    "scope": "Child-readable cause, time, place and cast continuity",
+    "routePlans": [
+      "odyssey-c10-s2-clarity-leave-the-hall-for-the-bedroom",
+      "odyssey-c10-s4-clarity-leave-for-his-fathers-orchard"
+    ]
+  },
+  "durationMs": 379497,
+  "documentRevision": {
+    "version": 1,
+    "source": "Correciones visuales.docx",
+    "date": "2026-10-14",
+    "scope": "Ship passenger spacing only"
+  }
+}

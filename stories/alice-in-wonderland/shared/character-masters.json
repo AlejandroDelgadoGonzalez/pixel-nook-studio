@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "status": "All seven appeared characters consolidated; no per-scene character PNGs allowed",
+  "characters": {
+    "alice": {
+      "metadata": "stories/alice-in-wonderland/shared/alice-master-atlas.json",
+      "canonicalSource": "concept_art/characters/master-pose-sheet-alice.png",
+      "canonicalSha256": "7ec15880ab20d6430d7f6b2aafc18dda034a6ad2607cab4f3cc22653ea4dd065",
+      "masterSha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93",
+      "proportionChecks": [
+        {
+          "name": "S1 front lower leg / standing body",
+          "measuredRatio": 0.14352941176470588,
+          "allowedRange": [
+            0.12,
+            0.17
+          ],
+          "landmarks": {
+            "kneeY": 452,
+            "soleY": 513,
+            "standingHeight": 425
+          },
+          "basis": "Canonical original, reused standing directions"
+        },
+        {
+          "name": "New folded pose projected bent shin / standing reference",
+          "measuredRatio": 0.08164037261905842,
+          "allowedRange": [
+            0.06,
+            0.16
+          ],
+          "landmarks": {
+            "knee": [
+              886,
+              650
+            ],
+            "ankle": [
+              954,
+              716
+            ],
+            "standingReference": 1160.735294117647
+          },
+          "basis": "Projected bent leg; separate visual check for low single band"
+        }
+      ],
+      "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides.",
+      "measurementEvidence": ".artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/shared/character-masters.json",
+      "measurementCoordinateSpace": "Preserved pre-pack measurements; complete source frames and normalized anchors unchanged by translation"
+    },
+    "white-rabbit": {
+      "metadata": "stories/alice-in-wonderland/shared/white-rabbit-master-atlas.json",
+      "canonicalSource": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/white-rabbit-first-design.png",
+      "canonicalSha256": "b615d8ada4aff9c634707df5617abd9c51ed0016fe68c7e47bc39dce9e1423de",
+      "masterSha256": "77d116d308807086420e41abce7f9cc7ab79639df6c8b22a62b0e7a5665bdfe6",
+      "proportionChecks": [],
+      "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides.",
+      "measurementEvidence": ".artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/shared/character-masters.json",
+      "measurementCoordinateSpace": "Preserved pre-pack measurements; complete source frames and normalized anchors unchanged by translation"
+    },
+    "dodo": {
+      "metadata": "stories/alice-in-wonderland/shared/dodo-master-atlas.json",
+      "canonicalSource": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/dodo-first-design.png",
+      "canonicalSha256": "ac680512954eb696dacf991d78eed63317c20ddda83961024f6595a6e69e7a87",
+      "masterSha256": "9923cc02a96715443d5a1a8e485d7f8b207b8914a5150a8a376ba2045c43c81b",
+      "proportionChecks": [],
+      "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides."
+    },
+    "lory": {
+      "metadata": "stories/alice-in-wonderland/shared/lory-master-atlas.json",
+      "canonicalSource": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/lory-first-design.png",
+      "canonicalSha256": "c74c9e72c0ec08369979916c9630850b7e92ef3c654a6fb532e9767044eebd16",
+      "masterSha256": "ea97e492b4203cc47b4dc58a025c18d3cedc58973aec981148d9576c697795c7",
+      "proportionChecks": [],
+      "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides."
+    },
+    "eaglet": {
+      "metadata": "stories/alice-in-wonderland/shared/eaglet-master-atlas.json",
+      "canonicalSource": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/eaglet-first-design.png",
+      "canonicalSha256": "45c58eadd90bfb43131e0e3d33d2c3f1fb9521c5e7b069f965d55ad141990bdd",
+      "masterSha256": "35837b4c0c34feeffba14baf9af46833fe5657012e946007af00bb324b956aa5",
+      "proportionChecks": [],
+      "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides."
+    },
+    "mouse": {
+      "metadata": "stories/alice-in-wonderland/shared/mouse-master-atlas.json",
+      "canonicalSource": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/mouse-first-design.png",
+      "canonicalSha256": "fa51467991e847092de1dd48f2ae6a623ec8ae68bbd22c5f4516fa8372f83637",
+      "masterSha256": "dcc5f66a3326210d928a33570a3537aa2c5a46d423186e2e545582e3da68a061",
+      "proportionChecks": [],
+      "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides."
+    },
+    "sister": {
+      "metadata": "stories/alice-in-wonderland/shared/sister-master-atlas.json",
+      "canonicalSource": ".artifacts/qa/atlas-unification-zero-clipping/canonical-sources/sister-first-design.png",
+      "canonicalSha256": "702369f399b8785a4dd0e4c4c4bd84e2ec06623b46b7ebf32549f0d0c00b2ad8",
+      "masterSha256": "6410964696df619363731fc4414a9ab2db814cf4f8350d691b9eb266a9a592d2",
+      "proportionChecks": [],
+      "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides."
+    }
+  },
+  "policy": "Existing poses must reuse master cells. Extraordinary generation records direct original source. No successive scene references.",
+  "grandfatheredActorIds": []
+}

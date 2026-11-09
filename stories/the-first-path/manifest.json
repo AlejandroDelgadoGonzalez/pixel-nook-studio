@@ -1,0 +1,35 @@
+{
+  "slug": "the-first-path",
+  "cover": "/stories/the-first-path/assets/backgrounds/village.png",
+  "coverAlt": "A sunlit village path beside a cottage, trees and a waterfall.",
+  "duration": "3 min",
+  "category": "Quiet adventure",
+  "themes": [
+    "Journeys",
+    "Friendship",
+    "New beginnings"
+  ],
+  "synopsis": "Before Nico leaves home, Lina has one small request.",
+  "schemaVersion": 1,
+  "id": "el-primer-camino-v1",
+  "serialized": false,
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "number": 1,
+      "status": "available",
+      "title": "The First Path",
+      "source": "/stories/the-first-path/chapters/chapter-01.json"
+    }
+  ],
+  "renderers": {
+    "village": {
+      "module": "/stories/the-first-path/renderers/village.js",
+      "export": "Workshop"
+    }
+  },
+  "migratedGeometry": {
+    "source": "Approved existing chapter data and renderers",
+    "policy": "Preserved coordinates; new stories must declare shared/stage-geometry.json"
+  }
+}

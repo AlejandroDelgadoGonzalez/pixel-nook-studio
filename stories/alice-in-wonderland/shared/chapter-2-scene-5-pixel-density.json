@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "story": "alice-in-wonderland",
+  "scene": "chapter-2-scene-5",
+  "status": "Approved v3 panorama; canonical characters covered by master contracts",
+  "profile": "concept_art/density-profile.json",
+  "referenceStandingHeightWorld": 180,
+  "logicalSamplesPerReferencePerson": 68,
+  "assets": [
+    {
+      "path": "stories/alice-in-wonderland/assets/atlases/c2-s5-props-v1.png",
+      "kind": "atlas",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "cells": [
+        {
+          "id": "fan-replacement",
+          "sourceBoundsExclusive": [
+            70,
+            198,
+            563,
+            566
+          ],
+          "normalizedWorldSize": [
+            30,
+            22
+          ],
+          "checkOutline": false
+        },
+        {
+          "id": "gloves-replacement",
+          "sourceBoundsExclusive": [
+            646,
+            243,
+            1016,
+            562
+          ],
+          "normalizedWorldSize": [
+            20,
+            18
+          ],
+          "checkOutline": false
+        },
+        {
+          "id": "bottle-unlabelled-full",
+          "sourceBoundsExclusive": [
+            1137,
+            173,
+            1370,
+            567
+          ],
+          "normalizedWorldSize": [
+            16,
+            26
+          ],
+          "checkOutline": false
+        },
+        {
+          "id": "bottle-unlabelled-sipped",
+          "sourceBoundsExclusive": [
+            1544,
+            173,
+            1777,
+            567
+          ],
+          "normalizedWorldSize": [
+            16,
+            26
+          ],
+          "checkOutline": false
+        },
+        {
+          "id": "cork",
+          "sourceBoundsExclusive": [
+            1943,
+            405,
+            2070,
+            537
+          ],
+          "normalizedWorldSize": [
+            4,
+            4
+          ],
+          "checkOutline": false
+        }
+      ]
+    },
+    {
+      "path": "stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v1.png",
+      "kind": "panorama",
+      "dimensions": [
+        1670,
+        942
+      ],
+      "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v3.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    }
+  ],
+  "sourcePolicy": "One canonical master per actor. Native pixel contracts and padded storage cells; content trims preserve measured world geometry."
+}

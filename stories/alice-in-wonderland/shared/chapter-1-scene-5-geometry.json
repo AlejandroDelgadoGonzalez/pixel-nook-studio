@@ -1,0 +1,2433 @@
+{
+  "schemaVersion": 1,
+  "status": "Gates1/2A approved with explicit28Oct box-clearance and left Rabbit stop corrections; Gate3 authorized",
+  "measurement": {
+    "owner": "NOOK applying03 directly in main thread",
+    "method": "Approved source panorama, actual common-renderer opaque sprites and inherited S4 camera matrices",
+    "date": "2026-10-28"
+  },
+  "environment": {
+    "asset": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+    "sourceSize": [
+      1664,
+      936
+    ],
+    "worldSize": [
+      3328,
+      1872
+    ],
+    "sourceToWorldScale": 2,
+    "repaintedPixels": 0
+  },
+  "camera": {
+    "inherit": "chapter-1-scene-4-geometry.json#camera.roomLock",
+    "worldRect": [
+      1467,
+      828,
+      2015,
+      1480
+    ],
+    "fixedXYZ": true,
+    "intraSceneDissolves": 0,
+    "perLayout": [
+      {
+        "width": 360,
+        "height": 800,
+        "frame": {
+          "x": 1741,
+          "y": 1258.1787709497207,
+          "z": 0.6532846715328468,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 560,
+          "right": 346,
+          "bottom": 736
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "frame": {
+          "x": 1741,
+          "y": 1270.5781990521327,
+          "z": 0.7033333333333334,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 600.484375,
+          "right": 376,
+          "bottom": 776.484375
+        }
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "frame": {
+          "x": 1741,
+          "y": 1270.7124463519312,
+          "z": 0.7766666666666666,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 14,
+          "top": 681.453125,
+          "right": 416,
+          "bottom": 857.453125
+        }
+      },
+      {
+        "width": 1366,
+        "height": 600,
+        "frame": {
+          "x": 1741,
+          "y": 1340.5045045045044,
+          "z": 0.5663265306122449,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 303,
+          "top": 392,
+          "right": 1063,
+          "bottom": 546
+        }
+      },
+      {
+        "width": 1366,
+        "height": 641,
+        "frame": {
+          "x": 1741,
+          "y": 1314.353982300885,
+          "z": 0.576530612244898,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 303,
+          "top": 429.3125,
+          "right": 1063,
+          "bottom": 583.3125
+        }
+      },
+      {
+        "width": 1536,
+        "height": 730,
+        "frame": {
+          "x": 1741,
+          "y": 1270.3561643835615,
+          "z": 0.6083333333333333,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 388,
+          "top": 510.3125,
+          "right": 1148,
+          "bottom": 664.3125
+        }
+      },
+      {
+        "width": 1440,
+        "height": 760,
+        "frame": {
+          "x": 1741,
+          "y": 1270.421052631579,
+          "z": 0.6333333333333333,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 340,
+          "top": 537.609375,
+          "right": 1100,
+          "bottom": 691.609375
+        }
+      },
+      {
+        "width": 1920,
+        "height": 947,
+        "frame": {
+          "x": 1741,
+          "y": 1270.7328405491025,
+          "z": 0.7891666666666667,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 580,
+          "top": 707.78125,
+          "right": 1340,
+          "bottom": 861.78125
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "frame": {
+          "x": 1741,
+          "y": 1270.888888888889,
+          "z": 0.9,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 580,
+          "top": 828.8125,
+          "right": 1340,
+          "bottom": 982.8125
+        }
+      },
+      {
+        "width": 800,
+        "height": 800,
+        "frame": {
+          "x": 1741,
+          "y": 1270.5,
+          "z": 0.6666666666666666,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 20,
+          "top": 580,
+          "right": 780,
+          "bottom": 728
+        }
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "frame": {
+          "x": 1741,
+          "y": 1271.0625,
+          "z": 1.0666666666666667,
+          "fits": true,
+          "lock": "hall-table-door"
+        },
+        "caption": {
+          "left": 20,
+          "top": 1016.8125,
+          "right": 700,
+          "bottom": 1164.8125
+        }
+      }
+    ],
+    "uiLayoutLock": "Original lower centred reader card, same metrics as S1. No top/side/compact exceptions.",
+    "viewportScope": {
+      "authorization": "Alejandro selected usual sizes and retaining the approved panorama on28Oct2026",
+      "layouts": [
+        [
+          360,
+          800
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          1366,
+          600
+        ],
+        [
+          1366,
+          641
+        ],
+        [
+          1536,
+          730
+        ],
+        [
+          1440,
+          760
+        ],
+        [
+          1920,
+          947
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          800,
+          800
+        ],
+        [
+          720,
+          1280
+        ]
+      ],
+      "extremeAspectRatiosExcluded": true
+    }
+  },
+  "spawns": {
+    "alice": {
+      "anchor": "S5-inherit",
+      "magicScale": 0.32,
+      "pose": "inherited S4 box-open",
+      "visible": 1
+    },
+    "rabbit": {
+      "anchor": "S5-rabbit-offscreen",
+      "visible": 0,
+      "provenance": "Established corridor leads into the same open floor outside the held frame; no locked door is crossed."
+    }
+  },
+  "anchors": {
+    "S5-inherit": {
+      "sourcePoint": [
+        875,
+        698
+      ],
+      "point": [
+        1750,
+        1396
+      ],
+      "depthScale": 1.1506666666666665
+    },
+    "S5-growth-key": {
+      "sourcePoint": [
+        915,
+        720
+      ],
+      "point": [
+        1830,
+        1440
+      ],
+      "depthScale": 1.18
+    },
+    "S5-key-contact": {
+      "sourcePoint": [
+        804.0000294117647,
+        637.9858468677494
+      ],
+      "point": [
+        1608.0000588235293,
+        1275.9716937354988
+      ],
+      "depthScale": 1.0706477958236658
+    },
+    "S5-tear-impact": {
+      "sourcePoint": [
+        888,
+        734
+      ],
+      "point": [
+        1776,
+        1468
+      ],
+      "depthScale": 1.18
+    },
+    "S5-rabbit-offscreen": {
+      "sourcePoint": [
+        700,
+        535
+      ],
+      "point": [
+        1400,
+        1070
+      ],
+      "depthScale": 0.9333333333333333
+    },
+    "S5-rabbit-stop": {
+      "sourcePoint": [
+        760,
+        535
+      ],
+      "point": [
+        1520,
+        1070
+      ],
+      "depthScale": 0.9333333333333333
+    }
+  },
+  "growth": {
+    "fromScale": 0.32,
+    "throughScale": 1.1,
+    "toScale": 1.5,
+    "groundAnchor": "S5-growth-key",
+    "cameraZoomChanges": 0,
+    "uniform": true,
+    "perspectiveAppliedOnce": true
+  },
+  "walkPaths": {
+    "smallAlice": {
+      "fromAnchor": "S5-inherit",
+      "toAnchor": "S5-growth-key",
+      "sourceWaypoints": [
+        [
+          875,
+          698
+        ],
+        [
+          915,
+          720
+        ]
+      ],
+      "waypoints": [
+        [
+          1750,
+          1396
+        ],
+        [
+          1830,
+          1440
+        ]
+      ],
+      "mode": "walk",
+      "walkSpeed": 235,
+      "runSpeed": 650,
+      "bodyScale": 0.32,
+      "durationMs": 1041.918563692632,
+      "facingByLeg": [
+        "right"
+      ],
+      "spec": {
+        "mode": "walk",
+        "speed": 235,
+        "scaleKnots": [
+          [
+            852,
+            0.5267
+          ],
+          [
+            900,
+            0.68
+          ],
+          [
+            960,
+            0.84
+          ],
+          [
+            1020,
+            0.9
+          ],
+          [
+            1200,
+            1.02
+          ],
+          [
+            1440,
+            1.18
+          ]
+        ],
+        "bodyScale": 0.32,
+        "bodyScalePath": [
+          "drink",
+          "magicScale"
+        ]
+      }
+    },
+    "rabbitEntry": {
+      "fromAnchor": "S5-rabbit-offscreen",
+      "toAnchor": "S5-rabbit-stop",
+      "sourceWaypoints": [
+        [
+          700,
+          535
+        ],
+        [
+          760,
+          535
+        ]
+      ],
+      "waypoints": [
+        [
+          1400,
+          1070
+        ],
+        [
+          1520,
+          1070
+        ]
+      ],
+      "mode": "walk",
+      "walkSpeed": 235,
+      "runSpeed": 650,
+      "bodyScale": 1,
+      "durationMs": 547.112462006079,
+      "facingByLeg": [
+        "right"
+      ],
+      "fadeMs": 2000,
+      "hookTotalMs": 3000,
+      "opaqueStopHoldMs": 1000,
+      "spec": {
+        "mode": "walk",
+        "speed": 235,
+        "scaleKnots": [
+          [
+            852,
+            0.5267
+          ],
+          [
+            900,
+            0.68
+          ],
+          [
+            960,
+            0.84
+          ],
+          [
+            1020,
+            0.9
+          ],
+          [
+            1200,
+            1.02
+          ],
+          [
+            1440,
+            1.18
+          ]
+        ]
+      },
+      "fadeAfterStopMs": 1452.887537993921
+    }
+  },
+  "props": {
+    "key": {
+      "inherit": {
+        "reuse": {
+          "atlas": "golden-key",
+          "ownerStates": [
+            "table",
+            "alice",
+            "table"
+          ],
+          "ringGripNormalized": [
+            11.1,
+            12
+          ],
+          "bladeTipNormalized": [
+            52.5,
+            12
+          ],
+          "restGripSource": [
+            804.0000294117647,
+            637.9858468677494
+          ],
+          "restScale": 1.14,
+          "pickupAndPlaceActorAnchor": "H3-table",
+          "selectedContactPose": "carry-key",
+          "handPinPolicy": "At pickup and release, keep identical actor x/y, ground origin, prop scale, pose and ring-grip position. Change ownership only after the supported contact; no position snap, duplicate or floating key.",
+          "whileCarried": "Use measured hand pins per authored pose; retain one key in the hand while testing the curtain/door. Full movement between hand poses belongs to Gate3/4, not this static art approval."
+        },
+        "fixed": true
+      },
+      "contactPose": "reach-key-clear-box",
+      "contactSource": [
+        804.0000294117647,
+        637.9858468677494
+      ],
+      "contactErrorSourcePx": 0,
+      "ownerStates": [
+        "table",
+        "alice",
+        "table"
+      ],
+      "physicalScale": 1.14,
+      "restLock": "Exact same inherited texture/crop/origin/flip/scale/coordinates after explicit release",
+      "interactive": true,
+      "restLockWhileOwnerTableOnly": true,
+      "heldTextureScaleRemains": 1.14,
+      "heldPoseFacingPolicy": "Facing left at pickup/place. Turn right toward the door through a visible arm/pose transition; held object follows the authored hand, never the old table pin."
+    },
+    "bottle": {
+      "tableBaseSource": [
+        875,
+        639
+      ],
+      "tableScale": 1.14,
+      "pickupGripNormalized": [
+        16,
+        6.973684210526379
+      ],
+      "examineGripNormalized": [
+        16,
+        8
+      ],
+      "drinkGripNormalized": [
+        16,
+        8
+      ],
+      "drinkRotationDegrees": 135,
+      "emptyBodyGripNormalized": [
+        16,
+        24.50000000000008
+      ],
+      "floorBaseSource": [
+        933.5098148148148,
+        700
+      ],
+      "floorScale": 1.1533333333333333,
+      "finalOwner": null,
+      "policy": "One bottle only. S3 sealed sprite retained through pickup. Uncork while held; switch to selected full/empty variants at matched bottle bottom/shoulder envelope. Move cork to glass. Bottle emptied before placing; release only after ground contact. Bottle never shrinks with Alice."
+    },
+    "box": {
+      "initialBaseSource": [
+        856.4484011940299,
+        690
+      ],
+      "baseSource": [
+        856.4484011940299,
+        690
+      ],
+      "scale": 1.14,
+      "closedPose": "box-closed",
+      "openBasePose": "box-base",
+      "closedHandContactSource": [
+        864.0484011940299,
+        689.99136
+      ],
+      "openHandContactSource": [
+        857.3861781032864,
+        673.7899733333334
+      ],
+      "openLidTopLeftSource": [
+        848.4684011940299,
+        670
+      ],
+      "openLidFlipY": false,
+      "hingePolicy": "Original rigid open-lid orientation retained. Rear right corner stays on rear rim; high-arm authored kneeling pose grips raised edge. Static contact measured; full hinge interpolation belongs to Gate3/4.",
+      "persistent": true
+    },
+    "cork": {
+      "tableBaseSource": [
+        887,
+        639
+      ],
+      "scale": 1.14
+    },
+    "cake": {
+      "inherit": {
+        "baseSource": [
+          856.4484011940299,
+          686
+        ],
+        "scale": 1.14,
+        "pose": "cake",
+        "owner": null,
+        "consumed": false
+      },
+      "ownerStates": [
+        "box",
+        "alice",
+        "consumed"
+      ],
+      "physicalScale": 1.14,
+      "boxStaysOpenAndEmpty": true,
+      "pickupPose": "take-cake",
+      "pickupHandEndSource": [
+        857.4357264144144,
+        686.67744
+      ],
+      "heldPose": "eat-cake",
+      "heldHandSource": [
+        865.7912053405522,
+        684.9332020295028
+      ],
+      "heldOrigin": [
+        0.5,
+        1
+      ],
+      "bodyScaleDoesNotResizeCake": true,
+      "transferPolicy": "Hand descends from the inherited high lid-grip through the cake envelope before the underside pickup pose. Release from box only after visible contact; then follow the measured palm. One cake only; eaten before growth.",
+      "pickupGripNormalized": [
+        11.732149509446476,
+        13.188491228070259
+      ],
+      "contactWorld": [
+        1714.8714528288288,
+        1373.35488
+      ]
+    },
+    "tears": {
+      "eyeSource": [
+        889.4229234527687,
+        613.3575
+      ],
+      "impactSource": [
+        888,
+        734
+      ],
+      "asset": "first-tears",
+      "stages": [
+        "central-lobe",
+        "central-plus-left",
+        "whole-cluster"
+      ],
+      "monotonicReveal": true,
+      "existingWaterNeverRemoved": true,
+      "airborneSupportPlaneWorld": 1440.4,
+      "floorSupportPlaneWorld": 1468,
+      "stopFallingAfterMoment9": true,
+      "stageAlphaMasks": [
+        {
+          "stage": 1,
+          "alphaRunsYXX": [
+            [
+              0,
+              22,
+              40
+            ],
+            [
+              1,
+              22,
+              40
+            ],
+            [
+              2,
+              16,
+              46
+            ],
+            [
+              3,
+              16,
+              46
+            ],
+            [
+              4,
+              16,
+              48
+            ],
+            [
+              5,
+              16,
+              48
+            ],
+            [
+              6,
+              16,
+              48
+            ],
+            [
+              7,
+              16,
+              48
+            ],
+            [
+              8,
+              16,
+              52
+            ],
+            [
+              9,
+              16,
+              52
+            ],
+            [
+              10,
+              18,
+              54
+            ],
+            [
+              11,
+              18,
+              54
+            ],
+            [
+              12,
+              20,
+              22
+            ],
+            [
+              12,
+              26,
+              54
+            ],
+            [
+              13,
+              20,
+              22
+            ],
+            [
+              13,
+              26,
+              54
+            ],
+            [
+              14,
+              28,
+              54
+            ],
+            [
+              15,
+              28,
+              54
+            ],
+            [
+              16,
+              34,
+              48
+            ],
+            [
+              17,
+              34,
+              48
+            ]
+          ],
+          "visiblePixels": 508
+        },
+        {
+          "stage": 2,
+          "alphaRunsYXX": [
+            [
+              0,
+              22,
+              40
+            ],
+            [
+              1,
+              22,
+              40
+            ],
+            [
+              2,
+              16,
+              46
+            ],
+            [
+              3,
+              16,
+              46
+            ],
+            [
+              4,
+              16,
+              48
+            ],
+            [
+              5,
+              16,
+              48
+            ],
+            [
+              6,
+              16,
+              48
+            ],
+            [
+              7,
+              16,
+              48
+            ],
+            [
+              8,
+              2,
+              52
+            ],
+            [
+              9,
+              2,
+              52
+            ],
+            [
+              10,
+              0,
+              54
+            ],
+            [
+              11,
+              0,
+              54
+            ],
+            [
+              12,
+              2,
+              22
+            ],
+            [
+              12,
+              26,
+              54
+            ],
+            [
+              13,
+              2,
+              22
+            ],
+            [
+              13,
+              26,
+              54
+            ],
+            [
+              14,
+              4,
+              18
+            ],
+            [
+              14,
+              28,
+              54
+            ],
+            [
+              15,
+              4,
+              18
+            ],
+            [
+              15,
+              28,
+              54
+            ],
+            [
+              16,
+              34,
+              48
+            ],
+            [
+              17,
+              34,
+              48
+            ]
+          ],
+          "visiblePixels": 636
+        },
+        {
+          "stage": 3,
+          "alphaRunsYXX": [
+            [
+              0,
+              22,
+              40
+            ],
+            [
+              1,
+              22,
+              40
+            ],
+            [
+              2,
+              16,
+              48
+            ],
+            [
+              3,
+              16,
+              48
+            ],
+            [
+              4,
+              16,
+              48
+            ],
+            [
+              5,
+              16,
+              48
+            ],
+            [
+              6,
+              16,
+              48
+            ],
+            [
+              6,
+              52,
+              64
+            ],
+            [
+              7,
+              16,
+              48
+            ],
+            [
+              7,
+              52,
+              64
+            ],
+            [
+              8,
+              2,
+              70
+            ],
+            [
+              9,
+              2,
+              70
+            ],
+            [
+              10,
+              0,
+              70
+            ],
+            [
+              11,
+              0,
+              70
+            ],
+            [
+              12,
+              2,
+              22
+            ],
+            [
+              12,
+              26,
+              54
+            ],
+            [
+              12,
+              56,
+              68
+            ],
+            [
+              13,
+              2,
+              22
+            ],
+            [
+              13,
+              26,
+              54
+            ],
+            [
+              13,
+              56,
+              68
+            ],
+            [
+              14,
+              2,
+              22
+            ],
+            [
+              14,
+              26,
+              54
+            ],
+            [
+              14,
+              56,
+              68
+            ],
+            [
+              15,
+              2,
+              22
+            ],
+            [
+              15,
+              26,
+              54
+            ],
+            [
+              15,
+              56,
+              68
+            ],
+            [
+              16,
+              34,
+              48
+            ],
+            [
+              17,
+              34,
+              48
+            ]
+          ],
+          "visiblePixels": 796
+        }
+      ],
+      "normalizedSize": [
+        70,
+        18
+      ],
+      "monotonicCheck": true,
+      "lagoon": {
+        "worldSize": [
+          540,
+          112
+        ],
+        "worldBase": [
+          1470,
+          1480
+        ],
+        "sourceSize": [
+          270,
+          56
+        ],
+        "impactLocal": [
+          306,
+          100
+        ],
+        "depth": 1300,
+        "revealStages": 80,
+        "firstImpactCryTime": 800,
+        "completeCryTime": 5100,
+        "dropCount": 12,
+        "dropIntervalMs": 100,
+        "dropFlightMs": 720,
+        "palette": "Exact palette of S6 tear-pool; no legacy first-tears overlay",
+        "formedDuring": "alice-c1-eat-cry",
+        "persistentFrom": "alice-c1-eat-tears",
+        "cryDurationMs": 5250,
+        "expansion": "Linear elapsed cry clock,80opaque-area reveal stages from the impact, full at5.10s; no other timing changed."
+      }
+    },
+    "rabbit": {
+      "poses": [
+        "rabbit-carry-walk",
+        "rabbit-carry-stop",
+        "rabbit-carry-look"
+      ],
+      "lookAtAliceFlipX": false,
+      "fanOwner": "white-rabbit",
+      "glovesOwner": "white-rabbit",
+      "noReleaseInS5": true
+    }
+  },
+  "supportPlanes": {
+    "tableWorld": 1380,
+    "restingTablePropsWorld": 1380,
+    "bottleFloorWorld": 1400,
+    "boxFloorWorld": 1380,
+    "aliceWorld": 1440,
+    "tearsFloorWorld": 1468,
+    "policy": "Furniture/support Y-sorting. Carried props follow actor ground plane with local ordering; static props never change with a pose. Airborne tears inherit Alice until impact."
+  },
+  "occluders": {
+    "groundYSource": 690,
+    "groundYWorld": 1380,
+    "sourceOpaqueRunsYX0X1": [
+      [
+        626,
+        834,
+        860
+      ],
+      [
+        627,
+        834,
+        860
+      ],
+      [
+        628,
+        818,
+        880
+      ],
+      [
+        629,
+        818,
+        880
+      ],
+      [
+        630,
+        806,
+        832
+      ],
+      [
+        630,
+        856,
+        858
+      ],
+      [
+        630,
+        862,
+        892
+      ],
+      [
+        631,
+        806,
+        832
+      ],
+      [
+        631,
+        856,
+        858
+      ],
+      [
+        631,
+        862,
+        892
+      ],
+      [
+        632,
+        798,
+        812
+      ],
+      [
+        632,
+        814,
+        826
+      ],
+      [
+        632,
+        864,
+        870
+      ],
+      [
+        632,
+        886,
+        896
+      ],
+      [
+        633,
+        798,
+        812
+      ],
+      [
+        633,
+        814,
+        826
+      ],
+      [
+        633,
+        864,
+        870
+      ],
+      [
+        633,
+        886,
+        896
+      ],
+      [
+        634,
+        794,
+        804
+      ],
+      [
+        634,
+        818,
+        822
+      ],
+      [
+        634,
+        890,
+        900
+      ],
+      [
+        635,
+        794,
+        804
+      ],
+      [
+        635,
+        818,
+        822
+      ],
+      [
+        635,
+        890,
+        900
+      ],
+      [
+        636,
+        792,
+        802
+      ],
+      [
+        636,
+        816,
+        822
+      ],
+      [
+        636,
+        890,
+        904
+      ],
+      [
+        637,
+        792,
+        802
+      ],
+      [
+        637,
+        816,
+        822
+      ],
+      [
+        637,
+        890,
+        904
+      ],
+      [
+        638,
+        792,
+        800
+      ],
+      [
+        638,
+        814,
+        820
+      ],
+      [
+        638,
+        892,
+        894
+      ],
+      [
+        638,
+        898,
+        904
+      ],
+      [
+        639,
+        792,
+        800
+      ],
+      [
+        639,
+        814,
+        820
+      ],
+      [
+        639,
+        892,
+        894
+      ],
+      [
+        639,
+        898,
+        904
+      ],
+      [
+        640,
+        792,
+        804
+      ],
+      [
+        640,
+        814,
+        818
+      ],
+      [
+        640,
+        874,
+        878
+      ],
+      [
+        640,
+        896,
+        904
+      ],
+      [
+        641,
+        792,
+        804
+      ],
+      [
+        641,
+        814,
+        818
+      ],
+      [
+        641,
+        874,
+        878
+      ],
+      [
+        641,
+        896,
+        904
+      ],
+      [
+        642,
+        792,
+        818
+      ],
+      [
+        642,
+        874,
+        880
+      ],
+      [
+        642,
+        886,
+        904
+      ],
+      [
+        643,
+        792,
+        818
+      ],
+      [
+        643,
+        874,
+        880
+      ],
+      [
+        643,
+        886,
+        904
+      ],
+      [
+        644,
+        792,
+        828
+      ],
+      [
+        644,
+        842,
+        858
+      ],
+      [
+        644,
+        874,
+        904
+      ],
+      [
+        645,
+        792,
+        828
+      ],
+      [
+        645,
+        842,
+        858
+      ],
+      [
+        645,
+        874,
+        904
+      ],
+      [
+        646,
+        794,
+        902
+      ],
+      [
+        647,
+        794,
+        902
+      ],
+      [
+        648,
+        800,
+        892
+      ],
+      [
+        649,
+        800,
+        892
+      ],
+      [
+        650,
+        802,
+        892
+      ],
+      [
+        651,
+        802,
+        892
+      ],
+      [
+        652,
+        802,
+        892
+      ],
+      [
+        653,
+        802,
+        892
+      ],
+      [
+        654,
+        800,
+        816
+      ],
+      [
+        654,
+        826,
+        832
+      ],
+      [
+        654,
+        880,
+        894
+      ],
+      [
+        655,
+        800,
+        816
+      ],
+      [
+        655,
+        826,
+        832
+      ],
+      [
+        655,
+        880,
+        894
+      ],
+      [
+        656,
+        800,
+        814
+      ],
+      [
+        656,
+        826,
+        832
+      ],
+      [
+        656,
+        882,
+        894
+      ],
+      [
+        657,
+        800,
+        814
+      ],
+      [
+        657,
+        826,
+        832
+      ],
+      [
+        657,
+        882,
+        894
+      ],
+      [
+        658,
+        800,
+        812
+      ],
+      [
+        658,
+        822,
+        832
+      ],
+      [
+        658,
+        882,
+        894
+      ],
+      [
+        659,
+        800,
+        812
+      ],
+      [
+        659,
+        822,
+        832
+      ],
+      [
+        659,
+        882,
+        894
+      ],
+      [
+        660,
+        800,
+        812
+      ],
+      [
+        660,
+        822,
+        832
+      ],
+      [
+        660,
+        882,
+        894
+      ],
+      [
+        661,
+        800,
+        812
+      ],
+      [
+        661,
+        822,
+        832
+      ],
+      [
+        661,
+        882,
+        894
+      ],
+      [
+        662,
+        802,
+        812
+      ],
+      [
+        662,
+        822,
+        832
+      ],
+      [
+        662,
+        884,
+        894
+      ],
+      [
+        663,
+        802,
+        812
+      ],
+      [
+        663,
+        822,
+        832
+      ],
+      [
+        663,
+        884,
+        894
+      ],
+      [
+        664,
+        802,
+        812
+      ],
+      [
+        664,
+        822,
+        832
+      ],
+      [
+        664,
+        882,
+        892
+      ],
+      [
+        665,
+        802,
+        812
+      ],
+      [
+        665,
+        822,
+        832
+      ],
+      [
+        665,
+        882,
+        892
+      ],
+      [
+        666,
+        804,
+        812
+      ],
+      [
+        666,
+        822,
+        830
+      ],
+      [
+        666,
+        884,
+        892
+      ],
+      [
+        667,
+        804,
+        812
+      ],
+      [
+        667,
+        822,
+        830
+      ],
+      [
+        667,
+        884,
+        892
+      ],
+      [
+        668,
+        804,
+        812
+      ],
+      [
+        668,
+        822,
+        826
+      ],
+      [
+        668,
+        882,
+        892
+      ],
+      [
+        669,
+        804,
+        812
+      ],
+      [
+        669,
+        822,
+        826
+      ],
+      [
+        669,
+        882,
+        892
+      ],
+      [
+        670,
+        804,
+        812
+      ],
+      [
+        670,
+        822,
+        826
+      ],
+      [
+        670,
+        882,
+        890
+      ],
+      [
+        671,
+        804,
+        812
+      ],
+      [
+        671,
+        822,
+        826
+      ],
+      [
+        671,
+        882,
+        890
+      ],
+      [
+        672,
+        804,
+        812
+      ],
+      [
+        672,
+        822,
+        826
+      ],
+      [
+        672,
+        882,
+        890
+      ],
+      [
+        673,
+        804,
+        812
+      ],
+      [
+        673,
+        822,
+        826
+      ],
+      [
+        673,
+        882,
+        890
+      ],
+      [
+        674,
+        804,
+        812
+      ],
+      [
+        674,
+        822,
+        826
+      ],
+      [
+        674,
+        882,
+        890
+      ],
+      [
+        675,
+        804,
+        812
+      ],
+      [
+        675,
+        822,
+        826
+      ],
+      [
+        675,
+        882,
+        890
+      ],
+      [
+        676,
+        804,
+        812
+      ],
+      [
+        676,
+        822,
+        824
+      ],
+      [
+        676,
+        882,
+        890
+      ],
+      [
+        677,
+        804,
+        812
+      ],
+      [
+        677,
+        822,
+        824
+      ],
+      [
+        677,
+        882,
+        890
+      ],
+      [
+        678,
+        804,
+        812
+      ],
+      [
+        678,
+        882,
+        890
+      ],
+      [
+        679,
+        804,
+        812
+      ],
+      [
+        679,
+        882,
+        890
+      ],
+      [
+        680,
+        802,
+        812
+      ],
+      [
+        680,
+        882,
+        892
+      ],
+      [
+        681,
+        802,
+        812
+      ],
+      [
+        681,
+        882,
+        892
+      ],
+      [
+        682,
+        800,
+        812
+      ],
+      [
+        682,
+        884,
+        896
+      ],
+      [
+        683,
+        800,
+        812
+      ],
+      [
+        683,
+        884,
+        896
+      ],
+      [
+        684,
+        798,
+        810
+      ],
+      [
+        684,
+        884,
+        896
+      ],
+      [
+        685,
+        798,
+        810
+      ],
+      [
+        685,
+        884,
+        896
+      ],
+      [
+        686,
+        798,
+        808
+      ],
+      [
+        686,
+        886,
+        896
+      ],
+      [
+        687,
+        798,
+        808
+      ],
+      [
+        687,
+        886,
+        896
+      ],
+      [
+        688,
+        802,
+        808
+      ],
+      [
+        688,
+        888,
+        892
+      ],
+      [
+        689,
+        802,
+        808
+      ],
+      [
+        689,
+        888,
+        892
+      ]
+    ],
+    "asset": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+    "sourceBoundsExclusive": [
+      792,
+      626,
+      904,
+      690
+    ],
+    "measurement": "Inspected tabletop/leg bounds; actual neutral glass/metal source pixels only. Foreground reuses the exact original panorama pixels; no recoloring or new art."
+  },
+  "closingHook": {
+    "durationMs": 3000,
+    "text": false,
+    "sound": false,
+    "entryPath": "rabbitEntry",
+    "finalAliceFacing": "left",
+    "finalRabbitFacing": "right",
+    "releaseProps": false,
+    "aliceFacingDuringVisibleEntry": "left throughout; Rabbit remains left of Alice and table",
+    "provenance": "Frame-left emergence on measured open Hall floor, continuous with the established corridor outside the camera. No closed door is crossed and no room/camera change occurs."
+  },
+  "issues": [],
+  "boxVisibilityContract": {
+    "requiredInAllS5Moments": true,
+    "requiredAtS6Entry": true,
+    "baseSource": [
+      856.4484011940299,
+      690
+    ],
+    "open": true,
+    "emptyAfterEating": true,
+    "neverLiftDepthToHideCollision": true
+  },
+  "approval": {
+    "date": "2026-10-28",
+    "condition": "User approves Gates1/2A after keeping open box visible and stopping Rabbit left of table/Alice; proceed directly Gates3/4 in main thread."
+  },
+  "implementation": {
+    "authorized": true,
+    "automaticNominalMs": 70652.91856369263,
+    "initialCreationRangeMs": [
+      55000,
+      85000
+    ],
+    "physicalBoxVisibilityRequired": true,
+    "futureScene6MustPreserve": true
+  },
+  "historicalProposalStaticChecks": {
+    "contactErrorSourcePx": 0,
+    "maxGrowthBottleOverlapPixels": 0,
+    "maxTinyShoeLegOverlapPixels": 0,
+    "fixedCameraPoseChecks": [
+      {
+        "width": 360,
+        "height": 800,
+        "pose": "growth-surprise",
+        "flipX": false,
+        "bounds": [
+          104.87226277372262,
+          294.0510948905109,
+          259.0474452554745,
+          499.18248175182475
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "pose": "take-key-low",
+        "flipX": false,
+        "bounds": [
+          78.74087591240875,
+          294.0510948905109,
+          256.43430656934305,
+          499.18248175182475
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "pose": "take-key-low",
+        "flipX": true,
+        "bounds": [
+          110.0985401459854,
+          294.0510948905109,
+          287.7919708029197,
+          499.18248175182475
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "pose": "brief-cry",
+        "flipX": false,
+        "bounds": [
+          114.01824817518248,
+          296.6642335766423,
+          261.66058394160586,
+          499.18248175182475
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "pose": "calm",
+        "flipX": false,
+        "bounds": [
+          119.24452554744525,
+          294.0510948905109,
+          255.12773722627736,
+          499.18248175182475
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "pose": "calm",
+        "flipX": true,
+        "bounds": [
+          111.40510948905109,
+          294.0510948905109,
+          247.28832116788323,
+          499.18248175182475
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "pose": "growth-surprise",
+        "flipX": false,
+        "bounds": [
+          114.11666666666666,
+          299.2133333333333,
+          280.10333333333335,
+          520.06
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "pose": "take-key-low",
+        "flipX": false,
+        "bounds": [
+          85.98333333333333,
+          299.2133333333333,
+          277.29,
+          520.06
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "pose": "take-key-low",
+        "flipX": true,
+        "bounds": [
+          119.74333333333333,
+          299.2133333333333,
+          311.05,
+          520.06
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "pose": "brief-cry",
+        "flipX": false,
+        "bounds": [
+          123.96333333333332,
+          302.02666666666664,
+          282.9166666666667,
+          520.06
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "pose": "calm",
+        "flipX": false,
+        "bounds": [
+          129.59,
+          299.2133333333333,
+          275.8833333333333,
+          520.06
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "pose": "calm",
+        "flipX": true,
+        "bounds": [
+          121.14999999999999,
+          299.2133333333333,
+          267.4433333333333,
+          520.06
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "pose": "growth-surprise",
+        "flipX": false,
+        "bounds": [
+          125.68333333333334,
+          330.30666666666673,
+          308.9766666666667,
+          574.1800000000001
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "pose": "take-key-low",
+        "flipX": false,
+        "bounds": [
+          94.61666666666667,
+          330.30666666666673,
+          305.87,
+          574.1800000000001
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "pose": "take-key-low",
+        "flipX": true,
+        "bounds": [
+          131.89666666666668,
+          330.30666666666673,
+          343.15,
+          574.1800000000001
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "pose": "brief-cry",
+        "flipX": false,
+        "bounds": [
+          136.55666666666667,
+          333.4133333333334,
+          312.0833333333333,
+          574.1800000000001
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "pose": "calm",
+        "flipX": false,
+        "bounds": [
+          142.77,
+          330.30666666666673,
+          304.31666666666666,
+          574.1800000000001
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "pose": "calm",
+        "flipX": true,
+        "bounds": [
+          133.45,
+          330.30666666666673,
+          294.99666666666667,
+          574.1800000000001
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 1366,
+        "height": 640,
+        "pose": "growth-surprise",
+        "flipX": false,
+        "bounds": [
+          621.6666666666666,
+          386.4,
+          747.5333333333333,
+          553.8666666666667
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 1366,
+        "height": 640,
+        "pose": "take-key-low",
+        "flipX": false,
+        "bounds": [
+          600.3333333333334,
+          386.4,
+          745.4,
+          553.8666666666667
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 1366,
+        "height": 640,
+        "pose": "take-key-low",
+        "flipX": true,
+        "bounds": [
+          625.9333333333334,
+          386.4,
+          771,
+          553.8666666666667
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 1366,
+        "height": 640,
+        "pose": "brief-cry",
+        "flipX": false,
+        "bounds": [
+          629.1333333333333,
+          388.5333333333333,
+          749.6666666666666,
+          553.8666666666667
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 1366,
+        "height": 640,
+        "pose": "calm",
+        "flipX": false,
+        "bounds": [
+          633.4,
+          386.4,
+          744.3333333333334,
+          553.8666666666667
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 1366,
+        "height": 640,
+        "pose": "calm",
+        "flipX": true,
+        "bounds": [
+          627,
+          386.4,
+          737.9333333333333,
+          553.8666666666667
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "pose": "growth-surprise",
+        "flipX": false,
+        "bounds": [
+          237.33333333333331,
+          457.8,
+          489.06666666666666,
+          792.7333333333333
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "pose": "take-key-low",
+        "flipX": false,
+        "bounds": [
+          194.66666666666666,
+          457.8,
+          484.8,
+          792.7333333333333
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "pose": "take-key-low",
+        "flipX": true,
+        "bounds": [
+          245.86666666666667,
+          457.8,
+          536,
+          792.7333333333333
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "pose": "brief-cry",
+        "flipX": false,
+        "bounds": [
+          252.26666666666665,
+          462.06666666666666,
+          493.33333333333337,
+          792.7333333333333
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "pose": "calm",
+        "flipX": false,
+        "bounds": [
+          260.8,
+          457.8,
+          482.6666666666667,
+          792.7333333333333
+        ],
+        "inside": true,
+        "captionOverlap": false
+      },
+      {
+        "width": 720,
+        "height": 1280,
+        "pose": "calm",
+        "flipX": true,
+        "bounds": [
+          248,
+          457.8,
+          469.8666666666667,
+          792.7333333333333
+        ],
+        "inside": true,
+        "captionOverlap": false
+      }
+    ],
+    "maxRabbitAliceOverlapPixels": 0
+  },
+  "runtimeVerification": {
+    "report": ".artifacts/qa/alice-in-wonderland/eat-me/motion/report.json",
+    "samples": 10386,
+    "layouts": 18,
+    "maxGiantBoxOverlapPixels": 0,
+    "cameraStatesPerLayout": 1,
+    "boxStatesPerLayout": 1,
+    "lidStatesPerLayout": 1
+  },
+  "continuityIntoScene6": {
+    "implemented": false,
+    "alice": {
+      "feetWorld": [
+        1830,
+        1440
+      ],
+      "bodyScale": 1.5,
+      "facing": "left"
+    },
+    "rabbit": {
+      "feetWorld": [
+        1520,
+        1070
+      ],
+      "visible": 1,
+      "facing": "right",
+      "fanOwner": "white-rabbit",
+      "glovesOwner": "white-rabbit"
+    },
+    "box": {
+      "baseSource": [
+        856.4484011940299,
+        690
+      ],
+      "open": true,
+      "empty": true,
+      "visible": true
+    },
+    "keyOwner": null,
+    "tearStage": 3,
+    "camera": "inherit exact S5 final x/y/z; no same-room dissolve"
+  }
+}

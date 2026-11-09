@@ -1,0 +1,4164 @@
+{
+  "schemaVersion": 1,
+  "id": "the-odyssey-v1",
+  "title": "The Odyssey",
+  "subtitle": "The Long Way Home",
+  "attribution": "An original abridged adaptation of Homer’s Odyssey",
+  "serialized": true,
+  "episodes": true,
+  "timing": {
+    "characterMs": 30,
+    "wordMs": 440,
+    "minimumHoldMs": 2100,
+    "linePauseMs": 1400
+  },
+  "videoExport": {
+    "logo": {
+      "src": "/stories/the-odyssey/assets/branding/logo.png",
+      "durationMs": 3000
+    },
+    "captionFadeMs": 450,
+    "previewHoldMs": 900
+  },
+  "renderer": "cyclops",
+  "availableChapter": "chapter-4",
+  "intro": "A door left open. A name that should have stayed hidden.",
+  "ending": "He had escaped the cave. He had given the sea a name to follow.",
+  "description": "Odysseus remembers the lotus, the cave and the moment pride undid his cleverest escape.",
+  "stageLabel": "Odysseus remembers his voyage after Troy",
+  "ambientAudio": {
+    "type": "synthesized",
+    "gain": 0.6,
+    "birdMinMs": 40000,
+    "birdRangeMs": 32000
+  },
+  "adaptationSource": {
+    "title": "Homer, Odyssey, Book IX",
+    "url": "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm",
+    "note": "Original abridged dialogue and narration. Ismarus is condensed into aftermath; one invented companion, Doros, represents the losses in the cave. The attack is implied without graphic imagery. Eurylochus represents the surviving crew. The lotus and escape are condensed."
+  },
+  "assets": {
+    "hero": "/stories/the-odyssey/assets/atlases/characters/odyssey-core.png",
+    "people": "/stories/the-odyssey/assets/atlases/characters/cave-people.png",
+    "under": "/stories/the-odyssey/assets/atlases/actions/under-ram.png",
+    "giantActions": "/stories/the-odyssey/assets/atlases/actions/cyclops-actions.png",
+    "props": "/stories/the-odyssey/assets/atlases/props/cave-props.png",
+    "coast": "/stories/the-odyssey/assets/backgrounds/native/return-coast.png",
+    "lotus": "/stories/the-odyssey/assets/backgrounds/native/lotus.png",
+    "cave": "/stories/the-odyssey/assets/backgrounds/native/cyclops-cave.png",
+    "sea": "/stories/the-odyssey/assets/backgrounds/native/crossing.png",
+    "caveBeach": "/stories/the-odyssey/assets/backgrounds/panoramas/cave-approach.png"
+  },
+  "characters": {
+    "odysseus": {
+      "name": "Odysseus",
+      "role": "The traveler",
+      "color": "#cbe4df"
+    },
+    "doros": {
+      "name": "Doros",
+      "role": "A companion",
+      "color": "#edc2a3"
+    },
+    "eurylochus": {
+      "name": "Eurylochus",
+      "role": "A companion",
+      "color": "#d4dbaf"
+    },
+    "islander": {
+      "name": "The islander",
+      "role": "A lotus eater",
+      "color": "#edcad2"
+    },
+    "polyphemus": {
+      "name": "Polyphemus",
+      "role": "The Cyclops",
+      "color": "#e4c39b"
+    }
+  },
+  "initialState": {
+    "actors": {
+      "odysseus": {
+        "x": 720,
+        "y": 1160,
+        "visible": 1,
+        "facing": "right",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0,
+        "hiddenUnder": 0,
+        "onboard": 0
+      },
+      "doros": {
+        "x": 825,
+        "y": 1200,
+        "visible": 1,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0,
+        "hiddenUnder": 0,
+        "onboard": 0
+      },
+      "eurylochus": {
+        "x": 930,
+        "y": 1140,
+        "visible": 1,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0,
+        "hiddenUnder": 0,
+        "onboard": 0
+      },
+      "islander": {
+        "x": 1040,
+        "y": 1490,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0,
+        "hiddenUnder": 0,
+        "onboard": 0
+      },
+      "polyphemus": {
+        "x": 1130,
+        "y": 705,
+        "visible": 0,
+        "facing": "left",
+        "pose": "idle",
+        "bow": 0,
+        "seated": 0,
+        "hiddenUnder": 0,
+        "onboard": 0
+      }
+    },
+    "lamp": {
+      "owner": null
+    },
+    "chapter": 0,
+    "room": "coast",
+    "view": "after-war",
+    "ship": {
+      "x": 740,
+      "y": 1010,
+      "visible": 1,
+      "owner": null,
+      "lift": 0
+    },
+    "flower": {
+      "x": 920,
+      "y": 1460,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "cup": {
+      "x": 790,
+      "y": 965,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "boulder": {
+      "x": 870,
+      "y": 742,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "stake": {
+      "x": 630,
+      "y": 1090,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "ram": {
+      "x": 930,
+      "y": 1000,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "ram2": {
+      "x": 750,
+      "y": 960,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "cheese": {
+      "x": 700,
+      "y": 970,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "jar": {
+      "x": 585,
+      "y": 970,
+      "visible": 0,
+      "owner": null,
+      "lift": 0
+    },
+    "blind": 0,
+    "night": 0,
+    "takingWine": 0,
+    "praying": 0,
+    "swell": 0.35,
+    "wineLevel": 1
+  },
+  "shots": {
+    "after-war": {
+      "cx": 800,
+      "cy": 1080,
+      "w": 520,
+      "h": 440,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "ship": {
+      "cx": 790,
+      "cy": 920,
+      "w": 460,
+      "h": 430,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "doros"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "lotus-arrival": {
+      "cx": 845,
+      "cy": 1435,
+      "w": 520,
+      "h": 360,
+      "actors": [
+        "odysseus",
+        "doros",
+        "islander",
+        "eurylochus"
+      ],
+      "props": [
+        "flower",
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "lotus-close": {
+      "cx": 815,
+      "cy": 1470,
+      "w": 440,
+      "h": 320,
+      "actors": [
+        "odysseus",
+        "doros",
+        "islander",
+        "eurylochus"
+      ],
+      "props": [
+        "flower",
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "lotus-leave": {
+      "cx": 780,
+      "cy": 1370,
+      "w": 520,
+      "h": 430,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "cave-entry": {
+      "cx": 900,
+      "cy": 790,
+      "w": 650,
+      "h": 480,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "cheese",
+        "jar"
+      ],
+      "preserveHeight": true
+    },
+    "door": {
+      "cx": 1065,
+      "cy": 655,
+      "w": 670,
+      "h": 600,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "boulder"
+      ],
+      "preserveHeight": true
+    },
+    "cave-close": {
+      "cx": 850,
+      "cy": 870,
+      "w": 540,
+      "h": 410,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "cup",
+        "jar"
+      ],
+      "preserveHeight": true
+    },
+    "wine": {
+      "cx": 860,
+      "cy": 870,
+      "w": 470,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "cup"
+      ],
+      "preserveHeight": true
+    },
+    "stake": {
+      "cx": 820,
+      "cy": 920,
+      "w": 580,
+      "h": 420,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "escape": {
+      "cx": 965,
+      "cy": 850,
+      "w": 640,
+      "h": 560,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true
+    },
+    "outside": {
+      "cx": 690,
+      "cy": 1090,
+      "w": 1120,
+      "h": 700,
+      "actors": [
+        "odysseus",
+        "eurylochus"
+      ],
+      "props": [
+        "ram",
+        "ram2",
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "prayer": {
+      "cx": 1280,
+      "cy": 590,
+      "w": 540,
+      "h": 530,
+      "actors": [
+        "polyphemus"
+      ],
+      "props": [],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s2-an-offer-on-the-path-route-view": {
+      "cx": 925.5,
+      "cy": 1435,
+      "w": 681,
+      "h": 360,
+      "actors": [
+        "odysseus",
+        "doros",
+        "islander",
+        "eurylochus"
+      ],
+      "props": [
+        "flower",
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s3-enter-the-open-cave-route-view": {
+      "cx": 884.5,
+      "cy": 790,
+      "w": 701,
+      "h": 480,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "cheese",
+        "jar"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s3-the-shepherd-returns-route-view": {
+      "cx": 950,
+      "cy": 689.5,
+      "w": 900,
+      "h": 669,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s3-roll-the-stone-closed-route-view": {
+      "cx": 972,
+      "cy": 689.5,
+      "w": 856,
+      "h": 669,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "boulder"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s3-face-the-strangers-route-view": {
+      "cx": 869.5,
+      "cy": 842.5,
+      "w": 651,
+      "h": 465,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "cup",
+        "jar"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-offer-the-wine-route-view": {
+      "cx": 849.5,
+      "cy": 870,
+      "w": 611,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "cup"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-walk-to-the-olive-stake-route-view": {
+      "cx": 829.5,
+      "cy": 927,
+      "w": 651,
+      "h": 434,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-carry-the-stake-to-the-giant-route-view": {
+      "cx": 829.5,
+      "cy": 947,
+      "w": 651,
+      "h": 474,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-draw-back-together-route-view": {
+      "cx": 842.5,
+      "cy": 920,
+      "w": 625,
+      "h": 420,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s5-feel-for-the-entrance-route-view": {
+      "cx": 934.5,
+      "cy": 850,
+      "w": 701,
+      "h": 560,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s5-walk-to-the-wool-route-view": {
+      "cx": 934.5,
+      "cy": 850,
+      "w": 701,
+      "h": 560,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true
+    },
+    "lotus-landing": {
+      "cx": 780,
+      "cy": 1180,
+      "w": 660,
+      "h": 540,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "lotus-boarding": {
+      "cx": 780,
+      "cy": 1250,
+      "w": 660,
+      "h": 530,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "lotus-launch": {
+      "cx": 780,
+      "cy": 1090,
+      "w": 660,
+      "h": 700,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "cave-landing": {
+      "cx": 500,
+      "cy": 940,
+      "w": 820,
+      "h": 630,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "cave-disembark": {
+      "cx": 670,
+      "cy": 1030,
+      "w": 1140,
+      "h": 730,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true,
+      "edgePadding": 24
+    },
+    "cave-approach": {
+      "cx": 1220,
+      "cy": 960,
+      "w": 900,
+      "h": 670,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "cave-boarding": {
+      "cx": 620,
+      "cy": 1070,
+      "w": 1020,
+      "h": 690,
+      "actors": [
+        "odysseus",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "cave-threshold": {
+      "cx": 1320,
+      "cy": 650,
+      "w": 650,
+      "h": 610,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "cave-launch": {
+      "cx": 460,
+      "cy": 930,
+      "w": 600,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true,
+      "edgePadding": 20,
+      "fullPanorama": true
+    },
+    "cave-welcome": {
+      "cx": 920,
+      "cy": 790,
+      "w": 850,
+      "h": 640,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "cup"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "stone-moving": {
+      "cx": 1020,
+      "cy": 650,
+      "w": 860,
+      "h": 560,
+      "actors": [
+        "polyphemus"
+      ],
+      "props": [
+        "boulder"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "interior-cave-route": {
+      "cx": 900,
+      "cy": 920,
+      "w": 960,
+      "h": 720,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "cup",
+        "jar",
+        "cheese"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "sheep-approach": {
+      "cx": 720,
+      "cy": 1080,
+      "w": 1180,
+      "h": 690,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "doc-dawn-stone": {
+      "cx": 960,
+      "cy": 650,
+      "w": 900,
+      "h": 650,
+      "actors": [
+        "polyphemus"
+      ],
+      "props": [
+        "boulder"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "doc-dawn-flock": {
+      "cx": 930,
+      "cy": 890,
+      "w": 920,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s1-walk-back-to-the-ship-framing": {
+      "cx": 800,
+      "cy": 1080,
+      "w": 520,
+      "h": 440,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s2-walk-onto-the-lotus-path-framing": {
+      "cx": 780,
+      "cy": 1263,
+      "w": 660,
+      "h": 530,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s2-an-offer-on-the-path-framing": {
+      "cx": 925.5,
+      "cy": 1277,
+      "w": 681,
+      "h": 502,
+      "actors": [
+        "odysseus",
+        "doros",
+        "islander",
+        "eurylochus"
+      ],
+      "props": [
+        "flower",
+        "ship"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s2-climb-back-onto-the-lotus-ship-framing": {
+      "cx": 780,
+      "cy": 1250,
+      "w": 660,
+      "h": 530,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s2-push-off-from-the-lotus-shore-framing": {
+      "cx": 780,
+      "cy": 1090,
+      "w": 660,
+      "h": 700,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s3-doc-crew-disembarks-together-framing": {
+      "cx": 670,
+      "cy": 1030,
+      "w": 1140,
+      "h": 730,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true,
+      "edgePadding": 24
+    },
+    "odyssey-c4-s3-walk-up-to-the-open-mouth-framing": {
+      "cx": 1220,
+      "cy": 911,
+      "w": 900,
+      "h": 670,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s3-doc-crew-enters-the-mouth-together-framing": {
+      "cx": 1320,
+      "cy": 650,
+      "w": 650,
+      "h": 610,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s3-doc-crew-walks-inside-together-framing": {
+      "cx": 900,
+      "cy": 920,
+      "w": 960,
+      "h": 720,
+      "actors": [
+        "odysseus",
+        "doros",
+        "eurylochus"
+      ],
+      "props": [
+        "cup",
+        "jar",
+        "cheese"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s3-the-shepherd-returns-framing": {
+      "cx": 950,
+      "cy": 689.5,
+      "w": 900,
+      "h": 669,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s3-reach-for-the-entrance-stone-framing": {
+      "cx": 1020,
+      "cy": 650,
+      "w": 860,
+      "h": 560,
+      "actors": [
+        "polyphemus"
+      ],
+      "props": [
+        "boulder"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s3-roll-the-stone-closed-framing": {
+      "cx": 1020,
+      "cy": 650,
+      "w": 860,
+      "h": 560,
+      "actors": [
+        "polyphemus"
+      ],
+      "props": [
+        "boulder"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s3-face-the-strangers-framing": {
+      "cx": 795.5,
+      "cy": 804.5,
+      "w": 651,
+      "h": 509,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "cup",
+        "jar"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-offer-the-wine-framing": {
+      "cx": 849.5,
+      "cy": 870,
+      "w": 611,
+      "h": 400,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "cup"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-the-giant-sleeps-framing": {
+      "cx": 763,
+      "cy": 907,
+      "w": 606,
+      "h": 454,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-walk-to-the-olive-stake-framing": {
+      "cx": 785.5,
+      "cy": 909,
+      "w": 651,
+      "h": 458,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-carry-the-stake-to-the-giant-framing": {
+      "cx": 829.5,
+      "cy": 929,
+      "w": 651,
+      "h": 498,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-draw-back-together-framing": {
+      "cx": 842.5,
+      "cy": 890,
+      "w": 625,
+      "h": 420,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "stake"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s4-the-rams-emerge-beside-the-pen-framing": {
+      "cx": 720,
+      "cy": 1025,
+      "w": 1180,
+      "h": 690,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s5-feel-for-the-entrance-framing": {
+      "cx": 937.5,
+      "cy": 845,
+      "w": 707,
+      "h": 560,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s5-walk-to-the-wool-framing": {
+      "cx": 937.5,
+      "cy": 845,
+      "w": 707,
+      "h": 560,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s5-hide-under-the-rams-framing": {
+      "cx": 971,
+      "cy": 845,
+      "w": 640,
+      "h": 560,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "preserveHeight": true
+    },
+    "odyssey-c4-s5-open-the-stone-at-dawn-framing": {
+      "cx": 960,
+      "cy": 650,
+      "w": 900,
+      "h": 650,
+      "actors": [
+        "polyphemus"
+      ],
+      "props": [
+        "boulder"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s5-doc-sit-beside-the-open-mouth-framing": {
+      "cx": 930,
+      "cy": 870,
+      "w": 920,
+      "h": 650,
+      "actors": [
+        "odysseus",
+        "eurylochus",
+        "polyphemus"
+      ],
+      "props": [
+        "ram",
+        "ram2"
+      ],
+      "landmarks": [],
+      "preserveHeight": true,
+      "preserveWidth": true
+    },
+    "odyssey-c4-s5-get-back-aboard-framing": {
+      "cx": 620,
+      "cy": 1070,
+      "w": 1020,
+      "h": 690,
+      "actors": [
+        "odysseus",
+        "eurylochus"
+      ],
+      "props": [
+        "ship"
+      ],
+      "preserveHeight": true,
+      "preserveWidth": true
+    }
+  },
+  "scenes": [
+    {
+      "id": "odyssey-c4-s1",
+      "chapterId": "chapter-4",
+      "name": "After the War",
+      "atmosphere": {
+        "water": 0.075,
+        "wind": 0.017,
+        "birds": 0.008,
+        "village": 0,
+        "music": 0.007
+      },
+      "steps": [
+        {
+          "id": "odyssey-c4-s1-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "coast",
+            "view": "odyssey-c4-s1-walk-back-to-the-ship-framing",
+            "chapter": 0,
+            "actors": {
+              "odysseus": {
+                "visible": 1,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 720,
+                "y": 1160,
+                "facing": "right",
+                "pose": "walk"
+              },
+              "doros": {
+                "visible": 1,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 825,
+                "y": 1200,
+                "facing": "left",
+                "pose": "walk"
+              },
+              "eurylochus": {
+                "visible": 1,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 930,
+                "y": 1140,
+                "facing": "left",
+                "pose": "walk"
+              },
+              "islander": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0
+              },
+              "polyphemus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0
+              }
+            },
+            "takingWine": 0,
+            "praying": 0,
+            "ship": {
+              "visible": 1
+            },
+            "flower": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "boulder": {
+              "visible": 0
+            },
+            "stake": {
+              "visible": 0
+            },
+            "ram": {
+              "visible": 0
+            },
+            "ram2": {
+              "visible": 0
+            },
+            "cheese": {
+              "visible": 0
+            },
+            "jar": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c4-s1-walk-back-to-the-ship",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 740,
+                "y": 1110,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "eurylochus": {
+                "x": 895,
+                "y": 1105,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s1-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus was telling his story in Alcinous’s hall. In his memory, the war at Troy had just ended, and his crew was still alive."
+        },
+        {
+          "id": "odyssey-c4-s1-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“I thought leaving the war behind would be enough.”",
+          "listener": "eurylochus"
+        },
+        {
+          "id": "odyssey-c4-s1-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Before this departure, they had attacked a town for supplies. Its people fought back. Some of his sailors died."
+        },
+        {
+          "id": "odyssey-c4-s1-remember-the-empty-places",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "bow": 0.7
+              },
+              "doros": {
+                "bow": 0.5
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s1-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Doros, one of the sailors who had fought beside Odysseus, stood with him. Eurylochus was another of his companions."
+        },
+        {
+          "id": "odyssey-c4-s1-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eurylochus",
+          "text": "“The ship is ready.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s1-board-together",
+          "type": "action",
+          "duration": 2300,
+          "effects": {
+            "view": "ship",
+            "actors": {
+              "odysseus": {
+                "x": 652,
+                "y": 970,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "doros": {
+                "x": 740,
+                "y": 970,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "eurylochus": {
+                "x": 828,
+                "y": 970,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "doros",
+            "eurylochus"
+          ]
+        },
+        {
+          "id": "odyssey-c4-s1-settle-inside-the-hull",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 1
+              },
+              "doros": {
+                "onboard": 1
+              },
+              "eurylochus": {
+                "onboard": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s1-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "They climbed aboard. One more departure, and still no homecoming."
+        },
+        {
+          "id": "odyssey-c4-s1-another-course",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "room": "sea",
+            "ship": {
+              "x": 820,
+              "y": 1020
+            },
+            "actors": {
+              "odysseus": {
+                "x": 732,
+                "y": 980
+              },
+              "doros": {
+                "x": 820,
+                "y": 980
+              },
+              "eurylochus": {
+                "x": 908,
+                "y": 980
+              }
+            },
+            "swell": 0.6
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "The departure establishes open water with the complete ship and crew"
+          }
+        },
+        {
+          "id": "odyssey-c4-s1-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The wind carried them off their course. Days passed before they found a quiet place to land."
+        },
+        {
+          "id": "odyssey-c4-s1-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Another shore lay ahead. It would offer something sweeter than hope.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 70,
+      "durationMs": 69221
+    },
+    {
+      "id": "odyssey-c4-s2",
+      "chapterId": "chapter-4",
+      "name": "The Sweetest Forgetting",
+      "atmosphere": {
+        "water": 0.045,
+        "wind": 0.01,
+        "birds": 0.012,
+        "village": 0,
+        "music": 0.008
+      },
+      "steps": [
+        {
+          "id": "odyssey-c4-s2-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "lotus",
+            "view": "lotus-landing",
+            "chapter": 1,
+            "actors": {
+              "odysseus": {
+                "x": 676,
+                "y": 970,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "doros": {
+                "x": 788,
+                "y": 970,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "x": 900,
+                "y": 970,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "islander": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 1030,
+                "y": 1440,
+                "facing": "left",
+                "pose": "walk"
+              },
+              "polyphemus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0
+              }
+            },
+            "takingWine": 0,
+            "praying": 0,
+            "ship": {
+              "visible": 1,
+              "x": 780,
+              "y": 1010
+            },
+            "flower": {
+              "visible": 1,
+              "owner": "islander",
+              "lift": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "boulder": {
+              "visible": 0
+            },
+            "stake": {
+              "visible": 0
+            },
+            "ram": {
+              "visible": 0
+            },
+            "ram2": {
+              "visible": 0
+            },
+            "cheese": {
+              "visible": 0
+            },
+            "jar": {
+              "visible": 0
+            },
+            "night": 0
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-beach-the-lotus-ship",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "ship": {
+              "x": 780,
+              "y": 1220
+            },
+            "actors": {
+              "odysseus": {
+                "x": 676,
+                "y": 1180,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "doros": {
+                "x": 788,
+                "y": 1180,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "x": 900,
+                "y": 1180,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-show-the-lotus-descent",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "view": "odyssey-c4-s2-walk-onto-the-lotus-path-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-step-out-at-the-lotus-shore",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 0
+              },
+              "doros": {
+                "onboard": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-walk-onto-the-lotus-path",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 680,
+                "y": 1510,
+                "pose": "walk",
+                "facing": "front"
+              },
+              "doros": {
+                "x": 810,
+                "y": 1510,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "doros"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-face-the-lotus-path",
+          "type": "action",
+          "duration": 350,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "facing": "right"
+              },
+              "doros": {
+                "facing": "right"
+              },
+              "eurylochus": {
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-an-offer-on-the-path-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s2-an-offer-on-the-path-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-an-offer-on-the-path",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "actors": {
+              "islander": {
+                "x": 930,
+                "y": 1510,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            },
+            "flower": {
+              "visible": 1
+            }
+          },
+          "presence": {
+            "islander": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Right edge of the lotus path",
+              "from": {
+                "x": 1190,
+                "y": 1420
+              }
+            }
+          },
+          "travelFacing": [
+            "islander"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-an-offer-on-the-path-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "lotus-arrival"
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The islander held out a lotus blossom. There was no weapon in her hands, no demand in her voice."
+        },
+        {
+          "id": "odyssey-c4-s2-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "islander",
+          "text": "“You look tired. Stay a little.”",
+          "listener": "doros"
+        },
+        {
+          "id": "odyssey-c4-s2-take-the-lotus",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "view": "lotus-close",
+            "flower": {
+              "owner": "doros"
+            },
+            "actors": {
+              "doros": {
+                "pose": "reach",
+                "facing": "right"
+              },
+              "islander": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-taste-the-flower",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "flower": {
+              "lift": 38
+            },
+            "actors": {
+              "doros": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-the-flower-is-eaten",
+          "type": "action",
+          "duration": 450,
+          "effects": {
+            "flower": {
+              "visible": 0,
+              "lift": 0
+            },
+            "actors": {
+              "doros": {
+                "bow": 0.3
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Doros tasted it. His shoulders loosened. The hurry went out of him."
+        },
+        {
+          "id": "odyssey-c4-s2-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“We should go,” Odysseus said. “The others are waiting.”",
+          "listener": "doros"
+        },
+        {
+          "id": "odyssey-c4-s2-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "doros",
+          "text": "“Let them wait. What is there to hurry toward?”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s2-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The lotus made Doros forget why he wanted to go home. He wanted to stay here instead of returning to Ithaca."
+        },
+        {
+          "id": "odyssey-c4-s2-take-his-companion-by-the-arm",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 755,
+                "y": 1510,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-bring-him-back",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "view": "lotus-leave",
+            "ship": {
+              "visible": 1,
+              "x": 780,
+              "y": 1220
+            },
+            "actors": {
+              "odysseus": {
+                "x": 730,
+                "y": 1340,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "doros": {
+                "x": 785,
+                "y": 1340,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "islander": {
+                "visible": 1
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "doros"
+          ]
+        },
+        {
+          "id": "odyssey-c4-s2-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus took his arm and brought him back toward the ship, though Doros begged to stay."
+        },
+        {
+          "id": "odyssey-c4-s2-p8",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“You can be angry with me on the way home.”",
+          "listener": "doros"
+        },
+        {
+          "id": "odyssey-c4-s2-show-the-waiting-crewman",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "view": "odyssey-c4-s2-climb-back-onto-the-lotus-ship-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-climb-back-onto-the-lotus-ship",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 676,
+                "y": 1180,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "doros": {
+                "x": 788,
+                "y": 1180,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "doros"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-settle-the-lotus-passengers",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 1
+              },
+              "doros": {
+                "onboard": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-show-the-lotus-push-off",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "view": "odyssey-c4-s2-push-off-from-the-lotus-shore-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-push-off-from-the-lotus-shore",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "ship": {
+              "x": 780,
+              "y": 980
+            },
+            "actors": {
+              "odysseus": {
+                "x": 676,
+                "y": 940,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "doros": {
+                "x": 788,
+                "y": 940,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "x": 900,
+                "y": 940,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-leave-the-lotus-island",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "room": "sea",
+            "view": "ship",
+            "ship": {
+              "x": 820,
+              "y": 1020
+            },
+            "actors": {
+              "odysseus": {
+                "x": 732,
+                "y": 980,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "doros": {
+                "x": 820,
+                "y": 980,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "x": 908,
+                "y": 980,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "islander": {
+                "visible": 0
+              }
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "The complete crew sails away from the lotus island"
+          }
+        },
+        {
+          "id": "odyssey-c4-s2-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He had saved his companion from forgetting. On the next shore, he would forget to listen."
+        }
+      ],
+      "estimatedSeconds": 91,
+      "videoExport": {
+        "openingThrough": "odyssey-c4-s2-beach-the-lotus-ship"
+      },
+      "durationMs": 90572
+    },
+    {
+      "id": "odyssey-c4-s3",
+      "chapterId": "chapter-4",
+      "name": "The Open Cave",
+      "atmosphere": {
+        "water": 0.008,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0,
+        "music": 0.003
+      },
+      "steps": [
+        {
+          "id": "odyssey-c4-s3-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "caveBeach",
+            "view": "cave-landing",
+            "chapter": 2,
+            "actors": {
+              "odysseus": {
+                "x": 372,
+                "y": 790,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "doros": {
+                "x": 460,
+                "y": 790,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "x": 548,
+                "y": 790,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "islander": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0
+              },
+              "polyphemus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 1170,
+                "y": 680,
+                "facing": "left",
+                "pose": "walk"
+              }
+            },
+            "takingWine": 0,
+            "praying": 0,
+            "ship": {
+              "visible": 1,
+              "x": 460,
+              "y": 830
+            },
+            "flower": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 1,
+              "owner": "odysseus",
+              "lift": 0
+            },
+            "boulder": {
+              "x": 870,
+              "y": 755,
+              "visible": 0
+            },
+            "stake": {
+              "visible": 0
+            },
+            "ram": {
+              "visible": 0
+            },
+            "ram2": {
+              "visible": 0
+            },
+            "cheese": {
+              "visible": 0
+            },
+            "jar": {
+              "visible": 0
+            },
+            "night": 0,
+            "blind": 0,
+            "wineLevel": 1
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-land-at-the-cave-shore",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "ship": {
+              "x": 460,
+              "y": 1060
+            },
+            "actors": {
+              "odysseus": {
+                "x": 372,
+                "y": 1020,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "doros": {
+                "x": 460,
+                "y": 1020,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              },
+              "eurylochus": {
+                "x": 548,
+                "y": 1020,
+                "visible": 1,
+                "onboard": 1,
+                "bow": 0,
+                "hiddenUnder": 0,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-show-the-cave-descent",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "view": "odyssey-c4-s3-doc-crew-disembarks-together-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-step-out-at-the-cave-shore",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 0
+              },
+              "doros": {
+                "onboard": 0
+              },
+              "eurylochus": {
+                "onboard": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-doc-crew-disembarks-together",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 850,
+                "y": 990,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "eurylochus": {
+                "x": 1000,
+                "y": 1050,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "doros": {
+                "x": 1080,
+                "y": 1110,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus",
+            "doros"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 350,
+                "y": 1110
+              },
+              {
+                "x": 850,
+                "y": 1110
+              },
+              {
+                "x": 850,
+                "y": 990
+              }
+            ],
+            "eurylochus": [
+              {
+                "x": 570,
+                "y": 1160
+              },
+              {
+                "x": 1000,
+                "y": 1160
+              },
+              {
+                "x": 1000,
+                "y": 1050
+              }
+            ],
+            "doros": [
+              {
+                "x": 460,
+                "y": 1230
+              },
+              {
+                "x": 1080,
+                "y": 1230
+              },
+              {
+                "x": 1080,
+                "y": 1110
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-show-the-sandy-cave-path",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "view": "odyssey-c4-s3-walk-up-to-the-open-mouth-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-walk-up-to-the-open-mouth",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 1150,
+                "y": 730,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "eurylochus": {
+                "x": 1300,
+                "y": 790,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "doros": {
+                "x": 1450,
+                "y": 850,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "doros",
+            "eurylochus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-show-the-dark-threshold",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "view": "odyssey-c4-s3-doc-crew-enters-the-mouth-together-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-doc-crew-enters-the-mouth-together",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 1190,
+                "y": 530,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "eurylochus": {
+                "x": 1310,
+                "y": 545,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "doros": {
+                "x": 1410,
+                "y": 595,
+                "visible": 0,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus",
+            "doros"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 1190,
+                "y": 650
+              },
+              {
+                "x": 1190,
+                "y": 530
+              }
+            ],
+            "eurylochus": [
+              {
+                "x": 1310,
+                "y": 690
+              },
+              {
+                "x": 1310,
+                "y": 545
+              }
+            ],
+            "doros": [
+              {
+                "x": 1410,
+                "y": 705
+              },
+              {
+                "x": 1410,
+                "y": 595
+              }
+            ]
+          },
+          "presence": {
+            "odysseus": {
+              "kind": "exit",
+              "fadeMs": 500,
+              "zone": "Dark cave opening"
+            },
+            "doros": {
+              "kind": "exit",
+              "fadeMs": 500,
+              "zone": "Dark cave opening"
+            },
+            "eurylochus": {
+              "kind": "exit",
+              "fadeMs": 500,
+              "zone": "Dark cave opening"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-inside-the-open-cave",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "room": "cave",
+            "view": "cave-entry",
+            "chapter": 2,
+            "actors": {
+              "odysseus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 1110,
+                "y": 715,
+                "facing": "left",
+                "pose": "walk"
+              },
+              "doros": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 1230,
+                "y": 745,
+                "facing": "left",
+                "pose": "walk"
+              },
+              "eurylochus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 1120,
+                "y": 875,
+                "facing": "left",
+                "pose": "walk"
+              },
+              "islander": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0
+              },
+              "polyphemus": {
+                "visible": 0,
+                "bow": 0,
+                "seated": 0,
+                "hiddenUnder": 0,
+                "onboard": 0,
+                "x": 1170,
+                "y": 680,
+                "facing": "left",
+                "pose": "walk"
+              }
+            },
+            "takingWine": 0,
+            "praying": 0,
+            "ship": {
+              "visible": 0
+            },
+            "flower": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 1,
+              "owner": "odysseus",
+              "lift": 0
+            },
+            "boulder": {
+              "visible": 1,
+              "x": 870,
+              "y": 755
+            },
+            "stake": {
+              "x": 520,
+              "y": 1110,
+              "visible": 1,
+              "owner": null,
+              "lift": 0
+            },
+            "ram": {
+              "visible": 0,
+              "x": 300,
+              "y": 1140,
+              "facing": "right"
+            },
+            "ram2": {
+              "visible": 0,
+              "x": 200,
+              "y": 1140,
+              "facing": "right"
+            },
+            "cheese": {
+              "visible": 1
+            },
+            "jar": {
+              "x": 530,
+              "y": 1035,
+              "visible": 1,
+              "owner": null
+            },
+            "night": 0,
+            "blind": 0
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "Establish the next scene with its existing cast"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-doc-show-the-interior-crew-route",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "view": "odyssey-c4-s3-doc-crew-walks-inside-together-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-doc-crew-walks-inside-together",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 720,
+                "y": 930,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              },
+              "eurylochus": {
+                "x": 620,
+                "y": 940,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "doros": {
+                "x": 815,
+                "y": 900,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus",
+            "doros"
+          ],
+          "paths": {
+            "odysseus": [
+              {
+                "x": 900,
+                "y": 850
+              },
+              {
+                "x": 720,
+                "y": 930
+              }
+            ],
+            "eurylochus": [
+              {
+                "x": 1120,
+                "y": 1100
+              },
+              {
+                "x": 620,
+                "y": 1100
+              },
+              {
+                "x": 620,
+                "y": 940
+              }
+            ],
+            "doros": [
+              {
+                "x": 1020,
+                "y": 780
+              },
+              {
+                "x": 815,
+                "y": 900
+              }
+            ]
+          },
+          "presence": {
+            "odysseus": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Cave mouth"
+            },
+            "doros": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Cave mouth"
+            },
+            "eurylochus": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Cave mouth"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-enter-the-open-cave-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "cave-entry"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "After landing and walking into the cave, they found baskets of cheese. They decided to wait for the shepherd who lived here."
+        },
+        {
+          "id": "odyssey-c4-s3-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eurylochus",
+          "text": "“Take what we need and go. We should not wait for him.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s3-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Perhaps he will offer us shelter. I want to meet him.”",
+          "listener": "eurylochus"
+        },
+        {
+          "id": "odyssey-c4-s3-the-shepherd-returns-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s3-the-shepherd-returns-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-the-shepherd-returns",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "actors": {
+              "polyphemus": {
+                "x": 1080,
+                "y": 780,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "front"
+              }
+            },
+            "boulder": {
+              "visible": 1
+            }
+          },
+          "presence": {
+            "polyphemus": {
+              "kind": "enter",
+              "fadeMs": 350,
+              "zone": "Cave entrance"
+            }
+          },
+          "travelFacing": [
+            "polyphemus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-the-shepherd-returns-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "cave-welcome"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-show-the-stone-on-the-right",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "view": "odyssey-c4-s3-reach-for-the-entrance-stone-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-reach-for-the-entrance-stone",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "actors": {
+              "polyphemus": {
+                "x": 675,
+                "y": 810,
+                "facing": "left",
+                "pose": "walk"
+              }
+            }
+          },
+          "travelFacing": [
+            "polyphemus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-roll-the-stone-closed-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s3-roll-the-stone-closed-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-roll-the-stone-closed",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "boulder": {
+              "x": 1160,
+              "y": 755
+            },
+            "actors": {
+              "polyphemus": {
+                "x": 995,
+                "y": 810,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "polyphemus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-roll-the-stone-closed-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "door"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The shepherd was Polyphemus, a giant with one eye. He rolled a huge stone across the entrance, trapping the men inside."
+        },
+        {
+          "id": "odyssey-c4-s3-face-the-strangers-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s3-face-the-strangers-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-face-the-strangers",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "polyphemus": {
+                "x": 990,
+                "y": 940,
+                "pose": "walk",
+                "facing": "front"
+              }
+            }
+          },
+          "travelFacing": [
+            "polyphemus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-face-the-strangers-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "cave-close"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“We are travelers. We ask for the kindness owed to guests.”",
+          "listener": "polyphemus"
+        },
+        {
+          "id": "odyssey-c4-s3-p6",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "polyphemus",
+          "text": "“You speak as if your customs rule my cave.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s3-doros-is-taken",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "actors": {
+              "doros": {
+                "x": 965,
+                "y": 950,
+                "visible": 0
+              },
+              "odysseus": {
+                "bow": 1
+              },
+              "eurylochus": {
+                "bow": 1
+              }
+            },
+            "night": 0.35
+          },
+          "presence": {
+            "doros": {
+              "kind": "loss",
+              "fadeMs": 350,
+              "zone": "Taken into the giant’s reach"
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-p7",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The giant killed Doros. The men who remained drew together. This was no shelter."
+        },
+        {
+          "id": "odyssey-c4-s3-show-the-only-way-out",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "door"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Even if they killed him, they could not move that stone. They needed him alive to open the way."
+        },
+        {
+          "id": "odyssey-c4-s3-look-toward-the-wine",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "view": "wine"
+          }
+        },
+        {
+          "id": "odyssey-c4-s3-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus had brought wine ashore. Now it was the beginning of a desperate plan.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 110,
+      "videoExport": {
+        "openingThrough": "odyssey-c4-s3-land-at-the-cave-shore"
+      },
+      "durationMs": 109721
+    },
+    {
+      "id": "odyssey-c4-s4",
+      "chapterId": "chapter-4",
+      "name": "Nobody",
+      "atmosphere": {
+        "water": 0.008,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0,
+        "music": 0.003
+      },
+      "steps": [
+        {
+          "id": "odyssey-c4-s4-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "wine",
+            "chapter": 3,
+            "takingWine": 1,
+            "cup": {
+              "visible": 1,
+              "owner": "odysseus",
+              "lift": 0
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-offer-the-wine-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s4-offer-the-wine-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-offer-the-wine",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 835,
+                "y": 950,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-offer-the-wine-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "wine"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-pass-the-cup",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "cup": {
+              "owner": "polyphemus"
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-drink-the-wine",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "cup": {
+              "lift": 55
+            },
+            "wineLevel": 0
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-lower-the-cup",
+          "type": "action",
+          "duration": 450,
+          "effects": {
+            "cup": {
+              "lift": 0
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Polyphemus drank the strong wine. The cup looked small in his hand."
+        },
+        {
+          "id": "odyssey-c4-s4-p2",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "polyphemus",
+          "text": "“More. And tell me your name.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s4-p3",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“Nobody. That is what they call me.”",
+          "listener": "polyphemus"
+        },
+        {
+          "id": "odyssey-c4-s4-p4",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "polyphemus",
+          "text": "“Then Nobody will be the last of his companions I eat.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s4-doc-frame-the-sleeping-giant",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s4-the-giant-sleeps-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-the-giant-sleeps",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "cup": {
+              "owner": null,
+              "x": 1035,
+              "y": 998,
+              "lift": 0
+            },
+            "actors": {
+              "polyphemus": {
+                "seated": 1,
+                "pose": "sit",
+                "bow": 0.2
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-walk-to-the-olive-stake-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s4-walk-to-the-olive-stake-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-walk-to-the-olive-stake",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 580,
+                "y": 1120,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 835,
+                "y": 1120
+              },
+              {
+                "x": 580,
+                "y": 1120
+              }
+            ]
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-walk-to-the-olive-stake-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "stake"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-lift-the-olive-stake",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "stake": {
+              "owner": "odysseus",
+              "visible": 1,
+              "lift": 0
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-p5",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "At last, the wine brought sleep. Odysseus lifted the sharpened olive stake. Eurylochus kept watch."
+        },
+        {
+          "id": "odyssey-c4-s4-carry-the-stake-to-the-giant-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s4-carry-the-stake-to-the-giant-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-carry-the-stake-to-the-giant",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 850,
+                "y": 1005,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 700,
+                "y": 1160
+              },
+              {
+                "x": 850,
+                "y": 1005
+              }
+            ]
+          },
+          "travelFacing": [
+            "odysseus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-carry-the-stake-to-the-giant-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "stake"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-a-single-desperate-thrust",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "stake": {
+              "lift": -14
+            },
+            "blind": 1,
+            "actors": {
+              "odysseus": {
+                "x": 875,
+                "y": 1005,
+                "pose": "reach",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-lower-the-stake-to-the-ground",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "stake": {
+              "owner": null,
+              "x": 900,
+              "y": 1045,
+              "lift": 0
+            },
+            "actors": {
+              "odysseus": {
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-draw-back-together-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s4-draw-back-together-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-draw-back-together",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "blind": 1,
+            "actors": {
+              "odysseus": {
+                "x": 755,
+                "y": 1030,
+                "pose": "walk",
+                "facing": "left"
+              },
+              "eurylochus": {
+                "x": 660,
+                "y": 1030,
+                "pose": "walk",
+                "facing": "front"
+              },
+              "polyphemus": {
+                "seated": 0,
+                "bow": 1
+              }
+            },
+            "night": 0,
+            "takingWine": 0
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-draw-back-together-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "stake"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "They struck his single eye and drew back. Blinded, Polyphemus called to the Cyclopes outside."
+        },
+        {
+          "id": "odyssey-c4-s4-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "polyphemus",
+          "text": "“Nobody is hurting me!”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s4-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The other giants thought he meant that no person was attacking him. Odysseus’s false name had fooled them, so they did not help."
+        },
+        {
+          "id": "odyssey-c4-s4-turn-toward-the-sheep",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "view": "odyssey-c4-s4-the-rams-emerge-beside-the-pen-framing",
+            "actors": {
+              "odysseus": {
+                "facing": "right"
+              },
+              "eurylochus": {
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-the-rams-emerge-beside-the-pen",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "ram": {
+              "x": 500,
+              "y": 1140,
+              "visible": 1,
+              "facing": "right"
+            },
+            "ram2": {
+              "x": 350,
+              "y": 1140,
+              "visible": 1,
+              "facing": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-the-rams-walk-into-the-cave",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "ram": {
+              "x": 1040,
+              "y": 1050
+            },
+            "ram2": {
+              "x": 875,
+              "y": 1050
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-the-rams-settle-beside-the-men",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "view": "escape"
+          }
+        },
+        {
+          "id": "odyssey-c4-s4-p9",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "The name had bought them time. It had not moved the stone."
+        },
+        {
+          "id": "odyssey-c4-s4-p10",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Beside them, the rams waited for morning. Odysseus watched their heavy wool.",
+          "pauseMs": 1800
+        }
+      ],
+      "estimatedSeconds": 96,
+      "durationMs": 95730
+    },
+    {
+      "id": "odyssey-c4-s5",
+      "chapterId": "chapter-4",
+      "name": "The Name He Gave Away",
+      "atmosphere": {
+        "water": 0.008,
+        "wind": 0.008,
+        "birds": 0,
+        "village": 0,
+        "music": 0.003
+      },
+      "steps": [
+        {
+          "id": "odyssey-c4-s5-frame",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "escape",
+            "chapter": 4
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-feel-for-the-entrance-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s5-feel-for-the-entrance-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-feel-for-the-entrance",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "polyphemus": {
+                "x": 1215,
+                "y": 825,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "polyphemus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-feel-for-the-entrance-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "escape"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-walk-to-the-wool-show-the-route",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s5-walk-to-the-wool-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-walk-to-the-wool",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 1040,
+                "y": 1050,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "eurylochus": {
+                "x": 875,
+                "y": 1050,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-walk-to-the-wool-return-to-the-conversation",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "escape"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-frame-the-wool-at-ground-level",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "view": "odyssey-c4-s5-hide-under-the-rams-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-hide-under-the-rams",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "hiddenUnder": 1
+              },
+              "eurylochus": {
+                "hiddenUnder": 1
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-doc-frame-the-dawn-stone",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "view": "odyssey-c4-s5-open-the-stone-at-dawn-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-open-the-stone-at-dawn",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "boulder": {
+              "x": 870,
+              "y": 755
+            },
+            "actors": {
+              "polyphemus": {
+                "x": 920,
+                "y": 825,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "polyphemus"
+          ]
+        },
+        {
+          "id": "odyssey-c4-s5-doc-frame-the-flock-at-dawn",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "view": "odyssey-c4-s5-doc-sit-beside-the-open-mouth-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-doc-sit-beside-the-open-mouth",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "actors": {
+              "polyphemus": {
+                "x": 1030,
+                "y": 805,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "travelFacing": [
+            "polyphemus"
+          ],
+          "paths": {
+            "polyphemus": [
+              {
+                "x": 1030,
+                "y": 850
+              },
+              {
+                "x": 1030,
+                "y": 805
+              }
+            ]
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-doc-feel-the-flock-from-the-mouth",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "actors": {
+              "polyphemus": {
+                "seated": 1,
+                "pose": "sit"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-p1",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "At dawn, Polyphemus moved the stone to let his flock out. The men clung beneath the rams."
+        },
+        {
+          "id": "odyssey-c4-s5-pass-beneath-his-hand",
+          "type": "action",
+          "duration": 3500,
+          "effects": {
+            "ram": {
+              "x": 1140,
+              "y": 755
+            },
+            "ram2": {
+              "x": 1155,
+              "y": 690
+            },
+            "actors": {
+              "odysseus": {
+                "x": 1140,
+                "y": 755
+              },
+              "eurylochus": {
+                "x": 1155,
+                "y": 690
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-p2",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "He felt along the animals’ backs. The wool above them passed beneath his hand."
+        },
+        {
+          "id": "odyssey-c4-s5-reach-the-open-air",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "room": "caveBeach",
+            "view": "outside",
+            "ship": {
+              "visible": 1,
+              "x": 460,
+              "y": 1060
+            },
+            "ram": {
+              "x": 980,
+              "y": 1060,
+              "facing": "left"
+            },
+            "ram2": {
+              "x": 810,
+              "y": 1060,
+              "facing": "left"
+            },
+            "boulder": {
+              "visible": 0
+            },
+            "actors": {
+              "odysseus": {
+                "x": 980,
+                "y": 1060
+              },
+              "eurylochus": {
+                "x": 810,
+                "y": 1060
+              },
+              "polyphemus": {
+                "visible": 0
+              }
+            },
+            "stake": {
+              "visible": 0
+            },
+            "jar": {
+              "visible": 0
+            },
+            "cup": {
+              "visible": 0
+            },
+            "cheese": {
+              "visible": 0
+            },
+            "takingWine": 0
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700,
+            "reason": "From the cave to the open coast"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-let-go-of-the-wool",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "hiddenUnder": 0,
+                "x": 1030,
+                "y": 1130
+              },
+              "eurylochus": {
+                "hiddenUnder": 0,
+                "x": 690,
+                "y": 1130
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-p3",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Outside, they let go of the wool. The ship was still waiting."
+        },
+        {
+          "id": "odyssey-c4-s5-show-the-survivors-boarding-route",
+          "type": "action",
+          "duration": 1600,
+          "effects": {
+            "view": "odyssey-c4-s5-get-back-aboard-framing"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-get-back-aboard",
+          "type": "action",
+          "duration": 2600,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "x": 396,
+                "y": 1020,
+                "pose": "walk",
+                "facing": "back"
+              },
+              "eurylochus": {
+                "x": 524,
+                "y": 1020,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "paths": {
+            "odysseus": [
+              {
+                "x": 1030,
+                "y": 1240
+              },
+              {
+                "x": 380,
+                "y": 1240
+              },
+              {
+                "x": 380,
+                "y": 1020
+              }
+            ],
+            "eurylochus": [
+              {
+                "x": 735,
+                "y": 1150
+              },
+              {
+                "x": 540,
+                "y": 1150
+              },
+              {
+                "x": 540,
+                "y": 1020
+              }
+            ]
+          },
+          "travelFacing": [
+            "odysseus",
+            "eurylochus"
+          ],
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-settle-the-survivors-inside",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "onboard": 1
+              },
+              "eurylochus": {
+                "onboard": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-show-the-cave-push-off",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "view": "cave-launch"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-push-off-from-the-cave-shore",
+          "type": "action",
+          "duration": 4000,
+          "effects": {
+            "ship": {
+              "x": -600,
+              "y": 450
+            },
+            "actors": {
+              "odysseus": {
+                "x": -664,
+                "y": 410
+              },
+              "eurylochus": {
+                "x": -536,
+                "y": 410
+              }
+            }
+          },
+          "camera": {
+            "followProp": "ship"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-leave-the-cave-behind",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "room": "sea",
+            "ship": {
+              "x": 820,
+              "y": 1010
+            },
+            "actors": {
+              "odysseus": {
+                "x": 756,
+                "y": 970
+              },
+              "eurylochus": {
+                "x": 884,
+                "y": 970
+              }
+            },
+            "swell": 0.35,
+            "ram": {
+              "visible": 0
+            },
+            "ram2": {
+              "visible": 0
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "Cut the complete shot between the departing ship and this same cave shore"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-p4",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "They sailed clear. It should have been enough to be alive."
+        },
+        {
+          "id": "odyssey-c4-s5-p5",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "eurylochus",
+          "text": "“Keep your voice down. Let him lose us.”",
+          "listener": "odysseus"
+        },
+        {
+          "id": "odyssey-c4-s5-turn-back-to-the-shore",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "actors": {
+              "odysseus": {
+                "facing": "back",
+                "pose": "reach"
+              }
+            }
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-p6",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "But Odysseus turned toward the shore. Nobody was a name he could no longer bear."
+        },
+        {
+          "id": "odyssey-c4-s5-p7",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "odysseus",
+          "text": "“It was Odysseus who escaped you! Son of Laertes, from Ithaca!”",
+          "listener": "polyphemus",
+          "pauseMs": 1700
+        },
+        {
+          "id": "odyssey-c4-s5-the-prayer-from-the-shore",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "room": "caveBeach",
+            "view": "prayer",
+            "praying": 1,
+            "ship": {
+              "visible": 0
+            },
+            "actors": {
+              "odysseus": {
+                "visible": 0
+              },
+              "eurylochus": {
+                "visible": 0
+              },
+              "polyphemus": {
+                "x": 1250,
+                "y": 730,
+                "visible": 1,
+                "seated": 0,
+                "pose": "idle",
+                "facing": "front",
+                "bow": 0
+              }
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "Cut the complete shot between the departing ship and this same cave shore"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-p8",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Polyphemus prayed to his father, Poseidon, the god of the sea. Because Odysseus had shouted his real name, the giant could name him."
+        },
+        {
+          "id": "odyssey-c4-s5-p9",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "polyphemus",
+          "text": "“If he must reach home, let him reach it late, alone, and in another man’s ship.”",
+          "pauseMs": 1800
+        },
+        {
+          "id": "odyssey-c4-s5-carry-the-name-onward",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "room": "sea",
+            "view": "ship",
+            "praying": 0,
+            "ship": {
+              "visible": 1
+            },
+            "actors": {
+              "polyphemus": {
+                "visible": 0
+              },
+              "odysseus": {
+                "visible": 1,
+                "facing": "front",
+                "bow": 0.5
+              },
+              "eurylochus": {
+                "visible": 1,
+                "facing": "left"
+              }
+            },
+            "swell": 0.6
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 900,
+            "reason": "Cut the complete shot between the departing ship and this same cave shore"
+          }
+        },
+        {
+          "id": "odyssey-c4-s5-p10",
+          "type": "text",
+          "kind": "narration",
+          "who": null,
+          "text": "Odysseus had escaped, but Poseidon heard his son’s prayer. The angry sea god would make his journey home harder.",
+          "pauseMs": 2100
+        },
+        {
+          "id": "odyssey-c4-end",
+          "type": "end"
+        }
+      ],
+      "estimatedSeconds": 120,
+      "durationMs": 119241
+    }
+  ],
+  "causalRevision": {
+    "version": 1,
+    "scope": "Child-readable cause, time, place and cast continuity",
+    "routePlans": []
+  },
+  "durationMs": 484485,
+  "documentRevision": {
+    "version": 1,
+    "source": "Correciones visuales.docx",
+    "date": "2026-10-14",
+    "scope": "Requested visual, motion and narration corrections"
+  }
+}

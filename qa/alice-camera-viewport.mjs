@@ -1,0 +1,13 @@
+import {officialLayouts,officialSizes} from './official-layouts.mjs';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {launch,openCase} from './helpers/browser.mjs';
+import {storyCases} from './helpers/story-cases.mjs';
+import {inspectViewport} from './checks/viewport-coverage.mjs';
+const dir='.artifacts/qa/alice-in-wonderland/camera-trial',sizes=officialSizes;
+const usual=([w,h])=>w>=360&&h>=600&&h/w<=2.6&&w/h<=2.4,report={scope:'Authorized close-camera trial; full observed sweep retained, usual-layout acceptance inherited from panorama decision',errors:[],resources:[],chapters:[]},b=await launch();
+try{for(const item of (await storyCases()).filter(x=>x.slug==='alice-in-wonderland')){const {page,context}=await openCase(b,item,{width:390,height:844},report);await page.evaluate(()=>document.querySelector('#settings-modal').showModal());await page.selectOption('#alice-camera-preset','all');await page.evaluate(()=>document.querySelector('#settings-modal').close());await page.evaluate(code=>window.inspectTrialViewport=(0,eval)('('+code+')'),inspectViewport.toString());const row={chapter:item.chapter.id,layouts:[]};
+ for(const [width,height]of sizes){await page.setViewportSize({width,height});await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));const states=await page.evaluate(()=>{const s=qaScene,e=s.reader,rows=[];for(const p of e.story.steps.filter(p=>p.type==='text'&&(e.story.availableChapter==='chapter-2'||p.sceneIndex>=3))){e.start(p.id);e.revealed=p.text.length;e.paused=true;e.onChange('back');s.draw(0,true);s.game.step(performance.now(),0);const v=inspectTrialViewport(s);rows.push({id:p.id,issues:v.issues,clearance:Math.min(...v.bodies.map(b=>b.captionClearance))});}return rows;});row.layouts.push({width,height,accepted:usual([width,height]),states:states.length,minimumClearance:Math.min(...states.map(s=>s.clearance)),issues:states.filter(s=>s.issues.length)});}
+ report.chapters.push(row);await context.close();await fs.writeFile(dir+'/viewport.json',JSON.stringify(report,null,2));console.log(JSON.stringify({chapter:row.chapter,layouts:row.layouts.length,acceptedIssues:row.layouts.filter(l=>l.accepted).reduce((n,l)=>n+l.issues.length,0)}));}
+ report.acceptedIssues=report.chapters.flatMap(c=>c.layouts).filter(l=>l.accepted).reduce((n,l)=>n+l.issues.length,0);report.passed=!report.acceptedIssues&&!report.errors.length&&!report.resources.length;
+}finally{await b.close();await fs.writeFile(dir+'/viewport.json',JSON.stringify(report,null,2));}assert(report.passed);console.log('PASS close-camera viewport sweep in approved usual scope');

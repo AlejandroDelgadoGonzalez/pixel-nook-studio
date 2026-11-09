@@ -1,0 +1,6149 @@
+{
+  "schemaVersion": 1,
+  "id": "alice-in-wonderland-v1",
+  "renderer": "alice-riverbank",
+  "title": "Alice in Wonderland",
+  "intro": "Down the Rabbit-Hole",
+  "ending": "Chapter 1 complete. Alice is safely afloat, with another swimmer nearby.",
+  "description": "From the riverbank to the Pool of Tears.",
+  "stageLabel": "Alice and her sister beside the river",
+  "episodes": true,
+  "timing": {
+    "characterMs": 27,
+    "wordMs": 440,
+    "minimumHoldMs": 2000,
+    "linePauseMs": 1800
+  },
+  "ambientAudio": {
+    "type": "silent",
+    "gain": 0
+  },
+  "assets": {
+    "alice": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+    "sister": "/stories/alice-in-wonderland/assets/atlases/sister-master-atlas.png",
+    "white-rabbit": "/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+    "props": "/stories/alice-in-wonderland/assets/atlases/props-s1-v1.png",
+    "riverbank": "/stories/alice-in-wonderland/assets/environments/riverbank-panorama-v6.png",
+    "tunnel-well": "/stories/alice-in-wonderland/assets/environments/tunnel-well-panorama-s3-v1.png",
+    "s4-1": "/stories/alice-in-wonderland/assets/atlases/props-s4-v1.png",
+    "s4-2": "/stories/alice-in-wonderland/assets/environments/upper-shelf-empty-s4-v1.png",
+    "s4-3": "/stories/alice-in-wonderland/assets/environments/well-bottom-panorama-s4-v1.png",
+    "s4-5": "/stories/alice-in-wonderland/assets/environments/well-junction-s4-v1.png",
+    "s4-wall-clean": "/stories/alice-in-wonderland/assets/environments/well-wall-clean-s4-v1.png",
+    "s5-ground": "/stories/alice-in-wonderland/assets/environments/well-corridor-panorama-s5-v1.png",
+    "hall-background": "/stories/alice-in-wonderland/assets/environments/hall-of-doors-panorama-c1-s3-v1.png",
+    "hall-props": "/stories/alice-in-wonderland/assets/atlases/hall-props-c1-s3-v1.png",
+    "drink-cork": "/stories/alice-in-wonderland/assets/atlases/drink-me-props-c1-s4-v1.png",
+    "drink-box-closed": "/stories/alice-in-wonderland/assets/atlases/drink-me-props-c1-s4-v1.png",
+    "drink-box-base": "/stories/alice-in-wonderland/assets/atlases/drink-me-props-c1-s4-v1.png",
+    "drink-box-lid-open": "/stories/alice-in-wonderland/assets/atlases/drink-me-props-c1-s4-v1.png",
+    "drink-cake": "/stories/alice-in-wonderland/assets/atlases/drink-me-props-c1-s4-v1.png",
+    "drink-bottle-open-full": "/stories/alice-in-wonderland/assets/atlases/bottle-states-c1-s4-v1.png",
+    "drink-bottle-open-empty": "/stories/alice-in-wonderland/assets/atlases/bottle-states-c1-s4-v1.png",
+    "eat-fan": "/stories/alice-in-wonderland/assets/atlases/eat-me-props-c1-s5-v1.png",
+    "eat-gloves": "/stories/alice-in-wonderland/assets/atlases/eat-me-props-c1-s5-v1.png",
+    "eat-tear": "/stories/alice-in-wonderland/assets/atlases/eat-me-props-c1-s5-v1.png",
+    "eat-first-tears": "/stories/alice-in-wonderland/assets/atlases/eat-me-props-c1-s5-v1.png",
+    "pool-tear-pool": "/stories/alice-in-wonderland/assets/atlases/pool-water-c1-s6-v2.png",
+    "pool-left-door-open": "/stories/alice-in-wonderland/assets/atlases/pool-door-c1-s6-v1.png",
+    "canonical-dodo": "/stories/alice-in-wonderland/assets/atlases/dodo-master-atlas.png",
+    "canonical-lory": "/stories/alice-in-wonderland/assets/atlases/lory-master-atlas.png",
+    "canonical-eaglet": "/stories/alice-in-wonderland/assets/atlases/eaglet-master-atlas.png",
+    "canonical-mouse": "/stories/alice-in-wonderland/assets/atlases/mouse-master-atlas.png"
+  },
+  "initialState": {
+    "actors": {
+      "alice": {
+        "x": 680,
+        "y": 690,
+        "visible": 1,
+        "facing": "right",
+        "pose": "idle"
+      },
+      "sister": {
+        "x": 810,
+        "y": 650,
+        "visible": 1,
+        "facing": "left",
+        "pose": "idle"
+      },
+      "white-rabbit": {
+        "x": 590,
+        "y": 412,
+        "visible": 0,
+        "facing": "right",
+        "pose": "idle"
+      }
+    },
+    "staging": {
+      "alice": "seated-book",
+      "sister": "seated-reading",
+      "rabbit": "right"
+    },
+    "watch": {
+      "owner": "white-rabbit",
+      "visible": 0,
+      "state": "in-pocket"
+    },
+    "book": {
+      "owner": "sister",
+      "visible": 1
+    },
+    "chapter": 0,
+    "view": "s1-held",
+    "environment": "riverbank",
+    "s3": {
+      "falling": false,
+      "clodFall": 0,
+      "clodsVisible": false,
+      "hookMs": 0
+    },
+    "jar": {
+      "owner": null,
+      "state": "upper-fixed",
+      "orientation": "upright",
+      "visible": 1
+    },
+    "s4": {
+      "shot": "upper",
+      "landed": false
+    },
+    "s5": {
+      "shot": "landing"
+    },
+    "hall": {
+      "pose": "carry-key",
+      "shot": "entry",
+      "curtain": 0,
+      "door": 0,
+      "key": {
+        "owner": null
+      },
+      "roomLock": 0
+    },
+    "drink": {
+      "active": false,
+      "pose": "standing-steady",
+      "face": "left",
+      "magicScale": 1,
+      "bottleOwner": "table",
+      "bottleEmpty": 0,
+      "bottleGrip": "neck",
+      "cork": 0,
+      "angle": 0,
+      "boxX": 856.4484011940299,
+      "boxY": 690,
+      "boxOpen": 0,
+      "shot": "inherit"
+    },
+    "eat": {
+      "active": false,
+      "pose": "inherit",
+      "face": "left",
+      "cake": {
+        "owner": "box",
+        "amount": 1
+      },
+      "keyLift": 0,
+      "cryTime": 0,
+      "rabbitLook": false
+    },
+    "pool": {
+      "active": false,
+      "phase": "inherit",
+      "water": 0,
+      "door": 0,
+      "fan": "rabbit",
+      "gloves": "rabbit",
+      "mouse": 0,
+      "mouseProgress": 0,
+      "swim": 0
+    }
+  },
+  "characters": {
+    "alice": {
+      "name": "Alice",
+      "role": "A curious reader",
+      "color": "#f4d488"
+    },
+    "sister": {
+      "name": "Sister",
+      "role": "Alice’s sister",
+      "color": "#edbe9f"
+    },
+    "white-rabbit": {
+      "name": "White Rabbit",
+      "role": "A hurried passerby",
+      "color": "#e2e8e3"
+    }
+  },
+  "videoExport": {
+    "logoDurationMs": 3000,
+    "captionFadeMs": 450,
+    "defaultMargins": {
+      "top": 4,
+      "right": 8,
+      "bottom": 3,
+      "left": 3
+    },
+    "marginMinimums": {
+      "bottom": 0
+    }
+  },
+  "scenes": [
+    {
+      "id": "alice-c1-riverbank",
+      "name": "A Small Surprise",
+      "atmosphere": {
+        "water": 0,
+        "wind": 0,
+        "birds": 0,
+        "village": 0,
+        "music": 0
+      },
+      "videoExport": {
+        "closingHook": {
+          "from": "alice-c1-s2-hook-arrival",
+          "through": "alice-c1-s2-hook-torso",
+          "durationMs": 3000
+        }
+      },
+      "steps": [
+        {
+          "id": "alice-c1-s1-establish",
+          "type": "action",
+          "duration": 600,
+          "effects": {},
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s1-narration",
+          "type": "text",
+          "text": "Her sister was in no hurry. Alice rather wished the afternoon were.",
+          "kind": "narration",
+          "pauseMs": 1600
+        },
+        {
+          "id": "alice-c1-s1-book-look",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "staging": {
+              "alice": "seated-book",
+              "sister": "seated-reading"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s1-book",
+          "type": "text",
+          "text": "A book with not even a picture?",
+          "kind": "dialogue",
+          "who": "alice",
+          "listener": "sister",
+          "pauseMs": 1600
+        },
+        {
+          "id": "alice-c1-s1-reply",
+          "type": "text",
+          "text": "There are many good books in this world without pictures.",
+          "kind": "dialogue",
+          "who": "sister",
+          "listener": "alice",
+          "pauseMs": 1600
+        },
+        {
+          "id": "alice-c1-s1-return-to-page",
+          "type": "action",
+          "duration": 350,
+          "effects": {
+            "staging": {
+              "sister": "seated-reading"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s1-rabbit-emerge",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 710,
+                "y": 424,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "alice": "seated-curious",
+              "rabbit": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 650,
+                "y": 416
+              },
+              {
+                "x": 710,
+                "y": 424
+              }
+            ]
+          },
+          "presence": {
+            "white-rabbit": {
+              "kind": "enter",
+              "fadeMs": 2000,
+              "from": {
+                "x": 590,
+                "y": 412
+              }
+            }
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ],
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s1-rabbit-arrive",
+          "type": "action",
+          "duration": 3100,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 990,
+                "y": 452,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 810,
+                "y": 440
+              },
+              {
+                "x": 900,
+                "y": 448
+              },
+              {
+                "x": 990,
+                "y": 452
+              }
+            ]
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ],
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s1-rabbit-stop",
+          "type": "action",
+          "duration": 450,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "pose": "idle"
+              }
+            },
+            "staging": {
+              "rabbit": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s1-watch-extract",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "staging": {
+              "rabbit": "consult"
+            },
+            "watch": {
+              "visible": 1,
+              "state": "in-hand"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s1-late",
+          "type": "text",
+          "text": "Oh dear! I shall be late! I'm late!",
+          "kind": "dialogue",
+          "who": "white-rabbit",
+          "listener": "alice",
+          "pauseMs": 1600
+        },
+        {
+          "id": "alice-c1-s1-curiosity",
+          "type": "text",
+          "text": "What could a rabbit be late for?",
+          "kind": "dialogue",
+          "who": "alice",
+          "listener": "white-rabbit",
+          "pauseMs": 1600
+        },
+        {
+          "id": "alice-c1-s1-hook-watch",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "staging": {
+              "rabbit": "pocket"
+            },
+            "watch": {
+              "visible": 0,
+              "state": "in-pocket"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "hookPhase": "watch"
+        },
+        {
+          "id": "alice-c1-s1-hook-turn",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "staging": {
+              "rabbit": "ready"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "hookPhase": "turn"
+        },
+        {
+          "id": "alice-c1-s1-hook-rise",
+          "type": "action",
+          "duration": 1300,
+          "effects": {
+            "staging": {
+              "alice": "standing-ready"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "hookPhase": "rise"
+        },
+        {
+          "id": "alice-c1-s2-continuity",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "chapter": 0
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-establish-path",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "view": "tall-first"
+          },
+          "camera": {
+            "reframe": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-rabbit-first",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1110,
+                "y": 470,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "rabbit": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 1110,
+                "y": 470
+              }
+            ]
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ]
+        },
+        {
+          "id": "alice-c1-s2-rabbit-first-stop",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "pose": "idle"
+              }
+            },
+            "staging": {
+              "rabbit": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-alice-join",
+          "type": "action",
+          "duration": 3400,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 900,
+                "y": 448,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "alice": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 660,
+                "y": 690
+              },
+              {
+                "x": 660,
+                "y": 460
+              },
+              {
+                "x": 750,
+                "y": 438
+              },
+              {
+                "x": 900,
+                "y": 448
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ]
+        },
+        {
+          "id": "alice-c1-s2-alice-third",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1380,
+                "y": 510,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "alice": {
+                "x": 1170,
+                "y": 492,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "rabbit": "right",
+              "alice": "right"
+            },
+            "view": "s2-paired-path"
+          },
+          "camera": {
+            "tracking": "s2-paired-path"
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1050,
+                "y": 476
+              },
+              {
+                "x": 1170,
+                "y": 492
+              }
+            ],
+            "white-rabbit": [
+              {
+                "x": 1260,
+                "y": 500
+              },
+              {
+                "x": 1380,
+                "y": 510
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice",
+            "white-rabbit"
+          ],
+          "motion": {
+            "continuousActors": [
+              "alice",
+              "white-rabbit"
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s2-alice-call-stop",
+          "type": "action",
+          "duration": 80,
+          "effects": {
+            "actors": {
+              "alice": {
+                "pose": "idle"
+              },
+              "white-rabbit": {
+                "pose": "idle"
+              }
+            },
+            "staging": {
+              "alice": "right",
+              "rabbit": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-call",
+          "type": "text",
+          "who": "alice",
+          "kind": "dialogue",
+          "text": "Wait, please!",
+          "listener": "white-rabbit"
+        },
+        {
+          "id": "alice-c1-s2-establish-hedge",
+          "type": "action",
+          "duration": 750,
+          "effects": {
+            "view": "tall-catchup"
+          },
+          "camera": {
+            "reframe": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-alice-catchup",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1500,
+                "y": 500,
+                "pose": "walk",
+                "facing": "right"
+              },
+              "alice": {
+                "x": 1400,
+                "y": 510,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "rabbit": "right",
+              "alice": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1260,
+                "y": 500
+              },
+              {
+                "x": 1400,
+                "y": 510
+              }
+            ],
+            "white-rabbit": [
+              {
+                "x": 1500,
+                "y": 500
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice",
+            "white-rabbit"
+          ],
+          "motion": {
+            "continuousActors": [
+              "alice",
+              "white-rabbit"
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s2-alice-catchup-stop",
+          "type": "action",
+          "duration": 80,
+          "effects": {
+            "actors": {
+              "alice": {
+                "pose": "idle"
+              },
+              "white-rabbit": {
+                "pose": "idle"
+              }
+            },
+            "staging": {
+              "alice": "right",
+              "rabbit": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-establish-aperture",
+          "type": "action",
+          "duration": 750,
+          "effects": {
+            "view": "tall-entry"
+          },
+          "camera": {
+            "reframe": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-rabbit-threshold",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1632,
+                "y": 464,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "rabbit": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 1600,
+                "y": 480
+              },
+              {
+                "x": 1632,
+                "y": 464
+              }
+            ]
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ]
+        },
+        {
+          "id": "alice-c1-s2-rabbit-turn-inward",
+          "type": "action",
+          "duration": 120,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "pose": "idle"
+              }
+            },
+            "staging": {
+              "rabbit": "back"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-rabbit-aperture",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1632,
+                "y": 454,
+                "pose": "walk",
+                "facing": "back"
+              }
+            },
+            "staging": {
+              "rabbit": "back"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 1632,
+                "y": 454
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s2-rabbit-covered",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1632,
+                "y": 432,
+                "pose": "walk",
+                "visible": 0,
+                "facing": "back"
+              }
+            },
+            "staging": {
+              "rabbit": "back"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 1632,
+                "y": 432
+              }
+            ]
+          },
+          "presence": {
+            "white-rabbit": {
+              "kind": "exit",
+              "fadeMs": 650
+            }
+          }
+        },
+        {
+          "id": "alice-c1-s2-rabbit-inside",
+          "type": "action",
+          "duration": 150,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "pose": "idle"
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-decision",
+          "type": "text",
+          "who": "alice",
+          "kind": "dialogue",
+          "text": "Just a little farther."
+        },
+        {
+          "id": "alice-c1-s2-alice-approach",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1560,
+                "y": 484,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "alice": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1500,
+                "y": 500
+              },
+              {
+                "x": 1560,
+                "y": 484
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ]
+        },
+        {
+          "id": "alice-c1-s2-alice-pre-hook",
+          "type": "action",
+          "duration": 80,
+          "effects": {
+            "actors": {
+              "alice": {
+                "pose": "idle"
+              }
+            },
+            "staging": {
+              "alice": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-hook-arrival",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1610,
+                "y": 470,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "alice": "right"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1610,
+                "y": 470
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ]
+        },
+        {
+          "id": "alice-c1-s2-hook-kneel",
+          "type": "action",
+          "duration": 850,
+          "effects": {
+            "actors": {
+              "alice": {
+                "pose": "idle"
+              }
+            },
+            "staging": {
+              "alice": "burrow-kneel"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-hook-hand",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "staging": {
+              "alice": "burrow-hand"
+            },
+            "actors": {
+              "alice": {
+                "x": 1610,
+                "y": 466
+              }
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s2-hook-torso",
+          "type": "action",
+          "duration": 950,
+          "effects": {
+            "staging": {
+              "alice": "burrow-entry"
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "caption": "clear"
+        }
+      ],
+      "estimatedSeconds": 62.962
+    },
+    {
+      "id": "alice-c1-well",
+      "name": "Where the Ground Gives Way",
+      "videoExport": {
+        "openingReplay": {
+          "from": "alice-c1-s2-hook-arrival",
+          "through": "alice-c1-s2-hook-torso",
+          "durationMs": 3000
+        },
+        "closingHook": {
+          "from": "alice-c1-s4-hook-contact",
+          "through": "alice-c1-s4-hook-settle",
+          "durationMs": 3000
+        }
+      },
+      "steps": [
+        {
+          "id": "alice-c1-s3-finish-entry",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1758,
+                "y": 466
+              }
+            },
+            "staging": {
+              "alice": "burrow-entry"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1758,
+                "y": 466
+              }
+            ]
+          },
+          "camera": {
+            "tracking": "s3-exterior-entry"
+          }
+        },
+        {
+          "id": "alice-c1-s3-entry-clear",
+          "type": "action",
+          "duration": 140,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c1-s3-interior",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "environment": "tunnel-well",
+            "view": "s3-arrival",
+            "actors": {
+              "alice": {
+                "x": 756,
+                "y": 488,
+                "visible": 1,
+                "facing": "right"
+              },
+              "white-rabbit": {
+                "x": 1000,
+                "y": 520,
+                "visible": 1,
+                "facing": "right"
+              }
+            },
+            "staging": {
+              "alice": "crawl-inside",
+              "rabbit": "right"
+            },
+            "s3": {
+              "falling": false,
+              "clodFall": 0,
+              "clodsVisible": false,
+              "hookMs": 0
+            },
+            "chapter": 1
+          },
+          "caption": "clear",
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700
+          },
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c1-s3-rise",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "staging": {
+              "alice": "standing-ready"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c1-s3-question-frame",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "view": "s3-question"
+          },
+          "caption": "clear",
+          "camera": {
+            "reframe": true
+          }
+        },
+        {
+          "id": "alice-c1-s3-question",
+          "type": "text",
+          "who": "alice",
+          "listener": "white-rabbit",
+          "kind": "dialogue",
+          "text": "I only wanted to ask you something."
+        },
+        {
+          "id": "alice-c1-s3-paired-travel",
+          "type": "action",
+          "duration": 7800,
+          "effects": {
+            "view": "s3-travel",
+            "actors": {
+              "alice": {
+                "x": 1968,
+                "y": 628,
+                "pose": "walk",
+                "visible": 1
+              },
+              "white-rabbit": {
+                "x": 2152,
+                "y": 420,
+                "pose": "walk",
+                "visible": 1
+              }
+            },
+            "staging": {
+              "alice": "right",
+              "rabbit": "right"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1040,
+                "y": 540
+              },
+              {
+                "x": 1400,
+                "y": 556
+              },
+              {
+                "x": 1640,
+                "y": 584
+              },
+              {
+                "x": 1840,
+                "y": 600
+              },
+              {
+                "x": 1928,
+                "y": 620
+              },
+              {
+                "x": 1956,
+                "y": 626
+              },
+              {
+                "x": 1968,
+                "y": 628
+              }
+            ],
+            "white-rabbit": [
+              {
+                "x": 1284,
+                "y": 544
+              },
+              {
+                "x": 1644,
+                "y": 560
+              },
+              {
+                "x": 1884,
+                "y": 556
+              },
+              {
+                "x": 2084,
+                "y": 512
+              },
+              {
+                "x": 2208,
+                "y": 456
+              },
+              {
+                "x": 2200,
+                "y": 424
+              },
+              {
+                "x": 2152,
+                "y": 420
+              }
+            ]
+          },
+          "pathProgress": {
+            "alice": [
+              0,
+              0.2,
+              0.45,
+              0.62,
+              0.78,
+              0.9,
+              0.96,
+              1
+            ],
+            "white-rabbit": [
+              0,
+              0.2,
+              0.45,
+              0.62,
+              0.78,
+              0.9,
+              0.96,
+              1
+            ]
+          },
+          "travelFacing": [
+            "alice",
+            "white-rabbit"
+          ],
+          "camera": {
+            "tracking": "s3-corridor"
+          },
+          "motion": {
+            "continuousActors": [
+              "alice",
+              "white-rabbit"
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s3-loose-edge",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "s3-lip",
+            "actors": {
+              "white-rabbit": {
+                "visible": 0
+              }
+            },
+            "staging": {
+              "alice": "support-loss"
+            },
+            "s3": {
+              "clodsVisible": true,
+              "clodFall": 1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "reframe": true
+          }
+        },
+        {
+          "id": "alice-c1-s3-clear-edge",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 2076,
+                "y": 632
+              }
+            },
+            "s3": {
+              "falling": true
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2076,
+                "y": 632
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s3-first-drop",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "view": "s3-drop",
+            "actors": {
+              "alice": {
+                "x": 2104,
+                "y": 720
+              }
+            },
+            "staging": {
+              "alice": "slow-descent"
+            },
+            "s3": {
+              "clodsVisible": false
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2104,
+                "y": 720
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s3-oh",
+          "type": "text",
+          "who": "alice",
+          "kind": "dialogue",
+          "text": "Oh!"
+        },
+        {
+          "id": "alice-c1-s3-slow-fall",
+          "type": "action",
+          "duration": 1100,
+          "effects": {
+            "view": "s3-last-text",
+            "actors": {
+              "alice": {
+                "x": 2176,
+                "y": 760
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2176,
+                "y": 760
+              }
+            ]
+          },
+          "camera": {
+            "reframe": true
+          }
+        },
+        {
+          "id": "alice-c1-s3-astonishment",
+          "type": "text",
+          "kind": "narration",
+          "text": "For a moment, Alice forgot every question she had meant to ask."
+        },
+        {
+          "id": "alice-c1-s3-hook-1",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "view": "s3-hook",
+            "actors": {
+              "alice": {
+                "x": 2168,
+                "y": 910
+              }
+            },
+            "s3": {
+              "hookMs": 1200
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2168,
+                "y": 910
+              }
+            ]
+          },
+          "motion": {
+            "hookFromMs": 0
+          }
+        },
+        {
+          "id": "alice-c1-s3-hook-2",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "view": "s3-hook",
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 1070
+              }
+            },
+            "s3": {
+              "hookMs": 2400
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 1070
+              }
+            ]
+          },
+          "motion": {
+            "hookFromMs": 1200
+          }
+        },
+        {
+          "id": "alice-c1-s3-hook-3",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "view": "s3-hook",
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 1200
+              }
+            },
+            "s3": {
+              "hookMs": 3000
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 1200
+              }
+            ]
+          },
+          "motion": {
+            "hookFromMs": 2400
+          }
+        },
+        {
+          "id": "alice-c1-s4-approach",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "environment": "well-bottom",
+            "view": "s4-upper",
+            "s4": {
+              "shot": "upper"
+            },
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 1352
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 1352
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-jar",
+          "type": "text",
+          "kind": "dialogue",
+          "text": "A jar?",
+          "who": "alice"
+        },
+        {
+          "id": "alice-c1-s4-pickup",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "staging": {
+              "alice": "reach-registered"
+            },
+            "jar": {
+              "owner": "alice",
+              "orientation": "upright"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s4-clear-upper",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "staging": {
+              "alice": "reach-registered"
+            },
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 1356
+              }
+            },
+            "jar": {
+              "state": "carried"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 1356
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-clear-upper-end",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "staging": {
+              "alice": "hold-registered"
+            },
+            "s4": {
+              "shot": "inspect"
+            },
+            "jar": {
+              "orientation": "tilted"
+            },
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 1440
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 1440
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-inspect",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 1600
+              }
+            },
+            "staging": {
+              "alice": "hold-registered"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 1600
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-empty",
+          "type": "text",
+          "kind": "dialogue",
+          "text": "Not a spoonful left.",
+          "who": "alice"
+        },
+        {
+          "id": "alice-c1-s4-choice",
+          "type": "action",
+          "duration": 2100,
+          "effects": {
+            "staging": {
+              "alice": "hold-registered"
+            },
+            "jar": {
+              "orientation": "upright"
+            },
+            "s4": {
+              "shot": "lower"
+            },
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 2020
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 2020
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-stay",
+          "type": "text",
+          "kind": "dialogue",
+          "text": "You had better stay here.",
+          "who": "alice"
+        },
+        {
+          "id": "alice-c1-s4-place-approach",
+          "type": "action",
+          "duration": 1900,
+          "effects": {
+            "staging": {
+              "alice": "reach-registered"
+            },
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 2308
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 2308
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-place-contact",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "staging": {
+              "alice": "reach-registered"
+            },
+            "jar": {
+              "owner": null,
+              "state": "lower-fixed",
+              "orientation": "upright"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s4-withdraw",
+          "type": "action",
+          "duration": 1700,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 2312
+              }
+            },
+            "staging": {
+              "alice": "reach-registered"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 2312
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-clear-lower",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "staging": {
+              "alice": "slow-descent"
+            },
+            "s4": {
+              "shot": "returned"
+            },
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 2360
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 2360
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-careful",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 2148,
+                "y": 2560
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2148,
+                "y": 2560
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-narration",
+          "type": "text",
+          "kind": "narration",
+          "text": "It was easier to be careful with one small thing."
+        },
+        {
+          "id": "alice-c1-s4-leaves",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "s4": {
+              "shot": "leaves"
+            },
+            "actors": {
+              "alice": {
+                "x": 2160,
+                "y": 3100
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2160,
+                "y": 2900
+              },
+              {
+                "x": 2160,
+                "y": 3100
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-precontact",
+          "type": "action",
+          "duration": 1400,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 2160,
+                "y": 3304
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2160,
+                "y": 3304
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-hook-contact",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "s4": {
+              "shot": "landing"
+            },
+            "actors": {
+              "alice": {
+                "x": 2160,
+                "y": 3316
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2160,
+                "y": 3316
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-hook-compress",
+          "type": "action",
+          "duration": 1150,
+          "effects": {
+            "staging": {
+              "alice": "landing-compress"
+            },
+            "s4": {
+              "landed": true
+            },
+            "s3": {
+              "falling": false
+            },
+            "actors": {
+              "alice": {
+                "x": 2160,
+                "y": 3322
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2160,
+                "y": 3322
+              }
+            ]
+          }
+        },
+        {
+          "id": "alice-c1-s4-hook-settle",
+          "type": "action",
+          "duration": 1150,
+          "effects": {
+            "staging": {
+              "alice": "seated-braced"
+            },
+            "actors": {
+              "alice": {
+                "x": 2160,
+                "y": 3328
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2160,
+                "y": 3328
+              }
+            ]
+          }
+        }
+      ],
+      "estimatedSeconds": 68.482
+    },
+    {
+      "id": "alice-c1-solid-ground",
+      "name": "Solid Ground",
+      "videoExport": {
+        "openingReplay": {
+          "from": "alice-c1-s4-hook-contact",
+          "through": "alice-c1-s4-hook-settle",
+          "durationMs": 3000
+        },
+        "closingHook": {
+          "from": "alice-c1-hall-hook-lower",
+          "through": "alice-c1-hall-hook-bottle",
+          "durationMs": 3000
+        }
+      },
+      "steps": [
+        {
+          "id": "alice-c1-s5-open",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "environment": "solid-ground",
+            "s5": {
+              "shot": "landing"
+            },
+            "staging": {
+              "alice": "seated-braced"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s5-rise",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "staging": {
+              "alice": "standing-steady"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s5-brush",
+          "type": "action",
+          "duration": 650,
+          "effects": {
+            "staging": {
+              "alice": "brush-palms"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s5-safe",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alice",
+          "text": "Well. I seem to be all here."
+        },
+        {
+          "id": "alice-c1-s5-walk",
+          "type": "action",
+          "duration": 8641.645689569174,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 4416,
+                "y": 3248,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "s5": {
+              "shot": "walk"
+            },
+            "staging": {
+              "alice": "right"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 2536,
+                "y": 3428
+              },
+              {
+                "x": 3116,
+                "y": 3428
+              },
+              {
+                "x": 3696,
+                "y": 3428
+              },
+              {
+                "x": 4416,
+                "y": 3248
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "camera": {
+            "tracking": "s5-alice-follow"
+          },
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 350,
+                "scaleKnots": [
+                  [
+                    2748,
+                    0.49
+                  ],
+                  [
+                    2828,
+                    0.525
+                  ],
+                  [
+                    2988,
+                    0.593
+                  ],
+                  [
+                    3148,
+                    0.656
+                  ],
+                  [
+                    3328,
+                    0.732
+                  ],
+                  [
+                    3428,
+                    0.774
+                  ],
+                  [
+                    3548,
+                    0.825
+                  ]
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-s5-establish",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "staging": {
+              "alice": "standing-steady"
+            },
+            "actors": {
+              "white-rabbit": {
+                "x": 4396,
+                "y": 2828,
+                "visible": 0
+              }
+            },
+            "s5": {
+              "shot": "arrival"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s5-arrival",
+          "type": "action",
+          "duration": 566.4833221945785,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 4496,
+                "y": 2988,
+                "visible": 0.19523091617815821,
+                "pose": "walk",
+                "facing": "front"
+              }
+            },
+            "s5": {
+              "shot": "arrival"
+            },
+            "staging": {
+              "rabbit": "right"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 4456,
+                "y": 2908
+              },
+              {
+                "x": 4496,
+                "y": 2988
+              }
+            ]
+          },
+          "presence": {
+            "white-rabbit": {
+              "kind": "enter",
+              "from": {
+                "x": 4396,
+                "y": 2828,
+                "visible": 0
+              },
+              "fadeMs": 566.4833221945785
+            }
+          },
+          "camera": {
+            "hold": true
+          },
+          "motion": {
+            "actors": {
+              "white-rabbit": {
+                "mode": "run",
+                "speed": 600,
+                "scaleKnots": [
+                  [
+                    2748,
+                    0.49
+                  ],
+                  [
+                    2828,
+                    0.525
+                  ],
+                  [
+                    2988,
+                    0.593
+                  ],
+                  [
+                    3148,
+                    0.656
+                  ],
+                  [
+                    3328,
+                    0.732
+                  ],
+                  [
+                    3428,
+                    0.774
+                  ],
+                  [
+                    3548,
+                    0.825
+                  ]
+                ]
+              }
+            }
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ],
+          "entrance": {
+            "totalFadeMs": 2000,
+            "through": "alice-c1-s5-arrival-visible"
+          }
+        },
+        {
+          "id": "alice-c1-s5-arrival-visible",
+          "type": "action",
+          "duration": 1433.5166778054215,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "visible": 1
+              }
+            }
+          },
+          "presence": {
+            "white-rabbit": {
+              "kind": "enter",
+              "fadeMs": 1433.5166778054215
+            }
+          },
+          "entrance": {
+            "continues": "alice-c1-s5-arrival",
+            "totalFadeMs": 2000
+          }
+        },
+        {
+          "id": "alice-c1-s5-frame-line",
+          "type": "action",
+          "duration": 300,
+          "effects": {
+            "s5": {
+              "shot": "line"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s5-rabbit",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "white-rabbit",
+          "text": "Late! Still late!"
+        },
+        {
+          "id": "alice-c1-s5-exit",
+          "type": "action",
+          "duration": 4436.870926667887,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 5976,
+                "y": 2832,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "s5": {
+              "shot": "exit"
+            },
+            "staging": {
+              "rabbit": "right"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 4532.526,
+                "y": 3030.118
+              },
+              {
+                "x": 4571.96,
+                "y": 3066.604
+              },
+              {
+                "x": 4614.086,
+                "y": 3097.664
+              },
+              {
+                "x": 4658.686,
+                "y": 3123.5
+              },
+              {
+                "x": 4705.542,
+                "y": 3144.316
+              },
+              {
+                "x": 4754.438,
+                "y": 3160.312
+              },
+              {
+                "x": 4805.156,
+                "y": 3171.696
+              },
+              {
+                "x": 4857.482,
+                "y": 3178.666
+              },
+              {
+                "x": 4911.196,
+                "y": 3181.43
+              },
+              {
+                "x": 4966.082,
+                "y": 3180.188
+              },
+              {
+                "x": 5021.922,
+                "y": 3175.144
+              },
+              {
+                "x": 5078.5,
+                "y": 3166.5
+              },
+              {
+                "x": 5135.6,
+                "y": 3154.46
+              },
+              {
+                "x": 5193.002,
+                "y": 3139.23
+              },
+              {
+                "x": 5250.492,
+                "y": 3121.008
+              },
+              {
+                "x": 5307.852,
+                "y": 3100
+              },
+              {
+                "x": 5364.864,
+                "y": 3076.408
+              },
+              {
+                "x": 5421.312,
+                "y": 3050.438
+              },
+              {
+                "x": 5476.98,
+                "y": 3022.29
+              },
+              {
+                "x": 5531.648,
+                "y": 2992.166
+              },
+              {
+                "x": 5585.102,
+                "y": 2960.274
+              },
+              {
+                "x": 5637.122,
+                "y": 2926.812
+              },
+              {
+                "x": 5687.494,
+                "y": 2891.986
+              },
+              {
+                "x": 5736,
+                "y": 2856
+              },
+              {
+                "x": 5759.438,
+                "y": 2841.188
+              },
+              {
+                "x": 5784.75,
+                "y": 2832
+              },
+              {
+                "x": 5811.938,
+                "y": 2827.312
+              },
+              {
+                "x": 5841,
+                "y": 2826
+              },
+              {
+                "x": 5871.938,
+                "y": 2826.938
+              },
+              {
+                "x": 5904.75,
+                "y": 2829
+              },
+              {
+                "x": 5939.438,
+                "y": 2831.062
+              },
+              {
+                "x": 5976,
+                "y": 2832
+              }
+            ]
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ],
+          "camera": {
+            "tracking": "s5-rabbit-follow"
+          },
+          "motion": {
+            "actors": {
+              "white-rabbit": {
+                "mode": "run",
+                "speed": 600,
+                "scaleKnots": [
+                  [
+                    2748,
+                    0.49
+                  ],
+                  [
+                    2828,
+                    0.525
+                  ],
+                  [
+                    2988,
+                    0.593
+                  ],
+                  [
+                    3148,
+                    0.656
+                  ],
+                  [
+                    3328,
+                    0.732
+                  ],
+                  [
+                    3428,
+                    0.774
+                  ],
+                  [
+                    3548,
+                    0.825
+                  ]
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-s5-return",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "visible": 0
+              }
+            },
+            "s5": {
+              "shot": "close"
+            },
+            "staging": {
+              "alice": "brush-palms"
+            }
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-s5-choice",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alice",
+          "text": "One thing at a time."
+        },
+        {
+          "id": "alice-c1-hall-corridor",
+          "type": "action",
+          "duration": 7563.92799376639,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 5976,
+                "y": 2832,
+                "pose": "walk",
+                "visible": 1,
+                "facing": "right"
+              }
+            },
+            "s5": {
+              "shot": "hall-corridor"
+            }
+          },
+          "paths": {
+            "alice": [
+              {
+                "x": 4464.4114,
+                "y": 3247.9318
+              },
+              {
+                "x": 4514.5416,
+                "y": 3246.7038
+              },
+              {
+                "x": 4566.2344,
+                "y": 3244.2812
+              },
+              {
+                "x": 4619.3334,
+                "y": 3240.6296
+              },
+              {
+                "x": 4673.6822,
+                "y": 3235.7142
+              },
+              {
+                "x": 4729.125,
+                "y": 3229.5
+              },
+              {
+                "x": 4785.5052,
+                "y": 3221.9526
+              },
+              {
+                "x": 4842.6666,
+                "y": 3213.037
+              },
+              {
+                "x": 4900.4532,
+                "y": 3202.7188
+              },
+              {
+                "x": 4958.7084,
+                "y": 3190.963
+              },
+              {
+                "x": 5017.276,
+                "y": 3177.735
+              },
+              {
+                "x": 5076,
+                "y": 3163
+              },
+              {
+                "x": 5134.724,
+                "y": 3146.7234
+              },
+              {
+                "x": 5193.2916,
+                "y": 3128.8704
+              },
+              {
+                "x": 5251.5468,
+                "y": 3109.4062
+              },
+              {
+                "x": 5309.3334,
+                "y": 3088.2962
+              },
+              {
+                "x": 5366.4948,
+                "y": 3065.5058
+              },
+              {
+                "x": 5422.875,
+                "y": 3041
+              },
+              {
+                "x": 5478.3178,
+                "y": 3014.7442
+              },
+              {
+                "x": 5532.6666,
+                "y": 2986.7038
+              },
+              {
+                "x": 5585.7656,
+                "y": 2956.8438
+              },
+              {
+                "x": 5637.4584,
+                "y": 2925.1296
+              },
+              {
+                "x": 5687.5886,
+                "y": 2891.5266
+              },
+              {
+                "x": 5736,
+                "y": 2856
+              },
+              {
+                "x": 5759.4376,
+                "y": 2841.1876
+              },
+              {
+                "x": 5784.75,
+                "y": 2832
+              },
+              {
+                "x": 5811.9376,
+                "y": 2827.3124
+              },
+              {
+                "x": 5841,
+                "y": 2826
+              },
+              {
+                "x": 5871.9376,
+                "y": 2826.9376
+              },
+              {
+                "x": 5904.75,
+                "y": 2829
+              },
+              {
+                "x": 5939.4376,
+                "y": 2831.0624
+              },
+              {
+                "x": 5976,
+                "y": 2832
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 350,
+                "scaleKnots": [
+                  [
+                    2748,
+                    0.49
+                  ],
+                  [
+                    2828,
+                    0.525
+                  ],
+                  [
+                    2988,
+                    0.593
+                  ],
+                  [
+                    3148,
+                    0.656
+                  ],
+                  [
+                    3328,
+                    0.732
+                  ],
+                  [
+                    3428,
+                    0.774
+                  ],
+                  [
+                    3548,
+                    0.825
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-establish",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "environment": "hall-of-doors",
+            "actors": {
+              "alice": {
+                "x": 330,
+                "y": 852,
+                "visible": 0,
+                "facing": "right"
+              }
+            },
+            "hall": {
+              "pose": "carry-key",
+              "shot": "entry"
+            }
+          },
+          "caption": "clear",
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700
+          }
+        },
+        {
+          "id": "alice-c1-hall-ingress",
+          "type": "action",
+          "duration": 3407.8684964792074,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 904,
+                "y": 952,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "hall": {
+              "pose": "carry-key",
+              "shot": "ingress"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 347.6378,
+                "y": 862.7986
+              },
+              {
+                "x": 365.6018,
+                "y": 876.7222
+              },
+              {
+                "x": 383.9688,
+                "y": 893.0624
+              },
+              {
+                "x": 402.8148,
+                "y": 911.1112
+              },
+              {
+                "x": 422.2164,
+                "y": 930.1598
+              },
+              {
+                "x": 442.25,
+                "y": 949.5
+              },
+              {
+                "x": 462.9918,
+                "y": 968.4236
+              },
+              {
+                "x": 484.5186,
+                "y": 986.2222
+              },
+              {
+                "x": 506.9062,
+                "y": 1002.1876
+              },
+              {
+                "x": 530.2314,
+                "y": 1015.6112
+              },
+              {
+                "x": 554.5706,
+                "y": 1025.7848
+              },
+              {
+                "x": 580,
+                "y": 1032
+              },
+              {
+                "x": 610.2084,
+                "y": 1037.6828
+              },
+              {
+                "x": 640.6666,
+                "y": 1040.7962
+              },
+              {
+                "x": 671.125,
+                "y": 1041.4376
+              },
+              {
+                "x": 701.3334,
+                "y": 1039.7038
+              },
+              {
+                "x": 731.0416,
+                "y": 1035.6922
+              },
+              {
+                "x": 760,
+                "y": 1029.5
+              },
+              {
+                "x": 787.9584,
+                "y": 1021.2246
+              },
+              {
+                "x": 814.6666,
+                "y": 1010.963
+              },
+              {
+                "x": 839.875,
+                "y": 998.8124
+              },
+              {
+                "x": 863.3334,
+                "y": 984.8704
+              },
+              {
+                "x": 884.7916,
+                "y": 969.2338
+              },
+              {
+                "x": 904,
+                "y": 952
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "presence": {
+            "alice": {
+              "kind": "enter",
+              "fadeMs": 2000,
+              "from": {
+                "x": 330,
+                "y": 852,
+                "visible": 0
+              }
+            }
+          },
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-test-first",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "hall": {
+              "pose": "test-door"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-first-door-breath",
+          "type": "action",
+          "duration": 600,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-second-door",
+          "type": "action",
+          "duration": 2593.465820098214,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1416,
+                "y": 952,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "hall": {
+              "pose": "carry-key",
+              "shot": "second-door"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 941.1158,
+                "y": 970.257
+              },
+              {
+                "x": 981.926,
+                "y": 985.0556
+              },
+              {
+                "x": 1025.625,
+                "y": 996.4376
+              },
+              {
+                "x": 1071.4074,
+                "y": 1004.4444
+              },
+              {
+                "x": 1118.4676,
+                "y": 1009.118
+              },
+              {
+                "x": 1166,
+                "y": 1010.5
+              },
+              {
+                "x": 1213.199,
+                "y": 1008.632
+              },
+              {
+                "x": 1259.2592,
+                "y": 1003.5556
+              },
+              {
+                "x": 1303.375,
+                "y": 995.3124
+              },
+              {
+                "x": 1344.7408,
+                "y": 983.9444
+              },
+              {
+                "x": 1382.551,
+                "y": 969.493
+              },
+              {
+                "x": 1416,
+                "y": 952
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-test-second",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "hall": {
+              "pose": "test-door"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-doors",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alice",
+          "text": "So many doors. Surely one must open.",
+          "pauseMs": 400,
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-table",
+          "type": "action",
+          "duration": 1952.656989764412,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1564.253,
+                "y": 1380,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "front"
+              }
+            },
+            "hall": {
+              "pose": "carry-key",
+              "shot": "table"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1428.7664,
+                "y": 988.2268
+              },
+              {
+                "x": 1441.1308,
+                "y": 1026.4814
+              },
+              {
+                "x": 1453.1914,
+                "y": 1066.125
+              },
+              {
+                "x": 1465.0464,
+                "y": 1106.5186
+              },
+              {
+                "x": 1476.7938,
+                "y": 1147.0232
+              },
+              {
+                "x": 1488.5316,
+                "y": 1187
+              },
+              {
+                "x": 1500.358,
+                "y": 1225.8102
+              },
+              {
+                "x": 1512.3712,
+                "y": 1262.8148
+              },
+              {
+                "x": 1524.6692,
+                "y": 1297.375
+              },
+              {
+                "x": 1537.3502,
+                "y": 1328.8518
+              },
+              {
+                "x": 1550.512,
+                "y": 1356.6064
+              },
+              {
+                "x": 1564.253,
+                "y": 1380
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-take-key",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "hall": {
+              "pose": "carry-key",
+              "key": {
+                "owner": "alice"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-key-question",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alice",
+          "text": "A little golden key! Which door could it open?",
+          "pauseMs": 400,
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-curtain",
+          "type": "action",
+          "duration": 2201.2816554884757,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1820,
+                "y": 976,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "hall": {
+              "pose": "carry-key",
+              "shot": "curtain"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1564.253,
+                "y": 1228
+              },
+              {
+                "x": 1820,
+                "y": 976
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-draw-curtain",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "hall": {
+              "pose": "draw-curtain",
+              "curtain": 1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-lock",
+          "type": "action",
+          "duration": 128.96090803912222,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1845.9234,
+                "y": 977.4456,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            },
+            "hall": {
+              "pose": "test-door",
+              "shot": "lock"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1845.9234,
+                "y": 977.4456
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-unlock",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "hall": {
+              "pose": "test-door",
+              "door": 1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-unlock-breath",
+          "type": "action",
+          "duration": 600,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-peek-approach",
+          "type": "action",
+          "duration": 143.77248837529064,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1816.9658,
+                "y": 978.9172,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            },
+            "hall": {
+              "pose": "carry-key",
+              "shot": "kneel"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1816.9658,
+                "y": 978.9172
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-kneel",
+          "type": "action",
+          "duration": 800,
+          "caption": "clear",
+          "effects": {
+            "hall": {
+              "pose": "kneel-peek"
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-garden",
+          "type": "text",
+          "kind": "dialogue",
+          "who": "alice",
+          "text": "That is where I want to be, but I am far too big to get through.",
+          "pauseMs": 400,
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-close-door",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "hall": {
+              "pose": "kneel-peek",
+              "door": 0
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-rise",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "hall": {
+              "pose": "carry-key"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-return-table",
+          "type": "action",
+          "duration": 2180.4205580887074,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1564.253,
+                "y": 1380,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "front"
+              }
+            },
+            "hall": {
+              "pose": "carry-key",
+              "shot": "return-table"
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1564.253,
+                "y": 1228
+              },
+              {
+                "x": 1564.253,
+                "y": 1380
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          },
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-room-frame",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "hall": {
+              "roomLock": 1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "reframe": true,
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-hook-lower",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "hall": {
+              "pose": "carry-key"
+            },
+            "actors": {
+              "alice": {
+                "facing": "right"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-hook-release",
+          "type": "action",
+          "duration": 300,
+          "effects": {
+            "hall": {
+              "key": {
+                "owner": null
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-hall-hook-bottle",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "hall": {
+              "pose": "standing-steady",
+              "shot": "bottle-discovery"
+            },
+            "actors": {
+              "alice": {
+                "facing": "right"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "preventDissolve": true
+          }
+        }
+      ],
+      "estimatedSeconds": 71.23910268239875,
+      "locomotion": {
+        "alice": {
+          "walkSpeed": 350,
+          "runSpeed": 650
+        },
+        "white-rabbit": {
+          "walkSpeed": 300,
+          "runSpeed": 600
+        }
+      },
+      "durationReview": {
+        "phase": "revision",
+        "authorization": {
+          "date": "2026-10-25",
+          "reason": "User requires slower Hall and size-proportional walking, added gesture pauses, fixed room camera/static key; accepts longer duration without compensation. Support-plane Y-sorting and stationary central box requested in follow-up; routing changes directly implement that request."
+        },
+        "preserveTextAndPauses": true,
+        "baselineAutomaticMs": 71239
+      },
+      "locomotionEnvironment": "solid-ground",
+      "locomotionByEnvironment": {
+        "hall-of-doors": {
+          "alice": {
+            "walkSpeed": 235,
+            "runSpeed": 650
+          }
+        }
+      }
+    },
+    {
+      "id": "alice-c1-drink-me",
+      "name": "Drink Me",
+      "steps": [
+        {
+          "id": "alice-c1-drink-inherit",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "drink": {
+              "active": true,
+              "face": "right"
+            },
+            "actors": {
+              "alice": {
+                "facing": "right"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-bottle",
+          "type": "text",
+          "who": "alice",
+          "text": "A bottle? ‘Drink me.’ That is a very confident bottle.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-around-table",
+          "type": "action",
+          "duration": 1427.9429816066718,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady",
+              "shot": "bottle",
+              "face": "left"
+            },
+            "actors": {
+              "alice": {
+                "x": 1815.0407780979826,
+                "y": 1380,
+                "pose": "walk"
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1660,
+                "y": 1480
+              },
+              {
+                "x": 1815.0407780979826,
+                "y": 1480
+              },
+              {
+                "x": 1815.0407780979826,
+                "y": 1380
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 1,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-take",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "drink": {
+              "pose": "take-bottle",
+              "bottleOwner": "alice",
+              "face": "left"
+            },
+            "actors": {
+              "alice": {
+                "facing": "left"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-examine",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "drink": {
+              "pose": "examine-bottle",
+              "face": "left"
+            },
+            "actors": {
+              "alice": {
+                "facing": "left"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-warning",
+          "type": "text",
+          "who": "alice",
+          "text": "No poison marked. That is something.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-decision",
+          "type": "text",
+          "who": "alice",
+          "text": "Just a little.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-uncork",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "drink": {
+              "cork": 1,
+              "face": "left"
+            },
+            "actors": {
+              "alice": {
+                "facing": "left"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-sip",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "drink": {
+              "pose": "drink-bottle",
+              "angle": 135,
+              "face": "left"
+            },
+            "actors": {
+              "alice": {
+                "facing": "left"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-lower",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "drink": {
+              "pose": "examine-bottle",
+              "angle": 0,
+              "bottleEmpty": 1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-carry-to-floor",
+          "type": "action",
+          "duration": 604.2989754952715,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady"
+            },
+            "actors": {
+              "alice": {
+                "x": 1940,
+                "y": 1400,
+                "pose": "walk"
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1884,
+                "y": 1444
+              },
+              {
+                "x": 1940,
+                "y": 1400
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 1,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-place",
+          "type": "action",
+          "duration": 2400,
+          "effects": {
+            "drink": {
+              "pose": "place-bottle",
+              "bottleGrip": "body"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-release",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "drink": {
+              "bottleOwner": "floor"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-rise",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-shrink",
+          "type": "action",
+          "duration": 4400,
+          "effects": {
+            "drink": {
+              "magicScale": 0.32,
+              "shot": "shrink"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-smaller",
+          "type": "text",
+          "who": "alice",
+          "text": "Oh! I am smaller. How strange everything looks from here.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-to-door",
+          "type": "action",
+          "duration": 6272.88162101018,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady",
+              "shot": "door"
+            },
+            "actors": {
+              "alice": {
+                "x": 1896,
+                "y": 976,
+                "pose": "walk"
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1988,
+                "y": 1228
+              },
+              {
+                "x": 1964,
+                "y": 1020
+              },
+              {
+                "x": 1896,
+                "y": 976
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 0.32,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-fit",
+          "type": "text",
+          "who": "alice",
+          "text": "Now I could fit through that little door.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-return-key",
+          "type": "action",
+          "duration": 9543.75663434144,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady",
+              "shot": "key"
+            },
+            "actors": {
+              "alice": {
+                "x": 1802.758272,
+                "y": 1380,
+                "pose": "walk"
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1988,
+                "y": 1228
+              },
+              {
+                "x": 1988,
+                "y": 1476
+              },
+              {
+                "x": 1840,
+                "y": 1476
+              },
+              {
+                "x": 1802.758272,
+                "y": 1380
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 0.32,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-forgot-key",
+          "type": "text",
+          "who": "alice",
+          "text": "But the key! I left it on the table.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-try",
+          "type": "text",
+          "who": "alice",
+          "text": "Perhaps I can climb up.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-reach",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "drink": {
+              "pose": "reach-glass",
+              "shot": "glass"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-slip",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "drink": {
+              "pose": "slip-back"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-smooth",
+          "type": "text",
+          "who": "alice",
+          "text": "Too smooth. I cannot get a foothold.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-find-box",
+          "type": "action",
+          "duration": 1833.718701567894,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady",
+              "shot": "box",
+              "face": "left"
+            },
+            "actors": {
+              "alice": {
+                "x": 1750,
+                "y": 1396,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1820,
+                "y": 1432
+              },
+              {
+                "x": 1750,
+                "y": 1432
+              },
+              {
+                "x": 1750,
+                "y": 1396
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 0.32,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-box",
+          "type": "text",
+          "who": "alice",
+          "text": "A little box under the table. What is inside?",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "effects": {
+            "drink": {
+              "face": "left"
+            },
+            "actors": {
+              "alice": {
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-drink-grip-box",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady",
+              "face": "left",
+              "shot": "box"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "note": "Former box transport retired by explicit user correction. Keep this short quiet discovery beat, with the single box fixed at centre."
+        },
+        {
+          "id": "alice-c1-drink-push-box",
+          "type": "action",
+          "duration": 1347.8139495610137,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady",
+              "face": "left",
+              "shot": "box"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "note": "Former box transport retired by explicit user correction. Keep this short quiet discovery beat, with the single box fixed at centre."
+        },
+        {
+          "id": "alice-c1-drink-beside-box",
+          "type": "action",
+          "duration": 1069.6490278876195,
+          "effects": {
+            "drink": {
+              "pose": "standing-steady",
+              "face": "left",
+              "shot": "box"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "note": "Former box transport retired by explicit user correction. Keep this short quiet discovery beat, with the single box fixed at centre."
+        },
+        {
+          "id": "alice-c1-drink-hook-crouch",
+          "type": "action",
+          "duration": 900,
+          "effects": {
+            "drink": {
+              "pose": "box-touch",
+              "face": "left",
+              "shot": "hook"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-hook-open",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "drink": {
+              "pose": "box-open",
+              "boxOpen": 1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-drink-hook-hold",
+          "type": "action",
+          "duration": 600,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        }
+      ],
+      "locomotion": {
+        "alice": {
+          "walkSpeed": 235,
+          "runSpeed": 650
+        }
+      },
+      "videoExport": {
+        "openingReplay": {
+          "through": "alice-c1-hall-hook-bottle",
+          "durationMs": 3000,
+          "from": "alice-c1-hall-hook-lower"
+        },
+        "closingHook": {
+          "through": "alice-c1-drink-hook-hold",
+          "durationMs": 3000,
+          "from": "alice-c1-drink-hook-crouch"
+        }
+      },
+      "durationReview": {
+        "phase": "revision",
+        "authorization": {
+          "date": "2026-10-25",
+          "reason": "User requires slower Hall and size-proportional walking, added gesture pauses, fixed room camera/static key; accepts longer duration without compensation. Support-plane Y-sorting and stationary central box requested in follow-up; routing changes directly implement that request."
+        },
+        "preserveTextAndPauses": true,
+        "baselineAutomaticMs": 69923
+      },
+      "locomotionEnvironment": "hall-of-doors",
+      "locomotionByEnvironment": {
+        "hall-of-doors": {
+          "alice": {
+            "walkSpeed": 235,
+            "runSpeed": 650
+          }
+        }
+      },
+      "readingLayout": "fixed-room"
+    },
+    {
+      "id": "alice-c1-eat-me",
+      "name": "Eat Me",
+      "readingLayout": "fixed-room",
+      "locomotion": {
+        "alice": {
+          "walkSpeed": 235,
+          "runSpeed": 650
+        },
+        "white-rabbit": {
+          "walkSpeed": 235,
+          "runSpeed": 650
+        }
+      },
+      "locomotionEnvironment": "hall-of-doors",
+      "locomotionByEnvironment": {
+        "hall-of-doors": {
+          "alice": {
+            "walkSpeed": 235,
+            "runSpeed": 650
+          },
+          "white-rabbit": {
+            "walkSpeed": 235,
+            "runSpeed": 650
+          }
+        }
+      },
+      "videoExport": {
+        "openingReplay": {
+          "from": "alice-c1-drink-hook-crouch",
+          "through": "alice-c1-drink-hook-hold",
+          "durationMs": 3000
+        },
+        "closingHook": {
+          "from": "alice-c1-eat-hook-enter",
+          "through": "alice-c1-eat-hook-hold",
+          "durationMs": 3000
+        }
+      },
+      "steps": [
+        {
+          "id": "alice-c1-eat-inherit",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "eat": {
+              "active": true,
+              "pose": "inherit",
+              "face": "left"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-read-label",
+          "type": "action",
+          "duration": 400,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-label",
+          "type": "text",
+          "who": "alice",
+          "text": "\"Eat me.\" You are just as sure of yourself.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-consider",
+          "type": "action",
+          "duration": 400,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-plan",
+          "type": "text",
+          "who": "alice",
+          "text": "Bigger, I can reach the key. Smaller, I might slip under the door.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-reach-cake",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "eat": {
+              "pose": "take-cake"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-grip-cake",
+          "type": "action",
+          "duration": 150,
+          "effects": {
+            "eat": {
+              "cake": {
+                "owner": "alice"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-rise",
+          "type": "action",
+          "duration": 600,
+          "effects": {
+            "eat": {
+              "pose": "eat-cake"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-clear-box",
+          "type": "action",
+          "duration": 1041.918563692632,
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1830,
+                "y": 1440,
+                "pose": "walk"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "paths": {
+            "alice": [
+              {
+                "x": 1830,
+                "y": 1440
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 0.32,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-eat-bite",
+          "type": "action",
+          "duration": 1800,
+          "effects": {
+            "eat": {
+              "cake": {
+                "amount": 0.35
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-finish-cake",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "eat": {
+              "cake": {
+                "amount": 0
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-swallow",
+          "type": "action",
+          "duration": 200,
+          "effects": {
+            "eat": {
+              "cake": {
+                "owner": "consumed"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-wait",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "eat": {
+              "pose": "eat-cake"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-nothing",
+          "type": "text",
+          "who": "alice",
+          "text": "Nothing yet.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-grow-first",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "drink": {
+              "magicScale": 1.1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-enough",
+          "type": "text",
+          "who": "alice",
+          "text": "That will do. Please.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-grow-last",
+          "type": "action",
+          "duration": 2000,
+          "effects": {
+            "drink": {
+              "magicScale": 1.5
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-settle-growth",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "eat": {
+              "pose": "growth-surprise"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-reach-key",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "eat": {
+              "pose": "reach-key"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-grip-key",
+          "type": "action",
+          "duration": 300,
+          "effects": {
+            "hall": {
+              "key": {
+                "owner": "alice"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-lift-key",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "eat": {
+              "keyLift": 1
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-key",
+          "type": "text",
+          "who": "alice",
+          "text": "At last, the key.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-look-door",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "eat": {
+              "pose": "calm",
+              "face": "right"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-door",
+          "type": "text",
+          "who": "alice",
+          "text": "And now I am much too big for the door.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-return-key-look",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "eat": {
+              "pose": "reach-key",
+              "face": "left"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-lower-key",
+          "type": "action",
+          "duration": 1200,
+          "effects": {
+            "eat": {
+              "keyLift": 0
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-place-key",
+          "type": "action",
+          "duration": 300,
+          "effects": {
+            "hall": {
+              "key": {
+                "owner": null
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-release-key",
+          "type": "action",
+          "duration": 400,
+          "effects": {
+            "eat": {
+              "pose": "calm"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-garden",
+          "type": "text",
+          "who": "alice",
+          "text": "I only wanted to reach the garden.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-cry",
+          "type": "action",
+          "duration": 5250,
+          "effects": {
+            "eat": {
+              "pose": "brief-cry",
+              "cryTime": 5250
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "linearMotion": true
+        },
+        {
+          "id": "alice-c1-eat-look-water",
+          "type": "action",
+          "duration": 500,
+          "effects": {
+            "eat": {
+              "pose": "calm"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-tears",
+          "type": "text",
+          "who": "alice",
+          "text": "These tears are making quite a mess.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-wipe-face",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "eat": {
+              "pose": "brief-cry"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-breathe",
+          "type": "action",
+          "duration": 1000,
+          "effects": {
+            "eat": {
+              "pose": "calm"
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-steady",
+          "type": "text",
+          "who": "alice",
+          "text": "Come now, Alice. One thing at a time.",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-quiet",
+          "type": "action",
+          "duration": 700,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
+          "id": "alice-c1-eat-hook-enter",
+          "type": "action",
+          "duration": 547.112462006079,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1520,
+                "y": 1070,
+                "visible": 0.2735562310030395,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 1520,
+                "y": 1070
+              }
+            ]
+          },
+          "presence": {
+            "white-rabbit": {
+              "kind": "enter",
+              "from": {
+                "x": 1400,
+                "y": 1070
+              },
+              "fadeMs": 547.112462006079
+            }
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ],
+          "motion": {
+            "actors": {
+              "white-rabbit": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-eat-hook-startled",
+          "type": "action",
+          "duration": 1452.887537993921,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "visible": 1
+              }
+            },
+            "eat": {
+              "rabbitLook": true
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "presence": {
+            "white-rabbit": {
+              "kind": "enter",
+              "fadeMs": 1452.887537993921
+            }
+          }
+        },
+        {
+          "id": "alice-c1-eat-hook-hold",
+          "type": "action",
+          "duration": 1000,
+          "effects": {},
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        }
+      ],
+      "durationReview": {
+        "phase": "revision",
+        "authorization": {
+          "date": "2026-10-29",
+          "reason": "User requested complete lagoon formation during Scene5cry and exact blue continuity intoScene6."
+        },
+        "preserveTextAndPauses": true
+      }
+    },
+    {
+      "id": "alice-c1-pool-of-tears",
+      "name": "The Pool of Tears",
+      "readingLayout": "fixed-room",
+      "steps": [
+        {
+          "id": "alice-c1-pool-inherit",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "pool": {
+              "active": true,
+              "water": 1
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-pool-help",
+          "type": "text",
+          "who": "alice",
+          "text": "Please, could you help me?",
+          "readingDurationMs": 4300,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 4300,
+            "initial": {
+              "pool": {
+                "phase": "help"
+              }
+            },
+            "effects": {
+              "pool": {}
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-rabbit",
+          "type": "text",
+          "who": "white-rabbit",
+          "text": "The Duchess! I shall be late!",
+          "readingDurationMs": 5190,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 750,
+            "initial": {
+              "pool": {
+                "phase": "drop"
+              }
+            },
+            "effects": {
+              "pool": {
+                "fan": "floor",
+                "gloves": "floor"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-rabbit-approach",
+          "type": "action",
+          "duration": 555.149039688542,
+          "effects": {
+            "pool": {
+              "phase": "exit"
+            },
+            "actors": {
+              "white-rabbit": {
+                "x": 1500,
+                "y": 956,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 1508,
+                "y": 988
+              },
+              {
+                "x": 1500,
+                "y": 956
+              }
+            ]
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ],
+          "motion": {
+            "actors": {
+              "white-rabbit": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-door-open",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "pool": {
+              "door": 1
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-pool-rabbit-through",
+          "type": "action",
+          "duration": 316.802181416183,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "x": 1500,
+                "y": 900,
+                "pose": "walk",
+                "facing": "right",
+                "visible": 0
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear",
+          "paths": {
+            "white-rabbit": [
+              {
+                "x": 1500,
+                "y": 900
+              }
+            ]
+          },
+          "travelFacing": [
+            "white-rabbit"
+          ],
+          "motion": {
+            "actors": {
+              "white-rabbit": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 1
+              }
+            }
+          },
+          "presence": {
+            "white-rabbit": {
+              "kind": "exit",
+              "fadeMs": 316.802181416183
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-door-close",
+          "type": "action",
+          "duration": 700,
+          "effects": {
+            "pool": {
+              "door": 0
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-pool-rabbit-gone",
+          "type": "action",
+          "duration": 1,
+          "effects": {
+            "actors": {
+              "white-rabbit": {
+                "visible": 0
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-pool-to-fan",
+          "type": "action",
+          "duration": 1615.6609029435128,
+          "effects": {
+            "pool": {
+              "phase": "walk"
+            },
+            "actors": {
+              "alice": {
+                "x": 1630,
+                "y": 1180,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear",
+          "paths": {
+            "alice": [
+              {
+                "x": 1902,
+                "y": 1440
+              },
+              {
+                "x": 1902,
+                "y": 1180
+              },
+              {
+                "x": 1630,
+                "y": 1180
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 1.5,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-collect",
+          "type": "action",
+          "duration": 1500,
+          "effects": {
+            "pool": {
+              "phase": "collect",
+              "fan": "alice"
+            },
+            "actors": {
+              "alice": {
+                "facing": "left"
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-pool-air",
+          "type": "text",
+          "who": "alice",
+          "text": "Perhaps a little air will help.",
+          "readingDurationMs": 5740,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 5740,
+            "initial": {
+              "pool": {
+                "phase": "fan"
+              }
+            },
+            "effects": {
+              "pool": {
+                "phase": "fan"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-smaller",
+          "type": "text",
+          "who": "alice",
+          "text": "I am getting smaller again.",
+          "readingDurationMs": 5600,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 5600,
+            "initial": {
+              "pool": {
+                "phase": "fan"
+              }
+            },
+            "effects": {
+              "drink": {
+                "magicScale": 0.85
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-cause",
+          "type": "text",
+          "who": "alice",
+          "text": "The fan! I must let go.",
+          "readingDurationMs": 6940,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 2500,
+            "initial": {
+              "pool": {
+                "phase": "fan"
+              }
+            },
+            "effects": {
+              "drink": {
+                "magicScale": 0.32
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-safe",
+          "type": "text",
+          "who": "alice",
+          "text": "Still here. That was close.",
+          "readingDurationMs": 7107.7156106660705,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 800,
+            "initial": {
+              "pool": {
+                "phase": "fan",
+                "fan": "released"
+              }
+            },
+            "effects": {
+              "pool": {
+                "phase": "fan",
+                "fan": "released"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-walk-to-water",
+          "type": "action",
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "duration": 6307.7156106660705,
+          "effects": {
+            "pool": {
+              "phase": "walk"
+            },
+            "actors": {
+              "alice": {
+                "x": 1600,
+                "y": 1444,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          },
+          "paths": {
+            "alice": [
+              {
+                "x": 1488,
+                "y": 1180
+              },
+              {
+                "x": 1488,
+                "y": 1440
+              },
+              {
+                "x": 1600,
+                "y": 1444
+              }
+            ]
+          },
+          "travelFacing": [
+            "alice"
+          ],
+          "motion": {
+            "actors": {
+              "alice": {
+                "mode": "walk",
+                "speed": 235,
+                "scaleKnots": [
+                  [
+                    852,
+                    0.5267
+                  ],
+                  [
+                    900,
+                    0.68
+                  ],
+                  [
+                    960,
+                    0.84
+                  ],
+                  [
+                    1020,
+                    0.9
+                  ],
+                  [
+                    1200,
+                    1.02
+                  ],
+                  [
+                    1440,
+                    1.18
+                  ]
+                ],
+                "bodyScale": 0.32,
+                "bodyScalePath": [
+                  "drink",
+                  "magicScale"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-slip",
+          "type": "action",
+          "duration": 2200,
+          "effects": {
+            "pool": {
+              "phase": "float"
+            },
+            "actors": {
+              "alice": {
+                "x": 1650,
+                "y": 1448
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c1-pool-tears",
+          "type": "text",
+          "who": "alice",
+          "text": "My own tears. What a very large mistake.",
+          "readingDurationMs": 5920,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 5920,
+            "initial": {
+              "pool": {
+                "phase": "float"
+              }
+            },
+            "effects": {
+              "pool": {
+                "phase": "float"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-calm-strokes",
+          "type": "action",
+          "duration": 2000,
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "linearMotion": true,
+          "effects": {
+            "pool": {
+              "phase": "swim"
+            },
+            "actors": {
+              "alice": {
+                "x": 1700,
+                "y": 1448
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-stroke",
+          "type": "text",
+          "who": "alice",
+          "text": "I can swim. Slowly, now.",
+          "readingDurationMs": 6000,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 6000,
+            "initial": {
+              "pool": {
+                "phase": "swim",
+                "mouse": 0
+              }
+            },
+            "effects": {
+              "pool": {
+                "phase": "swim"
+              }
+            },
+            "linear": true
+          }
+        },
+        {
+          "id": "alice-c1-pool-mouse-enter",
+          "type": "action",
+          "duration": 2172.7648423654664,
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "linearMotion": true,
+          "effects": {
+            "pool": {
+              "mouse": 1,
+              "mouseProgress": 1
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-mouse-afloat",
+          "type": "action",
+          "duration": 300,
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "effects": {
+            "pool": {
+              "mouse": 1,
+              "mouseProgress": 1
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-mouse",
+          "type": "text",
+          "who": "alice",
+          "text": "A mouse! At least I am not alone.",
+          "readingDurationMs": 7720,
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "during": {
+            "duration": 7720,
+            "initial": {
+              "pool": {
+                "phase": "swim",
+                "mouse": 1,
+                "mouseProgress": 1
+              }
+            },
+            "effects": {
+              "pool": {
+                "phase": "swim"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c1-pool-hook-swim",
+          "type": "action",
+          "duration": 3000,
+          "effects": {
+            "pool": {
+              "phase": "swim"
+            },
+            "actors": {
+              "alice": {
+                "x": 1676,
+                "y": 1448
+              }
+            }
+          },
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          },
+          "caption": "clear",
+          "linearMotion": true
+        },
+        {
+          "id": "alice-c1-pool-end",
+          "type": "end"
+        }
+      ],
+      "locomotionEnvironment": "hall-of-doors",
+      "locomotion": {
+        "alice": {
+          "walkSpeed": 235,
+          "runSpeed": 650
+        },
+        "white-rabbit": {
+          "walkSpeed": 235,
+          "runSpeed": 650
+        }
+      },
+      "videoExport": {
+        "openingReplay": {
+          "from": "alice-c1-eat-hook-enter",
+          "through": "alice-c1-eat-hook-hold",
+          "durationMs": 3000
+        },
+        "closingHook": {
+          "from": "alice-c1-pool-hook-swim",
+          "through": "alice-c1-pool-hook-swim",
+          "durationMs": 3000
+        }
+      },
+      "durationReview": {
+        "phase": "revision",
+        "authorization": {
+          "date": "2026-10-29",
+          "reason": "User requires complete Rabbit feet, calmer exit and mandatory movement in text-free beats; preserve every approved line and pause, accept additional duration."
+        },
+        "preserveTextAndPauses": true
+      }
+    }
+  ],
+  "presentation": {
+    "eyebrow": "LEWIS CARROLL · AN ORIGINAL ABRIDGMENT"
+  },
+  "completion": {
+    "scope": "chapter",
+    "chapter": "chapter-1"
+  },
+  "sceneDurationPolicy": {
+    "measurement": "automatic-only",
+    "idealRangeMs": [
+      60000,
+      80000
+    ],
+    "automaticRangeMs": [
+      55000,
+      85000
+    ],
+    "exportDurationGate": false,
+    "preserveValidTiming": true,
+    "scope": "Flexible scene count. Never trim pauses, alter reading timing or re-export MP4 to meet a video duration when automatic reading is55–85s."
+  },
+  "sceneRestructure": {
+    "legacySceneGroups": [
+      [
+        "alice-c1-s1",
+        "alice-c1-s2"
+      ],
+      [
+        "alice-c1-s3",
+        "alice-c1-s4"
+      ]
+    ],
+    "preservedNextOpening": ".artifacts/alice-in-wonderland/chapter-1-restructure/scene-3-opening-preserved.json",
+    "preservation": "Approved first38151ms of oldS5 retained as newS3 opening; existing S1/S2 and IDs unchanged. Hall extension follows approved shared measurements.",
+    "chapterComplete": true
+  },
+  "savedPassageAliases": {
+    "alice-c1-well-end": "alice-c1-s5-safe",
+    "alice-c1-solid-ground-end": "alice-c1-drink-bottle",
+    "alice-c1-drink-end": "alice-c1-eat-label",
+    "alice-c1-eat-end": "alice-c1-pool-help"
+  },
+  "serialized": true,
+  "availableChapter": "chapter-1",
+  "subtitle": "An original abridgment of Lewis Carroll’s classic",
+  "attribution": "Based on Alice’s Adventures in Wonderland by Lewis Carroll"
+}

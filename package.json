@@ -1,0 +1,18 @@
+{
+  "name": "pixel-nook-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local pixel-art story studio and reader",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "node server/server.mjs",
+    "qa": "node qa/run.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
