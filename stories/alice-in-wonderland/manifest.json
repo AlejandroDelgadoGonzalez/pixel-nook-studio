@@ -4,7 +4,7 @@
   "id": "alice-in-wonderland-v1",
   "cover": "/stories/alice-in-wonderland/assets/environments/riverbank-panorama-v6.png",
   "coverAlt": "A leafy tree above a sunny riverbank path leading to a rabbit hole.",
-  "duration": "Chapter1 complete — Chapter2, Scenes1–6",
+  "duration": "Chapter1 complete — Chapter2, Scenes1–7",
   "category": "Wonder and discovery",
   "themes": [
     "Curiosity",
@@ -38,14 +38,15 @@
       "number": 2,
       "status": "available",
       "title": "Strange Company",
-      "description": "Scenes1–6: through Bill and the Chimney.",
+      "description": "Scenes1–7: through One Small Cake.",
       "scenes": [
         "A Way Out",
         "The Driest Story",
         "Prizes and Dinah",
         "Mary Ann!",
         "Far Too Much Alice",
-        "Bill and the Chimney"
+        "Bill and the Chimney",
+        "One Small Cake"
       ],
       "linePrefix": "alice-c2-",
       "source": "/stories/alice-in-wonderland/chapters/chapter-02.json"

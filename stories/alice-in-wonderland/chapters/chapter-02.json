@@ -3,9 +3,9 @@
   "id": "alice-in-wonderland-v1",
   "renderer": "alice-strange-company",
   "title": "Alice in Wonderland",
-  "intro": "Strange Company - A Way Out / The Driest Story / Prizes and Dinah / Mary Ann! / Far Too Much Alice / Bill and the Chimney",
-  "ending": "Three little cakes wait on the floor beside Alice.",
-  "description": "The first six scenes of Chapter2: Strange Company.",
+  "intro": "Strange Company - A Way Out / The Driest Story / Prizes and Dinah / Mary Ann! / Far Too Much Alice / Bill and the Chimney / One Small Cake",
+  "ending": "Alice is free of the house, with the moonlit forest path ahead.",
+  "description": "Chapter2, Scenes1–7: through One Small Cake.",
   "stageLabel": "Alice and her companions in Wonderland",
   "episodes": true,
   "timing": {
@@ -256,6 +256,14 @@
       "moment": 0,
       "clock": 0,
       "place": "I"
+    },
+    "cake": {
+      "size": 1.279488,
+      "consumed": false,
+      "door": 0,
+      "place": "I",
+      "moment": 0,
+      "active": false
     }
   },
   "characters": {
@@ -29452,26 +29460,463 @@
           "who": "alice",
           "text": "Perhaps one of them can help me get out.",
           "readingDurationMs": 3000
-        },
-        {
-          "id": "alice-c2-bill-end",
-          "type": "end"
         }
       ],
       "locomotionEnvironment": "rabbit-house",
       "durationReview": {
-        "automaticSeconds": 70.2,
-        "authorized": true
+        "phase": "revision",
+        "preserveTextAndPauses": true,
+        "authorization": {
+          "date": "2026-11-10",
+          "reason": "User-approved seamless S6 to S7 handoff; preserve S6 final dialogue without a dead silent tail."
+        }
+      },
+      "videoExport": {
+        "endAtLastBeat": true
       }
+    },
+    {
+      "id": "alice-c2-one-small-cake",
+      "name": "One Small Cake",
+      "atmosphere": "A small bite, a clear path and moonlit freedom.",
+      "videoExport": {
+        "closingHook": {
+          "from": "alice-c2-cake-21",
+          "through": "alice-c2-cake-21",
+          "durationMs": 3000
+        }
+      },
+      "steps": [
+        {
+          "id": "alice-c2-cake-01",
+          "type": "text",
+          "cakeMoment": 1,
+          "who": "alice",
+          "text": "The pebbles turned into little cakes. Perhaps one can help me.",
+          "readingDurationMs": 5200,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-02",
+          "type": "text",
+          "cakeMoment": 2,
+          "who": "alice",
+          "text": "Only a small bite. I have had quite enough of growing.",
+          "readingDurationMs": 5000,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-03",
+          "type": "action",
+          "cakeMoment": 3,
+          "duration": 2000,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "moment": 3,
+              "active": true
+            },
+            "actors": {
+              "alice": {
+                "x": 1199.884,
+                "y": 758.978,
+                "visible": 1
+              }
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-04",
+          "type": "action",
+          "cakeMoment": 4,
+          "duration": 600,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "moment": 4
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-05",
+          "type": "action",
+          "cakeMoment": 5,
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "moment": 5,
+              "consumed": true
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-06",
+          "type": "action",
+          "cakeMoment": 6,
+          "duration": 2400,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "moment": 6,
+              "size": 0.72
+            },
+            "large": {
+              "size": 0.72,
+              "fold": 0
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-07",
+          "type": "text",
+          "cakeMoment": 7,
+          "who": "alice",
+          "text": "Smaller. At last!",
+          "readingDurationMs": 2400,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-08",
+          "type": "action",
+          "cakeMoment": 8,
+          "duration": 2000,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "moment": 8,
+              "size": 0.48
+            },
+            "large": {
+              "size": 0.48
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-09",
+          "type": "text",
+          "cakeMoment": 9,
+          "who": "alice",
+          "text": "The room looks enormous again. I am nearly small enough.",
+          "readingDurationMs": 4400,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-10",
+          "type": "action",
+          "cakeMoment": 10,
+          "duration": 1800,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "moment": 10,
+              "size": 0.32
+            },
+            "large": {
+              "size": 0.32
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-11",
+          "type": "action",
+          "cakeMoment": 11,
+          "duration": 1100,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "moment": 11
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-12",
+          "type": "text",
+          "cakeMoment": 12,
+          "who": "alice",
+          "text": "I can move again. And this time, I am staying small.",
+          "readingDurationMs": 5000,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-13",
+          "type": "text",
+          "cakeMoment": 13,
+          "who": "alice",
+          "text": "The door. I must get out before the Rabbit sees me.",
+          "readingDurationMs": 4800,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-14-walk",
+          "type": "action",
+          "cakeMoment": 14,
+          "duration": 1400,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1107.768115942029,
+                "y": 671.5365126676602,
+                "pose": "walk",
+                "facing": "back"
+              }
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-14-open",
+          "type": "action",
+          "cakeMoment": 14,
+          "duration": 600,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "door": 1
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-14-threshold",
+          "type": "action",
+          "cakeMoment": 14,
+          "duration": 2000,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 1100,
+                "y": 641,
+                "visible": 0,
+                "pose": "walk"
+              }
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-15",
+          "type": "action",
+          "cakeMoment": 15,
+          "duration": 700,
+          "caption": "clear",
+          "effects": {
+            "cake": {
+              "place": "E",
+              "door": 1
+            },
+            "environment": "rabbit-house",
+            "actors": {
+              "alice": {
+                "x": 741.5447071705133,
+                "y": 606.8286236740663,
+                "visible": 0
+              }
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700
+          }
+        },
+        {
+          "id": "alice-c2-cake-16-emerge",
+          "type": "action",
+          "cakeMoment": 16,
+          "duration": 2000,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 753.5447071705133,
+                "y": 622.8286236740663,
+                "visible": 1,
+                "pose": "walk"
+              }
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-16-steps",
+          "type": "action",
+          "cakeMoment": 16,
+          "duration": 1000,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 705,
+                "y": 710,
+                "visible": 1,
+                "pose": "walk"
+              }
+            },
+            "cake": {
+              "door": 0
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-17",
+          "type": "text",
+          "cakeMoment": 17,
+          "who": "white-rabbit",
+          "text": "There she goes!",
+          "readingDurationMs": 2200,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-18",
+          "type": "action",
+          "cakeMoment": 18,
+          "duration": 2300,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 455,
+                "y": 686,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-19",
+          "type": "text",
+          "cakeMoment": 19,
+          "who": "alice",
+          "text": "No more bottles. No more errands. Just the path.",
+          "readingDurationMs": 4400,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-20",
+          "type": "text",
+          "cakeMoment": 20,
+          "who": "alice",
+          "text": "The trees are close. I can find my own way.",
+          "readingDurationMs": 5000,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-cake-21",
+          "type": "action",
+          "cakeMoment": 21,
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "actors": {
+              "alice": {
+                "x": 260,
+                "y": 760,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          },
+          "linearMotion": true,
+          "camera": {
+            "hold": false
+          }
+        },
+        {
+          "id": "alice-c2-cake-end",
+          "type": "end",
+          "cakeMoment": 21
+        }
+      ]
     }
   ],
   "presentation": {
     "eyebrow": "LEWIS CARROLL · AN ORIGINAL ABRIDGMENT"
   },
   "completion": {
-    "scope": "scene",
+    "scope": "scenes",
     "chapter": "chapter-2",
-    "scene": "alice-c2-far-too-much"
+    "scenes": [
+      "alice-c2-a-way-out",
+      "alice-c2-the-driest-story",
+      "alice-c2-prizes-and-dinah",
+      "alice-c2-mary-ann",
+      "alice-c2-far-too-much",
+      "alice-c2-bill",
+      "alice-c2-one-small-cake"
+    ]
   },
   "sceneDurationPolicy": {
     "measurement": "automatic-only",
@@ -29497,7 +29942,8 @@
     "alice-c2-large-17": "alice-c2-large-21",
     "alice-c2-large-18": "alice-c2-large-21",
     "alice-c2-large-19": "alice-c2-large-21",
-    "alice-c2-large-end": "alice-c2-bill-04"
+    "alice-c2-large-end": "alice-c2-bill-04",
+    "alice-c2-bill-end": "alice-c2-bill-24"
   },
   "serialized": true,
   "availableChapter": "chapter-2",

@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "status": "Approved Gates1/2A with mandatory crouched eating, physical doorway and camera corrections; runtime geometry",
+  "scene": "C2-S7",
+  "title": "One Small Cake",
+  "baseCommit": "ab8938a",
+  "worldUnits": "Native scene pixels; interior1664x936 plus already-approved floor reuse through1224; exterior1670x942",
+  "assets": {
+    "interior": {
+      "path": "stories/alice-in-wonderland/assets/environments/rabbit-house-interior-c2-s5-v4.png",
+      "sha256": "57a453f95822fd9a7918ac841cbe4ab8104c804cbc458a8d368035416c7f2dd3"
+    },
+    "exterior": {
+      "path": "stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
+      "sha256": "918d4c7b719e3c8a9df43d4ae6ba09b5032223ad818db0882a154ee7410142b6"
+    },
+    "alice": {
+      "path": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+      "sha256": "62c7090ff483f61b2d9bc98c9b653c531bc49385748e524c03871e5f4abceb93"
+    }
+  },
+  "opening": {
+    "inheritExactS6Close": true,
+    "bodyRoot": [
+      1026,
+      664
+    ],
+    "bodyScale": 0.833,
+    "scaleState": 1.279488,
+    "frames": [
+      {
+        "width": 1280,
+        "height": 720,
+        "frame": {
+          "x": 925.1674796747967,
+          "y": 625.2606829268293,
+          "z": 0.8685827272085305,
+          "fits": true,
+          "lock": "rabbit-full-room-clean-fold"
+        },
+        "body": {
+          "x": 1026,
+          "y": 664,
+          "scale": 0.833,
+          "bounds": {
+            "type": 5,
+            "x": 721.6773333333335,
+            "y": 224.176,
+            "width": 413.1680000000001,
+            "height": 453.152
+          }
+        },
+        "props": {
+          "fan": {
+            "pose": "fan-replacement",
+            "anchor": [
+              907,
+              570
+            ],
+            "worldHeight": 22
+          },
+          "gloves": {
+            "pose": "gloves-replacement",
+            "anchor": [
+              980,
+              570
+            ],
+            "worldHeight": 18
+          },
+          "bottle": {
+            "fullPose": "bottle-unlabelled-full",
+            "sippedPose": "bottle-unlabelled-sipped",
+            "anchor": [
+              948,
+              570
+            ],
+            "worldHeight": 32,
+            "attachmentPolicy": {
+              "holdMoments": [
+                5,
+                6,
+                7
+              ],
+              "drinkMoment": 8,
+              "tableReturnMoment": 10,
+              "mode": "step"
+            }
+          },
+          "cork": {
+            "pose": "cork",
+            "anchor": [
+              996,
+              569
+            ],
+            "worldHeight": 5
+          }
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "frame": {
+          "x": 927.5706666666667,
+          "y": 615.0848979234972,
+          "z": 0.8061127676877202,
+          "fits": true,
+          "lock": "rabbit-full-room-clean-fold"
+        },
+        "body": {
+          "x": 1026,
+          "y": 664,
+          "scale": 0.833,
+          "bounds": {
+            "type": 5,
+            "x": 721.6773333333335,
+            "y": 224.176,
+            "width": 413.1680000000001,
+            "height": 453.152
+          }
+        },
+        "props": {
+          "fan": {
+            "pose": "fan-replacement",
+            "anchor": [
+              907,
+              570
+            ],
+            "worldHeight": 22
+          },
+          "gloves": {
+            "pose": "gloves-replacement",
+            "anchor": [
+              980,
+              570
+            ],
+            "worldHeight": 18
+          },
+          "bottle": {
+            "fullPose": "bottle-unlabelled-full",
+            "sippedPose": "bottle-unlabelled-sipped",
+            "anchor": [
+              948,
+              570
+            ],
+            "worldHeight": 32,
+            "attachmentPolicy": {
+              "holdMoments": [
+                5,
+                6,
+                7
+              ],
+              "drinkMoment": 8,
+              "tableReturnMoment": 10,
+              "mode": "step"
+            }
+          },
+          "cork": {
+            "pose": "cork",
+            "anchor": [
+              996,
+              569
+            ],
+            "worldHeight": 5
+          }
+        }
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "frame": {
+          "x": 927.5706666666667,
+          "y": 618.8702026431719,
+          "z": 2.1880869995056846,
+          "fits": true,
+          "lock": "rabbit-full-room-clean-fold"
+        },
+        "body": {
+          "x": 1026,
+          "y": 664,
+          "scale": 0.833,
+          "bounds": {
+            "type": 5,
+            "x": 721.6773333333335,
+            "y": 224.176,
+            "width": 413.1680000000001,
+            "height": 453.152
+          }
+        },
+        "props": {
+          "fan": {
+            "pose": "fan-replacement",
+            "anchor": [
+              907,
+              570
+            ],
+            "worldHeight": 22
+          },
+          "gloves": {
+            "pose": "gloves-replacement",
+            "anchor": [
+              980,
+              570
+            ],
+            "worldHeight": 18
+          },
+          "bottle": {
+            "fullPose": "bottle-unlabelled-full",
+            "sippedPose": "bottle-unlabelled-sipped",
+            "anchor": [
+              948,
+              570
+            ],
+            "worldHeight": 32,
+            "attachmentPolicy": {
+              "holdMoments": [
+                5,
+                6,
+                7
+              ],
+              "drinkMoment": 8,
+              "tableReturnMoment": 10,
+              "mode": "step"
+            }
+          },
+          "cork": {
+            "pose": "cork",
+            "anchor": [
+              996,
+              569
+            ],
+            "worldHeight": 5
+          }
+        }
+      }
+    ],
+    "cakes": [
+      [
+        850,
+        706
+      ],
+      [
+        880,
+        710
+      ],
+      [
+        910,
+        704
+      ]
+    ],
+    "props": {
+      "fan": {
+        "pose": "fan-replacement",
+        "anchor": [
+          907,
+          570
+        ],
+        "worldHeight": 22
+      },
+      "gloves": {
+        "pose": "gloves-replacement",
+        "anchor": [
+          980,
+          570
+        ],
+        "worldHeight": 18
+      },
+      "bottle": {
+        "fullPose": "bottle-unlabelled-full",
+        "sippedPose": "bottle-unlabelled-sipped",
+        "anchor": [
+          948,
+          570
+        ],
+        "worldHeight": 32,
+        "attachmentPolicy": {
+          "holdMoments": [
+            5,
+            6,
+            7
+          ],
+          "drinkMoment": 8,
+          "tableReturnMoment": 10,
+          "mode": "step"
+        }
+      },
+      "cork": {
+        "pose": "cork",
+        "anchor": [
+          996,
+          569
+        ],
+        "worldHeight": 5
+      }
+    }
+  },
+  "anchors": {
+    "selectedCake": [
+      910,
+      704
+    ],
+    "remainingCakes": [
+      [
+        850,
+        706
+      ],
+      [
+        880,
+        710
+      ]
+    ],
+    "proposedPickupFeet": [
+      1199.884,
+      758.978
+    ],
+    "pickupHand": [
+      910,
+      704
+    ],
+    "pickupPose": "collect-fan",
+    "heldCakeEatingAnchor": [
+      1043.6041945945947,
+      502.414
+    ],
+    "eatingPose": "take-cake",
+    "interiorDoorRing": [
+      1057,
+      581
+    ],
+    "interiorDoorFeet": [
+      1107.768115942029,
+      671.5365126676602
+    ],
+    "interiorThreshold": [
+      1100,
+      641
+    ],
+    "exteriorDoorFeet": [
+      753.5447071705133,
+      622.8286236740663
+    ],
+    "gate": [
+      455,
+      642
+    ],
+    "gatePause": [
+      455,
+      686
+    ],
+    "forestEdge": [
+      260,
+      760
+    ],
+    "waitingRabbit": [
+      1120,
+      675
+    ],
+    "waitingBill": [
+      1235,
+      675
+    ],
+    "selectedCakeIndex": 2,
+    "pickupFingerNormalized": [
+      3,
+      129.5
+    ],
+    "mouthNormalized": [
+      59,
+      69
+    ]
+  },
+  "scaleStages": [
+    1.279488,
+    0.72,
+    0.48,
+    0.32
+  ],
+  "cameras": {
+    "opening": "Exact inherited per-layout frames above",
+    "pickupPortrait390": {
+      "x": 1080,
+      "y": 616,
+      "z": 0.6975
+    },
+    "firstShrinkPortrait390": {
+      "x": 1010,
+      "y": 616,
+      "z": 0.6975
+    },
+    "pickupDesktop1280": {
+      "x": 832,
+      "y": 603,
+      "z": 0.775
+    },
+    "firstShrinkDesktop1280": {
+      "x": 832,
+      "y": 640,
+      "z": 0.775
+    },
+    "eatingDesktop1280": {
+      "x": 832,
+      "y": 527,
+      "z": 0.775,
+      "dialogue": "closed; reframe toward y640 during first shrink"
+    },
+    "exteriorDoorPortrait390": {
+      "x": 754,
+      "y": 650,
+      "z": 1.5
+    },
+    "exteriorGatePortrait390": {
+      "x": 455,
+      "y": 600,
+      "z": 1.25
+    },
+    "forestEdgePortrait390": {
+      "x": 340,
+      "y": 600,
+      "z": 1.25
+    },
+    "smallPortraitCenterX": 1074,
+    "captionSafeHeightRatio": 0.63,
+    "pickupBoundsX": [
+      841,
+      1386.476
+    ],
+    "runtimeNotes": "Opening copies the exact S6 final frame. Silent crouch frames fit the measured silhouette. Small portrait center1074 includes both remaining cakes. Exterior follows the measured routes; safe fit clamps to the original panorama."
+  },
+  "walkPaths": {
+    "insideToDoor": [
+      [
+        1199.884,
+        758.978
+      ],
+      [
+        1118,
+        710
+      ],
+      [
+        1107.768115942029,
+        671.5365126676602
+      ]
+    ],
+    "interiorThresholdCrossing": [
+      [
+        1107.768115942029,
+        671.5365126676602
+      ],
+      [
+        1100,
+        641
+      ]
+    ],
+    "exitSteps": [
+      [
+        753.5447071705133,
+        622.8286236740663
+      ],
+      [
+        754,
+        641
+      ],
+      [
+        754,
+        659
+      ],
+      [
+        785,
+        675
+      ],
+      [
+        705,
+        710
+      ]
+    ],
+    "yardToGate": [
+      [
+        705,
+        710
+      ],
+      [
+        560,
+        710
+      ],
+      [
+        455,
+        686
+      ]
+    ],
+    "forestHook": [
+      [
+        455,
+        686
+      ],
+      [
+        455,
+        642
+      ],
+      [
+        430,
+        690
+      ],
+      [
+        390,
+        720
+      ],
+      [
+        330,
+        740
+      ],
+      [
+        260,
+        760
+      ]
+    ],
+    "exteriorEmergence": [
+      [
+        741.5447071705133,
+        606.8286236740663
+      ],
+      [
+        753.5447071705133,
+        622.8286236740663
+      ]
+    ]
+  },
+  "poseReview": "Complete canonical poses only. Pickup fingertip is native opaque skin [3,129.5]; no anatomy overlays. Kneel through first shrink; stand only at0.72.",
+  "stagingLocks": [
+    "Only the selected cake changes owner at exact contact; the other two never move.",
+    "All locomotion has a walk/run cycle and occurs with dialogue closed and taps locked.",
+    "All shrink stages finish before opening dialogue; no spinner.",
+    "Props remain at the approved table positions.",
+    "Door stays on the right wall; facing is computed from target x.",
+    "Rabbit/Bill remain at their S6 yard positions; Rabbit may call from offscreen in portrait.",
+    "One700ms backdrop crossfade; no new panorama, character or texture generation.",
+    "Never stand before size<=0.72; whole take-cake kneeling pose during eating and first shrink.",
+    "Both unchosen cakes retain exact S6 coordinates; reach rightmost cake with opaque fingertip [3,129.5].",
+    "Cake stays at hand/mouth until final consumption; no invisible-held prop."
+  ],
+  "moments": [
+    {
+      "moment": 1,
+      "seconds": 5.2,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "The pebbles turned into little cakes. Perhaps one can help me."
+    },
+    {
+      "moment": 2,
+      "seconds": 5,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "Only a small bite. I have had quite enough of growing."
+    },
+    {
+      "moment": 3,
+      "seconds": 2,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Reuse collect-fan and reach the rightmost cake with the measured opaque fingertip; both unchosen cakes keep their S6 positions."
+    },
+    {
+      "moment": 4,
+      "seconds": 0.6,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Grip at contact; remove only that floor instance and attach the same cake to her hand."
+    },
+    {
+      "moment": 5,
+      "seconds": 3,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Remain kneeling in take-cake; visible cake at hand then mouth; consume only at end."
+    },
+    {
+      "moment": 6,
+      "seconds": 2.4,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Shrink kneeling from1.279488 to0.72 at the same floor support."
+    },
+    {
+      "moment": 7,
+      "seconds": 2.4,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "Smaller. At last!"
+    },
+    {
+      "moment": 8,
+      "seconds": 2,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Shrink to0.48; dialogue closed."
+    },
+    {
+      "moment": 9,
+      "seconds": 4.4,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "The room looks enormous again. I am nearly small enough."
+    },
+    {
+      "moment": 10,
+      "seconds": 1.8,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Finish shrinking to0.32; dialogue closed."
+    },
+    {
+      "moment": 11,
+      "seconds": 1.1,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Settle into standing-ready at the same ground support."
+    },
+    {
+      "moment": 12,
+      "seconds": 5,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "I can move again. And this time, I am staying small."
+    },
+    {
+      "moment": 13,
+      "seconds": 4.8,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "The door. I must get out before the Rabbit sees me."
+    },
+    {
+      "moment": 14,
+      "seconds": 4,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Walk to the door, stop at the ring, open it and step through."
+    },
+    {
+      "moment": 15,
+      "seconds": 0.7,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Whole-scene interior-to-exterior crossfade,700ms."
+    },
+    {
+      "moment": 16,
+      "seconds": 3,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Descend the visible steps while the door closes behind her."
+    },
+    {
+      "moment": 17,
+      "seconds": 2.2,
+      "kind": "text",
+      "speaker": "White Rabbit",
+      "textOrAction": "There she goes!"
+    },
+    {
+      "moment": 18,
+      "seconds": 2.3,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Run along the clear earth path toward the gate."
+    },
+    {
+      "moment": 19,
+      "seconds": 4.4,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "No more bottles. No more errands. Just the path."
+    },
+    {
+      "moment": 20,
+      "seconds": 5,
+      "kind": "text",
+      "speaker": "Alice",
+      "textOrAction": "The trees are close. I can find my own way."
+    },
+    {
+      "moment": 21,
+      "seconds": 3,
+      "kind": "action",
+      "speaker": "",
+      "textOrAction": "Silent hook: walk through the gate onto the forest-edge path, ready for S8."
+    }
+  ],
+  "plannedAutomaticSeconds": 64.3,
+  "approval": {
+    "date": "2026-11-10",
+    "scope": "C2-S7 only; all three user corrections applied"
+  }
+}
