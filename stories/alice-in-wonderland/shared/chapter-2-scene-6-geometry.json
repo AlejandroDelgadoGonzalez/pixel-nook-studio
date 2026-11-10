@@ -299,12 +299,12 @@
         650
       ],
       [
-        1080,
-        240
+        1000,
+        90
       ],
       [
-        970,
-        70
+        925,
+        60
       ],
       [
         925,
@@ -521,7 +521,7 @@
     "ladder": "Candidate art depicts a compact carrying ladder; proposal uses a folding ladder extended at moment8. Separate stationary ladder prop and independent climb silhouette must be finalized in art preparation before Gate3, within the same master, with no anatomy clipping."
   },
   "runtimeContinuity": {
-    "groundCameraCenterX": 900,
+    "groundCameraCenterX": 850,
     "flightCameraCenterX": 1090,
     "landingCameraCenterX": 1180,
     "roofCameraTweenMs": 1500,
@@ -594,12 +594,12 @@
         710
       ],
       [
-        690,
+        650,
         710
       ],
       [
-        780,
-        675
+        705,
+        655
       ]
     ],
     "rabbitStairs6": [
@@ -612,26 +612,22 @@
         641
       ],
       [
-        754,
-        659
-      ],
-      [
-        770,
-        675
-      ],
-      [
-        850,
-        675
+        785,
+        650
       ]
     ],
     "billEarth8": [
       [
-        780,
-        675
+        705,
+        655
       ],
       [
-        850,
-        710
+        705,
+        740
+      ],
+      [
+        920,
+        740
       ],
       [
         980,
@@ -644,22 +640,25 @@
     ],
     "rabbitEarthApproach16": [
       [
-        850,
-        675
+        785,
+        650
       ],
       [
-        935,
-        710
+        785,
+        740
       ],
       [
         1100,
-        710
+        740
       ],
       [
         1120,
         675
       ]
-    ]
+    ],
+    "billCarryLegSplitSourceX": 152,
+    "ladderCameraCenterX": 1000,
+    "receptionCameraCenterX": 780
   },
   "videoReview": {
     "groundCamera": "Wider and house centered; held across3–8",

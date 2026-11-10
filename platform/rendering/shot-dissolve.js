@@ -48,6 +48,9 @@ export function installShotDissolve(scene){
    sprite.setVisible(true).setAlpha(1);
    scene.cameras.main.setAlpha(backdropChanged?0:1);
   }
+  // Keep the selected camera transform current even at alpha zero. Phaser
+  // otherwise skips its render and can retain the outgoing shot matrix.
+  if(targetBackdrop!==null)scene.cameras.main.preRender?.();
   pendingBackdrop=targetBackdrop;
   if(automatic)seen=transition?.serial||0;
   // A lazy renderer can add its destination objects during draw. The snapshot

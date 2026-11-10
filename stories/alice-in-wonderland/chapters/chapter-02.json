@@ -28976,7 +28976,8 @@
           "billMoment": 8,
           "largeMoment": 14,
           "camera": {
-            "hold": true
+            "hold": false,
+            "reframe": true
           },
           "effects": {
             "bill": {

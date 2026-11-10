@@ -7,8 +7,8 @@ export function drawCharacter(ctx,source,sx,sy,sw,sh,width,height){
 }
 
 // Derived movement must preserve the same complete two-pixel clusters.
-export function createPixelWalkFrames(scene,prefix,id,col,units=1){
- const source=scene.textures.get(`${prefix}-${id}-${col}`).getSourceImage(),w=source.width,h=source.height,snap=n=>Math.round(n/(2*units))*2*units,leg=snap(h*.79),split=snap(w/2);
+export function createPixelWalkFrames(scene,prefix,id,col,units=1,options={}){
+ const source=scene.textures.get(`${prefix}-${id}-${col}`).getSourceImage(),w=source.width,h=source.height,snap=n=>Math.round(n/(2*units))*2*units,leg=snap(h*.79),split=snap(options.splitX??w/2);
  for(let frame=0;frame<8;frame++){
   const texture=scene.textures.createCanvas(`${prefix}-${id}-walk-${col}-${frame}`,w+12*units,h),ctx=texture.context,stride=Math.sin(frame*Math.PI/4),shift=snap(stride*3*units);ctx.imageSmoothingEnabled=false;
   ctx.drawImage(source,0,leg,split,h-leg,6*units+shift,leg-Math.max(0,snap(stride*2*units)),split,h-leg);
