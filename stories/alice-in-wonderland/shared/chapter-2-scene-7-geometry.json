@@ -317,18 +317,14 @@
       704
     ],
     "pickupPose": "collect-fan",
-    "heldCakeEatingAnchor": [
-      1043.6041945945947,
-      502.414
-    ],
-    "eatingPose": "take-cake",
+    "eatingPose": "kneeling-bite",
     "interiorDoorRing": [
-      1057,
-      581
+      1054,
+      542
     ],
     "interiorDoorFeet": [
-      1107.768115942029,
-      671.5365126676602
+      1065,
+      668
     ],
     "interiorThreshold": [
       1100,
@@ -363,9 +359,9 @@
       3,
       129.5
     ],
-    "mouthNormalized": [
-      59,
-      69
+    "biteHandNormalized": [
+      31.5,
+      74.5
     ]
   },
   "scaleStages": [
@@ -436,14 +432,14 @@
         710
       ],
       [
-        1107.768115942029,
-        671.5365126676602
+        1065,
+        668
       ]
     ],
     "interiorThresholdCrossing": [
       [
-        1107.768115942029,
-        671.5365126676602
+        1065,
+        668
       ],
       [
         1100,
@@ -492,10 +488,6 @@
         686
       ],
       [
-        455,
-        642
-      ],
-      [
         430,
         690
       ],
@@ -523,27 +515,20 @@
       ]
     ]
   },
-  "poseReview": "Complete canonical poses only. Pickup fingertip is native opaque skin [3,129.5]; no anatomy overlays. Kneel through first shrink; stand only at0.72.",
+  "poseReview": "Canonical pickup and crouched shrink. At the bite, the raised arm from the canonical eating pose meets the face while Alice stays kneeling.",
   "stagingLocks": [
     "Only the selected cake changes owner at exact contact; the other two never move.",
     "All locomotion has a walk/run cycle and occurs with dialogue closed and taps locked.",
     "All shrink stages finish before opening dialogue; no spinner.",
     "Props remain at the approved table positions.",
     "Door stays on the right wall; facing is computed from target x.",
-    "Rabbit/Bill remain at their S6 yard positions; Rabbit may call from offscreen in portrait.",
     "One700ms backdrop crossfade; no new panorama, character or texture generation.",
-    "Never stand before size<=0.72; whole take-cake kneeling pose during eating and first shrink.",
     "Both unchosen cakes retain exact S6 coordinates; reach rightmost cake with opaque fingertip [3,129.5].",
-    "Cake stays at hand/mouth until final consumption; no invisible-held prop."
+    "Cake stays at hand/mouth until final consumption; no invisible-held prop.",
+    "The Rabbit remains in view while speaking in portrait.",
+    "The bite keeps Alice kneeling, with the cake attached to her raised hand until consumption."
   ],
   "moments": [
-    {
-      "moment": 1,
-      "seconds": 5.2,
-      "kind": "text",
-      "speaker": "Alice",
-      "textOrAction": "The pebbles turned into little cakes. Perhaps one can help me."
-    },
     {
       "moment": 2,
       "seconds": 5,
@@ -570,7 +555,7 @@
       "seconds": 3,
       "kind": "action",
       "speaker": "",
-      "textOrAction": "Remain kneeling in take-cake; visible cake at hand then mouth; consume only at end."
+      "textOrAction": "Use the canonical eating arm with the kneeling pose; the cake stays in the raised hand at the mouth until the first shrink starts."
     },
     {
       "moment": 6,
@@ -685,9 +670,43 @@
       "textOrAction": "Silent hook: walk through the gate onto the forest-edge path, ready for S8."
     }
   ],
-  "plannedAutomaticSeconds": 64.3,
+  "plannedAutomaticSeconds": 59.1,
   "approval": {
     "date": "2026-11-10",
     "scope": "C2-S7 only; all three user corrections applied"
+  },
+  "biteArm": {
+    "source": [
+      0,
+      60,
+      37,
+      42
+    ],
+    "offset": [
+      19,
+      60
+    ],
+    "removePolygon": [
+      [
+        0,
+        76
+      ],
+      [
+        50,
+        76
+      ],
+      [
+        52,
+        91
+      ],
+      [
+        46,
+        105
+      ],
+      [
+        0,
+        105
+      ]
+    ]
   }
 }

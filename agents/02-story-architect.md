@@ -44,6 +44,8 @@ Escribir con calidez, economía y precisión. Confiar en la acción visible sin 
 
 ## PLAYBOOK
 
+**Continuidad sin redundancia entre escenas consecutivas.** Si la escena saliente concluye con una deducción clara en diálogo y ambas escenas se leen de forma continua, la entrante empieza con la acción o decisión que se desprende de ella. Su primer diálogo jamás repite la premisa.
+
 ### Exterior-to-Interior Architectural Continuity Lock — permanent
 
 Cada transición exterior → interior debe conservar la identidad física del MISMO edificio. Antes del arte, 02 declara la pared observada, el eje de cámara, la entrada visible y la correspondencia de puertas/ventanas; conserva el guion aprobado salvo los ajustes espaciales autorizados. No confundir cambiar de punto de vista con cambiar la arquitectura.

@@ -29,6 +29,12 @@ Preciso y paciente con el movimiento. Cada decisión debe poder explicarse con e
 
 ## PLAYBOOK
 
+**Protocolo de consumo anatómico de objetos.** Al comer o beber, la mano debe llevar el objeto visiblemente hasta la boca o el rostro antes de que desaparezca o cambie la escala del personaje. Queda prohibido consumirlo con el brazo extendido lejos de la cara.
+
+**Encuadre obligatorio del personaje que habla en móvil.** En 9:16, al abrir `#dialogue` con la línea de un personaje presente en la escena, el hablante debe estar visible dentro del encuadre.
+
+**Eliminación de giros parasitarios antes de caminar.** Si un personaje ya mira en la dirección de su próximo desplazamiento lateral, debe entrar directamente al ciclo de caminata, sin intercalar frames frontales (`down`).
+
 **Sequential Scene Handoff Check:** Al implementar S(n), conectar S(n-1)→S(n) en el capítulo compilado y comprobar manifiesto/índice de disponibilidad. Solo la última escena disponible conserva un paso `end`; retirar los cierres intermedios obsoletos y preservar sus IDs mediante alias cuando corresponda. Conservar íntegros guion, tiempos, estado y gancho anterior. En Compuerta4, Playwright debe reproducir el capítulo desde el principio en modo continuo automático y manual, atravesar todas las escenas en orden, comprobar expresamente el paso anterior→nueva y rechazar cualquier pantalla visible de cierre o “The next scene is not yet available” antes del final real. Abrir S(n) con enlace directo no acredita este control. Probar también guardado/continuación y el modo de pausa entre escenas cuando exista. No borrar el progreso real del usuario para ocultar un fallo de datos.
 
 

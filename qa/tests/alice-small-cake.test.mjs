@@ -7,7 +7,7 @@ import {resolveSavedPassage} from '../../platform/storage/compatibility.js';
 const raw=JSON.parse(fs.readFileSync('stories/alice-in-wonderland/chapters/chapter-02.json','utf8')),story=compileStory(raw);
 test('S6 flows directly into S7 and preserves the retired terminal passage',()=>{
  const e=new ReaderEngine(story);e.setAuto(true);e.start('alice-c2-bill-24');e.tick(e.step.readingDurationMs);
- assert.equal(e.running,true);assert.equal(e.step.id,'alice-c2-cake-01');assert.equal(e.step.sceneIndex,6);
+ assert.equal(e.running,true);assert.equal(e.step.id,'alice-c2-cake-02');assert.equal(e.step.sceneIndex,6);
  assert.equal(resolveSavedPassage(story,'alice-c2-bill-end'),'alice-c2-bill-24');
  assert.deepEqual(story.steps.filter(s=>s.type==='end').map(s=>s.id),['alice-c2-cake-end']);
 });

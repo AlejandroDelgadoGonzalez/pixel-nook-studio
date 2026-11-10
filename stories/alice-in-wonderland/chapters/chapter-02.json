@@ -29488,17 +29488,6 @@
       },
       "steps": [
         {
-          "id": "alice-c2-cake-01",
-          "type": "text",
-          "cakeMoment": 1,
-          "who": "alice",
-          "text": "The pebbles turned into little cakes. Perhaps one can help me.",
-          "readingDurationMs": 5200,
-          "camera": {
-            "hold": true
-          }
-        },
-        {
           "id": "alice-c2-cake-02",
           "type": "text",
           "cakeMoment": 2,
@@ -29696,10 +29685,10 @@
           "effects": {
             "actors": {
               "alice": {
-                "x": 1107.768115942029,
-                "y": 671.5365126676602,
+                "x": 1065,
+                "y": 668,
                 "pose": "walk",
-                "facing": "back"
+                "facing": "left"
               }
             }
           },
@@ -29899,7 +29888,15 @@
           "type": "end",
           "cakeMoment": 21
         }
-      ]
+      ],
+      "durationReview": {
+        "phase": "revision",
+        "preserveTextAndPauses": true,
+        "authorization": {
+          "date": "2026-11-10",
+          "reason": "Remove the explicitly identified redundant opener; preserve the remaining lines and their reading times."
+        }
+      }
     }
   ],
   "presentation": {
@@ -29943,7 +29940,8 @@
     "alice-c2-large-18": "alice-c2-large-21",
     "alice-c2-large-19": "alice-c2-large-21",
     "alice-c2-large-end": "alice-c2-bill-04",
-    "alice-c2-bill-end": "alice-c2-bill-24"
+    "alice-c2-bill-end": "alice-c2-bill-24",
+    "alice-c2-cake-01": "alice-c2-cake-02"
   },
   "serialized": true,
   "availableChapter": "chapter-2",
