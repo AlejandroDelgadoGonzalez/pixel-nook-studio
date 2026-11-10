@@ -78018,7 +78018,11 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            241,
+            363
+          ]
         },
         {
           "id": "bill-walk-right",
@@ -78120,7 +78124,11 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            292,
+            363
+          ]
         },
         {
           "id": "bill-carry-ladder-right",
@@ -78222,7 +78230,11 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            378,
+            363
+          ]
         },
         {
           "id": "bill-climb-ladder-right",
@@ -78324,7 +78336,11 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            273,
+            391
+          ]
         },
         {
           "id": "bill-descend-right",
@@ -78426,7 +78442,11 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            331,
+            267
+          ]
         },
         {
           "id": "bill-airborne-right",
@@ -78528,7 +78548,11 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            309,
+            351
+          ]
         },
         {
           "id": "bill-seated-dazed-left",
@@ -78630,7 +78654,11 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            309,
+            287
+          ]
         },
         {
           "id": "bill-recover-left",
@@ -78732,8 +78760,16 @@
               1,
               1
             ]
-          }
+          },
+          "normalizedWorldSize": [
+            283,
+            356
+          ]
         }
+      ],
+      "dimensions": [
+        2048,
+        1120
       ]
     }
   ],

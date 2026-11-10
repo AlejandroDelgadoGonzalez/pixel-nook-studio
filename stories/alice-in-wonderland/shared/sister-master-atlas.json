@@ -53,7 +53,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "c7160c78d882a0576c909ce9c91eb964a44fb2854229c1d75329e57115597ed1",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           57,
           60,
@@ -492,7 +492,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "29c53abdcc29bc1bf1793dc5984b0cef87b8eb82a8f1e6fbe56f0f5407faad5b",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           428,
           72,
@@ -976,7 +976,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "6b02161ac05d4ec6dbd7fd7bedc8fc4e6399c415fdd79cddb34dfde3348b4b91",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           853,
           72,
@@ -1323,7 +1323,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "6001bd74df71629e7c7b7591657f6d1f7ed800f14301f363bf232b3a3a3168b3",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           1217,
           73,
@@ -1814,7 +1814,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "1758873caa2cbcee0af4ecd1f41c762fef5f96c8e92e6cd06cbd2de51b86f245",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           31,
           592,
@@ -2287,7 +2287,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "197e1b9bbaf6fbd7e65f2d2adff8d16c0f11ac633d8bef187974d33a1b0caf32",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           423,
           587,
@@ -2755,7 +2755,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "5fd2ce67001efc8a99826e2b1fbed02d3eb754347f01aa4a45bb2ad28d1c1466",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           790,
           599,
@@ -3228,7 +3228,7 @@
       "masterCharacter": "sister",
       "lockedCropSha256": "47e6987f90729bf4705e1b9fe131f0feb2d1e4b0f1045cf12ccadfe0671b26cf",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/sister-s1-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/sister-s1-v1.png",
         "originalBounds": [
           1198,
           592,

@@ -18,11 +18,11 @@
       "mirror": true,
       "displayScale": 0.833,
       "bodyPosition": [
-        684.9866666666667,
+        720.9866666666667,
         224.608
       ],
       "worldBodyPivot": [
-        989.3093333333331,
+        1025.3093333333331,
         664.432
       ],
       "wholeCanonicalSprite": true,
@@ -161,16 +161,16 @@
     ],
     "cakeRest": [
       [
-        640,
-        698
+        850,
+        706
       ],
       [
-        666,
+        880,
+        710
+      ],
+      [
+        910,
         704
-      ],
-      [
-        694,
-        697
       ]
     ],
     "depth": {
@@ -180,7 +180,11 @@
       "cakes": 705
     },
     "aliceRecoil": "Whole sprite4px and return within1.2s; final rig unchanged. No isolated limbs.",
-    "floorReuse": "Three native96px floor strips reused below936; no new panorama PNG or generation. Runtime coverage1224."
+    "floorReuse": "Three native96px floor strips reused below936; no new panorama PNG or generation. Runtime coverage1224.",
+    "kickPoint": [
+      785,
+      570
+    ]
   },
   "exterior": {
     "doorHandle": [

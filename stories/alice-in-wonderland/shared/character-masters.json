@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "All seven appeared characters consolidated; no per-scene character PNGs allowed",
+  "status": "All eight appeared characters registered; one runtime master per character",
   "characters": {
     "alice": {
       "metadata": "stories/alice-in-wonderland/shared/alice-master-atlas.json",
@@ -96,6 +96,14 @@
       "masterSha256": "6410964696df619363731fc4414a9ab2db814cf4f8350d691b9eb266a9a592d2",
       "proportionChecks": [],
       "visualReview": "Existing pose alpha/physical sizes/anchors preserved; new canonical palette cleanup pending Alejandro review. Four logical transparent storage cells on all sides."
+    },
+    "bill": {
+      "metadata": "stories/alice-in-wonderland/shared/bill-lizard-master-atlas.json",
+      "canonicalSource": "stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+      "canonicalSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+      "masterSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+      "approval": "Existing approved C2-S6 cleaned master; registration only",
+      "proportionChecks": []
     }
   },
   "policy": "Existing poses must reuse master cells. Extraordinary generation records direct original source. No successive scene references.",

@@ -1,0 +1,1006 @@
+{
+  "schemaVersion": 2,
+  "character": "bill",
+  "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+  "dimensions": [
+    2048,
+    1120
+  ],
+  "canonicalSource": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+  "canonicalSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+  "referenceCharacterMaster": "concept_art/characters/storybook-classic-core.png",
+  "approval": "Existing Gate1/2A approval for C2-S6; this registration does not create a new design or artwork approval",
+  "poses": [
+    {
+      "id": "bill-idle-front",
+      "sourceBoundsExclusive": [
+        135,
+        98,
+        376,
+        461
+      ],
+      "cellBoundsExclusive": [
+        0,
+        0,
+        512,
+        560
+      ],
+      "logicalSize": [
+        241,
+        363
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            120,
+            105,
+            134,
+            119
+          ],
+          [
+            174,
+            105,
+            188,
+            119
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14,
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        241,
+        363
+      ],
+      "pose": "idle-front",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        241,
+        363
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          135,
+          98,
+          376,
+          461
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    },
+    {
+      "id": "bill-walk-right",
+      "sourceBoundsExclusive": [
+        622,
+        98,
+        914,
+        461
+      ],
+      "cellBoundsExclusive": [
+        512,
+        0,
+        1024,
+        560
+      ],
+      "logicalSize": [
+        292,
+        363
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            221,
+            95,
+            235,
+            109
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        292,
+        363
+      ],
+      "pose": "walk-right",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        292,
+        363
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          622,
+          98,
+          914,
+          461
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    },
+    {
+      "id": "bill-carry-ladder-right",
+      "sourceBoundsExclusive": [
+        1091,
+        98,
+        1469,
+        461
+      ],
+      "cellBoundsExclusive": [
+        1024,
+        0,
+        1536,
+        560
+      ],
+      "logicalSize": [
+        378,
+        363
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            206,
+            94,
+            220,
+            108
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        378,
+        363
+      ],
+      "pose": "carry-ladder-right",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        378,
+        363
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          1091,
+          98,
+          1469,
+          461
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    },
+    {
+      "id": "bill-climb-ladder-right",
+      "sourceBoundsExclusive": [
+        1655,
+        84,
+        1928,
+        475
+      ],
+      "cellBoundsExclusive": [
+        1536,
+        0,
+        2048,
+        560
+      ],
+      "logicalSize": [
+        273,
+        391
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            162,
+            76,
+            176,
+            90
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        273,
+        391
+      ],
+      "pose": "climb-ladder-right",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        273,
+        391
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          1655,
+          84,
+          1928,
+          475
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    },
+    {
+      "id": "bill-descend-right",
+      "sourceBoundsExclusive": [
+        90,
+        706,
+        421,
+        973
+      ],
+      "cellBoundsExclusive": [
+        0,
+        560,
+        512,
+        1120
+      ],
+      "logicalSize": [
+        331,
+        267
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            238,
+            114,
+            252,
+            128
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        331,
+        267
+      ],
+      "pose": "descend-right",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        331,
+        267
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          90,
+          706,
+          421,
+          973
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    },
+    {
+      "id": "bill-airborne-right",
+      "sourceBoundsExclusive": [
+        613,
+        664,
+        922,
+        1015
+      ],
+      "cellBoundsExclusive": [
+        512,
+        560,
+        1024,
+        1120
+      ],
+      "logicalSize": [
+        309,
+        351
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            179,
+            82,
+            193,
+            96
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        309,
+        351
+      ],
+      "pose": "airborne-right",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        309,
+        351
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          613,
+          664,
+          922,
+          1015
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    },
+    {
+      "id": "bill-seated-dazed-left",
+      "sourceBoundsExclusive": [
+        1125,
+        696,
+        1434,
+        983
+      ],
+      "cellBoundsExclusive": [
+        1024,
+        560,
+        1536,
+        1120
+      ],
+      "logicalSize": [
+        309,
+        287
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            98,
+            118,
+            112,
+            132
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        309,
+        287
+      ],
+      "pose": "seated-dazed-left",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        309,
+        287
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          1125,
+          696,
+          1434,
+          983
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    },
+    {
+      "id": "bill-recover-left",
+      "sourceBoundsExclusive": [
+        1650,
+        662,
+        1933,
+        1018
+      ],
+      "cellBoundsExclusive": [
+        1536,
+        560,
+        2048,
+        1120
+      ],
+      "logicalSize": [
+        283,
+        356
+      ],
+      "logicalCellPx": 14,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Anthropomorphic lizard: cream muzzle, sage face, hat; no human hair/neck contract. Ladder is a separate connected material where applicable.",
+        "outlineRGB": [
+          28,
+          21,
+          15
+        ],
+        "skinRGB": [
+          143,
+          154,
+          93
+        ],
+        "paletteRGB": [
+          [
+            28,
+            21,
+            15
+          ],
+          [
+            104,
+            76,
+            51
+          ],
+          [
+            151,
+            110,
+            75
+          ],
+          [
+            177,
+            133,
+            90
+          ],
+          [
+            143,
+            154,
+            93
+          ],
+          [
+            185,
+            192,
+            131
+          ],
+          [
+            238,
+            223,
+            175
+          ],
+          [
+            157,
+            80,
+            45
+          ],
+          [
+            192,
+            112,
+            65
+          ]
+        ],
+        "eyes": [
+          [
+            54,
+            98,
+            68,
+            112
+          ]
+        ],
+        "eyeMargin": 1,
+        "expectedEyeWidths": [
+          14
+        ],
+        "logicalEyeWidth": 14,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "logicalCellPx": 14,
+        "minimumTransparentCells": 4,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "normalizedWorldSize": [
+        283,
+        356
+      ],
+      "pose": "recover-left",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/bill-lizard-master-atlas.png",
+      "normalizedSize": [
+        283,
+        356
+      ],
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/bill-lizard-approved-source.png",
+        "originalBounds": [
+          1650,
+          662,
+          1933,
+          1018
+        ],
+        "originalSourceSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
+        "reuse": "Approved cleaned first-appearance master, including already-authorized ladder and waist cleanup; immutable authoring snapshot, no new generation"
+      }
+    }
+  ]
+}

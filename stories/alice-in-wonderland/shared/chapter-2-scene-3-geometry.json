@@ -254,7 +254,7 @@
     "white-rabbit": {
       "physicalStandingHeightWorld": 122,
       "bodyScale": 1,
-      "physicalGain": 0.8,
+      "physicalGain": 0.55,
       "walkSpeed": 100,
       "runSpeed": 650,
       "scaleKnots": [

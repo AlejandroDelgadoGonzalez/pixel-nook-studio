@@ -20,7 +20,7 @@ export class EmptyJar {
    // Hard2x2 static art coverage. No blur, moving noise or scene dissolve.
    for(let y=0;y<h;y+=2)for(let x=0;x<w;x+=2){const gy=dy+y,coverage=Math.min(clamp((gy-m.rise[0])/(m.rise[1]-m.rise[0]),0,1),clamp((m.fall[1]-gy)/(m.fall[1]-m.fall[0]),0,1)),noise=Number((BigInt(x/2)*BigInt(m.hashX)^BigInt(Math.floor(gy/2))*BigInt(m.hashY)^BigInt(m.seed))%BigInt(m.modulus))/m.modulus;if(noise<coverage)ctx.drawImage(bridge,sx+x,sy+y,2,2,dx+x,dy+y,2,2);}
    // A generated repair follows measured texture contours; no noise blend in this wall.
-   const repair=source(geometry.assets['well-wall-clean-s4-v1.png'].url);for(const [x,y,w,h]of scene.cache.json.get(P+'-s4-wall-mask').spans)ctx.drawImage(repair,x,y,w,h,x,y,w,h);
+   const repair=source(geometry.assets['well-wall-clean-s4-v1.png'].url);ctx.drawImage(repair,0,0); // Reuse the complete clean plate, eliminating the mask's vertical boundary.
    tex.refresh();this.backgrounds[state]=scene.add.image(0,0,key).setOrigin(0).setDisplaySize(3440,3832).setDepth(0);
   }
   this.people={alice:{actor:scene.add.image(0,0,this.normalized['slow-descent'].key),shadow:scene.add.ellipse(0,0,1,1,0,0).setScale(this.scale)}};
@@ -35,8 +35,8 @@ export class EmptyJar {
  }
  hide(){for(const b of Object.values(this.backgrounds))b.setVisible(false);this.people.alice.actor.setVisible(false);this.people.alice.shadow.setVisible(false);this.objects.jar.setVisible(false);for(const l of this.leaves)l.sprite.setVisible(false);}
  pose(){const e=this.scene.reader,id=e.step?.id,p=clamp(e.elapsed/(e.step?.duration||1),0,1),st=e.model.staging.alice;
-  if(id==='alice-c1-s4-approach'&&p>.55)return 'pass-arm-'+Math.max(0,3-Math.floor((p-.55)/.45*4));
-  if(id==='alice-c1-s4-clear-upper'||id==='alice-c1-s4-withdraw')return 'pass-arm-'+Math.min(7,Math.floor(p*8));
+  if(id==='alice-c1-s4-clear-upper')return 'pass-arm-0';
+  if(id==='alice-c1-s4-withdraw')return 'pass-arm-'+Math.min(7,Math.floor(p*8));
   if(id==='alice-c1-s4-place-approach')return 'pass-arm-'+Math.max(0,7-Math.floor(p*8));
   if(id==='alice-c1-s4-clear-lower'&&p<.8)return 'pass-arm-'+Math.max(3,7-Math.floor(p/.8*5));
   return st==='reach-registered'?'pass-arm-0':st==='hold-registered'?'pass-arm-7':st;

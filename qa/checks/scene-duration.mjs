@@ -23,7 +23,12 @@ export function check(cases){
    while(engine.running&&engine.step.sceneIndex===index){assert(++ticks<=(revision?Math.ceil(automaticMs)+steps.length+5:85000),'Automatic playback exceeded its authored budget');engine.tick(1);}
    if(!revision)assert(engine.totalTime>=55000&&engine.totalTime<=85000,'Actual automatic engine outside55–85s');
    assert(Math.abs(engine.totalTime-automaticMs)<=steps.length+5,'Duration budget must match actual automatic engine timing');
-   assert.equal(sequence.closingDurationMs,3000,'Every scene ends in its authored 3-second hook');
+   if(scene.videoExport?.endAtLastBeat){
+    assert(revision,'Ending on dialogue requires an explicitly authorized revision');
+    assert.equal(steps.at(-1).type,'text');assert.equal(sequence.nextScene,null);assert.equal(sequence.holdMs,0);assert.deepEqual(sequence.closingIds,[]);
+   }else if(index===story.scenes.length-1&&!scene.videoExport?.closingHook&&steps.at(-1)?.type==='end'){
+    assert.equal(sequence.nextScene,null,'Terminal scene must retain its own final setting');assert(steps.some(s=>s.type==='text'));assert(sequence.holdMs>=0);
+   }else assert.equal(sequence.closingDurationMs,3000,'Every scene ends in its authored 3-second hook');
    rows.push({story:slug,scene:index+1,name:scene.name,phase:revision?'authorized-revision':'initial-creation',durationRangeGated:!revision,automaticMs,automaticEngineMs:engine.totalTime,exportNominalMs:exportMs,clockQuantumMs:1});
   }
  }

@@ -141,3 +141,5 @@ Lossless master storage: compact master PNGs must fit at most 2048x3072. Native 
 
 ## No geometric opening patches on panoramas
 Never draw flat geometric patches (rectangles, circles or polygons in Canvas, SVG or PIL) over an approved panorama to simulate doors, windows, holes or other openings. Preserve the authored pixel art. A required architectural change must return to the art gate for an integrated art revision; do not disguise a geometric overlay as an opening. This does not prohibit standalone character props or particles.
+
+**Architectural Repair — Preserve Complete Structure:** Queda prohibido arreglar arquitectura borrando o mochando muebles, repisas, arcos o chimeneas con máscaras rectangulares de pared en Python. Restaurar primero el original; reconstruir con mampostería auténtica del mismo asset, simetría medida o image_gen. Conservar completos repisa, arco y columnas; verificar píxeles fuera del área autorizada.

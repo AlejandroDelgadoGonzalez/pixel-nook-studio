@@ -1144,7 +1144,7 @@
               },
               "white-rabbit": {
                 "x": 1000,
-                "y": 520,
+                "y": 536,
                 "visible": 1,
                 "facing": "right"
               }
@@ -1264,27 +1264,27 @@
             "white-rabbit": [
               {
                 "x": 1284,
-                "y": 544
-              },
-              {
-                "x": 1644,
                 "y": 560
               },
               {
+                "x": 1644,
+                "y": 576
+              },
+              {
                 "x": 1884,
-                "y": 556
+                "y": 572
               },
               {
                 "x": 2084,
-                "y": 512
+                "y": 528
               },
               {
                 "x": 2208,
-                "y": 456
+                "y": 472
               },
               {
                 "x": 2200,
-                "y": 424
+                "y": 440
               },
               {
                 "x": 2152,
@@ -1827,12 +1827,6 @@
           }
         },
         {
-          "id": "alice-c1-s4-narration",
-          "type": "text",
-          "kind": "narration",
-          "text": "It was easier to be careful with one small thing."
-        },
-        {
           "id": "alice-c1-s4-leaves",
           "type": "action",
           "duration": 2400,
@@ -1914,7 +1908,7 @@
           "duration": 1150,
           "effects": {
             "staging": {
-              "alice": "landing-compress"
+              "alice": "seated-braced"
             },
             "s4": {
               "landed": true
@@ -4427,7 +4421,7 @@
         {
           "id": "alice-c1-drink-grip-box",
           "type": "action",
-          "duration": 500,
+          "duration": 1,
           "effects": {
             "drink": {
               "pose": "standing-steady",
@@ -4446,7 +4440,7 @@
         {
           "id": "alice-c1-drink-push-box",
           "type": "action",
-          "duration": 1347.8139495610137,
+          "duration": 1,
           "effects": {
             "drink": {
               "pose": "standing-steady",
@@ -4465,7 +4459,7 @@
         {
           "id": "alice-c1-drink-beside-box",
           "type": "action",
-          "duration": 1069.6490278876195,
+          "duration": 1,
           "effects": {
             "drink": {
               "pose": "standing-steady",
@@ -4488,7 +4482,7 @@
           "effects": {
             "drink": {
               "pose": "box-touch",
-              "face": "left",
+              "face": "right",
               "shot": "hook"
             }
           },
@@ -4506,7 +4500,8 @@
           "effects": {
             "drink": {
               "pose": "box-open",
-              "boxOpen": 1
+              "boxOpen": 1,
+              "face": "right"
             }
           },
           "caption": "clear",
@@ -5723,6 +5718,25 @@
           }
         },
         {
+          "id": "alice-c1-pool-smaller-motion",
+          "type": "action",
+          "duration": 5600,
+          "effects": {
+            "pool": {
+              "phase": "fan"
+            },
+            "drink": {
+              "magicScale": 0.85
+            }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
+          }
+        },
+        {
           "id": "alice-c1-pool-smaller",
           "type": "text",
           "who": "alice",
@@ -5732,19 +5746,25 @@
             "hold": true,
             "lock": "hall-table-door",
             "preventDissolve": true
-          },
-          "during": {
-            "duration": 5600,
-            "initial": {
-              "pool": {
-                "phase": "fan"
-              }
+          }
+        },
+        {
+          "id": "alice-c1-pool-cause-motion",
+          "type": "action",
+          "duration": 2500,
+          "effects": {
+            "pool": {
+              "phase": "fan"
             },
-            "effects": {
-              "drink": {
-                "magicScale": 0.85
-              }
+            "drink": {
+              "magicScale": 0.32
             }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
           }
         },
         {
@@ -5757,19 +5777,23 @@
             "hold": true,
             "lock": "hall-table-door",
             "preventDissolve": true
-          },
-          "during": {
-            "duration": 2500,
-            "initial": {
-              "pool": {
-                "phase": "fan"
-              }
-            },
-            "effects": {
-              "drink": {
-                "magicScale": 0.32
-              }
+          }
+        },
+        {
+          "id": "alice-c1-pool-safe-motion",
+          "type": "action",
+          "duration": 800,
+          "effects": {
+            "pool": {
+              "phase": "fan",
+              "fan": "released"
             }
+          },
+          "caption": "clear",
+          "camera": {
+            "hold": true,
+            "lock": "hall-table-door",
+            "preventDissolve": true
           }
         },
         {
@@ -5782,21 +5806,6 @@
             "hold": true,
             "lock": "hall-table-door",
             "preventDissolve": true
-          },
-          "during": {
-            "duration": 800,
-            "initial": {
-              "pool": {
-                "phase": "fan",
-                "fan": "released"
-              }
-            },
-            "effects": {
-              "pool": {
-                "phase": "fan",
-                "fan": "released"
-              }
-            }
           }
         },
         {
@@ -6140,7 +6149,8 @@
     "alice-c1-well-end": "alice-c1-s5-safe",
     "alice-c1-solid-ground-end": "alice-c1-drink-bottle",
     "alice-c1-drink-end": "alice-c1-eat-label",
-    "alice-c1-eat-end": "alice-c1-pool-help"
+    "alice-c1-eat-end": "alice-c1-pool-help",
+    "alice-c1-s4-narration": "alice-c1-s5-safe"
   },
   "serialized": true,
   "availableChapter": "chapter-1",

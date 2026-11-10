@@ -444,7 +444,7 @@
         ],
         "plaqueLook": [
           665,
-          665
+          675
         ],
         "doorPushFeet": [
           753.5447071705133,
@@ -858,11 +858,11 @@
         },
         {
           "x": 665,
-          "y": 665
+          "y": 675
         }
       ],
       "fade": "Whole-shot dissolve0.55s plus arrival and0.2s stopped settle; opacity finishes gradually",
-      "physicalDurationMs": 1181.0105769466734,
+      "physicalDurationMs": 1181.796184477541,
       "facingBySegment": [
         "right"
       ],
@@ -904,7 +904,7 @@
       "waypoints": [
         {
           "x": 665,
-          "y": 665
+          "y": 675
         },
         {
           "x": 690,
@@ -920,7 +920,7 @@
         }
       ],
       "terrain": "Dry path then individually visible stone step surfaces; final feet on top step, palm at reachable low ring",
-      "physicalDurationMs": 1097.56646383503,
+      "physicalDurationMs": 1125.021855435295,
       "facingBySegment": [
         "right",
         "right",

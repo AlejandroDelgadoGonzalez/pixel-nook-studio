@@ -11,8 +11,8 @@ const story=compileStory(data);
 test('creation scenes use55–85s; authorized revisions preserve their longer budgets',()=>{
  const result=check([{slug:'alice-in-wonderland',story}]);
  assert.equal(result.scenes.length,6);
- assert.deepEqual(result.scenes.slice(0,2).map(r=>[r.automaticMs,r.exportNominalMs]),[[62962,63412],[68482,74932]]);
- for(const r of result.scenes){if(r.durationRangeGated)assert(r.automaticMs>=55000&&r.automaticMs<=85000);else assert.equal(r.phase,'authorized-revision');}assert(result.scenes[3].automaticMs>85000); 
+ assert.deepEqual(result.scenes.slice(0,2).map(r=>[r.automaticMs,r.exportNominalMs]),[[62962,63412],[62282,68732]]);
+ for(const r of result.scenes){if(r.durationRangeGated)assert(r.automaticMs>=55000&&r.automaticMs<=85000);else assert.equal(r.phase,'authorized-revision');}assert(result.scenes[3].automaticMs>85000);
 });
 test('internal riverbank and shelf joins never trigger an episode pause even with scene gates on',()=>{
  for(const [from,next] of [['alice-c1-s1-hook-rise','alice-c1-s2-continuity'],['alice-c1-s3-hook-3','alice-c1-s4-approach']]){

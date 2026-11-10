@@ -535,11 +535,11 @@
     "mirror": true,
     "displayScale": 0.833,
     "bodyPosition": [
-      684.9866666666667,
+      720.9866666666667,
       224.608
     ],
     "worldBodyPivot": [
-      989.3093333333331,
+      1025.3093333333331,
       664.432
     ],
     "wholeCanonicalSprite": true,
@@ -642,7 +642,7 @@
     "captionGapPx": 4,
     "artEdgeInset": 2,
     "finalZoomMultiplier": 1.25,
-    "finalCenterX": 891.5706666666667,
+    "finalCenterX": 927.5706666666667,
     "transitionStatePath": [
       "large",
       "fold"

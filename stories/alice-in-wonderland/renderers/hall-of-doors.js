@@ -20,6 +20,13 @@ export class HallOfDoors {
   drawCharacter(boxTexture.context,scene.emptyJar.source(boxCell.asset),bl,bt,br-bl,bb-bt,bw,bh);boxTexture.refresh();this.objects.box=scene.add.image(0,0,'alice-hall-box-closed').setOrigin(.5,1);
   this.curtains={};for(const state of ['closed','open'])this.curtains[state]=scene.add.image(0,0,this.normalized['curtain-'+state].key).setOrigin(0).setDepth(5);
   this.doors={};const poly=g.surfaces.tinyOpeningSourcePolygon,inside=(x,y)=>{let hit=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const a=poly[i],b=poly[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])hit=!hit;}return hit;};
+  // Palette-grade only the existing garden pixels inside the measured opening.
+  // Preserve all authored detail and alpha; no geometric opening overlay.
+  const nightKey='alice-hall-lunar-garden',night=scene.textures.createCanvas(nightKey,1664,936),nc=night.context;
+  nc.drawImage(scene.textures.get('alice-riverbank-source-hall-background').getSourceImage(),0,0);
+  const image=nc.getImageData(0,0,1664,936);
+  for(let y=0;y<936;y++)for(let x=0;x<1664;x++)if(inside(x,y)){const k=(y*1664+x)*4,v=(image.data[k]+image.data[k+1]+image.data[k+2])/3;image.data[k]=Math.round(v*.14);image.data[k+1]=Math.round(v*.28);image.data[k+2]=Math.round(v*.52);}
+  nc.putImageData(image,0,0);night.refresh();this.background.setTexture(nightKey);
   // Nine authored-state hinge views through a hard2x2 aperture. Only the leaf
   // changes: the panorama's stone jambs and roof are never replaced.
   const left=Math.floor(Math.min(...poly.map(p=>p[0]))/2)*2,top=Math.floor(Math.min(...poly.map(p=>p[1]))/2)*2,right=Math.ceil(Math.max(...poly.map(p=>p[0]))/2)*2,bottom=Math.ceil(Math.max(...poly.map(p=>p[1]))/2)*2;

@@ -27060,414 +27060,18 @@
               "lory",
               "eaglet"
             ]
-          }
-        },
-        {
-          "id": "alice-c2-prize-depart-2",
-          "type": "action",
-          "duration": 1902.512803210961,
-          "caption": "clear",
-          "linearMotion": true,
-          "camera": {
-            "hold": true,
-            "preventDissolve": true
           },
-          "prizesBeat": 21,
-          "prizesPhase": "depart",
-          "effects": {
-            "actors": {
-              "mouse": {
-                "x": 1380,
-                "y": 800,
-                "facing": "right",
-                "pose": "idle",
-                "visible": 0.32244802469442124
-              },
-              "dodo": {
-                "x": 1213.3286981061992,
-                "y": 457.0873891570756,
-                "facing": "right",
-                "pose": "walk",
-                "visible": 1
-              },
-              "lory": {
-                "x": 1139.4506863930758,
-                "y": 181.28433210043275,
-                "facing": "right",
-                "pose": "flight",
-                "visible": 0.32244802469442124
-              },
-              "eaglet": {
-                "x": 1160,
-                "y": 180,
-                "facing": "right",
-                "pose": "flight",
-                "visible": 0.32244802469442124
-              }
-            },
-            "prizes": {
-              "depart": 0.9124723035100004,
-              "active": true,
-              "phase": "depart",
-              "clock": 55319.72843193167
-            },
-            "clearing": {
-              "clock": 126419.72843193167
-            }
-          },
-          "paths": {
-            "dodo": [
-              {
-                "x": 1083.3333333333333,
-                "y": 520
-              },
-              {
-                "x": 1120,
-                "y": 510
-              },
-              {
-                "x": 1210,
-                "y": 460
-              },
-              {
-                "x": 1213.3286981061992,
-                "y": 457.0873891570756
-              }
-            ],
-            "lory": [
-              {
-                "x": 1000,
-                "y": 190
-              },
-              {
-                "x": 1139.4506863930758,
-                "y": 181.28433210043275
-              }
-            ],
-            "eaglet": [
-              {
-                "x": 1000,
-                "y": 190
-              },
-              {
-                "x": 1160,
-                "y": 180
-              }
-            ]
-          },
-          "travelFacing": [
+          "completeOffscreenTail": [
+            "mouse",
             "dodo",
             "lory",
             "eaglet"
-          ],
-          "motion": {
-            "actors": {
-              "dodo": {
-                "mode": "run",
-                "speed": 130.8228795616454,
-                "bodyScale": 1,
-                "scaleKnots": [
-                  [
-                    280,
-                    0.8
-                  ],
-                  [
-                    360,
-                    0.91
-                  ],
-                  [
-                    440,
-                    1.02
-                  ],
-                  [
-                    520,
-                    1.11
-                  ],
-                  [
-                    620,
-                    1.2
-                  ],
-                  [
-                    760,
-                    1.32
-                  ]
-                ]
-              },
-              "lory": {
-                "mode": "run",
-                "speed": 118.82657113554161,
-                "bodyScale": 1,
-                "scaleKnots": [
-                  [
-                    0,
-                    1.11
-                  ],
-                  [
-                    2000,
-                    1.11
-                  ]
-                ]
-              },
-              "eaglet": {
-                "mode": "run",
-                "speed": 106.85538995861585,
-                "bodyScale": 1,
-                "scaleKnots": [
-                  [
-                    0,
-                    1.1145
-                  ],
-                  [
-                    2000,
-                    1.1145
-                  ]
-                ]
-              }
-            },
-            "continuousActors": [
-              "dodo",
-              "lory",
-              "eaglet"
-            ]
-          }
-        },
-        {
-          "id": "alice-c2-prize-depart-3",
-          "type": "action",
-          "duration": 156.10160017821727,
-          "caption": "clear",
-          "linearMotion": true,
-          "camera": {
-            "hold": true,
-            "preventDissolve": true
-          },
-          "prizesBeat": 21,
-          "prizesPhase": "depart",
-          "effects": {
-            "actors": {
-              "mouse": {
-                "x": 1380,
-                "y": 800,
-                "facing": "right",
-                "pose": "idle",
-                "visible": 0.1855432352354932
-              },
-              "dodo": {
-                "x": 1229.1801732989272,
-                "y": 443.21734836343865,
-                "facing": "right",
-                "pose": "walk",
-                "visible": 0.9194119078809067
-              },
-              "lory": {
-                "x": 1160,
-                "y": 180,
-                "facing": "right",
-                "pose": "flight",
-                "visible": 0.1855432352354932
-              },
-              "eaglet": {
-                "x": 1160,
-                "y": 180,
-                "facing": "right",
-                "pose": "flight",
-                "visible": 0.1855432352354932
-              }
-            },
-            "prizes": {
-              "depart": 0.9364879343066492,
-              "active": true,
-              "phase": "depart",
-              "clock": 55475.83003210989
-            },
-            "clearing": {
-              "clock": 126575.83003210988
-            }
-          },
-          "paths": {
-            "dodo": [
-              {
-                "x": 1229.1801732989272,
-                "y": 443.21734836343865
-              }
-            ],
-            "lory": [
-              {
-                "x": 1160,
-                "y": 180
-              }
-            ]
-          },
-          "travelFacing": [
-            "dodo",
-            "lory"
-          ],
-          "motion": {
-            "actors": {
-              "dodo": {
-                "mode": "run",
-                "speed": 130.8228795616454,
-                "bodyScale": 1,
-                "scaleKnots": [
-                  [
-                    280,
-                    0.8
-                  ],
-                  [
-                    360,
-                    0.91
-                  ],
-                  [
-                    440,
-                    1.02
-                  ],
-                  [
-                    520,
-                    1.11
-                  ],
-                  [
-                    620,
-                    1.2
-                  ],
-                  [
-                    760,
-                    1.32
-                  ]
-                ]
-              },
-              "lory": {
-                "mode": "run",
-                "speed": 118.82657113554161,
-                "bodyScale": 1,
-                "scaleKnots": [
-                  [
-                    0,
-                    1.11
-                  ],
-                  [
-                    2000,
-                    1.11
-                  ]
-                ]
-              }
-            },
-            "continuousActors": [
-              "dodo",
-              "lory"
-            ]
-          }
-        },
-        {
-          "id": "alice-c2-prize-depart-4",
-          "type": "action",
-          "duration": 209.00530578489906,
-          "caption": "clear",
-          "linearMotion": true,
-          "camera": {
-            "hold": true,
-            "preventDissolve": true
-          },
-          "prizesBeat": 21,
-          "prizesPhase": "depart",
-          "effects": {
-            "actors": {
-              "mouse": {
-                "x": 1380,
-                "y": 800,
-                "facing": "right",
-                "pose": "idle",
-                "visible": 0.05037398251587921
-              },
-              "dodo": {
-                "x": 1250,
-                "y": 425,
-                "facing": "right",
-                "pose": "walk",
-                "visible": 0.36304477405763314
-              },
-              "lory": {
-                "x": 1160,
-                "y": 180,
-                "facing": "right",
-                "pose": "flight",
-                "visible": 0.05037398251587921
-              },
-              "eaglet": {
-                "x": 1160,
-                "y": 180,
-                "facing": "right",
-                "pose": "flight",
-                "visible": 0.05037398251587921
-              }
-            },
-            "prizes": {
-              "depart": 0.9686425967350952,
-              "active": true,
-              "phase": "depart",
-              "clock": 55684.83533789479
-            },
-            "clearing": {
-              "clock": 126784.8353378948
-            }
-          },
-          "paths": {
-            "dodo": [
-              {
-                "x": 1232.857142857143,
-                "y": 440
-              },
-              {
-                "x": 1250,
-                "y": 425
-              }
-            ]
-          },
-          "travelFacing": [
-            "dodo"
-          ],
-          "motion": {
-            "actors": {
-              "dodo": {
-                "mode": "run",
-                "speed": 130.8228795616454,
-                "bodyScale": 1,
-                "scaleKnots": [
-                  [
-                    280,
-                    0.8
-                  ],
-                  [
-                    360,
-                    0.91
-                  ],
-                  [
-                    440,
-                    1.02
-                  ],
-                  [
-                    520,
-                    1.11
-                  ],
-                  [
-                    620,
-                    1.2
-                  ],
-                  [
-                    760,
-                    1.32
-                  ]
-                ]
-              }
-            },
-            "continuousActors": [
-              "dodo"
-            ]
-          }
+          ]
         },
         {
           "id": "alice-c2-prize-depart-5",
           "type": "action",
-          "duration": 203.82312122188068,
+          "duration": 1,
           "caption": "clear",
           "linearMotion": true,
           "camera": {
@@ -27517,12 +27121,7 @@
               "clock": 126988.65845911668
             }
           },
-          "paths": {},
-          "travelFacing": [],
-          "motion": {
-            "actors": {},
-            "continuousActors": []
-          }
+          "travelFacing": []
         },
         {
           "id": "alice-c2-prize-text-22",
@@ -28039,7 +27638,7 @@
         {
           "id": "alice-c2-mary-houseArrival",
           "type": "action",
-          "duration": 1181.0105769466734,
+          "duration": 1181.796184477541,
           "caption": "clear",
           "linearMotion": true,
           "camera": {
@@ -28056,7 +27655,7 @@
             "actors": {
               "alice": {
                 "x": 665,
-                "y": 665,
+                "y": 675,
                 "visible": 0.85,
                 "pose": "walk",
                 "facing": "right"
@@ -28067,7 +27666,7 @@
             "alice": [
               {
                 "x": 665,
-                "y": 665
+                "y": 675
               }
             ]
           },
@@ -28170,7 +27769,7 @@
         {
           "id": "alice-c2-mary-houseDoor",
           "type": "action",
-          "duration": 1097.56646383503,
+          "duration": 1125.021855435295,
           "caption": "clear",
           "linearMotion": true,
           "camera": {
@@ -28394,9 +27993,14 @@
       "atmosphere": "silent",
       "locomotionEnvironment": "rabbit-house-interior",
       "durationReview": {
-        "phase": "initial",
+        "phase": "revision",
         "remakeAuthorization": "Discard old C2-S5; approved new21-moment script",
-        "automaticSeconds": 64.0100543705624
+        "automaticSeconds": 59.4100543705624,
+        "authorization": {
+          "date": "2026-11-10",
+          "reason": "Block 2: 1.9s initial growth, shift trapped Alice 36px right, remove silent handle ending"
+        },
+        "preserveTextAndPauses": true
       },
       "authorizations": {
         "gate1": "Explicitly approved2026-11-07:21 moments70.024s",
@@ -28410,11 +28014,7 @@
           "through": "alice-c2-mary-hook-step",
           "durationMs": 3000
         },
-        "closingHook": {
-          "from": "alice-c2-large-24",
-          "through": "alice-c2-large-24",
-          "durationMs": 3000
-        }
+        "endAtLastBeat": true
       },
       "steps": [
         {
@@ -28426,7 +28026,7 @@
             "hold": true,
             "preventDissolve": true
           },
-          "duration": 750.0,
+          "duration": 750,
           "caption": "clear",
           "linearMotion": true,
           "effects": {
@@ -28438,7 +28038,7 @@
               "held": false,
               "sipped": false,
               "rabbit": 0,
-              "clock": 750.0,
+              "clock": 750,
               "pose": "standing-ready",
               "ring": 0
             },
@@ -28473,7 +28073,7 @@
           },
           "transition": {
             "kind": "shot",
-            "durationMs": 750.0
+            "durationMs": 750
           }
         },
         {
@@ -28490,7 +28090,7 @@
           "linearMotion": true,
           "effects": {
             "large": {
-              "clock": 1150.0,
+              "clock": 1150,
               "pose": "standing-ready"
             },
             "actors": {
@@ -28617,9 +28217,9 @@
           "who": "alice",
           "listener": "alice",
           "text": "A fan and clean gloves. At least those are easy to find.",
-          "readingDurationMs": 4500.0,
+          "readingDurationMs": 4500,
           "during": {
-            "duration": 4500.0,
+            "duration": 4500,
             "initial": {
               "actors": {
                 "alice": {
@@ -28682,9 +28282,9 @@
           "who": "alice",
           "listener": "alice",
           "text": "Another bottle, and no label. I wonder what this one will do.",
-          "readingDurationMs": 4500.0,
+          "readingDurationMs": 4500,
           "during": {
-            "duration": 4500.0,
+            "duration": 4500,
             "initial": {
               "actors": {
                 "alice": {
@@ -28721,9 +28321,9 @@
           "who": "alice",
           "listener": "alice",
           "text": "I am tired of being so tiny. Perhaps this will make me grow again.",
-          "readingDurationMs": 5500.0,
+          "readingDurationMs": 5500,
           "during": {
-            "duration": 5500.0,
+            "duration": 5500,
             "initial": {
               "actors": {
                 "alice": {
@@ -28783,7 +28383,7 @@
             "hold": true,
             "preventDissolve": true
           },
-          "duration": 1500.0,
+          "duration": 1500,
           "caption": "clear",
           "linearMotion": true,
           "effects": {
@@ -28812,9 +28412,9 @@
           "who": "alice",
           "listener": "alice",
           "text": "A little. That is quite enough.",
-          "readingDurationMs": 3500.0,
+          "readingDurationMs": 3500,
           "during": {
-            "duration": 3500.0,
+            "duration": 3500,
             "initial": {
               "actors": {
                 "alice": {
@@ -28849,7 +28449,7 @@
             "hold": true,
             "preventDissolve": true
           },
-          "duration": 3500.0,
+          "duration": 1900,
           "caption": "clear",
           "linearMotion": true,
           "effects": {
@@ -28982,7 +28582,7 @@
               "alice": {
                 "facing": "left",
                 "pose": "rising",
-                "x": 989.3093333333331,
+                "x": 1025.3093333333331,
                 "y": 664.432
               }
             }
@@ -29143,31 +28743,6 @@
             },
             "linear": true
           }
-        },
-        {
-          "id": "alice-c2-large-24",
-          "type": "action",
-          "largeBeat": 21,
-          "largeMoment": 21,
-          "camera": {
-            "hold": true,
-            "preventDissolve": true
-          },
-          "duration": 3000,
-          "caption": "clear",
-          "linearMotion": true,
-          "effects": {
-            "large": {
-              "clock": 64010.0543705624,
-              "ring": 1
-            },
-            "actors": {
-              "alice": {
-                "facing": "left",
-                "pose": "idle"
-              }
-            }
-          }
         }
       ],
       "locomotion": {
@@ -29220,7 +28795,7 @@
             "bill": {
               "active": true,
               "moment": 2,
-              "clock": 3700.0,
+              "clock": 3700,
               "place": "E"
             },
             "large": {
@@ -29230,7 +28805,7 @@
             },
             "environment": "rabbit-house"
           },
-          "duration": 700.0,
+          "duration": 700,
           "caption": "clear",
           "linearMotion": true,
           "transition": {
@@ -29250,7 +28825,7 @@
             "bill": {
               "active": true,
               "moment": 3,
-              "clock": 6200.0,
+              "clock": 6200,
               "place": "E"
             },
             "large": {
@@ -29260,7 +28835,7 @@
             },
             "environment": "rabbit-house"
           },
-          "duration": 2500.0,
+          "duration": 2500,
           "caption": "clear",
           "linearMotion": true
         },
@@ -29276,7 +28851,7 @@
             "bill": {
               "active": true,
               "moment": 4,
-              "clock": 9200.0,
+              "clock": 9200,
               "place": "E"
             },
             "large": {
@@ -29302,7 +28877,7 @@
             "bill": {
               "active": true,
               "moment": 5,
-              "clock": 12200.0,
+              "clock": 12200,
               "place": "E"
             },
             "large": {
@@ -29317,6 +28892,33 @@
           "readingDurationMs": 3000
         },
         {
+          "id": "alice-c2-bill-06-pan",
+          "type": "action",
+          "billMoment": 6,
+          "largeMoment": 14,
+          "camera": {
+            "hold": true
+          },
+          "effects": {
+            "bill": {
+              "active": true,
+              "moment": 6,
+              "clock": 15200,
+              "place": "E"
+            },
+            "large": {
+              "active": true,
+              "fold": 1,
+              "pose": "folded-trapped-right"
+            },
+            "environment": "rabbit-house"
+          },
+          "duration": 650,
+          "caption": "clear",
+          "linearMotion": true,
+          "billGatePan": true
+        },
+        {
           "id": "alice-c2-bill-06",
           "type": "action",
           "billMoment": 6,
@@ -29328,7 +28930,7 @@
             "bill": {
               "active": true,
               "moment": 6,
-              "clock": 15200.0,
+              "clock": 15200,
               "place": "E"
             },
             "large": {
@@ -29354,7 +28956,7 @@
             "bill": {
               "active": true,
               "moment": 7,
-              "clock": 18700.0,
+              "clock": 18700,
               "place": "E"
             },
             "large": {
@@ -29366,7 +28968,7 @@
           },
           "who": "bill",
           "text": "The chimney? All right. I will try.",
-          "readingDurationMs": 3500.0
+          "readingDurationMs": 3500
         },
         {
           "id": "alice-c2-bill-08",
@@ -29380,7 +28982,7 @@
             "bill": {
               "active": true,
               "moment": 8,
-              "clock": 23700.0,
+              "clock": 23700,
               "place": "E"
             },
             "large": {
@@ -29406,7 +29008,7 @@
             "bill": {
               "active": true,
               "moment": 9,
-              "clock": 28700.0,
+              "clock": 28700,
               "place": "E"
             },
             "large": {
@@ -29432,7 +29034,7 @@
             "bill": {
               "active": true,
               "moment": 10,
-              "clock": 30700.0,
+              "clock": 30700,
               "place": "E"
             },
             "large": {
@@ -29458,7 +29060,7 @@
             "bill": {
               "active": true,
               "moment": 11,
-              "clock": 31400.0,
+              "clock": 31400,
               "place": "I"
             },
             "large": {
@@ -29468,7 +29070,7 @@
             },
             "environment": "rabbit-house-interior"
           },
-          "duration": 700.0,
+          "duration": 700,
           "caption": "clear",
           "linearMotion": true,
           "transition": {
@@ -29488,7 +29090,7 @@
             "bill": {
               "active": true,
               "moment": 12,
-              "clock": 32900.0,
+              "clock": 32900,
               "place": "I"
             },
             "large": {
@@ -29498,7 +29100,7 @@
             },
             "environment": "rabbit-house-interior"
           },
-          "duration": 1500.0,
+          "duration": 1500,
           "caption": "clear",
           "linearMotion": true
         },
@@ -29514,7 +29116,7 @@
             "bill": {
               "active": true,
               "moment": 13,
-              "clock": 38900.0,
+              "clock": 38900,
               "place": "I"
             },
             "large": {
@@ -29540,7 +29142,7 @@
             "bill": {
               "active": true,
               "moment": 14,
-              "clock": 40100.0,
+              "clock": 40100,
               "place": "I"
             },
             "large": {
@@ -29550,7 +29152,7 @@
             },
             "environment": "rabbit-house-interior"
           },
-          "duration": 1200.0,
+          "duration": 1200,
           "caption": "clear",
           "linearMotion": true
         },
@@ -29566,7 +29168,7 @@
             "bill": {
               "active": true,
               "moment": 15,
-              "clock": 40800.0,
+              "clock": 40800,
               "place": "E"
             },
             "large": {
@@ -29576,7 +29178,7 @@
             },
             "environment": "rabbit-house"
           },
-          "duration": 700.0,
+          "duration": 700,
           "caption": "clear",
           "linearMotion": true,
           "transition": {
@@ -29596,7 +29198,7 @@
             "bill": {
               "active": true,
               "moment": 16,
-              "clock": 45300.0,
+              "clock": 45300,
               "place": "E"
             },
             "large": {
@@ -29606,7 +29208,7 @@
             },
             "environment": "rabbit-house"
           },
-          "duration": 4500.0,
+          "duration": 4500,
           "caption": "clear",
           "linearMotion": true
         },
@@ -29626,7 +29228,7 @@
             "bill": {
               "active": true,
               "moment": 16,
-              "clock": 47500.0,
+              "clock": 47500,
               "place": "E"
             },
             "large": {
@@ -29649,7 +29251,7 @@
             "bill": {
               "active": true,
               "moment": 17,
-              "clock": 50500.0,
+              "clock": 50500,
               "place": "E"
             },
             "large": {
@@ -29675,7 +29277,7 @@
             "bill": {
               "active": true,
               "moment": 18,
-              "clock": 54500.0,
+              "clock": 54500,
               "place": "E"
             },
             "large": {
@@ -29701,7 +29303,7 @@
             "bill": {
               "active": true,
               "moment": 19,
-              "clock": 58500.0,
+              "clock": 58500,
               "place": "E"
             },
             "large": {
@@ -29727,7 +29329,7 @@
             "bill": {
               "active": true,
               "moment": 20,
-              "clock": 59200.0,
+              "clock": 59200,
               "place": "I"
             },
             "large": {
@@ -29737,7 +29339,7 @@
             },
             "environment": "rabbit-house-interior"
           },
-          "duration": 700.0,
+          "duration": 700,
           "caption": "clear",
           "linearMotion": true,
           "transition": {
@@ -29751,13 +29353,14 @@
           "billMoment": 21,
           "largeMoment": 14,
           "camera": {
-            "hold": true
+            "hold": false,
+            "reframe": true
           },
           "effects": {
             "bill": {
               "active": true,
               "moment": 21,
-              "clock": 61200.0,
+              "clock": 61200,
               "place": "I"
             },
             "large": {
@@ -29783,7 +29386,7 @@
             "bill": {
               "active": true,
               "moment": 22,
-              "clock": 63200.0,
+              "clock": 63200,
               "place": "I"
             },
             "large": {
@@ -29809,7 +29412,7 @@
             "bill": {
               "active": true,
               "moment": 23,
-              "clock": 67200.0,
+              "clock": 67200,
               "place": "I"
             },
             "large": {
@@ -29835,7 +29438,7 @@
             "bill": {
               "active": true,
               "moment": 24,
-              "clock": 70200.0,
+              "clock": 70200,
               "place": "I"
             },
             "large": {
@@ -29893,7 +29496,7 @@
     "alice-c2-large-17": "alice-c2-large-21",
     "alice-c2-large-18": "alice-c2-large-21",
     "alice-c2-large-19": "alice-c2-large-21",
-    "alice-c2-large-end": "alice-c2-bill-01"
+    "alice-c2-large-end": "alice-c2-bill-04"
   },
   "serialized": true,
   "availableChapter": "chapter-2",

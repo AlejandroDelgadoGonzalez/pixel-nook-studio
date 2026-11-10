@@ -46,7 +46,7 @@
       "masterCharacter": "mouse",
       "lockedCropSha256": "f5ca64fe0ad4da53f710af5833d6d833b638ceaf6f37ba0cd42b85191cc841ae",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/pool-creatures-c1-s6-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/pool-creatures-c1-s6-v1.png",
         "originalBounds": [
           63,
           714,
@@ -225,7 +225,7 @@
       "masterCharacter": "mouse",
       "lockedCropSha256": "f6a78fa1abf5b0f92745a4e4b3357bc374423a508d69238ef052b982460a0524",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/pool-creatures-c1-s6-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/pool-creatures-c1-s6-v1.png",
         "originalBounds": [
           835,
           714,
@@ -402,7 +402,7 @@
       "masterCharacter": "mouse",
       "lockedCropSha256": "402f08ea81fbd52537af502083ea99c32a481415f80c781b85f1af8f57486814",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/pool-mouse-walk-c1-s6-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/pool-mouse-walk-c1-s6-v1.png",
         "originalBounds": [
           42,
           239,
@@ -575,7 +575,7 @@
       "masterCharacter": "mouse",
       "lockedCropSha256": "8cb790bc53990087322c7396c276e5fbe3423304c0224fff87605bfe58816ff3",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/pool-mouse-walk-c1-s6-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/pool-mouse-walk-c1-s6-v1.png",
         "originalBounds": [
           1030,
           239,
@@ -753,7 +753,7 @@
       "masterCharacter": "mouse",
       "lockedCropSha256": "4f9707be1252a3438fc4e8758925e7ddfff6cc1a14e2495b5efa6ab067d6d4d3",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-mouse-directions-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-mouse-directions-v1.png",
         "originalBounds": [
           1160,
           187,
@@ -917,7 +917,7 @@
       "masterCharacter": "mouse",
       "lockedCropSha256": "a239a690995bd1dee81fd56695d5ee31bafb7f5872387ee24b98df5ba58ee96b",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-mouse-directions-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-mouse-directions-v1.png",
         "originalBounds": [
           74,
           615,
@@ -1082,7 +1082,7 @@
       "masterCharacter": "mouse",
       "lockedCropSha256": "6282e88d0814716895403f2fcf615586a19af5295f974323874d007948185b54",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-mouse-directions-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-mouse-directions-v1.png",
         "originalBounds": [
           590,
           615,

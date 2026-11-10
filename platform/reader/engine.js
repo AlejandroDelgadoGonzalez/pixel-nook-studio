@@ -50,6 +50,7 @@ export class ReaderEngine{
  advance(now){if(!this.running||this.paused||this.buffering||this.step?.type!=='text'||now-this.lastTap<260)return false;if(this.revealed>=this.step.text.length&&this.visualMotionRemainingMs>0)return false;this.lastTap=now;
  if(this.revealed<this.step.text.length){this.revealed=this.step.text.length;this.elapsed=this.step.during?this.elapsed:this.revealed*(this.story.timing?.characterMs||27);this.hold=0;}
  else this.enter(this.index+1);return true;}
+ seek(id){if(!this.story.steps.some(s=>s.id===id))return false;const paused=this.paused,time=this.totalTime;this.start(id,time);this.paused=paused;this.onChange('seek');return true;}
  previous(now){if(this.buffering||now-this.lastTap<300)return false;const limit=this.step?.type==='text'?this.index:this.index+1;const previous=this.story.steps.slice(0,limit).findLast(s=>s.type==='text');if(!previous)return false;const paused=this.paused,time=this.totalTime;this.start(previous.id,time);this.paused=paused;this.lastTap=now;this.onChange('back');return true;}
  setAuto(value){this.auto=value;this.hold=0;}
  continueScene(){if(this.boundaryPending===null||this.boundaryPending===undefined)return;const next=this.boundaryPending;this.paused=false;this.enter(next,true);}

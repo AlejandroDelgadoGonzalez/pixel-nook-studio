@@ -137,3 +137,5 @@ Opening or closing #dialogue must never change camera zoom, x or y. Hold a locat
 
 ## No geometric opening patches on panoramas
 Never draw flat geometric patches (rectangles, circles or polygons in Canvas, SVG or PIL) over an approved panorama to simulate doors, windows, holes or other openings. Preserve the authored pixel art. A required architectural change must return to the art gate for an integrated art revision; do not disguise a geometric overlay as an opening. This does not prohibit standalone character props or particles.
+
+**Mandatory Walk-Cycle Leg Animation:** Todo personaje que se desplace caminando de una coordenada a otra (`walk`/`move`) debe alternar obligatoriamente sus frames de ciclo de caminata moviendo las piernas. Queda estrictamente prohibido deslizar un sprite estático (`idle`) por el suelo. Preservar manos/objetos, altura corporal, ancla de suelas y contorno completo durante el ciclo.

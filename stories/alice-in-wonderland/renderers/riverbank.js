@@ -56,7 +56,10 @@ export class Riverbank extends Phaser.Scene {
     const [l,t,r,b]=pose.sourceBoundsExclusive;let [pw,ph]=pose.normalizedSize;
     if(id==='white-rabbit'||(id!=='props'&&!pose.pose.startsWith('seated')&&pose.pose!=='rising'&&!pose.pose.startsWith('burrow-'))){ph=owner.standingHeightWorld;pw=snap((pose.nativeFrame?(pose.nativeFrame.size[0]/pose.nativeFrame.size[1]):(r-l)/(b-t))*ph);}
     const key=`${PREFIX}-${id}-${pose.pose}`,tex=this.textures.createCanvas(key,pw,ph);
-    drawCharacter(tex.context,this.textures.get(PREFIX+'-source-'+(pose.asset||owner.asset)).getSourceImage(),l,t,r-l,b-t,pw,ph);tex.refresh();
+    drawCharacter(tex.context,this.textures.get(PREFIX+'-source-'+(pose.asset||owner.asset)).getSourceImage(),l,t,r-l,b-t,pw,ph);
+    // Seated sister only: complete the existing dark eye cell, without smoothing.
+    if(id==='sister'&&pose.pose==='seated-reading'){const ctx=tex.context,pixel=ctx.getImageData(86,54,1,1).data;ctx.fillStyle=`rgb(${pixel[0]},${pixel[1]},${pixel[2]})`;ctx.fillRect(84,52,6,14);}
+    tex.refresh();
     this.normalized[id][pose.pose]={key,width:pw,height:ph};
    }
    if(id==='props')continue;

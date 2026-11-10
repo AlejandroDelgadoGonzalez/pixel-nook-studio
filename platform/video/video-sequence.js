@@ -36,6 +36,10 @@ export function videoSequence(story, selected) {
  const fade={id:chapter.id+'-export-fade',type:'action',duration:fadeMs,effects:{},sceneIndex:selected,exportPhase:'fade'};
  // An authored closing hook can already belong to the active scene. Export it
  // once, after its final caption fades, without inventing an unavailable scene.
+ if(chapter.videoExport?.endAtLastBeat){
+  const end={id:chapter.id+'-export-end',type:'end',sceneIndex:selected};
+  return{story:{...story,steps:[...prefix,...body,fade,end]},startId:body[0].id,steps:[...body,fade],openingIds:[],closingIds:[],nextScene:null,fadeMs,holdMs:0,endingHoldMs:0,...replayInfo};
+ }
  const closing=chapter.videoExport?.closingHook;
  if(closing){
   const from=body.findIndex(s=>s.id===closing.from),through=body.findIndex(s=>s.id===closing.through);

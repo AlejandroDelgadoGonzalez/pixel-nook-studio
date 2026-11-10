@@ -51,7 +51,7 @@
       "masterCharacter": "dodo",
       "lockedCropSha256": "3d83876f71762d9e69e07978559c3fa639ec3f51be9b8fa5264309de2987abae",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-dodo-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-dodo-wet-v1.png",
         "originalBounds": [
           102,
           92,
@@ -303,7 +303,7 @@
       "masterCharacter": "dodo",
       "lockedCropSha256": "b3764d3fdc65ac60f606fb955e2ae91496e744ef00104d625f8ce72fd672ac5b",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-dodo-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-dodo-wet-v1.png",
         "originalBounds": [
           585,
           92,
@@ -558,7 +558,7 @@
       "masterCharacter": "dodo",
       "lockedCropSha256": "430df9fc820f835ed2905ef9ab269e303ca0516d0097b9c9bf62df7586a30715",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-dodo-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-dodo-wet-v1.png",
         "originalBounds": [
           1119,
           92,
@@ -809,7 +809,7 @@
       "masterCharacter": "dodo",
       "lockedCropSha256": "8d8ea95b078cfccbd56814bba9ce8177b45e821e1cc095dfe81552077b620b80",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-dodo-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-dodo-wet-v1.png",
         "originalBounds": [
           68,
           551,
@@ -1078,7 +1078,7 @@
       "masterCharacter": "dodo",
       "lockedCropSha256": "3c801a335349c90288576c84f7e36223879e17c29ab3eeaa43e1f8febdbe9e80",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-dodo-push-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-dodo-push-v1.png",
         "originalBounds": [
           45,
           213,
@@ -1337,7 +1337,7 @@
       "masterCharacter": "dodo",
       "lockedCropSha256": "c1b6f990582bdda1f3e4da44e3ad74bfb396425cbbc1693c3609f026ef56f62e",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-dodo-push-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-dodo-push-v1.png",
         "originalBounds": [
           1234,
           220,

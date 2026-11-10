@@ -1013,7 +1013,14 @@
       "screenInsets": {
         "top": 8,
         "bottomReservationCredit": 8
-      }
+      },
+      "mobileLateWorldRect": [
+        1390,
+        780,
+        2015,
+        1480
+      ],
+      "mobileLateMeasurement": "10Nov Block1: widen the late hall envelope leftward to include the Rabbit approach/exit at x1500 and toolbar clearance; preserve right edge and floor."
     },
     "inheritance": "One hallRoomFrame per actual layout; final S3 frame and every S4 frame are identical. No historical hard-coded screen camera."
   },

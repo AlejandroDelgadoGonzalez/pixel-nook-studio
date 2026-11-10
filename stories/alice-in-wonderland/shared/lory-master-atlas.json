@@ -51,7 +51,7 @@
       "masterCharacter": "lory",
       "lockedCropSha256": "c31803b7e323c2a77588ffc7de04b60179e930ef269ae58cb700ca0472bc3f8a",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-lory-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-lory-wet-v1.png",
         "originalBounds": [
           105,
           80,
@@ -285,7 +285,7 @@
       "masterCharacter": "lory",
       "lockedCropSha256": "dd8190d1e468841e1e76a967810952766bff4b31f4ee45f29af4a9192b78ca48",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-lory-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-lory-wet-v1.png",
         "originalBounds": [
           590,
           80,
@@ -522,7 +522,7 @@
       "masterCharacter": "lory",
       "lockedCropSha256": "c95c77a82eef1232229ed7998d817c39c27a72c521fc0ded2d08efa79400e02d",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-lory-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-lory-wet-v1.png",
         "originalBounds": [
           1151,
           82,
@@ -749,7 +749,7 @@
       "masterCharacter": "lory",
       "lockedCropSha256": "c958a28213a0e6199932f9d66c687d5ed09667778cb063479afdecc185a39bc0",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-lory-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-lory-wet-v1.png",
         "originalBounds": [
           94,
           568,
@@ -990,7 +990,7 @@
       "masterCharacter": "lory",
       "lockedCropSha256": "cf597dd897b5b3a5ec69c9596019cb227a32f98361624f2184e3dd4a3fae1173",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-lory-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-lory-wet-v1.png",
         "originalBounds": [
           585,
           566,
@@ -1225,7 +1225,7 @@
       "masterCharacter": "lory",
       "lockedCropSha256": "2eda64beb3bdd1af43421b7cf04c963e77eb32b6d51f6bfd5f219eed8bfdb47a",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/c2-s1-lory-wet-v1.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/c2-s1-lory-wet-v1.png",
         "originalBounds": [
           1101,
           568,

@@ -29,7 +29,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           16,
           16,
@@ -302,7 +302,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           296,
           16,
@@ -596,7 +596,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           584,
           16,
@@ -885,7 +885,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           856,
           16,
@@ -1159,7 +1159,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           1128,
           16,
@@ -1436,7 +1436,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           1448,
           16,
@@ -1709,7 +1709,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           1744,
           16,
@@ -1985,7 +1985,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           2016,
           16,
@@ -2251,7 +2251,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 180,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           2288,
           16,
@@ -2571,7 +2571,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 180,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           2688,
           16,
@@ -2879,7 +2879,7 @@
       "facing": "right",
       "referenceStandingHeightWorld": 180,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           16,
           528,
@@ -3197,7 +3197,7 @@
       "facing": "left",
       "referenceStandingHeightWorld": 180,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           416,
           528,
@@ -3528,7 +3528,7 @@
       "facing": "left",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           752,
           528,
@@ -3873,7 +3873,7 @@
       "facing": "left",
       "referenceStandingHeightWorld": 122,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           1040,
           528,
@@ -4207,7 +4207,7 @@
       "facing": "left",
       "referenceStandingHeightWorld": 180,
       "provenance": {
-        "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/white-rabbit-master-atlas.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/white-rabbit-master-atlas.png",
         "originalBounds": [
           1344,
           528,
@@ -4520,7 +4520,7 @@
       "masterCharacter": "white-rabbit",
       "lockedCropSha256": "235f93f2428044100ceea35f9da4f783d0ba2b3c6fa201b845d70464d591b51a",
       "provenance": {
-        "originalAsset": "/.artifacts/qa/square-pixel-closure/rabbit-run-authored-feet.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/rabbit-run-authored-feet.png",
         "originalBounds": [
           0,
           0,
@@ -4532,7 +4532,7 @@
         "originalSourceSha256": "834102e117b97db7562bdcb5aca5aba98beb50f50e2454fe4236a347d92140f3",
         "authorizedRepair": {
           "previousSource": {
-            "originalAsset": "/.artifacts/qa/atlas-unification-zero-clipping/before/stories/alice-in-wonderland/assets/atlases/pool-creatures-c1-s6-v1.png",
+            "originalAsset": "/stories/alice-in-wonderland/sources/pool-creatures-c1-s6-v1.png",
             "originalBounds": [
               955,
               38,
