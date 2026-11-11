@@ -1,0 +1,31 @@
+/* Explicit reading formats. Auto retains the existing responsive styles. */
+.aspect-ratio-setting{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 18px;font-size:14px}
+.aspect-ratio-setting select{min-height:44px;max-width:70%;padding:8px;border:1px solid #71806b;border-radius:5px;background:#192f2a;color:#f5ebd8;font:inherit}
+body.aspect-locked{background:#0b1118}
+body.aspect-locked #app{width:100%;height:100dvh;max-width:none;padding:0;margin:0;display:block}
+body.aspect-locked #player{position:fixed;left:50%;top:50%;width:var(--aspect-width);height:var(--aspect-height);min-height:0;max-height:none;flex:none;margin:0;padding:0;transform:translate(-50%,-50%) scale(var(--aspect-scale));transform-origin:center}
+body.aspect-locked #stage{inset:0;width:100%;height:100%;margin:0}
+body.aspect-locked .library-return{position:absolute;left:12px;top:12px}
+body.aspect-locked #progress[role="slider"]{position:absolute}
+body.aspect-locked dialog{max-width:calc(var(--aspect-display-width) - 24px);max-height:calc(var(--aspect-display-height) - 24px)}
+body.aspect-locked .stage-tools{top:12px;right:14px;gap:2px!important}
+body.aspect-locked .stage-tools button{width:44px;height:44px}
+body.aspect-locked .scene-top{top:64px;padding:0 20px;max-width:none}
+body.aspect-locked #paused{top:75px}
+body.aspect-locked .dialogue-head{min-height:32px;margin-bottom:12px;gap:10px}
+body.aspect-locked #portrait{width:30px;height:30px}
+body.aspect-locked #cue{font-size:11px;margin-top:14px}
+body.aspect-locked #dialogue{width:min(760px,calc(100% - 40px));bottom:9%;padding:24px 30px 20px}
+body.aspect-locked #text,body.aspect-locked #dialogue.narration #text,body.aspect-locked #measure{font-size:21.12px;line-height:1.65}
+body.aspect-locked .intro-inner h1{font-size:76.8px}
+body.aspect-locked .intro-inner p{font-size:19px;line-height:1.7}
+body.aspect-locked .end-inner h2{font-size:50px}
+body[data-aspect-ratio="portrait"] #dialogue{width:calc(100% - 28px);bottom:8%;padding:20px 20px 16px}
+body[data-aspect-ratio="portrait"] #text,body[data-aspect-ratio="portrait"] #dialogue.narration #text,body[data-aspect-ratio="portrait"] #measure{font-size:18px;line-height:1.6}
+body[data-aspect-ratio="portrait"] .dialogue-head{min-height:30px}
+body[data-aspect-ratio="portrait"] .stage-tools button{width:52px;height:52px}
+body[data-aspect-ratio="portrait"] .library-return{min-height:52px}
+body[data-aspect-ratio="portrait"] .scene-top{top:72px}
+body[data-aspect-ratio="portrait"] .intro-inner{padding:26px}
+body[data-aspect-ratio="portrait"] .intro-inner h1{font-size:48px}
+body[data-aspect-ratio="portrait"] .end-inner h2{font-size:36px}

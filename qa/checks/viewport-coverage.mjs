@@ -6,10 +6,11 @@ import assert from 'node:assert/strict';
 export function inspectViewport(scene, {intro=false}={}) {
  const issues=[],rect=e=>{const r=e.getBoundingClientRect();return{left:r.left,top:r.top,right:r.right,bottom:r.bottom,width:r.width,height:r.height};};
  const stage=rect(document.querySelector('#stage')),canvas=rect(scene.game.canvas),w=scene.scale.width,h=scene.scale.height,camera=scene.cameras.main;
- const inRecord=document.body.classList.contains('record'),explicitPortrait=document.body.classList.contains('vertical');
+ const inRecord=document.body.classList.contains('record'),explicitPortrait=document.body.classList.contains('vertical'),explicitAspect=document.body.classList.contains('aspect-locked');
  // The explicitly selected portrait recording surface can be bounded. Ordinary
  // reading, including an intrinsically narrow window, must fill the viewport.
- if(!inRecord&&!explicitPortrait)for(const [name,b]of [['stage',stage],['canvas',canvas]])if(Math.abs(b.left)>1||Math.abs(b.top)>1||Math.abs(b.right-innerWidth)>1||Math.abs(b.bottom-innerHeight)>1)issues.push({kind:'viewport-not-filled',name,b,viewport:{width:innerWidth,height:innerHeight}});
+ if(explicitAspect){const frame=rect(document.querySelector('#player')),ratio=document.body.dataset.aspectRatio==='portrait'?9/16:16/9;for(const [name,b]of [['stage',stage],['canvas',canvas]])if(['left','top','right','bottom'].some(k=>Math.abs(b[k]-frame[k])>1))issues.push({kind:'locked-frame-not-filled',name,b,frame});if(Math.abs(frame.width/frame.height-ratio)>.001||Math.abs(w/h-ratio)>.001)issues.push({kind:'locked-aspect-mismatch',frame,logical:{width:w,height:h},ratio});}
+ if(!inRecord&&!explicitPortrait&&!explicitAspect)for(const [name,b]of [['stage',stage],['canvas',canvas]])if(Math.abs(b.left)>1||Math.abs(b.top)>1||Math.abs(b.right-innerWidth)>1||Math.abs(b.bottom-innerHeight)>1)issues.push({kind:'viewport-not-filled',name,b,viewport:{width:innerWidth,height:innerHeight}});
  if(Math.abs(canvas.left-stage.left)>1||Math.abs(canvas.top-stage.top)>1||Math.abs(canvas.right-stage.right)>1||Math.abs(canvas.bottom-stage.bottom)>1)issues.push({kind:'canvas-stage-gap',stage,canvas});
  if(Math.abs(camera.x)>.1||Math.abs(camera.y)>.1||Math.abs(camera.width-w)>.1||Math.abs(camera.height-h)>.1)issues.push({kind:'camera-letterbox',camera:{x:camera.x,y:camera.y,width:camera.width,height:camera.height},canvas:{width:w,height:h}});
  // Phaser's worldView may round world coordinates. Its render matrix is the

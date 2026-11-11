@@ -1,3 +1,4 @@
+import {dialogueTop} from '../../../platform/rendering/dialogue-bounds.js';
 import {nativeAtlasFrame} from '../../../platform/rendering/compact-atlas.js';
 import {drawCharacter,createPixelWalkFrames} from '../../../platform/rendering/character-art.js';
 const ROOT='/stories/alice-in-wonderland/',P='alice-camera-detail-c2-large';
@@ -20,7 +21,7 @@ export class FarTooMuch {
  }
  hide(){this.nodes.forEach(n=>n.setVisible(false));this.active=false;}
  frame(fold=this.s.reader.model.large.fold){
-  const s=this.s,w=s.scale.width,h=s.scale.height,cap=document.querySelector('#dialogue')?.getBoundingClientRect(),top=!s.game.canvas.closest('.export-render-host')&&cap?.top>0?cap.top:(s.readingHeight||h*.68)+(s.safeTopInset||0)+20,key=[w,h,Math.round(top)].join('/');let base=this.frames.get(key);
+  const s=this.s,w=s.scale.width,h=s.scale.height,top=dialogueTop(s,(s.readingHeight||h*.68)+(s.safeTopInset||0)+20),key=[w,h,Math.round(top)].join('/');let base=this.frames.get(key);
   if(!base){const z=Math.max(w/1660,h/932,(h-top+4)/(936-680)),half=w/(2*z);let x=w<h?(w/z>=518?this.g.camera.minimumSourceLeft+half:this.g.camera.baseCenterPortrait):this.g.camera.baseCenterLandscape;if(w<h&&w/z<518&&x+half>this.g.camera.entranceSourceBounds[0])x=this.g.camera.entranceSourceBounds[0]-2-half;x=Math.max(half+2,Math.min(1662-half,x));base={x:Math.min(1662-half,x+(w<h?28:0)),y:934-h/(2*z),z};this.frames.set(key,base);}
   const p=clamp(fold),q=p*p*(3-2*p),worldHeight=this.foldSize[1]*this.g.rig.displayScale,safeTop=12,foldCaption=h*(w/h>2?.61:.58),z=Math.max(w/1660,h/1220,Math.min(base.z*1.25,(foldCaption-24)/worldHeight,(w-24)/(this.foldSize[0]*this.g.rig.displayScale))),half=w/(2*z),x=Math.max(half+2,Math.min(1662-half,this.g.camera.finalCenterX)),bodyTop=this.g.rig.bodyPosition[1],bodyBottom=bodyTop+worldHeight,y=bodyBottom-(foldCaption-(w/h>2?8:12)-h/2)/z;
 

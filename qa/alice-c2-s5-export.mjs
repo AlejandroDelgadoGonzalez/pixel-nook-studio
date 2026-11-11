@@ -11,6 +11,7 @@ await fs.mkdir(out,{recursive:true});
 const browser=await launch({args:['--disable-accelerated-video-encode']}),report={scope:'Selected Alice C2 scene real MP4 export and complete playback at1x; no duration acceptance inferred from MP4',errors:[],resources:[],audioRequests:[],exports:[]};
 try{
  const item=(await storyCases()).find(x=>x.slug==='alice-in-wonderland'&&x.chapter.number===2),{page,context}=await openCase(browser,item,{width:390,height:844},report);
+ if(process.env.QA_READER_ASPECT){await page.click('#show-controls');await page.selectOption('#aspect-ratio',process.env.QA_READER_ASPECT);await page.click('#close-settings');report.readerAspect=process.env.QA_READER_ASPECT;}
  page.on('request',r=>{if(/\.mp3(?:\?|$)/.test(r.url()))report.audioRequests.push(r.url());});
  await page.evaluate(()=>{qaScene.reader.paused=true;document.querySelector('#ending').hidden=true;document.querySelector('#settings-modal').showModal();});
  const before=await page.evaluate(()=>({model:JSON.stringify(qaScene.reader.model),storage:JSON.stringify({...localStorage})}));
