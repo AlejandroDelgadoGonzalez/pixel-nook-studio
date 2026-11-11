@@ -110,3 +110,9 @@ Run the standard affected-story suite with the original preset, plus all other s
 
 
 The official vertical viewport is actual 1080x1920 natural reading. Do not combine it with the optional portrait-reading control as if these were the same test. Product portrait controls and MP4 exports have their own checks. `--browser-only` runs only the browser phase; combine it with separately completed static evidence before claiming full QA. `--continue-on-error` records every chapter/layout failure instead of aborting the remaining matrix.
+
+### C3-S1: actual text clock and revised Alice support
+
+Run `node qa/alice-c3-s1-live-text.mjs` after changes to this renderer's update loop. It leaves the actual Phaser loop running, observes all nine paragraphs becoming visible without seeding `revealed` or calling the paint callback, checks the first-tap reveal and pause, and watches a complete real-time automatic traversal on phone390. Manual diagnostic reconstruction alone cannot detect a missing `onTick` callback. `QA_LAYOUT=phone-390` selects a diagnostic subset; the complete test uses the six official viewports.
+
+Pair with `node qa/alice-c3-s1.mjs`, `node qa/alice-c3-s1-aspect.mjs`, the affected Alice suite, and a normal-speed C3-S1 MP4 export. Alice's user-authorized support is now [535,615], preserving the inherited [535,646] and the original scene timings and scale.

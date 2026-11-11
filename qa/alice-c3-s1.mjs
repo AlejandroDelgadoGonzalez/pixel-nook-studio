@@ -12,7 +12,7 @@ try{const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.ch
  for(const step of e.story.steps.filter(s=>s.type!=='end')){e.start(step.id);e.paused=false;
  for(let t=0;t<(step.duration||step.readingDurationMs);t+=100){e.elapsed=t;qaScene.draw();const s=qaScene.current;
  if(step.c3Beat===1&&Math.abs(s.alice[0]-535)>1e-6)throw Error('Nonstraight Alice step');
- if(step.c3Beat>=3){if(JSON.stringify(s.root)!=='[490,370]'||JSON.stringify(s.hookahBase)!=='[525.6,369.6]')throw Error('Root drift');signatures.push(JSON.stringify(qaScene.framing));}
+ if(step.c3Beat>=3){if(JSON.stringify(s.alice)!=='[535,615]')throw Error('Revised Alice anchor');if(JSON.stringify(s.root)!=='[490,370]'||JSON.stringify(s.hookahBase)!=='[525.6,369.6]')throw Error('Root drift');signatures.push(JSON.stringify(qaScene.framing));}
  if(step.type==='action'){if(e.advance(performance.now()+10000))throw Error('Action tap advanced');}
  if(step.c3Beat===2&&t<6000){e.revealed=step.text.length;if(e.advance(performance.now()+10000))throw Error('Ascent tap advanced');}
  count++;}

@@ -38,7 +38,7 @@
     ],
     "aliceApproach": [
       535,
-      600
+      615
     ],
     "mushroomCrown": [
       490,
@@ -80,7 +80,7 @@
         ],
         [
           535,
-          600
+          615
         ]
       ],
       "durationMs": 3000,
@@ -1311,5 +1311,18 @@
     "safeTopPx": 24,
     "dialogueClearancePx": 12
   },
-  "checksScope": "isolated art-board geometry and native assets; no implemented story, playback, audio or MP4"
+  "checksScope": "isolated art-board geometry and native assets; no implemented story, playback, audio or MP4",
+  "revision": {
+    "authorization": "Alejandro approved video review: fix invisible text; move Alice slightly down only",
+    "beforeAliceApproach": [
+      535,
+      600
+    ],
+    "afterAliceApproach": [
+      535,
+      615
+    ],
+    "preserve": "0.32 scale,1.2 gain,646 inherited y,12beats72seconds,Caterpillar,panorama,audio pause",
+    "measurement": "Same clean dirt corridor x535,615<=y<=646; scene fit reserves actual projected feet above dialogue"
+  }
 }

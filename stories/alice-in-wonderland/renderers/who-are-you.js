@@ -21,11 +21,12 @@ export class WhoAreYou extends Phaser.Scene{
  state(){const b=this.reader.step?.c3Beat||1,t=this.reader.elapsed||0;let root=g.anchors.climbHidden,mask=true,seated=b>2;
   if(b===2){const points=g.walkPaths.caterpillarCrest.waypoints;let u=clamp(t/4800)*3,i=Math.min(2,Math.floor(u)),f=u-i;root=points[i].map((v,k)=>mix(v,points[i+1][k],f));mask=u<2;seated=t>=4800;}
   if(seated){root=g.anchors.caterpillarSeat;mask=false;}
-  return {beat:b,elapsed:t,alice:[535,b===1?mix(646,600,clamp(t/3000)):600],root,mask,seated,pose:seated?(b>=5||b===4&&t>=2500?'mouthpiece-low-right':'smoking-right'):'climb-carry-right'};
+  const start=g.anchors.aliceInherited,end=g.anchors.aliceApproach;
+  return {beat:b,elapsed:t,alice:b===1?start.map((v,i)=>mix(v,end[i],clamp(t/3000))):[...end],root,mask,seated,pose:seated?(b>=5||b===4&&t>=2500?'mouthpiece-low-right':'smoking-right'):'climb-carry-right'};
  }
  fit(state,entry=false){const w=this.scale.width,h=this.scale.height,rect=this.game.canvas.getBoundingClientRect(),panel=document.querySelector('#dialogue')?.getBoundingClientRect();
   const exportHost=this.game.canvas.closest('.export-render-host'),bottom=exportHost?(this.readingHeight||h*.68)+8:panel?(panel.top-rect.top)*h/rect.height-12:h*.68;
-  const top=this.safeTopInset||24,groupTop=entry?220:288,groupBottom=601;
+  const top=this.safeTopInset||24,groupTop=entry?220:288,groupBottom=g.anchors.aliceApproach[1]+1;
   const desired=w>=h?(entry?1:1.35)*w/1280:w/(entry?430:384),z=Math.max(w/1660,h/932,Math.min(desired,(bottom-top)/(groupBottom-groupTop)));
   let left=500-w/(2*z),up=444-(top+bottom)/(2*z);left=Math.max(2,Math.min(1662-w/z,left));up=Math.min(up,groupTop-top/z);up=Math.max(up,groupBottom-bottom/z);up=Math.max(2,Math.min(934-h/z,up));return{x:left+w/(2*z),y:up+h/(2*z),z};
  }
@@ -52,7 +53,7 @@ export class WhoAreYou extends Phaser.Scene{
   this.surface.refresh();let f=this.fit(s);if(s.beat===1)f=this.inherited();else if(s.beat===2){const a=this.inherited(),entry=this.fit(s,true),first=smooth(s.elapsed/1200);f=Object.fromEntries(['x','y','z'].map(k=>[k,mix(a[k],entry[k],first)]));if(s.elapsed>=4800){const u=smooth((s.elapsed-4800)/1200),end=this.fit(s);f=Object.fromEntries(['x','y','z'].map(k=>[k,mix(entry[k],end[k],u)]));}}
   this.framing={...f,lock:P,fits:true};this.cameras.main.setViewport(0,0,this.scale.width,this.scale.height).setZoom(f.z).centerOn(f.x,f.y);this.viewport={x:0,y:0,width:this.scale.width,height:this.scale.height};this.current={...s,aliceBounds:ab,caterpillarBounds:{left:x,top:y,right:x+cw,bottom:y+ch},hookahBase:s.seated?[525.6,369.6]:null};this.cameraReframing=s.beat===2;
  }
- update(_time,dt){this.reader.tick(dt);this.phase=this.reader.totalTime;this.draw();}
+ update(_time,delta){const dt=Math.min(delta,100);this.reader.tick(dt);this.phase=this.reader.totalTime;if(this.reader.running&&!this.reader.paused&&!this.reader.buffering)this.onTick?.(dt);this.draw();}
  diagnostics(){const f=this.framing,w=this.scale.width,h=this.scale.height,s=this.current,project=(x,y)=>({x:(x-f.x)*f.z+w/2,y:(y-f.y)*f.z+h/2}),actor=(root,b,visible)=>({...project(...root),head:project(root[0],b.top),world:{x:root[0],y:root[1]},visible,bounds:{left:project(b.left,b.top).x,top:project(b.left,b.top).y,right:project(b.right,b.bottom).x,bottom:project(b.right,b.bottom).y}});
   return{width:w,height:h,environment:P,actors:{alice:actor(s.alice,s.aliceBounds,1),caterpillar:actor(s.root,s.caterpillarBounds,s.mask?0:1)},requiredActors:s.mask?['alice']:['alice','caterpillar'],props:{},requiredProps:[],viewport:this.viewport,cameraReframing:this.cameraReframing,cameraTracking:null,landmarks:[],ambientTime:this.phase,c3:s};}
 }
