@@ -21,9 +21,18 @@ try{
     const rabbit=s.diagnostics().actors['white-rabbit']?.bounds;
     rows.push({flipped:actor.flipX,rabbitInView:!!rabbit&&rabbit.left>=0&&rabbit.right<=s.scale.width&&rabbit.top>=0&&rabbit.bottom<=s.scale.height,id:step.id,q,...a,cakeOverlap,texture:actor.texture.key,visibleCakes:stage.items.filter(o=>o.visible).length,headY:actor.getBounds().top,viewportIssues:step.type==='text'?inspect(s).issues:[],captionHidden:document.querySelector('#dialogue').hasAttribute('data-caption-clear')&&document.querySelector('#dialogue').classList.contains('inactive'),advanceAccepted:step.type==='action'?e.advance(performance.now()):null});
    }
+   // Compare the actual frame and actor root on either side of each beat boundary.
+   const edges=e.story.steps.filter(step=>step.cakeMoment&&step.type!=='end').map(step=>{
+    const capture=fraction=>{
+     sample(step.id,fraction);
+     const actor=s.people.alice.actor,{x,y,z}=s.framing;
+     return{frame:[x,y,z],feet:[actor.x,actor.y],alpha:actor.alpha};
+    };
+    return{id:step.id,n:step.cakeMoment,start:capture(0),end:capture(.999999)};
+   });
    // Full chapter reconstruction and both modes traverse S6 -> S7 without end.
    const continuity=[];for(const auto of[true,false]){e.sceneGate=false;e.setAuto(auto);e.start('alice-c2-bill-01');e.onChange('back');e.paused=false;let guard=0,previous=e.step.sceneIndex,crossed=false;while(e.running){if(++guard>500)throw Error('Playback stalled');const step=e.step;if(step.type==='action')e.tick(step.duration);else if(auto)e.tick(Math.max(step.readingDurationMs||0,100000));else{e.revealed=step.text.length;e.advance(guard*1000);}s.draw(0,true);s.game.step(performance.now(),0);if(e.step.sceneIndex!==previous){if(e.step.sceneIndex===6)crossed=!document.querySelector('#ending').hidden?false:true;previous=e.step.sceneIndex;}}continuity.push({auto,crossed,end:e.step.id});}
-   return{before,after,opener,rows,continuity};
+   return{before,after,opener,rows,edges,continuity};
   });
   assert.equal(r.opener,'Only a small bite. I have had quite enough of growing.');
   for(const row of r.rows){
@@ -32,6 +41,23 @@ try{
    if(row.id.endsWith('14-threshold'))assert(row.alpha>0&&row.alpha<1&&row.walking);
    if(row.n===17||row.id.endsWith('16-steps')&&row.q===.999)assert(row.rabbitInView,row.id);
    if(row.n===21)assert(row.flipped&&row.pose==='walk-right','Forest walk must start and stay left-facing');
+  }
+  const near=(a,b)=>a.every((value,i)=>Math.abs(value-b[i])<.01);
+  for(let i=1;i<r.edges.length;i++){
+   const previous=r.edges[i-1],next=r.edges[i];
+   if(next.n===15)continue; // A deliberate dissolve between the house and courtyard.
+   assert(near(previous.end.frame,next.start.frame),'Camera jump at '+next.id);
+   assert(near(previous.end.feet,next.start.feet),'Root jump at '+next.id);
+   assert(Math.abs(previous.end.alpha-next.start.alpha)<.01,'Opacity jump at '+next.id);
+  }
+  const shrinking=r.edges.filter(edge=>edge.n>=4&&edge.n<=13);
+  for(const edge of shrinking){
+   assert.deepEqual(edge.start.frame,shrinking[0].start.frame);
+   assert.deepEqual(edge.end.frame,shrinking[0].start.frame);
+  }
+  for(const row of r.rows){
+   if(row.id.endsWith('16-steps'))assert.equal(row.feet[0],753);
+   if(row.n===18)assert.equal(row.feet[1],680);
   }
   assert.deepEqual(r.after,r.before,'Opening must match exact S6 close');
   for(const a of r.rows){assert.equal(a.cakeOverlap,0,a.id+' covers an unchosen cake');assert.deepEqual(a.viewportIssues,[],a.id);if(a.n<=6)assert.equal(a.standing,false);if(a.n===5)assert.equal(a.visibleCakes,3,'Cake remains visible until consumption finishes');if(a.n>=6&&a.inside)assert.equal(a.visibleCakes,2);if(a.n<=6)assert(a.headY>180,'Crouched head crossed the beam');if(a.n===7)assert.equal(a.size,.72);if([4,5].includes(a.n))assert(a.heldCake?.every(Number.isFinite));if(a.advanceAccepted!==null){assert.equal(a.advanceAccepted,false);assert(a.captionHidden,'Moving action has a dialogue box');}if(a.n===17)assert(a.rabbitFacingLeft);}

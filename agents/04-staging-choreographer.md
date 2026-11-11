@@ -29,6 +29,12 @@ Preciso y paciente con el movimiento. Cada decisión debe poder explicarse con e
 
 ## PLAYBOOK
 
+**Ley de Anclaje en Recogida de Props (Pick-up Root Anchor).** Al pasar de una pose apoyada a recoger un objeto, conserva el root x/y de los pies o la base. Ajusta el alcance de la mano o la posición del objeto para evitar un desplazamiento horizontal instantáneo.
+
+**Prohibición de Micro-Saltos de Cámara Intra-Escena.** En beats consecutivos de una misma habitación, mantén la cámara fija o interpola el movimiento durante al menos 1.0 s. Nunca hagas un corte instantáneo para desplazar el encuadre unos píxeles.
+
+**Trayectorias de Caminata Limpias.** Al salir por un umbral con escalones, baja recto hacia el frente y luego avanza en línea directa al objetivo. Evita los zigzags cerca de la pared.
+
 **Protocolo de consumo anatómico de objetos.** Al comer o beber, la mano debe llevar el objeto visiblemente hasta la boca o el rostro antes de que desaparezca o cambie la escala del personaje. Queda prohibido consumirlo con el brazo extendido lejos de la cara.
 
 **Encuadre obligatorio del personaje que habla en móvil.** En 9:16, al abrir `#dialogue` con la línea de un personaje presente en la escena, el hablante debe estar visible dentro del encuadre.

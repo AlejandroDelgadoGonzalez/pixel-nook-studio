@@ -19,10 +19,10 @@ export class FarTooMuch {
   const s=this.s,l=1036,t=398,r=1164,b=641,tex=s.textures.createCanvas(P+'-door-leaf',r-l,b-t),c=tex.context,pts=[[1036,641],[1036,449],[1043,429],[1060,411],[1085,399],[1115,399],[1143,415],[1164,447],[1164,641]];c.beginPath();pts.forEach(([x,y],i)=>i?c.lineTo(x-l,y-t):c.moveTo(x-l,y-t));c.closePath();c.clip();c.drawImage(this.bg.texture.getSourceImage(),l,t,r-l,b-t,0,0,r-l,b-t);tex.refresh();this.aperture=this.own(s.add.graphics().setDepth(-990));this.aperture.fillStyle(0x101d2c).fillPoints(pts.map(([x,y])=>({x,y})),true);this.leaf=this.own(s.add.image(r,b,P+'-door-leaf').setOrigin(1,1).setDepth(3000));
  }
  hide(){this.nodes.forEach(n=>n.setVisible(false));this.active=false;}
- frame(){
+ frame(fold=this.s.reader.model.large.fold){
   const s=this.s,w=s.scale.width,h=s.scale.height,cap=document.querySelector('#dialogue')?.getBoundingClientRect(),top=!s.game.canvas.closest('.export-render-host')&&cap?.top>0?cap.top:(s.readingHeight||h*.68)+(s.safeTopInset||0)+20,key=[w,h,Math.round(top)].join('/');let base=this.frames.get(key);
   if(!base){const z=Math.max(w/1660,h/932,(h-top+4)/(936-680)),half=w/(2*z);let x=w<h?(w/z>=518?this.g.camera.minimumSourceLeft+half:this.g.camera.baseCenterPortrait):this.g.camera.baseCenterLandscape;if(w<h&&w/z<518&&x+half>this.g.camera.entranceSourceBounds[0])x=this.g.camera.entranceSourceBounds[0]-2-half;x=Math.max(half+2,Math.min(1662-half,x));base={x:Math.min(1662-half,x+(w<h?28:0)),y:934-h/(2*z),z};this.frames.set(key,base);}
-  const p=clamp(s.reader.model.large.fold),q=p*p*(3-2*p),worldHeight=this.foldSize[1]*this.g.rig.displayScale,safeTop=12,foldCaption=h*(w/h>2?.61:.58),z=Math.max(w/1660,h/1220,Math.min(base.z*1.25,(foldCaption-24)/worldHeight,(w-24)/(this.foldSize[0]*this.g.rig.displayScale))),half=w/(2*z),x=Math.max(half+2,Math.min(1662-half,this.g.camera.finalCenterX)),bodyTop=this.g.rig.bodyPosition[1],bodyBottom=bodyTop+worldHeight,y=bodyBottom-(foldCaption-(w/h>2?8:12)-h/2)/z;
+  const p=clamp(fold),q=p*p*(3-2*p),worldHeight=this.foldSize[1]*this.g.rig.displayScale,safeTop=12,foldCaption=h*(w/h>2?.61:.58),z=Math.max(w/1660,h/1220,Math.min(base.z*1.25,(foldCaption-24)/worldHeight,(w-24)/(this.foldSize[0]*this.g.rig.displayScale))),half=w/(2*z),x=Math.max(half+2,Math.min(1662-half,this.g.camera.finalCenterX)),bodyTop=this.g.rig.bodyPosition[1],bodyBottom=bodyTop+worldHeight,y=bodyBottom-(foldCaption-(w/h>2?8:12)-h/2)/z;
 
   return{x:mix(base.x,x,q),y:mix(base.y,y,q),z:mix(base.z,z,q),fits:true,lock:'rabbit-full-room-clean-fold'};
  }

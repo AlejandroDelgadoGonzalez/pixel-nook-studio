@@ -243,8 +243,8 @@
         710
       ],
       [
-        910,
-        704
+        870.5685480015684,
+        669.0635400174796
       ]
     ],
     "props": {
@@ -295,8 +295,8 @@
   },
   "anchors": {
     "selectedCake": [
-      910,
-      704
+      870.5685480015684,
+      669.0635400174796
     ],
     "remainingCakes": [
       [
@@ -309,14 +309,14 @@
       ]
     ],
     "proposedPickupFeet": [
-      1199.884,
-      758.978
+      1026,
+      664
     ],
     "pickupHand": [
-      910,
-      704
+      870.5685480015684,
+      669.0635400174796
     ],
-    "pickupPose": "collect-fan",
+    "pickupPose": "anchored-reach",
     "eatingPose": "kneeling-bite",
     "interiorDoorRing": [
       1054,
@@ -331,8 +331,8 @@
       641
     ],
     "exteriorDoorFeet": [
-      753.5447071705133,
-      622.8286236740663
+      753,
+      622
     ],
     "gate": [
       455,
@@ -340,7 +340,7 @@
     ],
     "gatePause": [
       455,
-      686
+      680
     ],
     "forestEdge": [
       260,
@@ -356,8 +356,8 @@
     ],
     "selectedCakeIndex": 2,
     "pickupFingerNormalized": [
-      3,
-      129.5
+      33.759530722578546,
+      147.83216371671628
     ],
     "biteHandNormalized": [
       31.5,
@@ -419,17 +419,13 @@
       841,
       1386.476
     ],
-    "runtimeNotes": "Opening copies the exact S6 final frame. Silent crouch frames fit the measured silhouette. Small portrait center1074 includes both remaining cakes. Exterior follows the measured routes; safe fit clamps to the original panorama."
+    "runtimeNotes": "Interior inherits the folded frame, eases 18 world pixels right during the two-second portrait pickup, and then holds through the doorway. Exterior camera pans from the steps to the Rabbit, then follows Alice to the gate and forest edge."
   },
   "walkPaths": {
     "insideToDoor": [
       [
-        1199.884,
-        758.978
-      ],
-      [
-        1118,
-        710
+        1026,
+        664
       ],
       [
         1065,
@@ -448,44 +444,28 @@
     ],
     "exitSteps": [
       [
-        753.5447071705133,
-        622.8286236740663
+        753,
+        622
       ],
       [
-        754,
-        641
-      ],
-      [
-        754,
-        659
-      ],
-      [
-        785,
-        675
-      ],
-      [
-        705,
-        710
+        753,
+        680
       ]
     ],
     "yardToGate": [
       [
-        705,
-        710
-      ],
-      [
-        560,
-        710
+        753,
+        680
       ],
       [
         455,
-        686
+        680
       ]
     ],
     "forestHook": [
       [
         455,
-        686
+        680
       ],
       [
         430,
@@ -506,12 +486,12 @@
     ],
     "exteriorEmergence": [
       [
-        741.5447071705133,
-        606.8286236740663
+        753,
+        607
       ],
       [
-        753.5447071705133,
-        622.8286236740663
+        753,
+        622
       ]
     ]
   },
@@ -523,10 +503,10 @@
     "Props remain at the approved table positions.",
     "Door stays on the right wall; facing is computed from target x.",
     "One700ms backdrop crossfade; no new panorama, character or texture generation.",
-    "Both unchosen cakes retain exact S6 coordinates; reach rightmost cake with opaque fingertip [3,129.5].",
     "Cake stays at hand/mouth until final consumption; no invisible-held prop.",
     "The Rabbit remains in view while speaking in portrait.",
-    "The bite keeps Alice kneeling, with the cake attached to her raised hand until consumption."
+    "The bite keeps Alice kneeling, with the cake attached to her raised hand until consumption.",
+    "The selected cake rests at the anchored reach point from the S6 landing onward."
   ],
   "moments": [
     {
@@ -541,7 +521,7 @@
       "seconds": 2,
       "kind": "action",
       "speaker": "",
-      "textOrAction": "Reuse collect-fan and reach the rightmost cake with the measured opaque fingertip; both unchosen cakes keep their S6 positions."
+      "textOrAction": "Reach the selected cake from the same grounded root as the opening folded pose."
     },
     {
       "moment": 4,
@@ -696,16 +676,60 @@
         76
       ],
       [
-        52,
-        91
+        54,
+        90
       ],
       [
-        46,
-        105
+        54,
+        103
+      ],
+      [
+        48,
+        108
       ],
       [
         0,
-        105
+        108
+      ]
+    ]
+  },
+  "crouch": {
+    "physicalGain": 2.16
+  },
+  "pickupArm": {
+    "pivot": [
+      45,
+      94
+    ],
+    "angleDegrees": -38,
+    "polygon": [
+      [
+        0,
+        94
+      ],
+      [
+        53,
+        94
+      ],
+      [
+        53,
+        99
+      ],
+      [
+        46,
+        111
+      ],
+      [
+        35,
+        122
+      ],
+      [
+        31,
+        146
+      ],
+      [
+        0,
+        146
       ]
     ]
   }
