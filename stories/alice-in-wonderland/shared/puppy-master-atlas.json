@@ -1,0 +1,1521 @@
+{
+  "schemaVersion": 2,
+  "character": "puppy",
+  "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+  "dimensions": [
+    1664,
+    1152
+  ],
+  "canonicalSource": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+  "canonicalSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+  "referenceCharacterMaster": "concept_art/characters/master-pose-sheet-alice.png",
+  "approval": "Gates1/2A approved by Alejandro; technical cleanup2026-11-10",
+  "poses": [
+    {
+      "id": "puppy-idle-right",
+      "pose": "idle-right",
+      "sourceBoundsExclusive": [
+        83,
+        67,
+        332,
+        316
+      ],
+      "cellBoundsExclusive": [
+        0,
+        0,
+        416,
+        384
+      ],
+      "normalizedSize": [
+        249,
+        249
+      ],
+      "normalizedWorldSize": [
+        249,
+        249
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            192,
+            67,
+            204,
+            95
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          83,
+          67,
+          332,
+          316
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-idle-front",
+      "pose": "idle-front",
+      "sourceBoundsExclusive": [
+        520,
+        64,
+        728,
+        319
+      ],
+      "cellBoundsExclusive": [
+        416,
+        0,
+        832,
+        384
+      ],
+      "normalizedSize": [
+        208,
+        255
+      ],
+      "normalizedWorldSize": [
+        208,
+        255
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "front",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            72,
+            72,
+            84,
+            100
+          ],
+          [
+            122,
+            72,
+            134,
+            100
+          ]
+        ],
+        "expectedEyeWidths": [
+          12,
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          520,
+          64,
+          728,
+          319
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-idle-back",
+      "pose": "idle-back",
+      "sourceBoundsExclusive": [
+        936,
+        64,
+        1144,
+        320
+      ],
+      "cellBoundsExclusive": [
+        832,
+        0,
+        1248,
+        384
+      ],
+      "normalizedSize": [
+        208,
+        256
+      ],
+      "normalizedWorldSize": [
+        208,
+        256
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "back",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [],
+        "expectedEyeWidths": [],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          936,
+          64,
+          1144,
+          320
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-play-bow-right",
+      "pose": "play-bow-right",
+      "sourceBoundsExclusive": [
+        1313,
+        80,
+        1598,
+        303
+      ],
+      "cellBoundsExclusive": [
+        1248,
+        0,
+        1664,
+        384
+      ],
+      "normalizedSize": [
+        285,
+        223
+      ],
+      "normalizedWorldSize": [
+        285,
+        223
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            230,
+            96,
+            242,
+            124
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          1313,
+          80,
+          1598,
+          303
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-bark-right",
+      "pose": "bark-right",
+      "sourceBoundsExclusive": [
+        82,
+        453,
+        334,
+        698
+      ],
+      "cellBoundsExclusive": [
+        0,
+        384,
+        416,
+        768
+      ],
+      "normalizedSize": [
+        252,
+        245
+      ],
+      "normalizedWorldSize": [
+        252,
+        245
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            198,
+            58,
+            210,
+            86
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          82,
+          453,
+          334,
+          698
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-walk-contact-a-right",
+      "pose": "walk-contact-a-right",
+      "sourceBoundsExclusive": [
+        497,
+        460,
+        751,
+        691
+      ],
+      "cellBoundsExclusive": [
+        416,
+        384,
+        832,
+        768
+      ],
+      "normalizedSize": [
+        254,
+        231
+      ],
+      "normalizedWorldSize": [
+        254,
+        231
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            202,
+            62,
+            214,
+            90
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          497,
+          460,
+          751,
+          691
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-walk-pass-a-right",
+      "pose": "walk-pass-a-right",
+      "sourceBoundsExclusive": [
+        911,
+        459,
+        1168,
+        693
+      ],
+      "cellBoundsExclusive": [
+        832,
+        384,
+        1248,
+        768
+      ],
+      "normalizedSize": [
+        257,
+        234
+      ],
+      "normalizedWorldSize": [
+        257,
+        234
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            204,
+            62,
+            216,
+            90
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          911,
+          459,
+          1168,
+          693
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-walk-contact-b-right",
+      "pose": "walk-contact-b-right",
+      "sourceBoundsExclusive": [
+        1324,
+        460,
+        1587,
+        692
+      ],
+      "cellBoundsExclusive": [
+        1248,
+        384,
+        1664,
+        768
+      ],
+      "normalizedSize": [
+        263,
+        232
+      ],
+      "normalizedWorldSize": [
+        263,
+        232
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            208,
+            62,
+            220,
+            90
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          1324,
+          460,
+          1587,
+          692
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-walk-pass-b-right",
+      "pose": "walk-pass-b-right",
+      "sourceBoundsExclusive": [
+        75,
+        840,
+        340,
+        1079
+      ],
+      "cellBoundsExclusive": [
+        0,
+        768,
+        416,
+        1152
+      ],
+      "normalizedSize": [
+        265,
+        239
+      ],
+      "normalizedWorldSize": [
+        265,
+        239
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            212,
+            62,
+            224,
+            90
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          75,
+          840,
+          340,
+          1079
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-gallop-compress-right",
+      "pose": "gallop-compress-right",
+      "sourceBoundsExclusive": [
+        480,
+        846,
+        768,
+        1073
+      ],
+      "cellBoundsExclusive": [
+        416,
+        768,
+        832,
+        1152
+      ],
+      "normalizedSize": [
+        288,
+        227
+      ],
+      "normalizedWorldSize": [
+        288,
+        227
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            232,
+            62,
+            244,
+            90
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          480,
+          846,
+          768,
+          1073
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-gallop-air-right",
+      "pose": "gallop-air-right",
+      "sourceBoundsExclusive": [
+        886,
+        857,
+        1193,
+        1063
+      ],
+      "cellBoundsExclusive": [
+        832,
+        768,
+        1248,
+        1152
+      ],
+      "normalizedSize": [
+        307,
+        206
+      ],
+      "normalizedWorldSize": [
+        307,
+        206
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            252,
+            58,
+            264,
+            86
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          886,
+          857,
+          1193,
+          1063
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    },
+    {
+      "id": "puppy-seated-right",
+      "pose": "seated-right",
+      "sourceBoundsExclusive": [
+        1331,
+        833,
+        1581,
+        1087
+      ],
+      "cellBoundsExclusive": [
+        1248,
+        768,
+        1664,
+        1152
+      ],
+      "normalizedSize": [
+        250,
+        254
+      ],
+      "normalizedWorldSize": [
+        250,
+        254
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "facing": "right",
+      "handAnchorNormalized": null,
+      "logicalCellPx": 12,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          211,
+          114
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            191,
+            59,
+            203,
+            87
+          ]
+        ],
+        "expectedEyeWidths": [
+          12
+        ],
+        "logicalEyeWidth": 12,
+        "eyeMargin": 1,
+        "logicalCellPx": 12,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
+        "originalBounds": [
+          1331,
+          833,
+          1581,
+          1087
+        ],
+        "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+        "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+      }
+    }
+  ],
+  "generation": {
+    "tool": "image_gen",
+    "directReference": "concept_art/characters/master-pose-sheet-alice.png",
+    "directReferenceSha256": "7ec15880ab20d6430d7f6b2aafc18dda034a6ad2607cab4f3cc22653ea4dd065",
+    "generatedSourceSha256": "993fb3bc4997a791779430c1a634772222953bd23804845d73bf1dc4e6c5387d",
+    "prompt": "One coherent transparent pixel-art master atlas, 4 columns by 3 rows. Same friendly golden-brown floppy-eared puppy with cream chest, dark ears and clean rectangular one-cell eyes. Direct Alice master style. Row1 side idle, front, back, play bow. Row2 bark, walk contactA, passingA, contactB. Row3 passingB, gallop compression, airborne extension, happy seated. Complete ears, paws and tail; empty mouth for separate twig; four logical transparent cells each side; crisp square pixels and sealed dark outline. No clothing or labels.",
+    "nativeCleanup": "Preserve full pose silhouettes and square source pixels; hard alpha, nine-color flat palette, 12px-wide eyes with flat halos, sealed dark rim, 54px minimum native storage margin."
+  }
+}

@@ -4,14 +4,14 @@
   "id": "alice-in-wonderland-v1",
   "cover": "/stories/alice-in-wonderland/assets/environments/riverbank-panorama-v6.png",
   "coverAlt": "A leafy tree above a sunny riverbank path leading to a rabbit hole.",
-  "duration": "Chapter1 complete — Chapter2, Scenes1–7",
+  "duration": "Chapters1–2 complete",
   "category": "Wonder and discovery",
   "themes": [
     "Curiosity",
     "Journeys",
     "Imagination"
   ],
-  "synopsis": "Follow Alice into Wonderland. Chapter 1 is complete; Chapter 2 continues inside the White Rabbit's house.",
+  "synopsis": "Follow Alice into Wonderland, from the riverbank to a moonlit forest and a very large mushroom.",
   "label": "LEWIS CARROLL · AN ORIGINAL ABRIDGMENT",
   "serialized": true,
   "stageGeometry": "/stories/alice-in-wonderland/shared/stage-geometry.json",
@@ -38,7 +38,7 @@
       "number": 2,
       "status": "available",
       "title": "Strange Company",
-      "description": "Scenes1–7: through One Small Cake.",
+      "description": "Complete Chapter2, from A Way Out to A Very Large Puppy.",
       "scenes": [
         "A Way Out",
         "The Driest Story",
@@ -46,7 +46,8 @@
         "Mary Ann!",
         "Far Too Much Alice",
         "Bill and the Chimney",
-        "One Small Cake"
+        "One Small Cake",
+        "A Very Large Puppy"
       ],
       "linePrefix": "alice-c2-",
       "source": "/stories/alice-in-wonderland/chapters/chapter-02.json"
@@ -140,6 +141,33 @@
       },
       "architecturalContinuityReference": "stories/alice-in-wonderland/assets/environments/rabbit-house-c2-s4-v1.png",
       "approval": "Bounded correction explicitly requested in video2026-11-08 20-24-51; visual review of result pending"
+    },
+    {
+      "path": "stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png",
+      "reference_scene_master": "concept_art/scenes/03-forest-pond-waterfall.png",
+      "reference_scene_master_sha256": "0344c9f02e625220f2e31a5ebf6e02398bf5e180ac7d4df8e87197474169bee9",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "blockSourcePx": 2,
+      "overscanFactor": 1.3,
+      "space": "exterior",
+      "generation": {
+        "tool": "image_gen",
+        "primaryStyleReference": "concept_art/scenes/03-forest-pond-waterfall.png",
+        "referenced_image_paths": [
+          "C:\\Users\\aleja\\Desktop\\Alejandro\\Crear juegos\\pixel-nook-studio\\concept_art\\scenes\\03-forest-pond-waterfall.png",
+          "C:\\Users\\aleja\\Desktop\\Alejandro\\Crear juegos\\pixel-nook-studio\\concept_art\\scenes\\11-moonlit-botanical-garden.png"
+        ],
+        "sourceGenerationSha256": "cee06a55eb1dde3d2393b644a3785cf2807d371adeb8e97667cdad4598ce20b3",
+        "nativeFormatCrop": [
+          4,
+          2,
+          1668,
+          938
+        ]
+      }
     }
   ],
   "title": "Alice in Wonderland",

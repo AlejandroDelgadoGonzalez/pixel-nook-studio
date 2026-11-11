@@ -104,6 +104,14 @@
       "masterSha256": "3cba0ef60f5b9037143c69b6f77b94e363d1b6772b79477805bf62b25354c7be",
       "approval": "Existing approved C2-S6 cleaned master; registration only",
       "proportionChecks": []
+    },
+    "puppy": {
+      "metadata": "stories/alice-in-wonderland/shared/puppy-master-atlas.json",
+      "canonicalSource": "stories/alice-in-wonderland/sources/puppy-approved-source.png",
+      "canonicalSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+      "masterSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+      "approval": "Gates1/2A approved by Alejandro; technical cleanup2026-11-10",
+      "proportionChecks": []
     }
   },
   "policy": "Existing poses must reuse master cells. Extraordinary generation records direct original source. No successive scene references.",

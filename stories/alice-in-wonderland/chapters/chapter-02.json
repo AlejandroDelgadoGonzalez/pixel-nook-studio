@@ -3,9 +3,9 @@
   "id": "alice-in-wonderland-v1",
   "renderer": "alice-strange-company",
   "title": "Alice in Wonderland",
-  "intro": "Strange Company - A Way Out / The Driest Story / Prizes and Dinah / Mary Ann! / Far Too Much Alice / Bill and the Chimney / One Small Cake",
-  "ending": "Alice is free of the house, with the moonlit forest path ahead.",
-  "description": "Chapter2, Scenes1–7: through One Small Cake.",
+  "intro": "Strange Company - A Way Out / The Driest Story / Prizes and Dinah / Mary Ann! / Far Too Much Alice / Bill and the Chimney / One Small Cake / A Very Large Puppy",
+  "ending": "Alice is safe beneath the great mushroom. A new question waits above.",
+  "description": "The complete second chapter, from strange company to a moonlit mushroom.",
   "stageLabel": "Alice and her companions in Wonderland",
   "episodes": true,
   "timing": {
@@ -111,6 +111,13 @@
       "bill": {
         "x": 455,
         "y": 642,
+        "visible": 0,
+        "pose": "idle",
+        "facing": "right"
+      },
+      "puppy": {
+        "x": 818,
+        "y": 632,
         "visible": 0,
         "pose": "idle",
         "facing": "right"
@@ -264,6 +271,13 @@
       "place": "I",
       "moment": 0,
       "active": false
+    },
+    "puppyScene": {
+      "active": false,
+      "moment": 0,
+      "twigOwner": "ground",
+      "twigThrown": false,
+      "escaped": false
     }
   },
   "characters": {
@@ -306,6 +320,10 @@
       "name": "Bill",
       "color": "#a4b471",
       "role": "A helpful lizard"
+    },
+    "puppy": {
+      "name": "Puppy",
+      "role": "An eager playmate"
     }
   },
   "videoExport": {
@@ -29882,11 +29900,6 @@
           "camera": {
             "hold": false
           }
-        },
-        {
-          "id": "alice-c2-cake-end",
-          "type": "end",
-          "cakeMoment": 21
         }
       ],
       "durationReview": {
@@ -29897,23 +29910,399 @@
           "reason": "Remove the explicitly identified redundant opener; preserve the remaining lines and their reading times."
         }
       }
+    },
+    {
+      "id": "alice-c2-a-very-large-puppy",
+      "name": "A Very Large Puppy",
+      "atmosphere": "Moonlit forest; an eager puppy and a safe escape.",
+      "steps": [
+        {
+          "id": "alice-c2-puppy-01",
+          "type": "action",
+          "puppyMoment": 1,
+          "duration": 700,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 1
+            },
+            "environment": "moonlit-puppy-clearing",
+            "cake": {
+              "active": false
+            },
+            "actors": {
+              "sister": {
+                "visible": 0
+              },
+              "white-rabbit": {
+                "visible": 0
+              },
+              "mouse": {
+                "visible": 0
+              },
+              "dodo": {
+                "visible": 0
+              },
+              "lory": {
+                "visible": 0
+              },
+              "eaglet": {
+                "visible": 0
+              },
+              "bill": {
+                "visible": 0
+              },
+              "alice": {
+                "x": 1504,
+                "y": 590,
+                "visible": 0,
+                "facing": "left"
+              },
+              "puppy": {
+                "x": 818,
+                "y": 632,
+                "visible": 1,
+                "facing": "right"
+              }
+            }
+          },
+          "transition": {
+            "kind": "shot",
+            "durationMs": 700
+          }
+        },
+        {
+          "id": "alice-c2-puppy-02",
+          "type": "action",
+          "puppyMoment": 2,
+          "duration": 4300,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 2
+            },
+            "actors": {
+              "alice": {
+                "x": 1106,
+                "y": 706,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              },
+              "puppy": {
+                "x": 956,
+                "y": 638,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-03",
+          "type": "text",
+          "puppyMoment": 3,
+          "who": "alice",
+          "text": "What a very large puppy! Or perhaps I am a very small girl.",
+          "readingDurationMs": 4500,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-puppy-04",
+          "type": "action",
+          "puppyMoment": 4,
+          "duration": 3000,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 4
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-05",
+          "type": "text",
+          "puppyMoment": 5,
+          "who": "alice",
+          "text": "You want to play. I can see that.",
+          "readingDurationMs": 4500,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-puppy-06",
+          "type": "action",
+          "puppyMoment": 6,
+          "duration": 4000,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 6
+            },
+            "actors": {
+              "alice": {
+                "x": 1122,
+                "y": 706,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              },
+              "puppy": {
+                "x": 972,
+                "y": 638,
+                "visible": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-07",
+          "type": "text",
+          "puppyMoment": 7,
+          "who": "alice",
+          "text": "One paw could squash me, and you would never mean to.",
+          "readingDurationMs": 4500,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-puppy-08",
+          "type": "action",
+          "puppyMoment": 8,
+          "duration": 2500,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 8,
+              "twigOwner": "alice"
+            },
+            "actors": {
+              "alice": {
+                "x": 1106,
+                "y": 706,
+                "visible": 1,
+                "pose": "idle",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-09",
+          "type": "text",
+          "puppyMoment": 9,
+          "who": "alice",
+          "text": "You like this, do you? All right. Go fetch!",
+          "readingDurationMs": 4500,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-puppy-10",
+          "type": "action",
+          "puppyMoment": 10,
+          "duration": 1800,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 10,
+              "twigOwner": "ground",
+              "twigThrown": true
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-11",
+          "type": "action",
+          "puppyMoment": 11,
+          "duration": 4000,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 11
+            },
+            "actors": {
+              "puppy": {
+                "x": 1358,
+                "y": 638,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "right"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-12",
+          "type": "action",
+          "puppyMoment": 12,
+          "duration": 3500,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 12,
+              "twigOwner": "puppy"
+            },
+            "actors": {
+              "alice": {
+                "x": 836,
+                "y": 715,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-13",
+          "type": "text",
+          "puppyMoment": 13,
+          "who": "alice",
+          "text": "Good. He has his stick, and I have my path.",
+          "readingDurationMs": 5200,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-puppy-14",
+          "type": "action",
+          "puppyMoment": 14,
+          "duration": 4500,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 14
+            },
+            "actors": {
+              "alice": {
+                "x": 535,
+                "y": 646,
+                "visible": 1,
+                "pose": "walk",
+                "facing": "left"
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-15",
+          "type": "text",
+          "puppyMoment": 15,
+          "who": "alice",
+          "text": "Now there is a mushroom taller than I am.",
+          "readingDurationMs": 4500,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-puppy-16",
+          "type": "text",
+          "puppyMoment": 16,
+          "who": "alice",
+          "text": "I wonder what the world looks like from up there.",
+          "readingDurationMs": 3500,
+          "camera": {
+            "hold": true
+          }
+        },
+        {
+          "id": "alice-c2-puppy-17",
+          "type": "action",
+          "puppyMoment": 17,
+          "duration": 3000,
+          "caption": "clear",
+          "camera": {
+            "hold": false
+          },
+          "linearMotion": true,
+          "effects": {
+            "puppyScene": {
+              "active": true,
+              "moment": 17,
+              "escaped": true
+            }
+          }
+        },
+        {
+          "id": "alice-c2-puppy-end",
+          "type": "end",
+          "puppyMoment": 17
+        }
+      ],
+      "videoExport": {
+        "closingHook": {
+          "from": "alice-c2-puppy-17",
+          "through": "alice-c2-puppy-17",
+          "durationMs": 3000
+        },
+        "openingReplay": {
+          "from": "alice-c2-cake-21",
+          "through": "alice-c2-cake-21",
+          "durationMs": 3000
+        }
+      }
     }
   ],
   "presentation": {
     "eyebrow": "LEWIS CARROLL · AN ORIGINAL ABRIDGMENT"
   },
   "completion": {
-    "scope": "scenes",
-    "chapter": "chapter-2",
-    "scenes": [
-      "alice-c2-a-way-out",
-      "alice-c2-the-driest-story",
-      "alice-c2-prizes-and-dinah",
-      "alice-c2-mary-ann",
-      "alice-c2-far-too-much",
-      "alice-c2-bill",
-      "alice-c2-one-small-cake"
-    ]
+    "scope": "chapter",
+    "chapter": "chapter-2"
   },
   "sceneDurationPolicy": {
     "measurement": "automatic-only",
@@ -29941,7 +30330,8 @@
     "alice-c2-large-19": "alice-c2-large-21",
     "alice-c2-large-end": "alice-c2-bill-04",
     "alice-c2-bill-end": "alice-c2-bill-24",
-    "alice-c2-cake-01": "alice-c2-cake-02"
+    "alice-c2-cake-01": "alice-c2-cake-02",
+    "alice-c2-cake-end": "alice-c2-cake-20"
   },
   "serialized": true,
   "availableChapter": "chapter-2",

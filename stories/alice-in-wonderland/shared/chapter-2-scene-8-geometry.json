@@ -1,0 +1,368 @@
+{
+  "panorama": [
+    1664,
+    936
+  ],
+  "baseCrop": [
+    192,
+    108,
+    1472,
+    828
+  ],
+  "unit": "source pixels, origin top-left",
+  "anchors": {
+    "entry": [
+      1504,
+      590
+    ],
+    "aliceEncounter": [
+      1106,
+      706
+    ],
+    "puppyBow": [
+      956,
+      638
+    ],
+    "twigRest": [
+      1075.088,
+      699.664
+    ],
+    "throwRelease": [
+      1120.5935118110235,
+      668.56
+    ],
+    "throwLanding": [
+      1390,
+      638
+    ],
+    "mushroomBase": [
+      493,
+      584
+    ],
+    "mushroomCrown": [
+      490,
+      290
+    ],
+    "aliceFinal": [
+      535,
+      646
+    ],
+    "aliceBackstep": [
+      1122,
+      706
+    ],
+    "puppyAfterHop": [
+      972,
+      638
+    ]
+  },
+  "walkPaths": {
+    "aliceEntry": [
+      [
+        1504,
+        590
+      ],
+      [
+        1416,
+        628
+      ],
+      [
+        1240,
+        680
+      ],
+      [
+        1106,
+        706
+      ]
+    ],
+    "puppyApproach": [
+      [
+        818,
+        632
+      ],
+      [
+        956,
+        638
+      ]
+    ],
+    "puppyFetch": [
+      [
+        972,
+        638
+      ],
+      [
+        1358,
+        638
+      ]
+    ],
+    "aliceEscape": [
+      [
+        1106,
+        706
+      ],
+      [
+        836,
+        715
+      ],
+      [
+        641,
+        684
+      ],
+      [
+        535,
+        646
+      ]
+    ],
+    "aliceBackstep": [
+      [
+        1106,
+        706
+      ],
+      [
+        1122,
+        706
+      ]
+    ],
+    "pickupApproach": [
+      [
+        1122,
+        706
+      ],
+      [
+        1106,
+        706
+      ]
+    ],
+    "aliceEscapeFirst": [
+      [
+        1106,
+        706
+      ],
+      [
+        836,
+        715
+      ]
+    ],
+    "aliceEscapeLast": [
+      [
+        836,
+        715
+      ],
+      [
+        641,
+        684
+      ],
+      [
+        535,
+        646
+      ]
+    ]
+  },
+  "throwBezier": [
+    [
+      1120.5935118110235,
+      668.56
+    ],
+    [
+      1205,
+      536
+    ],
+    [
+      1320,
+      550
+    ],
+    [
+      1390,
+      638
+    ]
+  ],
+  "candidatePortraitCrops": {
+    "meet": [
+      864,
+      266,
+      1241,
+      936
+    ],
+    "mushroom": [
+      280,
+      168,
+      712,
+      936
+    ]
+  },
+  "occluders": "Peripheral plants and rock groups outside the authored dirt corridors. No traversed foreground occluders; keep feet in front of the mushroom base.",
+  "status": "Approved Gates1/2A; production measured geometry",
+  "schemaVersion": 1,
+  "approval": {
+    "date": "2026-11-10",
+    "scope": "S8 final scene of Chapter2"
+  },
+  "asset": "/stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png",
+  "puppyAsset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+  "puppyHeight": 180,
+  "aliceSize": 0.32,
+  "alicePhysicalGain": 1.2,
+  "puppyFrames": {
+    "idle-right": {
+      "bounds": [
+        83,
+        67,
+        332,
+        316
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "idle-front": {
+      "bounds": [
+        520,
+        64,
+        728,
+        319
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "idle-back": {
+      "bounds": [
+        936,
+        64,
+        1144,
+        320
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "play-bow-right": {
+      "bounds": [
+        1313,
+        80,
+        1598,
+        303
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "bark-right": {
+      "bounds": [
+        82,
+        453,
+        334,
+        698
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "walk-contact-a-right": {
+      "bounds": [
+        497,
+        460,
+        751,
+        691
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "walk-pass-a-right": {
+      "bounds": [
+        911,
+        459,
+        1168,
+        693
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "walk-contact-b-right": {
+      "bounds": [
+        1324,
+        460,
+        1587,
+        692
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "walk-pass-b-right": {
+      "bounds": [
+        75,
+        840,
+        340,
+        1079
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "gallop-compress-right": {
+      "bounds": [
+        480,
+        846,
+        768,
+        1073
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "gallop-air-right": {
+      "bounds": [
+        886,
+        857,
+        1193,
+        1063
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    },
+    "seated-right": {
+      "bounds": [
+        1331,
+        833,
+        1581,
+        1087
+      ],
+      "origin": [
+        0.5,
+        1
+      ]
+    }
+  },
+  "cameras": {
+    "safeRatio": 0.68,
+    "meetX": 1000,
+    "fetchX": 1390,
+    "lateLandscapeX": 1097,
+    "finalX": 500,
+    "finalBounds": [
+      320,
+      280,
+      675,
+      646
+    ],
+    "portraitMeetWidth": 377,
+    "landscapeSafeRatio": 0.6,
+    "finalLandscapeX": 887,
+    "landscapeMeetX": 832
+  }
+}
