@@ -51,6 +51,16 @@ export class SmallCake{
   rotated.getContext('2d').drawImage(texture.getSourceImage(),0,0);
   ctx.clearRect(0,0,source.width,source.height);
   drawCharacter(ctx,rotated,0,0,rotated.width,rotated.height,source.width,source.height);
+  // Rotation opens a small wedge between the fixed sleeve and the arm. Seal
+  // only that derived frame with the existing cuff/outline palette; never
+  // alter the clean canonical atlas or repaint an existing opaque pixel.
+  const seal=G.pickupArm.seamSeal,pixels=ctx.getImageData(0,0,source.width,source.height);
+  for(const[y,left,right]of seal.textureRows)for(let x=left;x<right;x+=seal.blockPx){
+   if(pixels.data[(y*source.width+x)*4+3])continue;
+   const rgb=x===left?seal.outlineRGB:seal.cuffRGB;
+   ctx.fillStyle=`rgb(${rgb.join(',')})`;
+   ctx.fillRect(x,y,seal.blockPx,seal.blockPx);
+  }
   texture.refresh();
   this.keys['anchored-reach']=key;
   this.cells['anchored-reach']=cell;

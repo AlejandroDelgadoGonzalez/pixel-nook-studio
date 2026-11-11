@@ -29154,8 +29154,34 @@
             "environment": "rabbit-house-interior"
           },
           "who": "alice",
-          "text": "Someone is coming down the chimney! One little kick should send them back up!",
-          "readingDurationMs": 6000
+          "text": "Someone is coming down the chimney!",
+          "readingDurationMs": 3500
+        },
+        {
+          "id": "alice-c2-bill-13-kick",
+          "type": "text",
+          "billMoment": 13,
+          "largeMoment": 14,
+          "camera": {
+            "hold": true
+          },
+          "effects": {
+            "bill": {
+              "active": true,
+              "moment": 13,
+              "clock": 38900,
+              "place": "I"
+            },
+            "large": {
+              "active": true,
+              "fold": 1,
+              "pose": "folded-trapped-right"
+            },
+            "environment": "rabbit-house-interior"
+          },
+          "who": "alice",
+          "text": "One little kick sends him back up!",
+          "readingDurationMs": 3500
         },
         {
           "id": "alice-c2-bill-14",

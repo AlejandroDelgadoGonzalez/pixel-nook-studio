@@ -319,7 +319,7 @@
     "exteriorRoofFlight": "Separate silent reframe fitting swept flight bounds [880,100,1190,675] and complete body. Caption closed for climb/flight. Return to ground framing before Bill speaks. Must be verified on official viewports at Gate4."
   },
   "atlasContract": ".artifacts/alice-in-wonderland/chapter-2/scene-6-gates/bill-atlas-contract.json",
-  "durationSeconds": 70.2,
+  "durationSeconds": 69.0,
   "steps": [
     {
       "moment": 1,
@@ -420,10 +420,20 @@
     {
       "moment": 13,
       "location": "I",
-      "seconds": 6,
+      "seconds": 7,
       "speaker": "Alice",
-      "content": "Someone is coming down the chimney! One little kick should send them back up!",
-      "advanceLocked": false
+      "content": "Someone is coming down the chimney! One little kick sends him back up!",
+      "advanceLocked": false,
+      "dialogueParts": [
+        {
+          "id": "alice-c2-bill-13",
+          "seconds": 3.5
+        },
+        {
+          "id": "alice-c2-bill-13-kick",
+          "seconds": 3.5
+        }
+      ]
     },
     {
       "moment": 14,

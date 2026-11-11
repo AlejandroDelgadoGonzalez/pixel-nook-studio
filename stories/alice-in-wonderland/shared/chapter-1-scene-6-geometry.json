@@ -913,7 +913,13 @@
         451
       ],
       "earCoverage": "Fully inside original closed leaf before visible=0; no horizontal roof crop and no floating ear",
-      "depthPolicy": "Door threshold depth948; actor inside at870 sorts behind the closing leaf."
+      "depthPolicy": "Door threshold depth948; actor inside at870 sorts behind the closing leaf.",
+      "thresholdFloorLight": {
+        "textureFloorY": 234,
+        "falloffSourcePixels": 12,
+        "blockSourcePixels": 2,
+        "measurement": "Dark cavity ends at texture row232; the existing illuminated floor starts at row234. Reuse that exact floor palette."
+      }
     }
   ],
   "supportPlanes": {

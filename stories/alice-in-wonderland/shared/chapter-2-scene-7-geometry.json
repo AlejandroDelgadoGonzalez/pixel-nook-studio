@@ -731,6 +731,52 @@
         0,
         146
       ]
-    ]
+    ],
+    "seamSeal": {
+      "textureRows": [
+        [
+          376,
+          154,
+          178
+        ],
+        [
+          378,
+          156,
+          176
+        ],
+        [
+          380,
+          158,
+          172
+        ],
+        [
+          382,
+          160,
+          170
+        ],
+        [
+          384,
+          162,
+          168
+        ],
+        [
+          386,
+          162,
+          164
+        ]
+      ],
+      "blockPx": 2,
+      "outlineRGB": [
+        24,
+        18,
+        16
+      ],
+      "cuffRGB": [
+        251,
+        236,
+        203
+      ],
+      "policy": "Only transparent pixels in the rotated cuff/arm join; source atlas and all existing opaque pixels preserved."
+    }
   }
 }

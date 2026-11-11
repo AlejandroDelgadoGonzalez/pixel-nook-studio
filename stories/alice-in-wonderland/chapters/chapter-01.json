@@ -4481,7 +4481,7 @@
           "duration": 900,
           "effects": {
             "drink": {
-              "pose": "box-touch",
+              "pose": "box-open",
               "face": "right",
               "shot": "hook"
             }

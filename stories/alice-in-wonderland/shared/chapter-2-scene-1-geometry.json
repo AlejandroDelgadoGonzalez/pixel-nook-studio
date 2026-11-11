@@ -7800,7 +7800,13 @@
     "foregroundDepth": 1001,
     "support": "Feet atsource(751,448) rest on the top stone step below the actual wood leaf. NOT the lower stone at471.28.",
     "policy": "Shoulder/short wing touches actual wood above y440; head/beak face right. Feet planted on existing top step, authored leaning poses. Existing open/closed art only, clipped to real wood above y440 so stone steps below remain unchanged. Narrow slit only; S2 completes opening before crossing. Actor stays in front of leaf until any later actual crossing.",
-    "interiorPolicy": "Dedicated black aperture copied from exact closed-leaf alpha, clipped above sourceY440. No generated open-door wooden leaf/steps behind the moving original leaf."
+    "interiorPolicy": "Dedicated black aperture copied from exact closed-leaf alpha, clipped above sourceY440. No generated open-door wooden leaf/steps behind the moving original leaf.",
+    "thresholdFloorLight": {
+      "floorSampleSourceY": 444,
+      "falloffSourcePixels": 12,
+      "blockSourcePixels": 2,
+      "measurement": "First illuminated stone/floor row below the wood edge at440; skip the dark seam at442."
+    }
   },
   "timing": {
     "measurement": "Automatic reading:73000ms authored,73019ms actual1ms engine; not MP4",

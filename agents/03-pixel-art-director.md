@@ -40,6 +40,8 @@ Medir antes de afirmar. Proteger composición, continuidad y legibilidad por enc
 
 ## PLAYBOOK
 
+**Doorway Threshold Floor Light Falloff — Gradiente de luz en el suelo de umbrales abiertos.** Cuando una puerta comunica una habitación iluminada con un hueco o pasillo oscuro, los primeros píxeles del suelo al cruzar el umbral conservan el tono del piso iluminado y se oscurecen gradualmente hacia el interior en unas pocas bandas de la rejilla de pixel art. Prohibido cortar el suelo con un bloque negro recto. Conservar textura, silueta, transparencia, marco, hoja y profundidad originales; integrar el falloff en los píxeles del suelo, sin un parche geométrico superpuesto ni blur.
+
 ### Exterior-to-Interior Architectural Continuity Lock — permanent
 
 Cada transición exterior → interior debe conservar la identidad física del MISMO edificio. Antes del arte, 02 declara la pared observada, el eje de cámara, la entrada visible y la correspondencia de puertas/ventanas; conserva el guion aprobado salvo los ajustes espaciales autorizados. No confundir cambiar de punto de vista con cambiar la arquitectura.
