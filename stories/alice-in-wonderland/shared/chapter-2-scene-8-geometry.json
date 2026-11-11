@@ -365,7 +365,7 @@
     "safeRatio": 0.68,
     "meetX": 1000,
     "fetchX": 1376,
-    "lateLandscapeX": 1097,
+    "lateLandscapeX": 836,
     "finalX": 500,
     "finalBounds": [
       320,
@@ -375,8 +375,22 @@
     ],
     "portraitMeetWidth": 377,
     "landscapeSafeRatio": 0.6,
-    "finalLandscapeX": 887,
-    "landscapeMeetX": 832
+    "finalLandscapeX": 512,
+    "landscapeMeetX": 1030,
+    "landscapeFocus": {
+      "encounterZoom": 1.6,
+      "finalZoom": 1.5,
+      "topClearance": 8,
+      "captionClearance": 12,
+      "captionFallbackHeight": 200,
+      "mushroomTop": 290,
+      "puppyTop": 458,
+      "encounterLeft": 620,
+      "encounterTop": 451,
+      "puppyExclusionRight": 1267,
+      "throwLeadFraction": 0.35,
+      "minimumTopClearance": 4
+    }
   },
   "puppyPickup": {
     "contactMs": 700,

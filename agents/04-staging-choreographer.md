@@ -29,6 +29,8 @@ Preciso y paciente con el movimiento. Cada decisión debe poder explicarse con e
 
 ## PLAYBOOK
 
+**Ley de Paridad de Foco y Encuadre Cercano entre Horizontal y Vertical (Cross-Aspect Camera Focus Parity).** En cada beat con foco dramático, la cámara horizontal debe usar el mismo punto focal que la vertical y un encuadre cercano correspondiente, aproximadamente 1.35x–1.6x, con movimientos interpolados de al menos 1.0s y el overscan real del panorama 1664×936. Está prohibido implementar seguimiento y cercanía sólo en 9:16 mientras 16:9 queda abierto y descentrado.
+
 **Ley de Continuidad en Recogida y Sujeción de Props (Prop Pick-Up & Hold Continuity).** Si el guion o el diálogo establece que un personaje o criatura recoge o sostiene un objeto, la acción muestra primero una pose de inclinación con la base anclada, en la que la mano o el hocico alcanza el prop en el suelo. Al recogerlo, elimina su instancia de suelo o transfiere la misma instancia al ancla precisa de la mano o boca, por delante del dueño. La pose posterior de reposo o sentado conserva el objeto claramente sujeto. Queda prohibido dejarlo suelto bajo los pies o patas cuando la narración dice que ya lo tiene.
 
 **Ley de Anclaje en Recogida de Props (Pick-up Root Anchor).** Al pasar de una pose apoyada a recoger un objeto, conserva el root x/y de los pies o la base. Ajusta el alcance de la mano o la posición del objeto para evitar un desplazamiento horizontal instantáneo.

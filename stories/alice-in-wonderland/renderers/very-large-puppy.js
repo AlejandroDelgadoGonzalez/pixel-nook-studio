@@ -132,9 +132,10 @@ export class VeryLargePuppy {
   return {moment, progress, alice, puppy, alicePose, puppyPose, walking, puppyWalking, alpha};
  }
 
- fitFrame(x, groundY, final = false) {
+ fitFrame(x, groundY, final = false, section = 'encounter') {
   const scene = this.scene, width = scene.scale.width, height = scene.scale.height;
   const portrait = width < height;
+  if (!portrait) return this.landscapeFrame(x, groundY, final, section);
   const safe = height * (portrait ? geometry.cameras.safeRatio : geometry.cameras.landscapeSafeRatio);
   const artFit = Math.max(width / 1660, height / 932);
   const captionFit = (height - safe + 22) / (934 - groundY);
@@ -146,17 +147,49 @@ export class VeryLargePuppy {
   return {x: centerX, y: centerY, z: zoom};
  }
 
+ landscapeFrame(focusX, groundY, final, section) {
+  const scene = this.scene, width = scene.scale.width, height = scene.scale.height;
+  const config = geometry.cameras.landscapeFocus;
+  const panel = document.querySelector('#dialogue')?.getBoundingClientRect();
+  const canvas = scene.game.canvas.getBoundingClientRect();
+  const captionTop = panel?.top > canvas.top ? (panel.top - canvas.top) * height / canvas.height : height - config.captionFallbackHeight;
+  const footLimit = captionTop - config.captionClearance;
+  const top = final ? config.mushroomTop : config.puppyTop;
+  const heightLimit = (footLimit - config.topClearance) / (groundY - top);
+  const artFit = Math.max(width / 1660, height / 932);
+  const requestedZoom = width / 1280 * (final ? config.finalZoom : config.encounterZoom);
+  const exclusionFit = section === 'late' || final ? width / (config.puppyExclusionRight - 2) : artFit;
+  const zoom = Math.max(artFit, exclusionFit, Math.min(requestedZoom, heightLimit));
+  const halfWidth = width / (2 * zoom), halfHeight = height / (2 * zoom);
+  let centerX = focusX;
+  if (!final && section === 'encounter') centerX = Math.max(centerX, config.encounterLeft + halfWidth);
+  if (section === 'late') centerX = Math.min(centerX, config.puppyExclusionRight - halfWidth);
+  centerX = Math.max(halfWidth + 2, Math.min(1662 - halfWidth, centerX));
+  let worldTop = groundY - footLimit / zoom;
+  // Very wide viewports need enough width to exclude the seated puppy. Keep
+  // the whole crown above the caption without moving the reader interface.
+  if (final) worldTop = Math.min(worldTop, top - config.minimumTopClearance / zoom);
+  if (!final) {
+   worldTop = Math.max(worldTop, config.encounterTop);
+   worldTop = Math.min(worldTop, top - config.topClearance / zoom);
+  }
+  const centerY = Math.max(halfHeight + 2, Math.min(934 - halfHeight, worldTop + halfHeight));
+  return {x: centerX, y: centerY, z: zoom};
+ }
+
  frame(state) {
   const {moment, progress, alice} = state;
   const portrait = this.scene.scale.width < this.scene.scale.height;
   const meet = this.fitFrame(portrait ? geometry.cameras.meetX : geometry.cameras.landscapeMeetX, 706);
   const fetch = this.fitFrame(geometry.cameras.fetchX, 706);
-  const late = this.fitFrame(portrait ? 836 : geometry.cameras.lateLandscapeX, 715);
+  const late = this.fitFrame(portrait ? 836 : geometry.cameras.lateLandscapeX, 715, false, 'late');
   const final = this.fitFrame(portrait ? geometry.cameras.finalX : geometry.cameras.finalLandscapeX, geometry.anchors.aliceFinal[1], true);
   const blend = (from, to, t) => ({x: lerp(from.x, to.x, t), y: lerp(from.y, to.y, t), z: lerp(from.z, to.z, t)});
   if (moment <= 2) return blend(this.fitFrame(geometry.anchors.entry[0], 706), meet, moment === 1 ? 0 : smooth(progress));
-  if (moment <= 10) return meet;
-  if (moment === 11) return blend(meet, fetch, smooth(progress));
+  const throwEnd = portrait ? meet : blend(meet, fetch, geometry.cameras.landscapeFocus.throwLeadFraction);
+  if (moment <= 9) return meet;
+  if (moment === 10) return blend(meet, throwEnd, smooth(progress));
+  if (moment === 11) return blend(throwEnd, fetch, smooth(progress));
   if (moment === 12) {
    const start = geometry.puppyPickup.cameraHoldMs;
    const pan = (this.scene.reader.elapsed - start) / (this.scene.reader.step.duration - start);

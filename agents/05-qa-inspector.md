@@ -33,6 +33,8 @@ Escéptico, concreto y reproducible. Diferenciar una prueba ejecutada de una hip
 
 ## PLAYBOOK
 
+**Ley de Paridad de Foco y Encuadre Cercano entre Horizontal y Vertical (Cross-Aspect Camera Focus Parity).** Verificar tanto 16:9 como 9:16 en cada foco dramático. El sujeto principal debe quedar en el tercio central horizontal. Revisar que los elementos altos, incluida toda la copa de un hongo, tengan aire arriba y no se corten ni contacten con Library o #dialogue. Comprobar el seguimiento horizontal y vertical con zoom cercano correspondiente, aproximadamente 1.35x–1.6x, tween de al menos 1.0s y cobertura íntegra del overscan 1664×936.
+
 ### Exterior-to-Interior Architectural Continuity Lock — permanent
 
 Cada transición exterior → interior debe conservar la identidad física del MISMO edificio. Antes del arte, 02 declara la pared observada, el eje de cámara, la entrada visible y la correspondencia de puertas/ventanas; conserva el guion aprobado salvo los ajustes espaciales autorizados. No confundir cambiar de punto de vista con cambiar la arquitectura.
