@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "All eight appeared characters registered; one runtime master per character",
+  "status": "Nine appeared characters; Caterpillar C3-S1 approved v2",
   "characters": {
     "alice": {
       "metadata": "stories/alice-in-wonderland/shared/alice-master-atlas.json",
@@ -128,6 +128,15 @@
           "seated-right": "3882b1035c5980db359d352beb76cc81f2188f873d37bacd243abe7390fd2673"
         }
       }
+    },
+    "caterpillar": {
+      "metadata": "stories/alice-in-wonderland/shared/caterpillar-master-atlas.json",
+      "canonicalSource": "stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+      "canonicalSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671",
+      "masterSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671",
+      "proportionChecks": [],
+      "visualReview": "Alejandro approved100% Gate2A v2; nonhuman anatomy; no human neck/hair requirements",
+      "directStyleMaster": "concept_art/characters/master-pose-sheet-alice.png"
     }
   },
   "policy": "Existing poses must reuse master cells. Extraordinary generation records direct original source. No successive scene references.",

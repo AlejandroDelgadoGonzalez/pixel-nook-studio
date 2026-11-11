@@ -4,7 +4,7 @@
   "id": "alice-in-wonderland-v1",
   "cover": "/stories/alice-in-wonderland/assets/environments/riverbank-panorama-v6.png",
   "coverAlt": "A leafy tree above a sunny riverbank path leading to a rabbit hole.",
-  "duration": "Chapters1–2 complete",
+  "duration": "Chapters1–2 complete · Chapter3 Scene1",
   "category": "Wonder and discovery",
   "themes": [
     "Curiosity",
@@ -51,6 +51,18 @@
       ],
       "linePrefix": "alice-c2-",
       "source": "/stories/alice-in-wonderland/chapters/chapter-02.json"
+    },
+    {
+      "id": "chapter-3",
+      "number": 3,
+      "status": "available",
+      "title": "Who Are You?",
+      "description": "Scene1 available: Alice meets the Caterpillar.",
+      "scenes": [
+        "Who Are You?"
+      ],
+      "linePrefix": "alice-c3-",
+      "source": "/stories/alice-in-wonderland/chapters/chapter-03.json"
     }
   ],
   "renderers": {
@@ -61,6 +73,10 @@
     "alice-strange-company": {
       "module": "/stories/alice-in-wonderland/renderers/strange-company.js",
       "export": "StrangeCompany"
+    },
+    "alice-who-are-you": {
+      "module": "/stories/alice-in-wonderland/renderers/who-are-you.js",
+      "export": "WhoAreYou"
     }
   },
   "fileAudio": "/stories/alice-in-wonderland/shared/chapter-1-scene-1-audio.json",

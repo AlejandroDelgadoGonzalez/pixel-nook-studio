@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "id": "alice-in-wonderland-v1",
+  "title": "Alice in Wonderland",
+  "timing": {
+    "characterMs": 27,
+    "wordMs": 440,
+    "minimumHoldMs": 2000,
+    "linePauseMs": 1800
+  },
+  "ambientAudio": {
+    "type": "silent",
+    "gain": 0
+  },
+  "presentation": {
+    "eyebrow": "LEWIS CARROLL · AN ORIGINAL ABRIDGMENT"
+  },
+  "sceneDurationPolicy": {
+    "measurement": "automatic-only",
+    "idealRangeMs": [
+      60000,
+      80000
+    ],
+    "automaticRangeMs": [
+      55000,
+      85000
+    ],
+    "exportDurationGate": false,
+    "preserveValidTiming": true,
+    "scope": "Flexible scene count. Never trim pauses, alter reading timing or re-export MP4 to meet a video duration when automatic reading is55–85s."
+  },
+  "attribution": "Based on Alice’s Adventures in Wonderland by Lewis Carroll",
+  "renderer": "alice-who-are-you",
+  "intro": "Who Are You? — A meeting above the mushroom.",
+  "ending": "Alice is ready to explain what has changed.",
+  "description": "Chapter3 Scene1: an original abridgment.",
+  "stageLabel": "Alice and the Caterpillar",
+  "episodes": true,
+  "assets": {
+    "alice": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
+    "caterpillar": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+    "forest": "/stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png"
+  },
+  "characters": {
+    "alice": {
+      "name": "Alice",
+      "role": "A curious visitor"
+    },
+    "caterpillar": {
+      "name": "Caterpillar",
+      "role": "A thoughtful inhabitant"
+    }
+  },
+  "initialState": {
+    "actors": {},
+    "chapter": 0
+  },
+  "scenes": [
+    {
+      "id": "alice-c3-s1",
+      "name": "Who Are You?",
+      "steps": [
+        {
+          "id": "alice-c3-who-01",
+          "type": "action",
+          "c3Beat": 1,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "duration": 3000,
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c3-who-02",
+          "type": "text",
+          "c3Beat": 2,
+          "camera": {
+            "hold": false
+          },
+          "effects": {},
+          "who": "alice",
+          "text": "Oh! I didn't see you there.",
+          "readingDurationMs": 6000,
+          "during": {
+            "duration": 6000,
+            "lockUntilComplete": true,
+            "initial": {},
+            "effects": {}
+          }
+        },
+        {
+          "id": "alice-c3-who-03",
+          "type": "text",
+          "c3Beat": 3,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "alice",
+          "text": "Perhaps you and your water pipe know the way.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-who-04",
+          "type": "action",
+          "c3Beat": 4,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "duration": 5000,
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c3-who-05",
+          "type": "text",
+          "c3Beat": 5,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "caterpillar",
+          "text": "Who are you?",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-who-06",
+          "type": "text",
+          "c3Beat": 6,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "alice",
+          "text": "My name is Alice. At least, that part has stayed the same.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-who-07",
+          "type": "text",
+          "c3Beat": 7,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "alice",
+          "text": "I keep changing size, and nothing feels familiar anymore.",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-who-08",
+          "type": "text",
+          "c3Beat": 8,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "caterpillar",
+          "text": "What has changed, besides your height?",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-who-09",
+          "type": "text",
+          "c3Beat": 9,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "alice",
+          "text": "Even the things I knew by heart come out wrong.",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-who-10",
+          "type": "text",
+          "c3Beat": 10,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "alice",
+          "text": "I would like to feel like myself again.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-who-11",
+          "type": "text",
+          "c3Beat": 11,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "who": "caterpillar",
+          "text": "Then take your time. Begin with what you want to understand.",
+          "readingDurationMs": 10000
+        },
+        {
+          "id": "alice-c3-who-12",
+          "type": "action",
+          "c3Beat": 12,
+          "camera": {
+            "hold": true
+          },
+          "effects": {},
+          "duration": 3000,
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c3-who-end",
+          "type": "end",
+          "c3Beat": 12
+        }
+      ],
+      "videoExport": {}
+    }
+  ],
+  "serialized": true,
+  "availableChapter": "chapter-3",
+  "completion": {
+    "scope": "scene",
+    "chapter": "chapter-3"
+  },
+  "savedPassageAliases": {}
+}

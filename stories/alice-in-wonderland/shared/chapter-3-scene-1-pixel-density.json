@@ -1,0 +1,1064 @@
+{
+  "schemaVersion": 1,
+  "referenceStandingHeightWorld": 180,
+  "assets": [
+    {
+      "path": "stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "kind": "atlas",
+      "dimensions": [
+        2048,
+        1280
+      ],
+      "cells": [
+        {
+          "id": "smoking-right",
+          "sourceBoundsExclusive": [
+            94,
+            183,
+            442,
+            518
+          ],
+          "cellBoundsExclusive": [
+            0,
+            0,
+            512,
+            640
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            69.60000000000001,
+            67.0
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                56,
+                124,
+                137
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                117,
+                183,
+                189
+              ],
+              [
+                131,
+                74,
+                142
+              ],
+              [
+                144,
+                190,
+                209
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                188,
+                132,
+                197
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                222,
+                178,
+                81
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [
+              [
+                160,
+                95,
+                170,
+                119
+              ]
+            ],
+            "expectedEyeWidths": [
+              10
+            ],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 1,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            64,
+            64
+          ],
+          "contentBoundsInSourceCell": [
+            30,
+            119,
+            378,
+            454
+          ],
+          "authoredRootSource": [
+            150,
+            452
+          ],
+          "hookahBaseSource": [
+            328,
+            450
+          ],
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "mouthpiece-low-right",
+          "sourceBoundsExclusive": [
+            607,
+            183,
+            954,
+            518
+          ],
+          "cellBoundsExclusive": [
+            512,
+            0,
+            1024,
+            640
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            69.4,
+            67.0
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                56,
+                124,
+                137
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                117,
+                183,
+                189
+              ],
+              [
+                131,
+                74,
+                142
+              ],
+              [
+                144,
+                190,
+                209
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                188,
+                132,
+                197
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                222,
+                178,
+                81
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [
+              [
+                159,
+                95,
+                169,
+                119
+              ]
+            ],
+            "expectedEyeWidths": [
+              10
+            ],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 1,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            576,
+            64
+          ],
+          "contentBoundsInSourceCell": [
+            31,
+            119,
+            378,
+            454
+          ],
+          "authoredRootSource": [
+            150,
+            452
+          ],
+          "hookahBaseSource": [
+            328,
+            450
+          ],
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "front-folded",
+          "sourceBoundsExclusive": [
+            1158,
+            188,
+            1409,
+            519
+          ],
+          "cellBoundsExclusive": [
+            1024,
+            0,
+            1536,
+            640
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            50.2,
+            66.2
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                56,
+                124,
+                137
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                117,
+                183,
+                189
+              ],
+              [
+                131,
+                74,
+                142
+              ],
+              [
+                144,
+                190,
+                209
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                188,
+                132,
+                197
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [
+              [
+                108,
+                92,
+                118,
+                116
+              ],
+              [
+                144,
+                92,
+                154,
+                116
+              ]
+            ],
+            "expectedEyeWidths": [
+              10,
+              10
+            ],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 1,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            1088,
+            64
+          ],
+          "contentBoundsInSourceCell": [
+            70,
+            124,
+            321,
+            455
+          ],
+          "authoredRootSource": null,
+          "hookahBaseSource": null,
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "advice-right",
+          "sourceBoundsExclusive": [
+            1631,
+            183,
+            1893,
+            518
+          ],
+          "cellBoundsExclusive": [
+            1536,
+            0,
+            2048,
+            640
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            52.400000000000006,
+            67.0
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                56,
+                124,
+                137
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                117,
+                183,
+                189
+              ],
+              [
+                131,
+                74,
+                142
+              ],
+              [
+                144,
+                190,
+                209
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                188,
+                132,
+                197
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [
+              [
+                174,
+                95,
+                184,
+                119
+              ]
+            ],
+            "expectedEyeWidths": [
+              10
+            ],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 1,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            1600,
+            64
+          ],
+          "contentBoundsInSourceCell": [
+            31,
+            119,
+            293,
+            454
+          ],
+          "authoredRootSource": null,
+          "hookahBaseSource": null,
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "crawl-right",
+          "sourceBoundsExclusive": [
+            94,
+            842,
+            392,
+            1091
+          ],
+          "cellBoundsExclusive": [
+            0,
+            640,
+            512,
+            1280
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            59.6,
+            49.800000000000004
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                56,
+                124,
+                137
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                117,
+                183,
+                189
+              ],
+              [
+                131,
+                74,
+                142
+              ],
+              [
+                144,
+                190,
+                209
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                188,
+                132,
+                197
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [
+              [
+                250,
+                97,
+                260,
+                121
+              ]
+            ],
+            "expectedEyeWidths": [
+              10
+            ],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 1,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            64,
+            704
+          ],
+          "contentBoundsInSourceCell": [
+            30,
+            138,
+            328,
+            387
+          ],
+          "authoredRootSource": null,
+          "hookahBaseSource": null,
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "climb-carry-right",
+          "sourceBoundsExclusive": [
+            618,
+            794,
+            931,
+            1124
+          ],
+          "cellBoundsExclusive": [
+            512,
+            640,
+            1024,
+            1280
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            62.6,
+            66.0
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                56,
+                124,
+                137
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                117,
+                183,
+                189
+              ],
+              [
+                131,
+                74,
+                142
+              ],
+              [
+                144,
+                190,
+                209
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                188,
+                132,
+                197
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                222,
+                178,
+                81
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [
+              [
+                168,
+                89,
+                178,
+                113
+              ]
+            ],
+            "expectedEyeWidths": [
+              10
+            ],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 1,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            576,
+            704
+          ],
+          "contentBoundsInSourceCell": [
+            42,
+            90,
+            355,
+            420
+          ],
+          "authoredRootSource": null,
+          "hookahBaseSource": null,
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "hookah",
+          "sourceBoundsExclusive": [
+            1171,
+            817,
+            1423,
+            1113
+          ],
+          "cellBoundsExclusive": [
+            1024,
+            640,
+            1536,
+            1280
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            50.400000000000006,
+            59.2
+          ],
+          "nativePixelContract": {
+            "spriteType": "prop",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                56,
+                124,
+                137
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                117,
+                183,
+                189
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                222,
+                178,
+                81
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [],
+            "expectedEyeWidths": [],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 1,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            1088,
+            704
+          ],
+          "contentBoundsInSourceCell": [
+            83,
+            113,
+            335,
+            409
+          ],
+          "authoredRootSource": null,
+          "hookahBaseSource": null,
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "mushroom-fragments",
+          "sourceBoundsExclusive": [
+            1651,
+            904,
+            1919,
+            1025
+          ],
+          "cellBoundsExclusive": [
+            1536,
+            640,
+            2048,
+            1280
+          ],
+          "logicalCellPx": 10,
+          "normalizedWorldSize": [
+            53.6,
+            24.200000000000003
+          ],
+          "nativePixelContract": {
+            "spriteType": "prop",
+            "strictHuman": false,
+            "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              144,
+              190,
+              209
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                65,
+                100,
+                130
+              ],
+              [
+                99,
+                141,
+                172
+              ],
+              [
+                131,
+                74,
+                142
+              ],
+              [
+                165,
+                106,
+                36
+              ],
+              [
+                188,
+                132,
+                197
+              ],
+              [
+                199,
+                181,
+                130
+              ],
+              [
+                233,
+                221,
+                169
+              ]
+            ],
+            "eyes": [],
+            "expectedEyeWidths": [],
+            "logicalEyeWidth": 10,
+            "eyeMargin": 3,
+            "sourcePixelsPerWorldPixel": 5,
+            "canonicalEyeWorldWidth": 2,
+            "expectedComponents": 2,
+            "logicalCellPx": 10,
+            "minimumTransparentCells": 4,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "sourceOffsetInStorage": [
+            1600,
+            704
+          ],
+          "contentBoundsInSourceCell": [
+            51,
+            200,
+            319,
+            321
+          ],
+          "authoredRootSource": null,
+          "hookahBaseSource": null,
+          "sourceToOutputScale": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "path": "stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 720
+    }
+  ]
+}

@@ -1,0 +1,1388 @@
+{
+  "schemaVersion": 2,
+  "character": "caterpillar",
+  "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+  "dimensions": [
+    2048,
+    1280
+  ],
+  "logicalCellPx": 10,
+  "sourceSha256": "8650e1b721184686a469642068db5955420004fc55327263ba847652b80b1084",
+  "paletteRGB": [
+    [
+      33,
+      26,
+      44
+    ],
+    [
+      65,
+      100,
+      130
+    ],
+    [
+      99,
+      141,
+      172
+    ],
+    [
+      144,
+      190,
+      209
+    ],
+    [
+      233,
+      221,
+      169
+    ],
+    [
+      199,
+      181,
+      130
+    ],
+    [
+      56,
+      124,
+      137
+    ],
+    [
+      117,
+      183,
+      189
+    ],
+    [
+      165,
+      106,
+      36
+    ],
+    [
+      222,
+      178,
+      81
+    ],
+    [
+      131,
+      74,
+      142
+    ],
+    [
+      188,
+      132,
+      197
+    ]
+  ],
+  "poses": [
+    {
+      "id": "smoking-right",
+      "sourceBoundsExclusive": [
+        94,
+        183,
+        442,
+        518
+      ],
+      "cellBoundsExclusive": [
+        0,
+        0,
+        512,
+        640
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        69.60000000000001,
+        67.0
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            56,
+            124,
+            137
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            117,
+            183,
+            189
+          ],
+          [
+            131,
+            74,
+            142
+          ],
+          [
+            144,
+            190,
+            209
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            188,
+            132,
+            197
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            222,
+            178,
+            81
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [
+          [
+            160,
+            95,
+            170,
+            119
+          ]
+        ],
+        "expectedEyeWidths": [
+          10
+        ],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 1,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        64,
+        64
+      ],
+      "contentBoundsInSourceCell": [
+        30,
+        119,
+        378,
+        454
+      ],
+      "authoredRootSource": [
+        150,
+        452
+      ],
+      "hookahBaseSource": [
+        328,
+        450
+      ],
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "smoking-right",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          94,
+          183,
+          442,
+          518
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    },
+    {
+      "id": "mouthpiece-low-right",
+      "sourceBoundsExclusive": [
+        607,
+        183,
+        954,
+        518
+      ],
+      "cellBoundsExclusive": [
+        512,
+        0,
+        1024,
+        640
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        69.4,
+        67.0
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            56,
+            124,
+            137
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            117,
+            183,
+            189
+          ],
+          [
+            131,
+            74,
+            142
+          ],
+          [
+            144,
+            190,
+            209
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            188,
+            132,
+            197
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            222,
+            178,
+            81
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [
+          [
+            159,
+            95,
+            169,
+            119
+          ]
+        ],
+        "expectedEyeWidths": [
+          10
+        ],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 1,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        576,
+        64
+      ],
+      "contentBoundsInSourceCell": [
+        31,
+        119,
+        378,
+        454
+      ],
+      "authoredRootSource": [
+        150,
+        452
+      ],
+      "hookahBaseSource": [
+        328,
+        450
+      ],
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "mouthpiece-low-right",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          607,
+          183,
+          954,
+          518
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    },
+    {
+      "id": "front-folded",
+      "sourceBoundsExclusive": [
+        1158,
+        188,
+        1409,
+        519
+      ],
+      "cellBoundsExclusive": [
+        1024,
+        0,
+        1536,
+        640
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        50.2,
+        66.2
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            56,
+            124,
+            137
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            117,
+            183,
+            189
+          ],
+          [
+            131,
+            74,
+            142
+          ],
+          [
+            144,
+            190,
+            209
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            188,
+            132,
+            197
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [
+          [
+            108,
+            92,
+            118,
+            116
+          ],
+          [
+            144,
+            92,
+            154,
+            116
+          ]
+        ],
+        "expectedEyeWidths": [
+          10,
+          10
+        ],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 1,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        1088,
+        64
+      ],
+      "contentBoundsInSourceCell": [
+        70,
+        124,
+        321,
+        455
+      ],
+      "authoredRootSource": null,
+      "hookahBaseSource": null,
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "front-folded",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          1158,
+          188,
+          1409,
+          519
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    },
+    {
+      "id": "advice-right",
+      "sourceBoundsExclusive": [
+        1631,
+        183,
+        1893,
+        518
+      ],
+      "cellBoundsExclusive": [
+        1536,
+        0,
+        2048,
+        640
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        52.400000000000006,
+        67.0
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            56,
+            124,
+            137
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            117,
+            183,
+            189
+          ],
+          [
+            131,
+            74,
+            142
+          ],
+          [
+            144,
+            190,
+            209
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            188,
+            132,
+            197
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [
+          [
+            174,
+            95,
+            184,
+            119
+          ]
+        ],
+        "expectedEyeWidths": [
+          10
+        ],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 1,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        1600,
+        64
+      ],
+      "contentBoundsInSourceCell": [
+        31,
+        119,
+        293,
+        454
+      ],
+      "authoredRootSource": null,
+      "hookahBaseSource": null,
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "advice-right",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          1631,
+          183,
+          1893,
+          518
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    },
+    {
+      "id": "crawl-right",
+      "sourceBoundsExclusive": [
+        94,
+        842,
+        392,
+        1091
+      ],
+      "cellBoundsExclusive": [
+        0,
+        640,
+        512,
+        1280
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        59.6,
+        49.800000000000004
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            56,
+            124,
+            137
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            117,
+            183,
+            189
+          ],
+          [
+            131,
+            74,
+            142
+          ],
+          [
+            144,
+            190,
+            209
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            188,
+            132,
+            197
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [
+          [
+            250,
+            97,
+            260,
+            121
+          ]
+        ],
+        "expectedEyeWidths": [
+          10
+        ],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 1,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        64,
+        704
+      ],
+      "contentBoundsInSourceCell": [
+        30,
+        138,
+        328,
+        387
+      ],
+      "authoredRootSource": null,
+      "hookahBaseSource": null,
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "crawl-right",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          94,
+          842,
+          392,
+          1091
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    },
+    {
+      "id": "climb-carry-right",
+      "sourceBoundsExclusive": [
+        618,
+        794,
+        931,
+        1124
+      ],
+      "cellBoundsExclusive": [
+        512,
+        640,
+        1024,
+        1280
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        62.6,
+        66.0
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            56,
+            124,
+            137
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            117,
+            183,
+            189
+          ],
+          [
+            131,
+            74,
+            142
+          ],
+          [
+            144,
+            190,
+            209
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            188,
+            132,
+            197
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            222,
+            178,
+            81
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [
+          [
+            168,
+            89,
+            178,
+            113
+          ]
+        ],
+        "expectedEyeWidths": [
+          10
+        ],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 1,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        576,
+        704
+      ],
+      "contentBoundsInSourceCell": [
+        42,
+        90,
+        355,
+        420
+      ],
+      "authoredRootSource": null,
+      "hookahBaseSource": null,
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "climb-carry-right",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          618,
+          794,
+          931,
+          1124
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    },
+    {
+      "id": "hookah",
+      "sourceBoundsExclusive": [
+        1171,
+        817,
+        1423,
+        1113
+      ],
+      "cellBoundsExclusive": [
+        1024,
+        640,
+        1536,
+        1280
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        50.400000000000006,
+        59.2
+      ],
+      "nativePixelContract": {
+        "spriteType": "prop",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            56,
+            124,
+            137
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            117,
+            183,
+            189
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            222,
+            178,
+            81
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [],
+        "expectedEyeWidths": [],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 1,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        1088,
+        704
+      ],
+      "contentBoundsInSourceCell": [
+        83,
+        113,
+        335,
+        409
+      ],
+      "authoredRootSource": null,
+      "hookahBaseSource": null,
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "hookah",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          1171,
+          817,
+          1423,
+          1113
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    },
+    {
+      "id": "mushroom-fragments",
+      "sourceBoundsExclusive": [
+        1651,
+        904,
+        1919,
+        1025
+      ],
+      "cellBoundsExclusive": [
+        1536,
+        640,
+        2048,
+        1280
+      ],
+      "logicalCellPx": 10,
+      "normalizedWorldSize": [
+        53.6,
+        24.200000000000003
+      ],
+      "nativePixelContract": {
+        "spriteType": "prop",
+        "strictHuman": false,
+        "anatomyException": "Blue segmented insect; no human hair/neck/head-ratio. Fragment cell contains exactly two distinct props.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          144,
+          190,
+          209
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            65,
+            100,
+            130
+          ],
+          [
+            99,
+            141,
+            172
+          ],
+          [
+            131,
+            74,
+            142
+          ],
+          [
+            165,
+            106,
+            36
+          ],
+          [
+            188,
+            132,
+            197
+          ],
+          [
+            199,
+            181,
+            130
+          ],
+          [
+            233,
+            221,
+            169
+          ]
+        ],
+        "eyes": [],
+        "expectedEyeWidths": [],
+        "logicalEyeWidth": 10,
+        "eyeMargin": 3,
+        "sourcePixelsPerWorldPixel": 5,
+        "canonicalEyeWorldWidth": 2,
+        "expectedComponents": 2,
+        "logicalCellPx": 10,
+        "minimumTransparentCells": 4,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "sourceOffsetInStorage": [
+        1600,
+        704
+      ],
+      "contentBoundsInSourceCell": [
+        51,
+        200,
+        319,
+        321
+      ],
+      "authoredRootSource": null,
+      "hookahBaseSource": null,
+      "sourceToOutputScale": [
+        1,
+        1
+      ],
+      "pose": "mushroom-fragments",
+      "asset": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
+      "provenance": {
+        "reuse": "first-appearance approved v2 native master",
+        "directMasterReference": "concept_art/characters/master-pose-sheet-alice.png",
+        "originalAsset": "/stories/alice-in-wonderland/sources/caterpillar-approved-source.png",
+        "originalBounds": [
+          1651,
+          904,
+          1919,
+          1025
+        ],
+        "originalSourceSha256": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671"
+      }
+    }
+  ],
+  "cleanup": [
+    {
+      "id": "smoking-right",
+      "binaryVisiblePixels": 63932,
+      "fullNativeBounds": [
+        30,
+        119,
+        378,
+        454
+      ],
+      "eyes": [
+        [
+          190,
+          214,
+          200,
+          238
+        ]
+      ],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "010966ebd8351eaf692838692fbc8d1b2dd4899328c75f6f5a8c2871c630fce1",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    },
+    {
+      "id": "mouthpiece-low-right",
+      "binaryVisiblePixels": 61502,
+      "fullNativeBounds": [
+        31,
+        119,
+        378,
+        454
+      ],
+      "eyes": [
+        [
+          190,
+          214,
+          200,
+          238
+        ]
+      ],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "7a1ed80c92e2357bd9e40270976c87fd7b53d71ac9a163a1f4a259cd202e1850",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    },
+    {
+      "id": "front-folded",
+      "binaryVisiblePixels": 49610,
+      "fullNativeBounds": [
+        70,
+        124,
+        321,
+        455
+      ],
+      "eyes": [
+        [
+          178,
+          216,
+          188,
+          240
+        ],
+        [
+          214,
+          216,
+          224,
+          240
+        ]
+      ],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "2d74fbfe25fc776fd2718c5c5f544a4aedfb6fedcfb1691afa1cb20b037cb9d1",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    },
+    {
+      "id": "advice-right",
+      "binaryVisiblePixels": 50677,
+      "fullNativeBounds": [
+        31,
+        119,
+        293,
+        454
+      ],
+      "eyes": [
+        [
+          205,
+          214,
+          215,
+          238
+        ]
+      ],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "be5678410f9afd42fabc3215b6cfdb907815b026a2c3d58cdb48e0f3b646775b",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    },
+    {
+      "id": "crawl-right",
+      "binaryVisiblePixels": 43092,
+      "fullNativeBounds": [
+        30,
+        138,
+        328,
+        387
+      ],
+      "eyes": [
+        [
+          280,
+          235,
+          290,
+          259
+        ]
+      ],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "e1ba37e7ee06f5068a06061ae1fa3f2407ac23851e504518b6f1c70d321e6279",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    },
+    {
+      "id": "climb-carry-right",
+      "binaryVisiblePixels": 58356,
+      "fullNativeBounds": [
+        42,
+        90,
+        355,
+        420
+      ],
+      "eyes": [
+        [
+          210,
+          179,
+          220,
+          203
+        ]
+      ],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "462c60534d1d0f0b92e261ec3cb1a353dfbbe8118e810e28a9b22775a7cf5769",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    },
+    {
+      "id": "hookah",
+      "binaryVisiblePixels": 35115,
+      "fullNativeBounds": [
+        83,
+        113,
+        335,
+        409
+      ],
+      "eyes": [],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "b81f3af9c8ed737d2dac6104d865536a0d26b24a41dd6a3f886c004c4ac2ab56",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    },
+    {
+      "id": "mushroom-fragments",
+      "binaryVisiblePixels": 19529,
+      "fullNativeBounds": [
+        51,
+        200,
+        319,
+        321
+      ],
+      "eyes": [],
+      "sourceAlphaThreshold": 240,
+      "headMaskSha256": "b3a635e2dcd87a16065ed8c9f947de2499049196f840d3cc67ad57a110b977fc",
+      "operation": "native categorical alpha/palette/eye/exterior cleanup; unchanged canvas pixel pitch"
+    }
+  ]
+}
