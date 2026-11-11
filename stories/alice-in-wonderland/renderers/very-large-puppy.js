@@ -117,9 +117,14 @@ export class VeryLargePuppy {
   }
   if (moment >= 12) {
    puppy = pointAt(geometry.walkPaths.puppyFetch.at(-1), 'right');
-   puppyPose = 'seated-right';
+   puppyPose = moment === 12 && reader.elapsed < geometry.puppyPickup.seatedMs ? 'pickup-right' : 'seated-right';
   }
-  if (moment === 12) {alice = routePosition(geometry.walkPaths.aliceEscapeFirst, progress); walking = true;}
+  if (moment === 12) {
+   const start = geometry.puppyPickup.cameraHoldMs;
+   const escape = clamp((reader.elapsed - start) / (reader.step.duration - start));
+   alice = routePosition(geometry.walkPaths.aliceEscapeFirst, escape);
+   walking = reader.elapsed >= start;
+  }
   if (moment === 13) alice = pointAt(geometry.walkPaths.aliceEscapeFirst.at(-1));
   if (moment === 14) {alice = routePosition(geometry.walkPaths.aliceEscapeLast, progress); walking = true;}
   if (moment >= 15) alice = pointAt(anchors.aliceFinal);
@@ -152,7 +157,11 @@ export class VeryLargePuppy {
   if (moment <= 2) return blend(this.fitFrame(geometry.anchors.entry[0], 706), meet, moment === 1 ? 0 : smooth(progress));
   if (moment <= 10) return meet;
   if (moment === 11) return blend(meet, fetch, smooth(progress));
-  if (moment === 12) return blend(fetch, late, smooth(progress));
+  if (moment === 12) {
+   const start = geometry.puppyPickup.cameraHoldMs;
+   const pan = (this.scene.reader.elapsed - start) / (this.scene.reader.step.duration - start);
+   return blend(fetch, late, smooth(pan));
+  }
   if (moment === 13) return late;
   if (moment === 14) return blend(late, final, smooth(progress));
   return final;
@@ -176,13 +185,14 @@ export class VeryLargePuppy {
 
  drawPuppy(state) {
   const idle = geometry.puppyFrames['idle-right'].bounds;
-  const scale = geometry.puppyHeight / (idle[3] - idle[1]);
   let pose = state.puppyPose;
   if (state.puppyWalking) {
    const frames = state.moment === 11 ? ['gallop-compress-right', 'gallop-air-right', 'walk-contact-b-right', 'walk-pass-b-right'] : ['walk-contact-a-right', 'walk-pass-a-right', 'walk-contact-b-right', 'walk-pass-b-right'];
    pose = frames[Math.floor(this.scene.reader.elapsed / 140) % frames.length];
   }
-  this.puppy.setVisible(true).setTexture(this.puppyKeys[pose]).setPosition(state.puppy.x, state.puppy.y).setScale(scale).setDepth(state.puppy.y).setFlipX(false);
+  const cell = geometry.puppyFrames[pose];
+  const scale = cell.renderScale ?? geometry.puppyHeight / (idle[3] - idle[1]);
+  this.puppy.setVisible(true).setTexture(this.puppyKeys[pose]).setOrigin(...cell.origin).setPosition(state.puppy.x, state.puppy.y).setScale(scale).setDepth(state.puppy.y).setFlipX(false);
   this.puppyShadow.setVisible(true).setPosition(state.puppy.x, 638).setDepth(637).setAlpha(.18);
   return pose;
  }
@@ -197,11 +207,23 @@ export class VeryLargePuppy {
    position = [0, 1].map(axis => (1 - t) ** 3 * points[0][axis] + 3 * (1 - t) ** 2 * t * points[1][axis] + 3 * (1 - t) * t ** 2 * points[2][axis] + t ** 3 * points[3][axis]);
    owner = 'air';
   }
-  if (state.moment > 10) {position = geometry.anchors.throwLanding; owner = 'puppy';}
-  this.twig.setVisible(true).clear().setPosition(...position).setDepth(owner === 'alice' ? state.alice.y + 1 : 720);
+  if (state.moment > 10) position = geometry.anchors.throwLanding;
+  const grabbed = state.moment > 12 || state.moment === 12 && reader.elapsed >= geometry.puppyPickup.contactMs;
+  let mouth = null;
+  if (grabbed) {
+   const seated = state.moment > 12 || reader.elapsed >= geometry.puppyPickup.seatedMs;
+   const point = seated ? geometry.puppyPickup.seatedMouth : geometry.puppyPickup.pickupMouth;
+   const image = this.puppy.texture.getSourceImage();
+   mouth = [this.puppy.x + (point[0] - this.puppy.originX * image.width) * this.puppy.scaleX,
+    this.puppy.y + (point[1] - this.puppy.originY * image.height) * this.puppy.scaleY];
+   position = mouth.map((value, axis) => value - geometry.puppyPickup.twigBiteOffset[axis]);
+   owner = 'puppy';
+  }
+  const depth = owner === 'puppy' ? this.puppy.depth + 1 : owner === 'alice' ? state.alice.y + 1 : 720;
+  this.twig.setVisible(true).clear().setPosition(...position).setDepth(depth);
   this.twig.lineStyle(6, 0x281b18).lineBetween(-12, 0, 12, -4).lineBetween(1, -2, 5, -9);
   this.twig.lineStyle(2, 0xd5a369).lineBetween(-11, 0, 11, -4).lineBetween(1, -2, 5, -8);
-  return {owner, position};
+  return {owner, position, mouth};
  }
 
  draw() {

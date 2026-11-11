@@ -346,12 +346,25 @@
         0.5,
         1
       ]
+    },
+    "pickup-right": {
+      "bounds": [
+        160,
+        1337,
+        864,
+        1863
+      ],
+      "origin": [
+        0.5921266233766235,
+        1
+      ],
+      "renderScale": 0.28
     }
   },
   "cameras": {
     "safeRatio": 0.68,
     "meetX": 1000,
-    "fetchX": 1390,
+    "fetchX": 1376,
     "lateLandscapeX": 1097,
     "finalX": 500,
     "finalBounds": [
@@ -364,5 +377,30 @@
     "landscapeSafeRatio": 0.6,
     "finalLandscapeX": 887,
     "landscapeMeetX": 832
+  },
+  "puppyPickup": {
+    "contactMs": 700,
+    "seatedMs": 1400,
+    "cameraHoldMs": 2200,
+    "pickupMouth": [
+      549,
+      494
+    ],
+    "seatedMouth": [
+      222,
+      99
+    ],
+    "twigBiteOffset": [
+      5,
+      -9
+    ],
+    "root": [
+      1358,
+      638
+    ],
+    "twigGround": [
+      1390,
+      638
+    ]
   }
 }

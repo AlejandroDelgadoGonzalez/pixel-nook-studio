@@ -30177,7 +30177,7 @@
           "id": "alice-c2-puppy-12",
           "type": "action",
           "puppyMoment": 12,
-          "duration": 3500,
+          "duration": 5700,
           "caption": "clear",
           "camera": {
             "hold": false
@@ -30293,6 +30293,14 @@
           "from": "alice-c2-cake-21",
           "through": "alice-c2-cake-21",
           "durationMs": 3000
+        }
+      },
+      "durationReview": {
+        "phase": "revision",
+        "preserveTextAndPauses": true,
+        "authorization": {
+          "date": "2026-11-10",
+          "reason": "User-requested two-phase puppy pickup and mouth hold. Extend only beat12 by2200ms; retain every dialogue, pause and other beat duration."
         }
       }
     }

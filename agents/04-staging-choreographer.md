@@ -29,6 +29,8 @@ Preciso y paciente con el movimiento. Cada decisión debe poder explicarse con e
 
 ## PLAYBOOK
 
+**Ley de Continuidad en Recogida y Sujeción de Props (Prop Pick-Up & Hold Continuity).** Si el guion o el diálogo establece que un personaje o criatura recoge o sostiene un objeto, la acción muestra primero una pose de inclinación con la base anclada, en la que la mano o el hocico alcanza el prop en el suelo. Al recogerlo, elimina su instancia de suelo o transfiere la misma instancia al ancla precisa de la mano o boca, por delante del dueño. La pose posterior de reposo o sentado conserva el objeto claramente sujeto. Queda prohibido dejarlo suelto bajo los pies o patas cuando la narración dice que ya lo tiene.
+
 **Ley de Anclaje en Recogida de Props (Pick-up Root Anchor).** Al pasar de una pose apoyada a recoger un objeto, conserva el root x/y de los pies o la base. Ajusta el alcance de la mano o la posición del objeto para evitar un desplazamiento horizontal instantáneo.
 
 **Prohibición de Micro-Saltos de Cámara Intra-Escena.** En beats consecutivos de una misma habitación, mantén la cámara fija o interpola el movimiento durante al menos 1.0 s. Nunca hagas un corte instantáneo para desplazar el encuadre unos píxeles.

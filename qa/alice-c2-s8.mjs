@@ -52,6 +52,7 @@ try {
      const duration = step.duration || step.readingDurationMs;
      const frames = new Set();
      let previousPuppyX = -Infinity, previousTwigX = -Infinity;
+     let pickupFrame;
      for (let elapsed = 0; elapsed < duration; elapsed += 50) {
       engine.start(step.id);
       engine.paused = false;
@@ -60,6 +61,27 @@ try {
       scene.draw(0, true);
       scene.game.step(performance.now(), 0);
       const state = scene.puppyStage.current;
+      if (state.moment >= 12) {
+       const stage = scene.puppyStage, dog = stage.puppy, twig = stage.twig;
+       if (dog.x !== 1358 || dog.y !== 638) throw Error('Puppy pickup moved its root');
+       const beforeContact = state.moment === 12 && elapsed < 700;
+       if (beforeContact) {
+        if (state.twig.owner !== 'ground' || twig.x !== 1390 || twig.y !== 638) throw Error('Twig moved before mouth contact');
+       } else {
+        if (state.twig.owner !== 'puppy' || !twig.visible || twig.depth <= dog.depth) throw Error('Twig is not visibly held above the puppy');
+        if (Math.hypot(twig.x + 5 - state.twig.mouth[0], twig.y - 9 - state.twig.mouth[1]) > .01) throw Error('Twig slipped off the mouth');
+        if (state.moment > 12 || elapsed >= 1400) {
+         if (state.puppyPose !== 'seated-right' || twig.y >= 600) throw Error('Seated puppy left its twig on the floor');
+        }
+       }
+       if (stage.nodes.filter(node => node === twig).length !== 1 || scene.objects.twig !== twig) throw Error('Duplicate twig instance');
+       if (state.moment === 12 && elapsed < 1400 && state.puppyPose !== 'pickup-right') throw Error('Missing lowered pickup pose');
+       if (state.moment === 12 && elapsed < 2200) {
+        const frame = JSON.stringify(scene.framing);
+        if (pickupFrame && pickupFrame !== frame) throw Error('Camera left before the seated hold was visible');
+        pickupFrame = frame;
+       }
+      }
       if (step.type === 'action' && engine.advance(elapsed + 1000)) throw Error('Mid-action tap advanced ' + step.id);
       if (state.moment === 11) {
        if (state.puppy.x < previousPuppyX) throw Error('Puppy reversed during fetch');

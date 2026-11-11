@@ -4,7 +4,7 @@
   "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
   "dimensions": [
     1664,
-    1152
+    2048
   ],
   "canonicalSource": "/stories/alice-in-wonderland/sources/puppy-approved-source.png",
   "canonicalSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
@@ -1508,6 +1508,131 @@
         "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
         "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
       }
+    },
+    {
+      "id": "puppy-pickup-right",
+      "pose": "pickup-right",
+      "sourceBoundsExclusive": [
+        160,
+        1337,
+        864,
+        1863
+      ],
+      "cellBoundsExclusive": [
+        0,
+        1152,
+        1024,
+        2048
+      ],
+      "normalizedSize": [
+        704,
+        526
+      ],
+      "normalizedWorldSize": [
+        704,
+        526
+      ],
+      "origin": [
+        0.5921266233766235,
+        1
+      ],
+      "facing": "right",
+      "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+      "logicalCellPx": 36,
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+        "outlineRGB": [
+          26,
+          17,
+          14
+        ],
+        "skinRGB": [
+          255,
+          237,
+          189
+        ],
+        "paletteRGB": [
+          [
+            26,
+            17,
+            14
+          ],
+          [
+            255,
+            237,
+            189
+          ],
+          [
+            235,
+            205,
+            150
+          ],
+          [
+            255,
+            184,
+            72
+          ],
+          [
+            255,
+            211,
+            114
+          ],
+          [
+            230,
+            151,
+            59
+          ],
+          [
+            117,
+            75,
+            39
+          ],
+          [
+            91,
+            53,
+            26
+          ],
+          [
+            234,
+            129,
+            118
+          ]
+        ],
+        "eyes": [
+          [
+            566,
+            377,
+            602,
+            437
+          ]
+        ],
+        "expectedEyeWidths": [
+          36
+        ],
+        "logicalEyeWidth": 36,
+        "eyeMargin": 1,
+        "logicalCellPx": 36,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ]
+      },
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/puppy-pickup-native-source.png",
+        "originalBounds": [
+          160,
+          185,
+          864,
+          711
+        ],
+        "originalSourceSha256": "feb79f31a949ca33f896c9d382b6bae540a3533394c6253aacef8cc88f496878",
+        "reuse": "new extraordinary ground pickup, derived directly from the original approved puppy and concept_art master; complete new native pose",
+        "directMasterReference": "stories/alice-in-wonderland/sources/puppy-approved-source.png"
+      }
     }
   ],
   "generation": {
@@ -1517,5 +1642,12 @@
     "generatedSourceSha256": "993fb3bc4997a791779430c1a634772222953bd23804845d73bf1dc4e6c5387d",
     "prompt": "One coherent transparent pixel-art master atlas, 4 columns by 3 rows. Same friendly golden-brown floppy-eared puppy with cream chest, dark ears and clean rectangular one-cell eyes. Direct Alice master style. Row1 side idle, front, back, play bow. Row2 bark, walk contactA, passingA, contactB. Row3 passingB, gallop compression, airborne extension, happy seated. Complete ears, paws and tail; empty mouth for separate twig; four logical transparent cells each side; crisp square pixels and sealed dark outline. No clothing or labels.",
     "nativeCleanup": "Preserve full pose silhouettes and square source pixels; hard alpha, nine-color flat palette, 12px-wide eyes with flat halos, sealed dark rim, 54px minimum native storage margin."
+  },
+  "pickupGeneration": {
+    "tool": "image_gen",
+    "referenceCharacterMaster": "concept_art/characters/master-pose-sheet-alice.png",
+    "canonicalReference": "stories/alice-in-wonderland/sources/puppy-approved-source.png",
+    "generatedFile": "exec-77f8e464-5725-48c7-a372-2a2c8321c667.png",
+    "prompt": "Same canonical puppy faces right in a deep crouch, hind and front paws grounded, head and neck folded down to pick up a separate twig directly beside the front paws. Complete tail/ears/paws, transparent margin, flat canonical palette, sealed dark outline and one-cell dark eye. The twig is a separate prop."
   }
 }

@@ -78779,7 +78779,7 @@
       "referenceCharacterMaster": "concept_art/characters/master-pose-sheet-alice.png",
       "dimensions": [
         1664,
-        1152
+        2048
       ],
       "cells": [
         {
@@ -80278,6 +80278,131 @@
             ],
             "originalSourceSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
             "reuse": "Approved S8 first-appearance candidate, native palette, alpha, eye and sealed-outline cleanup; square export with unchanged silhouettes."
+          }
+        },
+        {
+          "id": "puppy-pickup-right",
+          "pose": "pickup-right",
+          "sourceBoundsExclusive": [
+            160,
+            1337,
+            864,
+            1863
+          ],
+          "cellBoundsExclusive": [
+            0,
+            1152,
+            1024,
+            2048
+          ],
+          "normalizedSize": [
+            704,
+            526
+          ],
+          "normalizedWorldSize": [
+            704,
+            526
+          ],
+          "origin": [
+            0.5921266233766235,
+            1
+          ],
+          "facing": "right",
+          "asset": "/stories/alice-in-wonderland/assets/atlases/puppy-master-atlas.png",
+          "logicalCellPx": 36,
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "anatomyException": "Quadruped puppy; native paws, floppy ears and fur. Back view occludes the eyes. No human hair or neck contract.",
+            "outlineRGB": [
+              26,
+              17,
+              14
+            ],
+            "skinRGB": [
+              255,
+              237,
+              189
+            ],
+            "paletteRGB": [
+              [
+                26,
+                17,
+                14
+              ],
+              [
+                255,
+                237,
+                189
+              ],
+              [
+                235,
+                205,
+                150
+              ],
+              [
+                255,
+                184,
+                72
+              ],
+              [
+                255,
+                211,
+                114
+              ],
+              [
+                230,
+                151,
+                59
+              ],
+              [
+                117,
+                75,
+                39
+              ],
+              [
+                91,
+                53,
+                26
+              ],
+              [
+                234,
+                129,
+                118
+              ]
+            ],
+            "eyes": [
+              [
+                566,
+                377,
+                602,
+                437
+              ]
+            ],
+            "expectedEyeWidths": [
+              36
+            ],
+            "logicalEyeWidth": 36,
+            "eyeMargin": 1,
+            "logicalCellPx": 36,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/puppy-pickup-native-source.png",
+            "originalBounds": [
+              160,
+              185,
+              864,
+              711
+            ],
+            "originalSourceSha256": "feb79f31a949ca33f896c9d382b6bae540a3533394c6253aacef8cc88f496878",
+            "reuse": "new extraordinary ground pickup, derived directly from the original approved puppy and concept_art master; complete new native pose",
+            "directMasterReference": "stories/alice-in-wonderland/sources/puppy-approved-source.png"
           }
         }
       ]

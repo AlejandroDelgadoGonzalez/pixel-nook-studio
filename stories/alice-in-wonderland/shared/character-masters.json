@@ -109,9 +109,25 @@
       "metadata": "stories/alice-in-wonderland/shared/puppy-master-atlas.json",
       "canonicalSource": "stories/alice-in-wonderland/sources/puppy-approved-source.png",
       "canonicalSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
-      "masterSha256": "4bfb3b02872492c39df51d113463f202bb97fde3fa0f81a8f0b2419aaf700fb2",
+      "masterSha256": "d1a6723adb6207b1ffb915a9905c0e2ed5b962418eb018a7af493987fe201074",
       "approval": "Gates1/2A approved by Alejandro; technical cleanup2026-11-10",
-      "proportionChecks": []
+      "proportionChecks": [],
+      "paletteRevision": {
+        "preservedPoseHashes": {
+          "idle-right": "eaa62ee2615745c3d3cd9d95d9606cf9a521909c7cd650068fdf66c2b85abaf4",
+          "idle-front": "20e0a129ee51df8fe7b7b64697b6c307fe935aa298f700281de8249397179bc5",
+          "idle-back": "e7b2e9b4f1a4fb98474b8c3ab59099528ce4748fe155afb5e1daa368542159b7",
+          "play-bow-right": "83d5613625c5dc1643896463a33935917bd91e09a5ff2f0216280cf567b0ed77",
+          "bark-right": "5bf3525219d3d4f53d643136504904b0d04c087aa3943cc8c05815b639151196",
+          "walk-contact-a-right": "d25ea625c41f45ba64341be92643360f515d36e5cea42d1581fb3e0c0ed75cf1",
+          "walk-pass-a-right": "d6254f6f55fc755cae35c0558e580f2a6ae22425d065f11a70e68cb4dcb69380",
+          "walk-contact-b-right": "0a56dfec89c0a9d173ecbbaa56c98371af0c7568a194fd3f522d713a049bcca9",
+          "walk-pass-b-right": "0cd16269221716fe474a470c22938472af0d4f1b5a2ae7ac16407505e0285438",
+          "gallop-compress-right": "48b1f4089b5a591f9aade9dcba1e70cc20d647b4b27d8709c733b40ac6503791",
+          "gallop-air-right": "9b6224224efe92c87ea6737c2a4f5ff0cf5790751f267a97ec15dd0f123a2f02",
+          "seated-right": "3882b1035c5980db359d352beb76cc81f2188f873d37bacd243abe7390fd2673"
+        }
+      }
     }
   },
   "policy": "Existing poses must reuse master cells. Extraordinary generation records direct original source. No successive scene references.",
