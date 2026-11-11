@@ -319,7 +319,7 @@
     "exteriorRoofFlight": "Separate silent reframe fitting swept flight bounds [880,100,1190,675] and complete body. Caption closed for climb/flight. Return to ground framing before Bill speaks. Must be verified on official viewports at Gate4."
   },
   "atlasContract": ".artifacts/alice-in-wonderland/chapter-2/scene-6-gates/bill-atlas-contract.json",
-  "durationSeconds": 69.0,
+  "durationSeconds": 71.2,
   "steps": [
     {
       "moment": 1,
