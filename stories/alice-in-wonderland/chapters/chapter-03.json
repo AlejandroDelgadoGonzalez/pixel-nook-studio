@@ -31,10 +31,10 @@
   },
   "attribution": "Based on Alice’s Adventures in Wonderland by Lewis Carroll",
   "captionPresentation": "ready-complete",
-  "renderer": "alice-who-are-you",
+  "renderer": "alice-one-side-other",
   "intro": "Who Are You? — A meeting above the mushroom.",
-  "ending": "Alice is ready to explain what has changed.",
-  "description": "Chapter3 Scene1: an original abridgment.",
+  "ending": "Alice has a clue, and decides to try a little.",
+  "description": "Chapter3 Scenes1–2: a meeting and advice from the Caterpillar.",
   "stageLabel": "Alice and the Caterpillar",
   "episodes": true,
   "assets": {
@@ -208,14 +208,212 @@
           "effects": {},
           "duration": 3000,
           "caption": "clear"
-        },
-        {
-          "id": "alice-c3-who-end",
-          "type": "end",
-          "c3Beat": 12
         }
       ],
-      "videoExport": {}
+      "videoExport": {
+        "closingHook": {
+          "from": "alice-c3-who-12",
+          "through": "alice-c3-who-12",
+          "durationMs": 3000
+        }
+      }
+    },
+    {
+      "id": "alice-c3-s2",
+      "name": "One Side, the Other",
+      "durationPhase": "initial",
+      "steps": [
+        {
+          "id": "alice-c3-side-01",
+          "type": "action",
+          "s2Beat": 1,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "duration": 3000,
+          "effects": {},
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c3-side-02",
+          "type": "text",
+          "s2Beat": 2,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "alice",
+          "text": "I'd like to choose my size, instead of changing without warning.",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-side-03",
+          "type": "text",
+          "s2Beat": 3,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "caterpillar",
+          "text": "Keep your temper. We can begin with something you remember.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-side-04",
+          "type": "text",
+          "s2Beat": 4,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "caterpillar",
+          "text": "Can you begin the poem about Father William?",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-side-05",
+          "type": "text",
+          "s2Beat": 5,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "alice",
+          "text": "Father William balanced a fish on his hat... That's not right.",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-side-06",
+          "type": "text",
+          "s2Beat": 6,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "caterpillar",
+          "text": "The words have changed. What size would you like to be?",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-side-07",
+          "type": "text",
+          "s2Beat": 7,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "alice",
+          "text": "A little taller, please. But no more shooting up into the trees.",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-side-08",
+          "type": "text",
+          "s2Beat": 8,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "caterpillar",
+          "text": "Eating one side makes you taller. The other makes you smaller.",
+          "readingDurationMs": 7000
+        },
+        {
+          "id": "alice-c3-side-09",
+          "type": "text",
+          "s2Beat": 9,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "alice",
+          "text": "One side of what?",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-side-10",
+          "type": "text",
+          "s2Beat": 10,
+          "camera": {
+            "preventDissolve": true,
+            "hold": false
+          },
+          "who": "caterpillar",
+          "text": "The mushroom. You'll have to find out which side is which.",
+          "readingDurationMs": 6000,
+          "during": {
+            "duration": 6000,
+            "lockUntilComplete": true,
+            "initial": {
+              "s2Camera": 0
+            },
+            "effects": {
+              "s2Camera": 1
+            }
+          }
+        },
+        {
+          "id": "alice-c3-side-11",
+          "type": "action",
+          "s2Beat": 11,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "duration": 3000,
+          "effects": {},
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c3-side-12",
+          "type": "action",
+          "s2Beat": 12,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "duration": 4000,
+          "effects": {},
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c3-side-13",
+          "type": "text",
+          "s2Beat": 13,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "who": "alice",
+          "text": "I'll try a little, and see what changes.",
+          "readingDurationMs": 4000
+        },
+        {
+          "id": "alice-c3-side-14",
+          "type": "action",
+          "s2Beat": 14,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "duration": 3000,
+          "effects": {},
+          "caption": "clear"
+        },
+        {
+          "id": "alice-c3-side-end",
+          "type": "end",
+          "s2Beat": 14
+        }
+      ],
+      "videoExport": {
+        "closingHook": {
+          "from": "alice-c3-side-14",
+          "through": "alice-c3-side-14",
+          "durationMs": 3000
+        }
+      }
     }
   ],
   "serialized": true,
@@ -224,5 +422,7 @@
     "scope": "scene",
     "chapter": "chapter-3"
   },
-  "savedPassageAliases": {}
+  "savedPassageAliases": {
+    "alice-c3-who-end": "alice-c3-who-11"
+  }
 }

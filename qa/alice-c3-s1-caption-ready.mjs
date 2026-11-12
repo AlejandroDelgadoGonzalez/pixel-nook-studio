@@ -8,7 +8,7 @@ const browser=await launch(),report={errors:[],resources:[],cases:[]};
 try{const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.chapter.number===3);
  for(const layout of officialLayouts){const {page,context}=await openCase(browser,item,layout,report);
  const rows=await page.evaluate(()=>{const rows=[],e=qaScene.reader;
- for(const step of e.story.steps.filter(s=>s.type!=='end'))for(const t of step.c3Beat===2?[0,250,1200,4800,5999,6000,6500,8999]:[0,100,Math.min(2500,(step.duration||step.readingDurationMs)-1)]){
+ for(const step of e.story.steps.filter(s=>s.sceneIndex===0&&s.type!=='end'))for(const t of step.c3Beat===2?[0,250,1200,4800,5999,6000,6500,8999]:[0,100,Math.min(2500,(step.duration||step.readingDurationMs)-1)]){
   e.start(step.id);e.paused=false;e.tick(t);e.paused=true;e.onChange('back');qaScene.draw();qaScene.game.step(performance.now(),0);
   const box=document.querySelector('#dialogue'),css=getComputedStyle(box),visible=Number(css.opacity)>0;
   const expected=step.type==='text'&&t>=(step.captionStartMs||0)&&e.revealed>=step.text.length;

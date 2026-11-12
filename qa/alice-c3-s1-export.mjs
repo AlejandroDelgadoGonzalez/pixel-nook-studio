@@ -8,7 +8,8 @@ import {verifyDecodedVideo} from './helpers/decoded-video.mjs';
 const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/c3-s1/export',binary=process.env.QA_FFMPEG;
 assert(binary,'QA_FFMPEG is required for independent decoding and silent-stream verification');
 await fs.mkdir(out,{recursive:true});
-const browser=await launch({args:['--disable-accelerated-video-encode']}),report={scope:'Alice C3-S1 real MP4 export and complete playback at1x; no duration acceptance inferred from MP4',errors:[],resources:[],audioRequests:[],exports:[]};
+const selected=Number(process.env.QA_EXPORT_SCENE||0);
+const browser=await launch({args:['--disable-accelerated-video-encode']}),report={scope:`Alice C3-S${selected+1} real MP4 export and complete playback at1x; no duration acceptance inferred from MP4`,errors:[],resources:[],audioRequests:[],exports:[]};
 try{
  const item=(await storyCases()).find(x=>x.slug==='alice-in-wonderland'&&x.chapter.number===3),{page,context}=await openCase(browser,item,{width:390,height:844},report);
  if(process.env.QA_READER_ASPECT){await page.click('#show-controls');await page.selectOption('#aspect-ratio',process.env.QA_READER_ASPECT);await page.click('#close-settings');report.readerAspect=process.env.QA_READER_ASPECT;}
@@ -19,7 +20,7 @@ try{
  await page.evaluate(async()=>{const c=document.createElement('canvas');c.width=720;c.height=1280;const x=c.getContext('2d'),stream=c.captureStream(30),r=new MediaRecorder(stream,{mimeType:'video/mp4',videoBitsPerSecond:4000000});let n=0;const done=new Promise(ok=>r.onstop=ok),timer=setInterval(()=>{x.fillStyle=n++%2?'#345678':'#876543';x.fillRect(0,0,720,1280);},33);r.start(100);await new Promise(ok=>setTimeout(ok,5000));r.stop();await done;clearInterval(timer);stream.getTracks().forEach(t=>t.stop());});
  for(const audioChecked of (process.env.QA_EXPORT_AUDIO_CASES?JSON.parse(process.env.QA_EXPORT_AUDIO_CASES):[false,true])){
   const dir=out+'/'+(audioChecked?'checkbox-on':'checkbox-off');await fs.mkdir(dir,{recursive:true});
-  await page.selectOption('#export-scene','0');await page.locator('#export-audio').setChecked(audioChecked);await page.click('#export-video');console.log('Normal1x export; audio checkbox '+audioChecked);
+  await page.selectOption('#export-scene',process.env.QA_EXPORT_SCENE||'0');await page.locator('#export-audio').setChecked(audioChecked);await page.click('#export-video');console.log('Normal1x export; scene '+(process.env.QA_EXPORT_SCENE||'0')+'; audio checkbox '+audioChecked);
   for(let i=0;i<24;i++){await page.waitForTimeout(10000);const state=await page.evaluate(()=>({ready:!document.querySelector('#export-download').hidden,status:document.querySelector('#export-status').textContent}));console.log(state.status);if(state.ready)break;assert(!/could not|cancelled/i.test(state.status),state.status);}
   assert(await page.evaluate(()=>!document.querySelector('#export-download').hidden),'Export must complete');
   const waiting=page.waitForEvent('download');await page.click('#export-download');const download=await waiting,file=download.suggestedFilename();await download.saveAs(dir+'/'+file);

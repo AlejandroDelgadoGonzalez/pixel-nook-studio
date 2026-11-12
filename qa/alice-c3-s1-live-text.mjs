@@ -14,7 +14,7 @@ try{const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.ch
  await page.goto(base+'/reader.html?story=alice-in-wonderland&chapter=chapter-3');await page.waitForFunction(()=>!document.querySelector('#start').disabled);await page.click('#start');
  await page.evaluate(()=>{window.qaScene=Phaser.Display.Canvas.CanvasPool.pool.find(p=>p.parent?.scene?.getScene).parent.scene.scenes[0];qaScene.reader.setAuto(false);});
  const rows=[];
- for(const step of item.story.steps.filter(s=>s.type==='text')){
+ for(const step of item.story.steps.filter(s=>s.sceneIndex===0&&s.type==='text')){
   await page.evaluate(id=>{qaScene.reader.start(id);qaScene.reader.paused=false;},step.id);
   await page.waitForFunction(()=>document.querySelectorAll('#text .is-revealed').length>=3,null,{timeout:2000});
   const partial=await page.evaluate(()=>({shown:qaScene.reader.revealed,visible:document.querySelectorAll('#text .is-revealed').length,length:qaScene.reader.step.text.length,text:document.querySelector('#text').textContent}));
@@ -33,7 +33,7 @@ try{const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.ch
  let automatic;
  if(layout.name==='phone-390'&&!process.env.QA_SKIP_AUTO){
   await page.evaluate(()=>{window.qaVisibleLines=[];window.qaTextWatch=setInterval(()=>{const s=qaScene.reader.step;if(s?.type==='text'&&getComputedStyle(document.querySelector('#dialogue')).opacity==='1'&&document.querySelectorAll('#text .is-revealed').length>0&&document.querySelector('#text').textContent===s.text&&!qaVisibleLines.includes(s.id))qaVisibleLines.push(s.id);},25);qaScene.reader.setAuto(true);qaScene.reader.start();});
-  await page.waitForFunction(()=>!qaScene.reader.running,null,{timeout:90000,polling:100});
+  await page.waitForFunction(()=>!qaScene.reader.running||qaScene.reader.step.sceneIndex>0,null,{timeout:90000,polling:100});
   automatic=await page.evaluate(()=>{clearInterval(qaTextWatch);return{visibleLines:qaVisibleLines,elapsedMs:qaScene.reader.totalTime};});
   assert.equal(automatic.visibleLines.length,9);assert(automatic.elapsedMs>=55000&&automatic.elapsedMs<=85000);
  }

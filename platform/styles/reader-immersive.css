@@ -8,6 +8,8 @@ body.record #player{padding:0}body.record #stage{inset:0;width:100%;height:100%;
 #text .text-reveal-character.is-revealed{opacity:1;user-select:auto}
 #dialogue[data-caption-clear]{opacity:0;transition:none;pointer-events:none}
 #dialogue[data-caption-complete]{transition:none}
+/* A ready caption stays fully legible while an authored camera action locks advance. */
+#dialogue[data-caption-complete]:not([data-caption-clear]) #text-button:disabled{opacity:1}
 
 /* Keep the original one-pixel progress line, with a usable seek hit area. */
 #progress[role="slider"],body.immersive #progress[role="slider"],body.record #progress[role="slider"]{height:12px;cursor:pointer;pointer-events:auto;background:linear-gradient(to top,#e9d7a51a 1px,transparent 1px)}

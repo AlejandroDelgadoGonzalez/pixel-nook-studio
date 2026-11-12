@@ -57,9 +57,10 @@
       "number": 3,
       "status": "available",
       "title": "Who Are You?",
-      "description": "Scene1 available: Alice meets the Caterpillar.",
+      "description": "Scenes1–2 available: Alice meets the Caterpillar and learns about the mushroom.",
       "scenes": [
-        "Who Are You?"
+        "Who Are You?",
+        "One Side, the Other"
       ],
       "linePrefix": "alice-c3-",
       "source": "/stories/alice-in-wonderland/chapters/chapter-03.json"
@@ -77,6 +78,10 @@
     "alice-who-are-you": {
       "module": "/stories/alice-in-wonderland/renderers/who-are-you.js",
       "export": "WhoAreYou"
+    },
+    "alice-one-side-other": {
+      "module": "/stories/alice-in-wonderland/renderers/one-side-other.js",
+      "export": "OneSideOther"
     }
   },
   "fileAudio": "/stories/alice-in-wonderland/shared/chapter-1-scene-1-audio.json",

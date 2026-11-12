@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "scene": "alice-c3-s2",
+  "title": "One Side, the Other",
+  "authorizedBy": "Alejandro",
+  "authorizationDateLocal": "2026-11-11",
+  "gate1": "approved100%:72seconds14beats",
+  "gate2A": "approved100%:MEASURED-ART-BOARD_2.html and CERTIFICACION.json v1 PASS",
+  "gate2B": "explicitly paused; no new audio",
+  "gate3": "implemented",
+  "gate4": "PASS",
+  "automaticMs": 72000,
+  "s1AutomaticMsPreserved": 75000,
+  "fullSuiteCases": 90,
+  "officialViewports": 6,
+  "errors": 0,
+  "newAudioFiles": 0,
+  "scene3Started": false,
+  "localEvidence": ".artifacts/qa/c3-s2/VERDICT.json",
+  "immutableAssets": {
+    "stories/alice-in-wonderland/shared/caterpillar-master-atlas.png": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671",
+    "stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png": "4b4ac0041be93141ee3ea6162d6441b0e1b9940d22ac888c76f8ba51c77007b0"
+  }
+}
