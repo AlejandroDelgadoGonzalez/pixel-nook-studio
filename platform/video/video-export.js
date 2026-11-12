@@ -1,5 +1,6 @@
 import {storage} from '../storage/storage.js';
 import {ReaderEngine} from '../reader/engine.js';
+import {captionReady} from '../reader/caption-visibility.js';
 import {createSoundtrack} from '../audio/create-soundtrack.js';
 import {videoSequence,videoDuration,logoOpacity} from './video-sequence.js';
 
@@ -81,7 +82,7 @@ async function recordScene({story,Renderer,selected,mime,audio,margins,signal,on
   engine.start(sequence.startId);engine.paused=true;scene.shotDissolve?.clear();scene.draw(0,true);
   function draw(){
    ctx.setTransform(S,0,0,S,0,0);ctx.imageSmoothingEnabled=false;ctx.drawImage(game.canvas,0,0,W,H);
-   const phase=engine.step?.exportPhase,captionAlpha=phase==='preview'||engine.step?.caption==='clear'?0:phase==='fade'?Math.max(0,1-engine.elapsed/sequence.fadeMs):1;
+   const phase=engine.step?.exportPhase,waiting=engine.step===lastText&&!captionReady(engine.step,engine.elapsed,engine.revealed,story.captionPresentation),captionAlpha=waiting||phase==='preview'||engine.step?.caption==='clear'?0:phase==='fade'?Math.max(0,1-engine.elapsed/sequence.fadeMs):1;
    if(lastText&&captionAlpha>0){ctx.save();ctx.globalAlpha=captionAlpha;ctx.fillStyle=dark?'rgba(20,35,29,.96)':'rgba(255,249,238,.96)';ctx.beginPath();ctx.roundRect(left,panelY,width,panelH,12);ctx.fill();ctx.strokeStyle=dark?'#7d8061':'#aaa286';ctx.lineWidth=.6;ctx.stroke();
     const who=lastText.who,portrait=portraits[scene.portraitKey?.(who)||who];let nameX=left+18;if(portrait){ctx.save();ctx.beginPath();ctx.arc(left+33,panelY+32,15,0,Math.PI*2);ctx.clip();ctx.drawImage(portrait,left+18,panelY+17,30,30);ctx.restore();nameX+=40;}
     ctx.font='14px Georgia';ctx.fillStyle=dark?'#eedbb0':'#73562e';ctx.fillText(who?story.characters[who].name:'Pixel Nook',nameX,panelY+36);

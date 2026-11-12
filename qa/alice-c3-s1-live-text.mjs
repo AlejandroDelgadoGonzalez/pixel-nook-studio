@@ -19,7 +19,8 @@ try{const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.ch
   await page.waitForFunction(()=>document.querySelectorAll('#text .is-revealed').length>=3,null,{timeout:2000});
   const partial=await page.evaluate(()=>({shown:qaScene.reader.revealed,visible:document.querySelectorAll('#text .is-revealed').length,length:qaScene.reader.step.text.length,text:document.querySelector('#text').textContent}));
   assert(partial.visible>0&&partial.shown>0&&partial.text===step.text);
-  await page.click('#text-button');
+  if(item.story.captionPresentation==='ready-complete')await page.waitForFunction(()=>getComputedStyle(document.querySelector('#dialogue')).opacity==='1'&&!document.querySelector('#text-button').disabled,null,{timeout:10000});
+  else await page.click('#text-button');
   await page.waitForFunction(()=>document.querySelectorAll('#text .is-revealed').length===Array.from(qaScene.reader.step.text).length);
   const before=await page.evaluate(()=>qaScene.reader.step.id);
   await page.click('#quick-pause');
@@ -30,8 +31,8 @@ try{const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.ch
  }
  await page.screenshot({path:out+'/'+layout.name+'.png'});
  let automatic;
- if(layout.name==='phone-390'){
-  await page.evaluate(()=>{window.qaVisibleLines=[];window.qaTextWatch=setInterval(()=>{const s=qaScene.reader.step;if(s?.type==='text'&&document.querySelectorAll('#text .is-revealed').length>0&&document.querySelector('#text').textContent===s.text&&!qaVisibleLines.includes(s.id))qaVisibleLines.push(s.id);},25);qaScene.reader.setAuto(true);qaScene.reader.start();});
+ if(layout.name==='phone-390'&&!process.env.QA_SKIP_AUTO){
+  await page.evaluate(()=>{window.qaVisibleLines=[];window.qaTextWatch=setInterval(()=>{const s=qaScene.reader.step;if(s?.type==='text'&&getComputedStyle(document.querySelector('#dialogue')).opacity==='1'&&document.querySelectorAll('#text .is-revealed').length>0&&document.querySelector('#text').textContent===s.text&&!qaVisibleLines.includes(s.id))qaVisibleLines.push(s.id);},25);qaScene.reader.setAuto(true);qaScene.reader.start();});
   await page.waitForFunction(()=>!qaScene.reader.running,null,{timeout:90000,polling:100});
   automatic=await page.evaluate(()=>{clearInterval(qaTextWatch);return{visibleLines:qaVisibleLines,elapsedMs:qaScene.reader.totalTime};});
   assert.equal(automatic.visibleLines.length,9);assert(automatic.elapsedMs>=55000&&automatic.elapsedMs<=85000);

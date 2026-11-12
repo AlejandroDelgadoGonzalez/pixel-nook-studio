@@ -30,6 +30,7 @@
     "scope": "Flexible scene count. Never trim pauses, alter reading timing or re-export MP4 to meet a video duration when automatic reading is55–85s."
   },
   "attribution": "Based on Alice’s Adventures in Wonderland by Lewis Carroll",
+  "captionPresentation": "ready-complete",
   "renderer": "alice-who-are-you",
   "intro": "Who Are You? — A meeting above the mushroom.",
   "ending": "Alice is ready to explain what has changed.",
@@ -81,7 +82,8 @@
           "effects": {},
           "who": "alice",
           "text": "Oh! I didn't see you there.",
-          "readingDurationMs": 6000,
+          "captionStartMs": 6000,
+          "readingDurationMs": 9000,
           "during": {
             "duration": 6000,
             "lockUntilComplete": true,

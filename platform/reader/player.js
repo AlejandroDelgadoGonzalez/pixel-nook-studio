@@ -8,6 +8,7 @@ import {ReaderEngine} from './engine.js';
 import {VideoLayer} from '../video/video-layer.js';
 import {createSoundtrack} from '../audio/create-soundtrack.js';
 import {createTextReveal} from './text-reveal.js';
+import {captionReady} from './caption-visibility.js';
 import {installAspectRatioLock} from './aspect-ratio.js';
 const $=id=>document.getElementById(id),key='entrelineas:'+story.id;
 const engine=new ReaderEngine(story,changed),sound=createSoundtrack(story);
@@ -85,7 +86,7 @@ function start(from){const audioTime=from?saved?.audioTime||0:0;completionStep=n
 function dissolve(){if(!scene||story.renderer==='video')return;const source=$('stage').querySelector('canvas');if(!source)return;const copy=document.createElement('canvas');copy.width=source.width;copy.height=source.height;copy.getContext('2d').drawImage(source,0,0);copy.className='scene-snapshot';$('stage').append(copy);requestAnimationFrame(()=>requestAnimationFrame(()=>copy.style.opacity='0'));setTimeout(()=>copy.remove(),700);}
 function previous(){if(document.querySelector('dialog[open]'))return;if(!engine.step?.camera?.preventDissolve)dissolve();if(engine.previous(performance.now())){scene?.draw(0,true);sound.reset(engine.totalTime);paint();audioSync();}}
 $('back').onclick=previous;
-function updateVisualLock(){const reading=engine.running&&engine.step?.type==='text',locked=reading&&engine.revealed>=engine.step.text.length&&engine.visualMotionRemainingMs>0;$('text-button').disabled=!reading||locked;$('text-button').setAttribute('aria-disabled',String(!reading||locked));if(locked)$('cue').textContent='';}
+function updateVisualLock(){const reading=engine.running&&engine.step?.type==='text',complete=story.captionPresentation==='ready-complete',ready=captionReady(engine.step,engine.elapsed,engine.revealed,story.captionPresentation),locked=reading&&(engine.revealed>=engine.step.text.length&&engine.visualMotionRemainingMs>0||complete&&!ready);if(complete){$('dialogue').toggleAttribute('data-caption-complete',true);$('dialogue').toggleAttribute('data-caption-clear',!reading||!ready);$('dialogue').setAttribute('aria-hidden',String(!reading||!ready));}$('text-button').disabled=!reading||locked;$('text-button').setAttribute('aria-disabled',String(!reading||locked));if(locked)$('cue').textContent='';}
 function advance(){if(document.querySelector('dialog[open]'))return;if(engine.advance(performance.now()))paint();}
 function pause(value=!engine.paused){if(!engine.running)return;engine.paused=value;audioSync();paint();}
 function openModal(id){modalWasPaused=engine.paused;pause(true);if(id==='history-modal')renderHistory();$(id).showModal();}
