@@ -29,6 +29,7 @@ export class ReaderEngine{
  for(const[id,presence]of Object.entries(s?.presence||{}))if(presence.kind==='enter'&&presence.from&&this.model.actors[id].visible<.01)Object.assign(this.model.actors[id],presence.from);
  this.startModel=clone(this.model);this.speedPlans={};for(const[who,spec]of Object.entries(s?.motion?.actors||{})){const a=this.startModel.actors[who],route=s.paths?.[who];if(!route)throw Error('Constant locomotion requires a measured path');const plan=speedPath([{x:a.x,y:a.y},...route],spec);if(Math.abs(plan.durationMs-s.duration)>.001)throw Error('Locomotion duration must equal distance / speed: '+s.id);this.speedPlans[who]=plan;}for(const a of Object.values(this.model.actors))a.pose='idle';if(!s||s.type==='end'){this.running=false;this.onChange('end');return;}
  if(s.type==='text'){
+  if(this.story.captionPresentation==='ready-complete')this.revealed=s.text.length;
   if(s.sceneIndex!==undefined)this.model.chapter=s.sceneIndex;
   this.orient(s);
   this.history.push(s.id);

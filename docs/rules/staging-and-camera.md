@@ -1,5 +1,7 @@
 # Physical staging and camera
 
+- C3 fixed-zoom correction (2026-11-12): keep conversation zoom constant through arrival and departure. Follow the measured crest with smooth Y-only pans during physical actions with the caption hidden, returning to conversation focus before showing text; no zoom-out/in or horizontal drift. Fit the actual visible silhouettes above the viewport edge throughout the pan.
+
 - Review every passage against its phone shot: actor, listener, prop owner, terrain, path, supporting surface and resulting state. Check desktop afterward. Review complete movement and intermediate frames, not only saved paragraphs.
 - Define new-story geometry in a file under that story's shared/ directory: spawns, anchors, walkPaths and occluders. Ground coordinates in inspected native and panorama art, measured image dimensions and world mapping. Do not invent coordinates blindly. See ../authoring/new-story.md.
 - Physical entrances emerge from an authored doorway, path, foliage edge or frame edge, with a visibly gradual retro fade, then walk opaque. Do not finish the fade entirely behind cover. Exits walk opaque and fade only during their final steps. Animals follow the same rules.

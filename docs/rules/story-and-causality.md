@@ -1,5 +1,7 @@
 # Story and causal continuity
 
+- Rhythm correction (2026-11-12): silent beats require visible physical action. A continuous conversation in the same place must not acquire static silent closing/opening filler; this overrides the historical mandatory3s hook for such boundaries. Preserve existing approved dialogue and unrelated timing.
+
 These are current rules. Historical source excerpts below preserve provenance, not permission to undo later decisions. The October 14 visual-document corrections take precedence over older chapter freezes and staging.
 
 - Stories and the interface are English. Preserve a quiet, low-stimulation reading experience, complete endings, agency, grief and consequences. Do not add marketing interruptions or forced cliffhangers. Describe the Odyssey as an original abridgment, not a modern translation; retain its attribution.

@@ -1292,15 +1292,39 @@
     ],
     "landscapeNominalZoom": 1.35,
     "minimumTweenMs": 1200,
-    "entryZoom": "Exact S1 final frame; no reset, no dissolve",
+    "entryZoom": "fixed conversation zoom, vertical Y pan only while caption hidden",
     "panel": "live DOM measured using unchanged reader CSS and player.js text sizing formula",
     "center": "derived from shared focus and safe visible area, clamped to panorama bounds",
     "safeTopPx": 24,
     "dialogueClearancePx": 12,
-    "exit": "One 1200ms reframe during beat 10, before pickup; hold wider frame through beats 11-14. Same focus [500,444]. No following camera.",
-    "continuityReserve": "Measure chapter-wide text union, retaining current S1 maximum; reserve remains present with invisible card."
+    "exit": "fixed zoom; Y-only pan in pickup/retreat; conversation frame restored before final text",
+    "continuityReserve": "Measure chapter-wide text union, retaining current S1 maximum; reserve remains present with invisible card.",
+    "actionPan": {
+      "riseWorld": 68,
+      "measurement": "288 crown required top minus220 fully raised carry silhouette top; source/world1:1",
+      "s1": {
+        "riseMs": [
+          0,
+          1200
+        ],
+        "returnMs": [
+          4000,
+          6000
+        ]
+      },
+      "s2": {
+        "returnInRetreatMs": [
+          2000,
+          4000
+        ],
+        "riseInRetreatMs": [
+          0,
+          1200
+        ]
+      }
+    }
   },
-  "checksScope": "Approved scene geometry consumed by Phaser; runtime evidence under .artifacts/qa/c3-s2/",
+  "checksScope": "Approved fixed-zoom vertical pan revision2026-11-12; runtime evidence .artifacts/qa/c3-conversation",
   "pickup": {
     "beat": 11,
     "durationMs": 3000,
@@ -1336,5 +1360,9 @@
     "gate3RequiredProof": "Native-part contact transition must be observed in Phaser at 100ms intervals; endpoint board is not animation certification."
   },
   "captionPresentation": "ready-complete",
-  "audio": "paused; no new audio files"
+  "audio": "paused; no new audio files",
+  "revision20261112": {
+    "authorizedBy": "Alejandro",
+    "scope": "fixed zoom and silent vertical pan; roots, paths, immutable art and pickup unchanged"
+  }
 }

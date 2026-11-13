@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "authorizedBy": "Alejandro",
+  "date": "2026-11-12",
+  "scenes": [
+    "alice-c3-s1",
+    "alice-c3-s2"
+  ],
+  "status": "PASS",
+  "supersedes": "Nov11 static conversation bridges and variable C3 zoom",
+  "automaticMs": {
+    "S1": 72000,
+    "S2": 66000
+  },
+  "removedStaticBeats": [
+    "alice-c3-who-12",
+    "alice-c3-side-01",
+    "alice-c3-side-14"
+  ],
+  "spokenTextAndRemainingTimingPreserved": true,
+  "fixedZoomAt1280x720": 1.35,
+  "panAxis": "Y",
+  "visibleDialogueAlwaysEnabled": true,
+  "fullSuiteCases": 90,
+  "officialViewports": 6,
+  "errors": 0,
+  "newAudioFiles": 0,
+  "scene3Started": false,
+  "localEvidence": ".artifacts/qa/c3-conversation/VERDICT.json"
+}

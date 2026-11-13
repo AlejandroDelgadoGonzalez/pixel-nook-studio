@@ -197,25 +197,21 @@
           "who": "caterpillar",
           "text": "Then take your time. Begin with what you want to understand.",
           "readingDurationMs": 10000
-        },
-        {
-          "id": "alice-c3-who-12",
-          "type": "action",
-          "c3Beat": 12,
-          "camera": {
-            "hold": true
-          },
-          "effects": {},
-          "duration": 3000,
-          "caption": "clear"
         }
       ],
       "videoExport": {
-        "closingHook": {
-          "from": "alice-c3-who-12",
-          "through": "alice-c3-who-12",
-          "durationMs": 3000
-        }
+        "endAtLastBeat": true
+      },
+      "durationReview": {
+        "phase": "revision",
+        "authorization": {
+          "date": "2026-11-12",
+          "reason": "Alejandro: remove static silent filler, fixed conversation zoom with silent vertical pans, visible captions immediately interactive"
+        },
+        "preserveTextAndPauses": true,
+        "removedStaticBeats": [
+          "alice-c3-who-12"
+        ]
       }
     },
     {
@@ -223,18 +219,6 @@
       "name": "One Side, the Other",
       "durationPhase": "initial",
       "steps": [
-        {
-          "id": "alice-c3-side-01",
-          "type": "action",
-          "s2Beat": 1,
-          "camera": {
-            "preventDissolve": true,
-            "hold": true
-          },
-          "duration": 3000,
-          "effects": {},
-          "caption": "clear"
-        },
         {
           "id": "alice-c3-side-02",
           "type": "text",
@@ -337,21 +321,11 @@
           "s2Beat": 10,
           "camera": {
             "preventDissolve": true,
-            "hold": false
+            "hold": true
           },
           "who": "caterpillar",
           "text": "The mushroom. You'll have to find out which side is which.",
-          "readingDurationMs": 6000,
-          "during": {
-            "duration": 6000,
-            "lockUntilComplete": true,
-            "initial": {
-              "s2Camera": 0
-            },
-            "effects": {
-              "s2Camera": 1
-            }
-          }
+          "readingDurationMs": 6000
         },
         {
           "id": "alice-c3-side-11",
@@ -371,7 +345,12 @@
           "s2Beat": 12,
           "camera": {
             "preventDissolve": true,
-            "hold": true
+            "hold": false,
+            "pan": {
+              "axis": "y",
+              "zoom": "fixed",
+              "geometry": "chapter-3-scene-2-geometry.json#camera.actionPan.s2"
+            }
           },
           "duration": 4000,
           "effects": {},
@@ -390,29 +369,25 @@
           "readingDurationMs": 4000
         },
         {
-          "id": "alice-c3-side-14",
-          "type": "action",
-          "s2Beat": 14,
-          "camera": {
-            "preventDissolve": true,
-            "hold": true
-          },
-          "duration": 3000,
-          "effects": {},
-          "caption": "clear"
-        },
-        {
           "id": "alice-c3-side-end",
           "type": "end",
-          "s2Beat": 14
+          "s2Beat": 13
         }
       ],
       "videoExport": {
-        "closingHook": {
-          "from": "alice-c3-side-14",
-          "through": "alice-c3-side-14",
-          "durationMs": 3000
-        }
+        "endAtLastBeat": true
+      },
+      "durationReview": {
+        "phase": "revision",
+        "authorization": {
+          "date": "2026-11-12",
+          "reason": "Alejandro: remove static silent filler, fixed conversation zoom with silent vertical pans, visible captions immediately interactive"
+        },
+        "preserveTextAndPauses": true,
+        "removedStaticBeats": [
+          "alice-c3-side-01",
+          "alice-c3-side-14"
+        ]
       }
     }
   ],
@@ -423,6 +398,9 @@
     "chapter": "chapter-3"
   },
   "savedPassageAliases": {
-    "alice-c3-who-end": "alice-c3-who-11"
+    "alice-c3-who-end": "alice-c3-who-11",
+    "alice-c3-who-12": "alice-c3-who-11",
+    "alice-c3-side-01": "alice-c3-side-02",
+    "alice-c3-side-14": "alice-c3-side-13"
   }
 }

@@ -1,5 +1,7 @@
 # Reading, controls and saved state
 
+- Complete-card interaction (2026-11-12): every visible ready-complete dialogue card must be fully readable and immediately clickable with a pointer cursor. Reveal ordinary conversations completely at entry; if a physical action or camera tween must finish, keep the entire card hidden until advance is enabled, retaining its DOM reserve. Never expose a disabled/loading card.
+
 - Preserve manual/automatic reading, pause, keyboard advance/back, history, restart, scene selection, saved continuation and completion. First tap reveals the paragraph; the next eligible tap advances. Guard rapid taps against accidental skips.
 - Lay out the complete paragraph before the first glyph appears. Use createTextReveal for initial paint and animation updates. Change glyph opacity, never replace text with a growing substring. Words and advance cues retain final positions; UTF-16 timing remains compatible with grapheme boundaries. Check line-start words at 360/390/430 px, desktop and portrait.
 - Preserve phone-first framing, short-screen usability, native fullscreen and immersive fallback. Rotation and resize retain model, pause state and appropriate native art. Portrait reading continues automatically across scene boundaries, including older stop-at-scene preferences and entry from an already-open boundary.

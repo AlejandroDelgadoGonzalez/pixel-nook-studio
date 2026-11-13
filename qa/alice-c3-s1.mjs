@@ -4,7 +4,7 @@ import {launch,openCase} from './helpers/browser.mjs';
 import {storyCases} from './helpers/story-cases.mjs';
 import {officialLayouts} from './official-layouts.mjs';
 import {snapshot} from './checks/viewport-coverage.mjs';
-const out='.artifacts/qa/c3-s1/targeted';await fs.mkdir(out,{recursive:true});
+const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/c3-s1/targeted';await fs.mkdir(out,{recursive:true});
 const browser=await launch(),report={errors:[],resources:[],cases:[]};
 try{const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.chapter.number===3);
  for(const layout of officialLayouts){const {page,context}=await openCase(browser,item,layout,report);

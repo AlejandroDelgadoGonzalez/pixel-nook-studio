@@ -1305,13 +1305,38 @@
     ],
     "landscapeNominalZoom": 1.35,
     "minimumTweenMs": 1200,
-    "entryZoom": "wider during climb; close conversation only after crest descent",
+    "entryZoom": "fixed conversation zoom, vertical Y pan only while caption hidden",
     "panel": "live DOM measured using unchanged reader CSS and player.js text sizing formula",
     "center": "derived from shared focus and safe visible area, clamped to panorama bounds",
     "safeTopPx": 24,
-    "dialogueClearancePx": 12
+    "dialogueClearancePx": 12,
+    "actionPan": {
+      "riseWorld": 68,
+      "measurement": "288 crown required top minus220 fully raised carry silhouette top; source/world1:1",
+      "s1": {
+        "riseMs": [
+          0,
+          1200
+        ],
+        "returnMs": [
+          4000,
+          6000
+        ]
+      },
+      "s2": {
+        "returnInRetreatMs": [
+          2000,
+          4000
+        ],
+        "riseInRetreatMs": [
+          0,
+          1200
+        ]
+      }
+    },
+    "exit": "fixed zoom; Y-only pan in pickup/retreat; conversation frame restored before final text"
   },
-  "checksScope": "isolated art-board geometry and native assets; no implemented story, playback, audio or MP4",
+  "checksScope": "Approved fixed-zoom vertical pan revision2026-11-12; runtime evidence .artifacts/qa/c3-conversation",
   "revision": {
     "authorization": "Alejandro approved video review: fix invisible text; move Alice slightly down only",
     "beforeAliceApproach": [
@@ -1324,5 +1349,9 @@
     ],
     "preserve": "0.32 scale,1.2 gain,646 inherited y,12beats72seconds,Caterpillar,panorama,audio pause",
     "measurement": "Same clean dirt corridor x535,615<=y<=646; scene fit reserves actual projected feet above dialogue"
+  },
+  "revision20261112": {
+    "authorizedBy": "Alejandro",
+    "scope": "fixed zoom and silent vertical pan; roots, paths, immutable art and pickup unchanged"
   }
 }

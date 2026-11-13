@@ -2,29 +2,35 @@ import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {launch,watch} from './helpers/browser.mjs';
 import {base} from './config.mjs';
-const out='.artifacts/qa/c3-s2/manual';await fs.mkdir(out,{recursive:true});
+const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/c3-s2/manual';await fs.mkdir(out,{recursive:true});
 const browser=await launch(),report={errors:[],resources:[],beats:[],scope:'Actual manual UI from chapter opening to real terminal step; unmodified Phaser clock'};
 try{
  const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage();watch(page,report);
  await context.addInitScript(()=>{localStorage.setItem('entrelineas:muted','true');localStorage.setItem('betweenlines:auto','false');});
  await page.goto(base+'/reader.html?story=alice-in-wonderland&chapter=chapter-3');await page.waitForFunction(()=>!document.querySelector('#start').disabled);await page.click('#start');
  await page.evaluate(()=>{window.qaScene=Phaser.Display.Canvas.CanvasPool.pool.find(p=>p.parent?.scene?.getScene).parent.scene.scenes[0];});
- const started=Date.now();let last='',pausedPickup=false;
+ const started=Date.now();let last='',pausedPickup=false,pausedPan=false;
  while(Date.now()-started<180000){
   const state=await page.evaluate(()=>({id:qaScene.reader.step.id,type:qaScene.reader.step.type,beat:qaScene.reader.step.s2Beat,scene:qaScene.reader.step.sceneIndex,elapsed:qaScene.reader.elapsed,ended:!qaScene.reader.running,ready:getComputedStyle(document.querySelector('#dialogue')).opacity==='1'&&!document.querySelector('#text-button').disabled,endVisible:!document.querySelector('#ending').hidden,card:getComputedStyle(document.querySelector('#dialogue')).opacity}));
   if(state.ended){assert.equal(state.id,'alice-c3-side-end');break;}
   assert.equal(state.endVisible,false,'No ending between S1 and S2');
   if(state.id!==last){report.beats.push(state);last=state.id;}
   if(state.type==='action')assert.equal(state.card,'0');
+  if(state.card==='1')assert.equal(state.ready,true,'Every visible card must be interactive');
   if(state.scene===1&&state.beat===11&&state.elapsed>1200&&!pausedPickup){
    await page.click('#quick-pause');const before=await page.evaluate(()=>({t:qaScene.reader.elapsed,total:qaScene.reader.totalTime,root:qaScene.current.root,pipe:qaScene.current.hookahBase,pixels:qaScene.actorLayer.toDataURL()}));
    await page.waitForTimeout(400);assert.deepEqual(await page.evaluate(()=>({t:qaScene.reader.elapsed,total:qaScene.reader.totalTime,root:qaScene.current.root,pipe:qaScene.current.hookahBase,pixels:qaScene.actorLayer.toDataURL()})),before);
    await page.click('#quick-pause');pausedPickup=true;report.pickupPauseFrozen=true;
   }
+  if(state.scene===1&&state.beat===12&&state.elapsed>2200&&!pausedPan){
+   await page.click('#quick-pause');const before=await page.evaluate(()=>({t:qaScene.reader.elapsed,root:qaScene.current.root,frame:qaScene.framing}));
+   await page.waitForTimeout(400);assert.deepEqual(await page.evaluate(()=>({t:qaScene.reader.elapsed,root:qaScene.current.root,frame:qaScene.framing})),before);
+   await page.click('#quick-pause');pausedPan=true;report.verticalPanPauseFrozen=true;
+  }
   if(state.type==='text'&&state.ready)await page.click('#text-button');
   await page.waitForTimeout(70);
  }
- assert.equal(await page.evaluate(()=>qaScene.reader.step.id),'alice-c3-side-end');assert.equal(report.beats.length,26);assert(pausedPickup);
+ assert.equal(await page.evaluate(()=>qaScene.reader.step.id),'alice-c3-side-end');assert.equal(report.beats.length,23);assert(pausedPickup);assert(pausedPan);
  await page.screenshot({path:out+'/complete.png'});
  // Actual saved continuation into S2, with the original browser checkpoint path.
  await page.reload();await page.waitForFunction(()=>!document.querySelector('#start').disabled);await page.click('#start');

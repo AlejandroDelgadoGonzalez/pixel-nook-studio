@@ -1,0 +1,178 @@
+{
+  "baselineCommit": "90d8cdcaa6b88a9e5ba767f3af97779ecdfe57fa",
+  "purpose": "Approved prior dialogue and timings; protects all unrelated text and physical actions during the Nov12 revision",
+  "steps": [
+    {
+      "id": "alice-c3-who-01",
+      "type": "action",
+      "duration": 3000
+    },
+    {
+      "id": "alice-c3-who-02",
+      "type": "text",
+      "who": "alice",
+      "text": "Oh! I didn't see you there.",
+      "readingDurationMs": 9000
+    },
+    {
+      "id": "alice-c3-who-03",
+      "type": "text",
+      "who": "alice",
+      "text": "Perhaps you and your water pipe know the way.",
+      "readingDurationMs": 5000
+    },
+    {
+      "id": "alice-c3-who-04",
+      "type": "action",
+      "duration": 5000
+    },
+    {
+      "id": "alice-c3-who-05",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "Who are you?",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-who-06",
+      "type": "text",
+      "who": "alice",
+      "text": "My name is Alice. At least, that part has stayed the same.",
+      "readingDurationMs": 6000
+    },
+    {
+      "id": "alice-c3-who-07",
+      "type": "text",
+      "who": "alice",
+      "text": "I keep changing size, and nothing feels familiar anymore.",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-who-08",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "What has changed, besides your height?",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-who-09",
+      "type": "text",
+      "who": "alice",
+      "text": "Even the things I knew by heart come out wrong.",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-who-10",
+      "type": "text",
+      "who": "alice",
+      "text": "I would like to feel like myself again.",
+      "readingDurationMs": 6000
+    },
+    {
+      "id": "alice-c3-who-11",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "Then take your time. Begin with what you want to understand.",
+      "readingDurationMs": 10000
+    },
+    {
+      "id": "alice-c3-who-12",
+      "type": "action",
+      "duration": 3000
+    },
+    {
+      "id": "alice-c3-side-01",
+      "type": "action",
+      "duration": 3000
+    },
+    {
+      "id": "alice-c3-side-02",
+      "type": "text",
+      "who": "alice",
+      "text": "I'd like to choose my size, instead of changing without warning.",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-side-03",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "Keep your temper. We can begin with something you remember.",
+      "readingDurationMs": 5000
+    },
+    {
+      "id": "alice-c3-side-04",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "Can you begin the poem about Father William?",
+      "readingDurationMs": 6000
+    },
+    {
+      "id": "alice-c3-side-05",
+      "type": "text",
+      "who": "alice",
+      "text": "Father William balanced a fish on his hat... That's not right.",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-side-06",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "The words have changed. What size would you like to be?",
+      "readingDurationMs": 5000
+    },
+    {
+      "id": "alice-c3-side-07",
+      "type": "text",
+      "who": "alice",
+      "text": "A little taller, please. But no more shooting up into the trees.",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-side-08",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "Eating one side makes you taller. The other makes you smaller.",
+      "readingDurationMs": 7000
+    },
+    {
+      "id": "alice-c3-side-09",
+      "type": "text",
+      "who": "alice",
+      "text": "One side of what?",
+      "readingDurationMs": 5000
+    },
+    {
+      "id": "alice-c3-side-10",
+      "type": "text",
+      "who": "caterpillar",
+      "text": "The mushroom. You'll have to find out which side is which.",
+      "readingDurationMs": 6000
+    },
+    {
+      "id": "alice-c3-side-11",
+      "type": "action",
+      "duration": 3000
+    },
+    {
+      "id": "alice-c3-side-12",
+      "type": "action",
+      "duration": 4000
+    },
+    {
+      "id": "alice-c3-side-13",
+      "type": "text",
+      "who": "alice",
+      "text": "I'll try a little, and see what changes.",
+      "readingDurationMs": 4000
+    },
+    {
+      "id": "alice-c3-side-14",
+      "type": "action",
+      "duration": 3000
+    },
+    {
+      "id": "alice-c3-side-end",
+      "type": "end"
+    }
+  ]
+}

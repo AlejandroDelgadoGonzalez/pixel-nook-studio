@@ -6,9 +6,9 @@ import {base} from './config.mjs';
 const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/c3-s2/live';await fs.mkdir(out,{recursive:true});
 const browser=await launch(),report={scope:'Actual Phaser clock, whole chapter at1x, six official viewports; no seeded elapsed/revealed or forced rendering',errors:[],resources:[],cases:[]};
 try{
- // Bound browser load while retaining one real-time pass per official layout.
- for(let offset=0;offset<officialLayouts.length;offset+=3){
-  const rows=await Promise.all(officialLayouts.slice(offset,offset+3).map(async layout=>{
+ // Isolate each viewport: concurrent pages distort wall-clock animation measurements.
+ for(let offset=0;offset<officialLayouts.length;offset+=1){
+  const rows=await Promise.all(officialLayouts.slice(offset,offset+1).map(async layout=>{
    const context=await browser.newContext({viewport:{width:layout.width,height:layout.height}}),page=await context.newPage();watch(page,report);
    await context.addInitScript(()=>{localStorage.setItem('entrelineas:muted','true');localStorage.setItem('betweenlines:auto','true');});
    await page.goto(base+'/reader.html?story=alice-in-wonderland&chapter=chapter-3');await page.waitForFunction(()=>!document.querySelector('#start').disabled);
@@ -18,7 +18,10 @@ try{
      const scene=Phaser.Display.Canvas.CanvasPool.pool.find(p=>p.parent?.scene?.getScene)?.parent.scene.scenes[0];if(!scene?.reader?.running)return;
      const e=scene.reader,s=e.step,panel=document.querySelector('#dialogue'),shown=getComputedStyle(panel).opacity==='1';
      const row={id:s.id,scene:s.sceneIndex,beat:s.s2Beat||s.c3Beat,t:e.elapsed,total:e.totalTime,wall:performance.now(),shown};
+     row.frame=structuredClone(scene.framing);
+     for(const [name,b]of [['Alice',scene.current?.aliceBounds],['Caterpillar',scene.current?.caterpillarBounds]])if(b&&scene.framing){const f=scene.framing,H=scene.scale.height,top=(b.top-f.y)*f.z+H/2,bottom=(b.bottom-f.y)*f.z+H/2;if(top<-.5||bottom>H+.5)qaLog.errors.push('Live clipped silhouette '+name+' '+s.id);}
      if(qaLog.transitions.at(-1)?.id!==s.id)qaLog.transitions.push(row);
+     if(shown&&(document.querySelector('#text-button').disabled||getComputedStyle(document.querySelector('#text-button')).cursor!=='pointer'||scene.cameraReframing))qaLog.errors.push('Visible locked/moving caption '+s.id);
      if(shown){if(s.type!=='text'||document.querySelectorAll('#text .is-revealed').length!==Array.from(s.text).length||getComputedStyle(document.querySelector('#text-button')).opacity!=='1')qaLog.errors.push('Incomplete/grey visible card '+s.id);if(!qaLog.visible.includes(s.id))qaLog.visible.push(s.id);}
      if(s.type==='action'&&(shown||!document.querySelector('#text-button').disabled))qaLog.errors.push('Silent action has interactive caption '+s.id);
      if(!document.querySelector('#ending').hidden)qaLog.errors.push('Premature ending '+s.id);
@@ -30,11 +33,14 @@ try{
    await page.waitForFunction(()=>{const sc=Phaser.Display.Canvas.CanvasPool.pool.find(p=>p.parent?.scene?.getScene)?.parent.scene.scenes[0];return sc?.reader.step?.id==='alice-c3-side-end'&&!sc.reader.running;},null,{timeout:205000,polling:100});
    const result=await page.evaluate(()=>{clearInterval(qaInterval);return qaLog;});
    assert.deepEqual(result.errors,[]);assert.equal(result.visible.length,19);
+   assert.equal(new Set(result.samples.map(s=>s.frame.z)).size,1,'Actual live zoom must be constant');
+   assert.equal(new Set(result.samples.map(s=>s.frame.x)).size,1,'Actual live camera must not pan horizontally');
+   assert.equal(new Set(result.samples.filter(s=>s.shown).map(s=>s.frame.y)).size,1,'Every visible caption uses the held conversation frame');
    const scene0=result.transitions.find(t=>t.scene===0),scene1=result.transitions.find(t=>t.scene===1),s2last=result.samples.at(-1);
-   assert(Math.abs(scene1.total-scene0.total-75000)<350,'S1 real duration');assert(Math.abs(s2last.total-scene1.total-72000)<450,'S2 real duration');
+   assert(Math.abs(scene1.total-scene0.total-72000)<350,'S1 real duration');assert(Math.abs(s2last.total-scene1.total-66000)<450,'S2 real duration');
    const wallSceneMs=[scene1.wall-scene0.wall,s2last.wall-scene1.wall];
-   assert(wallSceneMs.every(t=>t>=55000&&t<=85000),'Actual unpaused wall-clock reading must stay within55–85s: '+wallSceneMs);
-   assert.equal(result.transitions.length,26,'12 + 14 real beats');
+   assert(wallSceneMs.every(t=>t>=55000&&t<=85000),'Actual unpaused wall-clock reading must stay within55Ã¢â‚¬â€œ85s: '+wallSceneMs);
+   assert.equal(result.transitions.length,23,'11 + 12 real beats');
    const pickup=result.samples.filter(s=>s.scene===1&&s.beat===11),exit=result.samples.filter(s=>s.scene===1&&s.beat===12);
    const muteWallMs=result.transitions.find(t=>t.scene===1&&t.beat===13).wall-result.transitions.find(t=>t.scene===1&&t.beat===11).wall;
    assert(muteWallMs<=8000,'Pickup and retreat must remain one silent sequence under8s');

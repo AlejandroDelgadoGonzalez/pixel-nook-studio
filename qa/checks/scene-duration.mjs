@@ -25,7 +25,7 @@ export function check(cases){
    assert(Math.abs(engine.totalTime-automaticMs)<=steps.length+5,'Duration budget must match actual automatic engine timing');
    if(scene.videoExport?.endAtLastBeat){
     assert(revision,'Ending on dialogue requires an explicitly authorized revision');
-    assert.equal(steps.at(-1).type,'text');assert.equal(sequence.nextScene,null);assert.equal(sequence.holdMs,0);assert.deepEqual(sequence.closingIds,[]);
+    assert.equal(steps.filter(s=>s.type!=='end').at(-1).type,'text');assert.equal(sequence.nextScene,null);assert.equal(sequence.holdMs,0);assert.deepEqual(sequence.closingIds,[]);
    }else if(index===story.scenes.length-1&&!scene.videoExport?.closingHook&&steps.at(-1)?.type==='end'){
     assert.equal(sequence.nextScene,null,'Terminal scene must retain its own final setting');assert(steps.some(s=>s.type==='text'));assert(sequence.holdMs>=0);
    }else assert.equal(sequence.closingDurationMs,3000,'Every scene ends in its authored 3-second hook');

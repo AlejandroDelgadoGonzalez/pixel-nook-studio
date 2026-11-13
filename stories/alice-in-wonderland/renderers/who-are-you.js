@@ -26,9 +26,11 @@ export class WhoAreYou extends Phaser.Scene{
  }
  fit(state,entry=false){const w=this.scale.width,h=this.scale.height,rect=this.game.canvas.getBoundingClientRect(),panel=document.querySelector('#dialogue')?.getBoundingClientRect();
   const exportHost=this.game.canvas.closest('.export-render-host'),bottom=exportHost?(this.readingHeight||h*.68)+8:panel?(panel.top-rect.top)*h/rect.height-12:h*.68;
-  const top=this.safeTopInset||24,groupTop=entry?220:288,groupBottom=g.anchors.aliceApproach[1]+1;
-  const desired=w>=h?(entry?1:1.35)*w/1280:w/(entry?430:384),z=Math.max(w/1660,h/932,Math.min(desired,(bottom-top)/(groupBottom-groupTop)));
-  let left=500-w/(2*z),up=444-(top+bottom)/(2*z);left=Math.max(2,Math.min(1662-w/z,left));up=Math.min(up,groupTop-top/z);up=Math.max(up,groupBottom-bottom/z);up=Math.max(2,Math.min(934-h/z,up));return{x:left+w/(2*z),y:up+h/(2*z),z};
+  const top=this.safeTopInset||24,groupTop=288,groupBottom=g.anchors.aliceApproach[1]+1;
+  const desired=w>=h?1.35*w/1280:w/384,z=Math.max(w/1660,h/932,Math.min(desired,(bottom-top)/(groupBottom-groupTop)));
+  let left=500-w/(2*z),up=444-(top+bottom)/(2*z);left=Math.max(2,Math.min(1662-w/z,left));up=Math.min(up,groupTop-top/z);up=Math.max(up,groupBottom-bottom/z);up=Math.max(2,Math.min(934-h/z,up));
+  if(entry)up=Math.max(2,up-g.camera.actionPan.riseWorld);
+  return{x:left+w/(2*z),y:up+h/(2*z),z};
  }
  inherited(){const proxy={scene:this,landscapeFrame:VeryLargePuppy.prototype.landscapeFrame};
   if(this.scale.width<this.scale.height)return VeryLargePuppy.prototype.fitFrame.call(proxy,old.cameras.finalX,646,true);
@@ -50,8 +52,9 @@ export class WhoAreYou extends Phaser.Scene{
   ctx.drawImage(aliceImage,ab.left-(walking?24*as:0),ab.top,aliceImage.width*as,aliceImage.height*as);
   // A single subdued puff, entirely driven by the reader clock and frozen on pause.
   if(s.beat===4&&s.elapsed<2200){const u=clamp(s.elapsed/2200);ctx.globalAlpha=Math.sin(Math.PI*u)*.22;ctx.fillStyle='#c7d6dc';ctx.fillRect(506,318-u*14,2,4);ctx.fillRect(508,314-u*14,4,2);ctx.globalAlpha=1;}
-  this.surface.refresh();let f=this.fit(s);if(s.beat===1)f=this.inherited();else if(s.beat===2){const a=this.inherited(),entry=this.fit(s,true),first=smooth(s.elapsed/1200);f=Object.fromEntries(['x','y','z'].map(k=>[k,mix(a[k],entry[k],first)]));if(s.elapsed>=4800){const u=smooth((s.elapsed-4800)/1200),end=this.fit(s);f=Object.fromEntries(['x','y','z'].map(k=>[k,mix(entry[k],end[k],u)]));}}
-  this.framing={...f,lock:P,fits:true};this.cameras.main.setViewport(0,0,this.scale.width,this.scale.height).setZoom(f.z).centerOn(f.x,f.y);this.viewport={x:0,y:0,width:this.scale.width,height:this.scale.height};this.current={...s,aliceBounds:ab,caterpillarBounds:{left:x,top:y,right:x+cw,bottom:y+ch},hookahBase:s.seated?[525.6,369.6]:null};this.cameraReframing=s.beat===2;
+  this.surface.refresh();let f=this.fit(s);
+  if(s.beat===2){const a=f,up=this.fit(s,true),pan=s.elapsed<1200?smooth(s.elapsed/1200):s.elapsed<4000?1:1-smooth((s.elapsed-4000)/2000);f={...a,y:mix(a.y,up.y,pan)};}
+  this.framing={...f,lock:P,fits:true};this.cameras.main.setViewport(0,0,this.scale.width,this.scale.height).setZoom(f.z).centerOn(f.x,f.y);this.viewport={x:0,y:0,width:this.scale.width,height:this.scale.height};this.current={...s,aliceBounds:ab,caterpillarBounds:{left:x,top:y,right:x+cw,bottom:y+ch},hookahBase:s.seated?[525.6,369.6]:null};this.cameraReframing=s.beat===2&&s.elapsed<6000;
  }
  update(_time,delta){const dt=Math.min(delta,100);this.reader.tick(dt);this.phase=this.reader.totalTime;if(this.reader.running&&!this.reader.paused&&!this.reader.buffering)this.onTick?.(dt);this.draw();}
  diagnostics(){const f=this.framing,w=this.scale.width,h=this.scale.height,s=this.current,project=(x,y)=>({x:(x-f.x)*f.z+w/2,y:(y-f.y)*f.z+h/2}),actor=(root,b,visible)=>({...project(...root),head:project(root[0],b.top),world:{x:root[0],y:root[1]},visible,bounds:{left:project(b.left,b.top).x,top:project(b.left,b.top).y,right:project(b.right,b.bottom).x,bottom:project(b.right,b.bottom).y}});
