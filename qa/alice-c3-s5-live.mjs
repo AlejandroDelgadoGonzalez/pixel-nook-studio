@@ -22,10 +22,11 @@ async function run(layout,mode,chronological=false){
     if(s.letter.instances!==1)liveLog.errors.push('Duplicate letter');
     if(s.walking&&(s.mirror||s.renderedPose!=='right'))liveLog.errors.push('Wrong walk');
     const canvas=sc.game.canvas.getBoundingClientRect(),top=(card.getBoundingClientRect().top-canvas.top)*sc.scale.height/canvas.height;
-    for(const b of s.inForest?[s.aliceBounds]:[s.aliceBounds,s.frogArt.bounds,s.letter.bounds,...(s.fishArt.visible?[s.fishArt.visibleBounds]:[])]){
+    for(const b of s.inForest?[s.aliceBounds]:[...(s.aliceOpacity>0?[s.aliceBounds]:[]),...(s.beat!==1?[s.frogArt.bounds]:[]),s.letter.bounds,...(s.fishArt.visible&&s.beat!==9?[s.fishArt.visibleBounds]:[])]){
      const l=(b.left-f.x)*f.z+sc.scale.width/2,r=(b.right-f.x)*f.z+sc.scale.width/2,t=(b.top-f.y)*f.z+sc.scale.height/2,bottom=(b.bottom-f.y)*f.z+sc.scale.height/2;
      if(l<-.5||r>sc.scale.width+.5||t<-.5||top-bottom<11.5)liveLog.errors.push('Clipped silhouette '+st.id);
     }
+    if(s.beat===9){if(s.fishMask||!s.fishMirror||s.fish[1]!==650)liveLog.errors.push('Wrong exit terrain/facing');if(s.fishArt.visible){const b=s.fishArt.visibleBounds;if((b.right-f.x)*f.z+sc.scale.width/2>sc.scale.width+.5||(b.top-f.y)*f.z+sc.scale.height/2<-.5)liveLog.errors.push('Fish clipped beyond left exit');}}
    }
    liveLog.samples.push(row);
   },100);

@@ -16,7 +16,9 @@ try{
     for(const t of [...Array.from({length:Math.ceil(duration/100)},(_,i)=>i*100),duration-.01]){
      const s=sample(st.id,t),w=qaScene.scale.width,h=qaScene.scale.height,card=document.querySelector('#dialogue'),button=document.querySelector('#text-button'),canvas=qaScene.game.canvas.getBoundingClientRect(),top=(card.getBoundingClientRect().top-canvas.top)*h/canvas.height,shown=getComputedStyle(card).opacity==='1',spoken=st.type==='text';
      if(shown!==spoken||shown&&(button.disabled||getComputedStyle(button).cursor!=='pointer'||e.revealed!==st.text.length||qaScene.cameraReframing))throw Error('Ready-complete blocked '+st.id);
-     const frameKey=JSON.stringify(s.frames.house);if(held&&held!==frameKey)throw Error('House camera moved');held=frameKey;
+     const frameKey=JSON.stringify(s.frames.house);if(s.beat!==1&&held&&held!==frameKey)throw Error('House camera moved during conversation');held=frameKey;
+     if(s.beat===1){const u=Math.max(0,Math.min(1,(t-3000)/3700)),ease=x=>x*x*(3-2*x);if(Math.abs(s.houseAlice[0]-(620+170*u))>1e-7||s.houseAlice[1]!==660||Math.abs(s.houseFocus-(770+90*ease(u)))>1e-7)throw Error('Arrival route/pan');const a=Math.max(0,Math.min(1,(t-3000)/2000));if(Math.abs(s.aliceOpacity-ease(a))>1e-7)throw Error('Arrival opacity');}
+     if(s.beat===9){const edge=s.frames.house.x-w/2/s.frames.house.z,u=Math.max(0,Math.min(1,(edge+54-s.fish[0])/96));if(s.fishMask||!s.fishMirror||s.fish[1]!==650||Math.abs(s.fish[0]-(900-680*t/5500))>1e-6||Math.abs(s.fishOpacity-(1-u*u*(3-2*u)))>1e-7)throw Error('Dirt exit/fade/facing');if(t>5499&&(s.fishArt.visible||s.fishArt.bounds.right>=edge))throw Error('Fish not fully outside frame');}
      if(s.frames.house.z!==oldFrame.z||s.frames.forest.z!==oldFrame.z)throw Error('Zoom changed');
      if(s.scale!==.46||s.A!==.84||s.B!==.78||!s.pockets||s.fragments.length||s.hookahInstances)throw Error('Lost inherited inventory');
      if(Math.abs(s.uniformScale.x-s.uniformScale.y)>1e-7||!s.fullSpriteOnly)throw Error('Nonuniform/body parts');
@@ -25,10 +27,11 @@ try{
      if(s.letter.instances!==1||s.letter.owner!==(s.beat<3||s.beat===3&&t<1500?'fish-footman':'frog-footman'))throw Error('Wrong/duplicate invitation');
      const owner=s.letter.owner==='fish-footman'?s.fishArt:s.frogArt,offset=s.letter.owner==='fish-footman'?18:-18;
      if(Math.hypot(s.letter.center[0]-owner.hand[0]-offset,s.letter.center[1]-owner.hand[1])>1e-8)throw Error('Floating letter');
-     if(s.beat>=10&&s.fishArt.visible)throw Error('Fish not hidden by hedge');
+     if(s.beat>=10&&s.fishArt.visible)throw Error('Fish residual pixels after dirt exit');
      if(s.fishArt.walking&&(!s.fishMirror||s.fishPose!=='idle-right'))throw Error('Fish moonwalk/run');
      if(s.walking&&(s.renderedPose!=='right'||s.mirror))throw Error('Alice moonwalk/run');
-     const layers=[];if(s.oldOpacity>0)layers.push({f:s.frames.forest,boxes:[s.oldAliceArt.bounds]});if(s.newOpacity>0)layers.push({f:s.frames.house,boxes:[s.houseAliceArt.bounds,s.frogArt.bounds,s.letter.bounds,...(s.fishArt.visible?[s.fishArt.visibleBounds]:[])]});
+     const layers=[];if(s.oldOpacity>0)layers.push({f:s.frames.forest,boxes:[s.oldAliceArt.bounds]});if(s.newOpacity>0)layers.push({f:s.frames.house,boxes:[...(s.aliceOpacity>0?[s.houseAliceArt.bounds]:[]),...(s.beat!==1?[s.frogArt.bounds]:[]),s.letter.bounds,...(s.fishArt.visible&&s.beat!==9?[s.fishArt.visibleBounds]:[])]});
+     if(s.beat===1){const f=s.frames.house,b=s.frogArt.bounds;if((b.left-f.x)*f.z+w/2<0)throw Error('Frog introduced from wrong edge');}if(s.beat===9&&s.fishArt.visible){const f=s.frames.house,b=s.fishArt.visibleBounds;if((b.right-f.x)*f.z+w/2>w|| (b.top-f.y)*f.z+h/2<0||top-((b.bottom-f.y)*f.z+h/2)<11.3)throw Error('Fish exit clips wrong edge');}
      for(const{f,boxes}of layers){if(f.x-w/2/f.z<0||f.x+w/2/f.z>1664.01||f.y-h/2/f.z<0||f.y+h/2/f.z>936.01)throw Error('Background uncovered');for(const b of boxes){const l=(b.left-f.x)*f.z+w/2,r=(b.right-f.x)*f.z+w/2,head=(b.top-f.y)*f.z+h/2,bottom=(b.bottom-f.y)*f.z+h/2;minGap=Math.min(minGap,top-bottom);minSide=Math.min(minSide,l,w-r);minTop=Math.min(minTop,head);if(l<-.5||r>w+.5||head<-.5||bottom>h+.5||top-bottom<11.3)throw Error('Clipped '+st.id+' '+t+' '+JSON.stringify({l,r,head,bottom,top,w,h}));}}
      e.paused=false;const before=e.index,advanced=e.advance(performance.now()+100000);e.paused=true;if(spoken?(!advanced||e.index!==before+1):advanced)throw Error('Wrong tap gating');count++;
     }
@@ -42,7 +45,7 @@ try{
    sample('alice-c3-branches-16');const seam=qaScene.surface.context.getImageData(0,0,1664,936).data;if(prior.some((x,i)=>x!==seam[i]))throw Error('Previous scene cache corrupted');
    return{count,minGap,minSide,minTop,initial,end,stages,openingExactPixelParity:true,letterContactExact:true};
   });report.cases.push({layout,mode,...row});
-  for(const [beat,t,label]of [[1,2100,'dissolve'],[3,1500,'handoff'],[9,5499,'hedge'],[16,0,'threshold']]){await page.evaluate(([b,t])=>{const e=qaScene.reader;e.start('alice-c3-door-'+String(b).padStart(2,'0'));e.paused=false;e.tick(t);e.paused=true;e.onChange('back');qaScene.draw();qaScene.game.step(performance.now(),0);},[beat,t]);await page.screenshot({path:`${out}/${layout.name}-${mode}-${label}.jpg`,type:'jpeg',quality:88});}
+  for(const [beat,t,label]of [[1,2100,'dissolve'],[1,4000,'arrival-fading'],[1,5500,'arrival-opaque'],[2,0,'conversation'],[3,1500,'handoff'],[9,3000,'road-exit'],[9,5499,'outside-frame'],[16,0,'threshold']]){await page.evaluate(([b,t])=>{const e=qaScene.reader;e.start('alice-c3-door-'+String(b).padStart(2,'0'));e.paused=false;e.tick(t);e.paused=true;e.onChange('back');qaScene.draw();qaScene.game.step(performance.now(),0);},[beat,t]);await page.screenshot({path:`${out}/${layout.name}-${mode}-${label}.jpg`,type:'jpeg',quality:88});}
   console.log('PASS S5',layout.name,mode,row.count);await fs.writeFile(out+'/report.json',JSON.stringify(report,null,2));
  }
  await context.close();}

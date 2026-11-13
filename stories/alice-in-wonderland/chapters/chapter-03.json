@@ -1022,7 +1022,7 @@
             "hold": false,
             "preventDissolve": true
           },
-          "duration": 4500.0,
+          "duration": 6700,
           "caption": "clear",
           "effects": {
             "mushroomTrial": {
@@ -1242,14 +1242,16 @@
         "endAtLastBeat": true
       },
       "durationReview": {
-        "phase": "initial-creation",
+        "phase": "revision",
         "approvedSeconds": 72.2,
         "approvedBeats": 16,
         "endingOnTextApproved": true,
         "authorization": {
           "date": "2026-11-13",
-          "reason": "Alejandro approved100% Gates1/2A and authorized production in this thread"
-        }
+          "reason": "User requested gradual walking arrival/pan and natural dirt-road exit. Only Beat01 grows2200ms; all dialogue, pauses, other beat durations and Fish5500ms retained."
+        },
+        "preserveTextAndPauses": true,
+        "automaticSeconds": 74.4
       }
     }
   ],

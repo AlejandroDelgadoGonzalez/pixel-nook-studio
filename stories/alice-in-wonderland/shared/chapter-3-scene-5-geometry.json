@@ -21,7 +21,7 @@
       "B": "pocket0.78"
     },
     "houseAlice": [
-      720,
+      620,
       660
     ],
     "fish": [
@@ -72,9 +72,9 @@
       950.006469115192,
       607.0974540901502
     ],
-    "fishHidden": [
-      650,
-      610
+    "fishExit": [
+      220,
+      650
     ]
   },
   "camera": {
@@ -92,8 +92,21 @@
     ],
     "forestPanMs": 1200,
     "wholeShotDissolveMs": 1800,
-    "houseFixed": true,
-    "housePan": null,
+    "houseFixed": "After the hidden-card arrival pan; every spoken beat held.",
+    "housePan": {
+      "beat": 1,
+      "startMs": 3000,
+      "durationMs": 3700,
+      "from": [
+        770,
+        550
+      ],
+      "to": [
+        860,
+        550
+      ],
+      "zoom": "exactly inherited"
+    },
     "houseZoom": "Exactly inherited per-layout zoom,1.35 at1280x720. Same zoom in both places; no zoom tween.",
     "readingShot": "Door/porch medium view; complete actors/letter and entire open doorway. The roof and far-right window can extend outside the close crop; full architecture plate remains included."
   },
@@ -119,7 +132,7 @@
       "name": "House arrival",
       "waypoints": [
         [
-          720,
+          620,
           660
         ],
         [
@@ -128,28 +141,31 @@
         ]
       ],
       "startMs": 3000,
-      "durationMs": 1500,
+      "durationMs": 3700,
       "beat": 1,
       "mode": "right",
-      "speedWorldPerSecond": 46.6666666667
+      "speedWorldPerSecond": 45.945945945945944,
+      "fadeInMs": 2000
     },
     {
-      "name": "Fish departs behind hedge",
+      "name": "Fish exits left along clear dirt",
       "waypoints": [
         [
           900,
           650
         ],
         [
-          650,
-          610
+          220,
+          650
         ]
       ],
       "durationMs": 5500,
       "beat": 9,
       "mirror": true,
       "mode": "right",
-      "speedWorldPerSecond": 46.03268691335332
+      "speedWorldPerSecond": 123.63636363636364,
+      "occluder": null,
+      "fade": "Last96worldpx across actual left viewport edge; no foliage mask"
     },
     {
       "name": "Alice to threshold",
@@ -169,51 +185,8 @@
       "speedWorldPerSecond": 49.55356249106169
     }
   ],
-  "surface": "Uninterrupted dirt below y640. Alice arrives on the lower lane y660; servants stand on the upper dirt/porch lane around y650. Fish leaves diagonally toward the existing path behind the foreground hedge. Alice stops18px outside the inner floor: she has NOT entered the kitchen yet.",
-  "occluders": [
-    {
-      "id": "left-hedge",
-      "polygon": [
-        [
-          408,
-          596
-        ],
-        [
-          440,
-          502
-        ],
-        [
-          520,
-          466
-        ],
-        [
-          600,
-          466
-        ],
-        [
-          676,
-          504
-        ],
-        [
-          704,
-          544
-        ],
-        [
-          704,
-          634
-        ],
-        [
-          450,
-          642
-        ]
-      ],
-      "operation": "destination-out on Fish layer ONLY during his departure; original foliage, never a panorama patch or alpha fade",
-      "endsFullyHidden": [
-        650,
-        610
-      ]
-    }
-  ],
+  "surface": "Alice and Fish travel on the continuous clear dirt lane y650–660, in front of the hedge. Fish keepsy650 and exits the viewport; foliage never erases him. Alice ends her arrival at790,660.",
+  "occluders": [],
   "alice": {
     "scale": 0.46,
     "gain": 1.2,
@@ -2052,5 +2025,42 @@
         }
       ]
     }
+  },
+  "arrival": {
+    "startMs": 3000,
+    "durationMs": 3700,
+    "fadeInMs": 2000,
+    "from": [
+      620,
+      660
+    ],
+    "to": [
+      790,
+      660
+    ],
+    "cameraFromX": 770,
+    "cameraToX": 860
+  },
+  "departure": {
+    "durationMs": 5500,
+    "from": [
+      900,
+      650
+    ],
+    "to": [
+      220,
+      650
+    ],
+    "fadeStartInsideWorldPx": 54,
+    "fadeEndOutsideWorldPx": 42,
+    "occluder": null
+  },
+  "revision": {
+    "authorization": "Alejandro requested visible gradual arrival with camera follow and an unmasked dirt-road departure.",
+    "date": "2026-11-13",
+    "preserveTextAndOtherBeats": true,
+    "openingMs": 6700,
+    "newSceneMs": 74400,
+    "scene6Started": false
   }
 }
