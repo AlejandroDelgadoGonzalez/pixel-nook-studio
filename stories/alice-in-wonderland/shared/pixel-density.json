@@ -80415,6 +80415,16 @@
         936
       ],
       "designReferenceSourceHeight": 720
+    },
+    {
+      "path": "stories/alice-in-wonderland/assets/environments/duchess-house-c3-s5.png",
+      "kind": "panorama",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "designReferenceSourceHeight": 724,
+      "blockSourcePx": 2
     }
   ],
   "sourcePolicy": "One canonical master per actor. Native pixel contracts and padded storage cells; content trims preserve measured world geometry."

@@ -62,7 +62,8 @@
         "Who Are You?",
         "One Side, the Other",
         "A Little at a Time",
-        "Among the Branches"
+        "Among the Branches",
+        "A Door in the Wood"
       ],
       "linePrefix": "alice-c3-",
       "source": "/stories/alice-in-wonderland/chapters/chapter-03.json"
@@ -92,6 +93,10 @@
     "alice-among-the-branches": {
       "module": "/stories/alice-in-wonderland/renderers/among-the-branches.js",
       "export": "AmongTheBranches"
+    },
+    "alice-a-door-in-the-wood": {
+      "module": "/stories/alice-in-wonderland/renderers/a-door-in-the-wood.js",
+      "export": "ADoorInTheWood"
     }
   },
   "fileAudio": "/stories/alice-in-wonderland/shared/chapter-1-scene-1-audio.json",
@@ -199,6 +204,46 @@
           938
         ]
       }
+    },
+    {
+      "path": "stories/alice-in-wonderland/assets/environments/duchess-house-c3-s5.png",
+      "reference_scene_master": "concept_art/scenes/01-forest-cottage-river.png",
+      "reference_scene_master_sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "blockSourcePx": 2,
+      "overscanFactor": 1.3,
+      "space": "exterior",
+      "generation": {
+        "tool": "image_gen",
+        "primaryStyleReference": "concept_art/scenes/01-forest-cottage-river.png",
+        "referenced_image_paths": [
+          "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/concept_art/scenes/01-forest-cottage-river.png",
+          "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/concept_art/scenes/11-moonlit-botanical-garden.png"
+        ]
+      },
+      "processing": {
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "nativeCrop": [
+          4,
+          2,
+          1668,
+          938
+        ],
+        "resampling": false,
+        "nativeCategoricalGrid": 2
+      },
+      "baseFrame": [
+        192,
+        108,
+        1472,
+        828
+      ]
     }
   ],
   "title": "Alice in Wonderland",

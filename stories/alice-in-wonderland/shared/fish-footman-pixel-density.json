@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "path": "stories/alice-in-wonderland/shared/fish-footman-master-atlas.png",
+      "kind": "atlas",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "cells": [
+        {
+          "id": "idle-right",
+          "sourceBoundsExclusive": [
+            130,
+            58,
+            381,
+            453
+          ],
+          "cellBoundsExclusive": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "logicalCellPx": 8,
+          "normalizedWorldSize": [
+            62.75,
+            98.75
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                170,
+                109,
+                178,
+                125
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          }
+        },
+        {
+          "id": "offer-right",
+          "sourceBoundsExclusive": [
+            619,
+            58,
+            917,
+            453
+          ],
+          "cellBoundsExclusive": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "logicalCellPx": 8,
+          "normalizedWorldSize": [
+            74.5,
+            98.75
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                171,
+                109,
+                179,
+                125
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          }
+        },
+        {
+          "id": "back",
+          "sourceBoundsExclusive": [
+            128,
+            570,
+            384,
+            965
+          ],
+          "cellBoundsExclusive": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "logicalCellPx": 8,
+          "normalizedWorldSize": [
+            64.0,
+            98.75
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [],
+            "expectedEyeWidths": [],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          }
+        },
+        {
+          "id": "bow-right",
+          "sourceBoundsExclusive": [
+            629,
+            581,
+            907,
+            954
+          ],
+          "cellBoundsExclusive": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "logicalCellPx": 8,
+          "normalizedWorldSize": [
+            69.5,
+            93.25
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                196,
+                135,
+                204,
+                151
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          }
+        }
+      ]
+    }
+  ],
+  "referenceStandingHeightWorld": 180
+}

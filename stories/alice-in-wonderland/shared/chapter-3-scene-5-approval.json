@@ -1,0 +1,15 @@
+{
+  "gates1And2A": "Approved100% by Alejandro in this thread",
+  "durationSeconds": 72.2,
+  "beats": 16,
+  "reviewSha256": "743c9f6e7f7984fe0044eb5f9ecc35f590806ab1b1928694d9e5cb74f82a5203",
+  "audio": "Explicitly paused",
+  "scene6Started": false,
+  "ownershipState": {
+    "field": "doorVisit.invitationTransfer",
+    "fishBelow": 0.5,
+    "frogFrom": 0.5,
+    "midpointMs": 1500,
+    "engineTimeline": "Declared numeric0to1 over3000ms; engine smoothstep crosses0.5 at1500ms; renderer never mutates the model."
+  }
+}

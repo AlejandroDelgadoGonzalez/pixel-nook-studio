@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "referenceStandingHeightWorld": 180,
+  "assets": [
+    {
+      "path": "stories/alice-in-wonderland/shared/invitation-master-atlas.png",
+      "kind": "atlas",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "cells": [
+        {
+          "id": "invitation",
+          "sourceBoundsExclusive": [
+            317,
+            236,
+            1219,
+            787
+          ],
+          "cellBoundsExclusive": [
+            0,
+            0,
+            1536,
+            1024
+          ],
+          "logicalCellPx": 16,
+          "normalizedWorldSize": [
+            36,
+            21.991130820399114
+          ],
+          "nativePixelContract": {
+            "spriteType": "prop",
+            "strictHuman": false,
+            "anatomyException": "Inanimate envelope; no eyes, hair, limbs or neck.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              249,
+              232,
+              192
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                237,
+                205,
+                160
+              ],
+              [
+                216,
+                171,
+                110
+              ],
+              [
+                103,
+                34,
+                29
+              ],
+              [
+                177,
+                69,
+                48
+              ]
+            ],
+            "eyes": [],
+            "logicalCellPx": 16,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

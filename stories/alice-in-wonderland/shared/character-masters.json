@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Ten appeared characters; Pigeon C3-S4 approved",
+  "status": "13 registered character masters and the invitation prop; C3-S5 approved",
   "characters": {
     "alice": {
       "metadata": "stories/alice-in-wonderland/shared/alice-master-atlas.json",
@@ -146,6 +146,30 @@
       "proportionChecks": [],
       "visualReview": "Alejandro approved100% C3-S4 Gates1/2A in this thread,2026-11-13",
       "directStyleMaster": "concept_art/characters/odyssey-core.png"
+    },
+    "fish-footman": {
+      "metadata": "stories/alice-in-wonderland/shared/fish-footman-master-atlas.json",
+      "canonicalSource": "stories/alice-in-wonderland/sources/fish-footman-approved-source.png",
+      "canonicalSha256": "dc29335366094b26b06770018e6df8f236a4ed5d65d3c6f41602c6c67c5829bd",
+      "masterSha256": "dc29335366094b26b06770018e6df8f236a4ed5d65d3c6f41602c6c67c5829bd",
+      "proportionChecks": [],
+      "visualReview": "Alejandro approved100% Gates1/2A C3-S5 in this thread"
+    },
+    "frog-footman": {
+      "metadata": "stories/alice-in-wonderland/shared/frog-footman-master-atlas.json",
+      "canonicalSource": "stories/alice-in-wonderland/sources/frog-footman-approved-source.png",
+      "canonicalSha256": "16fbbb86a29593ecd627039af192189028063fd76aba23a14c6a143a2c929248",
+      "masterSha256": "16fbbb86a29593ecd627039af192189028063fd76aba23a14c6a143a2c929248",
+      "proportionChecks": [],
+      "visualReview": "Alejandro approved100% Gates1/2A C3-S5 in this thread"
+    },
+    "invitation": {
+      "metadata": "stories/alice-in-wonderland/shared/invitation-master-atlas.json",
+      "canonicalSource": "stories/alice-in-wonderland/sources/invitation-approved-source.png",
+      "canonicalSha256": "d3e80650373f6d02707fc00e953399dc10d2fc16e7548ae7aa66fb3839627006",
+      "masterSha256": "d3e80650373f6d02707fc00e953399dc10d2fc16e7548ae7aa66fb3839627006",
+      "proportionChecks": [],
+      "visualReview": "Alejandro approved100% Gates1/2A C3-S5 in this thread"
     }
   },
   "policy": "Existing poses must reuse master cells. Extraordinary generation records direct original source. No successive scene references.",

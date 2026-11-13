@@ -1,0 +1,2056 @@
+{
+  "scene": "C3-S5",
+  "title": "A Door in the Wood",
+  "status": "APPROVED100% by Alejandro; Gates3/4 authorized",
+  "worldSize": [
+    1664,
+    936
+  ],
+  "spawns": {
+    "inheritedAlice": {
+      "root": [
+        640,
+        615
+      ],
+      "pose": "right",
+      "mirror": false,
+      "scale": 0.46,
+      "gain": 1.2,
+      "hands": "empty",
+      "A": "pocket0.84",
+      "B": "pocket0.78"
+    },
+    "houseAlice": [
+      720,
+      660
+    ],
+    "fish": [
+      900,
+      650
+    ],
+    "frog": [
+      1000.0372662166412,
+      648.8830066263821
+    ],
+    "hiddenPreviousActors": {
+      "pigeon": [
+        270,
+        330
+      ],
+      "caterpillarAndHookah": [
+        470,
+        430
+      ]
+    }
+  },
+  "anchors": {
+    "aliceObserver": [
+      790,
+      660
+    ],
+    "aliceThreshold": [
+      846,
+      640
+    ],
+    "fishRoot": [
+      900,
+      650
+    ],
+    "frogRoot": [
+      1000.0372662166412,
+      648.8830066263821
+    ],
+    "fishOfferPalm": [
+      932.006469115192,
+      607.0974540901502
+    ],
+    "frogOfferPalm": [
+      968.006469115192,
+      607.0974540901502
+    ],
+    "handoffLetterCenter": [
+      950.006469115192,
+      607.0974540901502
+    ],
+    "fishHidden": [
+      650,
+      610
+    ]
+  },
+  "camera": {
+    "inheritedFocus": [
+      500,
+      444
+    ],
+    "forestDepartureFocus": [
+      556,
+      444
+    ],
+    "houseCommonFocus": [
+      860,
+      550
+    ],
+    "forestPanMs": 1200,
+    "wholeShotDissolveMs": 1800,
+    "houseFixed": true,
+    "housePan": null,
+    "houseZoom": "Exactly inherited per-layout zoom,1.35 at1280x720. Same zoom in both places; no zoom tween.",
+    "readingShot": "Door/porch medium view; complete actors/letter and entire open doorway. The roof and far-right window can extend outside the close crop; full architecture plate remains included."
+  },
+  "walkPaths": [
+    {
+      "name": "Forest departure",
+      "waypoints": [
+        [
+          640,
+          615
+        ],
+        [
+          696,
+          615
+        ]
+      ],
+      "durationMs": 1200,
+      "beat": 1,
+      "mode": "right",
+      "speedWorldPerSecond": 46.6666666667
+    },
+    {
+      "name": "House arrival",
+      "waypoints": [
+        [
+          720,
+          660
+        ],
+        [
+          790,
+          660
+        ]
+      ],
+      "startMs": 3000,
+      "durationMs": 1500,
+      "beat": 1,
+      "mode": "right",
+      "speedWorldPerSecond": 46.6666666667
+    },
+    {
+      "name": "Fish departs behind hedge",
+      "waypoints": [
+        [
+          900,
+          650
+        ],
+        [
+          650,
+          610
+        ]
+      ],
+      "durationMs": 5500,
+      "beat": 9,
+      "mirror": true,
+      "mode": "right",
+      "speedWorldPerSecond": 46.03268691335332
+    },
+    {
+      "name": "Alice to threshold",
+      "waypoints": [
+        [
+          790,
+          660
+        ],
+        [
+          846,
+          640
+        ]
+      ],
+      "durationMs": 1200,
+      "beat": 15,
+      "mode": "right, then intact back at stop",
+      "speedWorldPerSecond": 49.55356249106169
+    }
+  ],
+  "surface": "Uninterrupted dirt below y640. Alice arrives on the lower lane y660; servants stand on the upper dirt/porch lane around y650. Fish leaves diagonally toward the existing path behind the foreground hedge. Alice stops18px outside the inner floor: she has NOT entered the kitchen yet.",
+  "occluders": [
+    {
+      "id": "left-hedge",
+      "polygon": [
+        [
+          408,
+          596
+        ],
+        [
+          440,
+          502
+        ],
+        [
+          520,
+          466
+        ],
+        [
+          600,
+          466
+        ],
+        [
+          676,
+          504
+        ],
+        [
+          704,
+          544
+        ],
+        [
+          704,
+          634
+        ],
+        [
+          450,
+          642
+        ]
+      ],
+      "operation": "destination-out on Fish layer ONLY during his departure; original foliage, never a panorama patch or alpha fade",
+      "endsFullyHidden": [
+        650,
+        610
+      ]
+    }
+  ],
+  "alice": {
+    "scale": 0.46,
+    "gain": 1.2,
+    "poses": [
+      "right",
+      "back"
+    ],
+    "walkHelper": "createPixelWalkFrames, upright right/back at130ms; no run, no custom limb rig",
+    "fragmentA": 0.84,
+    "fragmentB": 0.78,
+    "bothFragments": "remain in pocket for all beats"
+  },
+  "propOwnership": {
+    "oneInvitation": true,
+    "beforeBeat3": "Fish right/offer palm, center+18worldpx to his right",
+    "transferAtMs": 1500,
+    "transferBeat": 3,
+    "contact": "Fish palm touches left edge, Frog mirrored palm touches right edge,36worldpx apart; same letter center for either owner",
+    "after": "Frog palm, center18worldpx to his left; full idle/sit pose swaps with fixed root",
+    "never": "No duplicate ground letter, no floating prop or arm articulation"
+  },
+  "architecture": {
+    "axis": "Exterior camera faces the front entrance wall. Future interior camera facing THIS SAME wall reverses sides. No interior generated in S5.",
+    "openDoorOuterArch": [
+      770,
+      402,
+      936,
+      624
+    ],
+    "opening": [
+      790,
+      446,
+      906,
+      620
+    ],
+    "woodLeaf": [
+      708,
+      428,
+      790,
+      626
+    ],
+    "hinge": "Exterior left, black horizontal straps and lower circular knocker; front leaf opens outward to exterior-left",
+    "window": [
+      992,
+      414,
+      1152,
+      562
+    ],
+    "windowIdentity": "Brown shutters, amber drapes and central crossbars; right of exterior door, left in future reverse interior view",
+    "gableWindow": [
+      916,
+      270,
+      996,
+      342
+    ],
+    "chimney": [
+      1124,
+      186,
+      1232,
+      598
+    ],
+    "futureInterior": "Use08-rustic-cottage-interior.png directly as primary style and THIS exterior as secondary architectural reference; doorway right/window left; separate continuous chimney conduct. Both side walls, ceiling and indoor floor. Gate2A for S6 remains unstarted."
+  },
+  "characters": {
+    "fish-footman": {
+      "schemaVersion": 2,
+      "character": "fish-footman",
+      "asset": "/stories/alice-in-wonderland/shared/fish-footman-master-atlas.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "logicalCellPx": 8,
+      "visualApproval": "Alejandro approved100% Gates1/2A C3-S5 in this thread",
+      "nativeProof": [
+        {
+          "pose": "idle-right",
+          "sourceRawBounds": [
+            93,
+            22,
+            344,
+            417
+          ],
+          "completeAlphaSha256": "66b0dfd001103e6b482229bc89899758cced8fffb23a6a8e981222ff2c6f9871",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            251,
+            201
+          ]
+        },
+        {
+          "pose": "offer-right",
+          "sourceRawBounds": [
+            536,
+            22,
+            834,
+            417
+          ],
+          "completeAlphaSha256": "44cd758eef312876cff000ed609021a747c615b9536cb0daf0ce6f8e93e6301c",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            298,
+            201
+          ]
+        },
+        {
+          "pose": "back",
+          "sourceRawBounds": [
+            981,
+            23,
+            1237,
+            418
+          ],
+          "completeAlphaSha256": "be156e6d74fa99cbcf4651c5005c29923f355a14c28096ba1c0e696141f428ae",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            256,
+            201
+          ]
+        },
+        {
+          "pose": "bow-right",
+          "sourceRawBounds": [
+            1415,
+            45,
+            1693,
+            418
+          ],
+          "completeAlphaSha256": "4f2856cc2893046fc16b126247d82625cb6bffdc91533c25bb36bd448273358f",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            278,
+            190
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "idle-right",
+          "bounds": [
+            130,
+            58,
+            381,
+            453
+          ],
+          "storage": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "nativeSize": [
+            251,
+            395
+          ],
+          "rootNative": [
+            135.5,
+            395.0
+          ],
+          "handNative": [
+            204.7556561085973,
+            295.8325791855204
+          ],
+          "worldScale": 0.25,
+          "eye": [
+            [
+              170,
+              109,
+              178,
+              125
+            ]
+          ],
+          "pose": "idle-right",
+          "asset": "/stories/alice-in-wonderland/shared/fish-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            130,
+            58,
+            381,
+            453
+          ],
+          "cellBoundsExclusive": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                170,
+                109,
+                178,
+                125
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/fish-footman-approved-source.png",
+            "originalBounds": [
+              130,
+              58,
+              381,
+              453
+            ],
+            "originalSourceSha256": "dc29335366094b26b06770018e6df8f236a4ed5d65d3c6f41602c6c67c5829bd",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        },
+        {
+          "id": "offer-right",
+          "bounds": [
+            619,
+            58,
+            917,
+            453
+          ],
+          "storage": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "nativeSize": [
+            298,
+            395
+          ],
+          "rootNative": [
+            133.5,
+            395.0
+          ],
+          "handNative": [
+            261.52587646076796,
+            223.389816360601
+          ],
+          "worldScale": 0.25,
+          "eye": [
+            [
+              171,
+              109,
+              179,
+              125
+            ]
+          ],
+          "pose": "offer-right",
+          "asset": "/stories/alice-in-wonderland/shared/fish-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            619,
+            58,
+            917,
+            453
+          ],
+          "cellBoundsExclusive": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                171,
+                109,
+                179,
+                125
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/fish-footman-approved-source.png",
+            "originalBounds": [
+              619,
+              58,
+              917,
+              453
+            ],
+            "originalSourceSha256": "dc29335366094b26b06770018e6df8f236a4ed5d65d3c6f41602c6c67c5829bd",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        },
+        {
+          "id": "back",
+          "bounds": [
+            128,
+            570,
+            384,
+            965
+          ],
+          "storage": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "nativeSize": [
+            256,
+            395
+          ],
+          "rootNative": [
+            129.0,
+            395.0
+          ],
+          "handNative": [
+            208.27478753541075,
+            284.37677053824365
+          ],
+          "worldScale": 0.25,
+          "eye": [],
+          "pose": "back",
+          "asset": "/stories/alice-in-wonderland/shared/fish-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            128,
+            570,
+            384,
+            965
+          ],
+          "cellBoundsExclusive": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [],
+            "expectedEyeWidths": [],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/fish-footman-approved-source.png",
+            "originalBounds": [
+              128,
+              570,
+              384,
+              965
+            ],
+            "originalSourceSha256": "dc29335366094b26b06770018e6df8f236a4ed5d65d3c6f41602c6c67c5829bd",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        },
+        {
+          "id": "bow-right",
+          "bounds": [
+            629,
+            581,
+            907,
+            954
+          ],
+          "storage": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "nativeSize": [
+            278,
+            373
+          ],
+          "rootNative": [
+            93.5,
+            373.0
+          ],
+          "handNative": [
+            93.5,
+            242.45000000000002
+          ],
+          "worldScale": 0.25,
+          "eye": [
+            [
+              196,
+              135,
+              204,
+              151
+            ]
+          ],
+          "pose": "bow-right",
+          "asset": "/stories/alice-in-wonderland/shared/fish-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            629,
+            581,
+            907,
+            954
+          ],
+          "cellBoundsExclusive": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                196,
+                135,
+                204,
+                151
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/fish-footman-approved-source.png",
+            "originalBounds": [
+              629,
+              581,
+              907,
+              954
+            ],
+            "originalSourceSha256": "dc29335366094b26b06770018e6df8f236a4ed5d65d3c6f41602c6c67c5829bd",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        }
+      ]
+    },
+    "frog-footman": {
+      "schemaVersion": 2,
+      "character": "frog-footman",
+      "asset": "/stories/alice-in-wonderland/shared/frog-footman-master-atlas.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "logicalCellPx": 8,
+      "visualApproval": "Alejandro approved100% Gates1/2A C3-S5 in this thread",
+      "nativeProof": [
+        {
+          "pose": "idle-right",
+          "sourceRawBounds": [
+            83,
+            468,
+            344,
+            860
+          ],
+          "completeAlphaSha256": "1c2cc5637dc3cb2050e06ca0fd0d1bc423bd1d490550090dafc3ed9d004ce4ba",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            261,
+            200
+          ]
+        },
+        {
+          "pose": "offer-right",
+          "sourceRawBounds": [
+            528,
+            468,
+            830,
+            860
+          ],
+          "completeAlphaSha256": "a9221deee321548d4038f55ef3606d9278fd19d60b68ac007de7603bdfcc67d1",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            302,
+            200
+          ]
+        },
+        {
+          "pose": "sit-right",
+          "sourceRawBounds": [
+            944,
+            524,
+            1211,
+            860
+          ],
+          "completeAlphaSha256": "11e84ea0ac647bfe97a89feb188fab0935b93107facd1ec05df15bbd170f269b",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            267,
+            171
+          ]
+        },
+        {
+          "pose": "back",
+          "sourceRawBounds": [
+            1424,
+            468,
+            1675,
+            860
+          ],
+          "completeAlphaSha256": "0855525114cd036e66dc68a77c1d4596ac58dd472d598393b5c3ad4414ddb304",
+          "shapeUnchanged": true,
+          "resampling": false,
+          "headRegionNative": [
+            0,
+            0,
+            251,
+            200
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "idle-right",
+          "bounds": [
+            125,
+            60,
+            386,
+            452
+          ],
+          "storage": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "nativeSize": [
+            261,
+            392
+          ],
+          "rootNative": [
+            144.0,
+            392.0
+          ],
+          "handNative": [
+            214.12473572938688,
+            295.31501057082454
+          ],
+          "worldScale": 0.25,
+          "eye": [
+            [
+              145,
+              93,
+              153,
+              109
+            ]
+          ],
+          "pose": "idle-right",
+          "asset": "/stories/alice-in-wonderland/shared/frog-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            125,
+            60,
+            386,
+            452
+          ],
+          "cellBoundsExclusive": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              158,
+              166,
+              72
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                145,
+                93,
+                153,
+                109
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/frog-footman-approved-source.png",
+            "originalBounds": [
+              125,
+              60,
+              386,
+              452
+            ],
+            "originalSourceSha256": "16fbbb86a29593ecd627039af192189028063fd76aba23a14c6a143a2c929248",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        },
+        {
+          "id": "offer-right",
+          "bounds": [
+            617,
+            60,
+            919,
+            452
+          ],
+          "storage": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "nativeSize": [
+            302,
+            392
+          ],
+          "rootNative": [
+            138.5,
+            392.0
+          ],
+          "handNative": [
+            266.6231884057971,
+            224.85778985507247
+          ],
+          "worldScale": 0.25,
+          "eye": [
+            [
+              144,
+              93,
+              152,
+              109
+            ]
+          ],
+          "pose": "offer-right",
+          "asset": "/stories/alice-in-wonderland/shared/frog-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            617,
+            60,
+            919,
+            452
+          ],
+          "cellBoundsExclusive": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              158,
+              166,
+              72
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                144,
+                93,
+                152,
+                109
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/frog-footman-approved-source.png",
+            "originalBounds": [
+              617,
+              60,
+              919,
+              452
+            ],
+            "originalSourceSha256": "16fbbb86a29593ecd627039af192189028063fd76aba23a14c6a143a2c929248",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        },
+        {
+          "id": "sit-right",
+          "bounds": [
+            122,
+            600,
+            389,
+            936
+          ],
+          "storage": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "nativeSize": [
+            267,
+            336
+          ],
+          "rootNative": [
+            147.5,
+            336.0
+          ],
+          "handNative": [
+            201.09907120743034,
+            264.2631578947368
+          ],
+          "worldScale": 0.25,
+          "eye": [
+            [
+              141,
+              91,
+              149,
+              107
+            ]
+          ],
+          "pose": "sit-right",
+          "asset": "/stories/alice-in-wonderland/shared/frog-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            122,
+            600,
+            389,
+            936
+          ],
+          "cellBoundsExclusive": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              158,
+              166,
+              72
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [
+              [
+                141,
+                91,
+                149,
+                107
+              ]
+            ],
+            "expectedEyeWidths": [
+              8
+            ],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/frog-footman-approved-source.png",
+            "originalBounds": [
+              122,
+              600,
+              389,
+              936
+            ],
+            "originalSourceSha256": "16fbbb86a29593ecd627039af192189028063fd76aba23a14c6a143a2c929248",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        },
+        {
+          "id": "back",
+          "bounds": [
+            642,
+            572,
+            893,
+            964
+          ],
+          "storage": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "nativeSize": [
+            251,
+            392
+          ],
+          "rootNative": [
+            126.0,
+            392.0
+          ],
+          "handNative": [
+            206.96984924623115,
+            287.5896147403685
+          ],
+          "worldScale": 0.25,
+          "eye": [],
+          "pose": "back",
+          "asset": "/stories/alice-in-wonderland/shared/frog-footman-master-atlas.png",
+          "sourceBoundsExclusive": [
+            642,
+            572,
+            893,
+            964
+          ],
+          "cellBoundsExclusive": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "nativePixelContract": {
+            "spriteType": "anthropomorphic-animal",
+            "strictHuman": false,
+            "anatomyException": "Fish/frog head; powdered cream wig and cravat cover the neck. No invented human hair/neck landmarks. Back eye occluded.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              158,
+              166,
+              72
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                220,
+                204,
+                177
+              ],
+              [
+                184,
+                163,
+                136
+              ],
+              [
+                242,
+                184,
+                69
+              ],
+              [
+                191,
+                131,
+                40
+              ],
+              [
+                57,
+                65,
+                95
+              ],
+              [
+                40,
+                45,
+                70
+              ],
+              [
+                145,
+                48,
+                52
+              ],
+              [
+                99,
+                35,
+                45
+              ],
+              [
+                158,
+                166,
+                72
+              ],
+              [
+                121,
+                133,
+                59
+              ],
+              [
+                73,
+                93,
+                54
+              ],
+              [
+                239,
+                216,
+                158
+              ]
+            ],
+            "eyes": [],
+            "expectedEyeWidths": [],
+            "logicalEyeWidth": 8,
+            "eyeMargin": 2,
+            "logicalCellPx": 8,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 4,
+            "canonicalEyeWorldWidth": 2
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/frog-footman-approved-source.png",
+            "originalBounds": [
+              642,
+              572,
+              893,
+              964
+            ],
+            "originalSourceSha256": "16fbbb86a29593ecd627039af192189028063fd76aba23a14c6a143a2c929248",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        }
+      ]
+    },
+    "invitation": {
+      "schemaVersion": 2,
+      "character": "invitation",
+      "asset": "/stories/alice-in-wonderland/shared/invitation-master-atlas.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "logicalCellPx": 16,
+      "visualApproval": "Alejandro approved100% Gates1/2A C3-S5 in this thread",
+      "nativeProof": {
+        "poses": [
+          {
+            "id": "invitation",
+            "bounds": [
+              317,
+              236,
+              1219,
+              787
+            ],
+            "nativeSize": [
+              902,
+              551
+            ],
+            "worldScale": 0.03991130820399113
+          }
+        ],
+        "rawBounds": [
+          176,
+          353,
+          1078,
+          904
+        ],
+        "rawAlphaSha256": "919068b0e0d6f2406c90504b24e6644b8bf40473d2cbf829657348b76d48045f",
+        "shapeUnchanged": true,
+        "resampling": false
+      },
+      "poses": [
+        {
+          "id": "invitation",
+          "bounds": [
+            317,
+            236,
+            1219,
+            787
+          ],
+          "nativeSize": [
+            902,
+            551
+          ],
+          "worldScale": 0.03991130820399113,
+          "pose": "invitation",
+          "asset": "/stories/alice-in-wonderland/shared/invitation-master-atlas.png",
+          "sourceBoundsExclusive": [
+            317,
+            236,
+            1219,
+            787
+          ],
+          "cellBoundsExclusive": [
+            0,
+            0,
+            1536,
+            1024
+          ],
+          "nativePixelContract": {
+            "spriteType": "prop",
+            "strictHuman": false,
+            "anatomyException": "Inanimate envelope; no eyes, hair, limbs or neck.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              249,
+              232,
+              192
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                249,
+                232,
+                192
+              ],
+              [
+                237,
+                205,
+                160
+              ],
+              [
+                216,
+                171,
+                110
+              ],
+              [
+                103,
+                34,
+                29
+              ],
+              [
+                177,
+                69,
+                48
+              ]
+            ],
+            "eyes": [],
+            "logicalCellPx": 16,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ]
+          },
+          "provenance": {
+            "originalAsset": "/stories/alice-in-wonderland/sources/invitation-approved-source.png",
+            "originalBounds": [
+              317,
+              236,
+              1219,
+              787
+            ],
+            "originalSourceSha256": "d3e80650373f6d02707fc00e953399dc10d2fc16e7548ae7aa66fb3839627006",
+            "reuse": "Approved complete native source cell",
+            "directMasterReference": "concept_art/characters/odyssey-core.png"
+          }
+        }
+      ]
+    }
+  }
+}

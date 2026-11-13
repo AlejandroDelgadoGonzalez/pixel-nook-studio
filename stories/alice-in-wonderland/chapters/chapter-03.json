@@ -31,17 +31,21 @@
   },
   "attribution": "Based on Alice’s Adventures in Wonderland by Lewis Carroll",
   "captionPresentation": "ready-complete",
-  "renderer": "alice-among-the-branches",
+  "renderer": "alice-a-door-in-the-wood",
   "intro": "Who Are You? — A meeting above the mushroom.",
-  "ending": "Alice leaves the clearing, keeping both mushroom pieces for the path ahead.",
-  "description": "Chapter3 Scenes1–4: identity, advice, careful tastes and a woodland encounter.",
+  "ending": "Alice decides to speak to the Duchess herself.",
+  "description": "Chapter3 Scenes1–5: identity, careful changes and a door in the wood.",
   "stageLabel": "Alice and the Caterpillar",
   "episodes": true,
   "assets": {
     "alice": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
     "caterpillar": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
     "forest": "/stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png",
-    "pigeon": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png"
+    "pigeon": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png",
+    "fish-footman": "/stories/alice-in-wonderland/shared/fish-footman-master-atlas.png",
+    "frog-footman": "/stories/alice-in-wonderland/shared/frog-footman-master-atlas.png",
+    "invitation": "/stories/alice-in-wonderland/shared/invitation-master-atlas.png",
+    "duchessHouse": "/stories/alice-in-wonderland/assets/environments/duchess-house-c3-s5.png"
   },
   "characters": {
     "alice": {
@@ -55,6 +59,14 @@
     "pigeon": {
       "name": "Pigeon",
       "role": "A watchful woodland neighbour"
+    },
+    "fish-footman": {
+      "name": "Fish-Footman",
+      "role": "Royal messenger"
+    },
+    "frog-footman": {
+      "name": "Frog-Footman",
+      "role": "The Duchess's porter"
     }
   },
   "initialState": {
@@ -74,6 +86,13 @@
         "location": "stem",
         "remaining": 1
       }
+    },
+    "doorVisit": {
+      "place": "forest",
+      "fishVisible": false,
+      "frogPose": "idle-right",
+      "alicePose": "right",
+      "invitationTransfer": 0
     }
   },
   "scenes": [
@@ -975,11 +994,6 @@
           "who": "alice",
           "text": "Onward, then.",
           "readingDurationMs": 3000
-        },
-        {
-          "id": "alice-c3-branches-end",
-          "type": "end",
-          "s4Beat": 16
         }
       ],
       "videoExport": {
@@ -993,6 +1007,248 @@
         "authorization": {
           "date": "2026-11-13",
           "reason": "Alejandro approved Gates1/2A and authorized implementation in this thread"
+        }
+      }
+    },
+    {
+      "id": "alice-c3-s5",
+      "name": "A Door in the Wood",
+      "steps": [
+        {
+          "id": "alice-c3-door-01",
+          "type": "action",
+          "s5Beat": 1,
+          "camera": {
+            "hold": false,
+            "preventDissolve": true
+          },
+          "duration": 4500.0,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 790,
+              "y": 660
+            },
+            "doorVisit": {
+              "place": "house",
+              "fishVisible": true
+            }
+          }
+        },
+        {
+          "id": "alice-c3-door-02",
+          "type": "text",
+          "s5Beat": 2,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "For the Duchess. An invitation from the Queen.",
+          "who": "fish-footman",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-03",
+          "type": "action",
+          "s5Beat": 3,
+          "camera": {
+            "hold": false,
+            "preventDissolve": true
+          },
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "doorVisit": {
+              "invitationTransfer": 1
+            }
+          }
+        },
+        {
+          "id": "alice-c3-door-04",
+          "type": "text",
+          "s5Beat": 4,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "From the Queen. An invitation for the Duchess.",
+          "who": "frog-footman",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-05",
+          "type": "text",
+          "s5Beat": 5,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "Is this the Duchess's house?",
+          "who": "alice",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-06",
+          "type": "text",
+          "s5Beat": 6,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "It is. I attend the door.",
+          "who": "frog-footman",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-07",
+          "type": "text",
+          "s5Beat": 7,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "Then perhaps you can tell me how to get in.",
+          "who": "alice",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-08",
+          "type": "text",
+          "s5Beat": 8,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "Are you to get in at all? That's the first question.",
+          "who": "frog-footman",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-09",
+          "type": "action",
+          "s5Beat": 9,
+          "camera": {
+            "hold": false,
+            "preventDissolve": true
+          },
+          "duration": 5500.0,
+          "caption": "clear",
+          "effects": {
+            "doorVisit": {
+              "fishVisible": false,
+              "frogPose": "sit-right"
+            }
+          }
+        },
+        {
+          "id": "alice-c3-door-10",
+          "type": "text",
+          "s5Beat": 10,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "I only want to speak to her.",
+          "who": "alice",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-11",
+          "type": "text",
+          "s5Beat": 11,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "I shall sit here until tomorrow, perhaps.",
+          "who": "frog-footman",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-12",
+          "type": "text",
+          "s5Beat": 12,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "But sitting there won't help me, will it?",
+          "who": "alice",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-13",
+          "type": "text",
+          "s5Beat": 13,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "I didn't say that it would.",
+          "who": "frog-footman",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-14",
+          "type": "text",
+          "s5Beat": 14,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "Then I'll ask the Duchess herself.",
+          "who": "alice",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-door-15",
+          "type": "action",
+          "s5Beat": 15,
+          "camera": {
+            "hold": false,
+            "preventDissolve": true
+          },
+          "duration": 1200.0,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 846,
+              "y": 640
+            },
+            "doorVisit": {
+              "alicePose": "back"
+            }
+          }
+        },
+        {
+          "id": "alice-c3-door-16",
+          "type": "text",
+          "s5Beat": 16,
+          "camera": {
+            "hold": true,
+            "preventDissolve": true
+          },
+          "text": "Excuse me. I'm coming in.",
+          "who": "alice",
+          "readingDurationMs": 3000
+        },
+        {
+          "id": "alice-c3-door-end",
+          "type": "end",
+          "s5Beat": 16
+        }
+      ],
+      "videoExport": {
+        "endAtLastBeat": true
+      },
+      "durationReview": {
+        "phase": "initial-creation",
+        "approvedSeconds": 72.2,
+        "approvedBeats": 16,
+        "endingOnTextApproved": true,
+        "authorization": {
+          "date": "2026-11-13",
+          "reason": "Alejandro approved100% Gates1/2A and authorized production in this thread"
         }
       }
     }
@@ -1009,6 +1265,7 @@
     "alice-c3-who-12": "alice-c3-who-11",
     "alice-c3-side-01": "alice-c3-side-02",
     "alice-c3-side-14": "alice-c3-side-13",
-    "alice-c3-little-end": "alice-c3-little-17"
+    "alice-c3-little-end": "alice-c3-little-17",
+    "alice-c3-branches-end": "alice-c3-branches-16"
   }
 }
