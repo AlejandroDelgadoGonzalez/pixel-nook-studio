@@ -50,5 +50,12 @@
     "stories\\alice-in-wonderland\\renderers\\a-little-at-a-time.js": "8f1e5d2040693bc54de14a5e8d234c63fd03266eabbfb97f322883388efcd7ec",
     "stories\\alice-in-wonderland\\renderers\\alice-mushroom-rig.js": "1d5d725742b7dce5fa88309449c320f675c56d6f3e2d9012f04a1b49cfe2fc81",
     "stories\\alice-in-wonderland\\shared\\chapter-3-scene-3-geometry.json": "b30a578188814a87a0fb47245d9079754e4052251c1b0587593d6b90f0fbb3cd"
-  }
+  },
+  "latestVisualRevision": {
+    "dateLocal": "2026-11-13",
+    "source": "/stories/alice-in-wonderland/shared/chapter-3-discrete-pose-revision.json",
+    "gate4": "PASS",
+    "scope": "Intact full-sprite pose swaps; no anatomical part animation; S3 walk facing fixed from0ms"
+  },
+  "initialCertificationScope": "Original implementation record; latest runtime revision and source hashes are identified by latestVisualRevision."
 }

@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';import assert from 'node:assert/strict';
 import {launch,openCase} from './helpers/browser.mjs';import {storyCases} from './helpers/story-cases.mjs';
-const out='.artifacts/qa/c3-s3/hands';await fs.mkdir(out,{recursive:true});const browser=await launch(),report={errors:[],resources:[]};
+const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/c3-s3/hands';await fs.mkdir(out,{recursive:true});const browser=await launch(),report={errors:[],resources:[]};
 try{
  const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.chapter.number===3),{page,context}=await openCase(browser,item,{width:1280,height:720},report);
  report.samples=await page.evaluate(()=>{

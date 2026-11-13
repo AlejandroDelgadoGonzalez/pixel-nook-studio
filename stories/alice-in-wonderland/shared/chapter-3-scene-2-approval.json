@@ -20,5 +20,12 @@
   "immutableAssets": {
     "stories/alice-in-wonderland/shared/caterpillar-master-atlas.png": "1ab278e9697770d9d0ba52fa115b8d8b7f45d5ef0a10dfcc5771e303950a9671",
     "stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png": "4b4ac0041be93141ee3ea6162d6441b0e1b9940d22ac888c76f8ba51c77007b0"
-  }
+  },
+  "latestVisualRevision": {
+    "dateLocal": "2026-11-13",
+    "source": "/stories/alice-in-wonderland/shared/chapter-3-discrete-pose-revision.json",
+    "gate4": "PASS",
+    "scope": "Intact full-sprite pose swaps; no anatomical part animation; S3 walk facing fixed from0ms"
+  },
+  "initialCertificationScope": "Original implementation record; latest runtime revision and source hashes are identified by latestVisualRevision."
 }

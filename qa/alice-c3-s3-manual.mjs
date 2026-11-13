@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';import assert from 'node:assert/strict';
 import {launch,watch} from './helpers/browser.mjs';import {base} from './config.mjs';
-const out='.artifacts/qa/c3-s3/manual';await fs.mkdir(out,{recursive:true});const browser=await launch(),report={errors:[],resources:[],beats:[],scope:'Actual UI manual chronological C3-S1→S2→S3 and real saved continuation'};
+const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/c3-s3/manual';await fs.mkdir(out,{recursive:true});const browser=await launch(),report={errors:[],resources:[],beats:[],scope:'Actual UI manual chronological C3-S1→S2→S3 and real saved continuation'};
 try{
  const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage();watch(page,report);await context.addInitScript(()=>{localStorage.setItem('entrelineas:muted','true');localStorage.setItem('betweenlines:auto','false');});
  await page.goto(base+'/reader.html?story=alice-in-wonderland&chapter=chapter-3');await page.waitForFunction(()=>!document.querySelector('#start').disabled);await page.click('#start');await page.evaluate(()=>{window.qaScene=Phaser.Display.Canvas.CanvasPool.pool.find(p=>p.parent?.scene?.getScene).parent.scene.scenes[0];});

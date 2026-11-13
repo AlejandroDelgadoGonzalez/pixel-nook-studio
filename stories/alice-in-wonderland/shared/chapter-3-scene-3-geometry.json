@@ -1201,6 +1201,334 @@
       "handNative": null,
       "nativeRGBAsha256": "6e1174900d535d8b63b0bf0ea22378abc58d6c275c8686e0b0dec2b1b8aa5e64",
       "reuse": "Exact lossless native decode; no authored pixel edits"
+    },
+    {
+      "pose": "alice-run-right-a-dry",
+      "storageCrop": [
+        547,
+        104,
+        602,
+        173
+      ],
+      "nativeFrame": {
+        "size": [
+          568,
+          704
+        ],
+        "sourceBoundsExclusive": [
+          84,
+          6452,
+          652,
+          7156
+        ],
+        "cellBoundsExclusive": [
+          0,
+          6368,
+          736,
+          7240
+        ],
+        "xRuns": [
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          1,
+          9,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11
+        ],
+        "yRuns": [
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          6,
+          5,
+          11,
+          10,
+          11,
+          11,
+          10,
+          5,
+          6,
+          11,
+          10,
+          11,
+          1,
+          10,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11
+        ]
+      },
+      "rootNative": [
+        310.48974520855785,
+        704.0
+      ],
+      "handNative": [
+        514.2875647668394,
+        381.22020725388603
+      ],
+      "handMeasurement": "Centroid of front hand skin in rightmost21 native source columns; complete authored pose",
+      "rootMeasurement": "Ground projection beneath canonical apron/waist reference, offset matched to right pose; native opaque sole defines Y. Prevents reverse body jumps when switching complete stride cells."
+    },
+    {
+      "pose": "alice-run-right-b-dry",
+      "storageCrop": [
+        1106,
+        104,
+        1162,
+        170
+      ],
+      "nativeFrame": {
+        "size": [
+          568,
+          688
+        ],
+        "sourceBoundsExclusive": [
+          836,
+          6452,
+          1404,
+          7140
+        ],
+        "cellBoundsExclusive": [
+          752,
+          6368,
+          1488,
+          7224
+        ],
+        "xRuns": [
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          5,
+          5,
+          11,
+          10,
+          11,
+          6,
+          4,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11
+        ],
+        "yRuns": [
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          1,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11,
+          10,
+          11,
+          11,
+          10,
+          11,
+          10,
+          11
+        ]
+      },
+      "rootNative": [
+        282.35838882023086,
+        688.0
+      ],
+      "handNative": [
+        491.5748752079867,
+        346.31946755407654
+      ],
+      "handMeasurement": "Centroid of front hand skin in rightmost21 native source columns; complete authored pose",
+      "rootMeasurement": "Ground projection beneath canonical apron/waist reference, offset matched to right pose; native opaque sole defines Y. Prevents reverse body jumps when switching complete stride cells."
     }
   ],
   "fragmentCuts": [
@@ -1230,62 +1558,20 @@
     }
   ],
   "rig": {
-    "offer": {
-      "pivot": [
-        375,
-        326
-      ],
-      "partRect": [
-        380,
-        250,
-        560,
-        370
-      ],
-      "pocketAngle": 1.8,
-      "holdAngle": 0.9
-    },
-    "eat": {
-      "pivot": [
-        124,
-        355
-      ],
-      "partPolygon": [
-        [
-          -20,
-          230
-        ],
-        [
-          84,
-          230
-        ],
-        [
-          84,
-          330
-        ],
-        [
-          145,
-          330
-        ],
-        [
-          145,
-          400
-        ],
-        [
-          -20,
-          400
-        ]
-      ],
-      "pocketAngle": -2.3,
-      "holdAngle": -1.5
-    },
-    "walking": {
-      "nativeUnits": 4,
-      "frameMs": 140
-    },
     "consumption": {
       "BFirst": 0.88,
       "AFirst": 0.92,
       "BSecond": 0.78
+    },
+    "walking": {
+      "frameMs": 180,
+      "fullPoseCells": [
+        "right",
+        "alice-run-right-a-dry",
+        "right",
+        "alice-run-right-b-dry"
+      ]
     }
-  }
+  },
+  "animationPolicy": "Puppet Limb Tweening Ban: only intact native full-pose swaps, no body-part operations"
 }

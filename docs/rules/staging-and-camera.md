@@ -262,3 +262,8 @@ In Chapter 2, scene 5, Eurycleia walks down the right aisle to (1080, 985), then
 
 
 </details>
+
+
+## Puppet Limb Tweening Ban — permanent, 2026-11-13
+
+Never cut, detach, overlay, rotate, warp or interpolate arms, hands, legs or other anatomical parts independently. Pick up, pocket, offer, eat and drink exclusively through instantaneous swaps of intact authored full-character atlas cells, as in C1-S4 Drink Me and C1-S5 Eat Me. Keep the foot/body root fixed across pose swaps; anchor each held prop to the selected complete pose. Whole-body uniform magical scaling and whole-character travel remain allowed. Locomotion must face its authored route from elapsed0 before X moves, using complete authored poses; no reversed facing during any moving frame. This rule overrides historical part-rig/mesh instructions, even if their raster QA previously passed. Do not introduce new articulated helpers or reuse legacy limb deformation. No legacy helper or historical approval exempts anatomical part animation from this prohibition.

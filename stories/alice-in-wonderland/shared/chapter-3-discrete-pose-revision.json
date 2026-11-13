@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "dateLocal": "2026-11-13",
+  "authorizedBy": "Alejandro",
+  "scope": "C3-S3 full-sprite actions and forward-facing locomotion; C3-S2 discrete full-sprite pickup; permanent global playbook/skill ban",
+  "gate4": "PASS",
+  "errors": 0,
+  "allStoryLayoutCases": 90,
+  "officialViewports": 6,
+  "fullSpriteDrawChecks": 792,
+  "completeCharacterDrawsPerFrame": 1,
+  "pickupFrames": 31,
+  "chapterDataByteIdentical": true,
+  "durationMs": {
+    "C3-S1": 72000,
+    "C3-S2": 66000,
+    "C3-S3": 77000
+  },
+  "artAndAudioUnchanged": true,
+  "newRasterArt": 0,
+  "newAudio": 0,
+  "manualWholeChapter": true,
+  "savedCheckpoints": 3,
+  "mp4Complete1x": true,
+  "mp4DecodePassed": true,
+  "scopeLimits": "Local Edge/Chromium simulated viewports, no physical phone/Safari claim",
+  "scene4Started": false,
+  "evidence": ".artifacts/qa/c3-discrete",
+  "sources": {
+    "stories/alice-in-wonderland/renderers/a-little-at-a-time.js": "eeb1d743fae58a46ba741803dd371e75b7935775ac2ed934005f97086cc63548",
+    "stories/alice-in-wonderland/renderers/alice-mushroom-rig.js": "b6c419180bb5530627462c9004fb148fc87bd7748ad5d064a55201e8f06bccb3",
+    "stories/alice-in-wonderland/renderers/one-side-other.js": "e6c40931599072c11e938088793e64fb2850496659cf1db50e350b8348f7d6fb",
+    "stories/alice-in-wonderland/renderers/caterpillar-pickup.js": "ba81867bcff65da75d3c046f0874debb9d251e4fcc8d283a29cc4b596e882cdc"
+  }
+}

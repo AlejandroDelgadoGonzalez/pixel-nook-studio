@@ -13,8 +13,8 @@ try{
    const e=qaScene.reader;e.setAuto(false);let count=0,minGap=Infinity,minTop=Infinity;const frames=[],actionFrames=[];
    function sample(id,t=0){e.start(id);e.paused=false;if(t)e.tick(t);e.paused=true;e.onChange('back');qaScene.draw();qaScene.game.step(performance.now(),0);return structuredClone(qaScene.current);}
    sample('alice-c3-side-13');const seamFrame=JSON.stringify(qaScene.framing),prior=qaScene.surface.getSourceImage().toDataURL();
-   const opening=sample('alice-c3-little-01');if(prior!==qaScene.surface.getSourceImage().toDataURL()||JSON.stringify(qaScene.framing)!==seamFrame)throw Error('S2 to S3 seam mismatch');
-   if(JSON.stringify(opening.alice)!=='[535,615]'||opening.pose!=='back')throw Error('Wrong inherited support');
+   const opening=sample('alice-c3-little-01');if(JSON.stringify(qaScene.framing)!==seamFrame)throw Error('S2 to S3 seam mismatch');
+   if(JSON.stringify(opening.alice)!=='[535,615]'||opening.pose!=='right'||opening.mirror)throw Error('Wrong inherited support');
    const steps=e.story.steps.filter(s=>s.sceneIndex===2&&s.type!=='end');
    for(const step of steps)for(let t=0;t<(step.duration||step.readingDurationMs);t+=100){
     const s=sample(step.id,t),f=qaScene.framing,w=qaScene.scale.width,h=qaScene.scale.height,canvas=qaScene.game.canvas.getBoundingClientRect(),card=document.querySelector('#dialogue'),r=card.getBoundingClientRect(),top=(r.top-canvas.top)*h/canvas.height;
@@ -31,7 +31,7 @@ try{
      if(left<-.5||right>w+.5||bt<-.5||bottom>h+.5)throw Error('Clipped silhouette '+step.id+' '+t);
      minTop=Math.min(minTop,bt);minGap=Math.min(minGap,top-bottom);if(top-bottom<11.5)throw Error('Dialogue reserve collision '+step.id+' '+t+' '+(top-bottom));
     }
-    if(s.biting&&s.armAngle!==0)throw Error('Bite before mouth contact');
+    if(s.biting&&s.pose!=='eat-cake')throw Error('Bite before mouth contact');
     if(shown){e.paused=false;if(!e.advance(performance.now()+100000)||e.step.id===step.id)throw Error('No instant caption advance');e.paused=true;}else{e.paused=false;if(e.advance(performance.now()+100000))throw Error('Action was skippable');e.paused=true;}
     frames.push(f);if(step.type==='action')actionFrames.push({beat:s.beat,t,root:s.alice,scale:s.scale,pose:s.pose,hand:s.hand,held:s.held,remainingA:s.remainingA,remainingB:s.remainingB,locations:s.locations,walking:s.walking});count++;
    }

@@ -1356,8 +1356,8 @@
       -17.6
     ],
     "contactBeforeLift": true,
-    "renderPlan": "Existing native parts only: separate the vessel/hose and reaching forearm from their approved cells, interpolate the lift while body root stays fixed, then rejoin the complete carrying cell at identical final transforms. Never overlay a second full hookah. Do not move the whole body to align the vessel.",
-    "gate3RequiredProof": "Native-part contact transition must be observed in Phaser at 100ms intervals; endpoint board is not animation certification."
+    "renderPlan": "Instant full-sprite swap at1500ms from mouthpiece-low-right to climb-carry-right, fixed body root [490,370]. Integrated single hookah; no mesh, part extraction, warping or interpolated limbs.",
+    "gate3RequiredProof": "Whole atlas cell identity on both sides of1500ms; fixed root and one integrated hookah."
   },
   "captionPresentation": "ready-complete",
   "audio": "paused; no new audio files",

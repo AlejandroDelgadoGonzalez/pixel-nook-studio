@@ -244,3 +244,6 @@ Work remains local at [localhost:4174](http://localhost:4174/#story/the-odyssey)
 
 
 </details>
+
+
+Puppet Limb Tweening Ban (2026-11-13): never cut, detach, overlay, rotate, warp or interpolate anatomical parts. Use intact authored full-sprite pose swaps for pickup, pocketing, offering and consumption, and intact authored cells for new locomotion; preserve feet roots and face the route before X moves. Whole-character travel and uniform magical scaling remain allowed. This permanent rule overrides older limb/mesh/derived-leg instructions.
