@@ -31,10 +31,10 @@
   },
   "attribution": "Based on Alice’s Adventures in Wonderland by Lewis Carroll",
   "captionPresentation": "ready-complete",
-  "renderer": "alice-one-side-other",
+  "renderer": "alice-a-little-at-a-time",
   "intro": "Who Are You? — A meeting above the mushroom.",
   "ending": "Alice has a clue, and decides to try a little.",
-  "description": "Chapter3 Scenes1–2: a meeting and advice from the Caterpillar.",
+  "description": "Chapter3 Scenes1–3: a meeting, advice and a careful first taste.",
   "stageLabel": "Alice and the Caterpillar",
   "episodes": true,
   "assets": {
@@ -54,7 +54,22 @@
   },
   "initialState": {
     "actors": {},
-    "chapter": 0
+    "chapter": 0,
+    "mushroomTrial": {
+      "x": 535,
+      "y": 615,
+      "scale": 0.32,
+      "A": {
+        "owner": "stem",
+        "location": "stem",
+        "remaining": 1
+      },
+      "B": {
+        "owner": "stem",
+        "location": "stem",
+        "remaining": 1
+      }
+    }
   },
   "scenes": [
     {
@@ -367,11 +382,6 @@
           "who": "alice",
           "text": "I'll try a little, and see what changes.",
           "readingDurationMs": 4000
-        },
-        {
-          "id": "alice-c3-side-end",
-          "type": "end",
-          "s2Beat": 13
         }
       ],
       "videoExport": {
@@ -389,6 +399,337 @@
           "alice-c3-side-14"
         ]
       }
+    },
+    {
+      "id": "alice-c3-s3",
+      "name": "A Little at a Time",
+      "steps": [
+        {
+          "id": "alice-c3-little-01",
+          "type": "action",
+          "s3Beat": 1,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Camina en línea recta al lado derecho accesible del tallo; manos vacías. Gira al tallo antes de hablar.",
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 575,
+              "y": 608,
+              "scale": 0.32
+            }
+          },
+          "linearMotion": true
+        },
+        {
+          "id": "alice-c3-little-02",
+          "type": "text",
+          "s3Beat": 2,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "De pie; decide cómo distinguir las dos porciones.",
+          "who": "alice",
+          "text": "Two sides. I will keep them separate.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-little-03",
+          "type": "action",
+          "s3Beat": 3,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Con raíz fija, toca el tallo derecho, separa A y lo guarda en el bolsillo; termina con mano libre.",
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 575,
+              "y": 608,
+              "scale": 0.32,
+              "A": {
+                "owner": "alice",
+                "location": "pocket",
+                "remaining": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c3-little-04",
+          "type": "action",
+          "s3Beat": 4,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Camina a la izquierda por tierra delante del pie del hongo; A permanece en el bolsillo.",
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 411,
+              "y": 608,
+              "scale": 0.32
+            }
+          },
+          "linearMotion": true
+        },
+        {
+          "id": "alice-c3-little-05",
+          "type": "text",
+          "s3Beat": 5,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Se detiene antes de recoger B; intención, sin narrador.",
+          "who": "alice",
+          "text": "And this one can stay in my other hand.",
+          "readingDurationMs": 4000
+        },
+        {
+          "id": "alice-c3-little-06",
+          "type": "action",
+          "s3Beat": 6,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Raíz fija, toma B del lado izquierdo del tallo y lo conserva en la mano.",
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 411,
+              "y": 608,
+              "scale": 0.32,
+              "B": {
+                "owner": "alice",
+                "location": "hand",
+                "remaining": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c3-little-07",
+          "type": "action",
+          "s3Beat": 7,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Vuelve por una línea al apoyo de prueba; B en mano y A en bolsillo.",
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 500,
+              "y": 615,
+              "scale": 0.32
+            }
+          },
+          "linearMotion": true
+        },
+        {
+          "id": "alice-c3-little-08",
+          "type": "text",
+          "s3Beat": 8,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "B se aproxima a la boca; decide empezar por una cantidad pequeña.",
+          "who": "alice",
+          "text": "Just a crumb. I can always try again.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-little-09",
+          "type": "action",
+          "s3Beat": 9,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Muerde B y baja la mano; crecimiento uniforme con ambos pies anclados. B conserva una porción visible.",
+          "duration": 5000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 500,
+              "y": 615,
+              "scale": 0.56,
+              "B": {
+                "owner": "alice",
+                "location": "hand",
+                "remaining": 0.88
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c3-little-10",
+          "type": "text",
+          "s3Beat": 10,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Reconsidera la cantidad, sin repetir una descripción del crecimiento.",
+          "who": "alice",
+          "text": "Oh! I ought to be more careful with the next bite.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-little-11",
+          "type": "text",
+          "s3Beat": 11,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Decide probar A. El intercambio de bolsillo ocurre en la acción siguiente, no aparece por corte.",
+          "who": "alice",
+          "text": "Then a smaller nibble from the other one.",
+          "readingDurationMs": 4000
+        },
+        {
+          "id": "alice-c3-little-12",
+          "type": "action",
+          "s3Beat": 12,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Guarda B, saca A, muerde una miga y encoge suavemente sobre el mismo apoyo. Ninguna escala baja de0.32.",
+          "duration": 5000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 500,
+              "y": 615,
+              "scale": 0.36,
+              "A": {
+                "owner": "alice",
+                "location": "hand",
+                "remaining": 0.92
+              },
+              "B": {
+                "owner": "alice",
+                "location": "pocket",
+                "remaining": 0.88
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c3-little-13",
+          "type": "text",
+          "s3Beat": 13,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Reconoce que puede corregirse; A queda en mano y B en bolsillo.",
+          "who": "alice",
+          "text": "I do not have to be afraid of every change.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-little-14",
+          "type": "text",
+          "s3Beat": 14,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Una necesidad concreta motiva otro intento, mirando la abertura del claro.",
+          "who": "alice",
+          "text": "A little taller might help me find the garden.",
+          "readingDurationMs": 4000
+        },
+        {
+          "id": "alice-c3-little-15",
+          "type": "action",
+          "s3Beat": 15,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Guarda A, saca B y prueba otra miga; crece más de lo esperado, uniforme y sin cambiar apoyo ni cámara.",
+          "duration": 5000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 500,
+              "y": 615,
+              "scale": 1.1,
+              "A": {
+                "owner": "alice",
+                "location": "pocket",
+                "remaining": 0.92
+              },
+              "B": {
+                "owner": "alice",
+                "location": "hand",
+                "remaining": 0.78
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c3-little-16",
+          "type": "text",
+          "s3Beat": 16,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "La reacción introduce la consecuencia que continuará hacia las ramas; B en mano y A en bolsillo.",
+          "who": "alice",
+          "text": "I meant a little taller. Not all at once!",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-little-17",
+          "type": "text",
+          "s3Beat": 17,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Cierre hablado, sin espera muda; conserva ambas porciones. S4 aún no se produce.",
+          "who": "alice",
+          "text": "Perhaps the next lesson is knowing when to stop.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-little-end",
+          "type": "end",
+          "s3Beat": 17
+        }
+      ],
+      "videoExport": {
+        "endAtLastBeat": true
+      },
+      "durationReview": {
+        "phase": "initial-creation",
+        "approvedSeconds": 77,
+        "approvedBeats": 17,
+        "endingOnTextApproved": true,
+        "authorization": {
+          "date": "2026-11-12",
+          "reason": "Alejandro approved77s/17beats ending on dialogue, no static silent filler"
+        }
+      }
     }
   ],
   "serialized": true,
@@ -398,6 +739,7 @@
     "chapter": "chapter-3"
   },
   "savedPassageAliases": {
+    "alice-c3-side-end": "alice-c3-side-13",
     "alice-c3-who-end": "alice-c3-who-11",
     "alice-c3-who-12": "alice-c3-who-11",
     "alice-c3-side-01": "alice-c3-side-02",

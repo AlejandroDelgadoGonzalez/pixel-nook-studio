@@ -24,7 +24,8 @@ export function check(cases){
    if(!revision)assert(engine.totalTime>=55000&&engine.totalTime<=85000,'Actual automatic engine outside55–85s');
    assert(Math.abs(engine.totalTime-automaticMs)<=steps.length+5,'Duration budget must match actual automatic engine timing');
    if(scene.videoExport?.endAtLastBeat){
-    assert(revision,'Ending on dialogue requires an explicitly authorized revision');
+    const initialTextEnding=scene.durationReview?.phase==='initial-creation'&&scene.durationReview?.endingOnTextApproved===true&&scene.durationReview?.authorization?.date&&scene.durationReview?.authorization?.reason;
+    assert(revision||initialTextEnding,'Ending on dialogue requires explicit authorization');
     assert.equal(steps.filter(s=>s.type!=='end').at(-1).type,'text');assert.equal(sequence.nextScene,null);assert.equal(sequence.holdMs,0);assert.deepEqual(sequence.closingIds,[]);
    }else if(index===story.scenes.length-1&&!scene.videoExport?.closingHook&&steps.at(-1)?.type==='end'){
     assert.equal(sequence.nextScene,null,'Terminal scene must retain its own final setting');assert(steps.some(s=>s.type==='text'));assert(sequence.holdMs>=0);

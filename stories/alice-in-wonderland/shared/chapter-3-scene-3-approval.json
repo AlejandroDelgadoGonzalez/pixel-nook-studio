@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "scene": "alice-c3-s3",
+  "title": "A Little at a Time",
+  "authorizedBy": "Alejandro",
+  "gate1": "approved100%:77s17beats, reachable lower stalk adaptation",
+  "gate2A": "approved100%:six fixed inherited frames",
+  "gate2B": "paused; no new audio",
+  "gate3": "implemented",
+  "gate4": "PASS",
+  "automaticMs": 77000,
+  "beats": 17,
+  "fullSuiteCases": 90,
+  "finalBrowserViewports": 6,
+  "nativeContactSamples": 210,
+  "errors": 0,
+  "newRasterAssets": 0,
+  "newAudioFiles": 0,
+  "s1s2SourceAndTimingPreserved": true,
+  "s1Ms": 72000,
+  "s2Ms": 66000,
+  "realTimeMs": [
+    76999,
+    77133,
+    77171,
+    77167,
+    77073,
+    77153
+  ],
+  "savedCheckpointScales": [
+    0.56,
+    0.36,
+    1.1
+  ],
+  "mp4s": [
+    {
+      "file": ".artifacts/qa/c3-s3/export/checkbox-on/pixel-nook-alice-in-wonderland-v1-chapter-3-scene-3.mp4",
+      "duration": 77.815567,
+      "width": 720,
+      "height": 1280,
+      "audioStreams": 0,
+      "playedCompletelyAt1x": true
+    }
+  ],
+  "scope": "Main-thread Chromium/Edge simulated official viewports; actual1x playback and completed FFmpeg-decoded MP4. No physical phone/Safari claim.",
+  "evidence": ".artifacts/qa/c3-s3",
+  "scene4Started": false,
+  "sources": {
+    "stories\\alice-in-wonderland\\chapters\\chapter-03.json": "05eb85302e02300cf610c9a7dfeda59e853d15940dc54d82d7cfb88afc17d786",
+    "stories\\alice-in-wonderland\\renderers\\a-little-at-a-time.js": "8f1e5d2040693bc54de14a5e8d234c63fd03266eabbfb97f322883388efcd7ec",
+    "stories\\alice-in-wonderland\\renderers\\alice-mushroom-rig.js": "1d5d725742b7dce5fa88309449c320f675c56d6f3e2d9012f04a1b49cfe2fc81",
+    "stories\\alice-in-wonderland\\shared\\chapter-3-scene-3-geometry.json": "b30a578188814a87a0fb47245d9079754e4052251c1b0587593d6b90f0fbb3cd"
+  }
+}

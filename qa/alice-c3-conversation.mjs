@@ -4,12 +4,12 @@ import {launch,openCase} from './helpers/browser.mjs';
 import {storyCases} from './helpers/story-cases.mjs';
 import {officialLayouts} from './official-layouts.mjs';
 import {snapshot} from './checks/viewport-coverage.mjs';
-const out='.artifacts/qa/c3-conversation';await fs.mkdir(out,{recursive:true});
+const out=process.env.QA_OUTPUT_DIR||'.artifacts/qa/c3-conversation';await fs.mkdir(out,{recursive:true});
 const browser=await launch(),report={errors:[],resources:[],cases:[]};
 try{
  const item=(await storyCases()).find(c=>c.slug==='alice-in-wonderland'&&c.chapter.number===3);
  const prior=JSON.parse(await fs.readFile('qa/fixtures/alice-c3-approved-dialogue.json','utf8'));
- const old=prior.steps,now=item.story.steps,removed=old.filter(s=>!now.some(b=>b.id===s.id)).map(s=>s.id);
+ const old=prior.steps,now=item.story.steps.filter(s=>s.sceneIndex<2),removed=old.filter(s=>s.type!=='end'&&!now.some(b=>b.id===s.id)).map(s=>s.id);
  assert.deepEqual(removed,['alice-c3-who-12','alice-c3-side-01','alice-c3-side-14']);
  for(const s of now.filter(s=>s.type!=='end')){const p=old.find(b=>b.id===s.id);for(const k of ['type','who','text','duration','readingDurationMs'])assert.deepEqual(s[k],p[k],s.id+' '+k);}
  for(const layout of officialLayouts){
@@ -17,7 +17,7 @@ try{
   const r=await page.evaluate(async()=>{
    const e=qaScene.reader;e.setAuto(false);let count=0;const frames=[],pan=[],heights=[];
    function sample(id,t){e.start(id);e.paused=false;e.tick(t);e.paused=true;e.onChange('back');qaScene.draw();qaScene.game.step(performance.now(),0);return qaScene.current;}
-   for(const step of e.story.steps.filter(s=>s.type!=='end'))for(let t=0;t<(step.duration||step.readingDurationMs);t+=100){
+   for(const step of e.story.steps.filter(s=>s.sceneIndex<2&&s.type!=='end'))for(let t=0;t<(step.duration||step.readingDurationMs);t+=100){
     const s=sample(step.id,t),f=qaScene.framing,w=qaScene.scale.width,h=qaScene.scale.height,card=document.querySelector('#dialogue'),visible=getComputedStyle(card).opacity==='1';
     if((step.sceneIndex===1||step.c3Beat>=3)&&JSON.stringify(s.alice)!=='[535,615]')throw Error('Alice root drift');
     if(step.s2Beat<=11&&JSON.stringify(s.root)!=='[490,370]')throw Error('Pickup body root drift');

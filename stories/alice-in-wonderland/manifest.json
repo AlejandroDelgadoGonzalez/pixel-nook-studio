@@ -4,7 +4,7 @@
   "id": "alice-in-wonderland-v1",
   "cover": "/stories/alice-in-wonderland/assets/environments/riverbank-panorama-v6.png",
   "coverAlt": "A leafy tree above a sunny riverbank path leading to a rabbit hole.",
-  "duration": "Chapters1–2 complete · Chapter3 Scene1",
+  "duration": "Chapters1–2 complete · Chapter3 Scenes1–3",
   "category": "Wonder and discovery",
   "themes": [
     "Curiosity",
@@ -57,10 +57,11 @@
       "number": 3,
       "status": "available",
       "title": "Who Are You?",
-      "description": "Scenes1–2 available: Alice meets the Caterpillar and learns about the mushroom.",
+      "description": "Alice meets the Caterpillar and learns to try the mushroom a little at a time.",
       "scenes": [
         "Who Are You?",
-        "One Side, the Other"
+        "One Side, the Other",
+        "A Little at a Time"
       ],
       "linePrefix": "alice-c3-",
       "source": "/stories/alice-in-wonderland/chapters/chapter-03.json"
@@ -82,6 +83,10 @@
     "alice-one-side-other": {
       "module": "/stories/alice-in-wonderland/renderers/one-side-other.js",
       "export": "OneSideOther"
+    },
+    "alice-a-little-at-a-time": {
+      "module": "/stories/alice-in-wonderland/renderers/a-little-at-a-time.js",
+      "export": "ALittleAtATime"
     }
   },
   "fileAudio": "/stories/alice-in-wonderland/shared/chapter-1-scene-1-audio.json",

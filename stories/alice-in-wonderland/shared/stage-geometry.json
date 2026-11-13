@@ -1944,5 +1944,9 @@
     "atlasCells": "/stories/alice-in-wonderland/shared/chapter-2-scene-5-atlas-cells.json",
     "pixelDensity": "/stories/alice-in-wonderland/shared/chapter-2-scene-5-pixel-density.json",
     "scope": "Explicitly approved full-room-v3; right entrance, left window,21 moments; silent."
+  },
+  "chapter3Scene3": {
+    "source": "/stories/alice-in-wonderland/shared/chapter-3-scene-3-geometry.json",
+    "scope": "Approved Gates1/2A,77s17beats; fixed inherited camera; native pose parts and two held/pocketed mushroom pieces"
   }
 }

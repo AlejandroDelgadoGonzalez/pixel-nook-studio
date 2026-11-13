@@ -1,0 +1,111 @@
+{
+  "scene": "C3-S3",
+  "status": "PROPOSAL; unbound, pending Alejandro",
+  "worldSize": [
+    1664,
+    936
+  ],
+  "mapping": "source panorama pixels == world pixels",
+  "spawns": {
+    "alice": [
+      535,
+      615
+    ],
+    "caterpillar": "hidden behind cap at [470,430], carrying hookah; not drawn"
+  },
+  "anchors": {
+    "rightPickupRoot": [
+      575,
+      608
+    ],
+    "rightStemContact": [
+      545.546,
+      568.421
+    ],
+    "leftPickupRoot": [
+      411,
+      608
+    ],
+    "leftStemContact": [
+      440.454,
+      568.421
+    ],
+    "experimentRoot": [
+      500,
+      615
+    ]
+  },
+  "walkPaths": [
+    {
+      "name": "approachRight",
+      "waypoints": [
+        [
+          535,
+          615
+        ],
+        [
+          575,
+          608
+        ]
+      ],
+      "durationMs": 3000
+    },
+    {
+      "name": "frontOfStem",
+      "waypoints": [
+        [
+          575,
+          608
+        ],
+        [
+          411,
+          608
+        ]
+      ],
+      "durationMs": 3000
+    },
+    {
+      "name": "returnToExperiment",
+      "waypoints": [
+        [
+          411,
+          608
+        ],
+        [
+          500,
+          615
+        ]
+      ],
+      "durationMs": 3000
+    }
+  ],
+  "surface": "Clear dirt strip y608..615, below unchanged stem foot y584; no path through stem or flowers",
+  "occluders": [],
+  "camera": {
+    "focus": [
+      500,
+      444
+    ],
+    "mode": "inherit exact S2 per-layout frame; hold X/Y/zoom throughout",
+    "nominal1280Zoom": 1.35,
+    "newPanRequired": false
+  },
+  "alice": {
+    "scaleMinimum": 0.32,
+    "physicalGain": 1.2,
+    "nativeScaleAt032": 0.096,
+    "transformScales": [
+      0.32,
+      0.56,
+      0.36,
+      1.1
+    ],
+    "uniformScaleXY": true,
+    "rootFixedDuringPickupAndGrowth": true
+  },
+  "propOwnership": {
+    "A": "right side: shrinks; pocket or hand, always Alice",
+    "B": "left side: grows; pocket or hand, always Alice"
+  },
+  "adaptationForReview": "Take small pieces from opposite reachable sides of the lower stalk rather than the unreachable high cap. Existing cream/purple fragment art is reused as stylized mushroom pieces; the source panorama remains byte-identical. This narrative/visual adaptation requires Alejandro approval."
+}

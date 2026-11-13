@@ -1,5 +1,7 @@
 # Pixel Nook Studio conventions
 
+- Scene review shortcut: for “Inicia Compuertas 1 y 2A de C{X}-S{Y}”, read and execute `.codex/skills/scene-starter/SKILL.md`. Prepare both review gates in one offline `.artifacts/REVIEW-BOARD-C{X}-S{Y}.html`, with an identical root copy; this does not authorize audio, scene implementation or publication.
+
 - Read docs/rules/ and docs/authoring/story-renderer-contract.md before edits. Current rules and the October 14 approved visual corrections override historical excerpts.
 - Work only in this project. The sibling entre-lineas-platform is a read-only backup: never edit, delete or run its mutation scripts.
 - Keep all work and previews local. Do not publish or alter a live Site without a new explicit request.
