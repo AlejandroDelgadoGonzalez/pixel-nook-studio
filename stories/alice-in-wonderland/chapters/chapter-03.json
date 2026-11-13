@@ -31,16 +31,17 @@
   },
   "attribution": "Based on Alice’s Adventures in Wonderland by Lewis Carroll",
   "captionPresentation": "ready-complete",
-  "renderer": "alice-a-little-at-a-time",
+  "renderer": "alice-among-the-branches",
   "intro": "Who Are You? — A meeting above the mushroom.",
-  "ending": "Alice has a clue, and decides to try a little.",
-  "description": "Chapter3 Scenes1–3: a meeting, advice and a careful first taste.",
+  "ending": "Alice leaves the clearing, keeping both mushroom pieces for the path ahead.",
+  "description": "Chapter3 Scenes1–4: identity, advice, careful tastes and a woodland encounter.",
   "stageLabel": "Alice and the Caterpillar",
   "episodes": true,
   "assets": {
     "alice": "/stories/alice-in-wonderland/assets/atlases/alice-master-atlas.png",
     "caterpillar": "/stories/alice-in-wonderland/shared/caterpillar-master-atlas.png",
-    "forest": "/stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png"
+    "forest": "/stories/alice-in-wonderland/assets/environments/moonlit-forest-c2-s8-v1.png",
+    "pigeon": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png"
   },
   "characters": {
     "alice": {
@@ -50,6 +51,10 @@
     "caterpillar": {
       "name": "Caterpillar",
       "role": "A thoughtful inhabitant"
+    },
+    "pigeon": {
+      "name": "Pigeon",
+      "role": "A watchful woodland neighbour"
     }
   },
   "initialState": {
@@ -710,11 +715,6 @@
           "who": "alice",
           "text": "Perhaps the next lesson is knowing when to stop.",
           "readingDurationMs": 6000
-        },
-        {
-          "id": "alice-c3-little-end",
-          "type": "end",
-          "s3Beat": 17
         }
       ],
       "videoExport": {
@@ -730,6 +730,271 @@
           "reason": "Alejandro approved77s/17beats ending on dialogue, no static silent filler"
         }
       }
+    },
+    {
+      "id": "alice-c3-s4",
+      "name": "Among the Branches",
+      "steps": [
+        {
+          "id": "alice-c3-branches-01",
+          "type": "action",
+          "s4Beat": 1,
+          "camera": {
+            "preventDissolve": true,
+            "hold": false
+          },
+          "staging": "Pigeon desciende del ramaje por detrás de la cobertura medida, emerge y se posa sobre la copa. Alice gira mediante pose completa; cámara se establece suavemente durante1.2s.",
+          "duration": 5000,
+          "caption": "clear",
+          "effects": {}
+        },
+        {
+          "id": "alice-c3-branches-02",
+          "type": "text",
+          "s4Beat": 2,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Pigeon reclama su lugar: procede del ramaje, no aparece de la nada.",
+          "who": "pigeon",
+          "text": "What are you doing among my branches?",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-03",
+          "type": "text",
+          "s4Beat": 3,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Alice explica la intención que motivó su última miga de B en S3.",
+          "who": "alice",
+          "text": "I only meant to see a little farther.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-branches-04",
+          "type": "text",
+          "s4Beat": 4,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "La paloma confunde el crecimiento fantástico con una posible amenaza; no se deforma el cuello de Alice.",
+          "who": "pigeon",
+          "text": "You're not a serpent, are you?",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-05",
+          "type": "text",
+          "s4Beat": 5,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Alice responde con una identidad clara, sin hostilidad.",
+          "who": "alice",
+          "text": "I'm a girl. My name is Alice.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-branches-06",
+          "type": "text",
+          "s4Beat": 6,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Pigeon explica su sospecha por el cambio de tamaño que acaba de observar.",
+          "who": "pigeon",
+          "text": "I've seen girls. None of them grow like that.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-07",
+          "type": "text",
+          "s4Beat": 7,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Alice reconoce que todavía está aprendiendo a controlar las cantidades.",
+          "who": "alice",
+          "text": "I'm still learning how much is enough.",
+          "readingDurationMs": 6000
+        },
+        {
+          "id": "alice-c3-branches-08",
+          "type": "text",
+          "s4Beat": 8,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "La desconfianza persiste, pero la paloma reconoce la explicación de Alice.",
+          "who": "pigeon",
+          "text": "Well, you are a very unsettling sort of girl.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-09",
+          "type": "text",
+          "s4Beat": 9,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Alice decide corregir su talla; no repite en narración una transformación ya visible.",
+          "who": "alice",
+          "text": "Then let me put that right.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-10",
+          "type": "action",
+          "s4Beat": 10,
+          "camera": {
+            "preventDissolve": true,
+            "hold": false
+          },
+          "staging": "B pasa al bolsillo con pose right íntegra; sale A mediante eat-cake. Una miga reduce A0.92→0.84. Alice encoge uniformemente1.10→0.46 con raíz[500,615] fija y cambia a growth-surprise íntegra.",
+          "duration": 5000,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 500,
+              "y": 615,
+              "scale": 0.46,
+              "A": {
+                "owner": "alice",
+                "location": "hand",
+                "remaining": 0.84
+              },
+              "B": {
+                "owner": "alice",
+                "location": "pocket",
+                "remaining": 0.78
+              }
+            }
+          }
+        },
+        {
+          "id": "alice-c3-branches-11",
+          "type": "text",
+          "s4Beat": 11,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Pigeon acepta la consecuencia visible, sin describir mecánicamente el encogimiento.",
+          "who": "pigeon",
+          "text": "That is a little more convincing.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-12",
+          "type": "text",
+          "s4Beat": 12,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Alice elige respetar la distancia y volver a su búsqueda.",
+          "who": "alice",
+          "text": "You may keep your branches. I'll keep to the path.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-13",
+          "type": "action",
+          "s4Beat": 13,
+          "camera": {
+            "preventDissolve": true,
+            "hold": false
+          },
+          "staging": "Pigeon vuela de regreso por la trayectoria inversa y se oculta detrás del mismo ramaje. Celdas de vuelo completas, sin articular alas.",
+          "duration": 3000,
+          "caption": "clear",
+          "effects": {}
+        },
+        {
+          "id": "alice-c3-branches-14",
+          "type": "text",
+          "s4Beat": 14,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Alice queda sola y vuelve a orientar su atención hacia el sendero.",
+          "who": "alice",
+          "text": "I hope the next person remembers their manners.",
+          "readingDurationMs": 5000
+        },
+        {
+          "id": "alice-c3-branches-15",
+          "type": "action",
+          "s4Beat": 15,
+          "camera": {
+            "preventDissolve": true,
+            "hold": false
+          },
+          "staging": "Primero guarda A durante0.5s mediante cambio de pose completo y con raíz fija. Después camina erguida a la derecha[500,615]→[640,615] durante3s, reutilizando el helper canónico130ms. La cámara vuelve suavemente al foco heredado.",
+          "duration": 3500,
+          "caption": "clear",
+          "effects": {
+            "mushroomTrial": {
+              "x": 640,
+              "y": 615,
+              "scale": 0.46,
+              "A": {
+                "owner": "alice",
+                "location": "pocket",
+                "remaining": 0.84
+              },
+              "B": {
+                "owner": "alice",
+                "location": "pocket",
+                "remaining": 0.78
+              }
+            }
+          },
+          "linearMotion": true
+        },
+        {
+          "id": "alice-c3-branches-16",
+          "type": "text",
+          "s4Beat": 16,
+          "camera": {
+            "preventDissolve": true,
+            "hold": true
+          },
+          "staging": "Cierre hablado, quieto y completamente interactivo: Alice en[640,615], escala0.46 y ambos restos guardados. S5 establecerá la casa; no se produce aquí.",
+          "who": "alice",
+          "text": "Onward, then.",
+          "readingDurationMs": 3000
+        },
+        {
+          "id": "alice-c3-branches-end",
+          "type": "end",
+          "s4Beat": 16
+        }
+      ],
+      "videoExport": {
+        "endAtLastBeat": true
+      },
+      "durationReview": {
+        "phase": "initial-creation",
+        "approvedSeconds": 77.5,
+        "approvedBeats": 16,
+        "endingOnTextApproved": true,
+        "authorization": {
+          "date": "2026-11-13",
+          "reason": "Alejandro approved Gates1/2A and authorized implementation in this thread"
+        }
+      }
     }
   ],
   "serialized": true,
@@ -743,6 +1008,7 @@
     "alice-c3-who-end": "alice-c3-who-11",
     "alice-c3-who-12": "alice-c3-who-11",
     "alice-c3-side-01": "alice-c3-side-02",
-    "alice-c3-side-14": "alice-c3-side-13"
+    "alice-c3-side-14": "alice-c3-side-13",
+    "alice-c3-little-end": "alice-c3-little-17"
   }
 }

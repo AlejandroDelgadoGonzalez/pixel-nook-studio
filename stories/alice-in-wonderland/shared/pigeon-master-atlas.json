@@ -1,0 +1,636 @@
+{
+  "schemaVersion": 2,
+  "character": "pigeon",
+  "asset": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png",
+  "dimensions": [
+    1536,
+    1536
+  ],
+  "logicalCellPx": 24,
+  "visualApproval": "Alejandro approved100% C3-S4 Gates1/2A in this thread,2026-11-13",
+  "generationProvenance": {
+    "tool": "image_gen",
+    "directMaster": "concept_art/characters/odyssey-core.png",
+    "colorContext": "concept_art/scenes/11-moonlit-botanical-garden.png",
+    "rawSha256": "4f9536d1bb4b6d1fc9964d9b28dceb7f00db1d1a17face4b039521e9bab7d334",
+    "nativeCleanup": "Categorical palette mapping, binary export alpha, one-cell eye glyph, sealed dark exterior, transparent storage padding/repack. No silhouette resampling, no row deletion, no anatomical parts."
+  },
+  "nativeProof": [
+    {
+      "pose": "perch-right",
+      "sourceRawBounds": [
+        75,
+        191,
+        472,
+        587
+      ],
+      "nativeAlphaSha256": "a4c8dcd5077dc9a004daa7634a9f0d84dc31ed83d22adbf34b7e819407d1c4b8",
+      "shapeUnchanged": true,
+      "resampling": false,
+      "completeNativeSize": [
+        397,
+        396
+      ]
+    },
+    {
+      "pose": "speak-right",
+      "sourceRawBounds": [
+        601,
+        191,
+        1000,
+        587
+      ],
+      "nativeAlphaSha256": "b5ba4cf4443966ac5240913755db7bfdd5f4ec5f3eacbc9d6b48bae3eb86283c",
+      "shapeUnchanged": true,
+      "resampling": false,
+      "completeNativeSize": [
+        399,
+        396
+      ]
+    },
+    {
+      "pose": "fly-up-right",
+      "sourceRawBounds": [
+        1142,
+        142,
+        1547,
+        533
+      ],
+      "nativeAlphaSha256": "304a85f58ef211361e66b186d7610e047b5c6dd8164ec7b872d668068c6c48db",
+      "shapeUnchanged": true,
+      "resampling": false,
+      "completeNativeSize": [
+        405,
+        391
+      ]
+    },
+    {
+      "pose": "fly-down-right",
+      "sourceRawBounds": [
+        1668,
+        217,
+        2097,
+        607
+      ],
+      "nativeAlphaSha256": "a58f6e67b8c017ac89fb547a7399e640524e5c19e3b647119f999014ee9f33ad",
+      "shapeUnchanged": true,
+      "resampling": false,
+      "completeNativeSize": [
+        429,
+        390
+      ]
+    }
+  ],
+  "originalGeneratedAsset": "/stories/alice-in-wonderland/sources/pigeon-generated-original.png",
+  "originalGeneratedSha256": "4f9536d1bb4b6d1fc9964d9b28dceb7f00db1d1a17face4b039521e9bab7d334",
+  "poses": [
+    {
+      "pose": "perch-right",
+      "asset": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png",
+      "sourceBoundsExclusive": [
+        185,
+        186,
+        582,
+        582
+      ],
+      "cellBoundsExclusive": [
+        0,
+        0,
+        768,
+        768
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          140,
+          151,
+          174
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            140,
+            151,
+            174
+          ],
+          [
+            105,
+            119,
+            148
+          ],
+          [
+            67,
+            78,
+            105
+          ],
+          [
+            234,
+            224,
+            204
+          ],
+          [
+            213,
+            202,
+            188
+          ],
+          [
+            58,
+            110,
+            105
+          ],
+          [
+            73,
+            136,
+            129
+          ],
+          [
+            235,
+            178,
+            115
+          ],
+          [
+            197,
+            135,
+            93
+          ],
+          [
+            201,
+            116,
+            106
+          ],
+          [
+            168,
+            87,
+            83
+          ]
+        ],
+        "eyes": [
+          [
+            284,
+            71,
+            308,
+            107
+          ]
+        ],
+        "expectedEyeWidths": [
+          24
+        ],
+        "logicalEyeWidth": 24,
+        "eyeMargin": 3,
+        "logicalCellPx": 24,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ],
+        "sourcePixelsPerWorldPixel": 12,
+        "canonicalEyeWorldWidth": 2
+      },
+      "rootNative": [
+        158.5,
+        396.0
+      ],
+      "origin": [
+        0.3992443324937028,
+        1.0
+      ],
+      "worldScale": 0.08333333333333333,
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/pigeon-approved-source.png",
+        "originalBounds": [
+          185,
+          186,
+          582,
+          582
+        ],
+        "originalSourceSha256": "2ffa6ed4148630285f5fc38949b94d7b39642e8ad4a50609e7309b40403d4a83",
+        "reuse": "Approved full-body pigeon master cell",
+        "directMasterReference": "concept_art/characters/odyssey-core.png"
+      }
+    },
+    {
+      "pose": "speak-right",
+      "asset": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png",
+      "sourceBoundsExclusive": [
+        952,
+        186,
+        1351,
+        582
+      ],
+      "cellBoundsExclusive": [
+        768,
+        0,
+        1536,
+        768
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          140,
+          151,
+          174
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            140,
+            151,
+            174
+          ],
+          [
+            105,
+            119,
+            148
+          ],
+          [
+            67,
+            78,
+            105
+          ],
+          [
+            234,
+            224,
+            204
+          ],
+          [
+            213,
+            202,
+            188
+          ],
+          [
+            58,
+            110,
+            105
+          ],
+          [
+            73,
+            136,
+            129
+          ],
+          [
+            235,
+            178,
+            115
+          ],
+          [
+            197,
+            135,
+            93
+          ],
+          [
+            201,
+            116,
+            106
+          ],
+          [
+            168,
+            87,
+            83
+          ]
+        ],
+        "eyes": [
+          [
+            285,
+            71,
+            309,
+            107
+          ]
+        ],
+        "expectedEyeWidths": [
+          24
+        ],
+        "logicalEyeWidth": 24,
+        "eyeMargin": 3,
+        "logicalCellPx": 24,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ],
+        "sourcePixelsPerWorldPixel": 12,
+        "canonicalEyeWorldWidth": 2
+      },
+      "rootNative": [
+        157.0,
+        396.0
+      ],
+      "origin": [
+        0.39348370927318294,
+        1.0
+      ],
+      "worldScale": 0.08333333333333333,
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/pigeon-approved-source.png",
+        "originalBounds": [
+          952,
+          186,
+          1351,
+          582
+        ],
+        "originalSourceSha256": "2ffa6ed4148630285f5fc38949b94d7b39642e8ad4a50609e7309b40403d4a83",
+        "reuse": "Approved full-body pigeon master cell",
+        "directMasterReference": "concept_art/characters/odyssey-core.png"
+      }
+    },
+    {
+      "pose": "fly-up-right",
+      "asset": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png",
+      "sourceBoundsExclusive": [
+        181,
+        956,
+        586,
+        1347
+      ],
+      "cellBoundsExclusive": [
+        0,
+        768,
+        768,
+        1536
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          140,
+          151,
+          174
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            140,
+            151,
+            174
+          ],
+          [
+            105,
+            119,
+            148
+          ],
+          [
+            67,
+            78,
+            105
+          ],
+          [
+            234,
+            224,
+            204
+          ],
+          [
+            213,
+            202,
+            188
+          ],
+          [
+            58,
+            110,
+            105
+          ],
+          [
+            73,
+            136,
+            129
+          ],
+          [
+            235,
+            178,
+            115
+          ],
+          [
+            197,
+            135,
+            93
+          ],
+          [
+            201,
+            116,
+            106
+          ],
+          [
+            168,
+            87,
+            83
+          ]
+        ],
+        "eyes": [
+          [
+            295,
+            126,
+            319,
+            162
+          ]
+        ],
+        "expectedEyeWidths": [
+          24
+        ],
+        "logicalEyeWidth": 24,
+        "eyeMargin": 3,
+        "logicalCellPx": 24,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ],
+        "sourcePixelsPerWorldPixel": 12,
+        "canonicalEyeWorldWidth": 2
+      },
+      "rootNative": [
+        169.5,
+        451.0
+      ],
+      "origin": [
+        0.4185185185185185,
+        1.1534526854219949
+      ],
+      "worldScale": 0.08333333333333333,
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/pigeon-approved-source.png",
+        "originalBounds": [
+          181,
+          956,
+          586,
+          1347
+        ],
+        "originalSourceSha256": "2ffa6ed4148630285f5fc38949b94d7b39642e8ad4a50609e7309b40403d4a83",
+        "reuse": "Approved full-body pigeon master cell",
+        "directMasterReference": "concept_art/characters/odyssey-core.png"
+      }
+    },
+    {
+      "pose": "fly-down-right",
+      "asset": "/stories/alice-in-wonderland/shared/pigeon-master-atlas.png",
+      "sourceBoundsExclusive": [
+        937,
+        957,
+        1366,
+        1347
+      ],
+      "cellBoundsExclusive": [
+        768,
+        768,
+        1536,
+        1536
+      ],
+      "nativePixelContract": {
+        "spriteType": "animal",
+        "strictHuman": false,
+        "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+        "outlineRGB": [
+          33,
+          26,
+          44
+        ],
+        "skinRGB": [
+          140,
+          151,
+          174
+        ],
+        "paletteRGB": [
+          [
+            33,
+            26,
+            44
+          ],
+          [
+            140,
+            151,
+            174
+          ],
+          [
+            105,
+            119,
+            148
+          ],
+          [
+            67,
+            78,
+            105
+          ],
+          [
+            234,
+            224,
+            204
+          ],
+          [
+            213,
+            202,
+            188
+          ],
+          [
+            58,
+            110,
+            105
+          ],
+          [
+            73,
+            136,
+            129
+          ],
+          [
+            235,
+            178,
+            115
+          ],
+          [
+            197,
+            135,
+            93
+          ],
+          [
+            201,
+            116,
+            106
+          ],
+          [
+            168,
+            87,
+            83
+          ]
+        ],
+        "eyes": [
+          [
+            317,
+            66,
+            341,
+            102
+          ]
+        ],
+        "expectedEyeWidths": [
+          24
+        ],
+        "logicalEyeWidth": 24,
+        "eyeMargin": 3,
+        "logicalCellPx": 24,
+        "minimumTransparentCells": 4,
+        "expectedComponents": 1,
+        "frameIsContentTrim": true,
+        "exportScaleXY": [
+          1,
+          1
+        ],
+        "sourcePixelsPerWorldPixel": 12,
+        "canonicalEyeWorldWidth": 2
+      },
+      "rootNative": [
+        191.5,
+        391.0
+      ],
+      "origin": [
+        0.44638694638694637,
+        1.0025641025641026
+      ],
+      "worldScale": 0.08333333333333333,
+      "provenance": {
+        "originalAsset": "/stories/alice-in-wonderland/sources/pigeon-approved-source.png",
+        "originalBounds": [
+          937,
+          957,
+          1366,
+          1347
+        ],
+        "originalSourceSha256": "2ffa6ed4148630285f5fc38949b94d7b39642e8ad4a50609e7309b40403d4a83",
+        "reuse": "Approved full-body pigeon master cell",
+        "directMasterReference": "concept_art/characters/odyssey-core.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "scene": "C3-S4",
+  "title": "Among the Branches",
+  "status": "APPROVED Gates1/2A; authorized Gate3 2026-11-13",
+  "worldSize": [
+    1664,
+    936
+  ],
+  "mapping": "Panorama native pixel equals world coordinate",
+  "spawns": {
+    "alice": {
+      "root": [
+        500,
+        615
+      ],
+      "pose": "growth-surprise",
+      "mirror": true,
+      "scale": 1.1,
+      "gain": 1.2,
+      "A": "pocket, remaining0.92",
+      "B": "hand, remaining0.78"
+    },
+    "pigeon": {
+      "root": [
+        270,
+        330
+      ],
+      "presence": "initially100%hidden by left-tree-foliage",
+      "provenance": "New arrival from the connected woodland canopy; full-body flight poses only"
+    },
+    "caterpillar": "remains hidden at[470,430] with hookah; never drawn"
+  },
+  "anchors": {
+    "aliceConversation": [
+      500,
+      615
+    ],
+    "aliceExit": [
+      640,
+      615
+    ],
+    "pigeonCanopy": [
+      270,
+      330
+    ],
+    "pigeonAirTurn": [
+      308,
+      348
+    ],
+    "pigeonPerch": [
+      350,
+      391
+    ],
+    "mushroomCapEnvelope": [
+      326,
+      290,
+      660,
+      474
+    ]
+  },
+  "walkPaths": [
+    {
+      "name": "Alice leaves clearing",
+      "waypoints": [
+        [
+          500,
+          615
+        ],
+        [
+          640,
+          615
+        ]
+      ],
+      "beat": 15,
+      "startAfterMs": 500,
+      "durationMs": 3000,
+      "helper": "createPixelWalkFrames, upright right,130ms, no run cells"
+    },
+    {
+      "name": "Pigeon arrival",
+      "waypoints": [
+        [
+          270,
+          330
+        ],
+        [
+          308,
+          348
+        ],
+        [
+          350,
+          391
+        ]
+      ],
+      "beat": 1,
+      "durationMs": 5000,
+      "fullPoseCycle": [
+        "fly-up-right",
+        "fly-down-right"
+      ],
+      "cadenceMs": 180
+    },
+    {
+      "name": "Pigeon return",
+      "waypoints": [
+        [
+          350,
+          391
+        ],
+        [
+          308,
+          348
+        ],
+        [
+          270,
+          330
+        ]
+      ],
+      "beat": 13,
+      "durationMs": 3000,
+      "mirror": true
+    }
+  ],
+  "surface": "Alice feet on the clear dirt strip y615, below the unchanged mushroom foot y584; Pigeon feet supported by the purple cap at[350,391]. No trunk/plant crossings.",
+  "occluders": [
+    {
+      "id": "left-tree-foliage",
+      "polygon": [
+        [
+          238,
+          278
+        ],
+        [
+          280,
+          278
+        ],
+        [
+          307,
+          309
+        ],
+        [
+          312,
+          350
+        ],
+        [
+          278,
+          363
+        ],
+        [
+          238,
+          338
+        ]
+      ],
+      "source": "Original panorama, left tree/flowering arch canopy, native source pixels238..312,278..363",
+      "operation": "Erase only the complete bird layer under this existing foreground shape; never patch/repaint the panorama",
+      "entryFade": "Proposed restrained retro presence over the5s physical arrival; visible after emergence; exact runtime fade awaits Gate3",
+      "exit": "Opaque flight into the real foliage occluder; no artificial whole-bird alpha disappearance"
+    }
+  ],
+  "camera": {
+    "inheritedFocus": [
+      500,
+      444
+    ],
+    "conversationFocus": [
+      475,
+      444
+    ],
+    "endingFocus": [
+      500,
+      444
+    ],
+    "zoom": "Exactly inherited per-layout zoom;1.35 at1280x720. No zoom-out/in. Y remains inherited.",
+    "pans": [
+      {
+        "beat": 1,
+        "startMs": 0,
+        "durationMs": 1200,
+        "from": [
+          500,
+          444
+        ],
+        "to": [
+          475,
+          444
+        ]
+      },
+      {
+        "beat": 15,
+        "startMs": 500,
+        "durationMs": 3000,
+        "from": [
+          475,
+          444
+        ],
+        "to": [
+          500,
+          444
+        ]
+      }
+    ],
+    "captionRule": "Hidden during every action; fixed DOM reserve. Every text starts complete, enabled and pointer-clickable; camera100%held while visible.",
+    "parity": "Common dramatic focus in both orientations; actual centers clamp to the same immutable panorama and measured reserve."
+  },
+  "alice": {
+    "scaleMinimum": 0.32,
+    "scaleOpening": 1.1,
+    "scaleAfterA": 0.46,
+    "physicalGain": 1.2,
+    "wholeBodyScaleXYEqual": true,
+    "rootFixedDuringConsumption": [
+      500,
+      615
+    ],
+    "poses": [
+      "growth-surprise",
+      "right",
+      "eat-cake"
+    ],
+    "anatomicalParts": "Prohibited; intact native pose swaps only"
+  },
+  "propOwnership": {
+    "A": "Alice: pocket0.92 → hand/mouth → hand0.84 → pocket0.84",
+    "B": "Alice: hand0.78 → pocket0.78, not consumed again",
+    "hookah": "Caterpillar, hidden throughout"
+  },
+  "adaptationForReview": "Keep the Pigeon mistaken-identity encounter and a return to manageable height. Omit the optional nest/egg dispute: no unseen eggs, no new nest prop, no stretched neck. Pigeon comes down from the branches and settles on the already-visible mushroom cap, then returns to the canopy. Alice does NOT grow again at the opening; inherit1.10 exactly.",
+  "pigeon": {
+    "character": "pigeon",
+    "status": "APPROVED100% by Alejandro,2026-11-13",
+    "imageSize": [
+      1536,
+      1536
+    ],
+    "poses": [
+      {
+        "id": "perch-right",
+        "bounds": [
+          185,
+          186,
+          582,
+          582
+        ],
+        "storage": [
+          0,
+          0,
+          768,
+          768
+        ],
+        "rootNative": [
+          158.5,
+          396.0
+        ],
+        "worldScale": 0.08333333333333333,
+        "nativeSize": [
+          397,
+          396
+        ],
+        "eye": [
+          284,
+          71,
+          308,
+          107
+        ]
+      },
+      {
+        "id": "speak-right",
+        "bounds": [
+          952,
+          186,
+          1351,
+          582
+        ],
+        "storage": [
+          768,
+          0,
+          1536,
+          768
+        ],
+        "rootNative": [
+          157.0,
+          396.0
+        ],
+        "worldScale": 0.08333333333333333,
+        "nativeSize": [
+          399,
+          396
+        ],
+        "eye": [
+          285,
+          71,
+          309,
+          107
+        ]
+      },
+      {
+        "id": "fly-up-right",
+        "bounds": [
+          181,
+          956,
+          586,
+          1347
+        ],
+        "storage": [
+          0,
+          768,
+          768,
+          1536
+        ],
+        "rootNative": [
+          169.5,
+          451.0
+        ],
+        "worldScale": 0.08333333333333333,
+        "nativeSize": [
+          405,
+          391
+        ],
+        "eye": [
+          295,
+          126,
+          319,
+          162
+        ],
+        "rootMeasurement": "Whole-frame registration by the fixed eye offset of the perched body; no wing/body part transforms. Flying feet remain naturally tucked."
+      },
+      {
+        "id": "fly-down-right",
+        "bounds": [
+          937,
+          957,
+          1366,
+          1347
+        ],
+        "storage": [
+          768,
+          768,
+          1536,
+          1536
+        ],
+        "rootNative": [
+          191.5,
+          391.0
+        ],
+        "worldScale": 0.08333333333333333,
+        "nativeSize": [
+          429,
+          390
+        ],
+        "eye": [
+          317,
+          66,
+          341,
+          102
+        ],
+        "rootMeasurement": "Whole-frame registration by the fixed eye offset of the perched body; no wing/body part transforms. Flying feet remain naturally tucked."
+      }
+    ],
+    "provenance": {
+      "tool": "image_gen",
+      "directMaster": "concept_art/characters/odyssey-core.png",
+      "colorContext": "concept_art/scenes/11-moonlit-botanical-garden.png",
+      "rawSha256": "4f9536d1bb4b6d1fc9964d9b28dceb7f00db1d1a17face4b039521e9bab7d334",
+      "nativeCleanup": "Categorical palette mapping, binary export alpha, one-cell eye glyph, sealed dark exterior, transparent storage padding/repack. No silhouette resampling, no row deletion, no anatomical parts."
+    },
+    "nativeProof": [
+      {
+        "pose": "perch-right",
+        "sourceRawBounds": [
+          75,
+          191,
+          472,
+          587
+        ],
+        "nativeAlphaSha256": "a4c8dcd5077dc9a004daa7634a9f0d84dc31ed83d22adbf34b7e819407d1c4b8",
+        "shapeUnchanged": true,
+        "resampling": false,
+        "completeNativeSize": [
+          397,
+          396
+        ]
+      },
+      {
+        "pose": "speak-right",
+        "sourceRawBounds": [
+          601,
+          191,
+          1000,
+          587
+        ],
+        "nativeAlphaSha256": "b5ba4cf4443966ac5240913755db7bfdd5f4ec5f3eacbc9d6b48bae3eb86283c",
+        "shapeUnchanged": true,
+        "resampling": false,
+        "completeNativeSize": [
+          399,
+          396
+        ]
+      },
+      {
+        "pose": "fly-up-right",
+        "sourceRawBounds": [
+          1142,
+          142,
+          1547,
+          533
+        ],
+        "nativeAlphaSha256": "304a85f58ef211361e66b186d7610e047b5c6dd8164ec7b872d668068c6c48db",
+        "shapeUnchanged": true,
+        "resampling": false,
+        "completeNativeSize": [
+          405,
+          391
+        ]
+      },
+      {
+        "pose": "fly-down-right",
+        "sourceRawBounds": [
+          1668,
+          217,
+          2097,
+          607
+        ],
+        "nativeAlphaSha256": "a58f6e67b8c017ac89fb547a7399e640524e5c19e3b647119f999014ee9f33ad",
+        "shapeUnchanged": true,
+        "resampling": false,
+        "completeNativeSize": [
+          429,
+          390
+        ]
+      }
+    ]
+  }
+}

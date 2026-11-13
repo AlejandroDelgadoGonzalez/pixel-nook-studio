@@ -61,7 +61,8 @@
       "scenes": [
         "Who Are You?",
         "One Side, the Other",
-        "A Little at a Time"
+        "A Little at a Time",
+        "Among the Branches"
       ],
       "linePrefix": "alice-c3-",
       "source": "/stories/alice-in-wonderland/chapters/chapter-03.json"
@@ -87,6 +88,10 @@
     "alice-a-little-at-a-time": {
       "module": "/stories/alice-in-wonderland/renderers/a-little-at-a-time.js",
       "export": "ALittleAtATime"
+    },
+    "alice-among-the-branches": {
+      "module": "/stories/alice-in-wonderland/renderers/among-the-branches.js",
+      "export": "AmongTheBranches"
     }
   },
   "fileAudio": "/stories/alice-in-wonderland/shared/chapter-1-scene-1-audio.json",

@@ -1,0 +1,13 @@
+{
+  "prompt": "Create ONE production pixel-art character atlas for PIGEON from Alice in Wonderland, style-reference images attached DIRECTLY. Image1 (Odyssey core) is primary chunky pixel-character style authority, image2 is lunar color context only. Transparent background, no backdrop, no text, no ground shadow. One consistent blue-gray woodland pigeon with a rounded chibi head, tiny squared single-cell dark eyes, a warm small beak, two salmon feet, pale breast, teal neck patch, simple folded wings with just two large shade blocks. Four COMPLETE intact full-body poses arranged as exactly four separate cells in one horizontal row: 1 perched facing RIGHT with closed beak (speaking to Alice at right); 2 perched facing RIGHT, beak open, mildly indignant; 3 flying RIGHT wings UP; 4 flying RIGHT wings DOWN. Keep identity, head size, body scale and colors absolutely identical. Plan complete poses, not detached wings. Each pose at most 160 by160 native pixels surrounded by generous fully transparent padding of at least32px; no pixel at any cell boundary. Pixel-art logical grid: EXACT 4x4 native-pixel square cells throughout, 100% flat palette at most12 RGB colors total, use a very dark closed outline around all silhouettes (#211a2c preferred). HARD BINARY alpha only0 or255, no antialiasing or gray/translucent fringe, no gradients, no painterly feather texture. One solid 4-native-pixel-wide square/rectangular eye, no white glare spot. All exterior pixels bordering transparency must be the same dark outline. Horizontal canvas ideally1024x256 with256x256 storage cells. Square native pixel export; do not stretch anatomy. Only the pigeon character: no nest, tree, mushroom, Alice, letters or spare objects.",
+  "referenced_image_paths": [
+    "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/concept_art/characters/odyssey-core.png",
+    "C:/Users/aleja/Desktop/Alejandro/Crear juegos/pixel-nook-studio/concept_art/scenes/11-moonlit-botanical-garden.png"
+  ],
+  "transparent_background": true,
+  "referenceHashes": "See source-hashes.json; direct input paths match actual image_gen call.",
+  "generatedRaw": "pigeon-generated-raw.png",
+  "approval": "Alejandro approved100% native pigeon atlas for C3-S4 Gates1/2A,2026-11-13",
+  "originalGeneratedAsset": "stories/alice-in-wonderland/sources/pigeon-generated-original.png",
+  "approvedNativeAsset": "stories/alice-in-wonderland/shared/pigeon-master-atlas.png"
+}

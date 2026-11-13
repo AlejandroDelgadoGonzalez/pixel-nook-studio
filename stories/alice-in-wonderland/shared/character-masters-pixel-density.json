@@ -77120,6 +77120,496 @@
           }
         }
       ]
+    },
+    {
+      "path": "stories/alice-in-wonderland/shared/pigeon-master-atlas.png",
+      "kind": "atlas",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "cells": [
+        {
+          "id": "perch-right",
+          "sourceBoundsExclusive": [
+            185,
+            186,
+            582,
+            582
+          ],
+          "cellBoundsExclusive": [
+            0,
+            0,
+            768,
+            768
+          ],
+          "logicalCellPx": 24,
+          "normalizedWorldSize": [
+            33.083333333333336,
+            33.0
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                234,
+                224,
+                204
+              ],
+              [
+                213,
+                202,
+                188
+              ],
+              [
+                58,
+                110,
+                105
+              ],
+              [
+                73,
+                136,
+                129
+              ],
+              [
+                235,
+                178,
+                115
+              ],
+              [
+                197,
+                135,
+                93
+              ],
+              [
+                201,
+                116,
+                106
+              ],
+              [
+                168,
+                87,
+                83
+              ]
+            ],
+            "eyes": [
+              [
+                284,
+                71,
+                308,
+                107
+              ]
+            ],
+            "expectedEyeWidths": [
+              24
+            ],
+            "logicalEyeWidth": 24,
+            "eyeMargin": 3,
+            "logicalCellPx": 24,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 12,
+            "canonicalEyeWorldWidth": 2
+          }
+        },
+        {
+          "id": "speak-right",
+          "sourceBoundsExclusive": [
+            952,
+            186,
+            1351,
+            582
+          ],
+          "cellBoundsExclusive": [
+            768,
+            0,
+            1536,
+            768
+          ],
+          "logicalCellPx": 24,
+          "normalizedWorldSize": [
+            33.25,
+            33.0
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                234,
+                224,
+                204
+              ],
+              [
+                213,
+                202,
+                188
+              ],
+              [
+                58,
+                110,
+                105
+              ],
+              [
+                73,
+                136,
+                129
+              ],
+              [
+                235,
+                178,
+                115
+              ],
+              [
+                197,
+                135,
+                93
+              ],
+              [
+                201,
+                116,
+                106
+              ],
+              [
+                168,
+                87,
+                83
+              ]
+            ],
+            "eyes": [
+              [
+                285,
+                71,
+                309,
+                107
+              ]
+            ],
+            "expectedEyeWidths": [
+              24
+            ],
+            "logicalEyeWidth": 24,
+            "eyeMargin": 3,
+            "logicalCellPx": 24,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 12,
+            "canonicalEyeWorldWidth": 2
+          }
+        },
+        {
+          "id": "fly-up-right",
+          "sourceBoundsExclusive": [
+            181,
+            956,
+            586,
+            1347
+          ],
+          "cellBoundsExclusive": [
+            0,
+            768,
+            768,
+            1536
+          ],
+          "logicalCellPx": 24,
+          "normalizedWorldSize": [
+            33.75,
+            32.583333333333336
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                234,
+                224,
+                204
+              ],
+              [
+                213,
+                202,
+                188
+              ],
+              [
+                58,
+                110,
+                105
+              ],
+              [
+                73,
+                136,
+                129
+              ],
+              [
+                235,
+                178,
+                115
+              ],
+              [
+                197,
+                135,
+                93
+              ],
+              [
+                201,
+                116,
+                106
+              ],
+              [
+                168,
+                87,
+                83
+              ]
+            ],
+            "eyes": [
+              [
+                295,
+                126,
+                319,
+                162
+              ]
+            ],
+            "expectedEyeWidths": [
+              24
+            ],
+            "logicalEyeWidth": 24,
+            "eyeMargin": 3,
+            "logicalCellPx": 24,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 12,
+            "canonicalEyeWorldWidth": 2
+          }
+        },
+        {
+          "id": "fly-down-right",
+          "sourceBoundsExclusive": [
+            937,
+            957,
+            1366,
+            1347
+          ],
+          "cellBoundsExclusive": [
+            768,
+            768,
+            1536,
+            1536
+          ],
+          "logicalCellPx": 24,
+          "normalizedWorldSize": [
+            35.75,
+            32.5
+          ],
+          "nativePixelContract": {
+            "spriteType": "animal",
+            "strictHuman": false,
+            "anatomyException": "Pigeon anatomical bird; no human neck/hair contracts. Complete wing poses are distinct full-body cells.",
+            "outlineRGB": [
+              33,
+              26,
+              44
+            ],
+            "skinRGB": [
+              140,
+              151,
+              174
+            ],
+            "paletteRGB": [
+              [
+                33,
+                26,
+                44
+              ],
+              [
+                140,
+                151,
+                174
+              ],
+              [
+                105,
+                119,
+                148
+              ],
+              [
+                67,
+                78,
+                105
+              ],
+              [
+                234,
+                224,
+                204
+              ],
+              [
+                213,
+                202,
+                188
+              ],
+              [
+                58,
+                110,
+                105
+              ],
+              [
+                73,
+                136,
+                129
+              ],
+              [
+                235,
+                178,
+                115
+              ],
+              [
+                197,
+                135,
+                93
+              ],
+              [
+                201,
+                116,
+                106
+              ],
+              [
+                168,
+                87,
+                83
+              ]
+            ],
+            "eyes": [
+              [
+                317,
+                66,
+                341,
+                102
+              ]
+            ],
+            "expectedEyeWidths": [
+              24
+            ],
+            "logicalEyeWidth": 24,
+            "eyeMargin": 3,
+            "logicalCellPx": 24,
+            "minimumTransparentCells": 4,
+            "expectedComponents": 1,
+            "frameIsContentTrim": true,
+            "exportScaleXY": [
+              1,
+              1
+            ],
+            "sourcePixelsPerWorldPixel": 12,
+            "canonicalEyeWorldWidth": 2
+          }
+        }
+      ]
     }
   ],
   "referenceStandingHeightWorld": 180,

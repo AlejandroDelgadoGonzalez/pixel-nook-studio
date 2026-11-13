@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Nine appeared characters; Caterpillar C3-S1 approved v2",
+  "status": "Ten appeared characters; Pigeon C3-S4 approved",
   "characters": {
     "alice": {
       "metadata": "stories/alice-in-wonderland/shared/alice-master-atlas.json",
@@ -137,6 +137,15 @@
       "proportionChecks": [],
       "visualReview": "Alejandro approved100% Gate2A v2; nonhuman anatomy; no human neck/hair requirements",
       "directStyleMaster": "concept_art/characters/master-pose-sheet-alice.png"
+    },
+    "pigeon": {
+      "metadata": "stories/alice-in-wonderland/shared/pigeon-master-atlas.json",
+      "canonicalSource": "stories/alice-in-wonderland/sources/pigeon-approved-source.png",
+      "canonicalSha256": "2ffa6ed4148630285f5fc38949b94d7b39642e8ad4a50609e7309b40403d4a83",
+      "masterSha256": "2ffa6ed4148630285f5fc38949b94d7b39642e8ad4a50609e7309b40403d4a83",
+      "proportionChecks": [],
+      "visualReview": "Alejandro approved100% C3-S4 Gates1/2A in this thread,2026-11-13",
+      "directStyleMaster": "concept_art/characters/odyssey-core.png"
     }
   },
   "policy": "Existing poses must reuse master cells. Extraordinary generation records direct original source. No successive scene references.",
