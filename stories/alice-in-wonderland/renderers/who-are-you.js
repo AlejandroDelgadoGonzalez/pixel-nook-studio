@@ -48,7 +48,7 @@ export class WhoAreYou extends Phaser.Scene{
   ctx.drawImage(this.textures.get(P+'-atlas').getSourceImage(),b[0],b[1],b[2]-b[0],b[3]-b[1],x,y,cw,ch);
   if(s.mask){ctx.save();ctx.beginPath();g.occluders[0].polygon.forEach(([px,py],i)=>i?ctx.lineTo(px,py):ctx.moveTo(px,py));ctx.closePath();ctx.clip();ctx.drawImage(bg,0,0);ctx.restore();}
   const as=g.alice.nativeScale,[ax,ay]=g.alice.rootNative,ab={left:s.alice[0]-ax*as,top:s.alice[1]-ay*as,right:s.alice[0]+(this.aliceSource.width-ax)*as,bottom:s.alice[1]+(this.aliceSource.height-ay)*as};
-  const walking=s.beat===1&&s.elapsed>0&&s.elapsed<3000,aliceImage=walking?this.textures.get(P+'-alice-walk-back-'+Math.floor(s.elapsed/180)%8).getSourceImage():this.aliceSource;
+  const walking=s.beat===1&&s.elapsed>0&&s.elapsed<3000,aliceImage=walking?this.textures.get(P+'-alice-walk-back-'+Math.floor(s.elapsed/130)%8).getSourceImage():this.aliceSource;
   ctx.drawImage(aliceImage,ab.left-(walking?24*as:0),ab.top,aliceImage.width*as,aliceImage.height*as);
   // A single subdued puff, entirely driven by the reader clock and frozen on pause.
   if(s.beat===4&&s.elapsed<2200){const u=clamp(s.elapsed/2200);ctx.globalAlpha=Math.sin(Math.PI*u)*.22;ctx.fillStyle='#c7d6dc';ctx.fillRect(506,318-u*14,2,4);ctx.fillRect(508,314-u*14,4,2);ctx.globalAlpha=1;}

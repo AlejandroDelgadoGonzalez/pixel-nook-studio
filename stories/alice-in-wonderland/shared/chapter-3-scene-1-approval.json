@@ -4,5 +4,11 @@
   "panorama": "moonlit-forest-c2-s8-v1.png unchanged",
   "scene2": "not authorized or implemented",
   "qaEvidence": ".artifacts/qa/c3-s1/",
-  "publication": "origin main after zero-error QA authorized by Alejandro"
+  "publication": "origin main after zero-error QA authorized by Alejandro",
+  "latestLocomotionRevision": {
+    "dateLocal": "2026-11-13",
+    "source": "/stories/alice-in-wonderland/shared/chapter-3-canonical-walk-revision.json",
+    "gate4": "PASS",
+    "scope": "Canonical upright/shared back walking helper130ms, no run cells in normal walks"
+  }
 }

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "dateLocal": "2026-11-13",
+  "authorizedBy": "Alejandro",
+  "gate4": "PASS",
+  "scope": "C3-S3 upright canonical walk on beats01/04/07; C3-S1 shared back helper cadence aligned; unchanged full-sprite interaction poses",
+  "errors": 0,
+  "allStoryLayoutCases": 90,
+  "officialViewports": 6,
+  "canonicalHelper": "platform/rendering/character-art.js#createPixelWalkFrames",
+  "sourcePose": "right",
+  "cadenceMs": 130,
+  "nativeUnits": 4,
+  "frames": 8,
+  "uprightTorsoByteIdentical": true,
+  "scriptAndTimingByteIdentical": true,
+  "durationsMs": {
+    "C3-S1": 72000,
+    "C3-S2": 66000,
+    "C3-S3": 77000
+  },
+  "manualWholeChapter": true,
+  "savedCheckpoints": 3,
+  "mp4DecodedAndPlayedAt1x": true,
+  "newRasterArt": 0,
+  "newAudio": 0,
+  "scene4Started": false,
+  "scopeLimits": "Edge/Chromium simulated viewports; no physical phone or Safari claim",
+  "evidence": ".artifacts/qa/c3-walk",
+  "sources": {
+    "stories/alice-in-wonderland/renderers/alice-mushroom-rig.js": "4772f9643a2b78b818fe199ea7b5ab6555a9dff4ade563eadc4a522751c6752b",
+    "stories/alice-in-wonderland/renderers/who-are-you.js": "3fa1b9897a2feb2f2053432dbe8986e884ff8122548299f7f4699efae11fdc33",
+    "stories/alice-in-wonderland/shared/chapter-3-scene-3-geometry.json": "35569175d570237e2c3d18b8d881834cde97f10054a8d1a7e15b1588e1537d1b"
+  }
+}

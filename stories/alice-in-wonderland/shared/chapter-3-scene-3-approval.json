@@ -57,5 +57,11 @@
     "gate4": "PASS",
     "scope": "Intact full-sprite pose swaps; no anatomical part animation; S3 walk facing fixed from0ms"
   },
-  "initialCertificationScope": "Original implementation record; latest runtime revision and source hashes are identified by latestVisualRevision."
+  "initialCertificationScope": "Original implementation record; latest runtime revision and source hashes are identified by latestVisualRevision.",
+  "latestLocomotionRevision": {
+    "dateLocal": "2026-11-13",
+    "source": "/stories/alice-in-wonderland/shared/chapter-3-canonical-walk-revision.json",
+    "gate4": "PASS",
+    "scope": "Canonical upright/shared back walking helper130ms, no run cells in normal walks"
+  }
 }

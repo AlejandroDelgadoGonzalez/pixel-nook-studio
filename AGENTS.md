@@ -18,3 +18,8 @@
 
 
 Puppet Limb Tweening Ban (2026-11-13): never cut, detach, overlay, rotate, warp or interpolate anatomical parts. Use intact authored full-sprite pose swaps for pickup, pocketing, offering and consumption, and intact authored cells for new locomotion; preserve feet roots and face the route before X moves. Whole-character travel and uniform magical scaling remain allowed. This permanent rule overrides older limb/mesh/derived-leg instructions.
+
+
+## Canonical Walk vs. Run Rule — permanent, 2026-11-13
+
+Every ordinary walk MUST reuse the shared upright createPixelWalkFrames helper from platform/rendering/character-art.js used by Solid Ground/Mary Ann, with the upright right (or corresponding front/back) source and the canonical130ms cadence. Never invent a per-scene gait or alternate inclined run poses during normal walking. Run cells/cadence are allowed ONLY when the script explicitly calls for full-speed running, urgent pursuit or escape. Face the route from0ms; preserve measured foot roots and hand anchors, routes, timing and uniform scale. This user-approved canonical locomotion helper is the specific exception to the earlier no-derived-legs wording: its existing standard footstep cycle may be reused; the Puppet Limb Tweening Ban remains strict for hands/arms and all interaction poses. Do not create new limb rigs, interpolate joints, or alter the helper to animate reaching/eating.
