@@ -7,7 +7,9 @@
   "scripts": {
     "build": "node tools/build.mjs",
     "start": "node server/server.mjs",
-    "qa": "node qa/run.mjs"
+    "qa": "node qa/run.mjs",
+    "qa:pixel-kitchen-preview": "node tools/pixel-kitchen/check_preview.mjs",
+    "preview:pixel-kitchen": "node tools/pixel-kitchen/serve_preview.mjs"
   },
   "engines": {
     "node": ">=20"

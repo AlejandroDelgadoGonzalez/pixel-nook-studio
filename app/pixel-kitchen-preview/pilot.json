@@ -1,0 +1,336 @@
+{
+  "schemaVersion": "pixel-kitchen-preview/1",
+  "revision": "cook-phaser-pilot-v1",
+  "scope": "Read-only accepted pilot; not full system certification or an Alice story migration",
+  "placement": {
+    "world": [
+      640,
+      360
+    ],
+    "pixelToWorld": 1,
+    "aliceRoot": [
+      395.5,
+      300
+    ],
+    "objectRoot": [
+      445,
+      300
+    ],
+    "supportSegment": [
+      [
+        360,
+        300
+      ],
+      [
+        470,
+        300
+      ]
+    ],
+    "surface": "Open dirt path in cooked source; observed around x360..470,y300",
+    "root": [
+      32.5,
+      60
+    ],
+    "objectCellRoot": [
+      16,
+      30
+    ],
+    "spriteScale": 1,
+    "textureFilter": "NEAREST",
+    "autoAnimations": false,
+    "sourceToSceneScale": 0.38461538461538464
+  },
+  "measurements": {
+    "standingBodyHeight": 54.61904761904762,
+    "root": [
+      32.5,
+      60
+    ],
+    "method": "manual anatomical crown/sole landmarks; measured front crown stroke pitch=21",
+    "views": {
+      "front": {
+        "sourceRoot": [
+          625,
+          1235
+        ],
+        "crown": [
+          630,
+          88
+        ],
+        "bodyHeightInSource": 1147,
+        "transform": {
+          "scale": 0.04761904761904762,
+          "offset": [
+            2.7380952380952337,
+            1.1904761904761827
+          ]
+        },
+        "alphaSource": {
+          "zero": 1010559,
+          "solid": 2057,
+          "intermediate": 559851,
+          "nonzeroBorder": 0
+        },
+        "review": {
+          "state": "draft",
+          "receiptId": null
+        }
+      },
+      "side": {
+        "sourceRoot": [
+          634,
+          1165
+        ],
+        "crown": [
+          652,
+          108
+        ],
+        "bodyHeightInSource": 1057,
+        "transform": {
+          "scale": 0.05167364959228725,
+          "offset": [
+            -0.2610938415101174,
+            -0.1998017750146417
+          ]
+        },
+        "alphaSource": {
+          "zero": 1140832,
+          "solid": 1487,
+          "intermediate": 430197,
+          "nonzeroBorder": 0
+        },
+        "review": {
+          "state": "approved",
+          "receiptId": "alice-side-visual-approval-v1"
+        }
+      },
+      "back": {
+        "sourceRoot": [
+          615,
+          1221
+        ],
+        "crown": [
+          625,
+          94
+        ],
+        "bodyHeightInSource": 1127,
+        "transform": {
+          "scale": 0.04846410613935015,
+          "offset": [
+            2.6945747242996596,
+            0.8253264038534667
+          ]
+        },
+        "alphaSource": {
+          "zero": 1066699,
+          "solid": 1518,
+          "intermediate": 503723,
+          "nonzeroBorder": 12
+        },
+        "review": {
+          "state": "draft",
+          "receiptId": null
+        }
+      }
+    }
+  },
+  "assets": {
+    "front": {
+      "file": "assets/alice-front-64.png",
+      "sha256": "0a5d8d1246c5e75cb9402d980a27385ed585f8825302bdff89ff8f9911fec6fb",
+      "dimensions": [
+        64,
+        64
+      ],
+      "bytes": 1253,
+      "colors": 16
+    },
+    "side": {
+      "file": "assets/alice-side-64.png",
+      "sha256": "f8ce15878d929da93320d6a67d961160c72303a509901222bd5961020c3ffa59",
+      "dimensions": [
+        64,
+        64
+      ],
+      "bytes": 1106,
+      "colors": 16
+    },
+    "back": {
+      "file": "assets/alice-back-64.png",
+      "sha256": "174f3782ace05be4a7e0ee85461f3451696f74e678b0a220f0bf7c21599bd3e5",
+      "dimensions": [
+        64,
+        64
+      ],
+      "bytes": 1040,
+      "colors": 15
+    },
+    "object": {
+      "file": "assets/drink-me-32.png",
+      "sha256": "52f04595cfdbc72c3ea0b0ca46c25940997636d4a85f5660bf3298664716fa41",
+      "dimensions": [
+        32,
+        32
+      ],
+      "bytes": 244,
+      "colors": 6
+    },
+    "scene": {
+      "file": "assets/forest-640.png",
+      "sha256": "7363b4cc70133cfb146cbe2b7a22c7a4c009713c915a5a72da9c6ff7bf5af154",
+      "dimensions": [
+        640,
+        360
+      ],
+      "bytes": 103744,
+      "colors": 48
+    }
+  },
+  "sources": [
+    {
+      "id": "pilot.alice.source.front",
+      "revision": "pilot-v1",
+      "view": "front",
+      "assetType": "character",
+      "sha256": "92b7878cbf4805677017dcfd1f5e6e869075d0474b17b2a6af4185806999250d",
+      "dimensions": [
+        1247,
+        1261
+      ],
+      "review": {
+        "state": "draft",
+        "receiptId": null
+      }
+    },
+    {
+      "id": "pilot.alice.source.side",
+      "revision": "pilot-v1",
+      "view": "side",
+      "assetType": "character",
+      "sha256": "52794c9e75e6a6e460207ebde435f1ce40582964f599878edf3be59be79c7bb2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "review": {
+        "state": "approved",
+        "receiptId": "alice-side-visual-approval-v1"
+      }
+    },
+    {
+      "id": "pilot.alice.source.back",
+      "revision": "pilot-v1",
+      "view": "back",
+      "assetType": "character",
+      "sha256": "df343d7ee6f7efb7dadee1ea5842205459889faf3e1f0c3e89bcbb1f4922fb3a",
+      "dimensions": [
+        1230,
+        1278
+      ],
+      "review": {
+        "state": "draft",
+        "receiptId": null
+      }
+    },
+    {
+      "id": "pilot.drink-me.source.front",
+      "revision": "pilot-v1",
+      "view": "front",
+      "assetType": "object",
+      "sha256": "4298bb42402dc2f62331b223dedba5f24d1bee11ecd365ccab8075aa805638d9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "review": {
+        "state": "draft",
+        "receiptId": null
+      }
+    },
+    {
+      "id": "pilot.forest.source.front",
+      "revision": "pilot-v1",
+      "view": "front",
+      "assetType": "scene",
+      "sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a",
+      "dimensions": [
+        1664,
+        936
+      ],
+      "review": {
+        "state": "draft",
+        "receiptId": null
+      }
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "ready": false,
+    "errors": [],
+    "pending": [
+      "pilot.alice.source.back@pilot-v1: source review pending",
+      "pilot.alice.source.front@pilot-v1: source review pending",
+      "pilot.drink-me.source.front@pilot-v1: source review pending",
+      "pilot.forest.source.front@pilot-v1: source review pending"
+    ],
+    "scope": "isolated-contract-validation; no files adopted"
+  },
+  "visualApprovals": [
+    {
+      "recordType": "visual-approval",
+      "status": "approved-visually",
+      "approvedBy": "Alejandro",
+      "evidence": "User request PASO 4: Alejandro aprueba visualmente el nuevo piloto side de Alice: nariz, orientacion de cabeza, torso en tres cuartos y ambos pies apoyados.",
+      "sha256": "52794c9e75e6a6e460207ebde435f1ce40582964f599878edf3be59be79c7bb2",
+      "approvedScope": [
+        "nose",
+        "head-orientation",
+        "three-quarter-torso",
+        "both-feet-supported"
+      ],
+      "alphaConformity": "not-certified; residual alpha remains; original untouched",
+      "approvedAsProductionMaster": false,
+      "adopted": false,
+      "receiptId": "alice-side-visual-approval-v1"
+    }
+  ],
+  "pilotReview": {
+    "state": "accepted-to-continue",
+    "evidence": "Alejandro explicitly accepted the Cook -> Phaser pilot for continuation and read-only publication; no source status promotion."
+  },
+  "cook": {
+    "engineVersion": "pixel-kitchen-fixed-transform/1",
+    "engineFiles": {
+      "cook_adapter.py": "e94c5899ce371e6f390d73e06a32cb01839688f0e43ae5f9d502707fc636ab40",
+      "engine_cook.py": "f8a29cf22486117ecbd6a6e1f3125cf24ac935f1fef44490902b959722ad5cfd",
+      "engine_forge.py": "968cfe40e1a406bdc2edb906c1d0db0ab7f5bf908346d6843495791d24b84fdb",
+      "object_tools.py": "e5bff731c3fb3551d420a4ca77afd567421aa67807220265689237986343e618",
+      "scene_tools.py": "341b7fda2fb42ebbfea10fdc61952639c2958b636fca965158a508df3bd92d9a"
+    },
+    "parameters": "Pinned existing derivatives; publication does not run Cook",
+    "determinism": {
+      "alice-front": {
+        "equal": true,
+        "sha256": "0a5d8d1246c5e75cb9402d980a27385ed585f8825302bdff89ff8f9911fec6fb"
+      },
+      "alice-side": {
+        "equal": true,
+        "sha256": "f8ce15878d929da93320d6a67d961160c72303a509901222bd5961020c3ffa59"
+      },
+      "alice-back": {
+        "equal": true,
+        "sha256": "174f3782ace05be4a7e0ee85461f3451696f74e678b0a220f0bf7c21599bd3e5"
+      },
+      "bottle": {
+        "equal": true,
+        "sha256": "52f04595cfdbc72c3ea0b0ca46c25940997636d4a85f5660bf3298664716fa41"
+      },
+      "scene": {
+        "equal": true,
+        "sha256": "7363b4cc70133cfb146cbe2b7a22c7a4c009713c915a5a72da9c6ff7bf5af154"
+      }
+    }
+  },
+  "localEditing": "Future editing and writes remain local/LAN; unavailable in this static preview",
+  "adopted": false
+}
