@@ -15,4 +15,4 @@ http.createServer(async(req,res)=>{
     res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','Cache-Control':'no-cache','X-Content-Type-Options':'nosniff'});
     res.end(req.method==='HEAD'?undefined:bytes);
   }catch{res.writeHead(404).end('Not found');}
-}).listen(8872,'127.0.0.1',()=>console.log('Static dist QA: http://127.0.0.1:8872'));
+}).listen(Number(process.env.PORT||8872),'127.0.0.1',()=>console.log('Static dist QA port '+(process.env.PORT||8872)));

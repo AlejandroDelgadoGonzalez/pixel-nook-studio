@@ -3,12 +3,28 @@
 <title>Pixel Kitchen Preview</title>
 <link rel="icon" href="data:,">
 <style>
-*{box-sizing:border-box}body{margin:0;background:#121924;color:#ecf2f8;font:14px system-ui,sans-serif}main{padding:12px 16px;max-width:1150px;margin:auto}h1{font-size:20px;margin:0 0 4px}p{margin:5px 0 10px;color:#bdcbd9}nav{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:10px 0}button{font:inherit;border:1px solid #65758a;border-radius:6px;padding:7px 12px;background:#26354a;color:white;cursor:pointer}button[aria-pressed=true]{background:#175e6c;border-color:#77f5df}label{display:inline-flex;gap:5px;align-items:center}.frame{width:100%;max-width:900px;aspect-ratio:16/9;margin:12px auto;background:#080d14;outline:1px solid #3b5064}#stage{width:100%;height:100%;overflow:hidden}canvas{display:block!important;width:100%!important;height:100%!important;image-rendering:pixelated;image-rendering:crisp-edges}#mapping,#revision{font:12px ui-monospace,monospace;margin:6px 0;line-height:1.6}aside{border-left:3px solid #e6bc58;padding-left:10px;color:#d5dfeb;font-size:12px;margin-top:12px}a{color:#8cddd5}footer{margin-top:8px;font-size:12px}@media(max-width:500px){h1{font-size:18px}main{padding:12px}button{padding:7px 10px}.frame{margin:12px 0}nav{gap:5px}}
+*{box-sizing:border-box}body{margin:0;background:#121924;color:#ecf2f8;font:14px system-ui,sans-serif}main{padding:12px 16px;max-width:1150px;margin:auto}h1{font-size:20px;margin:0 0 4px}p{margin:5px 0 10px;color:#bdcbd9}nav{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:10px 0}button{font:inherit;border:1px solid #65758a;border-radius:6px;padding:7px 12px;background:#26354a;color:white;cursor:pointer}button[aria-pressed=true]{background:#175e6c;border-color:#77f5df}label{display:inline-flex;gap:5px;align-items:center}.frame{width:100%;max-width:900px;aspect-ratio:16/9;margin:12px auto;background:#080d14;outline:1px solid #3b5064}#stage{width:100%;height:100%;overflow:hidden}#stage canvas{display:block!important;width:100%!important;height:100%!important;image-rendering:pixelated;image-rendering:crisp-edges}#mapping,#revision{font:12px ui-monospace,monospace;margin:6px 0;line-height:1.6}aside{border-left:3px solid #e6bc58;padding-left:10px;color:#d5dfeb;font-size:12px;margin-top:12px}a{color:#8cddd5}footer{margin-top:8px;font-size:12px}@media(max-width:500px){h1{font-size:18px}main{padding:12px}button{padding:7px 10px}.frame{margin:12px 0}nav{gap:5px}}
 .frame{max-width:800px}
 button{min-height:44px;touch-action:manipulation}label{min-height:44px;cursor:pointer}input{width:20px;height:20px}button:focus-visible,a:focus-visible{outline:2px solid #8cddd5;outline-offset:3px}.back-link{display:inline-flex;align-items:center;min-height:44px;font-size:12px}footer p{font-size:12px;margin-top:8px}main{padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+
+#kitchen{border:1px solid #496075;border-radius:12px;padding:12px;margin:12px 0 24px;background:#192535}h2{font-size:18px}.compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.compare figure{margin:0;min-width:0}.compare figcaption{font-size:12px;min-height:36px}.compare img{width:100%;height:300px;object-fit:contain;image-rendering:pixelated;background:repeating-conic-gradient(#48505c 0% 25%,#303844 0% 50%) 0/16px 16px}#editor-scroll{height:300px;overflow:auto;overscroll-behavior:contain;background:repeating-conic-gradient(#48505c 0% 25%,#303844 0% 50%) 0/16px 16px}#pixel-editor{display:block;image-rendering:pixelated;touch-action:none;max-width:none}select{min-height:44px;max-width:100%;background:#26354a;color:white;border:1px solid #65758a;border-radius:6px}#kitchen>label{display:flex;margin:5px 0;gap:10px}#palette{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}#palette button{width:44px;height:44px;padding:0;border:2px solid #72859a}#paint-color{width:44px;height:44px}#pixel-zoom{width:100px}textarea{display:block;width:100%;min-height:100px;background:#101a28;color:#dceaf4;margin:8px 0;border:1px solid #65758a}#copy-handoff{background:#176758;width:100%;font-weight:600}button:disabled{opacity:.5} @media(max-width:500px){#kitchen{padding:8px}.compare{gap:6px}.compare img,#editor-scroll{height:256px}}
 </style>
 <main><a class="back-link" href="../index.html">← Back to library</a><h1>Pixel Kitchen Preview</h1>
 <p>Cook → Phaser · 64×64 characters · 32×32 object · 640×360 scene.</p>
+<section id="kitchen" aria-labelledby="queue-title">
+<h2 id="queue-title">Kitchen Queue &amp; Touch Editor</h2>
+<p>Review the large Original, edit native pixels, then copy your handoff to Chef on your PC.</p>
+<label>Task <select id="task-select" aria-label="Task"></select></label>
+<label>Base <select id="base-select" aria-label="Editing base"><option value="chef">Chef candidate</option><option value="cook">Pure Cook</option></select></label>
+<div class="compare"><figure><figcaption id="original-size">Original</figcaption><img id="original-large" alt="Full original reference"></figure><figure><figcaption id="native-size">Native editor</figcaption><div id="editor-scroll"><canvas id="pixel-editor" aria-label="Native pixel editor"></canvas></div></figure></div>
+<nav aria-label="Pixel tools"><button data-tool="pencil" aria-pressed="true">Pencil</button><button data-tool="eyedropper">Eyedropper</button><button data-tool="eraser">Eraser</button><button data-tool="pan">Pan</button><button id="undo" disabled>Undo</button><button id="redo" disabled>Redo</button><label>Color <input id="paint-color" type="color" value="#000000"></label><label>Zoom <input id="pixel-zoom" type="range" min="2" max="16" value="4"></label></nav>
+<div id="palette" aria-label="Sprite palette"></div>
+<button id="copy-handoff" disabled>Approve &amp; Copy Chef Handoff</button>
+<p id="queue-status" role="status">Loading queue…</p>
+<textarea id="handoff" aria-label="Chef handoff JSON" readonly placeholder="Your complete handoff appears here. Copy it or download the JSON."></textarea>
+<button id="download-handoff" disabled>Download handoff JSON</button>
+<p>Read-only hosting. Edits live in browser memory; export before closing. Approval here does not write to your PC or publish anything.</p>
+</section><h2>Cook → Phaser preview</h2>
 <nav aria-label="Inspection controls">
 <button data-view="front">Front</button><button data-view="side" aria-pressed="true">Side</button><button data-view="back">Back</button>
 <button data-zoom="1" aria-pressed="true">Full scene ×1</button><button data-zoom="4">Inspect ×4</button>
@@ -16,9 +32,11 @@ button{min-height:44px;touch-action:manipulation}label{min-height:44px;cursor:po
 </nav>
 <div class="frame"><div id="stage" aria-label="Phaser measured stage"></div></div>
 <div id="mapping">Loading preview…</div><div id="revision"></div>
-<aside>Technical pilot only. Visual approval of Alice side is recorded separately from alpha/geometry. Front/back and other missing source review receipts remain pending; nothing is adopted.</aside>
-<footer><a href="pilot.json">Pinned assets and review status</a> · <a href="assets/alice-side-64.png">Native Alice PNG</a> · <a href="assets/drink-me-32.png">Native object PNG</a><p>Read-only preview. Editing and saving remain part of the future local/LAN workflow.</p></footer>
+<aside>Isolated technical pilot. All five input visual approvals are recorded; source alpha and production scene certification remain separate. Touch edits are not adopted until Chef validates the handoff on PC.</aside>
+<footer><a href="pilot.json">Pinned assets and review status</a> · <a href="assets/alice-side-64.png">Native Alice PNG</a> · <a href="assets/drink-me-32.png">Native object PNG</a><p>Static preview and in-memory touch editor. Chef validates copied handoffs locally on PC.</p></footer>
 </main>
 <script src="/vendor/phaser/phaser.min.js"></script>
 <script type="module" src="./viewer.js"></script>
 </html>
+
+<script type="module" src="./queue-editor.js"></script>

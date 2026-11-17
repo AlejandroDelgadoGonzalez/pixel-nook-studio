@@ -32,10 +32,10 @@ function watch(page){
 }
 let browser;
 try{
-  assert.equal(manifest.validation.valid,true);assert.equal(manifest.validation.ready,false);
-  assert.equal(manifest.validation.pending.length,4);assert.equal(manifest.adopted,false);
+  assert.equal(manifest.validation.valid,true);assert.equal(manifest.validation.ready,true);
+  assert.equal(manifest.validation.pending.length,0);assert.equal(manifest.adopted,false);
   assert.equal(manifest.sources.find(s=>s.id==='pilot.alice.source.side').review.state,'approved');
-  for(const view of ['front','back'])assert.equal(manifest.sources.find(s=>s.id==='pilot.alice.source.'+view).review.state,'draft');
+  for(const view of ['front','back'])assert.equal(manifest.sources.find(s=>s.id==='pilot.alice.source.'+view).review.state,'approved');
   assert.equal(manifest.visualApprovals[0].sha256,'52794c9e75e6a6e460207ebde435f1ce40582964f599878edf3be59be79c7bb2');
   for(const [view,m] of Object.entries(manifest.measurements.views)){
     for(let i=0;i<2;i++)assert.ok(Math.abs(m.sourceRoot[i]*m.transform.scale+m.transform.offset[i]-manifest.placement.root[i])<1e-9,view+' root');

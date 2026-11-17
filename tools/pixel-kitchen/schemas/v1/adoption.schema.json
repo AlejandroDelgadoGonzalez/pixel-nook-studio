@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pixel-kitchen:adoption:1",
+  "$ref": "urn:pixel-kitchen:contracts:1#/$defs/adoption"
+}

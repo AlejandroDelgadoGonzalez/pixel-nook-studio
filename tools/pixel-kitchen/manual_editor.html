@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixel Kitchen · local manual/final pilot</title><link rel="icon" href="data:,">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#121924;color:#eaf2fa;font:14px system-ui}main{max-width:1250px;margin:auto;padding:16px}h1{font-size:22px;margin:0 0 8px}p{color:#b9cad9;line-height:1.5}button,select,input{font:inherit;min-height:44px}button,select{padding:7px 12px;border:1px solid #64788e;background:#24384c;color:white;border-radius:6px}button{cursor:pointer;touch-action:manipulation}button:disabled{opacity:.5;cursor:wait}nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}canvas{display:block;width:min(100%,512px);image-rendering:pixelated;touch-action:none;background:repeating-conic-gradient(#59616d 0 25%,#424c59 0 50%) 0/16px 16px;border:1px solid #6b7b8d}iframe{width:100%;height:650px;border:1px solid #52657b;border-radius:6px}pre{white-space:pre-wrap;font-size:12px;color:#a8e9d9}#status{padding:12px;border-left:3px solid #80dccd;min-height:44px}#approve{background:#1c6659}label{display:flex;align-items:center;gap:7px}h2{font-size:17px}code{color:#9ddfd4}@media(max-width:800px){.columns{grid-template-columns:1fr}iframe{height:700px}}
+</style><main><h1>Pixel Kitchen · local manual → final</h1>
+<p>Isolated consumer only. Source and Cook PNGs remain intact. One approval validates and adopts automatically; failed validation keeps the active revision.</p>
+<nav><label>Asset <select id="asset"><option value="front">Alice front · 64×64</option><option value="object">Drink Me · 32×32</option></select></label>
+<button id="cook">Edit from Cook</button><button id="active">Edit active revision</button></nav>
+<div class="columns"><section><h2>Native pixel editor</h2><canvas id="editor" width="64" height="64" aria-label="Native pixel editor"></canvas>
+<nav><label>Color <input id="color" type="color" value="#c6b496"></label><button id="undo">Undo</button><button id="redo">Redo</button></nav>
+<nav><button id="approve">Approve and save final</button><button id="rollback">Rollback / previous revision</button></nav>
+<p>Click to paint. Middle click picks a color. Ctrl+Z / Ctrl+Shift+Z undo and redo. Hand/label regions and support pixels are protected by the server.</p>
+<div id="status" role="status">Loading local session…</div><pre id="details"></pre></section>
+<section><h2>Phaser · pinned active revision</h2><iframe id="preview" title="Isolated Phaser consumer" src="/preview/?manual=1&view=front"></iframe>
+<p>New loads use the adopted revision. An already loaded view retains its pinned PNG until it reloads. Nothing is written to stories or the Vercel preview.</p></section></div></main>
+<script type="module" src="/editor.js"></script></html>

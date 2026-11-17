@@ -1,6 +1,6 @@
 {
   "schemaVersion": "pixel-kitchen-preview/1",
-  "revision": "cook-phaser-pilot-v1",
+  "revision": "cook-phaser-pilot-approved-v2-touch-queue-v1",
   "scope": "Read-only accepted pilot; not full system certification or an Alice story migration",
   "placement": {
     "world": [
@@ -189,7 +189,7 @@
   "sources": [
     {
       "id": "pilot.alice.source.front",
-      "revision": "pilot-v1",
+      "revision": "pilot-approved-v2",
       "view": "front",
       "assetType": "character",
       "sha256": "92b7878cbf4805677017dcfd1f5e6e869075d0474b17b2a6af4185806999250d",
@@ -198,13 +198,13 @@
         1261
       ],
       "review": {
-        "state": "draft",
-        "receiptId": null
+        "state": "approved",
+        "receiptId": "pilot-input-visual-approvals-v2"
       }
     },
     {
       "id": "pilot.alice.source.side",
-      "revision": "pilot-v1",
+      "revision": "pilot-approved-v2",
       "view": "side",
       "assetType": "character",
       "sha256": "52794c9e75e6a6e460207ebde435f1ce40582964f599878edf3be59be79c7bb2",
@@ -219,7 +219,7 @@
     },
     {
       "id": "pilot.alice.source.back",
-      "revision": "pilot-v1",
+      "revision": "pilot-approved-v2",
       "view": "back",
       "assetType": "character",
       "sha256": "df343d7ee6f7efb7dadee1ea5842205459889faf3e1f0c3e89bcbb1f4922fb3a",
@@ -228,13 +228,13 @@
         1278
       ],
       "review": {
-        "state": "draft",
-        "receiptId": null
+        "state": "approved",
+        "receiptId": "pilot-input-visual-approvals-v2"
       }
     },
     {
       "id": "pilot.drink-me.source.front",
-      "revision": "pilot-v1",
+      "revision": "pilot-approved-v2",
       "view": "front",
       "assetType": "object",
       "sha256": "4298bb42402dc2f62331b223dedba5f24d1bee11ecd365ccab8075aa805638d9",
@@ -243,13 +243,13 @@
         1254
       ],
       "review": {
-        "state": "draft",
-        "receiptId": null
+        "state": "approved",
+        "receiptId": "pilot-input-visual-approvals-v2"
       }
     },
     {
       "id": "pilot.forest.source.front",
-      "revision": "pilot-v1",
+      "revision": "pilot-approved-v2",
       "view": "front",
       "assetType": "scene",
       "sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a",
@@ -258,21 +258,16 @@
         936
       ],
       "review": {
-        "state": "draft",
-        "receiptId": null
+        "state": "approved",
+        "receiptId": "pilot-input-visual-approvals-v2"
       }
     }
   ],
   "validation": {
     "valid": true,
-    "ready": false,
+    "ready": true,
     "errors": [],
-    "pending": [
-      "pilot.alice.source.back@pilot-v1: source review pending",
-      "pilot.alice.source.front@pilot-v1: source review pending",
-      "pilot.drink-me.source.front@pilot-v1: source review pending",
-      "pilot.forest.source.front@pilot-v1: source review pending"
-    ],
+    "pending": [],
     "scope": "isolated-contract-validation; no files adopted"
   },
   "visualApprovals": [
@@ -292,6 +287,33 @@
       "approvedAsProductionMaster": false,
       "adopted": false,
       "receiptId": "alice-side-visual-approval-v1"
+    },
+    {
+      "recordType": "visual-approval",
+      "receiptId": "pilot-input-visual-approvals-v2",
+      "approvedBy": "Alejandro",
+      "status": "approved-visually",
+      "evidence": "Explicit user confirmation: Alice front, Alice back, Drink Me and forest source approved.",
+      "sources": [
+        {
+          "id": "pilot.alice.source.front",
+          "sha256": "92b7878cbf4805677017dcfd1f5e6e869075d0474b17b2a6af4185806999250d"
+        },
+        {
+          "id": "pilot.alice.source.back",
+          "sha256": "df343d7ee6f7efb7dadee1ea5842205459889faf3e1f0c3e89bcbb1f4922fb3a"
+        },
+        {
+          "id": "pilot.drink-me.source.front",
+          "sha256": "4298bb42402dc2f62331b223dedba5f24d1bee11ecd365ccab8075aa805638d9"
+        },
+        {
+          "id": "pilot.forest.source.front",
+          "sha256": "00019941dc5821a5b3b3c4d0c875e44c7497acaeafab9a827a115b7a93fcbc5a"
+        }
+      ],
+      "alphaConformity": "Source alpha not certified by visual approval",
+      "adopted": false
     }
   ],
   "pilotReview": {
@@ -331,6 +353,6 @@
       }
     }
   },
-  "localEditing": "Future editing and writes remain local/LAN; unavailable in this static preview",
+  "localEditing": "Touch edits in browser memory; copy handoff to sequential local Chef for validation/adoption. No cloud writes.",
   "adopted": false
 }

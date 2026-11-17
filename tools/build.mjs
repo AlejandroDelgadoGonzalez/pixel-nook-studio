@@ -1,5 +1,6 @@
 import {cp, mkdir, readdir, readFile, writeFile} from 'node:fs/promises';
 import {resolve, join, extname} from 'node:path';
+import {packageFilter,assertNoPrivateCharacterSources} from './pixel-kitchen/packaging.mjs';
 
 // Source remains identical for localhost. Deployment URLs are scoped to its mount.
 const root = resolve(import.meta.dirname, '..');
@@ -8,8 +9,10 @@ const base = process.env.BASE_PATH || '/';
 if (!/^\/(?:[A-Za-z0-9_-]+\/)*$/.test(base)) throw Error('BASE_PATH must be / or /project/');
 await mkdir(output, {recursive: true});
 for (const dir of ['app', 'platform', 'stories', 'vendor']) {
-  await cp(join(root, dir), join(output, dir), {recursive: true});
+  await cp(join(root, dir), join(output, dir), {recursive: true, filter: packageFilter(root)});
 }
+// Fail closed if an earlier generated dist already contains excluded sources.
+await assertNoPrivateCharacterSources(output);
 const textTypes = new Set(['.html', '.js', '.mjs', '.json', '.css']);
 async function scope(directory) {
   for (const entry of await readdir(directory, {withFileTypes: true})) {
