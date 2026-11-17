@@ -12,7 +12,7 @@ const localManual = new URL(location.href).searchParams.get('manual') === '1';
 const localState = localManual ? await (await fetch('/api/state',{cache:'no-store'})).json() : null;
 if (localManual) {
   document.querySelector('h1').textContent='Pixel Kitchen · local active consumer';
-  document.querySelector('main > p').textContent='Cook → manual Final → validated adoption. Whole sprites; no story or Chef.';
+  document.querySelector('main > p').textContent='Cook / optional Chef → manual Final → validated adoption. Whole sprites; isolated consumer, no story.';
   const footer=document.querySelector('footer');
   footer.replaceChildren();
   for(const [href,label] of [['/api/state','Active revisions / history'],[localState.assets.front.active.imageUrl,'Active native Alice PNG']]){
