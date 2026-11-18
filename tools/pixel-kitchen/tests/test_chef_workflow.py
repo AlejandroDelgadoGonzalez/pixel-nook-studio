@@ -17,7 +17,7 @@ class ChefTests(unittest.TestCase):
  def handoff(self,mode='chef',changes=None):
   s=self.store._read();t=s['queue'][0];r=self.store._find(s,t[mode]);im=Image.open(self.root/r['image']['path']).convert('RGBA')
   changes=[dict(x=10,y=10,hex='#123456FF')] if changes is None else changes
-  return dict(schemaVersion='pixel-kitchen-handoff/1',hashEncoding='pk-rgba-png/1',taskId=t['taskId'],assetId=t['assetId'],baseRevision=r['revision'],baseSha256=r['image']['sha256'],editedFrom=mode,comparisonBase=mode,expectedCurrent=t['expectedCurrent'],canvas=r['image']['dimensions'],changes=changes,finalSha256=hashlib.sha256(canonical_png(patch(im,changes))).hexdigest())
+  return dict(schemaVersion='pixel-kitchen-handoff/1',hashEncoding='pk-rgba-png/1',taskId=t['taskId'],assetId=t['assetId'],baseRevision=r['revision'],baseSha256=r['image']['sha256'],editedFrom=mode,comparisonBase=mode,expectedCurrent=t['final'] if mode=='final' else t['expectedCurrent'],canvas=r['image']['dimensions'],changes=changes,finalSha256=hashlib.sha256(canonical_png(patch(im,changes))).hexdigest())
  def reject(self,h):
   before=self.store.path.read_bytes()
   with self.assertRaises(Conflict):self.store.receive(h)
@@ -56,3 +56,19 @@ class ChefTests(unittest.TestCase):
   s=self.store._read();c=self.store._find(s,s['queue'][0]['chef']);self.assertEqual(c['status'],'draft');self.assertIsNone(c['approval'])
  def test_export_no_private_paths(self):
   out=self.store.export(self.root/'.artifacts/static');text=json.dumps(out);self.assertNotIn(str(self.root),text);self.assertNotIn('imageUrl',text)
+
+ def test_revise_adopted_final(self):
+  first=self.store.receive(self.handoff())
+  handoff=self.handoff('final',[dict(x=11,y=10,hex='#654321FF')])
+  second=self.store.receive(handoff)
+  self.assertEqual(second['diff']['editedFromRef'],first['final'])
+  self.assertEqual(second['diff']['count'],2)
+  state=self.store._read()
+  self.assertEqual(len(state['learning'][-1]['changes']),1)
+  self.assertEqual([t['status'] for t in state['queue']],['complete','active'])
+  q=self.store.export(self.root/'.artifacts/second-export')
+  self.assertTrue(q['tasks'][0]['adoptedFinal'])
+  self.assertEqual(q['tasks'][0]['expectedCurrent'],second['final'])
+  self.assertEqual(q['tasks'][0]['bases']['final']['sha256'],handoff['finalSha256'])
+  handoff['finalSha256']='0'*64
+  self.reject(handoff)

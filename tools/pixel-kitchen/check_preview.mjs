@@ -52,6 +52,13 @@ try{
     assert.equal(hash(Buffer.from(await (await get(base+route+pin.file)).arrayBuffer())),expected[kind]);
     result.assets.push({kind,sha256:pin.sha256,dimensions:pin.dimensions,bytes:bytes.length});
   }
+  const queue=await (await get(base+route+'queue/queue.json')).json();
+  const finalPins=Object.fromEntries(queue.tasks.filter(t=>t.adoptedFinal).map(t=>[t.taskId,t.bases.final]));
+  for(const pin of Object.values(finalPins)){
+    const bytes=Buffer.from(await (await get(base+route+'queue/'+pin.url)).arrayBuffer());
+    assert.equal(hash(bytes),pin.sha256);
+    assert.deepEqual([bytes.readUInt32BE(16),bytes.readUInt32BE(20)],pin.dimensions);
+  }
   browser=await chromium.launch({channel:process.env.QA_BROWSER_CHANNEL||'chrome',headless:true});
   for(const viewport of [{width:390,height:844},{width:1280,height:720}]){
     const page=await browser.newPage({viewport,deviceScaleFactor:1});watch(page);
@@ -65,7 +72,24 @@ try{
     });
     await page.goto(base+'/#home');await page.waitForSelector('[data-save="the-first-path"]');
     const entry=page.getByRole('link',{name:'Pixel Kitchen Preview',exact:true});assert.equal(await entry.count(),1);
-    await entry.click();await page.waitForFunction(()=>window.pixelKitchenPilot?.state.ready);
+    await entry.click();
+    if(Object.keys(finalPins).length){
+      await page.waitForFunction(()=>document.querySelector('#task-select').options.length>0);
+      if(await page.locator('#editor-dock').isHidden())await page.click('#tools-toggle');
+      for(const task of queue.tasks.filter(t=>t.adoptedFinal)){
+        await page.selectOption('#task-select',task.taskId);
+        await page.waitForFunction(([w,h])=>{
+          const c=document.querySelector('#pixel-editor');
+          return c.width===w&&c.height===h&&document.querySelector('#base-select').value==='final'
+            &&!document.querySelector('#copy-handoff').disabled;
+        },task.bases.final.dimensions);
+        assert.equal(await page.locator('#base-select option:checked').textContent(),'Final (Approved)');
+        const pixels=await page.locator('#pixel-editor').evaluate(c=>Array.from(c.getContext('2d').getImageData(0,0,c.width,c.height).data));
+        assert.deepEqual(pixels,task.bases.final.rgba);
+      }
+    }
+    if(await page.locator('#leave-editor').isVisible())await page.click('#leave-editor');
+    await page.waitForFunction(()=>window.pixelKitchenPilot?.state.ready);
     const states=[];
     for(const zoom of [1,4]){
       await page.click(`[data-zoom="${zoom}"]`);
@@ -76,11 +100,16 @@ try{
         assert.deepEqual(s.nativeCanvas,[640,360]);assert.deepEqual(s.alice.cell,[64,64]);assert.deepEqual(s.object.cell,[32,32]);
         assert.deepEqual(s.alice.scale,[1,1]);assert.deepEqual(s.object.scale,[1,1]);
         assert.deepEqual(s.alice.root,[395.5,300]);assert.deepEqual(s.object.root,[445,300]);
+        assert.equal(s.revisions.alice,view==='front'?(finalPins['alice-front-v1']?.revision??null):null);
+        assert.equal(s.revisions.object,finalPins['drink-me-v1']?.revision??null);
+        for(const pin of [view==='front'&&finalPins['alice-front-v1'],finalPins['drink-me-v1']]){
+          if(pin)assert.ok(requests.includes(base+route+'queue/'+pin.url));
+        }
         assert.equal(s.alice.texture,view);assert.equal(s.zoom,zoom);assert.equal(s.rendererAntialias,false);
         assert.ok(Object.values(s.textureFilters).every(v=>v===1));assert.equal(s.documentOverflow,false);
         assert.ok(Math.abs(s.cssCanvas.width/640-s.cssCanvas.height/360)<1e-6);
         for(let i=0;i<2;i++)assert.ok(Math.abs(s.rootRoundTrip[i]-s.alice.root[i])<1e-7);
-        for(const button of await page.locator('button').all())assert.ok((await button.boundingBox()).height>=44);
+        for(const button of await page.locator('button:visible').all())assert.ok((await button.boundingBox()).height>=44);
         states.push(s);
         if(view==='side')await page.screenshot({path:path.join(output,`preview-${viewport.width}x${viewport.height}-${zoom===1?'scene':'detail'}.png`)});
       }

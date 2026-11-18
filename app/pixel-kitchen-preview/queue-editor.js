@@ -93,7 +93,7 @@ $('#close-handoff').onclick=()=>$('#handoff-backup').classList.remove('open');
 async function load(id,which){
  const version=++loadVersion;$('#copy-handoff').disabled=true;
  try{
- const t=tasks.find(t=>t.taskId===id);const m=which||(t.bases.chef?'chef':'cook');const b=t.bases[m];
+ const t=tasks.find(t=>t.taskId===id);const m=which||(t.bases.final?'final':t.bases.chef?'chef':'cook');const b=t.bases[m];
  if(!b)throw Error('This candidate is not prepared yet.');
  const raw=new Uint8Array(await (await fetch(`./queue/${b.url}`)).arrayBuffer());if(await sha256(raw)!==b.sha256)throw Error('Base hash mismatch. Reload this release.');
  if(version!==loadVersion)return;
@@ -105,10 +105,12 @@ async function load(id,which){
   resetView(originalView);
  }
  $('#original-size').textContent='Original · '+t.original.dimensions.join(' × ')+' px';
- $('#base-select').value=m;$('#base-select option[value=chef]').disabled=!t.bases.chef;
- $('#native-size').textContent=`${mode==='chef'?'Chef candidate':'Pure Cook'} · ${b.dimensions.join(' × ')} native pixels`;
- $('#task-select').value=id;$('#copy-handoff').disabled=t.status!=='active';
- draw();resetView(editorView);message(t.status==='active'?'Active task · edits stay in this browser until you copy the handoff.':'Waiting task · inspect Cook now; Chef prepares it after the active task.');
+ const labels={chef:'Chef candidate',cook:'Pure Cook',final:'Final (Approved)'};
+ $('#base-select').replaceChildren(...Object.keys(labels).filter(key=>t.bases[key]).map(key=>new Option(labels[key],key)));
+ $('#base-select').value=m;
+ $('#native-size').textContent=`${labels[mode]} · ${b.dimensions.join(' × ')} native pixels`;
+ $('#task-select').value=id;$('#copy-handoff').disabled=!(t.status==='active'||(m==='final'&&t.adoptedFinal));
+ draw();resetView(editorView);message(t.status==='active'?'Active task · edits stay in this browser until you copy the handoff.':t.status==='complete'?'Completed task · choose the adopted Final to submit another edit.':'Waiting task · inspect Cook now; Chef prepares it after the active task.');
  }catch(e){message(e.message);}
 }
 function setTool(){

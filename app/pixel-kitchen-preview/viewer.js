@@ -7,7 +7,18 @@ const {placement, measurements} = manifest;
 const report = {validation: manifest.validation};
 let scene, alice, bottle, overlay;
 const state = {ready: false, view: 'side', zoom: 1, overlay: true};
-const filename = view => manifest.assets[view].file;
+const queueResponse = await fetch(new URL('queue/queue.json', base));
+if (!queueResponse.ok) throw new Error('The review queue could not be loaded.');
+const {tasks} = await queueResponse.json();
+const adopted = Object.fromEntries(
+  [['front', 'alice-front-v1'], ['object', 'drink-me-v1']].map(([view, id]) => {
+    const task = tasks.find(task => task.taskId === id);
+    return [view, task?.adoptedFinal ? task.bases.final : null];
+  })
+);
+if (adopted.front) state.view = 'front';
+const filename = view => adopted[view] ? 'queue/' + adopted[view].url : manifest.assets[view].file;
+const revisionLabel = view => adopted[view] ? 'Adopted Final' : 'Cook only';
 const game = new Phaser.Game({
   type: Phaser.CANVAS, width: 640, height: 360, parent: 'stage',
   pixelArt: true, roundPixels: true, antialias: false, resolution: 1,
@@ -15,7 +26,7 @@ const game = new Phaser.Game({
   scene: {
     preload() {
       this.load.image('forest', new URL(manifest.assets.scene.file, base).href);
-      this.load.image('bottle', new URL(manifest.assets.object.file, base).href);
+      this.load.image('bottle', new URL(filename('object'), base).href);
       for (const view of ['front', 'side', 'back']) this.load.image(view, new URL(filename(view), base).href);
     },
     create() {
@@ -61,7 +72,7 @@ function refreshMapping() {
   document.querySelector('#mapping').textContent =
     `640×360 world · 1 PNG px = 1 world unit · camera ×${state.zoom} · display ${effective.toFixed(5)} CSS px / native px`;
   document.querySelector('#revision').textContent =
-    `${state.view} · root (${placement.root.join(', ')}) → (${placement.aliceRoot.join(', ')}) · all sprite scales ×1 · Cook only`;
+    `${state.view} · root (${placement.root.join(', ')}) → (${placement.aliceRoot.join(', ')}) · all sprite scales ×1 · Alice: ${revisionLabel(state.view)} · Drink Me: ${revisionLabel('object')}`;
 }
 
 document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => {state.view = b.dataset.view; update();}));
@@ -90,6 +101,7 @@ window.pixelKitchenPilot = {
       object: {position:[bottle.x,bottle.y],root:[bottle.x+16,bottle.y+30],scale:[bottle.scaleX,bottle.scaleY],cell:[bottle.width,bottle.height]},
       camera: {zoom:cam.zoom,scroll:[cam.scrollX,cam.scrollY]},
       rootScreen:screen,rootRoundTrip:[roundTrip.x,roundTrip.y],
+      revisions: {alice: adopted[state.view]?.revision ?? null, object: adopted.object?.revision ?? null},
       supportY:placement.supportSegment[0][1],pending:report.validation.pending,
       documentOverflow:document.documentElement.scrollWidth>innerWidth};
   }

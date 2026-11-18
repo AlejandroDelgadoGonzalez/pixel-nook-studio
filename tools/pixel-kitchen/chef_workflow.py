@@ -81,21 +81,34 @@ class ChefStore(SessionStore):
         if t:
             t['expectedCurrent']=self._consumer(s,t['key'])['current']
             self._candidate(s,t);t['status']='active'
+    def _task_base(self,t,mode):
+        if t and ((t['status']=='active' and mode in ('chef','cook')) or
+                  (t['status']=='complete' and mode=='final')) and mode in t:
+            return t[mode]
+        raise Conflict('409: task or editing base is no longer available')
+
     def _expected(self,c,expected):
         super()._expected(c,expected)
         if self.transaction:
             s=self._read();t=next((t for t in s['queue'] if t['taskId']==self.transaction['taskId']),None)
-            if not t or t['status']!='active':raise Conflict('409: task is no longer active')
-            current_base=self._find(s,t[self.transaction['editedFrom']])
+            current_base=self._find(s,self._task_base(t,self.transaction['editedFrom']))
             if current_base['revision']!=self.transaction['baseRevision'] or current_base['image']['sha256']!=self.transaction['baseSha256']:raise Conflict('409: candidate changed during import')
     def _commit(self,s):
         if self.transaction and s.get('history') and s['history'][-1]['operation']=='approve-and-adopt':
             h=self.transaction;t=next(t for t in s['queue'] if t['taskId']==h['taskId'])
             final=self._find(s,s['history'][-1]['current'])
-            lesson=dict(handoffId=digest(h),assetId=t['assetId'],baseRevision=h['baseRevision'],baseSha256=h['baseSha256'],editedFrom=h['editedFrom'],comparisonBase=h['comparisonBase'],cookBase=final['cookBase'],final=reference(final),changes=final['changes'],observation='Exact approved human changes; intent is not inferred. Preserve roots, supports and protected pixels.',status='observed-not-universal-rule')
+            was_active=t['status']=='active'
+            parent=self._find(s,final['parent'])
+            before=Image.open(self.root/parent['image']['path']).convert('RGBA')
+            after=Image.open(self.root/final['image']['path']).convert('RGBA')
+            edits=[dict(x=x,y=y,before=list(before.getpixel((x,y))),after=list(after.getpixel((x,y)))
+                        ) for x,y in sorted({(c['x'],c['y']) for c in h['changes']},key=lambda p:(p[1],p[0]))
+                   if before.getpixel((x,y))!=after.getpixel((x,y))]
+            lesson=dict(handoffId=digest(h),assetId=t['assetId'],baseRevision=h['baseRevision'],baseSha256=h['baseSha256'],editedFrom=h['editedFrom'],comparisonBase=h['comparisonBase'],cookBase=final['cookBase'],final=reference(final),changes=edits,observation='Exact approved human changes; intent is not inferred. Preserve roots, supports and protected pixels.',status='observed-not-universal-rule')
             s['learning'].append(lesson);t['status']='complete';t['final']=reference(final)
             s['handoffs'][digest(h)]=dict(final=reference(final),taskId=t['taskId'])
-            self._next(s);self._validate(s)
+            if was_active:self._next(s)
+            self._validate(s)
         super()._commit(s)
     def receive(self,h):
         allowed={'schemaVersion','hashEncoding','taskId','assetId','baseRevision','baseSha256','editedFrom','comparisonBase','expectedCurrent','canvas','changes','finalSha256','geometry'}
@@ -103,19 +116,19 @@ class ChefStore(SessionStore):
         s=self._read();receipt=digest(h)
         if receipt in s.get('handoffs',{}):return dict(status=200,replayed=True,**s['handoffs'][receipt])
         t=next((t for t in s['queue'] if t['taskId']==h.get('taskId')),None)
-        if not t or t['status']!='active':raise Conflict('409: unknown/stale task')
         if h.get('schemaVersion')!='pixel-kitchen-handoff/1' or h.get('hashEncoding')!='pk-rgba-png/1':raise Conflict('Unsupported handoff version/codec')
         mode=h.get('editedFrom')
-        if mode not in ('chef','cook') or h.get('comparisonBase')!=mode:raise Conflict('Wrong editing/comparison base')
-        parent=self._find(s,t[mode]);pin=reference(parent)
+        if mode not in ('chef','cook','final') or h.get('comparisonBase')!=mode:raise Conflict('Wrong editing/comparison base')
+        parent=self._find(s,self._task_base(t,mode));pin=reference(parent)
+        expected=pin if mode=='final' else t['expectedCurrent']
         if h.get('assetId')!=t['assetId'] or h.get('baseRevision')!=pin['revision'] or h.get('baseSha256')!=parent['image']['sha256']:raise Conflict('409: obsolete base hash/revision')
-        if h.get('expectedCurrent')!=t['expectedCurrent']:raise Conflict('409: wrong expected consumer')
+        if h.get('expectedCurrent')!=expected:raise Conflict('409: wrong expected consumer')
         if 'geometry' in h and h['geometry']!=parent['geometry']:raise Conflict('409: geometry/root altered')
         if h.get('canvas',parent['image']['dimensions'])!=parent['image']['dimensions']:raise Conflict('409: canvas altered')
         im=Image.open(self.root/parent['image']['path']).convert('RGBA');out=patch(im,h['changes']);raw=canonical_png(out)
         if hashlib.sha256(raw).hexdigest()!=h.get('finalSha256'):raise Conflict('409: finalSha256 mismatch')
         self.transaction=h
-        try:r=self.approve(t['key'],t['expectedCurrent'],pin,h['baseSha256'],parent['geometry'],raw)
+        try:r=self.approve(t['key'],expected,pin,h['baseSha256'],parent['geometry'],raw)
         finally:self.transaction=None
         self.materialize_learning()
         return dict(status=200,**r)
@@ -128,13 +141,16 @@ class ChefStore(SessionStore):
             s=self._read();self._validate(s);out=Path(destination);out.mkdir(parents=True,exist_ok=True);tasks=[]
             for t in s['queue']:
                 item={k:t[k] for k in ('taskId','assetId','status','expectedCurrent','label')};item['bases']={}
+                if 'final' in t:
+                    item['adoptedFinal']=self._consumer(s,t['key'])['current']==t['final']
+                    item['expectedCurrent']=t['final']
                 raw=(self.root/t['original']['path']).read_bytes()
                 if hashlib.sha256(raw).hexdigest()!=t['original']['sha256']:raise Conflict('Original mismatch')
                 name=t['taskId']+'-original.png';(out/name).write_bytes(raw)
                 item['original']=dict(url=name,sha256=t['original']['sha256'],dimensions=t['original']['dimensions'])
-                for mode in ('cook','chef'):
+                for mode in ('cook','chef','final'):
                     if mode not in t:continue
-                    r=self._find(s,t[mode]);raw=(self.root/r['image']['path']).read_bytes();name=t['taskId']+'-'+mode+'.png';(out/name).write_bytes(raw)
+                    r=self._find(s,t[mode]);raw=(self.root/r['image']['path']).read_bytes();name=t['taskId']+'-'+mode+('-'+r['revision'] if mode=='final' else '')+'.png';(out/name).write_bytes(raw)
                     im=Image.open(io.BytesIO(raw)).convert('RGBA')
                     item['bases'][mode]=dict(url=name,revision=r['revision'],sha256=r['image']['sha256'],dimensions=list(im.size),rgba=list(im.tobytes()),geometry=r['geometry'])
                 tasks.append(item)

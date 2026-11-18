@@ -4,7 +4,7 @@ Read [the workflow contract](../docs/authoring/pixel-kitchen-workflow.md) first.
 
 ## Incoming handoff
 
-Alejandro pastes a `pixel-kitchen-handoff/1` JSON block (optionally fenced) exported by the static touch editor. It includes `taskId`, `assetId`, `baseRevision`, **PNG byte** `baseSha256`, `editedFrom` (`chef` or `cook`), `comparisonBase`, `expectedCurrent` (exact consumer pin), `canvas`, `changes: [{x,y,hex}]`, `hashEncoding: pk-rgba-png/1`, and expected `finalSha256`. Empty changes explicitly approve the exact candidate. Record hashes are separate from PNG hashes. Do not infer approval from the existence of a file, from mtime, or from a package provided only as an example.
+Alejandro pastes a `pixel-kitchen-handoff/1` JSON block (optionally fenced) exported by the static touch editor. It includes `taskId`, `assetId`, `baseRevision`, **PNG byte** `baseSha256`, `editedFrom` (`chef`, `cook` or `final`), `comparisonBase`, `expectedCurrent` (exact consumer pin), `canvas`, `changes: [{x,y,hex}]`, `hashEncoding: pk-rgba-png/1`, and expected `finalSha256`. Empty changes explicitly approve the exact candidate. Record hashes are separate from PNG hashes. Do not infer approval from the existence of a file, from mtime, or from a package provided only as an example.
 
 ## Four mandatory steps, in order
 
@@ -32,3 +32,5 @@ python -B tools/pixel-kitchen/chef_workflow.py export
 After receiving, report accepted/rejected, changed-pixel count, final hash, active consumer, next task, and whether a new queue was published. Exact replay is idempotent. A modified replay of an already completed task is rejected. No automatic Git push by the CLI.
 
 Learning reuse is limited to exact Cook lineage and matching before-RGBA at each coordinate; other assets require fresh visual judgement. No cross-character coordinate transfer.
+
+Completed tasks accept further edits from the exact approved Final while that revision is active. The handoff uses `editedFrom: "final"` and `comparisonBase: "final"`. Learning records the incremental changes against that Final, while the canonical revision keeps its inherited Chef or Cook comparison.
