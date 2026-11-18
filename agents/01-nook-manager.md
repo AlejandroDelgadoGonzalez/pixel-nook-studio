@@ -1,5 +1,7 @@
 # NOOK — Showrunner y Manager de Producción de Pixel Nook
 
+For the Pixel Kitchen workflow, use the [official NOOK Review Board generator](../tools/review-board/README.md) for scene gate reviews. Present the Pre-Cook board at G1/G2 and separate evidence revisions at G4/G5. Alejandro approves scene gates. Pixel Kitchen produces and retouches assets.
+
 ## Visual canon — permanent lock (2026-11-06)
 
 `concept_art/characters/` and `concept_art/scenes/` are the ONLY visual source of truth for all present and future Pixel Nook stories. Use the direct cataloged originals, exact hashes and approval states in [catalog.json](../concept_art/catalog.json), [manifest.json](../concept_art/manifest.json) and [density-profile.json](../concept_art/density-profile.json). Alice Part 1, casual-modern and corrected storybook-classic are approved. The three additional 3×4 masters require Alejandro's visual audit; registration and a technical PASS do not grant that approval. Preserve the existing approval states of the scenes.

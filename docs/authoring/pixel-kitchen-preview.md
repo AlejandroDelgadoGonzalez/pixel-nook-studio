@@ -6,11 +6,11 @@ The public page preserves the Cook → Phaser pilot and adds **Kitchen Queue & T
 
 ## Review on a phone
 
-Open `/app/pixel-kitchen-preview/`. Alice front is the active demo task; Drink Me is waiting. Each task displays its selected **full-resolution large Original**, scaled only for presentation, beside a native 64×64 or 32×32 editor. Pencil, eyedropper, eraser, undo/redo, palette and zoom controls are at least 44px high. Pan the editor container when magnified. Base selection offers Chef when prepared and pure Cook. Switching discards unsent edits only after confirmation.
+Open `/app/pixel-kitchen-preview/`. Alice front and Drink Me are complete and open on **Final (Approved)**. Use the full-resolution Original for comparison. Chef and Cook remain available in **Base**. To submit another edit, start from the adopted Final. In landscape, use **Fullscreen** and **Tools** to show or hide the controls.
 
 **Approve & Copy Chef Handoff** creates the complete JSON, displays it in a selectable text area and attempts clipboard copy. **Download handoff JSON** is always the fallback. Paste that JSON into the Chef chat on PC. Nothing is adopted by the browser. A waiting task is inspectable but cannot be approved until the local workflow prepares/activates it.
 
-The handoff pins task/asset, edit revision and PNG hash, Chef-or-Cook comparison base, expected consumer revision, canvas and exact coordinate changes. An empty list means direct approval. `finalSha256` hashes the deterministic **pk-rgba-png/1** byte encoding (RGBA PNG, filter0, stored DEFLATE); it is not an arbitrary browser canvas PNG hash or canonical record hash. Python and JavaScript use the same encoding.
+The handoff pins task/asset, edit revision and PNG hash, Chef, Cook or Final comparison base, expected consumer revision, canvas and exact coordinate changes. An empty list means direct approval. `finalSha256` hashes the deterministic **pk-rgba-png/1** byte encoding (RGBA PNG, filter0, stored DEFLATE); it is not an arbitrary browser canvas PNG hash or canonical record hash. Python and JavaScript use the same encoding.
 
 ## Local execution and static publication
 
@@ -25,7 +25,7 @@ The CLI uses the existing **private, approved local pilot seed**; source origina
 
 Chef is the agent role, not a bundled AI model. Candidate recipes record actual inspection against Original plus exact coordinates. The initial Alice and bottle inspections found no justified surgical edit: the initial Chef pixels deliberately equal Cook. They remain draft proposals, not invented retouch results. The next recipe consults learning; source-specific intent requires the sequential Chef's visual review, not blind coordinate transfer. No autonomous daemon or hidden generation occurs.
 
-Public queue assets under `app/pixel-kitchen-preview/queue/` are explicit selected copies, including only the two required large originals, Cook and prepared Chef PNGs. Their hashes/size/pixels are pinned in `queue.json`. Private source directories and local receipts/state are not published. The five Phaser PNGs retain their original bytes, root(32.5,60), object root(16,30), world scale1, view alternation and nearest ×4. The selected source approvals are now recorded: `valid=true`, `ready=true`; source alpha and production scene certification are separate. The earlier published pending snapshot remains historical in Git. No narrative or NookForge change is included.
+Public queue assets under `app/pixel-kitchen-preview/queue/` are explicit selected copies, including only the two required large originals, Cook, Chef and adopted Final PNGs. Their hashes/size/pixels are pinned in `queue.json`. Private source directories and local receipts/state are not published. Phaser loads the adopted Finals for Alice front and Drink Me, retaining their measured roots and world scale 1. Side and Back retain Cook. Nearest ×4 is available. The selected source approvals are now recorded: `valid=true`, `ready=true`; source alpha and production scene certification are separate. The earlier published pending snapshot remains historical in Git. No narrative or NookForge change is included.
 
 ## Verification
 
@@ -39,8 +39,8 @@ node tools/pixel-kitchen/check_queue.mjs http://127.0.0.1:8872
 npm run qa:pixel-kitchen-preview -- http://127.0.0.1:8872
 ```
 
-Run both browser checks against the public Vercel URL after deployment. Tests exercise390×844 and1280×720, native touch coordinates, no scroll jump, undo/redo, denied-clipboard fallback, JSON download, Cook approval and waiting32px task, static resource hashes, Phaser views/zoom and existing home/reader entry points. Evidence is written only below `.artifacts/`. These are emulated viewports, not a physical-phone claim. The real phone→pasted handoff test remains Alejandro's next action.
+Run both browser checks against the public Vercel URL after deployment. They cover adopted assets, Final-based handoff export, Phaser and library/reader regression in emulated viewports. Evidence stays under `.artifacts/`. Both physical-phone handoffs were received and adopted. A new end-to-end check can start from either adopted Final.
 
 Learning reuse is limited to exact Cook lineage and matching before-RGBA at each coordinate; other assets require fresh visual judgement. No cross-character coordinate transfer.
 
-To view the adopted local consumer in Phaser, run `python -B tools/pixel-kitchen/local_editor_server.py --port 8895 --session .artifacts/pixel-kitchen-transition/chef-queue/session-v1`, then open `http://127.0.0.1:8895/preview/?manual=1&view=front`. It reads the same active snapshot; a loaded view stays pinned until reload. The public Phaser panel retains the accepted Cook composition while the queue evolves.
+To view the adopted local consumer in Phaser, run `python -B tools/pixel-kitchen/local_editor_server.py --port 8895 --session .artifacts/pixel-kitchen-transition/chef-queue/session-v1`, then open `http://127.0.0.1:8895/preview/?manual=1&view=front`. It reads the same active snapshot; a loaded view stays pinned until reload. The public Phaser panel uses the adopted revisions published in the queue manifest.

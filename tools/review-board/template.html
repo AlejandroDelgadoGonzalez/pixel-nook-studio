@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>NOOK · Scene Review Board</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101720;color:#edf3f5;font:15px/1.55 system-ui,sans-serif}main{max-width:1160px;margin:auto;padding:18px}section{border-top:1px solid #364654;padding:24px 0}h1,h2,h3,p{margin:0 0 10px}h1{font-size:clamp(24px,5vw,42px)}h2{font-size:23px}h3{font-size:16px}p,li,td{overflow-wrap:anywhere}.note,figcaption{color:#b7c9d3}.badge{display:inline-block;border:1px solid #658d8d;border-radius:5px;padding:3px 8px;color:#9af3d4;margin:0 6px 6px 0}a{color:#a4edda}nav,.controls{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 16px;align-items:center}select,button{min-height:44px;color:inherit;background:#203344;border:1px solid #698195;border-radius:6px;padding:6px 10px;font:inherit}label{display:inline-flex;min-height:32px;align-items:center;gap:6px}article,figure,.stage{background:#192633;border:1px solid #3f5364;border-radius:8px;margin:0;padding:12px;min-width:0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px}.cards img{display:block;width:100%;height:220px;object-fit:contain;image-rendering:pixelated;background:#303b47;margin:8px 0}.cards .small img{height:130px}.stage{padding:0;overflow:hidden;position:relative}.stage img{display:block;width:100%}.stage svg{position:absolute;inset:0;width:100%;height:100%}.stage text{font:bold 11px system-ui;paint-order:stroke;stroke:#111;stroke-width:2.6px;fill:white}.stage [hidden]{display:none}.scroll{overflow:auto}table{border-collapse:collapse;width:100%}th,td{text-align:left;vertical-align:top;padding:7px;border-bottom:1px solid #364654}pre{white-space:pre-wrap;overflow-wrap:anywhere}summary{cursor:pointer;padding:8px 0}.sample{overflow:auto;max-height:380px;background:#303b47;padding:10px}.sample img{display:block;max-width:none;image-rendering:pixelated}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pair figure>img{width:100%;height:210px;object-fit:contain;image-rendering:pixelated}.break{margin:10px 0}.keys{display:flex;flex-wrap:wrap;gap:4px 12px}@media(max-width:560px){main{padding:12px}.pair{grid-template-columns:1fr}.stage text{font-size:14px}}
+</style>
+<main><header><p class="badge">NOOK / SCENE REVIEW</p><h1 id="title"></h1><nav id="navigation" aria-label="Sections"></nav></header><div id="sections"></div></main>
+<script id="board-data" type="application/json">@@BOARD_DATA@@</script>
+<script>
+'use strict';
+const board=JSON.parse(document.querySelector('#board-data').textContent);
+const $=s=>document.querySelector(s);
+function node(tag,text,parent,attrs={}) {
+ const el=document.createElement(tag);
+ if(text!=null)el.textContent=text;
+ for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);
+ parent?.append(el);
+ return el;
+}
+function table(parent,columns,rows){
+ const t=node('table',null,node('div',null,parent,{class:'scroll'}));
+ const header=node('tr',null,node('thead',null,t));
+ columns.forEach(c=>node('th',c,header,{scope:'col'}));
+ const body=node('tbody',null,t);
+ for(const row of rows){
+  const tr=node('tr',null,body);row.forEach(c=>node('td',Array.isArray(c)?c.join(', '):c,tr));
+ }
+}
+function details(parent,label,data){
+ const d=node('details',null,parent);node('summary',label,d);
+ node('pre',JSON.stringify(data,null,2),d);
+}
+function picture(parent,asset){return node('img',null,parent,{src:asset.data,alt:asset.label||asset.name});}
+function badge(parent,text){node('span',text,parent,{class:'badge'});}
+function note(parent,text){node('p',text,parent,{class:'note'});}
+function assetCard(parent,id,reused){
+ const a=board.assets[id], card=node('article',null,parent,{class:reused?'small':''});
+ node('h3',a.label||id,card);picture(card,a);
+ note(card,a.name+' · '+a.dimensions.join(' × ')+' px · '+a.revision);
+ note(card,a.status);
+ if(a.beats?.length)note(card,'Beats: '+a.beats.join(', '));
+ if(a.view)note(card,'View / pose: '+a.view);
+ if(a.references?.length)note(card,'References: '+a.references.join(', '));
+ if(a.bodyScale)note(card,'Body scale: '+a.bodyScale);
+ details(card,'Source pin',{path:a.path,sha256:a.sha256});
+ if(!reused)node('a','Download original PNG',card,{href:a.data,download:a.name});
+}
+const sections=['Overview','Narrative','Scene & Geometry','Reused Assets','New Precooked Sources','Cook in Pixel Kitchen','Optional Finishing','Evidence & Decisions'].map((title,i)=>{
+ const id='section-'+(i+1);
+ node('a',String(i+1).padStart(2,'0')+' '+title,$('#navigation'),{href:'#'+id});
+ const s=node('section',null,$('#sections'),{id});
+ node('h2',title,s);
+ return s;
+});
+$('#title').textContent=board.title;
+const [overview,narrative,geometry,reused,sources,cook,finish,evidence]=sections;
+note(overview,[board.storyId,board.sceneId,board.reviewId,board.schema].join(' / '));
+badge(overview,'G1 → G2 → G4 → G5');
+badge(overview,'G3 Audio · PAUSED / NON-BLOCKING');
+table(overview,['Gate','State','Decision / pending'],board.decisions.map(d=>[d.gate,d.state,d.detail]));
+node('h3','Chapter map',narrative);
+const map=node('ol',null,narrative);board.narrative.chapterMap.forEach(text=>node('li',text,map));
+node('h3','Causal table',narrative);table(narrative,['Beat','Cause','Visible effect'],board.narrative.causal);
+node('h3','Complete scene text',narrative);board.narrative.text.forEach(text=>node('p',text,narrative));
+node('h3','Beats and continuity',narrative);table(narrative,['Beat','Timing','Continuity'],board.narrative.beats);
+const measure=board.measure;
+note(geometry,measure.note);
+const controls=node('div',null,geometry,{class:'controls'});
+function select(parent,label,values){
+ const l=node('label',label,parent),s=node('select',null,l);
+ values.forEach(v=>node('option',v,s));return s;
+}
+const viewport=select(controls,'Viewport ',[...new Set(measure.frames.map(f=>f.viewport.join(' × ')))]);
+const mode=select(controls,'Format ',['Auto','9:16','16:9']);
+const keys=node('div',null,geometry,{class:'keys'});
+const layerStyles={frame:['Frustum / safeFrame','#fcf77a'],points:['Numbered points','#ffcb66'],roots:['Body roots','#6df5ff'],supports:['Support pins','#bbf881'],contacts:['Contacts','#ff9be7'],surfaces:['Surfaces','#9fffaa'],occluders:['Occluders','#fb8974'],routes:['Timed routes','#a4c5ff']};
+const stage=node('div',null,geometry,{class:'stage'});
+picture(stage,board.assets[measure.background]);
+function svg(tag,parent,attrs={},text){
+ const el=document.createElementNS('http://www.w3.org/2000/svg',tag);
+ for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);
+ if(text!=null)el.textContent=text;
+ parent.append(el);return el;
+}
+const overlay=svg('svg',stage,{viewBox:'0 0 '+measure.world.join(' '),preserveAspectRatio:'none','aria-label':'Complete background with measured geometry'});
+const defs=svg('defs',overlay);
+const arrow=svg('marker',defs,{id:'route-arrow',markerWidth:6,markerHeight:6,refX:5,refY:3,orient:'auto'});
+svg('path',arrow,{d:'M0 0 L6 3 L0 6 Z',fill:layerStyles.routes[1]});
+const groups={};
+for(const [key,[label,color]] of Object.entries(layerStyles)){
+ const g=groups[key]=svg('g',overlay,{stroke:color,fill:'none','stroke-width':2,'data-layer':key});
+ const l=node('label',null,keys);l.style.color=color;
+ const input=node('input',null,l,{type:'checkbox',checked:''});
+ l.append(label);input.onchange=()=>g.toggleAttribute('hidden',!input.checked);
+}
+function mark(group,x,y,label,[dx,dy]=[5,-5]){
+ svg('circle',group,{cx:x,cy:y,r:3});
+ if(Math.abs(dx)+Math.abs(dy)>14)svg('line',group,{x1:x,y1:y,x2:x+dx,y2:y+dy,opacity:.65});
+ svg('text',group,{x:x+dx,y:y+dy,'text-anchor':dx<0?'end':'start'},label);
+}
+for(const layer of ['points','roots','supports','contacts']){
+ for(const p of measure[layer])mark(groups[layer],...p.xy,p.id,p.labelOffset);
+}
+for(const layer of ['surfaces','occluders']){
+ for(const shape of measure[layer]){
+  svg(layer==='surfaces'?'polyline':'polygon',groups[layer],{points:shape.vertices.map(p=>p.join(',')).join(' '),fill:layer==='occluders'?'#fb897455':'none'});
+  if(layer==='occluders'){const [x,y]=shape.vertices[0];svg('text',groups[layer],{x,y:y-7},shape.id);}
+ }
+}
+for(const route of measure.routes){
+ for(let i=1;i<route.samples.length;i++){
+  const a=route.samples[i-1],b=route.samples[i];
+  svg('line',groups.routes,{x1:a.xy[0],y1:a.xy[1],x2:b.xy[0],y2:b.xy[1],'marker-end':'url(#route-arrow)'});
+ }
+ route.samples.forEach((p,i)=>mark(groups.routes,...p.xy,p.ms+' ms',p.labelOffset??[4,i%2?17:-5]));
+}
+const cropDetails=node('details',null,geometry);
+node('summary','Inspect selected camera framing',cropDetails);
+const crop=svg('svg',cropDetails,{'aria-label':'Selected camera framing',style:'display:block;width:auto;max-width:100%;height:240px;background:#101720'});
+const background=board.assets[measure.background];
+svg('image',crop,{href:background.data,width:measure.world[0],height:measure.world[1],preserveAspectRatio:'none'});
+const framing=node('p',null,geometry,{class:'note break'});
+function updateFrame(){
+ const row=measure.frames.find(f=>f.viewport.join(' × ')===viewport.value&&f.mode===mode.value);
+ groups.frame.replaceChildren();
+ crop.setAttribute('viewBox',row.frustum.join(' '));
+ for(const [key,dash] of [['frustum',''],['safeFrame','5 4']]){
+  const [x,y,width,height]=row[key];
+  svg('rect',groups.frame,{x,y,width,height,'stroke-dasharray':dash,stroke:key==='safeFrame'?'#9fffc6':'#fcf77a'});
+ }
+ framing.textContent='Frustum ['+row.frustum.join(', ')+'] · safeFrame ['+row.safeFrame.join(', ')+'] · '+row.evidence;
+}
+viewport.onchange=mode.onchange=updateFrame;updateFrame();
+for(const layer of ['points','roots','supports','contacts']){
+ if(measure[layer].length)table(geometry,['Point','World XY','Consumer','Evidence'],measure[layer].map(p=>[p.id,p.xy,p.consumer,p.evidence]));
+}
+details(geometry,'Full measure · surfaces, masks, routes and framing records',measure);
+for(const [parent,ids,small] of [[reused,board.reused,true],[sources,board.precooked,false]]){
+ if(ids.length){const cards=node('div',null,parent,{class:'cards'});ids.forEach(id=>assetCard(cards,id,small));}
+ else note(parent,'None in this revision.');
+}
+function compare(parent,left,right,rightLabel,zoomable){
+ const pair=node('div',null,parent,{class:'pair'});
+ const a=node('figure',null,pair);node('figcaption',left.label||left.name,a);picture(a,left);
+ const b=node('figure',null,pair);node('figcaption',rightLabel,b);
+ const sample=node('div',null,b,{class:'sample'}), image=picture(sample,right);
+ if(zoomable){
+  const scale=select(b,'Nearest zoom ',['1×','4×','8×']);
+  const size=()=>image.width=right.dimensions[0]*parseInt(scale.value,10);
+  scale.onchange=size;size();
+ }
+}
+if(!board.cook.length)badge(cook,'NOT RUN');
+for(const row of board.cook){
+ const a=board.assets[row.native];
+ node('h3',row.label,cook);compare(cook,board.assets[row.original],a,'Native Cook',true);
+ note(cook,row.revision+' · '+a.dimensions.join(' × ')+' px · '+a.colors+' visible RGB colors · '+a.bytes+' bytes');
+ details(cook,'Effective roots, supports, contacts and transform',row.geometry);
+}
+if(!board.finishing.length)badge(finish,'NOT REQUESTED');
+note(finish,'Optional. Programming can proceed with valid Cook.');
+for(const row of board.finishing){
+ node('h3',row.label,finish);compare(finish,board.assets[row.before],board.assets[row.after],row.state,true);
+ details(finish,'Pixel diff',row.diff);
+}
+table(evidence,['Scope','State','Evidence'],board.evidence.map(e=>[e.scope,e.state,e.detail]));
+details(evidence,'Pinned input files',Object.fromEntries(Object.entries(board.assets).map(([id,a])=>[id,{path:a.path,revision:a.revision,sha256:a.sha256,reviewReceipt:a.reviewReceipt}])));
+</script>
+</html>

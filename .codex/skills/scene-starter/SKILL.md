@@ -3,6 +3,12 @@ name: scene-starter
 description: Prepare Pixel Nook Gates 1 and 2A for one new scene and deliver a single offline HTML with its complete script, measured geometry, certificate and visual board. Use for “Inicia Compuertas 1 y 2A de C{X}-S{Y}”. Does not implement scenes, produce audio or publish.
 ---
 
+## New workflow — NOOK Review Board
+
+For a story under the Pixel Kitchen workflow, prepare the G1/G2 review inputs and use `python -B tools/review-board/build.py BOARD.json REVISION_DIR/REVIEW-BOARD.html`. The [input contract](../../../tools/review-board/README.md) specifies the complete background, measured geometry, reused assets, and full-size precooked poses. Keep Cook and finishing empty in G1/G2. Save the offline HTML and its input-hash receipt to the scene review folder for Alejandro's decision.
+
+After authorized G4 Cook, issue a separate revision with pinned native Cook outputs. At G5, add only evidence actually run, keeping static review, runtime, and export distinct. Preserve earlier revisions and approval records. NOOK presents scene gates for Alejandro to approve. Pixel Kitchen supplies Cook and optional finishing assets. Use the instructions below only for legacy scenes.
+
 Work from this repository root, in the main chat only. Apply NOOK and the narrative/art profiles sequentially; never delegate to another chat or subagent.
 
 ## Load current context before authoring
