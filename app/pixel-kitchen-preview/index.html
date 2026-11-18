@@ -7,26 +7,49 @@
 .frame{max-width:800px}
 button{min-height:44px;touch-action:manipulation}label{min-height:44px;cursor:pointer}input{width:20px;height:20px}button:focus-visible,a:focus-visible{outline:2px solid #8cddd5;outline-offset:3px}.back-link{display:inline-flex;align-items:center;min-height:44px;font-size:12px}footer p{font-size:12px;margin-top:8px}main{padding-bottom:calc(12px + env(safe-area-inset-bottom))}
 
-#kitchen{border:1px solid #496075;border-radius:12px;padding:12px;margin:12px 0 24px;background:#192535}h2{font-size:18px}.compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.compare figure{margin:0;min-width:0}.compare figcaption{font-size:12px;min-height:36px}.compare img{width:100%;height:300px;object-fit:contain;image-rendering:pixelated;background:repeating-conic-gradient(#48505c 0% 25%,#303844 0% 50%) 0/16px 16px}#editor-scroll{height:300px;overflow:auto;overscroll-behavior:contain;background:repeating-conic-gradient(#48505c 0% 25%,#303844 0% 50%) 0/16px 16px}#pixel-editor{display:block;image-rendering:pixelated;touch-action:none;max-width:none}select{min-height:44px;max-width:100%;background:#26354a;color:white;border:1px solid #65758a;border-radius:6px}#kitchen>label{display:flex;margin:5px 0;gap:10px}#palette{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}#palette button{width:44px;height:44px;padding:0;border:2px solid #72859a}#paint-color{width:44px;height:44px}#pixel-zoom{width:100px}textarea{display:block;width:100%;min-height:100px;background:#101a28;color:#dceaf4;margin:8px 0;border:1px solid #65758a}#copy-handoff{background:#176758;width:100%;font-weight:600}button:disabled{opacity:.5} @media(max-width:500px){#kitchen{padding:8px}.compare{gap:6px}.compare img,#editor-scroll{height:256px}}
-
-#queue-selectors{display:flex;gap:8px;flex-wrap:wrap}#mobile-reference{display:flex;align-items:center;gap:6px;margin:4px 0}#original-thumb{width:44px;height:44px;object-fit:contain;image-rendering:pixelated}#precision-controls{display:flex;gap:4px;align-items:center;flex-wrap:wrap}#cursor-position{font:12px monospace}#editor-scroll{position:relative;touch-action:none}#crosshair{position:absolute;pointer-events:none;border:2px solid white;outline:2px solid #ff296d;z-index:3;box-shadow:0 0 0 4px #0008}#original-overlay{position:sticky;left:0;top:0;width:100%;height:100%;object-fit:contain;z-index:4;background:#303844;pointer-events:none}#original-overlay[hidden],#crosshair[hidden]{display:none}#close-handoff,#enter-editor{display:none}#palette{flex-wrap:nowrap;overflow-x:auto;touch-action:pan-x}#palette button{flex:0 0 44px}#apply-pixel{background:#8c3450;min-width:160px}#pixel-editor{touch-action:none}
-@media(max-width:768px){
- body.mobile-edit{touch-action:manipulation;overflow:hidden;overscroll-behavior:none}body.mobile-edit #kitchen{position:fixed;inset:0;z-index:20;height:100dvh;margin:0;border:0;border-radius:0;padding:env(safe-area-inset-top) 8px env(safe-area-inset-bottom);display:flex;flex-direction:column;overflow:hidden}
- .mobile-edit #kitchen>h2,.mobile-edit #kitchen>p,.mobile-edit #kitchen>.compare>figure:first-child{display:none}.mobile-edit #queue-head{flex:none;padding-top:4px}.mobile-edit #queue-selectors{display:grid;grid-template-columns:1fr 1fr;gap:6px}.mobile-edit #queue-selectors label{font-size:0;min-width:0}.mobile-edit select{font-size:16px;width:100%;min-width:0}.mobile-edit #mobile-reference{margin:0;gap:4px}.mobile-edit #precision-controls{flex-wrap:nowrap;gap:4px}.mobile-edit #input-mode{width:112px}.mobile-edit #cursor-position{position:absolute;top:150px;right:14px;z-index:5;background:#121924dd;padding:4px;pointer-events:none}.mobile-edit #precision-controls button{min-width:44px;padding:4px 9px}.mobile-edit .compare{display:block;flex:1;min-height:0;margin:4px 0;overflow:hidden}.mobile-edit .compare>figure:last-child{height:100%;display:flex;flex-direction:column}.mobile-edit #native-size{display:none}.mobile-edit #editor-scroll{width:100%;height:100%;max-height:calc(100vw - 16px);flex:1;overflow:hidden}.mobile-edit #editor-dock{flex:none;background:#192535;padding:4px 0}.mobile-edit #editor-dock nav{flex-wrap:nowrap;overflow-x:auto;gap:4px;margin:0 0 4px}.mobile-edit #editor-dock nav button{flex:none;padding:5px 9px}.mobile-edit #editor-dock nav label,.mobile-edit [data-tool=pan]{display:none}.mobile-edit #palette{margin:0 0 4px;gap:4px}.mobile-edit #apply-pixel{width:100%;margin-bottom:4px}.mobile-edit #copy-handoff{font-size:14px}.mobile-edit #handoff-backup{display:none}.mobile-edit #handoff-backup.open{display:block;position:absolute;inset:8px;z-index:30;background:#192535;padding:12px;overflow:auto;border:1px solid #8cddd5}.mobile-edit #handoff-backup textarea{height:55dvh;font-size:16px}.mobile-edit #close-handoff{display:block}#enter-editor{display:block}.mobile-edit #enter-editor{display:none}
-}
+.compare figure{margin:0;min-width:0}
 </style>
+<link rel="stylesheet" href="./queue-editor.css">
 <main><a class="back-link" href="../index.html">← Back to library</a><h1>Pixel Kitchen Preview</h1>
 <p>Cook → Phaser · 64×64 characters · 32×32 object · 640×360 scene.</p>
 <section id="kitchen" aria-labelledby="queue-title">
 <h2 id="queue-title">Kitchen Queue &amp; Touch Editor</h2>
 <p>Review the large Original, edit native pixels, then copy your handoff to Chef on your PC.</p>
-<div id="queue-head"><button id="enter-editor">Open full-screen editor</button><div id="queue-selectors"><label>Task <select id="task-select" aria-label="Task"></select></label>
-<label>Base <select id="base-select" aria-label="Editing base"><option value="chef">Chef candidate</option><option value="cook">Pure Cook</option></select></label></div><div id="mobile-reference"><img id="original-thumb" alt="Original thumbnail"><button id="show-original" aria-pressed="false">View Original</button><button id="leave-editor">Phaser preview</button></div><div id="precision-controls"><select id="input-mode" aria-label="Input mode"><option value="direct">Direct touch</option><option value="crosshair">Crosshair</option></select><button id="zoom-out" aria-label="Zoom out">−</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-reset">Reset Zoom</button><output id="cursor-position">Aim, then Paint</output></div></div>
-<div class="compare"><figure><figcaption id="original-size">Original</figcaption><img id="original-large" alt="Full original reference"></figure><figure><figcaption id="native-size">Native editor</figcaption><div id="editor-scroll"><canvas id="pixel-editor" aria-label="Native pixel editor"></canvas><div id="crosshair" hidden></div><img id="original-overlay" alt="Full original comparison" hidden></div></figure></div>
-<div id="editor-dock"><nav aria-label="Pixel tools"><button data-tool="pencil" aria-pressed="true">Pencil</button><button data-tool="eyedropper">Eyedropper</button><button data-tool="eraser">Eraser</button><button data-tool="pan">Pan</button><button id="undo" disabled>Undo</button><button id="redo" disabled>Redo</button><label>Color <input id="paint-color" type="color" value="#000000"></label><label>Zoom <input id="pixel-zoom" type="range" min="2" max="16" value="4"></label></nav>
-<div id="palette" aria-label="Sprite palette"></div>
-<button id="apply-pixel">Paint aimed pixel</button><button id="copy-handoff" disabled>Approve &amp; Copy Chef Handoff</button>
-</div><p id="queue-status" role="status">Loading queue…</p>
+<div class="workspace">
+  <div class="compare">
+    <figure id="original-pane"><figcaption id="original-size">Original</figcaption>
+      <div id="original-scroll" class="surface"><img id="original-large" alt="Full original reference" draggable="false"></div>
+    </figure>
+    <figure id="editor-pane"><figcaption id="native-size">Native editor</figcaption>
+      <div id="editor-scroll" class="surface"><canvas id="pixel-editor" aria-label="Native pixel editor"></canvas></div>
+    </figure>
+  </div>
+  <div class="workspace-actions">
+    <button id="show-original" aria-pressed="false">View Original</button>
+    <button id="enter-editor">Fullscreen</button>
+    <button id="leave-editor">Exit</button>
+    <button id="tools-toggle" aria-controls="editor-dock" aria-expanded="true">Tools</button>
+  </div>
+  <div id="editor-dock">
+    <div id="queue-head">
+      <div id="queue-selectors">
+        <label>Task <select id="task-select" aria-label="Task"></select></label>
+        <label>Base <select id="base-select" aria-label="Editing base"><option value="chef">Chef candidate</option><option value="cook">Pure Cook</option></select></label>
+      </div>
+    </div>
+    <nav aria-label="Pixel tools">
+      <button data-tool="pencil" aria-pressed="true">Pencil</button><button data-tool="eyedropper">Eyedropper</button>
+      <button data-tool="eraser">Eraser</button><button data-tool="pan">Pan</button>
+      <button id="undo" disabled>Undo</button><button id="redo" disabled>Redo</button>
+    </nav>
+    <div class="editor-options">
+      <label>Color <input id="paint-color" type="color" value="#000000"></label>
+      <button id="zoom-out" aria-label="Zoom out">−</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-reset">Reset Zoom</button>
+    </div>
+    <button id="copy-handoff" disabled>Approve &amp; Copy Chef Handoff</button>
+  </div>
+</div>
+<p id="queue-status" role="status">Loading queue…</p>
 <div id="handoff-backup"><button id="close-handoff">Back to editor</button><p id="handoff-message" role="status"></p><textarea id="handoff" aria-label="Chef handoff JSON" readonly placeholder="Your complete handoff appears here. Copy it or download the JSON."></textarea>
 <button id="download-handoff" disabled>Download handoff JSON</button></div>
 <p>Read-only hosting. Edits live in browser memory; export before closing. Approval here does not write to your PC or publish anything.</p>
@@ -43,6 +66,5 @@ button{min-height:44px;touch-action:manipulation}label{min-height:44px;cursor:po
 </main>
 <script src="/vendor/phaser/phaser.min.js"></script>
 <script type="module" src="./viewer.js"></script>
-</html>
-
 <script type="module" src="./queue-editor.js"></script>
+</html>
