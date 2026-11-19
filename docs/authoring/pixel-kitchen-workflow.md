@@ -184,3 +184,11 @@ El rol [07-pixel-chef](../../agents/07-pixel-chef.md), CLI y editor táctil en m
 ### Review Board de NOOK
 
 Alejandro aprobó el formato de los dos pilotos de Fase E: G2 Pre-Cook y G4 Post-Cook. NOOK genera el [Review Board oficial](../../tools/review-board/README.md) para la decisión de escena en G1/G2 y emite revisiones en G4/G5. Pixel Kitchen aporta Cook y retoques opcionales. La aprobación del formato queda separada de las decisiones de una escena y de la evidencia de runtime y exportación.
+
+## Autoría humana nativa en Pixel Kitchen
+
+Para cada personaje humano nuevo prevalece el maniquí universal nativo sobre las instrucciones anteriores de precocido grande y Cook. La fuente es una pose completa de 64×64 con alfa binario. Todos los humanos comparten la altura calva de 52 píxeles entre las filas 10 y 61 inclusivas. Pelo, vestimenta y accesorios definen la identidad. El equipo dibuja por capas deterministas o a mano, directamente sobre el maestro, sin generación IA ni reescalado.
+
+Los maestros y el rig viven en [la biblioteca humana](../../concept_art/mannequins/human/mannequin-rig.json). Para una pose especial, dibujar primero el cuerpo completo, registrar sus articulaciones y conservar las longitudes del rig. Vestir después y validar con `python tools/pixel-kitchen/mannequin.py imagen.png pose.json`, donde pose.json contiene view y joints. Las coordenadas del rig son índices de píxel desde arriba a la izquierda. bodyRoot indica la fila de apoyo. En una vista trasera eyes es solo una referencia geométrica. Las poses se intercambian completas en ejecución. Cada especie no humana utiliza su propia biblioteca en `concept_art/mannequins/<especie>/`. Los finales anteriores conservan su procedencia y aprobación.
+
+El preview permite comparar los candidatos frontales de Alice y Odiseo, editarlos como bases nativas y exportar PNG y handoff JSON. La elección del maniquí universal sigue pendiente.

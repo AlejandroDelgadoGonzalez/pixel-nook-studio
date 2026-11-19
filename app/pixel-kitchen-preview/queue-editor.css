@@ -119,3 +119,20 @@ body.mobile-edit { overflow:hidden; overscroll-behavior:none; }
   .expanded.show-original #original-pane { display:flex; }
   .expanded #show-original { display:block; }
 }
+
+#editor-scroll > [hidden], #guide-controls[hidden] { display:none; }
+#guide-controls summary { cursor:pointer; padding:8px; }
+#guide-controls label { display:inline-flex; align-items:center; gap:4px; }
+
+#skin-guide { z-index:2; }
+#pixel-editor { z-index:1; }
+#joint-guide { z-index:3; }
+.blank-character #skin-guide { z-index:0; }
+
+.guide-opacity { display:grid; grid-template-columns:auto 1fr 3ch; align-items:center; gap:8px; }
+#guide-opacity { appearance:none; width:100%; min-width:0; margin:0; height:44px; background:transparent; }
+#guide-opacity::-webkit-slider-runnable-track { height:12px; background:#53657a; border-radius:6px; }
+#guide-opacity::-webkit-slider-thumb { appearance:none; width:30px; height:30px; margin-top:-9px; border-radius:50%; background:#8cddd5; }
+#guide-opacity::-moz-range-track { height:12px; background:#53657a; border-radius:6px; }
+#guide-opacity::-moz-range-thumb { width:30px; height:30px; border:0; border-radius:50%; background:#8cddd5; }
+.guide-opacity output { font-variant-numeric:tabular-nums; }

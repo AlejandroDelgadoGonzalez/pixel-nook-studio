@@ -11,6 +11,8 @@ await mkdir(output, {recursive: true});
 for (const dir of ['app', 'platform', 'stories', 'vendor']) {
   await cp(join(root, dir), join(output, dir), {recursive: true, filter: packageFilter(root)});
 }
+await cp(join(root,'concept_art/mannequins/human'), join(output,'concept_art/mannequins/human'), {recursive:true});
+await cp(join(root,'concept_art/mannequins/candidates'), join(output,'concept_art/mannequins/candidates'), {recursive:true});
 // Fail closed if an earlier generated dist already contains excluded sources.
 await assertNoPrivateCharacterSources(output);
 const textTypes = new Set(['.html', '.js', '.mjs', '.json', '.css']);

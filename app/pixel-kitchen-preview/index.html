@@ -21,7 +21,7 @@ button{min-height:44px;touch-action:manipulation}label{min-height:44px;cursor:po
       <div id="original-scroll" class="surface"><img id="original-large" alt="Full original reference" draggable="false"></div>
     </figure>
     <figure id="editor-pane"><figcaption id="native-size">Native editor</figcaption>
-      <div id="editor-scroll" class="surface"><canvas id="pixel-editor" aria-label="Native pixel editor"></canvas></div>
+      <div id="editor-scroll" class="surface"><img id="skin-guide" alt="" hidden><canvas id="pixel-editor" aria-label="Native pixel editor"></canvas><canvas id="joint-guide" width="64" height="64" hidden></canvas></div>
     </figure>
   </div>
   <div class="workspace-actions">
@@ -37,6 +37,18 @@ button{min-height:44px;touch-action:manipulation}label{min-height:44px;cursor:po
         <label>Base <select id="base-select" aria-label="Editing base"><option value="chef">Chef candidate</option><option value="cook">Pure Cook</option></select></label>
       </div>
     </div>
+    <details id="guide-controls"><summary>Mannequin guide</summary>
+      <label>Pose <select id="guide-pose"><option value="">None</option></select></label>
+      <label><input type="checkbox" id="character-visible" checked>Show character</label>
+      <label><input type="checkbox" id="guide-visible" checked>Show mannequin</label>
+      <div class="guide-opacity">
+        <label for="guide-opacity">Opacity</label>
+        <input id="guide-opacity" type="range" min="0" max="100" value="45">
+        <output id="guide-opacity-value" for="guide-opacity">45%</output>
+      </div>
+      <label><input type="checkbox" id="joints-visible">Show joints</label>
+      <button id="stamp-skin" disabled>Copy mannequin base to active layer</button>
+    </details>
     <nav aria-label="Pixel tools">
       <button data-tool="pencil" aria-pressed="true">Pencil</button><button data-tool="eyedropper">Eyedropper</button>
       <button data-tool="eraser">Eraser</button><button data-tool="pan">Pan</button>
@@ -51,7 +63,7 @@ button{min-height:44px;touch-action:manipulation}label{min-height:44px;cursor:po
 </div>
 <p id="queue-status" role="status">Loading queue…</p>
 <div id="handoff-backup"><button id="close-handoff">Back to editor</button><p id="handoff-message" role="status"></p><textarea id="handoff" aria-label="Chef handoff JSON" readonly placeholder="Your complete handoff appears here. Copy it or download the JSON."></textarea>
-<button id="download-handoff" disabled>Download handoff JSON</button></div>
+<button id="download-mannequin" hidden>Download mannequin PNG</button><button id="download-handoff" disabled>Download handoff JSON</button></div>
 <p>Read-only hosting. Edits live in browser memory; export before closing. Approval here does not write to your PC or publish anything.</p>
 </section><h2 id="phaser-preview">Cook → Phaser preview</h2>
 <nav aria-label="Inspection controls">

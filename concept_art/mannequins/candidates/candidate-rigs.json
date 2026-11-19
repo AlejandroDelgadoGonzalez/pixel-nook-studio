@@ -1,0 +1,212 @@
+{
+  "candidate-alice": {
+    "filename": "alice-mannequin-front.png",
+    "sha256": "02b3dbd1896930c846a731a3b2d34b23421e2442df289af33c3bcd566fb01d77",
+    "sourceUrl": "alice-front-v1-final-b6fe29bcbe4040e59142d31cef7d8210.png",
+    "eyeSize": [
+      2,
+      4
+    ],
+    "joints": {
+      "crown": [
+        [
+          32,
+          9
+        ]
+      ],
+      "neck": [
+        [
+          32,
+          28
+        ]
+      ],
+      "shoulders": [
+        [
+          26,
+          33
+        ],
+        [
+          38,
+          33
+        ]
+      ],
+      "elbows": [
+        [
+          24,
+          38
+        ],
+        [
+          40,
+          38
+        ]
+      ],
+      "wrists": [
+        [
+          22,
+          42
+        ],
+        [
+          42,
+          42
+        ]
+      ],
+      "waist": [
+        [
+          32,
+          42
+        ]
+      ],
+      "hips": [
+        [
+          29,
+          49
+        ],
+        [
+          35,
+          49
+        ]
+      ],
+      "knees": [
+        [
+          28,
+          53
+        ],
+        [
+          36,
+          53
+        ]
+      ],
+      "ankles": [
+        [
+          28,
+          57
+        ],
+        [
+          36,
+          57
+        ]
+      ],
+      "bodyRoot": [
+        [
+          32,
+          59
+        ]
+      ],
+      "eyes": [
+        [
+          28,
+          20
+        ],
+        [
+          35,
+          20
+        ]
+      ]
+    }
+  },
+  "candidate-odysseus": {
+    "filename": "odysseus-mannequin-front.png",
+    "sha256": "3d219308cc73a8791d4a4c9627dd4c781c1418107e7127c12b405441d815f501",
+    "sourceUrl": "odysseus-front-v1-final-clean.png",
+    "eyeSize": [
+      2,
+      4
+    ],
+    "joints": {
+      "crown": [
+        [
+          31,
+          13
+        ]
+      ],
+      "neck": [
+        [
+          31,
+          35
+        ]
+      ],
+      "shoulders": [
+        [
+          25,
+          39
+        ],
+        [
+          38,
+          39
+        ]
+      ],
+      "elbows": [
+        [
+          23,
+          43
+        ],
+        [
+          41,
+          43
+        ]
+      ],
+      "wrists": [
+        [
+          21,
+          47
+        ],
+        [
+          42,
+          47
+        ]
+      ],
+      "waist": [
+        [
+          32,
+          47
+        ]
+      ],
+      "hips": [
+        [
+          29,
+          54
+        ],
+        [
+          35,
+          54
+        ]
+      ],
+      "knees": [
+        [
+          28,
+          57
+        ],
+        [
+          36,
+          57
+        ]
+      ],
+      "ankles": [
+        [
+          27,
+          60
+        ],
+        [
+          37,
+          60
+        ]
+      ],
+      "bodyRoot": [
+        [
+          32,
+          62
+        ]
+      ],
+      "eyes": [
+        [
+          27,
+          25
+        ],
+        [
+          34,
+          25
+        ]
+      ]
+    }
+  }
+}
