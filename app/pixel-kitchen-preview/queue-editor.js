@@ -109,8 +109,9 @@ async function load(id,which){
  $('#base-select').replaceChildren(...Object.keys(labels).filter(key=>t.bases[key]).map(key=>new Option(labels[key],key)));
  $('#base-select').value=m;
  $('#native-size').textContent=`${labels[mode]} · ${b.dimensions.join(' × ')} native pixels`;
- $('#task-select').value=id;$('#copy-handoff').disabled=!(t.status==='active'||(m==='final'&&t.adoptedFinal));
- draw();resetView(editorView);message(t.status==='active'?'Active task · edits stay in this browser until you copy the handoff.':t.status==='review'?'Visual review only. Handoffs become available after source and geometry validation.':t.status==='complete'?'Completed task · choose the adopted Final to submit another edit.':'Waiting task · inspect Cook now; Chef prepares it after the active task.');
+ $('#task-select').value=id;$('#copy-handoff').disabled=!(t.status==='review'||t.status==='active'||(m==='final'&&t.adoptedFinal));
+ $('#copy-handoff').textContent=t.status==='review'?'Copy Draft Handoff':'Approve & Copy Chef Handoff';
+ draw();resetView(editorView);message(t.status==='active'?'Active task · edits stay in this browser until you copy the handoff.':t.status==='review'?'Draft review · copy your edits for Chef. Final approval requires source and geometry validation.':t.status==='complete'?'Completed task · choose the adopted Final to submit another edit.':'Waiting task · inspect Cook now; Chef prepares it after the active task.');
  }catch(e){message(e.message);}
 }
 function setTool(){
@@ -241,10 +242,11 @@ function switchBase(id,m){if(undo.length&&!confirm('Discard unsent edits and cha
 $('#task-select').onchange=e=>switchBase(e.target.value);$('#base-select').onchange=e=>switchBase(task.taskId,e.target.value);
 $('#copy-handoff').onclick=async()=>{
  try{
+ const draft=task.status==='review';
  const changes=[];for(let i=0;i<rgba.length;i+=4)if([0,1,2,3].some(k=>rgba[i+k]!==base.rgba[i+k]))changes.push({x:(i/4)%canvas.width,y:Math.floor(i/4/canvas.width),hex:hex(rgba.slice(i,i+4))});
- const handoff={schemaVersion:'pixel-kitchen-handoff/1',hashEncoding:'pk-rgba-png/1',taskId:task.taskId,assetId:task.assetId,baseRevision:base.revision,baseSha256:base.sha256,editedFrom:mode,comparisonBase:mode,expectedCurrent:task.expectedCurrent,canvas:[canvas.width,canvas.height],changes,finalSha256:await sha256(pngBytes(canvas.width,canvas.height,rgba))};
+ const handoff={schemaVersion:draft?'pixel-kitchen-draft-handoff/1':'pixel-kitchen-handoff/1',hashEncoding:'pk-rgba-png/1',taskId:task.taskId,assetId:task.assetId,baseRevision:base.revision,baseSha256:base.sha256,editedFrom:mode,comparisonBase:mode,expectedCurrent:task.expectedCurrent,canvas:[canvas.width,canvas.height],changes,finalSha256:await sha256(pngBytes(canvas.width,canvas.height,rgba))};
  const text=JSON.stringify(handoff);$('#handoff').value=text;$('#download-handoff').disabled=false;$('#handoff-backup').classList.add('open');
- try{await navigator.clipboard.writeText(text);message('Copied. Paste into your Chef chat on PC. No Final has been adopted yet.');}catch{message('Clipboard unavailable. Select the text below or download JSON, then paste it into your Chef chat.');}
+ try{await navigator.clipboard.writeText(text);message(draft?'Draft copied. Paste it into your Chef chat on PC.':'Copied. Paste into your Chef chat on PC. No Final has been adopted yet.');}catch{message('Clipboard unavailable. Select the text below or download JSON, then paste it into your Chef chat.');}
  }catch(e){message(e.message);}
 };
 $('#download-handoff').onclick=()=>{const u=URL.createObjectURL(new Blob([$('#handoff').value],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download=`${task.taskId}-chef-handoff.json`;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};
