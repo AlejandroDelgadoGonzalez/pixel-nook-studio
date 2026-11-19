@@ -110,7 +110,7 @@ async function load(id,which){
  $('#base-select').value=m;
  $('#native-size').textContent=`${labels[mode]} · ${b.dimensions.join(' × ')} native pixels`;
  $('#task-select').value=id;$('#copy-handoff').disabled=!(t.status==='active'||(m==='final'&&t.adoptedFinal));
- draw();resetView(editorView);message(t.status==='active'?'Active task · edits stay in this browser until you copy the handoff.':t.status==='complete'?'Completed task · choose the adopted Final to submit another edit.':'Waiting task · inspect Cook now; Chef prepares it after the active task.');
+ draw();resetView(editorView);message(t.status==='active'?'Active task · edits stay in this browser until you copy the handoff.':t.status==='review'?'Visual review only. Handoffs become available after source and geometry validation.':t.status==='complete'?'Completed task · choose the adopted Final to submit another edit.':'Waiting task · inspect Cook now; Chef prepares it after the active task.');
  }catch(e){message(e.message);}
 }
 function setTool(){
@@ -248,4 +248,4 @@ $('#copy-handoff').onclick=async()=>{
  }catch(e){message(e.message);}
 };
 $('#download-handoff').onclick=()=>{const u=URL.createObjectURL(new Blob([$('#handoff').value],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download=`${task.taskId}-chef-handoff.json`;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};
-try{const r=await fetch('./queue/queue.json');if(!r.ok)throw Error('Queue unavailable');tasks=(await r.json()).tasks;$('#task-select').replaceChildren(...tasks.map(t=>new Option(`${t.label} — ${t.status}`,t.taskId)));await load((tasks.find(t=>t.status==='active')||tasks[0]).taskId);}catch(e){message(e.message);}
+try{const r=await fetch('./queue/queue.json');if(!r.ok)throw Error('Queue unavailable');const review=await fetch('./queue/review-queue.json');if(!review.ok)throw Error('Review queue unavailable');tasks=[...(await r.json()).tasks,...(await review.json()).tasks];$('#task-select').replaceChildren(...tasks.map(t=>new Option(`${t.label} — ${t.status}`,t.taskId)));await load((tasks.find(t=>t.status==='active')||tasks.find(t=>t.status==='review')||tasks[0]).taskId);}catch(e){message(e.message);}
